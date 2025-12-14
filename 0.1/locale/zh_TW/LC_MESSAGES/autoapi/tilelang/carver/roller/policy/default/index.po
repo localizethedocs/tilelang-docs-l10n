@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:2
+msgid "tilelang.carver.roller.policy.default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:8
+msgid "Policy for cuda core schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`DefaultPolicy <tilelang.carver.roller.policy.default."
+"DefaultPolicy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:19:<autosummary>:1
+msgid "Default Policy for fastdlight, a heuristic plan that tries to"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:25
+msgid ""
+"Default Policy for fastdlight, a heuristic plan that tries to minimize "
+"memory traffic and maximize parallelism.for BitBLAS Schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:68
+msgid ""
+"Gets the minimum tile configuration that satisfies no redundancy in "
+"computation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:70
+msgid ""
+"The base tile configuration, which is a list of 1s equal in length to the "
+"space dimensions of the primary function node."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:81
+msgid ""
+"Scores a block size based on its efficiency and fit relative to the "
+"architecture's warp size and SM partition."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:83
+msgid "The block size to score."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:86
+msgid ""
+"A tuple containing two scores representing efficiency and fit, respectively."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:93
+msgid ""
+"Determines the optimal block size for a given constraint, based on scoring "
+"various factors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:95
+msgid "The constraint size."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:98
+msgid ""
+"The optimal block size chosen from the factors of n, constrained by a "
+"maximum of 1024 and scored by the `score_block_size` method."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:106
+msgid ""
+"Calculates reduction step candidates for each reduction axis in a "
+"PrimFuncNode. General idea : use factor first, since it does not require "
+"extra boundary check. for large prime number, which is rare case, use power "
+"of 2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:108
+msgid ""
+"The node for which to calculate reduction step candidates. It contains "
+"reduction axes (raxis) with their domains (dom.extent)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:112
+msgid ""
+"A dictionary mapping axis variable names to lists of step candidates. For "
+"each axis in the node, this function calculates possible step sizes. For "
+"axes with a large prime domain, it uses powers of 2 as step candidates; for "
+"others, it uses all factors of the domain."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:121
+msgid ""
+"Infers the shared memory usage of a node given a TileDict configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:123
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:139
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:178
+msgid "The TileDict object containing the tile configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:125
+msgid "The node for which to infer the shared memory usage."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:128
+msgid "The estimated amount of shared memory used by the node."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:135
+msgid ""
+"Computes the stride map for a given node based on the TileDict configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:137
+msgid "The node for which to compute the stride map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:142
+msgid ""
+"A tuple of dictionaries containing the output strides and tensor strides."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:149
+msgid ""
+"Computes and returns a TileDict object for a given output tile configuration "
+"and reduction step map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:151
+msgid "The output tile configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:153
+msgid "The reduction step map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:156
+msgid ""
+"A TileDict object containing the computed tile configuration, memory "
+"traffic, shared memory cost, grid size, and other related parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:164
+msgid ""
+"Checks if the tile shapes in the TileDict are valid for the nodes in this "
+"context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:166
+msgid ""
+"Parameters: - td (TileDict): The TileDict object containing tile shapes and "
+"other configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:169
+msgid "Returns: - bool: True if all tile shapes are valid, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:176
+msgid "Recommends optimal block sizes based on the TileDict configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:181
+msgid "A list of recommended block sizes sorted based on their score."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:188
+msgid ""
+"Assigns block sizes to the TileDict based on the recommended block sizes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:190
+msgid "The TileDict object to assign block sizes to."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:192
+msgid "The number of top block sizes to consider."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
+msgid "Yields"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:195
+msgid "*Dict* -- The block size assignment for the primary function node."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:201
+msgid ""
+"Plans the rasterization for the given TileDict. This function is not "
+"implemented yet."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:203
+msgid "The TileDict object to plan rasterization for."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:206
+msgid "This function is not implemented yet."
+msgstr ""

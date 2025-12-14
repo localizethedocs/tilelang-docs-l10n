@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cache/index.rst:2
+msgid "tilelang.cache"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:8
+msgid "The cache utils with class and database persistence - Init file"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:13
+msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:22
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`cached <tilelang.cache.cached>`\\ \\(\\[func\\, out\\_idx\\, "
+"target\\, target\\_host\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:35
+#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
+msgid "Caches and reuses compiled kernels (using KernelCache class)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
+msgid ":py:obj:`clear_cache <tilelang.cache.clear_cache>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:40
+#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
+msgid "Disabled helper that previously removed the entire kernel cache."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:31
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:42
+msgid "Always raised to warn users to clear the cache manually."
+msgstr ""

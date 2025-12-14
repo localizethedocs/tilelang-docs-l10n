@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:2
+msgid "tilelang.language.math_intrinsics"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_add <tilelang.language.math_intrinsics.ieee_add>`\\ \\(x\\, "
+"y\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:27
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant addition with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_sub <tilelang.language.math_intrinsics.ieee_sub>`\\ \\(x\\, "
+"y\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:44
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant subtraction with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_mul <tilelang.language.math_intrinsics.ieee_mul>`\\ \\(x\\, "
+"y\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:59
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant multiplication with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fmaf <tilelang.language.math_intrinsics.ieee_fmaf>`\\ \\(x\\, "
+"y\\, z\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:74
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant fused multiply-add with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_frcp <tilelang.language.math_intrinsics.ieee_frcp>`\\ "
+"\\(x\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:91
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant reciprocal with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fsqrt <tilelang.language.math_intrinsics.ieee_fsqrt>`\\ "
+"\\(x\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:104
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant square root with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_frsqrt <tilelang.language.math_intrinsics.ieee_frsqrt>`\\ "
+"\\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:117
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant reciprocal square root (round to nearest only)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fdiv <tilelang.language.math_intrinsics.ieee_fdiv>`\\ \\(x\\, "
+"y\\[\\, rounding\\_mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:128
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:21:<autosummary>:1
+msgid "IEEE-compliant division with specified rounding mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:29
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:46
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:61
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:76
+msgid "First operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:31
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:48
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:63
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:78
+msgid "Second operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33
+msgid ""
+"Rounding mode: 'rn' (round to nearest), 'rz' (round toward zero), "
+"'ru' (round toward positive infinity), 'rd' (round toward negative "
+"infinity). Default is 'rn'."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:38
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:53
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:68
+msgid "**result** -- The result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:50
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:65
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:82
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:95
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:108
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:134
+msgid "Rounding mode: 'rn', 'rz', 'ru', 'rd'. Default is 'rn'."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:80
+msgid "Third operand (addend)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:85
+msgid "**result** -- The result of x * y + z."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:93
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:106
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:119
+msgid "Input operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:98
+msgid "**result** -- The result of 1/x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:111
+msgid "**result** -- The result of sqrt(x)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:122
+msgid "**result** -- The result of 1/sqrt(x)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:130
+msgid "Dividend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:132
+msgid "Divisor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:137
+msgid "**result** -- The result of x/y."
+msgstr ""

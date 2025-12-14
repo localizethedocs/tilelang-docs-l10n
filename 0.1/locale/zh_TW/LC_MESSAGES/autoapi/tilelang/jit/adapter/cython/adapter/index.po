@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:2
+msgid "tilelang.jit.adapter.cython.adapter"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:8
+msgid "The profiler and convert to torch utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:19:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.jit.adapter.cython.adapter.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:21
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`CythonKernelAdapter <tilelang.jit.adapter.cython.adapter."
+"CythonKernelAdapter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:52
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:27:<autosummary>:1
+msgid ""
+"Adapter class that converts TVM/TIR functions to callable CUDA kernels using "
+"cython."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:29
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`is_symbolic_expr <tilelang.jit.adapter.cython.adapter."
+"is_symbolic_expr>`\\ \\(expr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:35:<autosummary>:1
+msgid "Check if the expression is a symbolic expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:37
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:43
+msgid ""
+"Check if the expression is a symbolic expression. A symbolic expression can "
+"be a simple tvm.Var, or an tvm.PrimExpr containing tvm.Var."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:49
+msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:54
+msgid ""
+"This adapter handles: 1. Converting TIR functions to compiled CUDA libraries "
+"2. Managing dynamic shapes in tensor operations 3. Wrapping C++ kernels for "
+"Python/PyTorch usage"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:167
+msgid "Returns the primary TIR function from the IR module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:172
+msgid "Returns the source path of the compiled library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:177
+msgid "Returns the path to the compiled library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:182
+msgid "Returns the code of the compiled library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:187
+msgid "Indicates whether the kernel handles dynamic shapes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:192
+msgid "Returns the source code of the compiled kernel."
+msgstr ""
