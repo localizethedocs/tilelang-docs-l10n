@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:2
+msgid "tilelang.carver.analysis"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:8
+msgid "Analysis on TIR blocks, loops and functions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:20:<autosummary>:1
+msgid ":py:obj:`IterInfo <tilelang.carver.analysis.IterInfo>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:45
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:20:<autosummary>:1
+msgid "Information about a loop/iter var."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:20:<autosummary>:1
+msgid ":py:obj:`BlockInfo <tilelang.carver.analysis.BlockInfo>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:75
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:20:<autosummary>:1
+msgid "Information about a TIR block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:22
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`normalize_prim_func <tilelang.carver.analysis."
+"normalize_prim_func>`\\ \\(sch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:144
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid "Normalize the primfunc to normal form"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`find_var_from_func <tilelang.carver.analysis.find_var_from_func>`\\ "
+"\\(func\\, var\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`check_func_with_dynamic <tilelang.carver.analysis."
+"check_func_with_dynamic>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`get_max_threads_per_block <tilelang.carver.analysis."
+"get_max_threads_per_block>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`get_max_shared_memory_per_block <tilelang.carver.analysis."
+"get_max_shared_memory_per_block>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`get_root_block <tilelang.carver.analysis.get_root_block>`\\ "
+"\\(sch\\[\\, func\\_name\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`collect_block_iter_vars_used_in_access_region <tilelang.carver."
+"analysis.collect_block_iter_vars_used_in_access_region>`\\ \\(block\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:159
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+"Collect the block iter variables used in the access region of a buffer "
+"region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`collect_vars_used_in_prim_expr <tilelang.carver.analysis."
+"collect_vars_used_in_prim_expr>`\\ \\(expr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:164
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid "Collect the variables used in the PrimExpr."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`detect_dominant_read <tilelang.carver.analysis."
+"detect_dominant_read>`\\ \\(block\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:169
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid "Detect the dominant read indices in the block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`is_broadcast_epilogue <tilelang.carver.analysis."
+"is_broadcast_epilogue>`\\ \\(sch\\, block\\, epilogue\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:174
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid "Check if the epilogue block is a broadcast pattern"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`get_reduction_blocks <tilelang.carver.analysis."
+"get_reduction_blocks>`\\ \\(sch\\, blocks\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`get_coalesced_veclen <tilelang.carver.analysis."
+"get_coalesced_veclen>`\\ \\(block\\_stmt\\[\\, target\\_bits\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:41
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:64
+msgid "The iteration domain of the loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:92
+msgid "The iteration domain of the block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:98
+msgid "The iteration domain kind of the block, for example, SSSS, SSSR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:104
+msgid ""
+"Whether the block is injective, i.e. all its iteration domains are injective."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:110
+msgid ""
+"Whether the block is elementwise, i.e. trivial mapping between read/write "
+"region"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:116
+msgid "Whether the block is a reduction workload."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:124
+msgid "Whether the block is a GEMV workload."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/analysis/index.rst:132
+msgid "Whether the block is a GEMM workload."
+msgstr ""

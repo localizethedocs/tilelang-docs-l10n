@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/env/index.rst:2
+msgid "tilelang.env"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.env.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`CUTLASS_NOT_FOUND_MESSAGE <tilelang.env."
+"CUTLASS_NOT_FOUND_MESSAGE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:65
+#: ../../../autoapi/tilelang/env/index.rst:71
+#: ../../../autoapi/tilelang/env/index.rst:77
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ", which may lead to compilation bugs when utilize tilelang backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`COMPOSABLE_KERNEL_NOT_FOUND_MESSAGE <tilelang.env."
+"COMPOSABLE_KERNEL_NOT_FOUND_MESSAGE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`TL_TEMPLATE_NOT_FOUND_MESSAGE <tilelang.env."
+"TL_TEMPLATE_NOT_FOUND_MESSAGE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`TVM_LIBRARY_NOT_FOUND_MESSAGE <tilelang.env."
+"TVM_LIBRARY_NOT_FOUND_MESSAGE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`TL_ROOT <tilelang.env.TL_ROOT>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`TL_LIBS <tilelang.env.TL_LIBS>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`DEV <tilelang.env.DEV>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`THIRD_PARTY_ROOT <tilelang.env.THIRD_PARTY_ROOT>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`env <tilelang.env.env>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`enable_cache <tilelang.env.enable_cache>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`disable_cache <tilelang.env.disable_cache>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`is_cache_enabled <tilelang.env.is_cache_enabled>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`CUDA_HOME <tilelang.env.CUDA_HOME>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`ROCM_HOME <tilelang.env.ROCM_HOME>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`tvm_path <tilelang.env.tvm_path>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`cutlass_inc_path <tilelang.env.cutlass_inc_path>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`ck_inc_path <tilelang.env.ck_inc_path>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`tl_template_path <tilelang.env.tl_template_path>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ":py:obj:`CUTLASS_INCLUDE_DIR <tilelang.env.CUTLASS_INCLUDE_DIR>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`COMPOSABLE_KERNEL_INCLUDE_DIR <tilelang.env."
+"COMPOSABLE_KERNEL_INCLUDE_DIR>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`TILELANG_TEMPLATE_PATH <tilelang.env.TILELANG_TEMPLATE_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:39
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
+msgid ":py:obj:`CacheState <tilelang.env.CacheState>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:101
+#: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
+msgid "Class to manage global kernel caching state."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
+msgid ":py:obj:`EnvVar <tilelang.env.EnvVar>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:130
+#: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
+msgid "Descriptor for managing access to a single environment variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
+msgid ":py:obj:`Environment <tilelang.env.Environment>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
+msgid "Environment configuration for TileLang."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:49
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:55:<autosummary>:1
+msgid ""
+":py:obj:`prepend_pythonpath <tilelang.env.prepend_pythonpath>`\\ \\(path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:57
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:108
+msgid "Enable kernel caching globally."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:116
+msgid "Disable kernel caching globally."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:124
+msgid "Return current cache state."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:133
+msgid "Purpose"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:134
+msgid ""
+"In many projects, access to environment variables is scattered across the "
+"codebase:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:135
+msgid "`os.environ.get(...)` calls are repeated everywhere"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:136
+msgid "Default values are hard-coded in multiple places"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:137
+msgid "Overriding env vars for tests/debugging is messy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:138
+msgid ""
+"There's no central place to see all environment variables a package uses"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:140
+msgid "This descriptor solves those issues by:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:141
+msgid ""
+"Centralizing the definition of the variable's **key** and **default value**"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:142
+msgid ""
+"Allowing *dynamic* reads from `os.environ` so changes take effect immediately"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:143
+msgid ""
+"Supporting **forced overrides** at runtime (for unit tests or debugging)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:144
+msgid ""
+"Logging a warning when a forced value is used (helps detect unexpected "
+"overrides)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:145
+msgid ""
+"Optionally syncing forced values back to `os.environ` if global consistency "
+"is desired"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:148
+msgid "How it works"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:149
+msgid ""
+"This is a `dataclass` implementing the descriptor protocol (`__get__`, "
+"`__set__`)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:150
+msgid "When used as a class attribute, `instance.attr` triggers `__get__()`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:151
+msgid ""
+"→ returns either the forced override or the live value from `os.environ`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:152
+msgid ""
+"Assigning to the attribute (`instance.attr = value`) triggers `__set__()`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:153
+msgid "→ stores `_forced_value` for future reads"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:154
+msgid ""
+"You may uncomment the `os.environ[...] = value` line in `__set__` if you "
+"want the override to persist globally in the process"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:158
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:159
+msgid "```python class Environment:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:161
+msgid ""
+"TILELANG_PRINT_ON_COMPILATION = EnvVar(\"TILELANG_PRINT_ON_COMPILATION\", "
+"\"0\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:163
+msgid ""
+"env = Environment() print(cfg.TILELANG_PRINT_ON_COMPILATION)  # Reads from "
+"os.environ (with default fallback) cfg.TILELANG_PRINT_ON_COMPILATION = "
+"\"1\"   # Forces value to \"1\" until changed/reset ```"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:169
+msgid "Benefits"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:170
+msgid "Centralizes all env-var keys and defaults in one place"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:171
+msgid "Live, up-to-date reads (no stale values after `import`)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:172
+msgid "Testing convenience (override without touching the real env)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:173
+msgid "Improves IDE discoverability and type hints"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:174
+msgid "Avoids hardcoding `os.environ.get(...)` in multiple places"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:190
+msgid ""
+"Called when the attribute is accessed. 1. If a forced value is set, return "
+"it and log a warning 2. Otherwise, look up the value in os.environ; return "
+"the default if missing"
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:198
+msgid ""
+"Called when the attribute is assigned to. Stores the value as a runtime "
+"override (forced value). Optionally, you can also sync this into os.environ "
+"for global effect."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:206
+msgid ""
+"Environment configuration for TileLang. Handles CUDA/ROCm detection, "
+"integration paths, template/cache locations, auto-tuning configs, and build "
+"options."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:291
+msgid "Return True if GEMM v1 should be used based on env."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:293
+msgid ""
+"Controlled by `TILELANG_USE_GEMM_V1`. Truthy values are one of {\"1\", "
+"\"true\", \"yes\", \"on\"} (case-insensitive)."
+msgstr ""

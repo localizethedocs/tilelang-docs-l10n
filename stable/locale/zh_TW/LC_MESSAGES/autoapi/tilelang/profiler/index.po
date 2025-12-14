@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/profiler/index.rst:2
+msgid "tilelang.profiler"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:8
+msgid "The profiler and convert to torch utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:13
+msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:22
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:28:<autosummary>:1
+msgid ":py:obj:`Profiler <tilelang.profiler.Profiler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:34
+#: ../../../autoapi/tilelang/profiler/index.rst:28:<autosummary>:1
+msgid ""
+"A profiler class for benchmarking and validating kernel implementations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:30
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:38
+msgid "List of kernel parameters defining the input/output specifications"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:42
+msgid "Indices indicating which parameters are output tensors"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:46
+msgid "Type of tensor supply to use (e.g., random, zeros, etc.)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:50
+msgid "Optional kernel adapter for interfacing with different backends"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:73
+msgid "Initialize tensor supply after dataclass initialization"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:82
+#: ../../../autoapi/tilelang/profiler/index.rst:94
+msgid "Validates kernel output against a reference implementation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:84
+#: ../../../autoapi/tilelang/profiler/index.rst:96
+msgid "Reference implementation to compare against"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:85
+#: ../../../autoapi/tilelang/profiler/index.rst:97
+#: ../../../autoapi/tilelang/profiler/index.rst:137
+msgid "Optional pre-generated input tensors"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:86
+#: ../../../autoapi/tilelang/profiler/index.rst:98
+msgid "Absolute tolerance for comparison"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:87
+#: ../../../autoapi/tilelang/profiler/index.rst:99
+msgid "Relative tolerance for comparison"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:88
+#: ../../../autoapi/tilelang/profiler/index.rst:100
+msgid "Maximum allowed ratio of mismatched elements"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:106
+msgid "Checks for kernel consistency across multiple runs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:108
+msgid "Number of times to repeat the consistency check"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:117
+msgid "Determines which profiler backend to use based on function type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:119
+msgid "Function to be profiled"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:120
+msgid "Explicitly specified profiler type or \"auto\" for automatic detection"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:122
+msgid "The determined profiler type (\"torch\" or \"tvm\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:129
+msgid "Benchmarks the execution time of a given function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:131
+msgid "Function to benchmark (uses adapter if None)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:132
+msgid "Warmup time in milliseconds"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:133
+msgid "Number of repetitions for timing"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:134
+msgid "Number of warmup iterations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:135
+msgid "Number of timing iterations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:136
+msgid "Which profiling backend to use"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:139
+msgid "Average execution time in milliseconds"
+msgstr ""

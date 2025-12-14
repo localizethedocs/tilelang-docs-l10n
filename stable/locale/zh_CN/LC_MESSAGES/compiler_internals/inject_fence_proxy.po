@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../compiler_internals/inject_fence_proxy.md:1
+msgid "InjectFenceProxy Pass"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:3
+msgid ""
+"`tl.InjectFenceProxy` is a TIR-level transform that keeps the GPU proxy "
+"state consistent on NVIDIA Hopper (SM90+) by inserting `fence.proxy.async` "
+"instructions when control flow switches from generic memory operations to "
+"asynchronous proxy operations."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:5
+msgid "Why Fences Are Needed"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:7
+msgid ""
+"Hopper separates memory instructions into generic and asynchronous proxy "
+"paths. When an asynchronous instruction (for example, `cp.async` or `tma."
+"load`) issues after generic traffic (like `ldmatrix` or plain buffer "
+"stores), the hardware requires a `fence.proxy.async` to guarantee ordering. "
+"Missing fences can lead to race conditions or undefined behavior."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:9
+msgid "What the Pass Does"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:11
+msgid ""
+"Walks every statement in the `PrimFunc`, tracking whether it behaves as a "
+"**generic**, **async**, or **neutral** proxy (neutral statements reset the "
+"state, such as an explicit fence)."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:12
+msgid ""
+"Automatically lowers `tma_store` intrinsics into the required `arrive`/"
+"`wait` handshake so that TMA stores participate correctly in synchronization."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:13
+msgid ""
+"Injects an explicit `fence.proxy.async` whenever a generic statement is "
+"followed by an async statement without an intervening neutral barrier."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:15
+msgid ""
+"The pass is conservative: unknown extern calls are treated as async so that "
+"the fence is inserted rather than accidentally omitted."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:17
+msgid "Timeline View"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:19
+msgid ""
+"generic initialize_wgmma_descriptor → generic shared-store → async wgmma\n"
+"             │                           │                   │\n"
+"             └─ generic proxy            ┴─ generic proxy    ┴─ async proxy\n"
+"                         │        fence inserted here   ↑\n"
+"                         └──────────────────────────────┘\n"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:27
+msgid ""
+"The proxy tracker scans the sequence from left to right. The moment it "
+"detects a transition from generic to async (between the store and `cp.async` "
+"above), it synthesizes a `fence.proxy.async` to reset the hardware proxy "
+"state before the async path runs."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:29
+msgid "Coverage of Intrinsics"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:31
+msgid ""
+"The tracker understands the TileLang intrinsics for TMA load/store, shared-"
+"memory MMA (`wgmma`), and TVM/PTX async copy intrinsics (`cp.async` "
+"variants). Generic operations currently include `ldmatrix`, `stmatrix`, and "
+"descriptor initialization. Other IR nodes (loops, blocks, attributes) "
+"receive a proxy kind derived from their bodies so that the analysis survives "
+"structured control flow."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:33
+msgid "Usage"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:35
+msgid ""
+"The pass is part of the default TileLang lowering pipeline. To apply it "
+"manually:"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:37
+msgid ""
+"from tilelang import tl\n"
+"from tvm import IRModule\n"
+"\n"
+"mod = IRModule({\"main\": prim_func})\n"
+"with tvm.transform.PassContext():\n"
+"    mod = tl.transform.InjectFenceProxy()(mod)\n"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:46
+msgid "End-to-End Example"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:48
+msgid "Before the pass:"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:50
+msgid ""
+"@T.prim_func\n"
+"def kernel():\n"
+"    with T.Kernel(1):\n"
+"        desc = T.decl_buffer((1,), \"uint64\", scope=\"local.descriptor\")\n"
+"        smem = T.decl_buffer((128,), \"float16\", scope=\"shared\")\n"
+"        T.initialize_wgmma_descriptor(desc, T.uint64(0), 2, 1, 32)\n"
+"        smem[0] = T.float16(0)\n"
+"        T.ptx_wgmma_ss(\n"
+"            \"float16\",\n"
+"            \"m64n64k16\",\n"
+"            T.bool(True),\n"
+"            T.bool(True),\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            smem.data,\n"
+"            T.int32(0),\n"
+"            T.bool(True),\n"
+"            1,\n"
+"            1,\n"
+"        )\n"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:78
+msgid "After `tl.transform.InjectFenceProxy`:"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:80
+msgid ""
+"@T.prim_func\n"
+"def kernel():\n"
+"    with T.Kernel(1):\n"
+"        desc = T.decl_buffer((1,), \"uint64\", scope=\"local.descriptor\")\n"
+"        smem = T.decl_buffer((128,), \"float16\", scope=\"shared\")\n"
+"        T.initialize_wgmma_descriptor(desc, T.uint64(0), 2, 1, 32)\n"
+"        smem[0] = T.float16(0)\n"
+"        T.fence_proxy_async()\n"
+"        T.ptx_wgmma_ss(\n"
+"            \"float16\",\n"
+"            \"m64n64k16\",\n"
+"            T.bool(True),\n"
+"            T.bool(True),\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            smem.data,\n"
+"            T.int32(0),\n"
+"            T.bool(True),\n"
+"            1,\n"
+"            1,\n"
+"        )\n"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:109
+msgid ""
+"The only change is the `fence_proxy_async` between the generic descriptor "
+"setup / shared-memory write and the async `wgmma`. In larger kernels the "
+"pass performs the same operation across nested blocks, loops, and "
+"conditional branches."
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:111
+msgid "Extending the Pass"
+msgstr ""
+
+#: ../../../compiler_internals/inject_fence_proxy.md:113
+msgid ""
+"If you introduce a new intrinsic that behaves like an async proxy, add it to "
+"`IsAsyncIntrinsic` in `src/transform/inject_fence_proxy.cc`. Likewise, "
+"extend `IsKnownGeneric` for additional generic operations. When adding new "
+"neutral barriers, make sure they set the proxy kind to `kNeutral` so the "
+"state resets correctly."
+msgstr ""

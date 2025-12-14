@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../compiler_internals/letstmt_inline.md:1
+msgid "LetStmt Inlining in TileLang"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:3
+msgid ""
+"This document explains how `LetStmt` inlining works in TileLang's "
+"simplification pipeline, which is an important optimization that affects "
+"code generation and performance."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:5
+msgid "Overview"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:7
+msgid ""
+"A `LetStmt` (Let Statement) is a temporary variable binding in the IR "
+"(Intermediate Representation). During compilation, TileLang's simplifier may "
+"choose to inline these temporary variables to simplify the code. TileLang "
+"also provides a standalone `LetInline` pass that performs eager substitution "
+"before the main legalization pipeline. However, not all `LetStmt` nodes can "
+"be safely inlined."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:9
+msgid "When Does LetStmt Get Inlined?"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:11
+msgid ""
+"The inlining logic is implemented in `src/transform/simplify.cc`. A "
+"`LetStmt` will be inlined if **both** of the following conditions are met:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:13
+msgid "1. The value satisfies `CanInlineLetStmt`"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:15
+msgid "The `CanInlineLetStmt` helper returns `true` when:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:17
+msgid "**The value is a constant** (`is_const_number(op->value)` returns true)"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:18
+msgid "**The value is a variable** (`op->value.as<VarNode>()` returns a node)"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:19
+msgid "**The value is an integer expression without side effects**:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:20
+msgid "The value has `int` dtype"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:21
+msgid "The side effect level is `kPure` or lower (no observable side effects)"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:23
+msgid ""
+"bool CanInlineLetStmt(const LetStmtNode *op) {\n"
+"  if (is_const_number(op->value))\n"
+"    return true;\n"
+"  if (op->value.as<VarNode>())\n"
+"    return true;\n"
+"  // Won't face the deep expression explosion problem as in Let expression.\n"
+"  // attempt to inline as much as possible if the value integer type(can be\n"
+"  // index).\n"
+"  if (!op->value.dtype().is_int())\n"
+"    return false;\n"
+"  return SideEffect(op->value) <= CallEffectKind::kPure;\n"
+"}\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:38
+msgid "2. The variable is NOT used in buffer definitions"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:40
+msgid ""
+"Even if `CanInlineLetStmt` returns true, the variable will **not** be "
+"inlined if it's used in a buffer's definition (shape, strides, elem_offset, "
+"or data fields)."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:42
+msgid "This protection exists because:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:43
+msgid "Buffer definitions are not updated during the simplification pass"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:44
+msgid ""
+"If a variable used in a buffer definition is inlined, later references to "
+"that buffer would fail to find the variable definition"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:45
+msgid "This would cause compilation errors or incorrect behavior"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:47
+msgid "The mutator checks this before dropping the binding:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:49
+msgid ""
+"bool used_in_buffer_def = used_in_buffer_def_.count(op->var.get());\n"
+"\n"
+"if (can_inline && !used_in_buffer_def) {\n"
+"    return body;  // Inline: remove LetStmt and return body directly\n"
+"}\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:57
+msgid "Example: Why Buffer Definition Variables Are Protected"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:59
+msgid "Consider this code:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:61
+msgid ""
+"let stride = M * 16\n"
+"let buffer_a = Buffer(data, shape=[M, N], strides=[stride, 1])\n"
+"buffer_a[i, j] = ...\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:67
+msgid ""
+"`stride` satisfies `CanInlineLetStmt` (it's an int expression with no side "
+"effects)"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:68
+msgid "However, `stride` is used in `buffer_a`'s `strides` field"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:69
+msgid "If we inline it, the buffer definition becomes `strides=[M*16, 1]`"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:70
+msgid "But the Buffer object's fields are not updated during simplification"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:71
+msgid ""
+"Later code accessing `buffer_a` would fail to find the `stride` variable"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:73
+msgid ""
+"Therefore, `stride` is added to `used_in_buffer_def_` and will **not** be "
+"inlined."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:75
+msgid "How Variables Are Collected"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:77
+msgid ""
+"The `CollectVarsUsedInBufferDefinition` helper traverses all `BufferLoad` "
+"and `BufferStore` nodes and collects variables used in their buffer "
+"definitions:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:79
+msgid ""
+"void VisitBuffer(const Buffer &buf) {\n"
+"  // Collect variables that should remain defined\n"
+"  VarUseDefAnalyzer usage(Array<Var>{});\n"
+"  usage(buf->data);\n"
+"  for (const auto &dim : buf->shape) {\n"
+"    usage(dim);\n"
+"  }\n"
+"  for (const auto &dim : buf->strides) {\n"
+"    usage(dim);\n"
+"  }\n"
+"  usage(buf->elem_offset);\n"
+"\n"
+"  // Track for use in LetStmtNode mutator\n"
+"  for (const auto &var : usage.undefined_) {\n"
+"    used_in_buffer_def_.insert(var.get());\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:99
+msgid "Practical Example: Temporary Variable Issue"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:101
+msgid "Consider this TileLang code:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:103
+msgid ""
+"for i in T.Parallel(block_N):\n"
+"    idx = bx * block_N + i\n"
+"    tmp = T.max(A[idx], 1)\n"
+"    B[idx] = tmp / 2\n"
+"    A[idx] = tmp * 2\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:111
+msgid "In this case:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:112
+msgid "`tmp` is an integer-like temporary variable"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:113
+msgid "It satisfies `CanInlineLetStmt` (pure int expression)"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:114
+msgid "It's **not** used in any buffer definition"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:115
+msgid "Therefore, `tmp` **will be inlined**"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:117
+msgid "This means the IR becomes:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:119
+msgid ""
+"for i in T.Parallel(block_N):\n"
+"    idx = bx * block_N + i\n"
+"    B[idx] = T.max(A[idx], 1) / 2\n"
+"    A[idx] = T.max(A[idx], 1) * 2\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:126
+msgid ""
+"If this causes issues (e.g., `A[idx]` being read twice with different values "
+"due to the first write), it indicates a potential problem with the inlining "
+"heuristic or the code pattern."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:128
+msgid "Controlling Let Inlining via Pass Config"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:130
+msgid ""
+"TileLang exposes an explicit pass configuration key, `tilelang.PassConfigKey."
+"TL_FORCE_LET_INLINE` (`\"tl.force_let_inline\"`), that allows users to force "
+"the eager `LetInline` pass to run before the legalization pipeline begins. "
+"When enabled, the pipeline invokes `tilelang.transform.LetInline()` at the "
+"start of `LowerAndLegalize` (see `tilelang/engine/phase.py`). This knob is "
+"useful when debugging LetStmt-related issues or when deterministic inlining "
+"behavior is desired across different environments."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:132
+msgid ""
+"from tilelang import transform\n"
+"from tilelang.engine.phase import LowerAndLegalize\n"
+"\n"
+"with transform.PassContext(\n"
+"    config={transform.PassConfigKey.TL_FORCE_LET_INLINE: True}\n"
+"):\n"
+"    lowered_mod = LowerAndLegalize(input_mod, target)\n"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:142
+msgid ""
+"If the flag is left unset (the default), the eager pass is only applied when "
+"downstream transforms opt in (for example, by calling `_Simplify(..., "
+"inline_let=True)` inside Tile operators). The guard in `tilelang/engine/"
+"phase.py` ensures the eager pass is only triggered when the user explicitly "
+"requests it."
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:144
+msgid "Summary"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:146
+msgid "The LetStmt inlining mechanism is a **conservative optimization** that:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:147
+msgid ""
+"Aggressively inlines simple, pure integer expressions to simplify the IR"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:148
+msgid ""
+"Protects variables used in buffer definitions to avoid breaking buffer access"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:149
+msgid "Helps reduce IR complexity and improve code generation"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:150
+msgid ""
+"Can be forced through `TL_FORCE_LET_INLINE` when deterministic eager "
+"inlining is required"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:152
+msgid "Understanding when inlining happens is crucial for:"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:153
+msgid "Debugging compilation issues"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:154
+msgid "Understanding generated code"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:155
+msgid "Writing efficient TileLang programs"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:156
+msgid "Identifying potential optimization opportunities or bugs"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:158
+msgid "Related Files"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:160
+msgid "`src/transform/simplify.cc`: Main Simplify implementation"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:161
+msgid "`src/transform/frontend_legalize.cc`: Standalone LetInline pass"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:162
+msgid "`tilelang/engine/phase.py`: Pipeline integration for eager LetInlining"
+msgstr ""
+
+#: ../../../compiler_internals/letstmt_inline.md:163
+msgid ""
+"`testing/python/transform/test_tilelang_transform_let_inline.py`: Regression "
+"coverage for the pass"
+msgstr ""

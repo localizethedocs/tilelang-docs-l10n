@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:2
+msgid "tilelang.carver.roller.hint"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:8
+msgid "Hint definition for schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`TensorCoreExtraConfig <tilelang.carver.roller.hint."
+"TensorCoreExtraConfig>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:29
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid "This class is used to store extra information for tensorcore"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid ":py:obj:`Stride <tilelang.carver.roller.hint.Stride>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:54
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid "Manages stride information for a given axis of a tensor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid ":py:obj:`TileDict <tilelang.carver.roller.hint.TileDict>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:81
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid "Manages tiling information and configurations for computational tasks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid ":py:obj:`IntrinInfo <tilelang.carver.roller.hint.IntrinInfo>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:143
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid "The information of tensorcore intrinsic related information"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid ":py:obj:`Hint <tilelang.carver.roller.hint.Hint>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:198
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
+msgid ""
+"Central configuration class for managing various parameters of computational "
+"tasks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:25
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/hint/index.rst:0
+msgid "Return type"
+msgstr ""

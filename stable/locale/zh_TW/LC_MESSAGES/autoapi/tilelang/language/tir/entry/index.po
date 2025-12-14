@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:2
+msgid "tilelang.language.tir.entry"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`prim_func <tilelang.language.tir.entry.prim_func>`\\ \\(\\[func\\, "
+"private\\, check\\_well\\_formed\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:21
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:15:<autosummary>:1
+msgid ""
+"The parsing method for tir prim func, by using `@prim_func` as decorator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`macro <tilelang.language.tir.entry.macro>`\\ \\(\\*args\\[\\, "
+"hygienic\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:40
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:15:<autosummary>:1
+msgid "Decorator for macro definitions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:23
+msgid ""
+"The function to be parsed as prim func. (Listed as optional to allow the "
+"decorator to be used without arguments, like `@prim_func`, or with an "
+"argument, `@prim_func(private=True)`)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:28
+msgid ""
+"Whether the function should be treated as private. A private function has no "
+"global symbol attribute; if the function is not private, it will have a "
+"global symbol matching the function name."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:34
+msgid "**res** -- The parsed tir prim func."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:42
+msgid ""
+"Specifies whether the macro is hygienic or not. A macro is hygienic if all "
+"symbols used in the macro's body are resolved to values from the location of "
+"the macro definition. A non-hygienic macro will have its symbols resolved to "
+"values at the time of the macro's use.  Example: ``` import tvm from tvm."
+"script import tir as T  x_value = 128  @T.macro(hygienic=True) def "
+"static_capture(A, B):     B[()] = A[x_value]          ### x_value binds to "
+"128  @T.macro(hygienic=False) def dynamic_capture(A, B):     B[()] = "
+"A[x_value]          ### x_value will bind at the time of use"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:42
+msgid ""
+"Specifies whether the macro is hygienic or not. A macro is hygienic if all "
+"symbols used in the macro's body are resolved to values from the location of "
+"the macro definition. A non-hygienic macro will have its symbols resolved to "
+"values at the time of the macro's use."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:47
+msgid "Example: ``` import tvm from tvm.script import tir as T"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:52
+msgid "x_value = 128"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:54
+msgid "@T.macro(hygienic=True) def static_capture(A, B):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:56
+msgid "B[()] = A[x_value]          ### x_value binds to 128"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:58
+msgid "@T.macro(hygienic=False) def dynamic_capture(A, B):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/entry/index.rst:60
+msgid "B[()] = A[x_value]          ### x_value will bind at the time of use"
+msgstr ""

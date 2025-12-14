@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:2
+msgid "tilelang.utils.tensor"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:8
+msgid "The profiler and convert to torch utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:19:<autosummary>:1
+msgid ":py:obj:`TensorSupplyType <tilelang.utils.tensor.TensorSupplyType>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:44
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:19:<autosummary>:1
+msgid "Create a collection of name/value pairs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`is_float8_dtype <tilelang.utils.tensor.is_float8_dtype>`\\ "
+"\\(dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`fp8_remove_negative_zeros_ <tilelang.utils.tensor."
+"fp8_remove_negative_zeros_>`\\ \\(tensor\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`map_torch_type <tilelang.utils.tensor.map_torch_type>`\\ "
+"\\(intype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`get_tensor_supply <tilelang.utils.tensor.get_tensor_supply>`\\ "
+"\\(\\[supply\\_type\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`torch_assert_close <tilelang.utils.tensor.torch_assert_close>`\\ "
+"\\(tensor\\_a\\, tensor\\_b\\[\\, rtol\\, atol\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:31:<autosummary>:1
+msgid ""
+"Custom function to assert that two tensors are \"close enough,\" allowing a "
+"specified"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:33
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:41
+msgid "Bases: :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:46
+msgid "Example enumeration:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:53
+msgid "Access them by:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:55
+msgid "attribute access:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:60
+msgid "value lookup:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:65
+msgid "name lookup:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:70
+msgid "Enumerations can be iterated over, and know how many members they have:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:78
+msgid ""
+"Methods can be added to enumerations, and members can have their own "
+"attributes -- see the documentation for details."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:123
+msgid ""
+"Custom function to assert that two tensors are \"close enough,\" allowing a "
+"specified percentage of mismatched elements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:127
+msgid "Parameters:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:128
+msgid "tensor_a"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:-1
+msgid "torch.Tensor"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:129
+msgid "The first tensor to compare."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:130
+msgid "tensor_b"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:131
+msgid "The second tensor to compare."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:132
+msgid "rtol"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:-1
+msgid "float, optional"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:133
+msgid "Relative tolerance for comparison. Default is 1e-2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:134
+msgid "atol"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:135
+msgid "Absolute tolerance for comparison. Default is 1e-3."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:136
+msgid "max_mismatched_ratio"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:137
+msgid ""
+"Maximum ratio of mismatched elements allowed (relative to the total number "
+"of elements). Default is 0.001 (0.1% of total elements)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:141
+msgid "Raises:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:142
+msgid "AssertionError:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:143
+msgid "If the ratio of mismatched elements exceeds `max_mismatched_ratio`."
+msgstr ""

@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:2
+msgid "tilelang.language.loop"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:8
+msgid "The language interface for tl programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:20:<autosummary>:1
+msgid ":py:obj:`Serial <tilelang.language.loop.Serial>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:20:<autosummary>:1
+msgid ":py:obj:`Unroll <tilelang.language.loop.Unroll>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:22
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`Parallel <tilelang.language.loop.Parallel>`\\ \\(\\*extents\\[\\, "
+"coalesced\\_width\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:38
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid "Tools to construct nested parallel for loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`Persistent <tilelang.language.loop.Persistent>`\\ \\(domain\\, "
+"wave\\_size\\, index\\[\\, group\\_size\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:52
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid "Tools to construct persistent for loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`Pipelined <tilelang.language.loop.Pipelined>`\\ \\(start\\[\\, "
+"stop\\, num\\_stages\\, order\\, stage\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:66
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid "Tools to construct pipelined for loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`serial <tilelang.language.loop.serial>`\\ \\(start\\[\\, stop\\, "
+"step\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`unroll <tilelang.language.loop.unroll>`\\ \\(start\\[\\, stop\\, "
+"step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:84
+#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+msgid "The unrolled For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:34
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:39
+msgid "This can be used to create element-wise tensor expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:41
+msgid "The extents of the iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:43
+msgid "The coalesced width of the parallel loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:46
+#: ../../../autoapi/tilelang/language/loop/index.rst:76
+#: ../../../autoapi/tilelang/language/loop/index.rst:99
+msgid "**res** -- The ForFrame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:54
+msgid "The list of dominators."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:56
+msgid "The wave size."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:58
+msgid "The tile index in one wave."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:60
+msgid "The group size."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:68
+#: ../../../autoapi/tilelang/language/loop/index.rst:86
+msgid "The minimum value of iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:70
+#: ../../../autoapi/tilelang/language/loop/index.rst:88
+msgid "The maximum value of iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:72
+msgid ""
+"The max number of buffer used between pipeline producers and consumers. if "
+"num_stages is 0, pipeline will not be enabled."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:90
+msgid "The step size of the iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:92
+msgid "Whether to explicitly unroll the loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:94
+msgid "The unroll factor of the loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:96
+msgid "The optional annotations of the For statement."
+msgstr ""
