@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:2
+msgid "tilelang.jit.adapter.tvm_ffi"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:8
+msgid "Utilities to adapt TVM FFI kernels to Torch tensors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:10
+msgid ""
+"This adapter intentionally captures PyTorch's current CUDA stream and device "
+"via light-weight callables so that, when the wrapped function is invoked, "
+"the execution observes the same stream context as the active Torch code. On "
+"non-CUDA builds, the stream/device fall back to 0/CPU semantics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:18
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TVMFFIKernelAdapter <tilelang.jit.adapter.tvm_ffi."
+"TVMFFIKernelAdapter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:33
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:24:<autosummary>:1
+msgid "Adapter that runs a TVM runtime.Executable with Torch tensors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:30
+msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:35
+msgid ""
+"Notes - We capture the \"current\" PyTorch CUDA stream/device as thunks "
+"(callables)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:37
+msgid ""
+"rather than materializing them at construction time. This ensures the actual "
+"stream/device is read just-in-time when the function runs, matching the "
+"user's current Torch context (e.g., after a stream guard/switch)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:40
+msgid ""
+"The stream pointer returned is a raw CUDA stream handle compatible with "
+"TVM's device API; on CPU or when CUDA is unavailable, we return 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:127
+msgid "Returns the source code of the host module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:133
+msgid "Returns the source code of the device module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:139
+msgid "Returns the source code of the compiled kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:147
+msgid "Returns the primary TIR function from the IR module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:0
+msgid "Return type"
+msgstr ""

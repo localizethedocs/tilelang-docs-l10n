@@ -1,0 +1,403 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:2
+msgid "tilelang.language.allocate"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:8
+msgid "Memory allocation utilities for Tile-AI programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:10
+msgid ""
+"This module provides a set of functions for allocating different types of "
+"memory buffers in Tile-AI programs. It wraps TVM's buffer allocation "
+"functionality with convenient interfaces for different memory scopes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:14
+msgid "Available allocation functions:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:15
+msgid ""
+"alloc_shared: Allocates shared memory buffers for inter-thread communication"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:16
+msgid "alloc_local: Allocates local memory buffers for thread-private storage"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:17
+msgid ""
+"alloc_fragment: Allocates fragment memory buffers for specialized operations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:18
+msgid "alloc_var: Allocates single-element variable buffers"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:20
+msgid ""
+"Each function takes shape and dtype parameters and returns a TVM buffer "
+"object with the appropriate memory scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:26
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:32:<autosummary>:1
+msgid ":py:obj:`DescKind <tilelang.language.allocate.DescKind>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:34
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_shared <tilelang.language.allocate.alloc_shared>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:58
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a shared memory buffer for inter-thread communication."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_local <tilelang.language.allocate.alloc_local>`\\ \\(shape\\, "
+"dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:73
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a local memory buffer for thread-private storage."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_fragment <tilelang.language.allocate.alloc_fragment>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:88
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a fragment memory buffer for specialized operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ":py:obj:`alloc_var <tilelang.language.allocate.alloc_var>`\\ \\(…\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:104
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a single-element variable buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_barrier <tilelang.language.allocate.alloc_barrier>`\\ "
+"\\(arrive\\_count\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:135
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a barrier buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_tmem <tilelang.language.allocate.alloc_tmem>`\\ \\(shape\\, "
+"dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:146
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+"Allocate a Tensor Memory (TMEM) buffer for use with 5th generation Tensor "
+"Core operations (e.g., TCGEN5.MMA)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_reducer <tilelang.language.allocate.alloc_reducer>`\\ "
+"\\(shape\\, dtype\\[\\, op\\, replication\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:172
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a reducer buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_descriptor <tilelang.language.allocate.alloc_descriptor>`\\ "
+"\\(\\[kind\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:201
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid "Allocate a descriptor buffer for WGMMA and TCGEN5.MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_wgmma_desc <tilelang.language.allocate.alloc_wgmma_desc>`\\ "
+"\\(\\[dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_tcgen05_smem_desc <tilelang.language.allocate."
+"alloc_tcgen05_smem_desc>`\\ \\(\\[dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_tcgen05_instruction_desc <tilelang.language.allocate."
+"alloc_tcgen05_instruction_desc>`\\ \\(\\[dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`alloc_tcgen05_instr_desc <tilelang.language.allocate."
+"alloc_tcgen05_instr_desc>`\\ \\(\\[dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
+msgid ""
+":py:obj:`empty <tilelang.language.allocate.empty>`\\ \\(shape\\[\\, "
+"dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:54
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:60
+#: ../../../autoapi/tilelang/language/allocate/index.rst:75
+#: ../../../autoapi/tilelang/language/allocate/index.rst:90
+#: ../../../autoapi/tilelang/language/allocate/index.rst:184
+msgid "The shape of the buffer to allocate"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:62
+#: ../../../autoapi/tilelang/language/allocate/index.rst:77
+#: ../../../autoapi/tilelang/language/allocate/index.rst:92
+#: ../../../autoapi/tilelang/language/allocate/index.rst:106
+#: ../../../autoapi/tilelang/language/allocate/index.rst:186
+msgid "The data type of the buffer (e.g., 'float32', 'int32')"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:64
+msgid "The memory scope. Defaults to \"shared.dyn\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:67
+msgid "A TVM buffer object allocated in shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:79
+msgid "The memory scope. Defaults to \"local\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:82
+msgid "A TVM buffer object allocated in local memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:94
+msgid "The memory scope. Defaults to \"local.fragment\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:97
+msgid "A TVM buffer object allocated in fragment memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:108
+msgid ""
+"Optional positional arguments. A single positional string is treated as the "
+"scope for backward compatibility. A single non-string positional argument "
+"(or keyword ``init``) specifies the initializer. When two positional "
+"arguments are provided, they are interpreted as ``(init, scope)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:113
+msgid ""
+"The memory scope. Defaults to \"local.var\". Use as keyword argument for "
+"clarity when also providing an initializer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:116
+msgid ""
+"The optional initializer value. When provided, the generated code will "
+"initialize the variable with this value instead of defaulting to zero."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:122
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:123
+msgid ""
+"a = T.alloc_var('int32', 1) # var with init 1 a = T.alloc_var('int32', "
+"'local.var') # var with local.var scope a = T.alloc_var('int32', 1, 'local."
+"var') # var with init 1 and local.var scope a = T.alloc_var('int32', 'local."
+"var', init=1) # var with init 1 and local.var scope a = T.alloc_var('int32', "
+"init=1) # var with init 1 and local.var scope"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:129
+msgid "A TVM buffer object allocated as a single-element variable"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:137
+msgid "The number of threads that need to arrive at the barrier"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:140
+msgid "A TVM buffer object allocated as a barrier"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:148
+msgid ""
+"TMEM is a dedicated on-chip memory introduced in Hopper GPUs, designed to "
+"reduce register pressure and enable asynchronous, single-threaded MMA "
+"operations. It is organized as a 2D array of 512 columns by 128 rows "
+"(lanes), with each cell being 32 bits. Allocation is performed in units of "
+"columns, and every lane of a column is allocated together."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:150
+msgid "Key properties and requirements:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:151
+msgid "The number of columns allocated must be a power of 2 and at least 32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:152
+msgid "TMEM allocations are dynamic and must be explicitly deallocated."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:153
+msgid "Both allocation and deallocation must be performed by the same warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:154
+msgid ""
+"The base address of the TMEM allocation is stored in shared memory and used "
+"as the offset for TCGEN5.MMA accumulator tensors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:155
+msgid ""
+"Only TCGEN5.MMA and specific TMEM load/store instructions can access TMEM; "
+"all pre-processing must occur before data is loaded into TMEM, and all post-"
+"processing after data is retrieved."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:156
+msgid ""
+"The number of columns allocated should not increase between any two "
+"allocations in the execution order within the CTA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:158
+msgid ""
+"Number of columns to allocate in TMEM. Must be a power of 2 and >= 32 but "
+"less than or equal to 512."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:161
+msgid ""
+"A TVM buffer object allocated in TMEM scope, suitable for use as an "
+"accumulator or operand in TCGEN5.MMA operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:166
+msgid ""
+"TMEM is only available on supported architectures (e.g., Hopper and later)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:167
+msgid ""
+"The buffer returned should be used according to TMEM access restrictions and "
+"deallocated appropriately."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:174
+msgid ""
+"Modifications needs to conform with `op`, such as `op=\"sum\"` requires "
+"`reducer[...] += ...` and `op=\"max\"` requires `reducer[...] = T."
+"max(reducer[...], ...)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:178
+msgid ""
+"Only after T.fill with proper initializer the reduction may begin; only "
+"after T.finalize_reducer the partial results will be available."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:181
+msgid ""
+"For `op=\"sum\"`, filled value must be 0; for min and max, the filled "
+"initializer will become max or min clamper correspondingly. You may want to "
+"use `T.max_value` for min and `T.min_value` for max."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:188
+msgid "The reduce operation corresponded with the reducer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:190
+msgid ""
+"Replication strategy, can be \"all\" or \"none\". Defaults to not specified, "
+"and the compiler will do whatever it want."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:193
+msgid ""
+"A TVM buffer object allocated in thread-private storage, available to reduce "
+"values in T.Parallel loops."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:203
+msgid ""
+"The descriptor kind, one of \"wgmma\", \"tcgen05\" (\"utcmma\" as alias)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/allocate/index.rst:205
+msgid "A TVM buffer object allocated as a descriptor"
+msgstr ""

@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:2
+msgid "tilelang.language.copy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:8
+msgid "The language interface for tl programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`copy <tilelang.language.copy.copy>`\\ \\(src\\, dst\\[\\, "
+"coalesced\\_width\\, disable\\_tma\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:26
+#: ../../../autoapi/tilelang/language/copy/index.rst:20:<autosummary>:1
+msgid "Copy data between memory regions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`c2d_im2col <tilelang.language.copy.c2d_im2col>`\\ \\(img\\, col\\, "
+"nhw\\_step\\, c\\_step\\, kernel\\, stride\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:59
+#: ../../../autoapi/tilelang/language/copy/index.rst:20:<autosummary>:1
+msgid "Perform im2col transformation for 2D convolution."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:28
+msgid "Source memory region"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:30
+msgid "Destination memory region"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:32
+msgid "Width for coalesced memory access. Defaults to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:35
+msgid "If copy extents cannot be deduced from arguments"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:37
+msgid "A handle to the copy operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:40
+msgid ""
+"Range handling notes: - Accepts `Buffer`/`BufferRegion`/`BufferLoad` on "
+"either side. Extents are"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:42
+msgid ""
+"derived as follows: `Buffer -> shape`, `BufferRegion -> [r.extent]`, "
+"`BufferLoad -> extents from its inferred/encoded region`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:44
+msgid ""
+"If both `src` and `dst` are scalar `BufferLoad` without region extents, "
+"lowers to a direct store: `dst[...] = src`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:46
+msgid ""
+"If one side is missing extents, it is treated as all-ones with the other "
+"side's rank to enable broadcasting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:48
+msgid ""
+"Extents are right-aligned and legalized via `legalize_pairwise_extents`: per "
+"tail-dimension, equal keeps as-is, a `1` broadcasts to the other, otherwise "
+"a conservative `tir.max` is used to remain safe for dynamic shapes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:52
+msgid ""
+"The finalized extents are encoded with `tl.region` via `to_buffer_region` "
+"and passed through to the backend; low-level loop construction and any scope-"
+"specific decisions happen during lowering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:61
+msgid "Input image buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:63
+msgid "Output column buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:65
+msgid "Step size for batch and spatial dimensions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:67
+msgid "Step size for channel dimension"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:69
+msgid "Kernel size"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:71
+msgid "Stride of the convolution"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:73
+msgid "Dilation rate"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:75
+msgid "Padding size"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy/index.rst:78
+msgid "A handle to the im2col operation"
+msgstr ""

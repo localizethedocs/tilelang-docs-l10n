@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:2
+msgid "tilelang.language.logical"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:8
+msgid "The language interface for tl programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:20:<autosummary>:1
+msgid ":py:obj:`any_of <tilelang.language.logical.any_of>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:26
+#: ../../../autoapi/tilelang/language/logical/index.rst:20:<autosummary>:1
+msgid "Check if any element in the buffer is true."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:20:<autosummary>:1
+msgid ":py:obj:`all_of <tilelang.language.logical.all_of>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:35
+#: ../../../autoapi/tilelang/language/logical/index.rst:20:<autosummary>:1
+msgid "Check if all elements in the buffer are true."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:28
+#: ../../../autoapi/tilelang/language/logical/index.rst:37
+msgid "Either a TVM buffer or buffer region to be checked"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:30
+#: ../../../autoapi/tilelang/language/logical/index.rst:39
+msgid "A TVM intrinsic call that performs the any operation"
+msgstr ""

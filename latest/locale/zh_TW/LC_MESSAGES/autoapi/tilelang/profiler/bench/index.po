@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:2
+msgid "tilelang.profiler.bench"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:8
+msgid "Profiler and benchmarking utilities for PyTorch functions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
+msgid ":py:obj:`IS_CUDA <tilelang.profiler.bench.IS_CUDA>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
+msgid ":py:obj:`device <tilelang.profiler.bench.device>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
+msgid ":py:obj:`Event <tilelang.profiler.bench.Event>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:23
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`suppress_stdout_stderr <tilelang.profiler.bench."
+"suppress_stdout_stderr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:43
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:29:<autosummary>:1
+msgid "Context manager to suppress stdout and stderr output."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`do_bench <tilelang.profiler.bench.do_bench>`\\ \\(fn\\[\\, "
+"warmup\\, rep\\, \\_n\\_warmup\\, \\_n\\_repeat\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:64
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:37:<autosummary>:1
+msgid "Benchmark the runtime of a PyTorch function with L2 cache management."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:45
+msgid ""
+"Source: https://github.com/deepseek-ai/DeepGEMM/blob/main/deep_gemm/testing/"
+"bench.py"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:66
+msgid ""
+"This function provides accurate GPU kernel timing by: - Clearing L2 cache "
+"between runs for consistent measurements - Auto-calculating warmup and "
+"repeat counts based on kernel runtime - Supporting multiple profiling "
+"backends (CUDA events or CUPTI) - Offering flexible result aggregation (mean/"
+"median/min/max/quantiles)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:72
+msgid "Function to benchmark"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:73
+msgid "Target warmup time in milliseconds (default: 25)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:74
+msgid "Target total benchmark time in milliseconds (default: 100)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:75
+msgid "Manual override for warmup iterations (default: 0 = auto)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:76
+msgid "Manual override for benchmark iterations (default: 0 = auto)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:77
+msgid "Performance percentiles to compute (e.g., [0.5, 0.95])"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:78
+msgid "Use faster L2 cache flush with int32 vs int8 (default: True)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:79
+msgid ""
+"Profiler backend - \"event\" (CUDA events) or \"cupti\" (default: \"event\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:80
+msgid "Result aggregation method - \"mean\", \"median\", \"min\", or \"max\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:82
+msgid ""
+"Runtime in milliseconds (float) or list of quantile values if quantiles "
+"specified"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:0
+msgid "Return type"
+msgstr ""

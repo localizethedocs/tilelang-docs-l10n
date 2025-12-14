@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:2
+msgid "tilelang.layout.layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:8
+msgid "Wrapping Layouts."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:19:<autosummary>:1
+msgid ":py:obj:`Layout <tilelang.layout.layout.Layout>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:25
+msgid "Bases: :py:obj:`tvm.ir.Node`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:30
+msgid "Property to retrieve the forward index of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:32
+msgid "The computed forward index expression(s)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:38
+msgid "Get the input shape of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:40
+msgid "The shape of the input layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:47
+msgid "Get the output shape of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:49
+msgid "The shape of the output layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:56
+msgid "Retrieve the iteration variables associated with the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:58
+msgid "A list of iteration variables that define the layout transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:68
+msgid "Compute the forward index mapping for a given set of input indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:70
+msgid "The input indices to be mapped to their corresponding output indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:73
+msgid "The mapped index expression for the provided input indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:80
+msgid "Compute the inverse of the current layout transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:82
+msgid "A new Layout object representing the inverse transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:89
+msgid "Check if the current layout is equal to another layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:91
+msgid "The layout to compare with."
+msgstr ""

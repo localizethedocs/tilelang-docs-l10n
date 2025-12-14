@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:2
+msgid "tilelang.jit.env"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:8
+msgid ""
+"Library information. This is a standalone file that can be used to get "
+"various info. Modified from flashinfer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:14
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`TILELANG_JIT_WORKSPACE_DIR <tilelang.jit.env."
+"TILELANG_JIT_WORKSPACE_DIR>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:22:<autosummary>:1
+msgid ":py:obj:`TILELANG_JIT_DIR <tilelang.jit.env.TILELANG_JIT_DIR>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`TILELANG_GEN_SRC_DIR <tilelang.jit.env.TILELANG_GEN_SRC_DIR>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/env/index.rst:24
+msgid "Module Contents"
+msgstr ""

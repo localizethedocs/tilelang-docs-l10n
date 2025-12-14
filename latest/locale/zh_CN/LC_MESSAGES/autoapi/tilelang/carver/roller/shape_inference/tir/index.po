@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:2
+msgid "tilelang.carver.roller.shape_inference.tir"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`Statement <tilelang.carver.roller.shape_inference.tir.Statement>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`TensorDepNode <tilelang.carver.roller.shape_inference.tir."
+"TensorDepNode>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:53
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:17:<autosummary>:1
+msgid "For tensor dependency analysis."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`DependencyAnalysis <tilelang.carver.roller.shape_inference.tir."
+"DependencyAnalysis>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`InputShapeInference <tilelang.carver.roller.shape_inference.tir."
+"InputShapeInference>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:19
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`region_exist_in_list <tilelang.carver.roller.shape_inference.tir."
+"region_exist_in_list>`\\ \\(a\\, list\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`walk_indice <tilelang.carver.roller.shape_inference.tir."
+"walk_indice>`\\ \\(expr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`get_analyzer_by_tir <tilelang.carver.roller.shape_inference.tir."
+"get_analyzer_by_tir>`\\ \\(block\\_analyzer\\, args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:99
+msgid ""
+"Finds the path (if it exists) from a starting node (source) to a target "
+"node. Returns the path as a list of nodes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:0
+msgid "Return type"
+msgstr ""

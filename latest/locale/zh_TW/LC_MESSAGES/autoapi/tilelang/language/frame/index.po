@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:2
+msgid "tilelang.language.frame"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:8
+msgid "Override the LetFrame to print a message when entering the frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:20:<autosummary>:1
+msgid ":py:obj:`FrameStack <tilelang.language.frame.FrameStack>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:35
+#: ../../../autoapi/tilelang/language/frame/index.rst:20:<autosummary>:1
+msgid ""
+"A stack-like container for managing TIR frame objects and their variable "
+"bindings."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:20:<autosummary>:1
+msgid ":py:obj:`LetFrame <tilelang.language.frame.LetFrame>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:109
+#: ../../../autoapi/tilelang/language/frame/index.rst:20:<autosummary>:1
+msgid ""
+"A TIR frame for let bindings that manages variable scope and value tracking."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:22
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`has_let_value <tilelang.language.frame.has_let_value>`\\ \\(var\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:176
+#: ../../../autoapi/tilelang/language/frame/index.rst:29:<autosummary>:1
+msgid "Check if a variable has a binding in the current let frame stack."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`get_let_value <tilelang.language.frame.get_let_value>`\\ \\(var\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:187
+#: ../../../autoapi/tilelang/language/frame/index.rst:29:<autosummary>:1
+msgid "Get the value bound to a variable in the current let frame stack."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:31
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:37
+msgid ""
+"This class implements a stack data structure using a deque and maintains a "
+"mapping of variables to their values. It provides methods for stack "
+"operations and variable value lookups."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:44
+msgid "Push an item onto the stack and update variable mapping if applicable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:46
+msgid "The frame object to push onto the stack"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:52
+msgid "Remove and return the top item from the stack."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:54
+#: ../../../autoapi/tilelang/language/frame/index.rst:85
+msgid "The top frame object from the stack"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:56
+#: ../../../autoapi/tilelang/language/frame/index.rst:87
+msgid "If the stack is empty"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:62
+msgid "Retrieve the value associated with a variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:64
+#: ../../../autoapi/tilelang/language/frame/index.rst:153
+#: ../../../autoapi/tilelang/language/frame/index.rst:189
+msgid "The variable to look up"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:66
+msgid "The value associated with the variable, or None if not found"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:72
+msgid "Check if a variable has an associated value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:74
+#: ../../../autoapi/tilelang/language/frame/index.rst:166
+#: ../../../autoapi/tilelang/language/frame/index.rst:178
+msgid "The variable to check"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:76
+msgid "True if the variable has an associated value, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:83
+msgid "Return the top item of the stack without removing it."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:93
+msgid "Returns the number of items in the stack."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:99
+msgid "Allows truthy checks on the stack object itself, e.g., 'if stack: ...'"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:106
+msgid "Bases: :py:obj:`tvm.script.ir_builder.tir.frame.TIRFrame`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:111
+msgid ""
+"This frame type extends TIRFrame to provide variable binding functionality "
+"and maintains a global stack of active bindings."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:117
+msgid "Enter the let frame scope and process buffer loads."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:119
+msgid "The variable bound in this frame"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:126
+msgid "Exit the let frame scope and clean up the stack."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:128
+msgid "Exception type if an exception occurred"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:129
+msgid "Exception value if an exception occurred"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:130
+msgid "Exception traceback if an exception occurred"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:138
+msgid "Get the current (topmost) let frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:140
+msgid "The current let frame"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:143
+msgid "If there are no active let frames"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:151
+msgid "Get the value bound to a variable in any active frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:156
+msgid "The value bound to the variable, or None if not found"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:164
+msgid "Check if a variable has a binding in any active frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:169
+#: ../../../autoapi/tilelang/language/frame/index.rst:181
+msgid "True if the variable has a binding, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/frame/index.rst:192
+msgid "The bound value if found, None otherwise"
+msgstr ""

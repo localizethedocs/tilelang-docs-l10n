@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:2
+msgid "tilelang.contrib.nvcc"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:8
+msgid "Utility to invoke nvcc compiler in the system"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`compile_cuda <tilelang.contrib.nvcc.compile_cuda>`\\ \\(code\\[\\, "
+"target\\_format\\, arch\\, options\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:44
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Compile cuda code with NVCC from env."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`default_compile_options <tilelang.contrib.nvcc."
+"default_compile_options>`\\ \\(\\[compile\\_flags\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:63
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+"Build a set of default NVCC compile options for TileLang generated sources."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_ptx_from_source <tilelang.contrib.nvcc.get_ptx_from_source>`\\ "
+"\\(code\\[\\, compile\\_flags\\, verbose\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:77
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Compile CUDA C++ source to PTX using NVCC and return as text."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_sass_from_source <tilelang.contrib.nvcc."
+"get_sass_from_source>`\\ \\(code\\[\\, compile\\_flags\\, verbose\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:92
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Compile CUDA C++ source to CUBIN and disassemble to SASS."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`find_cuda_path <tilelang.contrib.nvcc.find_cuda_path>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:109
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Utility function to find cuda path"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_cuda_version <tilelang.contrib.nvcc.get_cuda_version>`\\ "
+"\\(\\[cuda\\_path\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:117
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Utility function to get cuda version"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`find_libdevice_path <tilelang.contrib.nvcc.find_libdevice_path>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:129
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Utility function to find libdevice"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`callback_libdevice_path <tilelang.contrib.nvcc."
+"callback_libdevice_path>`\\ \\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_target_compute_version <tilelang.contrib.nvcc."
+"get_target_compute_version>`\\ \\(\\[target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:142
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Utility function to get compute capability of compilation target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`parse_compute_version <tilelang.contrib.nvcc."
+"parse_compute_version>`\\ \\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:156
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Parse compute capability string to divide major and minor version"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_target_arch <tilelang.contrib.nvcc.get_target_arch>`\\ "
+"\\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`have_fp16 <tilelang.contrib.nvcc.have_fp16>`\\ "
+"\\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:169
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Either fp16 support is provided in the compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`have_int8 <tilelang.contrib.nvcc.have_int8>`\\ "
+"\\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:177
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Either int8 support is provided in the compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`have_tensorcore <tilelang.contrib.nvcc.have_tensorcore>`\\ "
+"\\(\\[compute\\_version\\, target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:185
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Either TensorCore support is provided in the compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`have_cudagraph <tilelang.contrib.nvcc.have_cudagraph>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:196
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Either CUDA Graph support is provided"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`have_bf16 <tilelang.contrib.nvcc.have_bf16>`\\ "
+"\\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:201
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Either bf16 support is provided in the compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`have_fp8 <tilelang.contrib.nvcc.have_fp8>`\\ \\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:209
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+"Whether fp8 support is provided in the specified compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ":py:obj:`have_tma <tilelang.contrib.nvcc.have_tma>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:217
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+"Whether TMA support is provided in the specified compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ":py:obj:`is_hopper <tilelang.contrib.nvcc.is_hopper>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_nvcc_compiler <tilelang.contrib.nvcc.get_nvcc_compiler>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:227
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:38:<autosummary>:1
+msgid "Get the path to the nvcc compiler"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:40
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:46
+msgid "The cuda code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:48
+msgid "The target format of nvcc compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:50
+msgid "The cuda architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:52
+msgid "The additional options."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:54
+msgid "Output file."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:57
+msgid "**cubin** -- The bytearray of the cubin"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:65
+msgid ""
+"Includes C++ standard and common include paths (TileLang templates, CUTLASS, "
+"CUDA include). Merges user-provided compile flags if given."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:68
+msgid "Additional flags to include. Items are split on whitespace."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:71
+msgid "A list of flags suitable for NVCC's command line."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:79
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:96
+msgid "CUDA C++ kernel source code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:81
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:98
+msgid "Additional flags merged with defaults."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:83
+msgid "Print NVCC output when True."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:86
+msgid "PTX text."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:94
+msgid "Uses nvdisasm if available; otherwise falls back to cuobjdump."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:100
+msgid "Print tool outputs when True."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:103
+msgid "SASS text."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:111
+msgid "**path** -- Path to cuda root."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:119
+msgid ""
+"Path to cuda root.  If None is passed, will use `find_cuda_path()` as "
+"default."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:123
+msgid "**version** -- The cuda version"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:131
+msgid "The compute architecture in int"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:134
+msgid "**path** -- Path to libdevice."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:144
+msgid ""
+"Looks for the target arch in three different places, first in the target "
+"input, then the Target.current() scope, and finally the GPU device (if it "
+"exists)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:147
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:219
+msgid "The compilation target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:150
+msgid ""
+"**compute_version** -- compute capability of a GPU (e.g. \"8.6\" or \"9.0\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:158
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:171
+msgid "compute capability of a GPU (e.g. \"6.0\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:161
+msgid ""
+"* **major** (*int*) -- major version number * **minor** (*int*) -- minor "
+"version number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:161
+msgid "**major** (*int*) -- major version number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:162
+msgid "**minor** (*int*) -- minor version number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:179
+msgid "compute capability of a GPU (e.g. \"6.1\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:187
+msgid "compute capability of a GPU (e.g. \"7.0\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:189
+msgid ""
+"The compilation target, will be used to determine arch if compute_version "
+"isn't specified."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:203
+msgid "compute capability of a GPU (e.g. \"8.0\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvcc/index.rst:211
+msgid "GPU capability"
+msgstr ""

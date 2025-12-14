@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-12-14 00:33:00 +0800",
+        "hash" : "00dd738835bbd46f5da7a4df35b66578ba62ee55",
+        "title" : "[CUDA] Add read-only parameter annotation for CUDA codegen (#1416)"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "main",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-12-14 00:33:00 +0800",
+        "hash" : "00dd738835bbd46f5da7a4df35b66578ba62ee55",
+        "title" : "[CUDA] Add read-only parameter annotation for CUDA codegen (#1416)"
       }
     }
   },

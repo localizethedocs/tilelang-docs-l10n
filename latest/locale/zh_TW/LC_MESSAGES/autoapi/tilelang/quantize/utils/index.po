@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:2
+msgid "tilelang.quantize.utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`gen_quant4 <tilelang.quantize.utils.gen_quant4>`\\ \\(k\\, n\\[\\, "
+"groupsize\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`general_compress <tilelang.quantize.utils.general_compress>`\\ "
+"\\(lowprecision\\_weight\\[\\, source\\_bits\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`interleave_weight <tilelang.quantize.utils.interleave_weight>`\\ "
+"\\(qweight\\[\\, nbits\\, target\\_dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:26
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:16:<autosummary>:1
+msgid "Interleave the weight to the target data type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:18
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:28
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:35
+msgid "_description_"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:30
+msgid "_description_. Defaults to 4."
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:32
+msgid "_description_. Defaults to \"float16\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:39
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/quantize/utils/index.rst:40
+msgid ""
+"qweight = torch.randint(0, 127, (10, 10), dtype=torch.int8).cuda() "
+"interleave_weight(qweight, 4, \"float16\")"
+msgstr ""

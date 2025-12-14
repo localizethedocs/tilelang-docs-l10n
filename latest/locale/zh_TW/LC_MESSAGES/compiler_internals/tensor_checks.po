@@ -1,0 +1,944 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../compiler_internals/tensor_checks.md:1
+msgid "Tensor Checks (Host-Side Auto-Validation)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:3
+msgid ""
+"This page explains the host-side checks that TileLang automatically inserts "
+"into the generated host stub for kernels. When you pass `torch.Tensor` or "
+"any DLPack-compatible object to a TileLang kernel, the host stub validates "
+"argument count, pointer kinds, dtype, shape, strides, device, and more — so "
+"you don’t need to handwrite Python checks. This keeps the ABI stable and "
+"significantly reduces Python overhead compared to doing equivalent checks in "
+"Python or via pybind."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:5
+msgid "Why Host-Side Checks"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:6
+msgid ""
+"ABI stability: the entry is based on TVM FFI + DLPack, consistently "
+"accepting tensors and scalars."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:7
+msgid ""
+"Lower overhead: shifting checks from Python into C reduces interpreter/"
+"property-access costs; the call overhead is lower than pybind-based "
+"approaches."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:8
+msgid ""
+"Focused error reporting: assertions are raised close to the call site with "
+"precise “which field failed” messages."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:10
+msgid "How To Inspect Host Source"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:11
+msgid ""
+"You can inspect the auto-generated host source (with all checks and the "
+"final device-kernel call) for debugging:"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:13
+msgid "print(matmul_relu_kernel.get_host_source())\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:19
+msgid "What The Host Checks"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:21
+msgid "1) Argument count and pointer kind"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:22
+msgid ""
+"`num_args` must match the number of formal parameters; otherwise the kernel "
+"returns `-1` with an error message."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:23
+msgid ""
+"Each argument’s FFI type must be a pointer kind (for DLTensor/handle) or a "
+"valid scalar type; otherwise you’ll see errors like `Expect arg[i] to be "
+"pointer` or a scalar type error."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:25
+msgid "2) Tensor checks (per tensor, after nullability decision)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:26
+msgid "Nullability"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:27
+msgid ""
+"If the tensor is “statically reachable/used” by the function body, the "
+"handle must be non-NULL; otherwise: `xxx is expected to have non-NULL "
+"pointer`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:28
+msgid ""
+"If an input tensor is not used by the function (statically unreachable), "
+"NULL is allowed; other field checks are executed only when `handle != NULL`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:29
+msgid "Rank (`ndim`)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:30
+msgid "Runtime `ndim` must equal the compile-time rank."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:31
+msgid "Data type (`dtype`)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:32
+msgid "Match the triple `(code, bits, lanes)` with tolerance:"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:33
+msgid "`float8_e4m3`: accept `e4m3`, `e4m3fn`, `e4m3fnuz`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:34
+msgid "`float8_e5m2`: accept `e5m2`, `e5m2fnuz`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:35
+msgid ""
+"`bool`: accept `int8/uint8` with `bits=8` (same lanes), `kDLBool(code=6, "
+"bits=1 or 8)`, and any `bitwidth=1` (lanes must match)."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:36
+msgid ""
+"For packed-bit dtypes (e.g., `Int(1)`, `Int(4)`, `UInt(4)`), strict dtype "
+"checking is skipped."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:37
+#: ../../../compiler_internals/tensor_checks.md:221
+msgid "Shape"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:38
+msgid ""
+"Each runtime dimension is bound to the compile-time shape (constants or "
+"symbols) and checked for consistency."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:39
+msgid ""
+"Linear equations among symbolic dims can be solved on the fly (when there’s "
+"only one unknown at a given check point), enabling cross-tensor constraints."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:40
+#: ../../../compiler_internals/tensor_checks.md:223
+msgid "Strides"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:41
+msgid ""
+"If `buffer_type = AutoBroadcast`: allow `strides == NULL` and derive strides "
+"from `shape`. If explicit `strides` is present, bind to compile-time "
+"constraints and check for equality."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:42
+msgid ""
+"Otherwise: check per-dimension; if `strides == NULL`, derive from `shape` "
+"and compare (e.g., contiguous: `strides[-1] == 1`, `strides[-2] == "
+"shape[-1]`)."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:43
+msgid "`byte_offset`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:44
+msgid ""
+"Must be 0 (non-zero raises an error) to keep addressing simple and aligned."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:45
+msgid "Device info"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:46
+msgid ""
+"Assert `device_type == target backend` (CUDA/ROCM/Metal/OneAPI/WebGPU/CPU, "
+"etc.). Error messages include a DLPack code legend."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:47
+msgid ""
+"When multiple tensors participate, assert that `device_id` matches across "
+"them."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:48
+#: ../../../compiler_internals/tensor_checks.md:229
+msgid "Data pointer"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:49
+msgid ""
+"Must be non-NULL when the tensor is required to be non-null by the "
+"nullability rule."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:51
+msgid "3) Scalar checks"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:52
+msgid "`T.int*` family: require integer; error: `Expect arg[i] to be int`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:53
+msgid "`T.bool`: require boolean; error: `Expect arg[i] to be boolean`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:57
+msgid "Shapes and Symbolic Equations: Linear Solving"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:58
+msgid ""
+"When shapes are symbolic, the host binds and (when possible) solves linear "
+"relations at runtime (only one unknown per check point). Example:"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:60
+msgid ""
+"@T.prim_func\n"
+"def main(\n"
+"    A: T.Tensor((m,), dtype),\n"
+"    B: T.Tensor((m + n,), dtype),\n"
+"    C: T.Tensor((n * k,), dtype),\n"
+"):\n"
+"    ...\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:70
+msgid ""
+"This enables enforcing cross-tensor relationships like `len(B) == m + n` and "
+"`len(C) == n * k` at runtime."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:74
+msgid "Nullability Rules and Examples"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:75
+msgid "Which tensors may be NULL?"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:77
+msgid ""
+"Rule: If an input tensor is not used by the function under static analysis "
+"(i.e., the access is statically unreachable), it is considered Nullable; "
+"otherwise it must be non-NULL."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:78
+msgid "Examples:"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:80
+msgid "Must be non-NULL (used)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:81
+msgid ""
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype)):\n"
+"    A[0] = 1\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:86
+msgid ""
+"Passing `None` raises: `main.A_handle is expected to have non-NULL pointer`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:88
+msgid "Still must be non-NULL (constant-true branch)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:89
+msgid ""
+"some_cond: bool = True\n"
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype)):\n"
+"    if some_cond:\n"
+"        A[0] = 1\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:97
+msgid "Nullable (constant-false branch, statically unreachable)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:98
+msgid ""
+"some_cond: bool = False\n"
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype)):\n"
+"    if some_cond:\n"
+"        A[0] = 1\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:106
+msgid "Must be non-NULL (runtime condition)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:107
+msgid ""
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype), some_cond: T.bool):\n"
+"    if some_cond:\n"
+"        A[0] = 1\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:113
+msgid ""
+"Since `some_cond` is only known at runtime, static analysis cannot prove `A` "
+"is unused; `A` is thus non-nullable."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:117
+msgid "Device Type Codes (DLPack)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:118
+msgid ""
+"Supported and referenced device codes in error messages: `1=CPU, 2=CUDA, "
+"7=Vulkan, 8=Metal, 10=ROCM, 14=OneAPI, 15=WebGPU`. Kernels assert that "
+"`device_type` matches the target backend, and require `device_id` "
+"consistency across tensors."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:123
+msgid "Common Error Examples (What you’ll see)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:124
+msgid "Argument count mismatch (num_args)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:125
+msgid "Trigger: missing/extra argument"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:126
+msgid "Error: `<kernel>: num_args should be N; expected: <num_args>, got: N`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:128
+msgid "Pointer-typed argument expected"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:129
+msgid "Trigger: scalar passed where a tensor is expected"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:130
+msgid "Error: `<kernel>: Expect arg[i] to be pointer`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:132
+msgid "Rank (ndim) mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:133
+msgid "Trigger: runtime rank differs from compile-time rank"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:134
+msgid ""
+"Error: `<kernel>.<name>.ndim is expected to equal R, but got mismatched ndim`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:136
+msgid "Dtype mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:137
+msgid ""
+"Trigger: dtype not equal to the compiled dtype and not within the tolerance "
+"set"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:138
+msgid ""
+"Error: `<kernel>.<name>.dtype is expected to be <dtype>, but got "
+"incompatible dtype`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:140
+msgid "Shape constraint violation"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:141
+msgid "Trigger: a dimension doesn’t match a constant/symbol binding"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:142
+msgid ""
+"Error: `Argument <kernel>.<name>.shape[i] has an unsatisfied constraint: ... "
+"== <expected>`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:144
+msgid "Strides check failed (e.g., non-contiguous layout)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:145
+msgid "Trigger: transposed/sliced tensors that violate expected strides"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:146
+msgid ""
+"Error: `Argument <kernel>.<name>.strides[j] has an unsatisfied "
+"constraint: ... == <expected>`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:148
+msgid "Device type mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:149
+msgid "Trigger: calling a CUDA kernel with CPU tensors, etc."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:150
+msgid ""
+"Error: `<kernel>.<name>.device_type mismatch [expected: <code> (<name>)] ...`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:152
+msgid "Device id mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:153
+msgid "Trigger: mixing tensors from different GPUs"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:154
+msgid ""
+"Error: `Argument <kernel>.<name>.device_id has an unsatisfied "
+"constraint: ... == ...`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:156
+msgid "NULL data pointer"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:157
+msgid "Trigger: tensor required to be non-null has a NULL data pointer"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:158
+msgid ""
+"Error: `<kernel>.<name> is expected to have non-NULL data pointer, but got "
+"NULL`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:160
+msgid "Scalar type mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:161
+msgid "Trigger: passing float to `T.int32`, or non-boolean to `T.bool`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:162
+msgid "Error: `<kernel>: Expect arg[i] to be int/boolean`"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:166
+msgid "Troubleshooting Tips"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:167
+msgid ""
+"Print the host source: `print(fn.get_host_source())` to see the exact "
+"assertion and expected vs. actual fields."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:168
+msgid ""
+"Fix strides: call `.contiguous()` for non-contiguous tensors, or avoid "
+"generating transposed/sliced layouts that break assumptions."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:169
+msgid ""
+"Align devices: ensure all participating tensors share the same `device_type` "
+"and `device_id`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:170
+msgid ""
+"Align dtype: use `.to(<dtype>)` or construct tensors with the correct dtype; "
+"pay attention to `float8` and `bool` tolerance."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:171
+msgid ""
+"Dynamic shapes: ensure cross-tensor linear relations can be uniquely "
+"determined at the check point (only one unknown at a time)."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:175
+msgid "FAQ"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:176
+msgid "Can I disable the checks?"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:177
+msgid ""
+"Not recommended and usually not supported. Checks are done on the host to "
+"preserve ABI stability and fail early close to the device call."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:178
+msgid "Is the overhead noticeable?"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:179
+msgid ""
+"The checks are lightweight (branches and field reads). Compared to Python-"
+"side checks, it’s faster; the dominating cost remains the Python→C boundary. "
+"Overall it’s cheaper than equivalent checks in Python."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:183
+msgid "Reference Example (Matmul + ReLU)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:185
+msgid ""
+"@T.prim_func\n"
+"def matmul_relu_kernel(\n"
+"    A: T.Tensor((M, K), dtype),\n"
+"    B: T.Tensor((K, N), dtype),\n"
+"    C: T.Tensor((M, N), dtype),\n"
+"):\n"
+"    # Initialize Kernel Context\n"
+"    with T.Kernel(T.ceildiv(N, block_N), T.ceildiv(M, block_M), threads=128) "
+"as (bx, by):\n"
+"        A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"        B_shared = T.alloc_shared((block_K, block_N), dtype)\n"
+"        C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"        T.clear(C_local)\n"
+"        for ko in T.Pipelined(T.ceildiv(K, block_K), num_stages=0):\n"
+"            T.copy(A[by * block_M, ko * block_K], A_shared)\n"
+"            T.copy(B[ko * block_K, bx * block_N], B_shared)\n"
+"            T.gemm(A_shared, B_shared, C_local)\n"
+"        T.copy(C_local, C[by * block_M, bx * block_N])\n"
+"\n"
+"# For debugging, print the host source\n"
+"print(matmul_relu_kernel.get_host_source())\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:208
+msgid "The host will insert all checks described above for this example."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:212
+msgid "Quick Error Reference (Short List)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:213
+msgid "Argument count"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:214
+msgid ""
+"Trigger: missing/extra args; Error: `num_args should be N; expected: "
+"<num_args>, got: N`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:215
+msgid "Pointer kind"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:216
+msgid ""
+"Trigger: scalar passed to tensor arg; Error: `Expect arg[i] to be pointer`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:217
+msgid "Rank (ndim)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:218
+msgid ""
+"Trigger: runtime rank != compile-time; Error: `ndim ... expected to equal R`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:219
+msgid "Dtype"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:220
+msgid ""
+"Trigger: mismatch and not tolerated; Error: `dtype ... expected to be "
+"<dtype>`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:222
+msgid ""
+"Trigger: constant/symbol binding violated; Error: `shape[i] ... == "
+"<expected>`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:224
+msgid "Trigger: layout mismatch; Error: `strides[j] ... == <expected>`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:225
+msgid "Device type"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:226
+msgid ""
+"Trigger: wrong backend device; Error: `device_type mismatch [expected: ...]`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:227
+msgid "Device id"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:228
+msgid "Trigger: tensors on different GPUs; Error: `device_id ... == ...`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:230
+msgid "Trigger: required non-NULL but NULL; Error: `non-NULL data pointer`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:231
+msgid "Scalar types"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:232
+msgid "Trigger: wrong scalar type; Error: `Expect arg[i] to be int/boolean`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:236
+msgid "Host Error Troubleshooting (Minimal Repros)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:238
+msgid ""
+"Below are minimal repro snippets for common host-side errors, assuming a "
+"CUDA-targeted kernel like `matmul_relu_kernel` with:"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:240
+msgid ""
+"# Convention:\n"
+"# A: float16 [M, K]\n"
+"# B: float16 [K, N]\n"
+"# C: float16 [M, N]\n"
+"# Target: CUDA (device_type=2)\n"
+"fn = matmul_relu_kernel  # your compiled function\n"
+"M = N = K = 1024\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:250
+msgid "Adjust dtype/device if your kernel differs."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:252
+msgid "0. Tip: print the host source"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:253
+msgid "print(fn.get_host_source())\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:257
+msgid "1. num_args mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:258
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda', dtype=torch.float16)\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"# Missing C\n"
+"fn(A, B)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:266
+msgid ""
+"Expected: `<kernel>: num_args should be 3; expected: <num_args>, got: 3`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:268
+msgid "Fix: pass all arguments per the signature."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:270
+msgid "2. Expect pointer (tensor) but got scalar"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:271
+msgid ""
+"import torch\n"
+"\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(1, B, C)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:278
+msgid "Expected: `<kernel>: Expect arg[0] to be pointer`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:280
+msgid "Fix: pass a DLPack-compatible tensor (e.g., torch.Tensor)."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:282
+msgid "3. ndim mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:283
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K, 1), device='cuda', dtype=torch.float16)  # rank=3\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:291
+msgid ""
+"Expected: `<kernel>.A_handle.ndim is expected to equal 2, but got mismatched "
+"ndim`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:293
+msgid "Fix: ensure runtime rank equals compiled rank."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:295
+msgid "4. dtype mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:296
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda', dtype=torch.float32)  # should be "
+"float16\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:304
+msgid ""
+"Expected: `<kernel>.A_handle.dtype is expected to be float16, but got "
+"incompatible dtype`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:306
+msgid "Fix: `A = A.to(torch.float16)` or create with the correct dtype."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:308
+msgid "5. Shape constant/symbol mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:309
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K + 1), device='cuda', dtype=torch.float16)  # K "
+"mismatched\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:317
+msgid ""
+"Expected: `Argument <kernel>.A_handle.shape[i] has an unsatisfied "
+"constraint: ... == <expected>`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:319
+msgid "Fix: satisfy linear constraints and constants across tensors."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:321
+msgid "6. Strides check failure (non-contiguous)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:322
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda', dtype=torch.float16)\n"
+"A_nc = A.t()  # transpose -> non-contiguous\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A_nc, B, C)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:331
+msgid ""
+"Expected: `Argument <kernel>.A_handle.strides[1] has an unsatisfied "
+"constraint: ... == 1`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:333
+msgid ""
+"Fix: pass `A_nc.contiguous()` or align the layout expectation in the kernel."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:335
+msgid "7. device_type mismatch"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:336
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cpu', dtype=torch.float16)\n"
+"B = torch.empty((K, N), device='cpu', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cpu', dtype=torch.float16)\n"
+"fn(A, B, C)  # CUDA-targeted kernel\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:344
+msgid ""
+"Expected: `<kernel>.A_handle.device_type mismatch [expected: 2 (cuda)] ...`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:346
+msgid "Fix: move tensors to the CUDA device."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:348
+msgid "8. device_id mismatch (multi-GPU)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:349
+msgid ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda:0', dtype=torch.float16)\n"
+"B = torch.empty((K, N), device='cuda:1', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda:0', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:357
+msgid ""
+"Expected: `Argument <kernel>.B_handle.device_id has an unsatisfied "
+"constraint: ... == ...`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:359
+msgid "Fix: place all tensors on the same GPU (e.g., `cuda:0`)."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:361
+msgid "9. NULL data pointer (advanced)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:362
+msgid ""
+"This usually comes from hand-constructed DLTensor/NDArray, or external "
+"frameworks passing unallocated/freed storage. Regular `torch.Tensor` "
+"allocations rarely hit this."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:364
+msgid ""
+"Expected: `<kernel>.<name> is expected to have non-NULL data pointer, but "
+"got NULL`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:366
+msgid ""
+"Fix: ensure valid underlying storage; in PyTorch scenarios, avoid "
+"constructing tensors from invalid external handles."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:368
+msgid "10. Scalar type mismatch (int / bool)"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:369
+msgid ""
+"import tilelang.language as T\n"
+"\n"
+"@T.prim_func\n"
+"def scalar_check(x: T.int32, flag: T.bool()):\n"
+"    T.evaluate(0)\n"
+"\n"
+"scalar_check(1.0, True)  # x is float -> Expect arg[0] to be int\n"
+"scalar_check(1, 2.5)     # flag is float -> Expect arg[1] to be boolean\n"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:380
+msgid "Fix: pass correct scalar types, e.g., `scalar_check(1, True)`."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:384
+msgid "Closing Notes"
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:385
+msgid ""
+"Cross-check “shape / strides / device / dtype” against the kernel signature "
+"to localize issues efficiently."
+msgstr ""
+
+#: ../../../compiler_internals/tensor_checks.md:386
+msgid ""
+"For complex symbolic relations, print the host source to confirm binding/"
+"solving order, then adjust runtime shapes/layouts accordingly."
+msgstr ""
