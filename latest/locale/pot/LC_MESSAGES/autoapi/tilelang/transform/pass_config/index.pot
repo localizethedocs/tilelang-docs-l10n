@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:2
+msgid "tilelang.transform.pass_config"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`PassConfigKey <tilelang.transform.pass_config.PassConfigKey>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:23
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:14:<autosummary>:1
+msgid "Pass configuration keys for TileLang compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:20
+msgid "Bases: :py:obj:`str`, :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:30
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:255
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:273
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:300
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:318
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:336
+msgid "True"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:0
+msgid "type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:32
+msgid "Enable/disable TileLang simplification passes. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:39
+msgid "16"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:41
+msgid "Memory alignment requirement for dynamic shapes. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:48
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:57
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:94
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:112
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:121
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:130
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:139
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:148
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:157
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:166
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:186
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:195
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:264
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:282
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:291
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:309
+msgid "False"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:50
+msgid "Disable dynamic tail splitting optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:59
+msgid "Disable warp specialization optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:66
+msgid "True will be deprecated in the 0.1.7 release"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:69
+msgid "Disable fast math optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:76
+msgid "False if enabled, --use_fast_math will be passed to nvcc"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:79
+msgid "Enable fast math optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:86
+msgid ""
+"The PTXAS register usage level in [0, 10], which controls the aggressiveness "
+"of optimizations that affect register usage. Default: None"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:96
+msgid "Enable ptxas verbose output. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:103
+msgid "32"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:105
+msgid "Bitwidth for configuration indices. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:114
+msgid "Disable TMA (Tensor Memory Access) lowering. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:123
+msgid "Disable safe memory access optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:132
+msgid "Disable usage of LDG/STG 256. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:141
+msgid "Disable usage of Hopper WGMMA. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:150
+msgid "Enable debug information for merge shared memory allocations. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:159
+msgid "Enable aggressive merge of shared memory allocations. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:168
+msgid "Disable shuffle election optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:175
+msgid ""
+"Disable thread storage synchronization pass. When enabled, disables the "
+"automatic insertion of thread synchronization barriers (e.g., "
+"__syncthreads()) for shared memory access coordination. This can be useful "
+"for performance optimization in cases where manual synchronization is "
+"preferred or when synchronization is not needed. Default: False"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:188
+msgid "Force TileLang to inline let bindings during simplification. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:197
+msgid "Enable layout inference visualization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:204
+msgid ""
+"Layout visualization formats. Acceptable values: \"pdf\", \"png\", \"svg\", "
+"\"all\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:212
+msgid "Control StorageRewrite inplace detection."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:214
+msgid ""
+"When False (default) StorageRewrite keeps distinct temporaries for patterns "
+"such as `dst[i] = f(src[i])`, avoiding implicit aliasing:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:217
+msgid ""
+"``` read = T.allocate([1], \"int32\", \"local.var\") write = T.allocate([1], "
+"\"int32\", \"local.var\") read_buf = T.Buffer((1,), \"int32\", data=read, "
+"scope=\"local.var\") write_buf = T.Buffer((1,), \"int32\", data=write, "
+"scope=\"local.var\") write_buf[0] = read_buf[0] * 2 f(write_buf[0]) ```"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:226
+msgid ""
+"Setting the flag to True allows StorageRewrite to reuse the `read` buffer "
+"for the write when it can prove the update is safely inplace, producing IR "
+"like:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:230
+msgid ""
+"``` read = T.allocate([1], \"int32\", \"local.var\") read_buf = T."
+"Buffer((1,), \"int32\", data=read, scope=\"local.var\") read_buf[0] = "
+"read_buf[0] * 2 f(read_buf[0]) ```"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:237
+msgid ""
+"This reduces local memory usage but introduces aliasing between the buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:239
+msgid "Usage:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:241
+msgid "```python from tilelang.transform import PassContext, PassConfigKey"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:244
+msgid "with PassContext("
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:245
+msgid "config={PassConfigKey.TL_STORAGE_REWRITE_DETECT_INPLACE.value: True}"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:246
+msgid "):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:247
+msgid "mod = tilelang.transform.StorageRewrite()(mod)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:248
+msgid "```"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:257
+msgid ""
+"Enable equivalent terms in TIR Common Subexpression Elimination. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:266
+msgid "Disable TIR Common Subexpression Elimination. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:275
+msgid "Enable/disable TIR simplification passes. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:284
+msgid "Disable storage rewrite optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:293
+msgid "Disable vectorization optimization. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:302
+msgid "Enable asynchronous memory copy operations. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:311
+msgid "Enable debug information in generated code. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:320
+msgid "Merge static shared memory allocations. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:327
+msgid "None"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:329
+msgid "Additional lowering passes to be applied. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:338
+msgid "Enable pointer non-aliasing assumptions. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:345
+msgid "empty string"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:347
+msgid "Output directory for generated CUDA kernels. Default"
+msgstr ""

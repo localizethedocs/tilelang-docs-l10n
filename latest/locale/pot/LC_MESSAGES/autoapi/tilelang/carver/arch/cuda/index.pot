@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:2
+msgid "tilelang.carver.arch.cuda"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:14:<autosummary>:1
+msgid ":py:obj:`CUDA <tilelang.carver.arch.cuda.CUDA>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`is_cuda_arch <tilelang.carver.arch.cuda.is_cuda_arch>`\\ \\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`is_volta_arch <tilelang.carver.arch.cuda.is_volta_arch>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`is_ampere_arch <tilelang.carver.arch.cuda.is_ampere_arch>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`is_ada_arch <tilelang.carver.arch.cuda.is_ada_arch>`\\ \\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`is_hopper_arch <tilelang.carver.arch.cuda.is_hopper_arch>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`has_mma_support <tilelang.carver.arch.cuda.has_mma_support>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`is_tensorcore_supported_precision <tilelang.carver.arch.cuda."
+"is_tensorcore_supported_precision>`\\ \\(in\\_dtype\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:30
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:48
+msgid "Bases: :py:obj:`tilelang.carver.arch.arch_base.TileDevice`"
+msgstr ""
