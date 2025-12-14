@@ -1,0 +1,509 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../get_started/Installation.md:1
+msgid "Installation Guide"
+msgstr ""
+
+#: ../../../get_started/Installation.md:3
+msgid "Installing with pip"
+msgstr ""
+
+#: ../../../get_started/Installation.md:5
+msgid "**Prerequisites for installation via wheel or PyPI:**"
+msgstr ""
+
+#: ../../../get_started/Installation.md:7
+msgid "**glibc**: 2.28 (Ubuntu 20.04 or later)"
+msgstr ""
+
+#: ../../../get_started/Installation.md:8
+#: ../../../get_started/Installation.md:40
+msgid "**Python Version**: >= 3.8"
+msgstr ""
+
+#: ../../../get_started/Installation.md:9
+msgid "**CUDA Version**: 12.0 <= CUDA < 13"
+msgstr ""
+
+#: ../../../get_started/Installation.md:11
+msgid ""
+"The easiest way to install tilelang is directly from PyPI using pip. To "
+"install the latest version, run the following command in your terminal:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:13
+msgid "pip install tilelang\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:17
+msgid ""
+"Alternatively, you may choose to install tilelang using prebuilt packages "
+"available on the Release Page:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:19
+msgid "pip install tilelang-0.0.0.dev0+ubuntu.20.4.cu120-py3-none-any.whl\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:23
+msgid ""
+"To install the latest version of tilelang from the GitHub repository, you "
+"can run the following command:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:25
+msgid "pip install git+https://github.com/tile-ai/tilelang.git\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:29
+msgid "After installing tilelang, you can verify the installation by running:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:31
+msgid "python -c \"import tilelang; print(tilelang.__version__)\"\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:35
+msgid "Building from Source"
+msgstr ""
+
+#: ../../../get_started/Installation.md:37
+msgid "**Prerequisites for building from source:**"
+msgstr ""
+
+#: ../../../get_started/Installation.md:39
+msgid "**Operating System**: Linux"
+msgstr ""
+
+#: ../../../get_started/Installation.md:41
+msgid "**CUDA Version**: >= 10.0"
+msgstr ""
+
+#: ../../../get_started/Installation.md:43
+msgid ""
+"If you prefer Docker, please skip to the [Install Using Docker](#install-"
+"using-docker) section. This section focuses on building from source on a "
+"native Linux environment."
+msgstr ""
+
+#: ../../../get_started/Installation.md:45
+msgid ""
+"First, install the OS-level prerequisites on Ubuntu/Debian-based systems "
+"using the following commands:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:47
+msgid ""
+"apt-get update\n"
+"apt-get install -y python3 python3-dev python3-setuptools gcc zlib1g-dev "
+"build-essential cmake libedit-dev\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:52
+msgid ""
+"Then, clone the tilelang repository and install it using pip. The `-v` flag "
+"enables verbose output during the build process."
+msgstr ""
+
+#: ../../../get_started/Installation.md:54
+msgid ""
+"**Note**: Use the `--recursive` flag to include necessary submodules. "
+"Tilelang currently depends on a customized version of TVM, which is included "
+"as a submodule. If you prefer [Building with Existing TVM Installation]"
+"(#using-existing-tvm), you can skip cloning the TVM submodule (but still "
+"need other dependencies)."
+msgstr ""
+
+#: ../../../get_started/Installation.md:56
+msgid ""
+"git clone --recursive https://github.com/tile-ai/tilelang.git\n"
+"cd tilelang\n"
+"pip install . -v\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:62
+msgid ""
+"If you want to install tilelang in development mode, you can use the `-e` "
+"flag so that any changes to the Python files will be reflected immediately "
+"without reinstallation."
+msgstr ""
+
+#: ../../../get_started/Installation.md:64
+msgid "pip install -e . -v\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:68
+msgid ""
+"**Note**: changes to C++ files require rebuilding the tilelang C++ library. "
+"See [Faster Rebuild for Developers](#faster-rebuild-for-developers) below. A "
+"default `build` directory will be created if you use `pip install`, so you "
+"can also directly run `make` in the `build` directory to rebuild it as "
+"[Working from Source via PYTHONPATH](#working-from-source-via-pythonpath) "
+"suggested below."
+msgstr ""
+
+#: ../../../get_started/Installation.md:72
+msgid "Working from Source via `PYTHONPATH`"
+msgstr ""
+
+#: ../../../get_started/Installation.md:74
+msgid ""
+"If you prefer to work directly from the source tree via `PYTHONPATH`, make "
+"sure the native extension is built first:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:76
+msgid ""
+"mkdir -p build\n"
+"cd build\n"
+"cmake .. -DUSE_CUDA=ON\n"
+"make -j\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:82
+msgid ""
+"Then add the repository root to `PYTHONPATH` before importing `tilelang`, "
+"for example:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:84
+msgid ""
+"export PYTHONPATH=/path/to/tilelang:$PYTHONPATH\n"
+"python -c \"import tilelang; print(tilelang.__version__)\"\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:89
+msgid "Some useful CMake options you can toggle while configuring:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:90
+msgid ""
+"`-DUSE_CUDA=ON|OFF` builds against NVIDIA CUDA (default ON when CUDA headers "
+"are found)."
+msgstr ""
+
+#: ../../../get_started/Installation.md:91
+msgid "`-DUSE_ROCM=ON` selects ROCm support when building on AMD GPUs."
+msgstr ""
+
+#: ../../../get_started/Installation.md:92
+msgid ""
+"`-DNO_VERSION_LABEL=ON` disables the backend/git suffix in `tilelang."
+"__version__`."
+msgstr ""
+
+#: ../../../get_started/Installation.md:96
+msgid "Building with Customized TVM Path"
+msgstr ""
+
+#: ../../../get_started/Installation.md:98
+msgid ""
+"If you already have a TVM codebase, use the `TVM_ROOT` environment variable "
+"to specify the location of your existing TVM repository when building "
+"tilelang:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:100
+msgid "TVM_ROOT=<your-tvm-repo> pip install . -v\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:104
+msgid ""
+"**Note**: This will still rebuild the TVM-related libraries (stored in "
+"`TL_LIBS`). And this method often leads to some path issues. Check `env.py` "
+"to see some environment variables which are not set properly."
+msgstr ""
+
+#: ../../../get_started/Installation.md:108
+msgid "Install Using Docker"
+msgstr ""
+
+#: ../../../get_started/Installation.md:110
+msgid ""
+"For users who prefer a containerized environment with all dependencies pre-"
+"configured, tilelang provides Docker images for different CUDA versions. "
+"This method is particularly useful for ensuring consistent environments "
+"across different systems."
+msgstr ""
+
+#: ../../../get_started/Installation.md:112
+msgid "**Prerequisites:**"
+msgstr ""
+
+#: ../../../get_started/Installation.md:113
+msgid "Docker installed on your system"
+msgstr ""
+
+#: ../../../get_started/Installation.md:114
+msgid ""
+"NVIDIA Docker runtime or GPU is not necessary for building tilelang, you can "
+"build on a host without GPU and use that built image on other machine."
+msgstr ""
+
+#: ../../../get_started/Installation.md:116
+msgid "**Clone the Repository**:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:118
+msgid ""
+"git clone --recursive https://github.com/tile-ai/tilelang\n"
+"cd tilelang\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:123
+msgid "**Build Docker Image**:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:125
+msgid ""
+"Navigate to the docker directory and build the image for your desired CUDA "
+"version:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:127
+msgid ""
+"cd docker\n"
+"docker build -f Dockerfile.cu120 -t tilelang-cu120 .\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:132
+msgid "Available Dockerfiles:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:133
+msgid "`Dockerfile.cu120` - For CUDA 12.0"
+msgstr ""
+
+#: ../../../get_started/Installation.md:134
+msgid "Other CUDA versions may be available in the docker directory"
+msgstr ""
+
+#: ../../../get_started/Installation.md:136
+msgid "**Run Docker Container**:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:138
+msgid "Start the container with GPU access and volume mounting:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:140
+msgid ""
+"docker run -itd \\\n"
+"  --shm-size 32g \\\n"
+"  --gpus all \\\n"
+"  -v /home/tilelang:/home/tilelang \\\n"
+"  --name tilelang_b200 \\\n"
+"  tilelang-cu120 \\\n"
+"  /bin/zsh\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:150
+msgid "**Command Parameters Explanation:**"
+msgstr ""
+
+#: ../../../get_started/Installation.md:151
+msgid "`--shm-size 32g`: Increases shared memory size for better performance"
+msgstr ""
+
+#: ../../../get_started/Installation.md:152
+msgid "`--gpus all`: Enables access to all available GPUs"
+msgstr ""
+
+#: ../../../get_started/Installation.md:153
+msgid ""
+"`-v /home/tilelang:/home/tilelang`: Mounts host directory to container "
+"(adjust path as needed)"
+msgstr ""
+
+#: ../../../get_started/Installation.md:154
+msgid ""
+"`--name tilelang_b200`: Assigns a name to the container for easy management"
+msgstr ""
+
+#: ../../../get_started/Installation.md:155
+msgid "`/bin/zsh`: Uses zsh as the default shell"
+msgstr ""
+
+#: ../../../get_started/Installation.md:157
+msgid "**Access the Container and Verify Installation**:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:159
+msgid ""
+"docker exec -it tilelang_b200 /bin/zsh\n"
+"# Inside the container:\n"
+"python -c \"import tilelang; print(tilelang.__version__)\"\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:165
+msgid "Install with Nightly Version"
+msgstr ""
+
+#: ../../../get_started/Installation.md:167
+msgid ""
+"For users who want access to the latest features and improvements before "
+"official releases, we provide nightly builds of tilelang."
+msgstr ""
+
+#: ../../../get_started/Installation.md:169
+msgid ""
+"pip install tilelang -f https://tile-ai.github.io/whl/nightly/cu121/\n"
+"# or pip install tilelang --find-links https://tile-ai.github.io/whl/nightly/"
+"cu121/\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:174
+msgid ""
+"**Note:** Nightly builds contain the most recent code changes but may be "
+"less stable than official releases. They're ideal for testing new features "
+"or if you need a specific bugfix that hasn't been released yet."
+msgstr ""
+
+#: ../../../get_started/Installation.md:176
+msgid "Install Configs"
+msgstr ""
+
+#: ../../../get_started/Installation.md:178
+msgid "Build-time environment variables"
+msgstr ""
+
+#: ../../../get_started/Installation.md:179
+msgid ""
+"`USE_CUDA`: If to enable CUDA support, default: `ON` on Linux, set to `OFF` "
+"to build a CPU version. By default, we'll use `/usr/local/cuda` for building "
+"tilelang. Set `CUDAToolkit_ROOT` to use different cuda toolkit."
+msgstr ""
+
+#: ../../../get_started/Installation.md:181
+msgid ""
+"`USE_ROCM`: If to enable ROCm support, default: `OFF`. If your ROCm SDK does "
+"not located in `/opt/rocm`, set `USE_ROCM=<rocm_sdk>` to enable build ROCm "
+"against custom sdk path."
+msgstr ""
+
+#: ../../../get_started/Installation.md:183
+msgid "`USE_METAL`: If to enable Metal support, default: `ON` on Darwin."
+msgstr ""
+
+#: ../../../get_started/Installation.md:185
+msgid "`TVM_ROOT`: TVM source root to use."
+msgstr ""
+
+#: ../../../get_started/Installation.md:187
+msgid ""
+"`NO_VERSION_LABEL` and `NO_TOOLCHAIN_VERSION`: When building tilelang, we'll "
+"try to embed SDK and version information into package version as below, "
+"where local version label could look like `<sdk>.git<git_hash>`. Set "
+"`NO_VERSION_LABEL=ON` to disable this behavior."
+msgstr ""
+
+#: ../../../get_started/Installation.md:190
+msgid ""
+"$ python -mbuild -w\n"
+"...\n"
+"Successfully built tilelang-0.1.6.post1+cu116.git0d4a74be-cp38-abi3-"
+"linux_x86_64.whl\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:196
+msgid ""
+"where `<sdk>={cuda,rocm,metal}`. Specifically, when `<sdk>=cuda` and "
+"`CUDA_VERSION` is provided via env, `<sdk>=cu<cuda_major><cuda_minor>`, "
+"similar with this part in pytorch. Set `NO_TOOLCHAIN_VERSION=ON` to disable "
+"this."
+msgstr ""
+
+#: ../../../get_started/Installation.md:200
+msgid "Run-time environment variables"
+msgstr ""
+
+#: ../../../get_started/Installation.md:202
+msgid ""
+"Please refer to the `env.py` file for a full list of supported run-time "
+"environment variables."
+msgstr ""
+
+#: ../../../get_started/Installation.md:204
+msgid "Other Tips"
+msgstr ""
+
+#: ../../../get_started/Installation.md:206
+msgid "IDE Configs"
+msgstr ""
+
+#: ../../../get_started/Installation.md:208
+msgid ""
+"Building tilelang locally will automatically generate a `compile_commands."
+"json` file in `build` dir. VSCode with clangd and [clangd extension](https://"
+"marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-"
+"clangd) should be able to index that without extra configuration."
+msgstr ""
+
+#: ../../../get_started/Installation.md:211
+msgid "Compile Cache"
+msgstr ""
+
+#: ../../../get_started/Installation.md:213
+msgid ""
+"The default path of the compile cache is `~/.tilelang/cache`. `ccache` will "
+"be automatically used if found."
+msgstr ""
+
+#: ../../../get_started/Installation.md:215
+msgid "Repairing Wheels"
+msgstr ""
+
+#: ../../../get_started/Installation.md:217
+msgid ""
+"If you plan to use your wheel in other environment, it's recommended to use "
+"auditwheel (on Linux) or delocate (on Darwin) to repair them."
+msgstr ""
+
+#: ../../../get_started/Installation.md:223
+msgid "Faster Rebuild for Developers"
+msgstr ""
+
+#: ../../../get_started/Installation.md:225
+msgid ""
+"`pip install` introduces extra [un]packaging and takes ~30 sec to complete, "
+"even if no source change."
+msgstr ""
+
+#: ../../../get_started/Installation.md:228
+msgid "Developers who needs to recompile frequently could use:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:230
+msgid ""
+"pip install -r requirements-dev.txt\n"
+"pip install -e . -v --no-build-isolation\n"
+"\n"
+"cd build; ninja\n"
+msgstr ""
+
+#: ../../../get_started/Installation.md:237
+msgid "When running in editable/developer mode, you'll see logs like below:"
+msgstr ""
+
+#: ../../../get_started/Installation.md:240
+msgid ""
+"$ python -c 'import tilelang'\n"
+"2025-10-14 11:11:29  [TileLang:tilelang.env:WARNING]: Loading tilelang libs "
+"from dev root: /Users/yyc/repo/tilelang/build\n"
+msgstr ""

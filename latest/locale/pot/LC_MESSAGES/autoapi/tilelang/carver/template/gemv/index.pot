@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:2
+msgid "tilelang.carver.template.gemv"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:14:<autosummary>:1
+msgid ":py:obj:`GEMVTemplate <tilelang.carver.template.gemv.GEMVTemplate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:23
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:14:<autosummary>:1
+msgid "A template for Generalized Matrix-Vector Multiplication (GEMV)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:20
+msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:25
+msgid ""
+"This template defines the computation for a matrix-vector multiplication "
+"with configurable parameters such as transposition, data types, and bias "
+"addition."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:73
+msgid "Retrieves optimized hardware-aware configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:75
+msgid "The target hardware architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:77
+msgid "Number of top configurations to consider."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:80
+msgid "A list of optimization hints for hardware acceleration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:87
+msgid "Defines and initializes the GEMV computation function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:89
+msgid ""
+"This method sets up placeholders for input matrices, computes the matrix-"
+"vector multiplication using TVM's compute API, and optionally applies bias "
+"and type casting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:97
+msgid "Returns the template parameters as a dictionary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:99
+msgid "Dictionary containing template parameter values."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:106
+msgid "Returns the class attributes in dictionary form."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:108
+msgid "Dictionary of class attributes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:114
+msgid "Returns a string representation of the class instance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/gemv/index.rst:116
+msgid "A formatted string representation of the class."
+msgstr ""

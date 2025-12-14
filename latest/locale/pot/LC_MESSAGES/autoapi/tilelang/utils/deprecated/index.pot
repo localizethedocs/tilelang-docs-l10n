@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:2
+msgid "tilelang.utils.deprecated"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`deprecated_warning <tilelang.utils.deprecated."
+"deprecated_warning>`\\ \\(method\\_name\\, new\\_method\\_name\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:21
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:15:<autosummary>:1
+msgid "A function to indicate that a method is deprecated"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`deprecated <tilelang.utils.deprecated.deprecated>`\\ "
+"\\(method\\_name\\, new\\_method\\_name\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:26
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:15:<autosummary>:1
+msgid "A decorator to indicate that a method is deprecated"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:28
+msgid "The name of the method to deprecate"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:30
+msgid "The name of the new method to use instead"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/deprecated/index.rst:32
+msgid "The version to phase out the method"
+msgstr ""

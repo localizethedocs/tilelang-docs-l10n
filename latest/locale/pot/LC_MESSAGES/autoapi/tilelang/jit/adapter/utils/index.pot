@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:2
+msgid "tilelang.jit.adapter.utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`TMADescriptorParams <tilelang.jit.adapter.utils."
+"TMADescriptorParams>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:92
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:14:<autosummary>:1
+msgid "Parsed TMA descriptor parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`match_global_kernel <tilelang.jit.adapter.utils."
+"match_global_kernel>`\\ \\(source\\[\\, annotation\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`match_declare_kernel <tilelang.jit.adapter.utils."
+"match_declare_kernel>`\\ \\(source\\[\\, annotation\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`match_declare_kernel_cpu <tilelang.jit.adapter.utils."
+"match_declare_kernel_cpu>`\\ \\(source\\[\\, annotation\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`is_cuda_target <tilelang.jit.adapter.utils.is_cuda_target>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`is_hip_target <tilelang.jit.adapter.utils.is_hip_target>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`is_cpu_target <tilelang.jit.adapter.utils.is_cpu_target>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`is_metal_target <tilelang.jit.adapter.utils.is_metal_target>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`get_annotated_mod <tilelang.jit.adapter.utils.get_annotated_mod>`\\ "
+"\\(func\\_or\\_mod\\[\\, target\\, target\\_host\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`pythonic_expr <tilelang.jit.adapter.utils.pythonic_expr>`\\ "
+"\\(expr\\[\\, dtype\\_map\\, ignore\\_cast\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:55
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+"Converts a TVM PrimExpr into a Python-style string, correctly handling "
+"operator precedence."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`maybe_desc_name <tilelang.jit.adapter.utils.maybe_desc_name>`\\ "
+"\\(name\\, matches\\, i\\[\\, desc\\_name\\_map\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:66
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid "Check if a parameter name corresponds to a TMA descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`parse_function_call_args <tilelang.jit.adapter.utils."
+"parse_function_call_args>`\\ \\(declaration\\, function\\_args\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:78
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid "Parse function call arguments from a kernel declaration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`parse_tma_descriptor_args <tilelang.jit.adapter.utils."
+"parse_tma_descriptor_args>`\\ \\(tma\\_descriptor\\_args\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:186
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:33:<autosummary>:1
+msgid "Parse TMA descriptor arguments into structured parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:57
+msgid "The TVM PrimExpr to convert."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:58
+msgid "A dictionary mapping data types to their string representations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:59
+msgid ""
+"Whether to ignore the cast operator and return the string representation of "
+"the value without the cast."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:61
+msgid "A string representation of the expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:68
+msgid "The parameter name to check."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:69
+msgid "List of all matched parameter names."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:70
+msgid "Index of the current match."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:71
+msgid "Optional mapping to store descriptor name relationships."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:73
+msgid "True if the parameter is a TMA descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:80
+msgid "The kernel function declaration string."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:81
+msgid "List of function argument specifications."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:82
+msgid "List of function parameters from TVM IR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:83
+msgid "Optional mapping for descriptor names."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:84
+msgid "Optional mapping from descriptor names to TVM variables."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:85
+msgid "Optional function to transform each argument (name, type) -> result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:87
+msgid "List of parsed call arguments."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:188
+msgid "Dictionary mapping TMA descriptor variables to their arguments."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:189
+msgid "Mapping from descriptor handles to parameter names."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:190
+msgid "Mapping from descriptor handles to TVM variables."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:191
+msgid "Function to convert TVM expressions to strings."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:193
+msgid "List of parsed TMA descriptor parameters."
+msgstr ""
