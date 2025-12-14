@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:2
+msgid "tilelang.carver.template.conv"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:14:<autosummary>:1
+msgid ":py:obj:`ConvTemplate <tilelang.carver.template.conv.ConvTemplate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:23
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:14:<autosummary>:1
+msgid "A template for convolution (Conv)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:20
+msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:25
+msgid ""
+"This class defines the computation for a matrix-matrix convolution with "
+"configurable parameters such as transposition, data types, and bias addition."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:30
+msgid "The number of input samples processed simultaneously in a batch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:0
+msgid "type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:32
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:38
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:44
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:50
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:56
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:62
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:68
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:74
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:80
+msgid "int"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:36
+msgid "The number of input feature maps."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:42
+msgid "The height of the input feature maps."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:48
+msgid "The width of the input feature maps."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:54
+msgid "The number of filters (kernels) applied, determining output depth."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:60
+msgid "The spatial dimensions of each convolutional filter."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:66
+msgid "The step size by which the kernel slides across the input."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:72
+msgid ""
+"The spacing between kernel elements, controlling receptive field expansion."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:78
+msgid ""
+"The number of pixels added to input borders to control output spatial "
+"dimensions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:84
+msgid "Data type of input matrices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:86
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:92
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:98
+msgid "str"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:90
+msgid "Data type of output matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:96
+msgid "Data type used for accumulation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:102
+msgid "Whether to add a bias term."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:104
+msgid "bool"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:169
+msgid "Retrieves optimized hardware-aware configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:171
+msgid "The target hardware architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:173
+msgid "Number of top configurations to consider."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:176
+msgid "A list of optimization hints for hardware acceleration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:183
+msgid "Defines and initializes the convolution computation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:185
+msgid ""
+"This method sets up placeholders for input matrices, computes the "
+"convolution using TVM's compute API, and optionally applies bias and type "
+"casting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:189
+msgid "If N, C, H, W, F, K, S, D, P are not positive integers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:195
+msgid "Returns the template parameters as a dictionary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:197
+msgid "Dictionary containing template parameter values."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:204
+msgid "Returns the class attributes in dictionary form."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:206
+msgid "Dictionary of class attributes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:212
+msgid "Returns a string representation of the class instance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/conv/index.rst:214
+msgid "A formatted string representation of the class."
+msgstr ""
