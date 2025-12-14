@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:2
+msgid "tilelang.language.reduce"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:8
+msgid "The language interface for tl programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce <tilelang.language.reduce.reduce>`\\ \\(buffer\\, out\\, "
+"reduce\\_type\\, dim\\, clear\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:41
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform a reduction operation on a buffer along a specified dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_max <tilelang.language.reduce.reduce_max>`\\ \\(buffer\\, "
+"out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:60
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform reduce max on input buffer, store the result to output buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_min <tilelang.language.reduce.reduce_min>`\\ \\(buffer\\, "
+"out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:77
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform reduce min on input buffer, store the result to output buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_sum <tilelang.language.reduce.reduce_sum>`\\ \\(buffer\\, "
+"out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:94
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform reduce sum on input buffer, store the result to output buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_abssum <tilelang.language.reduce.reduce_abssum>`\\ "
+"\\(buffer\\, out\\[\\, dim\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:121
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Perform reduce absolute sum on input buffer, store the result to output "
+"buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_absmax <tilelang.language.reduce.reduce_absmax>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:136
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Perform reduce absolute max on input buffer, store the result to output "
+"buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_bitand <tilelang.language.reduce.reduce_bitand>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:151
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Perform reduce bitwise-and on input buffer, store the result to output "
+"buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_bitor <tilelang.language.reduce.reduce_bitor>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:166
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Perform reduce bitwise-or on input buffer, store the result to output buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`reduce_bitxor <tilelang.language.reduce.reduce_bitxor>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:181
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Perform reduce bitwise-xor on input buffer, store the result to output "
+"buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`cumsum_fragment <tilelang.language.reduce.cumsum_fragment>`\\ "
+"\\(src\\, dst\\, dim\\, reverse\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`cumsum <tilelang.language.reduce.cumsum>`\\ \\(src\\[\\, dst\\, "
+"dim\\, reverse\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:198
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Compute the cumulative sum of `src` along `dim`, writing results to `dst`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`finalize_reducer <tilelang.language.reduce.finalize_reducer>`\\ "
+"\\(reducer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:232
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+"Finalize a reducer buffer by emitting the `tl.tileop.finalize_reducer` "
+"intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_sum <tilelang.language.reduce.warp_reduce_sum>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:246
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform warp reduction sum on a register value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_max <tilelang.language.reduce.warp_reduce_max>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:261
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform warp reduction max on a register value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_min <tilelang.language.reduce.warp_reduce_min>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:276
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform warp reduction min on a register value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_bitand <tilelang.language.reduce.warp_reduce_bitand>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:291
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform warp reduction bitwise-and on a register value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_bitor <tilelang.language.reduce.warp_reduce_bitor>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:306
+#: ../../../autoapi/tilelang/language/reduce/index.rst:35:<autosummary>:1
+msgid "Perform warp reduction bitwise-or on a register value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:37
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:43
+msgid "Input buffer to reduce"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:45
+msgid "Output buffer to store results"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:47
+msgid "Type of reduction ('max', 'min', 'sum', 'abssum')"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:49
+msgid "Dimension along which to perform reduction"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:51
+msgid "Whether to initialize the output buffer before reduction"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:54
+#: ../../../autoapi/tilelang/language/reduce/index.rst:88
+#: ../../../autoapi/tilelang/language/reduce/index.rst:115
+#: ../../../autoapi/tilelang/language/reduce/index.rst:130
+#: ../../../autoapi/tilelang/language/reduce/index.rst:145
+#: ../../../autoapi/tilelang/language/reduce/index.rst:160
+#: ../../../autoapi/tilelang/language/reduce/index.rst:175
+#: ../../../autoapi/tilelang/language/reduce/index.rst:190
+msgid "Handle to the reduction operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:62
+msgid "The input buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:64
+msgid "The output buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:66
+#: ../../../autoapi/tilelang/language/reduce/index.rst:83
+#: ../../../autoapi/tilelang/language/reduce/index.rst:100
+#: ../../../autoapi/tilelang/language/reduce/index.rst:127
+#: ../../../autoapi/tilelang/language/reduce/index.rst:142
+#: ../../../autoapi/tilelang/language/reduce/index.rst:157
+#: ../../../autoapi/tilelang/language/reduce/index.rst:172
+#: ../../../autoapi/tilelang/language/reduce/index.rst:187
+msgid "The dimension to perform reduce on"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:68
+msgid "If set to True, the output buffer will first be initialized to -inf."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:71
+msgid "**handle**"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:79
+#: ../../../autoapi/tilelang/language/reduce/index.rst:96
+#: ../../../autoapi/tilelang/language/reduce/index.rst:123
+#: ../../../autoapi/tilelang/language/reduce/index.rst:138
+#: ../../../autoapi/tilelang/language/reduce/index.rst:153
+#: ../../../autoapi/tilelang/language/reduce/index.rst:168
+#: ../../../autoapi/tilelang/language/reduce/index.rst:183
+msgid "The input buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:81
+#: ../../../autoapi/tilelang/language/reduce/index.rst:98
+#: ../../../autoapi/tilelang/language/reduce/index.rst:125
+#: ../../../autoapi/tilelang/language/reduce/index.rst:140
+#: ../../../autoapi/tilelang/language/reduce/index.rst:155
+#: ../../../autoapi/tilelang/language/reduce/index.rst:170
+#: ../../../autoapi/tilelang/language/reduce/index.rst:185
+msgid "The output buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:85
+msgid "If True, output buffer will be initialized to inf. Defaults to True."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:102
+msgid ""
+"If True, output buffer will be cleared before reduction. If False, results "
+"will be accumulated on existing values. Defaults to True."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:107
+msgid ""
+"Note: When clear=True, reduce_sum will not compute directly on the output "
+"buffer. This is because"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:108
+msgid ""
+"during warp reduction, the same value would be accumulated multiple times "
+"(number of threads in the warp). Therefore, the implementation with "
+"clear=True follows these steps:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:110
+msgid "create a temp buffer with same shape and dtype as out"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:111
+msgid "copy out to temp buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:112
+msgid "call reduce_sum with temp buffer and out"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:113
+msgid "Add temp buffer to out"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:200
+msgid ""
+"Negative `dim` indices are normalized (Python-style). If `dst` is None, the "
+"operation is performed in-place into `src`. Raises ValueError when `dim` is "
+"out of bounds for `src.shape`. When `src.scope() == \"local.fragment\"`, "
+"this delegates to `cumsum_fragment`; otherwise it emits the `tl.cumsum` "
+"intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:203
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:204
+msgid ""
+"A 1D inclusive scan that writes the result into a separate shared-memory "
+"buffer:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:215
+msgid "A 2D prefix sum along the last dimension with reverse accumulation:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:226
+msgid "A handle to the emitted cumulative-sum operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:234
+msgid ""
+"This returns a TVM `tir.Call` handle that finalizes the given reducer using "
+"its writable pointer. The call does not modify Python objects directly; it "
+"produces the low-level intrinsic call used by the IR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:237
+msgid "Reducer buffer whose writable pointer will be finalized."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:240
+msgid "Handle to the finalize reducer intrinsic call."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:248
+msgid ""
+"This function reduces a value across all threads in a warp using shuffle "
+"operations. Each thread provides a  register `value`, and after the "
+"reduction, all threads will have the sum of all values across the warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:252
+#: ../../../autoapi/tilelang/language/reduce/index.rst:267
+#: ../../../autoapi/tilelang/language/reduce/index.rst:282
+#: ../../../autoapi/tilelang/language/reduce/index.rst:297
+#: ../../../autoapi/tilelang/language/reduce/index.rst:312
+msgid "The input register value to reduce"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:255
+msgid "The reduced sum value (same on all threads in the warp)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:263
+msgid ""
+"This function reduces a value across all threads in a warp using shuffle "
+"operations. Each thread provides a  register `value`, and after the "
+"reduction, all threads will have the max of all values across the warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:270
+msgid "The reduced max value (same on all threads in the warp)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:278
+msgid ""
+"This function reduces a value across all threads in a warp using shuffle "
+"operations. Each thread provides a  register `value`, and after the "
+"reduction, all threads will have the min of all values across the warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:285
+msgid "The reduced min value (same on all threads in the warp)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:293
+msgid ""
+"This function reduces a value across all threads in a warp using shuffle "
+"operations. Each thread provides a  register `value`, and after the "
+"reduction, all threads will have the bitwise-and of all values across the "
+"warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:300
+msgid "The reduced bitwise-and value (same on all threads in the warp)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:308
+msgid ""
+"This function reduces a value across all threads in a warp using shuffle "
+"operations. Each thread provides a  register `value`, and after the "
+"reduction, all threads will have the bitwise-or of all values across the "
+"warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce/index.rst:315
+msgid "The reduced bitwise-or value (same on all threads in the warp)"
+msgstr ""

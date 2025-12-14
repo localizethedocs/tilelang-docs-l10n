@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:2
+msgid "tilelang.language.v2.utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:14:<autosummary>:1
+msgid ":py:obj:`CompileMethod <tilelang.language.v2.utils.CompileMethod>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`disk_compile <tilelang.language.v2.utils.disk_compile>`\\ "
+"\\(source\\, name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`get_func_nonlocals <tilelang.language.v2.utils."
+"get_func_nonlocals>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:34
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid "A modified version of `inspect.getclosurevars`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid ":py:obj:`get_ast <tilelang.language.v2.utils.get_ast>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`get_compiled_object <tilelang.language.v2.utils."
+"get_compiled_object>`\\ \\(source\\, name\\[\\, filename\\, globals\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`construct_strides <tilelang.language.v2.utils.construct_strides>`\\ "
+"\\(shape\\[\\, allow\\_prim\\_expr\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:45
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
+msgid "Construct row-major strides from shape."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:28
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/utils/index.rst:0
+msgid "Return type"
+msgstr ""
