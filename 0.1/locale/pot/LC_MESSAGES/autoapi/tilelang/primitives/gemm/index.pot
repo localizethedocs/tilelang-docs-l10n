@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/primitives/gemm/index.rst:2
+msgid "tilelang.primitives.gemm"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/index.rst:8
+msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/index.rst:18
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`gemm <tilelang.primitives.gemm.gemm>`\\ \\(A\\, B\\, C\\[\\, "
+"transpose\\_A\\, transpose\\_B\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/index.rst:26
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/index.rst:0
+msgid "Parameters"
+msgstr ""
