@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:20:<autosummary>:1
 msgid ":py:obj:`IterInfo <tilelang.carver.analysis.IterInfo>`\\"

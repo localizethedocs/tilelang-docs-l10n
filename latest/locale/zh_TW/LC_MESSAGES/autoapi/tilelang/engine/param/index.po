@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:20:<autosummary>:1
 msgid ":py:obj:`KernelParam <tilelang.engine.param.KernelParam>`\\"

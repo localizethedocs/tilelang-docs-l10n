@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:8
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/index.rst:38
 msgid "Attributes"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:47
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/index.rst:53:<autosummary>:1
 msgid ":py:obj:`TqdmLoggingHandler <tilelang.TqdmLoggingHandler>`\\"

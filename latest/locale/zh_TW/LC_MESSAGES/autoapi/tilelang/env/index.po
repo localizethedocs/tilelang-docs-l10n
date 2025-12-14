@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:39
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/env/index.rst:47:<autosummary>:1
 msgid ":py:obj:`CacheState <tilelang.env.CacheState>`\\"

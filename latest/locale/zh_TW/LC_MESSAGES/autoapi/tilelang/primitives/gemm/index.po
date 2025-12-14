@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/primitives/gemm/index.rst:8
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/primitives/gemm/index.rst:18
 msgid "Functions"

@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:9
 msgid ""

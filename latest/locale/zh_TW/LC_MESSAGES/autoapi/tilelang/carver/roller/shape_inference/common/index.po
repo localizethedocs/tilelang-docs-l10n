@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/common/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/common/index.rst:15:<autosummary>:1
 msgid ""

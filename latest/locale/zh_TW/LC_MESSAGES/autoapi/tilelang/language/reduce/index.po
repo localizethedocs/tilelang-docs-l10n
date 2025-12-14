@@ -367,7 +367,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/reduce/index.rst:203
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/reduce/index.rst:204
 msgid ""

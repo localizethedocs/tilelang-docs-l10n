@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:15:<autosummary>:1
 msgid ":py:obj:`CaptureStack <tilelang.autotuner.capture.CaptureStack>`\\"

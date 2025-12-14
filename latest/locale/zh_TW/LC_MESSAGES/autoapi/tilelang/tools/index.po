@@ -23,4 +23,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tools/index.rst:8
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"

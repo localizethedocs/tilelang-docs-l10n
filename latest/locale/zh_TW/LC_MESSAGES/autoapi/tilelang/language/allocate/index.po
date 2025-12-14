@@ -267,7 +267,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:122
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:123
 msgid ""

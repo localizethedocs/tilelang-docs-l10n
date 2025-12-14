@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:30
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:38:<autosummary>:1
 msgid ":py:obj:`CompileArgs <tilelang.autotuner.param.CompileArgs>`\\"

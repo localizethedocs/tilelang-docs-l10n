@@ -27,11 +27,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:13
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/profiler/index.rst:22
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/profiler/index.rst:28:<autosummary>:1
 msgid ":py:obj:`Profiler <tilelang.profiler.Profiler>`\\"
