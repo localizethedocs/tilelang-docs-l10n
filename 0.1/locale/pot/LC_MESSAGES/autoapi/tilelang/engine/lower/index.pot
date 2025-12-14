@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:2
+msgid "tilelang.engine.lower"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:8
+msgid "The compiler for TL programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`is_cpu_device_backend <tilelang.engine.lower."
+"is_cpu_device_backend>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`has_device_kernel_launch <tilelang.engine.lower."
+"has_device_kernel_launch>`\\ \\(attrs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:40
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid "Check if the attributes indicate a device kernel launch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`is_device_call_c_device <tilelang.engine.lower."
+"is_device_call_c_device>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`is_device_call <tilelang.engine.lower.is_device_call>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`get_device_call <tilelang.engine.lower.get_device_call>`\\ "
+"\\(\\[is\\_device\\_c\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`get_host_call <tilelang.engine.lower.get_host_call>`\\ "
+"\\(\\[is\\_device\\_c\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`tilelang_callback_cuda_compile <tilelang.engine.lower."
+"tilelang_callback_cuda_compile>`\\ \\(code\\, target\\[\\, "
+"pass\\_config\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`tilelang_callback_hip_compile <tilelang.engine.lower."
+"tilelang_callback_hip_compile>`\\ \\(code\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`extrac_params <tilelang.engine.lower.extrac_params>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`canon_target_host <tilelang.engine.lower.canon_target_host>`\\ "
+"\\(target\\, target\\_host\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`host_codegen <tilelang.engine.lower.host_codegen>`\\ "
+"\\(host\\_mod\\, target\\_host\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`device_codegen <tilelang.engine.lower.device_codegen>`\\ "
+"\\(device\\_mod\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`device_codegen_without_compile <tilelang.engine.lower."
+"device_codegen_without_compile>`\\ \\(device\\_mod\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`lower <tilelang.engine.lower.lower>`\\ \\(func\\_or\\_mod\\[\\, "
+"target\\, target\\_host\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid ""
+"enable_host_codegen: whether to enable host codegen, default is False, as we "
+"have our"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:67
+msgid ""
+"enable_host_codegen: whether to enable host codegen, default is False, as we "
+"have our own host codegen implementation in jit. enable_device_compile: "
+"whether to enable device codegen, default is False, as we have our own "
+"device codegen implementation in jit."
+msgstr ""

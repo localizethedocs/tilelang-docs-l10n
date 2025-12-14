@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:2
+msgid "tilelang.carver.matmul_analysis"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:8
+msgid "A GEMM schedule rule for GPU operators."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:19:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.carver.matmul_analysis.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:21
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:28:<autosummary>:1
+msgid ":py:obj:`IterKind <tilelang.carver.matmul_analysis.IterKind>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:28:<autosummary>:1
+msgid "Iter kinds for GEMM-liked programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:28:<autosummary>:1
+msgid ":py:obj:`IterTrait <tilelang.carver.matmul_analysis.IterTrait>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:30
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`collect_vars_from_expr <tilelang.carver.matmul_analysis."
+"collect_vars_from_expr>`\\ \\(prim\\_expr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`auto_inline_producers <tilelang.carver.matmul_analysis."
+"auto_inline_producers>`\\ \\(sch\\, block\\[\\, skip\\_blocks\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`auto_inline_consumers <tilelang.carver.matmul_analysis."
+"auto_inline_consumers>`\\ \\(sch\\, block\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`auto_inline_consumer_chain <tilelang.carver.matmul_analysis."
+"auto_inline_consumer_chain>`\\ \\(sch\\, block\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`find_first_similar_region <tilelang.carver.matmul_analysis."
+"find_first_similar_region>`\\ \\(regions\\, buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`find_first_similar_buffer <tilelang.carver.matmul_analysis."
+"find_first_similar_buffer>`\\ \\(regions\\, buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`find_last_producer_from_buffer <tilelang.carver.matmul_analysis."
+"find_last_producer_from_buffer>`\\ \\(sch\\, main\\_block\\, buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`find_arg_idx_from_buffer_chain <tilelang.carver.matmul_analysis."
+"find_arg_idx_from_buffer_chain>`\\ \\(sch\\, main\\_block\\, buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:79
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid "traverse to find the arg index from the buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`make_iter_fusion_index_map <tilelang.carver.matmul_analysis."
+"make_iter_fusion_index_map>`\\ \\(traits\\, kind\\_order\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`detect_iter_traits <tilelang.carver.matmul_analysis."
+"detect_iter_traits>`\\ \\(block\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:137
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+"Detect iter traits based on the pattern C[S, I, J] += A[S, I, K] * B[S, J, K]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`get_index_map <tilelang.carver.matmul_analysis.get_index_map>`\\ "
+"\\(block\\[\\, layout\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:149
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid "Get index maps for the block"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`get_in_out_dtypes <tilelang.carver.matmul_analysis."
+"get_in_out_dtypes>`\\ \\(block\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:165
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+"Detect In/Out data types for the given block based on the analysis if read/"
+"write buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`get_dequantize_block <tilelang.carver.matmul_analysis."
+"get_dequantize_block>`\\ \\(sch\\, blocks\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`is_identity_or_transpose_block <tilelang.carver.matmul_analysis."
+"is_identity_or_transpose_block>`\\ \\(block\\_stmt\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`is_identity_block <tilelang.carver.matmul_analysis."
+"is_identity_block>`\\ \\(block\\_stmt\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`is_transpose_block <tilelang.carver.matmul_analysis."
+"is_transpose_block>`\\ \\(block\\_stmt\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`inline_transpose_block <tilelang.carver.matmul_analysis."
+"inline_transpose_block>`\\ \\(sch\\, blocks\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`normalize_to_matmul <tilelang.carver.matmul_analysis."
+"normalize_to_matmul>`\\ \\(sch\\, main\\_block\\[\\, layout\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`get_tensorized_func_and_tags <tilelang.carver.matmul_analysis."
+"get_tensorized_func_and_tags>`\\ \\(func\\, target\\[\\, layout\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:182
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+"transform function to matmul if necessary (e.g. transform conv2d with im2col)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`get_propagate_map <tilelang.carver.matmul_analysis."
+"get_propagate_map>`\\ \\(\\[trans\\, dtype\\, matrix\\_name\\, "
+"index\\_dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`get_ladder_stage3_map <tilelang.carver.matmul_analysis."
+"get_ladder_stage3_map>`\\ \\(\\[dtype\\, index\\_dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`layout_propagate_chain <tilelang.carver.matmul_analysis."
+"layout_propagate_chain>`\\ \\(sch\\, start\\_block\\, start\\_buffer\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:59
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:84
+msgid "Bases: :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:87
+msgid ""
+"Iter kinds for GEMM-liked programs. We can simplify the computation to C[S, "
+"I, J] += A[S, I, K] * B[S, J, K], where `I, J, K` are fundamental axes for "
+"gemm and `S` represents all other spatial axes (e.g. batches) kIter_S: "
+"spatial axes kIter_I: I axes kIter_J: J axes kIter_K: K axes kIter_T: "
+"trivial axes (i.e. with extent 1)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:139
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:151
+msgid "The block to be analyzed"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:142
+msgid ""
+"**traits** -- The detected iter traits for axes in A, B and C. None if the "
+"block does not match the pattern."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:153
+msgid ""
+"the target layout index map to be used. 'n' for [i, k] layout 't' for [k, j] "
+"layout 'a' for auto inference based on whether the last axis is reduction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/matmul_analysis/index.rst:159
+msgid ""
+"**index_maps** -- The index maps for the block, or None if the block is not "
+"a gemm-liked kernel"
+msgstr ""

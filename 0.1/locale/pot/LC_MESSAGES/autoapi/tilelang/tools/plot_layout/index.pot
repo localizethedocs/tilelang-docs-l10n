@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:2
+msgid "tilelang.tools.plot_layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`plot_layout <tilelang.tools.plot_layout.plot_layout>`\\ "
+"\\(layout\\[\\, save\\_directory\\, name\\, colormap\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:20
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:14:<autosummary>:1
+msgid "Plot the layout of a buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:22
+msgid "The layout object that describes how indices are mapped."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:24
+msgid ""
+"The directory where the output images will be saved (default is \"./tmp\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:26
+msgid "The base name of the output files (default is \"layout\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:28
+msgid "The colormap to use for visualization (default is \"RdPu\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:30
+msgid ""
+"If True, prints additional information about the mapping (default is False)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:32
+msgid "The formats to save the image in (default is \"png\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
+msgid "Return type"
+msgstr ""

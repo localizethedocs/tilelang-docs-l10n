@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:2
+msgid "tilelang.cache.kernel_cache"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:8
+msgid "The cache utils with class and database persistence - KernelCache Class"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`DEVICE_KERNEL_PATH <tilelang.cache.kernel_cache."
+"DEVICE_KERNEL_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`HOST_KERNEL_PATH <tilelang.cache.kernel_cache.HOST_KERNEL_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`EXECUTABLE_PATH <tilelang.cache.kernel_cache.EXECUTABLE_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`KERNEL_LIB_PATH <tilelang.cache.kernel_cache.KERNEL_LIB_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`KERNEL_CUBIN_PATH <tilelang.cache.kernel_cache.KERNEL_CUBIN_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ":py:obj:`KERNEL_PY_PATH <tilelang.cache.kernel_cache.KERNEL_PY_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+msgid ":py:obj:`PARAMS_PATH <tilelang.cache.kernel_cache.PARAMS_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:27
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:33:<autosummary>:1
+msgid ":py:obj:`KernelCache <tilelang.cache.kernel_cache.KernelCache>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:33:<autosummary>:1
+msgid ""
+"Caches compiled kernels using a class and database persistence to avoid "
+"redundant compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:67
+msgid ""
+"Caches compiled kernels using a class and database persistence to avoid "
+"redundant compilation. Cache files:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:69
+msgid ""
+"kernel.cu: The compiled kernel source code wrapped_kernel.cu: The compiled "
+"wrapped kernel source code kernel_lib.so: The compiled kernel library params."
+"pkl: The compiled kernel parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:83
+msgid "Caches and reuses compiled kernels to avoid redundant compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:85
+msgid "Function to be compiled or a prepared PrimFunc"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:86
+msgid "Indices specifying which outputs to return"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:87
+msgid "Compilation target platform"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:88
+msgid "Host target platform"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:89
+msgid "Arguments passed to func"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:91
+msgid "The compiled kernel, either freshly compiled or from cache"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:98
+msgid ""
+"Clears the entire kernel cache, including both in-memory and disk cache."
+msgstr ""
