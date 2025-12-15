@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/param/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/param/index.rst:15:<autosummary>:1
 msgid ":py:obj:`Program <tilelang.jit.param.Program>`\\"

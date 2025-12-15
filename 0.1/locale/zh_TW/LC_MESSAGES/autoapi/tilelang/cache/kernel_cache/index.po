@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:27
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:33:<autosummary>:1
 msgid ":py:obj:`KernelCache <tilelang.cache.kernel_cache.KernelCache>`\\"

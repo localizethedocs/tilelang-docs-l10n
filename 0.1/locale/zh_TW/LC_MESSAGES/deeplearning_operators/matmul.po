@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/matmul.md:23
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../deeplearning_operators/matmul.md:28
 msgid "Figure 1: High-level overview of the TileLang compilation flow."

@@ -139,7 +139,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/utils/index.rst:65
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/utils/index.rst:66
 msgid "linear_index(i) -> i"

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:16
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:22:<autosummary>:1
 msgid ":py:obj:`JITKernel <tilelang.jit.kernel.JITKernel>`\\"
@@ -174,7 +174,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:331
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:344
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:209
 msgid "Export generated source code to files."

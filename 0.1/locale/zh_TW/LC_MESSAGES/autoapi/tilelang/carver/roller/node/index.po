@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`BlockAnalyzer <tilelang.carver.roller.node.BlockAnalyzer>`\\"

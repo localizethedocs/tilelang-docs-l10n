@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:16
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:22:<autosummary>:1
 msgid ""

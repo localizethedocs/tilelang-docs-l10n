@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:15
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:26
 msgid "Attributes"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:35
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:41:<autosummary>:1
 msgid ""

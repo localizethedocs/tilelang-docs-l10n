@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:19:<autosummary>:1
 msgid ""

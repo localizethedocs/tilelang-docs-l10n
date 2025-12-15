@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:18
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:24:<autosummary>:1
 msgid ""

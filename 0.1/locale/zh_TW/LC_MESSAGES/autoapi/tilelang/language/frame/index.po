@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:20:<autosummary>:1
 msgid ":py:obj:`FrameStack <tilelang.language.frame.FrameStack>`\\"

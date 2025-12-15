@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../index.md:29
 msgid "DEEP LEARNING OPERATORS"
-msgstr ""
+msgstr "深度學習運算子"
 
 #: ../../../index.md:40
 msgid "COMPILER INTERNALS"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../index.md:49
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../index.md:56
 msgid "Privacy"
@@ -43,11 +43,11 @@ msgstr ""
 
 #: ../../../index.md:1
 msgid "👋 Welcome to Tile Language"
-msgstr ""
+msgstr "👋 歡迎使用 Tile 語言"
 
 #: ../../../index.md:3
 msgid "[GitHub](https://github.com/tile-ai/tilelang)"
-msgstr ""
+msgstr "[GitHub](https://github.com/tile-ai/tilelang)"
 
 #: ../../../index.md:5
 msgid ""

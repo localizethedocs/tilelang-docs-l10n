@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/index.rst:13
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/cache/index.rst:22
 msgid "Functions"

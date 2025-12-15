@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/conv/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/template/conv/index.rst:14:<autosummary>:1
 msgid ":py:obj:`ConvTemplate <tilelang.carver.template.conv.ConvTemplate>`\\"

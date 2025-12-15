@@ -96,7 +96,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:63
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:73
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:44
 msgid ""

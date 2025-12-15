@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:32
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:39:<autosummary>:1
 msgid ":py:obj:`AutoTuner <tilelang.autotuner.tuner.AutoTuner>`\\"

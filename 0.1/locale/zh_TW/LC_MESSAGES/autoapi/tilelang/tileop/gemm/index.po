@@ -23,11 +23,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:8
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:22
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:29:<autosummary>:1
 msgid ":py:obj:`GemmInst <tilelang.tileop.gemm.GemmInst>`\\"

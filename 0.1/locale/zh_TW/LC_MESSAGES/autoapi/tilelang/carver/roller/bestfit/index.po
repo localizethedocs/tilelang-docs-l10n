@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/bestfit/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/bestfit/index.rst:20:<autosummary>:1
 msgid ":py:obj:`Block <tilelang.carver.roller.bestfit.Block>`\\"

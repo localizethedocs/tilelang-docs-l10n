@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:15
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/jit/index.rst:28
 msgid "Attributes"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:37
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/index.rst:43:<autosummary>:1
 msgid ":py:obj:`JITImpl <tilelang.jit.JITImpl>`\\"
