@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cpu/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/arch/cpu/index.rst:14:<autosummary>:1
 msgid ":py:obj:`CPU <tilelang.carver.arch.cpu.CPU>`\\"

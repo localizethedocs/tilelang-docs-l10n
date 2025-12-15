@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:21
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
 msgid ":py:obj:`BufferProxy <tilelang.language.proxy.BufferProxy>`\\"

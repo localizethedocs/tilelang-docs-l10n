@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../get_started/overview.md:1
 msgid "The Tile Language: A Brief Introduction"
-msgstr ""
+msgstr "Tile 語言：簡介"
 
 #: ../../../get_started/overview.md:3
 msgid "Programming Interface"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../get_started/overview.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../get_started/overview.md:12
 msgid "Figure 1: High-level overview of the TileLang compilation flow."

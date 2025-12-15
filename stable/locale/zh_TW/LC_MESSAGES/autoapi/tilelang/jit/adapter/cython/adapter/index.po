@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:21
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:27:<autosummary>:1
 msgid ""

@@ -75,7 +75,7 @@ msgstr ""
 #: ../../../deeplearning_operators/deepseek_mla.md:75
 #: ../../../deeplearning_operators/deepseek_mla.md:83
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:24
 msgid "Figure 1: Performance under batch size=64"

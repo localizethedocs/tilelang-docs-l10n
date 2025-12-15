@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:21
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`Frame <tilelang.language.v2.builder.Frame>`\\"
@@ -364,7 +364,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:517
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:518
 msgid ""

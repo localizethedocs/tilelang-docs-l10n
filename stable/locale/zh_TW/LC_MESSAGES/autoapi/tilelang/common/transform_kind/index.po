@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/common/transform_kind/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/common/transform_kind/index.rst:14:<autosummary>:1
 msgid ""

@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:146
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:147
 msgid ""

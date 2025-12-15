@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:17
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:26:<autosummary>:1
 msgid ":py:obj:`QuoteVisitor <tilelang.language.v2.ast.QuoteVisitor>`\\"

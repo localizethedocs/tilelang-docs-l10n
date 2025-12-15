@@ -174,7 +174,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/atomic/index.rst:247
 #: ../../../autoapi/tilelang/language/atomic/index.rst:294
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:72
 msgid ""

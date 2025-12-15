@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tools/Analyzer/index.rst:17
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tools/Analyzer/index.rst:24:<autosummary>:1
 msgid ":py:obj:`AnalysisResult <tilelang.tools.Analyzer.AnalysisResult>`\\"

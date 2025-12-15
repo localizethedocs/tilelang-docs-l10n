@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:19:<autosummary>:1
 msgid ":py:obj:`Layout <tilelang.layout.layout.Layout>`\\"

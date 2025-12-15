@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:16
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:35:<autosummary>:1
 msgid ":py:obj:`Annot <tilelang.language.v2.annot.Annot>`\\"

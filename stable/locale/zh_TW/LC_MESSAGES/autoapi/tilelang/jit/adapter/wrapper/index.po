@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:37:<autosummary>:1
 msgid ":py:obj:`BaseWrapper <tilelang.jit.adapter.wrapper.BaseWrapper>`\\"

@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:14:<autosummary>:1
 msgid ":py:obj:`GemmTCGEN5 <tilelang.tileop.gemm.gemm_tcgen05.GemmTCGEN5>`\\"

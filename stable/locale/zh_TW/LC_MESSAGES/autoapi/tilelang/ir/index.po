@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/ir/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
 msgid ":py:obj:`Fill <tilelang.ir.Fill>`\\"

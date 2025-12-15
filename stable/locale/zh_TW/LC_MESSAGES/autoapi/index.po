@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/index.rst:2
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../autoapi/index.rst:4
 msgid "This page contains auto-generated API reference documentation [#f1]_."

@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:19:<autosummary>:1
 msgid ":py:obj:`Fragment <tilelang.layout.fragment.Fragment>`\\"
