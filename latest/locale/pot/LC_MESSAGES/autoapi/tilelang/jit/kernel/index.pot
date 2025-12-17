@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,20 +85,20 @@ msgstr ""
 msgid "Callable"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:128
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:126
 msgid ""
 "Alternative constructor to create a TorchFunction directly from a database."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:134
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:132
 msgid "Invokes the compiled function with the given arguments."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:136
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:134
 msgid "Positional arguments for the function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:138
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:136
 msgid "Keyword arguments for the function."
 msgstr ""
 
@@ -105,7 +106,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:141
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:139
 msgid "The result of the function execution."
 msgstr ""
 
@@ -113,151 +114,151 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:150
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:148
 msgid ""
 "Alternative constructor to create a TorchFunction directly from a TileLang "
 "PrimFunc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:152
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:150
 msgid "The TileLang (TVM TIR) function to compile."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:154
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:152
 msgid "Additional keyword arguments to pass to the constructor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:157
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:155
 msgid "An instance of TorchFunction wrapping the compiled function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:164
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:162
 msgid "Creates a profiler to benchmark the compiled runtime module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:166
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:164
 msgid ""
 "The type of input tensors to supply for profiling (default: TensorSupplyType."
 "Auto)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:169
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:167
 msgid "A Profiler instance for benchmarking the runtime module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:176
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:174
 msgid "Returns the source code of the compiled kernel function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:178
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:176
 msgid "The source code of the compiled kernel function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:185
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:183
 msgid "Returns the source code of the host function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:194
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:192
 msgid "Print generated source code to stdout."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:196
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:194
 msgid "Select which source to print. Defaults to \"kernel\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:200
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:217
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:237
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:308
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:321
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:331
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:344
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:198
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:215
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:235
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:306
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:319
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:329
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:342
 msgid "Examples"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:209
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:207
 msgid "Export generated source code to files."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:211
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:209
 msgid ""
 "Destination file path to write the kernel source. If None, skips writing "
 "kernel code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:213
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:211
 msgid ""
 "Destination file path to write the host source. If None, skips writing host "
 "code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:229
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:227
 msgid "Deprecated: use show_source() or export_sources() instead."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:231
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:229
 msgid "Kept for backward compatibility with printing behavior."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:233
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:231
 msgid "If provided, behaves like export_sources(kernel_path=file)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:249
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:247
 msgid "Updates the tuning results for this kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:251
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:249
 msgid "The measured latency of this kernel configuration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:253
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:251
 msgid "The configuration parameters used for this kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:255
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:253
 msgid "The reference latency to compare against."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:264
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:262
 msgid "Gets the tuning results for this kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:266
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:264
 msgid ""
 "A dictionary containing: - latency: The measured latency of this kernel - "
 "config: The configuration parameters used - ref_latency: The reference "
 "latency for comparison"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:296
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:294
 msgid "Exports the compiled kernel function to a shared library file."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:298
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:296
 msgid "The path to the shared library file to create."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:305
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:303
 msgid "Print compiled PTX for the kernel (CUDA only)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:315
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:313
 msgid "Export compiled PTX to a file (CUDA only)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:317
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:315
 msgid "Destination file path to write PTX."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:328
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:326
 msgid "Print disassembled SASS for the kernel (CUDA only)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:338
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:336
 msgid "Export disassembled SASS to a file (CUDA only)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/kernel/index.rst:340
+#: ../../../autoapi/tilelang/jit/kernel/index.rst:338
 msgid "Destination file path to write SASS."
 msgstr ""
