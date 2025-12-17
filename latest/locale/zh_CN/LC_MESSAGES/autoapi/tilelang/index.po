@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,55 +25,55 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:38
+#: ../../../autoapi/tilelang/index.rst:37
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:44:<autosummary>:1
 msgid ":py:obj:`__version__ <tilelang.__version__>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:44:<autosummary>:1
 msgid ":py:obj:`logger <tilelang.logger>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:47
+#: ../../../autoapi/tilelang/index.rst:46
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:53:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:52:<autosummary>:1
 msgid ":py:obj:`TqdmLoggingHandler <tilelang.TqdmLoggingHandler>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:72
-#: ../../../autoapi/tilelang/index.rst:53:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:71
+#: ../../../autoapi/tilelang/index.rst:52:<autosummary>:1
 msgid ""
 "Custom logging handler that directs log output to tqdm progress bar to avoid "
 "interference."
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:55
+#: ../../../autoapi/tilelang/index.rst:54
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:61:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:60:<autosummary>:1
 msgid ":py:obj:`set_log_level <tilelang.set_log_level>`\\ \\(level\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:83
-#: ../../../autoapi/tilelang/index.rst:61:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:82
+#: ../../../autoapi/tilelang/index.rst:60:<autosummary>:1
 msgid "Set the logging level for the module's logger."
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:63
+#: ../../../autoapi/tilelang/index.rst:62
 msgid "Package Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:69
+#: ../../../autoapi/tilelang/index.rst:68
 msgid "Bases: :py:obj:`logging.Handler`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:77
+#: ../../../autoapi/tilelang/index.rst:76
 msgid ""
 "Emit a log record. Messages are written to tqdm to ensure output in progress "
 "bars isn't corrupted."
@@ -83,12 +83,12 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:85
+#: ../../../autoapi/tilelang/index.rst:84
 msgid ""
 "Can be the string name of the level (e.g., 'INFO') or the actual level (e."
 "g., logging.INFO)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:87
+#: ../../../autoapi/tilelang/index.rst:86
 msgid "'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'"
 msgstr ""

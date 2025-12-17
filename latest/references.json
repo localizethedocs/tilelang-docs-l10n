@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-14 00:33:00 +0800",
-        "hash" : "00dd738835bbd46f5da7a4df35b66578ba62ee55",
-        "title" : "[CUDA] Add read-only parameter annotation for CUDA codegen (#1416)"
+        "date" : "2025-12-15 15:39:01 +0800",
+        "hash" : "b8003a28576fdbab77be8435e15a04292ca811a6",
+        "title" : "[Enhancement] Include PrimFunc name in memory cache logs for better debugging (#1437)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-14 00:33:00 +0800",
-        "hash" : "00dd738835bbd46f5da7a4df35b66578ba62ee55",
-        "title" : "[CUDA] Add read-only parameter annotation for CUDA codegen (#1416)"
+        "date" : "2025-12-15 15:39:01 +0800",
+        "hash" : "b8003a28576fdbab77be8435e15a04292ca811a6",
+        "title" : "[Enhancement] Include PrimFunc name in memory cache logs for better debugging (#1437)"
       }
     }
   },
