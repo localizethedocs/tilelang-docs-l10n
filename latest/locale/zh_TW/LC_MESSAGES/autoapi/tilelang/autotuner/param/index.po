@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,24 +181,24 @@ msgstr ""
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:198
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:218
 msgid "Callable = None"
-msgstr ""
+msgstr "Callable = None"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:202
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:206
 msgid "float = 1e-2"
-msgstr ""
+msgstr "float = 1e-2"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:210
 msgid "float = 0.01"
-msgstr ""
+msgstr "float = 0.01"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:214
 msgid "bool = False"
-msgstr ""
+msgstr "bool = False"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:222
 msgid "bool = True"
-msgstr ""
+msgstr "bool = True"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:304
 msgid "Best achieved execution latency."

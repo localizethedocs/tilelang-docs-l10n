@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,40 +76,43 @@ msgstr ""
 msgid ""
 ":py:obj:`ExitedMacroFrame <tilelang.language.v2.builder.ExitedMacroFrame>`\\"
 msgstr ""
+":py:obj:`ExitedMacroFrame <tilelang.language.v2.builder.ExitedMacroFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`BoolOpFrame <tilelang.language.v2.builder.BoolOpFrame>`\\"
-msgstr ""
+msgstr ":py:obj:`BoolOpFrame <tilelang.language.v2.builder.BoolOpFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
-msgstr ""
+msgstr ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"
-msgstr ""
+msgstr ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`ContinueFrame <tilelang.language.v2.builder.ContinueFrame>`\\"
-msgstr ""
+msgstr ":py:obj:`ContinueFrame <tilelang.language.v2.builder.ContinueFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`BreakFrame <tilelang.language.v2.builder.BreakFrame>`\\"
-msgstr ""
+msgstr ":py:obj:`BreakFrame <tilelang.language.v2.builder.BreakFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ""
 ":py:obj:`SerialForWithStep <tilelang.language.v2.builder."
 "SerialForWithStep>`\\"
 msgstr ""
+":py:obj:`SerialForWithStep <tilelang.language.v2.builder."
+"SerialForWithStep>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`OutTensor <tilelang.language.v2.builder.OutTensor>`\\"
-msgstr ""
+msgstr ":py:obj:`OutTensor <tilelang.language.v2.builder.OutTensor>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`Ref <tilelang.language.v2.builder.Ref>`\\"
-msgstr ""
+msgstr ":py:obj:`Ref <tilelang.language.v2.builder.Ref>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ""

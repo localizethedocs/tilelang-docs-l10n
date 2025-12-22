@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,14 +45,15 @@ msgstr ""
 msgid ""
 ":py:obj:`PlaceHolderNode <tilelang.carver.roller.node.PlaceHolderNode>`\\"
 msgstr ""
+":py:obj:`PlaceHolderNode <tilelang.carver.roller.node.PlaceHolderNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`PrimFuncNode <tilelang.carver.roller.node.PrimFuncNode>`\\"
-msgstr ""
+msgstr ":py:obj:`PrimFuncNode <tilelang.carver.roller.node.PrimFuncNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`OutputNode <tilelang.carver.roller.node.OutputNode>`\\"
-msgstr ""
+msgstr ":py:obj:`OutputNode <tilelang.carver.roller.node.OutputNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:26
 msgid "Functions"

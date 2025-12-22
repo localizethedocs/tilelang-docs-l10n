@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:14:<autosummary>:1
 msgid ":py:obj:`GemmWarpPolicy <tilelang.tileop.base.GemmWarpPolicy>`\\"
@@ -142,4 +142,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:116
 msgid "Examples"
-msgstr ""
+msgstr "範例"

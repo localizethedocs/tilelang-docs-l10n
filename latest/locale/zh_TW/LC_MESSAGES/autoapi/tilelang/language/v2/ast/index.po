@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,7 +207,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:90
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:243
 msgid "node = YourTransformer().visit(node)"
-msgstr ""
+msgstr "node = YourTransformer().visit(node)"
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:108
 msgid "Called if no explicit visitor function exists for a node."

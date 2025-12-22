@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid ":py:obj:`FrameStack <tilelang.language.kernel.FrameStack>`\\"
-msgstr ""
+msgstr ":py:obj:`FrameStack <tilelang.language.kernel.FrameStack>`\\"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid "A simple stack-like wrapper around a deque that provides"
@@ -78,6 +78,8 @@ msgid ""
 ":py:obj:`get_thread_bindings <tilelang.language.kernel."
 "get_thread_bindings>`\\ \\(\\)"
 msgstr ""
+":py:obj:`get_thread_bindings <tilelang.language.kernel."
+"get_thread_bindings>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:252
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
