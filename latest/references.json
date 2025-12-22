@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-15 15:39:01 +0800",
-      "hash" : "b8003a28576fdbab77be8435e15a04292ca811a6",
-      "title" : "[Enhancement] Include PrimFunc name in memory cache logs for better debugging (#1437)"
+      "date" : "2025-12-22 12:32:43 +0800",
+      "hash" : "a431797bd5e87690eae700ffe22bed1110ee0eb3",
+      "title" : "[Enhancement] Optimize the time cost of critical path for IntervalSetEvaluator (#1491)"
     }
   },
   "type" : "branch",

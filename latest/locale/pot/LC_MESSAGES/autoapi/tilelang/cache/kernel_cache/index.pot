@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-22 08:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,72 +29,88 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`DEVICE_KERNEL_PATH <tilelang.cache.kernel_cache."
 "DEVICE_KERNEL_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`HOST_KERNEL_PATH <tilelang.cache.kernel_cache.HOST_KERNEL_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`EXECUTABLE_PATH <tilelang.cache.kernel_cache.EXECUTABLE_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`KERNEL_LIB_PATH <tilelang.cache.kernel_cache.KERNEL_LIB_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`KERNEL_CUBIN_PATH <tilelang.cache.kernel_cache.KERNEL_CUBIN_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ":py:obj:`KERNEL_PY_PATH <tilelang.cache.kernel_cache.KERNEL_PY_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
 msgid ":py:obj:`PARAMS_PATH <tilelang.cache.kernel_cache.PARAMS_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:27
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`LAUNCHER_LIB_PATH <tilelang.cache.kernel_cache.LAUNCHER_LIB_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`LAUNCHER_CPP_PATH <tilelang.cache.kernel_cache.LAUNCHER_CPP_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`CUTEDSL_CUBIN_PATH <tilelang.cache.kernel_cache."
+"CUTEDSL_CUBIN_PATH>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:30
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:36:<autosummary>:1
 msgid ":py:obj:`KernelCache <tilelang.cache.kernel_cache.KernelCache>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:36:<autosummary>:1
 msgid ""
 "Caches compiled kernels using a class and database persistence to avoid "
 "redundant compilation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:35
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:38
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:67
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:82
 msgid ""
 "Caches compiled kernels using a class and database persistence to avoid "
 "redundant compilation. Cache files:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:69
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:84
 msgid ""
 "kernel.cu: The compiled kernel source code wrapped_kernel.cu: The compiled "
 "wrapped kernel source code kernel_lib.so: The compiled kernel library params."
 "pkl: The compiled kernel parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:83
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:98
 msgid "Caches and reuses compiled kernels to avoid redundant compilation."
 msgstr ""
 
@@ -102,23 +118,23 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:85
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:100
 msgid "Function to be compiled or a prepared PrimFunc"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:86
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:101
 msgid "Indices specifying which outputs to return"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:87
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:102
 msgid "Compilation target platform"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:88
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:103
 msgid "Host target platform"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:89
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:104
 msgid "Arguments passed to func"
 msgstr ""
 
@@ -126,7 +142,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:91
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:106
 msgid "The compiled kernel, either freshly compiled or from cache"
 msgstr ""
 
@@ -134,7 +150,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:98
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:113
 msgid ""
 "Clears the entire kernel cache, including both in-memory and disk cache."
 msgstr ""
