@@ -31,7 +31,7 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid ":py:obj:`FrameStack <tilelang.language.kernel.FrameStack>`\\"
-msgstr ""
+msgstr ":py:obj:`FrameStack <tilelang.language.kernel.FrameStack>`\\"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid "A simple stack-like wrapper around a deque that provides"
@@ -78,6 +78,8 @@ msgid ""
 ":py:obj:`get_thread_bindings <tilelang.language.kernel."
 "get_thread_bindings>`\\ \\(\\)"
 msgstr ""
+":py:obj:`get_thread_bindings <tilelang.language.kernel."
+"get_thread_bindings>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:253
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1

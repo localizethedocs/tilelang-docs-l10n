@@ -45,14 +45,15 @@ msgstr ""
 msgid ""
 ":py:obj:`PlaceHolderNode <tilelang.carver.roller.node.PlaceHolderNode>`\\"
 msgstr ""
+":py:obj:`PlaceHolderNode <tilelang.carver.roller.node.PlaceHolderNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`PrimFuncNode <tilelang.carver.roller.node.PrimFuncNode>`\\"
-msgstr ""
+msgstr ":py:obj:`PrimFuncNode <tilelang.carver.roller.node.PrimFuncNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`OutputNode <tilelang.carver.roller.node.OutputNode>`\\"
-msgstr ""
+msgstr ":py:obj:`OutputNode <tilelang.carver.roller.node.OutputNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:26
 msgid "Functions"

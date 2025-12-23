@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/index.rst:2
 msgid "tilelang.carver.template"
-msgstr ""
+msgstr "tilelang.carver.template"
 
 #: ../../../autoapi/tilelang/carver/template/index.rst:8
 msgid "Template for the TileLang Carver."

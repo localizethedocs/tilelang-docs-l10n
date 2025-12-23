@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/index.rst:2
 msgid "tilelang.carver.arch"
-msgstr ""
+msgstr "tilelang.carver.arch"
 
 #: ../../../autoapi/tilelang/carver/arch/index.rst:8
 msgid "Submodules"
