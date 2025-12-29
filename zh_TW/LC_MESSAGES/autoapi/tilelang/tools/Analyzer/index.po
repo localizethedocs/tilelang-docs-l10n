@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:2
+msgid "tilelang.tools.Analyzer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:15:<autosummary>:1
+msgid ":py:obj:`ARCH_CONFIGS <tilelang.tools.Analyzer.ARCH_CONFIGS>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:15:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.tools.Analyzer.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:17
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:24:<autosummary>:1
+msgid ":py:obj:`AnalysisResult <tilelang.tools.Analyzer.AnalysisResult>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:24:<autosummary>:1
+msgid "A data class to store the results of the analysis."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:24:<autosummary>:1
+msgid ":py:obj:`Analyzer <tilelang.tools.Analyzer.Analyzer>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:24:<autosummary>:1
+msgid "A class to analyze the performance of a TVM IR module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:34
+msgid ""
+"A data class to store the results of the analysis. .. attribute:: total_flops"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:37
+msgid "Total floating-point operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:41
+msgid "Total bytes transferred to/from global memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:45
+msgid "Estimated execution time (seconds)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:49
+msgid "Achieved TFLOPS (trillions of FLOPs per second)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:53
+msgid "Achieved memory bandwidth in GB/s."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:78
+msgid ""
+"A class to analyze the performance of a TVM IR module. It calculates metrics "
+"such as FLOPs, memory bandwidth, and estimated execution time."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:108
+msgid ""
+"Traverse and transform the IR module to extract performance-related "
+"information. :returns: The Analyzer instance. :rtype: self"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:116
+msgid ""
+"Calculate performance metrics based on the analysis. :returns: The "
+"calculated performance metrics. :rtype: AnalysisResult"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:126
+msgid ""
+"Perform a full analysis of the given IR module or PrimFunc. :param fn: A TVM "
+"IRModule or PrimFunc to analyze. :param device: The target device "
+"information."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/Analyzer/index.rst:130
+msgid "The calculated performance metrics."
+msgstr ""
