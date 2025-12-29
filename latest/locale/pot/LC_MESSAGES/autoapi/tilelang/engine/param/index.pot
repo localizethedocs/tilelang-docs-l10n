@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:46
-msgid "KernelParam instance with converted dtype and shape"
+msgid "KernelParam instance with dtype directly from buffer and shape"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:0
@@ -130,14 +130,48 @@ msgid "True if parameter is a float8 type, False otherwise"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:94
-msgid "Checks if the parameter represents a boolean type."
+msgid "Checks if the parameter represents a float4 type."
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:96
-msgid "True if parameter is a boolean type, False otherwise"
+msgid "True if parameter is a float4 type, False otherwise"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:103
+msgid "Checks if the parameter represents a boolean type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:105
+msgid "True if parameter is a boolean type, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:112
+msgid "Converts the TVM DataType to PyTorch dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:114
+msgid ""
+"This method is used when creating PyTorch tensors from KernelParam, as "
+"PyTorch's tensor creation functions require torch.dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:117
+msgid "Corresponding PyTorch dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:121
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:129
+msgid "Converts the TVM DataType to TileLang dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:131
+msgid "Corresponding TileLang dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:138
 msgid ""
 "Represents a compiled kernel artifact containing both host and device code. "
 "Stores all necessary components for kernel execution in the TVM runtime."
