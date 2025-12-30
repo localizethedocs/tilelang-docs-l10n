@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:2
+msgid "tilelang.primitives.gemm.gemm_mma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`GemmPrimitiveMMA <tilelang.primitives.gemm.gemm_mma."
+"GemmPrimitiveMMA>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:14:<autosummary>:1
+msgid ""
+"A GEMM (General Matrix Multiply) primitive that uses Tensor Core MMA (Matrix"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:20
+msgid "Bases: :py:obj:`tilelang.primitives.gemm.base.GemmBaseParams`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:23
+msgid ""
+"A GEMM (General Matrix Multiply) primitive that uses Tensor Core MMA (Matrix "
+"Multiply and Accumulate) instructions. Inherits from GemmBaseParams which "
+"provides basic parameters such as A, B, C buffers and transposition flags."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:43
+msgid ""
+"Perform a single-step reduction (SSR) GEMM using Tensor Core MMA primitives. "
+"Loads fragments of A and B from shared memory, multiplies them, and "
+"accumulates into C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:47
+msgid "The buffer for matrix A (in shared memory)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:49
+msgid "The buffer for matrix B (in shared memory)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:51
+msgid "The buffer for the accumulation results."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:53
+msgid ""
+"A helper object responsible for generating Tensor Core MMA instructions "
+"(ldmatrix, mma, etc.)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:57
+msgid "The generated IR expression (macro) representing the GEMM loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:64
+msgid ""
+"Entry point to generate a GEMM SSR (single-step reduction) with Tensor Core "
+"instructions. Performs the following steps:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:66
+msgid "Infers block partition parameters if necessary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:67
+msgid ""
+"Creates a `TensorCoreIntrinEmitter` with the correct data types and "
+"dimensions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:69
+msgid "Invokes the GEMM SSR function to generate the final IR expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:71
+msgid "The generated GEMM IR expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:80
+msgid ""
+"returns: The input data type for A and B. Assumes both have the same dtype. :"
+"rtype: str"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:83
+msgid "If A and B do not share the same dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:90
+msgid "returns: The accumulation data type for C. :rtype: str"
+msgstr ""
