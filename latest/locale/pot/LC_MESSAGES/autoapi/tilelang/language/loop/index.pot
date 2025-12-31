@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,80 +22,95 @@ msgid "tilelang.language.loop"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:8
-msgid "The language interface for tl programs."
+msgid "Loop related language interfaces in TileLang."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:13
-msgid "Attributes"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/loop/index.rst:20:<autosummary>:1
-msgid ":py:obj:`Serial <tilelang.language.loop.Serial>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/loop/index.rst:20:<autosummary>:1
-msgid ":py:obj:`Unroll <tilelang.language.loop.Unroll>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/loop/index.rst:22
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`Parallel <tilelang.language.loop.Parallel>`\\ \\(\\*extents\\[\\, "
 "coalesced\\_width\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:38
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:31
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid "Tools to construct nested parallel for loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`Persistent <tilelang.language.loop.Persistent>`\\ \\(domain\\, "
 "wave\\_size\\, index\\[\\, group\\_size\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:52
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:45
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid "Tools to construct persistent for loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`Pipelined <tilelang.language.loop.Pipelined>`\\ \\(start\\[\\, "
 "stop\\, num\\_stages\\, order\\, stage\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:66
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:59
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid "Tools to construct pipelined for loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`serial <tilelang.language.loop.serial>`\\ \\(start\\[\\, stop\\, "
 "step\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:75
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
+msgid "The serial For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`unroll <tilelang.language.loop.unroll>`\\ \\(start\\[\\, stop\\, "
 "step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:84
-#: ../../../autoapi/tilelang/language/loop/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/language/loop/index.rst:92
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
 msgid "The unrolled For statement."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:34
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`Serial <tilelang.language.loop.Serial>`\\ \\(start\\[\\, stop\\, "
+"step\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:113
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
+msgid "Alias of T.serial."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`Unroll <tilelang.language.loop.Unroll>`\\ \\(start\\[\\, stop\\, "
+"step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:118
+#: ../../../autoapi/tilelang/language/loop/index.rst:25:<autosummary>:1
+msgid "Alias of T.unroll."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:27
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:39
+#: ../../../autoapi/tilelang/language/loop/index.rst:32
 msgid "This can be used to create element-wise tensor expression."
 msgstr ""
 
@@ -103,11 +118,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:41
+#: ../../../autoapi/tilelang/language/loop/index.rst:34
 msgid "The extents of the iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:43
+#: ../../../autoapi/tilelang/language/loop/index.rst:36
 msgid "The coalesced width of the parallel loop."
 msgstr ""
 
@@ -115,9 +130,10 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:46
-#: ../../../autoapi/tilelang/language/loop/index.rst:76
-#: ../../../autoapi/tilelang/language/loop/index.rst:99
+#: ../../../autoapi/tilelang/language/loop/index.rst:39
+#: ../../../autoapi/tilelang/language/loop/index.rst:69
+#: ../../../autoapi/tilelang/language/loop/index.rst:86
+#: ../../../autoapi/tilelang/language/loop/index.rst:107
 msgid "**res** -- The ForFrame."
 msgstr ""
 
@@ -125,50 +141,54 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:54
+#: ../../../autoapi/tilelang/language/loop/index.rst:47
 msgid "The list of dominators."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:56
+#: ../../../autoapi/tilelang/language/loop/index.rst:49
 msgid "The wave size."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:58
+#: ../../../autoapi/tilelang/language/loop/index.rst:51
 msgid "The tile index in one wave."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:60
+#: ../../../autoapi/tilelang/language/loop/index.rst:53
 msgid "The group size."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:68
-#: ../../../autoapi/tilelang/language/loop/index.rst:86
+#: ../../../autoapi/tilelang/language/loop/index.rst:61
+#: ../../../autoapi/tilelang/language/loop/index.rst:77
+#: ../../../autoapi/tilelang/language/loop/index.rst:94
 msgid "The minimum value of iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:70
-#: ../../../autoapi/tilelang/language/loop/index.rst:88
+#: ../../../autoapi/tilelang/language/loop/index.rst:63
+#: ../../../autoapi/tilelang/language/loop/index.rst:79
+#: ../../../autoapi/tilelang/language/loop/index.rst:96
 msgid "The maximum value of iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:72
+#: ../../../autoapi/tilelang/language/loop/index.rst:65
 msgid ""
 "The max number of buffer used between pipeline producers and consumers. if "
 "num_stages is 0, pipeline will not be enabled."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:90
+#: ../../../autoapi/tilelang/language/loop/index.rst:81
+#: ../../../autoapi/tilelang/language/loop/index.rst:98
 msgid "The step size of the iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:92
+#: ../../../autoapi/tilelang/language/loop/index.rst:83
+#: ../../../autoapi/tilelang/language/loop/index.rst:104
+msgid "The optional annotations of the For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:100
 msgid "Whether to explicitly unroll the loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:94
+#: ../../../autoapi/tilelang/language/loop/index.rst:102
 msgid "The unroll factor of the loop."
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/loop/index.rst:96
-msgid "The optional annotations of the For statement."
 msgstr ""
