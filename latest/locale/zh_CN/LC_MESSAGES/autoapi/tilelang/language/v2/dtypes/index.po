@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,57 +25,72 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:17:<autosummary>:1
 msgid ":py:obj:`AnyDType <tilelang.language.v2.dtypes.AnyDType>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:17:<autosummary>:1
+msgid ":py:obj:`dtype_name <tilelang.language.v2.dtypes.dtype_name>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:17:<autosummary>:1
 msgid ":py:obj:`int_ <tilelang.language.v2.dtypes.int_>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:17:<autosummary>:1
 msgid ":py:obj:`__all__ <tilelang.language.v2.dtypes.__all__>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:18
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:19
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:26:<autosummary>:1
 msgid ":py:obj:`dtype <tilelang.language.v2.dtypes.dtype>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:26:<autosummary>:1
 msgid ":py:obj:`bool <tilelang.language.v2.dtypes.bool>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:27
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:28
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:35:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_call__ <tilelang.language.v2.dtypes.__dtype_call__>`\\ "
 "\\(self\\[\\, expr\\, is\\_size\\_var\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:35:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_as_torch__ <tilelang.language.v2.dtypes."
+"__dtype_as_torch__>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:61
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37:<autosummary>:1
+msgid "Convert TileLang dtype to PyTorch dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_new__ <tilelang.language.v2.dtypes.__dtype_new__>`\\ "
 "\\(cls\\, value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:35:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37:<autosummary>:1
 msgid ""
 ":py:obj:`get_tvm_dtype <tilelang.language.v2.dtypes.get_tvm_dtype>`\\ "
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:39
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:41
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:43
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_T`\\ ]"
 msgstr ""
 
@@ -87,6 +102,6 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:59
+#: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:70
 msgid "Bases: :py:obj:`dtype`"
 msgstr ""

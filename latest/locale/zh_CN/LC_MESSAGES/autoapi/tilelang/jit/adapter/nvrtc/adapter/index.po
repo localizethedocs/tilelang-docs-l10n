@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:91
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:99
 msgid "Get the CUDA kernel source code."
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:93
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:101
 msgid "The kernel source code, or None if not available"
 msgstr ""
 
@@ -76,6 +76,6 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:102
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:110
 msgid "Returns the primary TIR function from the IR module."
 msgstr ""

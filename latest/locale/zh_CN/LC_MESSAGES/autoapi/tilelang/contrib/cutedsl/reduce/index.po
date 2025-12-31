@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:2
+msgid "tilelang.contrib.cutedsl.reduce"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:8
+msgid ""
+"Reduce operations for CuTeDSL backend. Based on tl_templates/cuda/reduce.h"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:14
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid ":py:obj:`SumOp <tilelang.contrib.cutedsl.reduce.SumOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:47
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid "Sum reduction operator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid ":py:obj:`MaxOp <tilelang.contrib.cutedsl.reduce.MaxOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:57
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid "Max reduction operator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid ":py:obj:`MinOp <tilelang.contrib.cutedsl.reduce.MinOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:67
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid "Min reduction operator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid ":py:obj:`BitAndOp <tilelang.contrib.cutedsl.reduce.BitAndOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:77
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid "Bitwise AND reduction operator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid ":py:obj:`BitOrOp <tilelang.contrib.cutedsl.reduce.BitOrOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:87
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid "Bitwise OR reduction operator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid ":py:obj:`BitXorOp <tilelang.contrib.cutedsl.reduce.BitXorOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:97
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
+msgid "Bitwise XOR reduction operator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`min <tilelang.contrib.cutedsl.reduce.min>`\\ \\(a\\, b\\[\\, c\\, "
+"loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`max <tilelang.contrib.cutedsl.reduce.max>`\\ \\(a\\, b\\[\\, c\\, "
+"loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`bar_sync <tilelang.contrib.cutedsl.reduce.bar_sync>`\\ "
+"\\(barrier\\_id\\, number\\_of\\_threads\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`bar_sync_ptx <tilelang.contrib.cutedsl.reduce.bar_sync_ptx>`\\ "
+"\\(barrier\\_id\\, number\\_of\\_threads\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`AllReduce <tilelang.contrib.cutedsl.reduce.AllReduce>`\\ "
+"\\(reducer\\, threads\\, scale\\, thread\\_offset\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:37:<autosummary>:1
+msgid "AllReduce operation implementing warp/block-level reduction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:111
+msgid ""
+"AllReduce operation implementing warp/block-level reduction. Based on tl::"
+"AllReduce from reduce.h"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:114
+msgid "Reducer operator class (SumOp, MaxOp, etc.)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:115
+msgid "Number of threads participating in reduction"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:116
+msgid "Reduction scale factor"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:117
+msgid "Thread ID offset"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:118
+msgid "Total number of threads in block"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:120
+msgid "A callable object with run() and run_hopper() methods"
+msgstr ""

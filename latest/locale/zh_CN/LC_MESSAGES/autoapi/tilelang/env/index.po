@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,12 +348,24 @@ msgid ""
 "options."
 msgstr ""
 
-#: ../../../autoapi/tilelang/env/index.rst:291
+#: ../../../autoapi/tilelang/env/index.rst:300
 msgid "Return True if GEMM v1 should be used based on env."
 msgstr ""
 
-#: ../../../autoapi/tilelang/env/index.rst:293
+#: ../../../autoapi/tilelang/env/index.rst:302
 msgid ""
 "Controlled by `TILELANG_USE_GEMM_V1`. Truthy values are one of {\"1\", "
 "\"true\", \"yes\", \"on\"} (case-insensitive)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:309
+msgid "Get default compilation target from environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:315
+msgid "Get default execution backend from environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:321
+msgid "Get default verbose flag from environment."
 msgstr ""

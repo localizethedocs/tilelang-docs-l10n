@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,135 +60,127 @@ msgstr ""
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`Frame <tilelang.language.v2.builder.Frame>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid "Frame are virtual context managers used in frontend only"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`MacroFrame <tilelang.language.v2.builder.MacroFrame>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ""
 ":py:obj:`ExitedMacroFrame <tilelang.language.v2.builder.ExitedMacroFrame>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`BoolOpFrame <tilelang.language.v2.builder.BoolOpFrame>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
-msgid ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
-msgid ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`ContinueFrame <tilelang.language.v2.builder.ContinueFrame>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`BreakFrame <tilelang.language.v2.builder.BreakFrame>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ""
 ":py:obj:`SerialForWithStep <tilelang.language.v2.builder."
 "SerialForWithStep>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`OutTensor <tilelang.language.v2.builder.OutTensor>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`Ref <tilelang.language.v2.builder.Ref>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ""
 ":py:obj:`UnrollForWithStep <tilelang.language.v2.builder."
 "UnrollForWithStep>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`Builder <tilelang.language.v2.builder.Builder>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ""
 ":py:obj:`PrimFuncCreater <tilelang.language.v2.builder.PrimFuncCreater>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`PrimFunc <tilelang.language.v2.builder.PrimFunc>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:40:<autosummary>:1
 msgid ":py:obj:`Macro <tilelang.language.v2.builder.Macro>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:44
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:42
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ""
 ":py:obj:`unwrap_expr <tilelang.language.v2.builder.unwrap_expr>`\\ \\(expr\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:63
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:61
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid "unwrap expr and convert it into PrimExpr like"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ""
 ":py:obj:`unwrap_cond <tilelang.language.v2.builder.unwrap_cond>`\\ \\(expr\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:68
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:66
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid "unwrap expr and convert to bool condition"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ":py:obj:`is_var <tilelang.language.v2.builder.is_var>`\\ \\(v\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ":py:obj:`macro <tilelang.language.v2.builder.macro>`\\ \\(\\[func\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid "Decorator that converts a Python function into a TileLang macro."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ""
 ":py:obj:`get_type_hints <tilelang.language.v2.builder.get_type_hints>`\\ "
 "\\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ""
 ":py:obj:`prim_func <tilelang.language.v2.builder.prim_func>`\\ \\(\\[func\\, "
 "generator\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ""
 "Decorator to create a primitive function (PrimFunc) for TileLang IR "
 "generation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:57
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:55
 msgid "Module Contents"
 msgstr ""
 
@@ -196,30 +188,26 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:75
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:90
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:99
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:108
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:117
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:126
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:135
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:144
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:73
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:88
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:97
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:106
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:115
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:124
 msgid ""
 "Frame are virtual context managers used in frontend only They do not have "
 "any runtime representation in the generated TIR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:87
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:96
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:105
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:114
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:123
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:132
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:141
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:85
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:94
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:103
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:112
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:121
 msgid "Bases: :py:obj:`Frame`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:198
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:178
 msgid "Bases: :py:obj:`SerialForWithStep`"
 msgstr ""
 
@@ -227,32 +215,32 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:213
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:193
 msgid "Bases: :py:obj:`tilelang.language.v2.ast.BaseBuilder`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:305
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:285
 msgid "Unwrap some tilelang objects to get their inner value"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:311
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:291
 msgid ""
 "Bind an immutable tilelang objects. The immutability means the result is "
 "usually not changed or re-assigned in a python block."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:357
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:430
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:337
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:410
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:385
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:365
 msgid ""
 "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ], :py:obj:"
 "`tvm.tir.PrimFunc`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:465
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:445
 msgid ""
 "Decorator that converts a Python function into a TileLang macro. TileLang "
 "macro is very similar to PrimFunc, it can be used in prim_func or another "
@@ -260,7 +248,7 @@ msgid ""
 "function will be analyzed"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:468
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:448
 msgid ""
 "and transformed into an IR generation function. The function can take any "
 "parameters (_P) and return any type (_T)."
@@ -270,7 +258,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:472
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:452
 msgid ""
 "* *Macro[_P, _T]* -- A Macro object that wraps the original function with IR "
 "generation capabilities.   The returned Macro preserves the original "
@@ -282,7 +270,7 @@ msgid ""
 "serial(10):   ...            B[i] = my_macro(A[i])"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:472
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:452
 msgid ""
 "*Macro[_P, _T]* -- A Macro object that wraps the original function with IR "
 "generation capabilities. The returned Macro preserves the original "
@@ -290,11 +278,11 @@ msgid ""
 "metaprogramming capabilities."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:475
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:455
 msgid "*Example*"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:476
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:456
 msgid ""
 "*--------* -- >>> @macro ... def my_macro(x: T.int32) -> T.int32: ...    "
 "return x ** 2 >>> @prim_func ... def my_func(A: T.Tensor((10,), T.int32), B: "
@@ -302,24 +290,24 @@ msgid ""
 "T.serial(10): ...            B[i] = my_macro(A[i])"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:487
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:467
 msgid ":py:obj:`Macro`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:488
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:468
 msgid "The class that wraps macro functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:490
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:542
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:470
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:522
 msgid ":py:obj:`mutate`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:491
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:471
 msgid "The function that transforms Python code into IR generators"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:498
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:478
 msgid ""
 "Decorator to create a primitive function (PrimFunc) for TileLang IR "
 "generation. This decorator transforms a Python function into a TileLang "
@@ -332,12 +320,12 @@ msgid ""
 "creates PrimFunc instances on demand."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:506
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:486
 msgid ""
 "If False, attempts to create a PrimFunc immediately using type annotations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:509
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:489
 msgid ""
 "- If `generator=False` and all parameters are statically annotated: returns "
 "a PrimFunc instance - If `generator=True`: returns a callable that generates "
@@ -345,28 +333,28 @@ msgid ""
 "decorator implementation function"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:511
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:491
 msgid ""
 "If `generator=False` and all parameters are statically annotated: returns a "
 "PrimFunc instance"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:512
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:492
 msgid ""
 "If `generator=True`: returns a callable that generates PrimFunc instances "
 "when invoked"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:513
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:493
 msgid ""
 "If used without parentheses: returns the decorator implementation function"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:517
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:497
 msgid "Examples"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:518
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:498
 msgid ""
 "Static annotation mode (immediate construction): >>> @prim_func ... def "
 "add_kernel(A: T.Buffer((128,), T.float32), ...                B: T."
@@ -379,14 +367,14 @@ msgid ""
 "size parameter ...     pass >>> kernel = parameterized_kernel(size=256)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:539
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:519
 msgid ":py:obj:`Builder`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:540
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:520
 msgid "The IR builder class used for constructing primitive functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/builder/index.rst:543
+#: ../../../autoapi/tilelang/language/v2/builder/index.rst:523
 msgid "Function used to generate IR from the decorated function"
 msgstr ""

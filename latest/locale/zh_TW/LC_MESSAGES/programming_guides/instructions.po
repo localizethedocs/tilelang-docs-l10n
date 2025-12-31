@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -494,23 +494,23 @@ msgstr ""
 msgid "`T.no_set_max_nreg()`, `T.disable_warp_group_reg_alloc()`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:176
+#: ../../../programming_guides/instructions.md:174
 msgid "Notes on Dtypes"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:178
+#: ../../../programming_guides/instructions.md:176
 msgid "Dtypes accept three equivalent forms:"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:179
+#: ../../../programming_guides/instructions.md:177
 msgid "String: `'float32'`"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:180
+#: ../../../programming_guides/instructions.md:178
 msgid "TileLang dtype: `T.float32`"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:181
+#: ../../../programming_guides/instructions.md:179
 msgid ""
 "Framework dtype: `torch.float32` All are normalized internally. See Type "
 "System for details."

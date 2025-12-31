@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,6 +70,16 @@ msgid ""
 msgstr ""
 
 #: ../../../get_started/targets.md:0
+msgid "`cutedsl`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid ""
+"NVIDIA CUTLASS/CuTe DSL backend. Requires `nvidia-cutlass-dsl`. `cuda` "
+"options can also be applied to this target."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
 msgid "`hip`"
 msgstr ""
 
@@ -109,13 +119,13 @@ msgstr ""
 msgid "Emit plain C source for inspection or custom toolchains."
 msgstr ""
 
-#: ../../../get_started/targets.md:23
+#: ../../../get_started/targets.md:24
 msgid ""
 "To add options, append them after the base name, separated by spaces. For "
 "example:"
 msgstr ""
 
-#: ../../../get_started/targets.md:25
+#: ../../../get_started/targets.md:26
 msgid ""
 "target = \"cuda -arch=sm_90\"\n"
 "kernel = tilelang.compile(func, target=target, "
@@ -126,17 +136,17 @@ msgid ""
 "    return func(*args)\n"
 msgstr ""
 
-#: ../../../get_started/targets.md:34
+#: ../../../get_started/targets.md:35
 msgid ""
 "The same convention works for HIP or LLVM (e.g. `hip -mcpu=gfx940`, `llvm -"
 "mtriple=x86_64-linux-gnu`)."
 msgstr ""
 
-#: ../../../get_started/targets.md:36
+#: ../../../get_started/targets.md:37
 msgid "Advanced: Specify Exact Hardware"
 msgstr ""
 
-#: ../../../get_started/targets.md:38
+#: ../../../get_started/targets.md:39
 msgid ""
 "When you already know the precise GPU model, you can encode it in the target "
 "string—either via `-arch=sm_XX` or by using one of TVM’s pre-defined target "
@@ -147,7 +157,7 @@ msgid ""
 "the cost model), generic targets like `cuda` or `auto` are perfectly fine."
 msgstr ""
 
-#: ../../../get_started/targets.md:44
+#: ../../../get_started/targets.md:45
 msgid ""
 "All CUDA compute capabilities recognised by TVM’s target registry are listed "
 "below.  Pick the one that matches your GPU and append it to the target "
@@ -322,25 +332,25 @@ msgstr ""
 msgid "`nvidia/nvidia-b100`"
 msgstr ""
 
-#: ../../../get_started/targets.md:70
+#: ../../../get_started/targets.md:71
 msgid ""
 "Refer to NVIDIA’s [CUDA GPUs](https://developer.nvidia.com/cuda-gpus) page "
 "or the TVM source (`3rdparty/tvm/src/target/tag.cc`) for the latest mapping "
 "between devices and compute capabilities."
 msgstr ""
 
-#: ../../../get_started/targets.md:73
+#: ../../../get_started/targets.md:74
 msgid "Creating targets programmatically"
 msgstr ""
 
-#: ../../../get_started/targets.md:75
+#: ../../../get_started/targets.md:76
 msgid ""
 "If you prefer working with TVM’s `Target` objects, TileLang exposes the "
 "helper `tilelang.utils.target.determine_target` (returns a canonical target "
 "string by default, or the `Target` object when `return_object=True`):"
 msgstr ""
 
-#: ../../../get_started/targets.md:79
+#: ../../../get_started/targets.md:80
 msgid ""
 "from tilelang.utils.target import determine_target\n"
 "\n"
@@ -348,11 +358,11 @@ msgid ""
 "kernel = tilelang.compile(func, target=tvm_target)\n"
 msgstr ""
 
-#: ../../../get_started/targets.md:86
+#: ../../../get_started/targets.md:87
 msgid "You can also build targets directly through TVM:"
 msgstr ""
 
-#: ../../../get_started/targets.md:88
+#: ../../../get_started/targets.md:89
 msgid ""
 "from tvm.target import Target\n"
 "\n"
@@ -360,7 +370,7 @@ msgid ""
 "target = target.with_host(Target(\"llvm -mcpu=skylake\"))\n"
 msgstr ""
 
-#: ../../../get_started/targets.md:95
+#: ../../../get_started/targets.md:96
 msgid ""
 "TileLang accepts either `str` or `Target` inputs; internally they are "
 "normalised and cached using the canonical string representation.  **In user "
@@ -370,17 +380,17 @@ msgid ""
 "higher hashing overhead or inconsistent identity semantics.**"
 msgstr ""
 
-#: ../../../get_started/targets.md:100
+#: ../../../get_started/targets.md:101
 msgid "Discovering supported targets in code"
 msgstr ""
 
-#: ../../../get_started/targets.md:102
+#: ../../../get_started/targets.md:103
 msgid ""
 "Looking for a quick reminder of the built-in base names and their "
 "descriptions? Use:"
 msgstr ""
 
-#: ../../../get_started/targets.md:104
+#: ../../../get_started/targets.md:105
 msgid ""
 "from tilelang.utils.target import describe_supported_targets\n"
 "\n"
@@ -388,31 +398,31 @@ msgid ""
 "    print(f\"{name:>6}: {doc}\")\n"
 msgstr ""
 
-#: ../../../get_started/targets.md:111
+#: ../../../get_started/targets.md:112
 msgid ""
 "This helper mirrors the table above and is safe to call at runtime (for "
 "example when validating CLI arguments)."
 msgstr ""
 
-#: ../../../get_started/targets.md:113
+#: ../../../get_started/targets.md:114
 msgid "Troubleshooting tips"
 msgstr ""
 
-#: ../../../get_started/targets.md:115
+#: ../../../get_started/targets.md:116
 msgid ""
 "If you see `Target cuda -arch=sm_80 is not supported`, double-check the "
 "spellings and that the option is valid for TVM. Any invalid switch will "
 "surface as a target-construction error."
 msgstr ""
 
-#: ../../../get_started/targets.md:117
+#: ../../../get_started/targets.md:118
 msgid ""
 "Runtime errors such as “no kernel image is available” usually mean the `-"
 "arch` flag does not match the GPU you are running on. Try dropping the flag "
 "or switching to the correct compute capability."
 msgstr ""
 
-#: ../../../get_started/targets.md:119
+#: ../../../get_started/targets.md:120
 msgid ""
 "When targeting multiple environments, use `auto` for convenience and "
 "override with an explicit string only when you need architecture-specific "

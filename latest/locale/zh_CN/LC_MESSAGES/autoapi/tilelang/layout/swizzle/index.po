@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,12 @@ msgstr ""
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:26:<autosummary>:1
 msgid ""
 ":py:obj:`make_linear_layout <tilelang.layout.swizzle.make_linear_layout>`\\ "
-"\\(\\*args\\)"
+"\\(buffer\\_or\\_load\\_or\\_region\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:70
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:26:<autosummary>:1
+msgid "Create a row-major linear layout for any dimension."
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:28
@@ -94,7 +99,6 @@ msgstr ""
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:43
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:53
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:63
-#: ../../../autoapi/tilelang/layout/swizzle/index.rst:73
 msgid "Examples"
 msgstr ""
 
@@ -116,10 +120,18 @@ msgid ""
 "make_quarter_bank_swizzled_layout(stride, continuous, element_size)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/layout/swizzle/index.rst:70
-msgid "buffer/BufferLoad/BufferRegion or (stride, continuous)"
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:72
+msgid "Buffer, BufferLoad, or BufferRegion"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
+msgid "Returns"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:74
-msgid "make_linear_layout(buffer) make_linear_layout(stride, continuous)"
+msgid "A row-major linear layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
+msgid "Return type"
 msgstr ""

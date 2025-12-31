@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:2
+msgid "tilelang.language.gemm_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:8
+msgid ""
+"GEMM (General Matrix Multiplication) operators exposed on the TileLang "
+"language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`gemm_v1 <tilelang.language.gemm_op.gemm_v1>`\\ \\(A\\, B\\, C\\[\\, "
+"transpose\\_A\\, transpose\\_B\\, policy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:27
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid "GEMM v1: use op tl.gemm."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`gemm_v2 <tilelang.language.gemm_op.gemm_v2>`\\ \\(A\\, B\\, C\\[\\, "
+"transpose\\_A\\, transpose\\_B\\, policy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:32
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid "GEMM v2: use op tl.gemm_py."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`gemm <tilelang.language.gemm_op.gemm>`\\ \\(A\\, B\\, C\\[\\, "
+"transpose\\_A\\, transpose\\_B\\, policy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:37
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid "TileLang GEMM operator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:39
+msgid "Input buffer A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:41
+msgid "Input buffer B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:43
+msgid "Output buffer C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:45
+msgid "Whether to transpose A. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:47
+msgid "Whether to transpose B. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:49
+msgid "GEMM warp partition policy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:51
+msgid "Whether to clear the accumulator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:53
+msgid "Numbers of packed matrix cores, for ROCm only. Defaults to 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:55
+msgid "Int identifier of the warpgroup MMA batch to wait on.. Defaults to 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:57
+msgid "Mbarrier in Blackwell. Defaults to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:60
+msgid "A handle to the GEMM operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:0
+msgid "Return type"
+msgstr ""

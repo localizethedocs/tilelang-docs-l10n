@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-15 15:39:01 +0800",
-        "hash" : "b8003a28576fdbab77be8435e15a04292ca811a6",
-        "title" : "[Enhancement] Include PrimFunc name in memory cache logs for better debugging (#1437)"
+        "date" : "2025-12-29 13:10:14 +0800",
+        "hash" : "193eff1cf3d7ac33c0ac050b0c86a864fc6b0ce0",
+        "title" : "[CI]: Bump actions/upload-artifact from 4 to 6 (#1555)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-15 15:39:01 +0800",
-        "hash" : "b8003a28576fdbab77be8435e15a04292ca811a6",
-        "title" : "[Enhancement] Include PrimFunc name in memory cache logs for better debugging (#1437)"
+        "date" : "2025-12-29 13:10:14 +0800",
+        "hash" : "193eff1cf3d7ac33c0ac050b0c86a864fc6b0ce0",
+        "title" : "[CI]: Bump actions/upload-artifact from 4 to 6 (#1555)"
       }
     }
   },

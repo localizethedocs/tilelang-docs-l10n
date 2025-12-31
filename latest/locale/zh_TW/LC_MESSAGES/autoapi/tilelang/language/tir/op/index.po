@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:165:<autosummary>:1
 msgid ""
 ":py:obj:`call_intrin <tilelang.language.tir.op.call_intrin>`\\ \\(dtype\\, "
-"func\\_name\\, \\*args\\[\\, span\\]\\)"
+"func\\_name\\, \\*args\\[\\, annotations\\, span\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:260
@@ -2097,7 +2097,7 @@ msgstr ""
 msgid ""
 "Aliases: you can also pass `ws` or `warp_specialized` (booleans) instead of "
 "`enable_ws`. Alternatively, use `variant=\"ws\"` (or \"default\"). - "
-"kind_dtype: instruction kind selector (e.g., \"float16\" for kind::f16,"
+"kind_dtype: instruction kind selector (e.g., T.float16 for kind::f16,"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:884
@@ -2118,7 +2118,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:894
 msgid ""
-"kind_dtype: instruction kind selector (e.g., \"float16\" for kind::f16, "
+"kind_dtype: instruction kind selector (e.g., T.float16 for kind::f16, "
 "\"tf32\" for kind::tf32, \"int8\" for kind::i8, \"float8_e4m3\" for kind::"
 "f8f6f4)."
 msgstr ""

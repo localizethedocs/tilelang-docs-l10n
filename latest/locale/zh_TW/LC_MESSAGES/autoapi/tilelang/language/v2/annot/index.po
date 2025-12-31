@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,7 +187,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:250
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:408
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:442
-#: ../../../autoapi/tilelang/language/v2/annot/index.rst:513
+#: ../../../autoapi/tilelang/language/v2/annot/index.rst:519
 msgid ""
 "Convert the argument into a tvm tir argument (tir.Var | tir.Buffer) for prim "
 "func generation"
@@ -242,11 +242,11 @@ msgid ""
 "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_Shape`\\ , :py:obj:`_DType`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/annot/index.rst:504
+#: ../../../autoapi/tilelang/language/v2/annot/index.rst:510
 msgid "Parse arguments and generates the cache key for jit caching"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/annot/index.rst:519
+#: ../../../autoapi/tilelang/language/v2/annot/index.rst:525
 msgid ""
 "Check if all arguments are static (i.e., can be fully determined at compile "
 "time)"
