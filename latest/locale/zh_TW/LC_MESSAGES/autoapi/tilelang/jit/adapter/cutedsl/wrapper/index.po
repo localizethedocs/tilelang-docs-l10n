@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:47:<autosummary>:1
 msgid ""

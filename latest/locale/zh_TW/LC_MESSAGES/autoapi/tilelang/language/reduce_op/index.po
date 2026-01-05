@@ -409,7 +409,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:219
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:220
 msgid ""

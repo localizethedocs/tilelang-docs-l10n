@@ -381,10 +381,3 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:523
 msgid "Function used to generate IR from the decorated function"
 msgstr ""
-
-#~ msgid ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
-#~ msgstr ""
-#~ ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
-
-#~ msgid ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"
-#~ msgstr ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"

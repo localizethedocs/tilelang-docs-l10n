@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:19:<autosummary>:1
 msgid ":py:obj:`GemmCuTeDSL <tilelang.tileop.gemm.gemm_cutedsl.GemmCuTeDSL>`\\"

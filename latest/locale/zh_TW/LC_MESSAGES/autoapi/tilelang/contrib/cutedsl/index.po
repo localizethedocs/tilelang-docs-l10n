@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:8
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:23
 msgid "Attributes"

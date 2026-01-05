@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:8
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
 
 #: ../../../autoapi/tilelang/testing/index.rst:17
 msgid "Attributes"
