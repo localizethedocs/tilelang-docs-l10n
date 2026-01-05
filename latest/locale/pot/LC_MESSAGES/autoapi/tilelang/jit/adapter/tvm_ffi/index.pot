@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-01-05 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,19 +79,19 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:127
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:132
 msgid "Returns the source code of the host module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:133
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:138
 msgid "Returns the source code of the device module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:139
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:144
 msgid "Returns the source code of the compiled kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:147
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:152
 msgid "Returns the primary TIR function from the IR module."
 msgstr ""
 
