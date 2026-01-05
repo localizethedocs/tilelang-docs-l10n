@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-29 13:10:14 +0800",
-      "hash" : "193eff1cf3d7ac33c0ac050b0c86a864fc6b0ce0",
-      "title" : "[CI]: Bump actions/upload-artifact from 4 to 6 (#1555)"
+      "date" : "2026-01-05 00:11:37 +0800",
+      "hash" : "32aec8a4340ef111d2ac63d01469fe124c26a07a",
+      "title" : "Add conversion from cutlass::float_e4m3/e5m2 to tl::float_e4m3/e5m2 (#1600)"
     }
   },
   "type" : "branch",

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-01-05 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,11 +213,11 @@ msgstr ""
 msgid "Called if no explicit visitor function exists for a node."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:313
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:320
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:326
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:337
 msgid ""
 "Transform a Python function into an IR (Intermediate Representation) "
 "generator. This function takes a regular Python function and performs AST "
@@ -226,7 +226,7 @@ msgid ""
 "transformed. This should be a"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:330
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:341
 msgid ""
 "callable that will be analyzed and mutated at the AST level. The function's "
 "signature is preserved through generic type parameters _P (parameters) and "
@@ -237,7 +237,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:335
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:346
 msgid ""
 "An IRGenerator instance wrapping the transformed function.     The generator "
 "contains:     - gen: The compiled and mutated version of the original "
@@ -245,32 +245,32 @@ msgid ""
 "string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:337
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:348
 msgid "An IRGenerator instance wrapping the transformed function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:338
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:349
 msgid ""
 "The generator contains: - gen: The compiled and mutated version of the "
 "original function - source: The unparsed source code of the transformed AST "
 "as a string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:344
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:355
 msgid "Example"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:352
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:363
 msgid ""
 "The original function's closure variables and captured context are preserved"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:353
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:364
 msgid ""
 "The transformation is performed at compile-time through AST manipulation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/v2/ast/index.rst:354
+#: ../../../autoapi/tilelang/language/v2/ast/index.rst:365
 msgid ""
 "The returned IRGenerator maintains type information from the original "
 "function"
