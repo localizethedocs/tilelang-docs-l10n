@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:2
+msgid "tilelang.language.warpgroup"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:8
+msgid "The language interface for tl programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:19:<autosummary>:1
+msgid ":py:obj:`ws <tilelang.language.warpgroup.ws>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:21
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`WarpSpecializeFrame <tilelang.language.warpgroup."
+"WarpSpecializeFrame>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:27:<autosummary>:1
+msgid ""
+"WarpSpecializeFrame is a custom TIRFrame that manages warp group indices"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:29
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`WarpSpecialize <tilelang.language.warpgroup.WarpSpecialize>`\\ "
+"\\(\\*warp\\_group\\_idx\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:50
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:35:<autosummary>:1
+msgid "Tools to construct a warp group frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:37
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:41
+msgid "Bases: :py:obj:`tvm.script.ir_builder.tir.frame.TIRFrame`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:44
+msgid ""
+"WarpSpecializeFrame is a custom TIRFrame that manages warp group indices and "
+"handles the entry and exit of the kernel launch scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:52
+msgid ""
+"A integer representing warp group index Or a list of integers representing "
+"blockDim.(x|y|z) if the value is -1, we skip the threadIdx.x binding."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:57
+msgid ""
+"* **res** (*Tuple[frame.LaunchThreadFrame]*) -- The result "
+"LaunchThreadFrame. * *Examples* -- >>> T.ws(0) -> if tx < 128   >>> T.ws(1) -"
+"> if tx >= 128 and tx < 256   >>> T.ws(0, 1) -> if tx < 128 or (tx >= 128 "
+"and tx < 256)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:57
+msgid ""
+"**res** (*Tuple[frame.LaunchThreadFrame]*) -- The result LaunchThreadFrame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/warpgroup/index.rst:58
+msgid ""
+"*Examples* -- >>> T.ws(0) -> if tx < 128 >>> T.ws(1) -> if tx >= 128 and tx "
+"< 256 >>> T.ws(0, 1) -> if tx < 128 or (tx >= 128 and tx < 256)"
+msgstr ""
