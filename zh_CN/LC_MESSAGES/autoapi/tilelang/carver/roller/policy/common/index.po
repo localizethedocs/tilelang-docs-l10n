@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:2
+msgid "tilelang.carver.roller.policy.common"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`get_all_factors <tilelang.carver.roller.policy.common."
+"get_all_factors>`\\ \\(n\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`factorize <tilelang.carver.roller.policy.common.factorize>`\\ "
+"\\(n\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`coalesced_factor <tilelang.carver.roller.policy.common."
+"coalesced_factor>`\\ \\(subtensor\\, tensor\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`coalesced_tensor_shape <tilelang.carver.roller.policy.common."
+"coalesced_tensor_shape>`\\ \\(subtensor\\, tensor\\, transaction\\_size\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:19
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:0
+msgid "Return type"
+msgstr ""
