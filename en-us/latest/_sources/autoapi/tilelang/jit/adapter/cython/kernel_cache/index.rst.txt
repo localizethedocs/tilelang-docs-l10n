@@ -1,0 +1,22 @@
+tilelang.jit.adapter.cython.kernel_cache
+========================================
+
+.. py:module:: tilelang.jit.adapter.cython.kernel_cache
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.jit.adapter.cython.kernel_cache.CythonKernelCache
+
+
+Module Contents
+---------------
+
+.. py:class:: CythonKernelCache
+
+   Bases: :py:obj:`tilelang.cache.kernel_cache.KernelCache`
+
+
