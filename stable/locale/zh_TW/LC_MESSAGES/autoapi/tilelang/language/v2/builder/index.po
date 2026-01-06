@@ -84,11 +84,11 @@ msgstr ":py:obj:`BoolOpFrame <tilelang.language.v2.builder.BoolOpFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
-msgstr ":py:obj:`ConstIfFrame <tilelang.language.v2.builder.ConstIfFrame>`\\"
+msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"
-msgstr ":py:obj:`BlockFrame <tilelang.language.v2.builder.BlockFrame>`\\"
+msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`ContinueFrame <tilelang.language.v2.builder.ContinueFrame>`\\"
