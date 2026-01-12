@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-29 13:10:14 +0800",
-      "hash" : "193eff1cf3d7ac33c0ac050b0c86a864fc6b0ce0",
-      "title" : "[CI]: Bump actions/upload-artifact from 4 to 6 (#1555)"
+      "date" : "2026-01-12 12:47:52 +0800",
+      "hash" : "5e347e349d5c798b2e8f55318340a68d6d99b415",
+      "title" : "[Example] Remove redundant T.copy in `examples/deepseek_v32/sparse_mla_fwd.py` (#1634)"
     }
   },
   "type" : "branch",

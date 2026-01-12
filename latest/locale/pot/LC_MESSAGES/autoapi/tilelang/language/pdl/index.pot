@@ -12,24 +12,26 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/index.rst:2
-msgid "tilelang.jit.adapter.cutedsl"
+#: ../../../autoapi/tilelang/language/pdl/index.rst:2
+msgid "tilelang.language.pdl"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/index.rst:8
-msgid "CuTeDSL Backend for TileLang."
+#: ../../../autoapi/tilelang/language/pdl/index.rst:8
+msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/index.rst:10
-msgid ""
-"This module provides runtime compilation support using NVIDIA's CuTeDSL API."
+#: ../../../autoapi/tilelang/language/pdl/index.rst:15:<autosummary>:1
+msgid ":py:obj:`pdl_trigger <tilelang.language.pdl.pdl_trigger>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/index.rst:15
-msgid "Submodules"
+#: ../../../autoapi/tilelang/language/pdl/index.rst:15:<autosummary>:1
+msgid ":py:obj:`pdl_sync <tilelang.language.pdl.pdl_sync>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/pdl/index.rst:17
+msgid "Module Contents"
 msgstr ""
