@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,90 +32,96 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print_var <tilelang.language.print_op.print_var>`\\ \\(var\\[\\, "
 "msg\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:33
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:34
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 "Prints the value of a TIR primitive expression (PrimExpr) for debugging "
 "purposes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print_var_with_condition <tilelang.language.print_op."
 "print_var_with_condition>`\\ \\(condition\\, var\\[\\, msg\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:44
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:45
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 "Conditionally prints a TIR primitive expression (PrimExpr) if a given "
 "condition is True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print_global_buffer_with_condition <tilelang.language.print_op."
 "print_global_buffer_with_condition>`\\ \\(condition\\, buffer\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:57
-#: ../../../autoapi/tilelang/language/print_op/index.rst:62
-#: ../../../autoapi/tilelang/language/print_op/index.rst:77
-#: ../../../autoapi/tilelang/language/print_op/index.rst:92
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:58
+#: ../../../autoapi/tilelang/language/print_op/index.rst:63
+#: ../../../autoapi/tilelang/language/print_op/index.rst:78
+#: ../../../autoapi/tilelang/language/print_op/index.rst:93
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 "Conditionally prints the values of a flattened TIR buffer if the condition "
 "is True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print_shared_buffer_with_condition <tilelang.language.print_op."
 "print_shared_buffer_with_condition>`\\ \\(condition\\, buffer\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print_fragment_buffer_with_condition <tilelang.language.print_op."
 "print_fragment_buffer_with_condition>`\\ \\(condition\\, ...\\[\\, msg\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print_local_buffer_with_condition <tilelang.language.print_op."
 "print_local_buffer_with_condition>`\\ \\(condition\\, buffer\\, elems\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`device_assert <tilelang.language.print_op.device_assert>`\\ "
-"\\(condition\\[\\, msg\\]\\)"
+":py:obj:`get_stack_str <tilelang.language.print_op.get_stack_str>`\\ "
+"\\(msg\\[\\, stacklevel\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`device_assert <tilelang.language.print_op.device_assert>`\\ "
+"\\(condition\\[\\, msg\\, no\\_stack\\_info\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid "Device-side assert emulation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`print <tilelang.language.print_op.print>`\\ \\(obj\\[\\, msg\\, "
 "warp\\_group\\_id\\, warp\\_id\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:114
-#: ../../../autoapi/tilelang/language/print_op/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/print_op/index.rst:117
+#: ../../../autoapi/tilelang/language/print_op/index.rst:28:<autosummary>:1
 msgid ""
 "A generic print function that handles both TIR buffers and primitive "
 "expressions."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:29
+#: ../../../autoapi/tilelang/language/print_op/index.rst:30
 msgid "Module Contents"
 msgstr ""
 
@@ -122,8 +129,8 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:35
-#: ../../../autoapi/tilelang/language/print_op/index.rst:48
+#: ../../../autoapi/tilelang/language/print_op/index.rst:36
+#: ../../../autoapi/tilelang/language/print_op/index.rst:49
 msgid "The variable or expression to be printed."
 msgstr ""
 
@@ -131,11 +138,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:38
-#: ../../../autoapi/tilelang/language/print_op/index.rst:71
-#: ../../../autoapi/tilelang/language/print_op/index.rst:86
-#: ../../../autoapi/tilelang/language/print_op/index.rst:101
-#: ../../../autoapi/tilelang/language/print_op/index.rst:129
+#: ../../../autoapi/tilelang/language/print_op/index.rst:39
+#: ../../../autoapi/tilelang/language/print_op/index.rst:72
+#: ../../../autoapi/tilelang/language/print_op/index.rst:87
+#: ../../../autoapi/tilelang/language/print_op/index.rst:102
+#: ../../../autoapi/tilelang/language/print_op/index.rst:132
 msgid "The TIR expression for the debug print operation."
 msgstr ""
 
@@ -143,61 +150,61 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:46
-#: ../../../autoapi/tilelang/language/print_op/index.rst:64
-#: ../../../autoapi/tilelang/language/print_op/index.rst:79
-#: ../../../autoapi/tilelang/language/print_op/index.rst:94
+#: ../../../autoapi/tilelang/language/print_op/index.rst:47
+#: ../../../autoapi/tilelang/language/print_op/index.rst:65
+#: ../../../autoapi/tilelang/language/print_op/index.rst:80
+#: ../../../autoapi/tilelang/language/print_op/index.rst:95
 msgid "A TIR expression representing the condition to check."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:51
+#: ../../../autoapi/tilelang/language/print_op/index.rst:52
 msgid ""
 "The TIR expression for the debug print operation, if the condition is True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:66
-#: ../../../autoapi/tilelang/language/print_op/index.rst:81
-#: ../../../autoapi/tilelang/language/print_op/index.rst:96
+#: ../../../autoapi/tilelang/language/print_op/index.rst:67
+#: ../../../autoapi/tilelang/language/print_op/index.rst:82
+#: ../../../autoapi/tilelang/language/print_op/index.rst:97
 msgid "The buffer whose values need to be printed."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:68
-#: ../../../autoapi/tilelang/language/print_op/index.rst:83
-#: ../../../autoapi/tilelang/language/print_op/index.rst:98
+#: ../../../autoapi/tilelang/language/print_op/index.rst:69
+#: ../../../autoapi/tilelang/language/print_op/index.rst:84
+#: ../../../autoapi/tilelang/language/print_op/index.rst:99
 msgid "The number of elements in the buffer to print."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:107
+#: ../../../autoapi/tilelang/language/print_op/index.rst:110
 msgid ""
 "Device-side assert emulation. Emits a device-side assert call on CUDA "
 "targets when CUDA is available. The assert is always enabled and cannot be "
 "disabled at runtime."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:116
+#: ../../../autoapi/tilelang/language/print_op/index.rst:119
 msgid ""
 "If the input is a TIR buffer, it prints its values, but only on the first "
 "thread (tx=0, ty=0, tz=0)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:117
+#: ../../../autoapi/tilelang/language/print_op/index.rst:120
 msgid ""
 "If the input is a TIR primitive expression, it prints its value directly."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:119
+#: ../../../autoapi/tilelang/language/print_op/index.rst:122
 msgid "The object to print. It can be either a tir.Buffer or tir.PrimExpr."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:121
+#: ../../../autoapi/tilelang/language/print_op/index.rst:124
 msgid "An optional message to include in the print statement."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:123
+#: ../../../autoapi/tilelang/language/print_op/index.rst:126
 msgid "The warp group id to print."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:125
+#: ../../../autoapi/tilelang/language/print_op/index.rst:128
 msgid "The warp id to print."
 msgstr ""
 
@@ -205,6 +212,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:132
+#: ../../../autoapi/tilelang/language/print_op/index.rst:135
 msgid "If the input object type is unsupported."
 msgstr ""
