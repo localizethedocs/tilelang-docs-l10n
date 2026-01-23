@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:85
 #: ../../../autoapi/tilelang/profiler/index.rst:97
-#: ../../../autoapi/tilelang/profiler/index.rst:137
+#: ../../../autoapi/tilelang/profiler/index.rst:125
 msgid "Optional pre-generated input tensors"
 msgstr ""
 
@@ -115,53 +115,37 @@ msgid "Number of times to repeat the consistency check"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:117
-msgid "Determines which profiler backend to use based on function type."
+msgid "Benchmarks the execution time of a given function."
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:119
-msgid "Function to be profiled"
+msgid "Function to benchmark (uses adapter if None)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:120
-msgid "Explicitly specified profiler type or \"auto\" for automatic detection"
+msgid "Warmup time in milliseconds"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:121
+msgid "Number of repetitions for timing"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:122
+msgid "Number of warmup iterations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:123
+msgid "Number of timing iterations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:124
+msgid "Which profiling backend to use"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/index.rst:122
-msgid "The determined profiler type (\"torch\" or \"tvm\")"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:129
-msgid "Benchmarks the execution time of a given function."
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:131
-msgid "Function to benchmark (uses adapter if None)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:132
-msgid "Warmup time in milliseconds"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:133
-msgid "Number of repetitions for timing"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:134
-msgid "Number of warmup iterations"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:135
-msgid "Number of timing iterations"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:136
-msgid "Which profiling backend to use"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:139
+#: ../../../autoapi/tilelang/profiler/index.rst:127
 msgid "Average execution time in milliseconds"
 msgstr ""

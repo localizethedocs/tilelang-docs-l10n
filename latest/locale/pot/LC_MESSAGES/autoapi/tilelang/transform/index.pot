@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,473 +29,503 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:24
+#: ../../../autoapi/tilelang/transform/index.rst:27
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`get_pass_context <tilelang.transform.get_pass_context>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:82
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:88
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Get the current pass context"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`ClusterPlanning <tilelang.transform.ClusterPlanning>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:87
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:93
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "ClusterPlanning"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`PipelinePlanning <tilelang.transform.PipelinePlanning>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:95
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:101
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "infer the fragment/shared memory layout"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`LayoutInference <tilelang.transform.LayoutInference>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:103
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:109
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LayoutInference"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`LowerTileOp <tilelang.transform.LowerTileOp>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:111
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:117
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerTileOp"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`InjectSoftwarePipeline <tilelang.transform."
 "InjectSoftwarePipeline>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:119
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:125
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "InjectSoftwarePipeline"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`FrontendLegalize <tilelang.transform.FrontendLegalize>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:127
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:133
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "FrontendLegalize"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LegalizeNegativeIndex <tilelang.transform.LegalizeNegativeIndex>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:135
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:141
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Legalize negative indices in buffer loads."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`InjectAssumes <tilelang.transform.InjectAssumes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 "Inject Assumes for natural shape boundary conditions. And convert Assumes in "
 "Evaluate(Call(...)) form"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`VerifyParallelLoop <tilelang.transform.VerifyParallelLoop>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:160
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
+msgid "VerifyParallelLoop"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerHopperIntrin <tilelang.transform.LowerHopperIntrin>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:154
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:168
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerHopperIntrin"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`WarpSpecializedPipeline <tilelang.transform."
 "WarpSpecializedPipeline>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:162
-#: ../../../autoapi/tilelang/transform/index.rst:216
-#: ../../../autoapi/tilelang/transform/index.rst:224
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:176
+#: ../../../autoapi/tilelang/transform/index.rst:230
+#: ../../../autoapi/tilelang/transform/index.rst:238
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "WarpSpecializedPipeline"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`RewriteWgmmaSync <tilelang.transform.RewriteWgmmaSync>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:170
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:184
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "RewriteWgmmaSync"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`ThreadSync <tilelang.transform.ThreadSync>`\\ \\(storage\\_scope\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:178
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:192
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Insert sync between parallel read/write of shared buffers."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`ThreadPartialSync <tilelang.transform.ThreadPartialSync>`\\ "
 "\\(storage\\_scope\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:189
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:203
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Insert partial sync."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`IfStmtBinding <tilelang.transform.IfStmtBinding>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:200
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:214
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "IfStmtBinding"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`MergeIfStmt <tilelang.transform.MergeIfStmt>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:208
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:222
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "MergeIfStmt"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`MultiVersionBuffer <tilelang.transform.MultiVersionBuffer>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`WarpSpecialized <tilelang.transform.WarpSpecialized>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`AnnotateWarpGroupRegAlloc <tilelang.transform."
 "AnnotateWarpGroupRegAlloc>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:232
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:246
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Inject set_max_nreg calls into warp-specialized functions."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`InjectTmaBarrier <tilelang.transform.InjectTmaBarrier>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:244
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:258
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "InjectTmaBarrier"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`InjectFenceProxy <tilelang.transform.InjectFenceProxy>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:252
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:266
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "InjectFenceProxy"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LegalizeVectorizedLoop <tilelang.transform."
 "LegalizeVectorizedLoop>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:260
-#: ../../../autoapi/tilelang/transform/index.rst:268
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:274
+#: ../../../autoapi/tilelang/transform/index.rst:282
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LegalizeLoopVectorize"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LegalizeSafeMemoryAccess <tilelang.transform."
 "LegalizeSafeMemoryAccess>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`MakePackedAPI <tilelang.transform.MakePackedAPI>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:276
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:290
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "MakePackedAPI"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`AnnotateDeviceRegions <tilelang.transform.AnnotateDeviceRegions>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:284
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:298
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "AnnotateDeviceRegions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`SplitHostDevice <tilelang.transform.SplitHostDevice>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:292
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:306
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Split host/device functions even for empty kernels."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`AnnotateReadOnlyParams <tilelang.transform."
 "AnnotateReadOnlyParams>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:300
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:314
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Annotate read-only handle parameters for PrimFuncs."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`VectorizeLoop <tilelang.transform.VectorizeLoop>`\\ "
 "\\(\\[enable\\_vectorize\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:312
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:326
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "VectorizeLoop"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`InjectPTXAsyncCopy <tilelang.transform.InjectPTXAsyncCopy>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:320
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:334
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Rewrite global to shared memory copy on CUDA with asynchronous copy."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerDeviceStorageAccessInfo <tilelang.transform."
 "LowerDeviceStorageAccessInfo>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:328
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:342
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Lower attached storage access information on device."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`ConfigIndexBitwidth <tilelang.transform.ConfigIndexBitwidth>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:338
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:352
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Config index bitwidth."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`FlattenBuffer <tilelang.transform.FlattenBuffer>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:346
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:360
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "FlattenBuffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`EliminateStorageSyncForMBarrier <tilelang.transform."
 "EliminateStorageSyncForMBarrier>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:354
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:368
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "EliminateStorageSyncForMBarrier"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`MergeSharedMemoryAllocations <tilelang.transform."
 "MergeSharedMemoryAllocations>`\\ \\(\\[...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:359
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:373
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "MergeSharedMemoryAllocations"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerL2Persistent <tilelang.transform.LowerL2Persistent>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:367
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:381
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerL2Persistent"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`MarkCudaSyncCalls <tilelang.transform.MarkCudaSyncCalls>`\\ "
+"\\(\\[have\\_pdl\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:386
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
+msgid "MarkCudaSyncCalls"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`PersistThreadblock <tilelang.transform.PersistThreadblock>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:372
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:391
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "PersistThreadblock"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`AlignDynamicSharedMemoryAllocations <tilelang.transform."
 "AlignDynamicSharedMemoryAllocations>`\\ \\(\\[align\\_bytes\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:377
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:396
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "AlignDynamicSharedMemoryAllocations"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerSharedBarrier <tilelang.transform.LowerSharedBarrier>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:385
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:404
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerSharedBarrier"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`PlanAndUpdateBufferAllocationLocation <tilelang.transform."
 "PlanAndUpdateBufferAllocationLocation>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:390
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:409
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "Plan and update buffer allocation locations within PrimFuncs."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`HoistNonRestrictParams <tilelang.transform."
 "HoistNonRestrictParams>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`StorageRewrite <tilelang.transform.StorageRewrite>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:400
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:419
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "StorageRewrite"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerOpaqueBlock <tilelang.transform.LowerOpaqueBlock>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:408
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:427
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerOpaqueBlock"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerThreadAllreduce <tilelang.transform.LowerThreadAllreduce>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:413
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:432
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerThreadAllreduce"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`LowerIntrin <tilelang.transform.LowerIntrin>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:418
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:437
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerIntrin"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 ":py:obj:`LowerDeviceKernelLaunch <tilelang.transform."
 "LowerDeviceKernelLaunch>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:423
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:442
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 "Create and return a transform pass that lowers device kernel launch "
 "constructs to target-specific IR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`LowerSharedTmem <tilelang.transform.LowerSharedTmem>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:434
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:453
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid "LowerSharedTmem"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ":py:obj:`LayoutReducer <tilelang.transform.LayoutReducer>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:439
-#: ../../../autoapi/tilelang/transform/index.rst:76:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/index.rst:458
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
 msgid ""
 "Return a TVM transform pass that performs layout reduction/normalization."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:78
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
+msgid ":py:obj:`UnrollLoop <tilelang.transform.UnrollLoop>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:467
+#: ../../../autoapi/tilelang/transform/index.rst:82:<autosummary>:1
+msgid "Unroll loops as in Halide pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:84
 msgid "Package Contents"
 msgstr ""
 
@@ -503,38 +533,40 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:89
-#: ../../../autoapi/tilelang/transform/index.rst:97
-#: ../../../autoapi/tilelang/transform/index.rst:105
-#: ../../../autoapi/tilelang/transform/index.rst:113
-#: ../../../autoapi/tilelang/transform/index.rst:121
-#: ../../../autoapi/tilelang/transform/index.rst:129
-#: ../../../autoapi/tilelang/transform/index.rst:137
-#: ../../../autoapi/tilelang/transform/index.rst:156
-#: ../../../autoapi/tilelang/transform/index.rst:164
-#: ../../../autoapi/tilelang/transform/index.rst:172
-#: ../../../autoapi/tilelang/transform/index.rst:183
-#: ../../../autoapi/tilelang/transform/index.rst:194
-#: ../../../autoapi/tilelang/transform/index.rst:202
-#: ../../../autoapi/tilelang/transform/index.rst:210
-#: ../../../autoapi/tilelang/transform/index.rst:218
-#: ../../../autoapi/tilelang/transform/index.rst:226
-#: ../../../autoapi/tilelang/transform/index.rst:238
-#: ../../../autoapi/tilelang/transform/index.rst:246
-#: ../../../autoapi/tilelang/transform/index.rst:254
-#: ../../../autoapi/tilelang/transform/index.rst:262
-#: ../../../autoapi/tilelang/transform/index.rst:270
-#: ../../../autoapi/tilelang/transform/index.rst:278
-#: ../../../autoapi/tilelang/transform/index.rst:286
-#: ../../../autoapi/tilelang/transform/index.rst:294
-#: ../../../autoapi/tilelang/transform/index.rst:306
-#: ../../../autoapi/tilelang/transform/index.rst:314
-#: ../../../autoapi/tilelang/transform/index.rst:322
-#: ../../../autoapi/tilelang/transform/index.rst:330
-#: ../../../autoapi/tilelang/transform/index.rst:348
-#: ../../../autoapi/tilelang/transform/index.rst:361
-#: ../../../autoapi/tilelang/transform/index.rst:392
-#: ../../../autoapi/tilelang/transform/index.rst:402
+#: ../../../autoapi/tilelang/transform/index.rst:95
+#: ../../../autoapi/tilelang/transform/index.rst:103
+#: ../../../autoapi/tilelang/transform/index.rst:111
+#: ../../../autoapi/tilelang/transform/index.rst:119
+#: ../../../autoapi/tilelang/transform/index.rst:127
+#: ../../../autoapi/tilelang/transform/index.rst:135
+#: ../../../autoapi/tilelang/transform/index.rst:143
+#: ../../../autoapi/tilelang/transform/index.rst:162
+#: ../../../autoapi/tilelang/transform/index.rst:170
+#: ../../../autoapi/tilelang/transform/index.rst:178
+#: ../../../autoapi/tilelang/transform/index.rst:186
+#: ../../../autoapi/tilelang/transform/index.rst:197
+#: ../../../autoapi/tilelang/transform/index.rst:208
+#: ../../../autoapi/tilelang/transform/index.rst:216
+#: ../../../autoapi/tilelang/transform/index.rst:224
+#: ../../../autoapi/tilelang/transform/index.rst:232
+#: ../../../autoapi/tilelang/transform/index.rst:240
+#: ../../../autoapi/tilelang/transform/index.rst:252
+#: ../../../autoapi/tilelang/transform/index.rst:260
+#: ../../../autoapi/tilelang/transform/index.rst:268
+#: ../../../autoapi/tilelang/transform/index.rst:276
+#: ../../../autoapi/tilelang/transform/index.rst:284
+#: ../../../autoapi/tilelang/transform/index.rst:292
+#: ../../../autoapi/tilelang/transform/index.rst:300
+#: ../../../autoapi/tilelang/transform/index.rst:308
+#: ../../../autoapi/tilelang/transform/index.rst:320
+#: ../../../autoapi/tilelang/transform/index.rst:328
+#: ../../../autoapi/tilelang/transform/index.rst:336
+#: ../../../autoapi/tilelang/transform/index.rst:344
+#: ../../../autoapi/tilelang/transform/index.rst:362
+#: ../../../autoapi/tilelang/transform/index.rst:375
+#: ../../../autoapi/tilelang/transform/index.rst:411
+#: ../../../autoapi/tilelang/transform/index.rst:421
+#: ../../../autoapi/tilelang/transform/index.rst:476
 msgid "**fpass** -- The result pass"
 msgstr ""
 
@@ -542,17 +574,17 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:143
+#: ../../../autoapi/tilelang/transform/index.rst:149
 msgid ""
 "Inject Assumes for natural shape boundary conditions. And convert Assumes in "
 "Evaluate(Call(...)) form (tvm builtin assume call) to AttrNode form."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:147
+#: ../../../autoapi/tilelang/transform/index.rst:153
 msgid "Returns:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:148
+#: ../../../autoapi/tilelang/transform/index.rst:154
 msgid "fpass"
 msgstr ""
 
@@ -560,7 +592,7 @@ msgstr ""
 msgid "tvm.transform.Pass"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:149
+#: ../../../autoapi/tilelang/transform/index.rst:155
 msgid "The result pass"
 msgstr ""
 
@@ -568,57 +600,57 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:180
-#: ../../../autoapi/tilelang/transform/index.rst:191
+#: ../../../autoapi/tilelang/transform/index.rst:194
+#: ../../../autoapi/tilelang/transform/index.rst:205
 msgid "The target storage scope."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:234
+#: ../../../autoapi/tilelang/transform/index.rst:248
 msgid ""
 "This pass analyzes the function to collect register hints from set_max_nreg "
 "and no_set_max_nreg calls, then injects appropriate set_max_nreg calls into "
 "producer and consumer branches of warp-specialized code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:302
+#: ../../../autoapi/tilelang/transform/index.rst:316
 msgid ""
 "Adds attribute `tl.readonly_param_indices` listing param indices that are "
 "never written, enabling CUDA codegen to emit `const` qualifiers to unlock "
 "read-only cache loads."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:333
+#: ../../../autoapi/tilelang/transform/index.rst:347
 msgid "Run this pass after all storage access analysis finish."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:340
+#: ../../../autoapi/tilelang/transform/index.rst:354
 msgid "* **fpass** (*tvm.transform.Pass*) -- The result pass * *----*"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:340
+#: ../../../autoapi/tilelang/transform/index.rst:354
 msgid "**fpass** (*tvm.transform.Pass*) -- The result pass"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:341
+#: ../../../autoapi/tilelang/transform/index.rst:355
 msgid "*----*"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:379
+#: ../../../autoapi/tilelang/transform/index.rst:398
 msgid "The alignment bytes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:425
+#: ../../../autoapi/tilelang/transform/index.rst:444
 msgid ""
 "This pass transforms high-level device kernel launch and related intrinsics "
 "into lower-level IR suitable for backend code generation and device-side "
 "lowering."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:428
+#: ../../../autoapi/tilelang/transform/index.rst:447
 msgid "The transform pass that performs device kernel launch lowering."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:441
+#: ../../../autoapi/tilelang/transform/index.rst:460
 msgid ""
 "This wrapper delegates to the underlying FFI implementation and returns a "
 "pass object suitable for use in a PassContext or pass pipeline. The pass is "
@@ -626,6 +658,16 @@ msgid ""
 "relay/tile transformations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/index.rst:443
+#: ../../../autoapi/tilelang/transform/index.rst:462
 msgid "The transform pass object produced by the FFI backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/index.rst:469
+msgid ""
+"This pass unrolls loops based on configuration options including: - "
+"auto_max_step: Threshold of number of steps to be automatically unrolled - "
+"auto_max_depth: Maximum nested level of loops that can be automatically "
+"unrolled - auto_max_extent: Maximum extent of loop that will be unrolled - "
+"explicit_unroll: Whether to explicitly unroll instead of setting a pragma - "
+"unroll_local_access: Whether to always unroll local access"
 msgstr ""
