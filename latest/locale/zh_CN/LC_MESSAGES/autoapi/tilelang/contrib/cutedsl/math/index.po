@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,13 +25,19 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:14:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:15:<autosummary>:1
 msgid ""
 ":py:obj:`divf <tilelang.contrib.cutedsl.math.divf>`\\ \\(x\\, y\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:16
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`tanh <tilelang.contrib.cutedsl.math.tanh>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17
 msgid "Module Contents"
 msgstr ""
 

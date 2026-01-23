@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,32 +32,32 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:28
+#: ../../../autoapi/tilelang/jit/index.rst:29
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:35:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/index.rst:36:<autosummary>:1
 msgid ":py:obj:`logger <tilelang.jit.logger>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:35:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/index.rst:36:<autosummary>:1
 msgid ":py:obj:`ExecutionBackend <tilelang.jit.ExecutionBackend>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:37
+#: ../../../autoapi/tilelang/jit/index.rst:38
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:43:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/index.rst:44:<autosummary>:1
 msgid ":py:obj:`JITImpl <tilelang.jit.JITImpl>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:129
-#: ../../../autoapi/tilelang/jit/index.rst:43:<autosummary>:1
-msgid "Detailed Just-In-Time wrapper for TileLang programs."
+#: ../../../autoapi/tilelang/jit/index.rst:44:<autosummary>:1
+msgid "Just-In-Time compilation wrapper for TileLang programs."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:45
+#: ../../../autoapi/tilelang/jit/index.rst:46
 msgid "Functions"
 msgstr ""
 
@@ -88,20 +88,9 @@ msgstr ""
 msgid ":py:obj:`jit <tilelang.jit.jit>`\\ \\(…\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:350
+#: ../../../autoapi/tilelang/jit/index.rst:339
 #: ../../../autoapi/tilelang/jit/index.rst:54:<autosummary>:1
-msgid "Just-In-Time (JIT) compiler decorator for TileLang functions."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:54:<autosummary>:1
-msgid ":py:obj:`lazy_jit <tilelang.jit.lazy_jit>`\\ \\(…\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:391
-#: ../../../autoapi/tilelang/jit/index.rst:54:<autosummary>:1
-msgid ""
-"Lazy JIT compiler decorator - returns the kernel object on first call, then "
-"executes it."
+msgid "JIT compiler decorator for TileLang functions."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:56
@@ -156,20 +145,17 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:84
 #: ../../../autoapi/tilelang/jit/index.rst:116
-#: ../../../autoapi/tilelang/jit/index.rst:376
 msgid ""
 "Default compilation target (e.g., \"cuda\", \"llvm\"). Defaults to \"auto\"."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:86
 #: ../../../autoapi/tilelang/jit/index.rst:118
-#: ../../../autoapi/tilelang/jit/index.rst:378
 msgid "Default execution backend. Defaults to \"auto\"."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:88
 #: ../../../autoapi/tilelang/jit/index.rst:120
-#: ../../../autoapi/tilelang/jit/index.rst:380
 msgid ""
 "Set to \"1\", \"true\", \"yes\", or \"on\" to enable verbose compilation by "
 "default."
@@ -191,182 +177,196 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:131
 msgid ""
-"This dataclass encapsulates the configuration and runtime helpers used by "
-"the top-level `jit` and `jit2` decorators. It represents a configured JIT "
-"\"factory\" that can (a) elaborate TileLang/PrimFunc creators into concrete "
-"TIR (PrimFunc), (b) compile those TIR functions into runnable kernels via "
-"the TVM bridge, (c) cache compiled kernels keyed by call-site arguments (and "
-"optional tuning parameters), and (d) provide parallel compilation helpers "
-"for batch autotuning workflows."
+"This class provides a unified interface for compiling and executing TileLang "
+"kernels. It supports two execution modes that are automatically inferred:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:141
+#: ../../../autoapi/tilelang/jit/index.rst:135
+msgid "Execution Modes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:136
 msgid ""
-"Which output tensor(s) of the compiled kernel should be returned to the "
-"caller. Accepts a single index, a list of indices, or None to return all."
+"**lazy**: The decorated function returns a PrimFunc explicitly. Calling the "
+"JIT wrapper returns a compiled kernel object, which can be invoked "
+"separately. This mode is useful when you want to inspect or reuse the kernel "
+"object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:140
+msgid "Example (lazy mode)::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:142
+msgid ""
+"@tilelang.jit(out_idx=[-1])\n"
+"def matmul(M, N, K, block_M, block_N, block_K):\n"
+"    @T.prim_func\n"
+"    def kernel(A: T.Tensor((M, K), dtype), ...):\n"
+"        ...\n"
+"    return kernel  # explicitly return PrimFunc\n"
+"\n"
+"kernel = matmul(1024, 1024, 1024, 128, 128, 32)  # returns kernel\n"
+"result = kernel(a, b)  # execute separately"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:152
+msgid ""
+"**eager**: The decorated function uses the DSL builder pattern with tensor "
+"type annotations. Calling the JIT wrapper compiles and immediately executes "
+"the kernel, returning the result directly."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:156
+msgid "Example (eager mode)::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:158
+msgid ""
+"@tilelang.jit\n"
+"def gemm(A, B, C, block_M: int = 64):\n"
+"    M, N, K = T.const(\"M N K\")\n"
+"    A: T.Tensor[[M, K], dtype]  # tensor shape via annotation\n"
+"    B: T.Tensor[[K, N], dtype]\n"
+"    C: T.Tensor[[M, N], dtype]\n"
+"    with T.Kernel(...):\n"
+"        ...\n"
+"\n"
+"gemm(A, B, C)  # compiles and executes immediately"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:169
+msgid ""
+"The mode is automatically inferred based on whether the function returns a "
+"PrimFunc (lazy) or uses the builder pattern (eager)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:174
+msgid "Index(es) of output tensor(s) to return (lazy mode only)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:0
 msgid "type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:144
+#: ../../../autoapi/tilelang/jit/index.rst:176
 msgid "list[int] | int | None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:148
-msgid ""
-"Backend used for exchanging arguments and executing the generated kernel."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:150
-msgid ""
-"Literal[\"auto\", \"dlpack\", \"tvm_ffi\", \"cython\", \"nvrtc\", \"torch\", "
-"\"cutedsl\"]"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:154
-msgid "TVM compilation target (e.g. \"cuda\", \"llvm\", or \"auto\")."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:156
-msgid "str | tvm.target.Target"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:160
-msgid "Host target used for cross-compilation, or None to infer/default."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:162
-msgid "str | tvm.target.Target | None"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:166
-msgid "Enable verbose messages during compilation/build."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:168
-#: ../../../autoapi/tilelang/jit/index.rst:210
-msgid "bool"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:172
-msgid ""
-"Extra TVM pass configuration options forwarded to the compiler's PassContext."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:175
-msgid "dict[str, Any] | None"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:179
-msgid ""
-"If provided, compiled kernel source and the elaborated Python program are "
-"written to this directory to ease debugging and inspection."
+#: ../../../autoapi/tilelang/jit/index.rst:180
+msgid "Backend for kernel execution (\"auto\", \"dlpack\", \"tvm_ffi\", etc.)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:182
+#: ../../../autoapi/tilelang/jit/index.rst:212
 msgid "str | None"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:186
-msgid ""
-"Additional flags passed to the compiler. A single string will be converted "
-"to a single-element list."
+#: ../../../autoapi/tilelang/jit/index.rst:347
+msgid "TVM compilation target (e.g., \"cuda\", \"llvm\", \"auto\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:189
-msgid "list[str] | str | None"
+#: ../../../autoapi/tilelang/jit/index.rst:188
+#: ../../../autoapi/tilelang/jit/index.rst:194
+msgid "str | Target | None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:193
-msgid ""
-"Original Python source string from which the PrimFunc or creator was "
-"derived. Used for diagnostics and debug dumps."
+#: ../../../autoapi/tilelang/jit/index.rst:192
+#: ../../../autoapi/tilelang/jit/index.rst:349
+msgid "Host target for cross-compilation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:196
-msgid "str"
+#: ../../../autoapi/tilelang/jit/index.rst:198
+#: ../../../autoapi/tilelang/jit/index.rst:353
+msgid "Enable verbose compilation output."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:200
-msgid ""
-"Function signature of the original Python function (useful for tooling)."
+msgid "bool | None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:202
-msgid "inspect.Signature"
+#: ../../../autoapi/tilelang/jit/index.rst:204
+#: ../../../autoapi/tilelang/jit/index.rst:355
+msgid "TVM pass configuration options."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:206
-msgid ""
-"Indicates whether the object wraps a \"v2\" PrimFunc creator (True) or a "
-"plain callable / PrimFunc (False). v2-mode enables argument conversion hooks "
-"and a distinct cache keying strategy."
+msgid "dict[str, Any] | None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:214
-msgid ""
-"The underlying object: either a user function that returns a PrimFunc "
-"(creator), a PrimFuncCreater, or an already-constructed PrimFunc. For "
-"presentation/readability the function is stored last in the dataclass."
+#: ../../../autoapi/tilelang/jit/index.rst:210
+#: ../../../autoapi/tilelang/jit/index.rst:357
+msgid "Directory to save compiled kernel source for debugging."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:216
+#: ../../../autoapi/tilelang/jit/index.rst:359
+msgid "Additional compiler flags."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:218
-msgid "Callable | PrimFunc | PrimFuncCreater"
+msgid "list[str] | str | None"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:222
+msgid "Original Python source code of the decorated function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:224
+msgid "str"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:228
+msgid "Function signature of the original function."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:230
-msgid ""
-"Converts provided call-site arguments into a concrete PrimFunc. If the "
-"wrapped object is a PrimFuncCreater or a user callable, it is invoked with "
-"the given arguments. If the wrapped object is already a PrimFunc, it is "
-"returned as-is."
+msgid "inspect.Signature"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:237
-msgid ""
-"A convenience wrapper that elaborates and immediately compiles a single "
-"PrimFunc into a JITKernel using the module-level `compile` function. When "
-"`debug_root_path` is set, the compiled C kernel and the source Python "
-"program are saved for inspection."
+#: ../../../autoapi/tilelang/jit/index.rst:234
+msgid "Execution mode. \"auto\" infers from function behavior."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:244
-msgid ""
-"Accepts an iterable of configs (either dicts mapping keyword args or tuples "
-"mapping to positional args). Each config is elaborated to a PrimFunc and the "
-"resulting set is compiled in parallel via the module-level `par_compile` "
-"helper. Returns a list of JITKernel objects in the same order as the "
-"provided configs."
+#: ../../../autoapi/tilelang/jit/index.rst:236
+msgid "Literal[\"auto\", \"lazy\", \"eager\"]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:309
+#: ../../../autoapi/tilelang/jit/index.rst:240
+msgid "The wrapped function object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:242
+msgid "JITFunc"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/index.rst:298
 msgid ""
 "Retrieve a TIR (Tensor Intermediate Representation) PrimFunc from the stored "
 "callable or object."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:315
+#: ../../../autoapi/tilelang/jit/index.rst:307
 msgid ""
 "Parallel compile multiple TileLang PrimFunc with TVM and build JITKernels. :"
 "param configs: The configurations to elaborate and compile. Each config can "
 "be either"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:317
+#: ../../../autoapi/tilelang/jit/index.rst:309
 msgid ""
 "a dictionary mapping keyword arguments to values, or a tuple of positional "
 "arguments."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:320
+#: ../../../autoapi/tilelang/jit/index.rst:312
 msgid ""
 "Number of parallel workers to use for compilation. Defaults to None, which "
 "lets the system decide."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:323
+#: ../../../autoapi/tilelang/jit/index.rst:315
 msgid ""
 "If True, compilation errors for individual configs will be logged as "
 "warnings and the corresponding result will be None. If False, any "
@@ -377,66 +377,22 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:328
+#: ../../../autoapi/tilelang/jit/index.rst:320
 msgid ""
 "A list of compiled JITKernel objects corresponding to the provided configs."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:352
-msgid "This decorator can be used without arguments (e.g., `@tilelang.jit`):"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:353
-msgid "Applies JIT compilation with default settings."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:355
+#: ../../../autoapi/tilelang/jit/index.rst:341
 msgid ""
-"If using `@tilelang.jit(...)` to configure, this is the `out_idx` parameter. "
-"If using `@tilelang.jit` directly on a function, this argument is implicitly "
-"the function to be decorated (and `out_idx` will be `None`)."
+"Supports two execution modes (automatically inferred): - **lazy**: Function "
+"returns PrimFunc explicitly. Returns compiled kernel object. - **eager**: "
+"Function uses DSL builder pattern. Executes kernel immediately."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:359
-msgid ""
-"Compilation target for TVM (e.g., \"cuda\", \"llvm\"). If None, reads from "
-"TILELANG_TARGET environment variable (defaults to \"auto\")."
+#: ../../../autoapi/tilelang/jit/index.rst:345
+msgid "Output tensor index(es). Only supported in lazy mode."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/index.rst:362
-msgid "Target host for cross-compilation. Defaults to None."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:364
-msgid ""
-"Backend for kernel execution and argument passing. If None, reads from "
-"TILELANG_EXECUTION_BACKEND environment variable (defaults to \"auto\")."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:367
-msgid ""
-"Enables verbose logging during compilation. If None, reads from "
-"TILELANG_VERBOSE environment variable (defaults to False)."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:370
-msgid "Configurations for TVM's pass context. Defaults to None."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:372
-msgid ""
-"Directory to save compiled kernel source for debugging. Defaults to None."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:383
-msgid ""
-"Either a JIT-compiled wrapper around the input function, or a configured "
-"decorator instance that can then be applied to a function."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/index.rst:393
-msgid ""
-"Supports environment variable defaults for target, execution_backend, and "
-"verbose. See `jit` documentation for parameter details and environment "
-"variables."
+#: ../../../autoapi/tilelang/jit/index.rst:351
+msgid "Backend for kernel execution."
 msgstr ""

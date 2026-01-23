@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-29 13:10:14 +0800",
-        "hash" : "193eff1cf3d7ac33c0ac050b0c86a864fc6b0ce0",
-        "title" : "[CI]: Bump actions/upload-artifact from 4 to 6 (#1555)"
+        "date" : "2026-01-19 13:46:03 +0800",
+        "hash" : "10baa27ce7dea88a6ccb1386bdabc27324ca7031",
+        "title" : "[tvm-ffi] Enable tvm-ffi for metal backend (#1289)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-29 13:10:14 +0800",
-        "hash" : "193eff1cf3d7ac33c0ac050b0c86a864fc6b0ce0",
-        "title" : "[CI]: Bump actions/upload-artifact from 4 to 6 (#1555)"
+        "date" : "2026-01-19 13:46:03 +0800",
+        "hash" : "10baa27ce7dea88a6ccb1386bdabc27324ca7031",
+        "title" : "[tvm-ffi] Enable tvm-ffi for metal backend (#1289)"
       }
     }
   },

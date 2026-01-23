@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,78 +50,84 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`PREDEF_HOST_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
 "PREDEF_HOST_FUNC_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`TMA_DESC_INIT_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
 "TMA_DESC_INIT_FUNC_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`TMA_IM2COL_DESC_INIT_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
 "TMA_IM2COL_DESC_INIT_FUNC_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE_PY <tilelang.jit.adapter.nvrtc."
 "wrapper.L2_PERSISTENT_MAP_CREATE_HANDLE_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
 "L2_PERSISTENT_MAP_INIT_FUNC_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE_PY <tilelang.jit.adapter.nvrtc."
 "wrapper.L2_PERSISTENT_MAP_RESET_HANDLE_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`PDL_SYNC_PY <tilelang.jit.adapter.nvrtc.wrapper.PDL_SYNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`KERNEL_LAUNCH_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
 "KERNEL_LAUNCH_FUNC_PY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:39
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:40
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`TLNVRTCSourceWrapper <tilelang.jit.adapter.nvrtc.wrapper."
 "TLNVRTCSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:332
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:361
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:46:<autosummary>:1
 msgid "NVRTC backend wrapper: generates Python kernel launch code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:47
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:48
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:52
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:94
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:140
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:192
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:225
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:257
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:287
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:53
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:97
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:143
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:195
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:228
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:260
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:290
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:315
 msgid "<details><summary>Show Value</summary>"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:56
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:57
 msgid ""
 "\"\"\"\n"
 "from cuda.bindings.driver import (\n"
@@ -141,6 +147,8 @@ msgid ""
 "    cuuint64_t,\n"
 "    cuuint32_t,\n"
 "    CUkernel,\n"
+"    CUlaunchAttribute,\n"
+"    CUlaunchAttributeID,\n"
 ")\n"
 "import ctypes\n"
 "\n"
@@ -151,17 +159,18 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:85
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:131
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:183
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:216
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:248
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:278
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:321
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:88
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:134
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:186
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:219
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:251
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:281
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:306
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:350
 msgid "</details>"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:98
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:101
 msgid ""
 "\"\"\"\n"
 "    {0}_type = CUtensorMapDataType({1})\n"
@@ -196,7 +205,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:144
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:147
 msgid ""
 "\"\"\"\n"
 "    {0}_type = CUtensorMapDataType({1})\n"
@@ -237,7 +246,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:196
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:199
 msgid ""
 "\"\"\"\n"
 "    from cuda.bindings.driver import (\n"
@@ -259,7 +268,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:229
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:232
 msgid ""
 "\"\"\"\n"
 "    stream_attribute.accessPolicyWindow.hitRatio = {1}\n"
@@ -283,7 +292,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:261
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:264
 msgid ""
 "\"\"\"\n"
 "    stream_attribute.accessPolicyWindow.num_bytes = 0\n"
@@ -305,7 +314,21 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:291
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:294
+msgid ""
+"\"\"\"\n"
+"    num_attrs = 1\n"
+"    attrs = [CUlaunchAttribute()]\n"
+"    attrs[0].id = CUlaunchAttributeID."
+"CU_LAUNCH_ATTRIBUTE_PROGRAMMATIC_STREAM_SERIALIZATION\n"
+"    attrs[0].value.programmaticStreamSerializationAllowed = 1\n"
+"\n"
+"    config.numAttrs = num_attrs\n"
+"    config.attrs = attrs\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:319
 msgid ""
 "\"\"\"\n"
 "    res = cuKernelSetAttribute(\n"
@@ -328,6 +351,7 @@ msgid ""
 "    config.blockDimZ = {6}\n"
 "    config.sharedMemBytes = {7}\n"
 "    config.hStream = stream\n"
+"    {11}\n"
 "\n"
 "    arg_values = {8}\n"
 "    arg_types = {9}\n"
@@ -339,32 +363,32 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:329
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:358
 msgid "Bases: :py:obj:`tilelang.jit.adapter.wrapper.TLCUDASourceWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:334
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:363
 msgid ""
 "Core responsibility: transform TVM IRModule into executable Python function "
 "that initializes resources (TMA descriptors, L2 cache) and launches kernels "
 "via CUDA Driver API."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:338
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:367
 msgid "Data flow:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:339
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:368
 msgid ""
 "IRModule → collect kernel metadata → deduplicate resources → generate Python "
 "code → executable function"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:342
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:371
 msgid "Why Python generation instead of C++:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:343
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:372
 msgid ""
 "NVRTC workflow requires runtime compilation, Python is the natural host. "
 "Using cuda.bindings.driver eliminates C++ wrapper complexity."
@@ -374,35 +398,35 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:349
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:378
 msgid "Override parent's host_func to return generated Python code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:354
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:383
 msgid "Generate Python dispatch function that launches multiple CUDA kernels."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:356
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:385
 msgid "Why two-pass design:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:357
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:386
 msgid ""
 "Pass 1: Collect TMA descriptors from all kernels into shared dicts Pass 2: "
 "Generate code - descriptors first (deduplicated), then launches"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:360
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:389
 msgid ""
 "Single-pass would create duplicate descriptors for each kernel. Dict "
 "naturally deduplicates by descriptor name."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:363
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:392
 msgid "CUDA C++ source containing kernel declarations"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:364
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:393
 msgid ""
 "Dict mapping kernel names to metadata (grid/block dims, params, shared "
 "memory size)"
@@ -412,26 +436,26 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:367
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:396
 msgid ""
 "1. Initializes L2 cache policies (if needed) 2. Creates TMA descriptors once "
 "per unique buffer 3. Launches each kernel with cuLaunchKernelEx 4. Resets L2 "
 "cache policies (if needed)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:369
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:398
 msgid "Initializes L2 cache policies (if needed)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:370
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:399
 msgid "Creates TMA descriptors once per unique buffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:371
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:400
 msgid "Launches each kernel with cuLaunchKernelEx"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:372
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:401
 msgid "Resets L2 cache policies (if needed)"
 msgstr ""
 
@@ -439,75 +463,79 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:379
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:408
 msgid "Generate Python code to configure L2 cache persistence for a kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:381
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:410
 msgid ""
 "L2 persistence pins frequently-accessed data in L2 cache to reduce memory "
 "bandwidth. Requires explicit setup via CUDA stream attributes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:384
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:413
 msgid "Kernel name to check for L2 persistence config"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:386
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:415
 msgid ""
 "Python code that sets stream access policy window, or empty string if no L2 "
 "persistence configured for this kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:393
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:422
+msgid "Generate Python code to insert PDL synchronization for a given kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:428
 msgid "Generate Python code to initialize TMA descriptors."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:395
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:430
 msgid ""
 "TMA (Tensor Memory Accelerator) descriptors are opaque CUDA objects that "
 "describe memory layout for async copies. Must be created on host before "
 "kernel launch."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:399
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:434
 msgid "Maps descriptor variable names to buffer names"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:400
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:435
 msgid "Maps descriptor names to TVM variables"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:402
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:437
 msgid ""
 "Python code that calls cuTensorMapEncodeTiled/Im2col for each unique "
 "descriptor. Empty string if no TMA descriptors needed."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:409
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:444
 msgid "Update library code and generate host dispatch function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:411
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:446
 msgid ""
 "Entry point for code generation. Walks the host IR to extract kernel call "
 "sites, matches them with device kernels, then generates Python dispatch code "
 "via create_dispatch_func()."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:415
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:450
 msgid "CUDA C++ source code containing compiled kernels"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:417
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:452
 msgid "sets self.host_func to generated Python dispatcher."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:424
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:459
 msgid "Return stream parameter spec for Python signature."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:426
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:461
 msgid ""
 "NVRTC backend uses raw int for stream handle (not cudaStream_t pointer). "
 "Default to 0 (NULL stream) for convenience."
