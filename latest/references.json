@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-01-19 13:46:03 +0800",
-      "hash" : "10baa27ce7dea88a6ccb1386bdabc27324ca7031",
-      "title" : "[tvm-ffi] Enable tvm-ffi for metal backend (#1289)"
+      "date" : "2026-01-26 14:45:46 +0800",
+      "hash" : "fe26fd8cd4e85e9659c8ff47e1ef799d0a2dc3e8",
+      "title" : "[AMD] Add MI350/MI355 FP8 support (#1718)"
     }
   },
   "type" : "branch",
