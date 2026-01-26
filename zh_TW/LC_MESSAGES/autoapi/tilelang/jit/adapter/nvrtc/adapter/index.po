@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:2
+msgid "tilelang.jit.adapter.nvrtc.adapter"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:14:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.jit.adapter.nvrtc.adapter.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:16
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`NVRTCKernelAdapter <tilelang.jit.adapter.nvrtc.adapter."
+"NVRTCKernelAdapter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:22:<autosummary>:1
+msgid "Helper class that provides a standard way to create an ABC using"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:30
+msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:33
+msgid ""
+"Helper class that provides a standard way to create an ABC using inheritance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:99
+msgid "Get the CUDA kernel source code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:101
+msgid "The kernel source code, or None if not available"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:110
+msgid "Returns the primary TIR function from the IR module."
+msgstr ""

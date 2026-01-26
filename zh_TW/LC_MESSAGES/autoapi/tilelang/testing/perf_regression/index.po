@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:2
+msgid "tilelang.testing.perf_regression"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:8
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:14:<autosummary>:1
+msgid ":py:obj:`PerfResult <tilelang.testing.perf_regression.PerfResult>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`process_func <tilelang.testing.perf_regression.process_func>`\\ "
+"\\(func\\[\\, name\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:39
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
+msgid "Execute a single perf function and record its latency."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`regression <tilelang.testing.perf_regression.regression>`\\ "
+"\\(\\[prefixes\\, verbose\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:47
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
+msgid "Run entrypoints in the caller module and print a markdown table."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:25
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:41
+msgid ""
+"`func` is expected to return a positive latency scalar (seconds or ms; we "
+"treat it as an opaque number, only ratios matter for regression)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:49
+msgid "This is invoked by many example scripts."
+msgstr ""
