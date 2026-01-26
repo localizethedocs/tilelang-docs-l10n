@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autodd/index.rst:17
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
 msgid ":py:obj:`ASTRewrite <tilelang.autodd.ASTRewrite>`\\"

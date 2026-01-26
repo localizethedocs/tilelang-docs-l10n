@@ -67,6 +67,3 @@ msgstr ""
 #: ../../../autoapi/tilelang/index.rst:68
 msgid "'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'"
 msgstr ""
-
-#~ msgid "Classes"
-#~ msgstr "類別"
