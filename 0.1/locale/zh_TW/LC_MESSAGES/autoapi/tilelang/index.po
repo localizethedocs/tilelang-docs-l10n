@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:47
 msgid "Classes"
-msgstr "類別"
+msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:53:<autosummary>:1
 msgid ":py:obj:`TqdmLoggingHandler <tilelang.TqdmLoggingHandler>`\\"
