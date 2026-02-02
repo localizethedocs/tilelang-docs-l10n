@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,10 +142,17 @@ msgstr ""
 msgid "Which profiling backend to use"
 msgstr ""
 
+#: ../../../autoapi/tilelang/profiler/index.rst:126
+msgid ""
+"Optional dict mapping dynamic symbolic variable names to concrete int "
+"values. Use this when benchmarking kernels with dynamic shapes, e.g., "
+"{\"m\": 2048, \"n\": 1024}"
+msgstr ""
+
 #: ../../../autoapi/tilelang/profiler/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/index.rst:127
+#: ../../../autoapi/tilelang/profiler/index.rst:130
 msgid "Average execution time in milliseconds"
 msgstr ""

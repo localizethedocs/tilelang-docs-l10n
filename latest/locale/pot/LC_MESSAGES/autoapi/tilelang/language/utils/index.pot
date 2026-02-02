@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,64 +25,53 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid ""
 ":py:obj:`region <tilelang.language.utils.region>`\\ \\(buffer\\, "
 "access\\_type\\, \\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:24
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:23
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid "Create a tl.region call for a BufferLoad and extents."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
-msgid ""
-":py:obj:`buffer_load_to_tile_region <tilelang.language.utils."
-"buffer_load_to_tile_region>`\\ \\(load\\, access\\_type\\, extents\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/utils/index.rst:29
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
-msgid "Convert a BufferLoad to a tl.region call with explicit extents."
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid ""
 ":py:obj:`buffer_region_to_tile_region <tilelang.language.utils."
 "buffer_region_to_tile_region>`\\ \\(buffer\\_region\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:34
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:28
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid "Clamp extents and return a tl.region call."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid ""
 ":py:obj:`index_to_coordinates <tilelang.language.utils."
 "index_to_coordinates>`\\ \\(index\\, shape\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:39
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:33
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid ""
 "Convert a flat (linear) index into multi-dimensional coordinates for a given "
 "shape."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid ""
 ":py:obj:`linear_index <tilelang.language.utils.linear_index>`\\ \\(\\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:54
-#: ../../../autoapi/tilelang/language/utils/index.rst:18:<autosummary>:1
+#: ../../../autoapi/tilelang/language/utils/index.rst:48
+#: ../../../autoapi/tilelang/language/utils/index.rst:17:<autosummary>:1
 msgid ""
 "Compute a flat (linear) index from multi-dimensional coordinates and strides."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:20
+#: ../../../autoapi/tilelang/language/utils/index.rst:19
 msgid "Module Contents"
 msgstr ""
 
@@ -90,7 +79,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:41
+#: ../../../autoapi/tilelang/language/utils/index.rst:35
 msgid ""
 "Given a linear index and a shape (sequence of dimension extents), returns a "
 "list of coordinates (one per dimension) such that converting those "
@@ -100,11 +89,11 @@ msgid ""
 "collected coordinates."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:43
+#: ../../../autoapi/tilelang/language/utils/index.rst:37
 msgid "The flat index to convert."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:45
+#: ../../../autoapi/tilelang/language/utils/index.rst:39
 msgid "The extents of each dimension (length >= 1)."
 msgstr ""
 
@@ -112,7 +101,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:48
+#: ../../../autoapi/tilelang/language/utils/index.rst:42
 msgid "Coordinates for each dimension in the same order as `shape`."
 msgstr ""
 
@@ -120,7 +109,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:56
+#: ../../../autoapi/tilelang/language/utils/index.rst:50
 msgid ""
 "The function accepts a sequence of PrimExpr arguments where the first "
 "portion are coordinates and the trailing portion are the corresponding "
@@ -128,40 +117,40 @@ msgid ""
 "linear index is computed as:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:60
+#: ../../../autoapi/tilelang/language/utils/index.rst:54
 msgid ""
 "linear = coords[0] for each (coord, stride) in zip(coords[1:], strides):"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:62
+#: ../../../autoapi/tilelang/language/utils/index.rst:56
 msgid "linear = linear * stride + coord"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:65
+#: ../../../autoapi/tilelang/language/utils/index.rst:59
 msgid "Examples"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:66
+#: ../../../autoapi/tilelang/language/utils/index.rst:60
 msgid "linear_index(i) -> i"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:67
+#: ../../../autoapi/tilelang/language/utils/index.rst:61
 msgid ""
 "linear_index(i, j) -> i * j_stride + j  (requires j_stride provided as "
 "stride when needed)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:68
+#: ../../../autoapi/tilelang/language/utils/index.rst:62
 msgid "linear_index(i, j, stride_j) -> i * stride_j + j"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:69
+#: ../../../autoapi/tilelang/language/utils/index.rst:63
 msgid ""
 "linear_index(i, j, k, stride_j, stride_k) -> i*stride_j*stride_k + "
 "j*stride_k + k"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:70
+#: ../../../autoapi/tilelang/language/utils/index.rst:64
 msgid ""
 "linear_index(i, tx, v, threads, local_size) -> i*threads*local_size + "
 "tx*local_size + v"
@@ -171,12 +160,12 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:72
+#: ../../../autoapi/tilelang/language/utils/index.rst:66
 msgid ""
 "If called with no arguments, or if the number of strides is not one less "
 "than the number of coordinates."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/utils/index.rst:75
+#: ../../../autoapi/tilelang/language/utils/index.rst:69
 msgid "The computed linear index expression."
 msgstr ""
