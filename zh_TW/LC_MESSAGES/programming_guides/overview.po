@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../programming_guides/overview.md:1
+msgid "Programming Guides Overview"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:3
+msgid ""
+"This section provides a practical guide to writing high‑performance kernels "
+"with Tile Language (tile‑lang). It mirrors the structure of a similar guide "
+"in another project and adapts it to tile‑lang concepts and APIs."
+msgstr ""
+
+#: ../../../programming_guides/overview.md:6
+msgid "Audience: Developers implementing custom GPU/CPU kernels with tile‑lang"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:7
+msgid ""
+"Prereqs: Basic Python, NumPy/Tensor concepts, and familiarity with GPU "
+"programming notions"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:8
+msgid ""
+"Scope: Language basics, control flow, instructions, autotuning, and type "
+"system"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:10
+msgid "What You’ll Learn"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:11
+msgid "How to structure kernels with TileLang’s core DSL constructs"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:12
+msgid "How to move data across global/shared/fragment and pipeline compute"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:13
+msgid "How to apply autotuning to tile sizes and schedules"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:14
+msgid "How to specify and work with dtypes in kernels"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:16
+msgid "Suggested Reading Order"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:17
+msgid "Language Basics"
+msgstr "語言基礎"
+
+#: ../../../programming_guides/overview.md:18
+msgid "Control Flow"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:19
+msgid "Instructions"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:20
+msgid "Autotuning"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:21
+msgid "Type System"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:23
+msgid "Related Docs"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:24
+msgid "Tutorials: see existing guides in `tutorials/`"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:25
+msgid "Operators: examples in `deeplearning_operators/`"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:27
+msgid ""
+"NOTE: This is a draft scaffold. Fill in code snippets and benchmarks as APIs "
+"evolve."
+msgstr ""
