@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,13 +44,13 @@ msgstr ""
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
 msgid ""
 ":py:obj:`cp_async_gs <tilelang.contrib.cutedsl.cpasync.cp_async_gs>`\\ "
-"\\(size\\, dst\\, dst\\_offset\\, src\\, src\\_offset\\)"
+"\\(size\\, dst\\, src\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
 msgid ""
 ":py:obj:`cp_async_gs_conditional <tilelang.contrib.cutedsl.cpasync."
-"cp_async_gs_conditional>`\\ \\(size\\, dst\\, dst\\_offset\\, src\\, ...\\)"
+"cp_async_gs_conditional>`\\ \\(size\\, dst\\, src\\, cond\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1

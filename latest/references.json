@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-01-19 13:46:03 +0800",
-      "hash" : "10baa27ce7dea88a6ccb1386bdabc27324ca7031",
-      "title" : "[tvm-ffi] Enable tvm-ffi for metal backend (#1289)"
+      "date" : "2026-02-02 15:48:14 +0800",
+      "hash" : "7bf43447d594450ef03c43e7f82849805323b459",
+      "title" : "[Feature] Add PassConfig for Controlling Let Statement Inlining in Simplify Pass (#1769)"
     }
   },
   "type" : "branch",

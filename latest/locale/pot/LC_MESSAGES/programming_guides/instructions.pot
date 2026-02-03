@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,7 +256,9 @@ msgid ""
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:107
-msgid "`T.alloc_barrier(arrive_count)`: Shared barrier buffer."
+msgid ""
+"`T.alloc_barrier(arrive_count)`: Allocate and initialize one or more "
+"mbarriers."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:108
@@ -436,7 +438,7 @@ msgid "Barriers, TMA, warp‑group"
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:158
-msgid "Barriers: `T.create_list_of_mbarrier(...)`, `T.get_mbarrier(i)`."
+msgid "Barriers: `T.alloc_barrier(arrive_count)`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:159
