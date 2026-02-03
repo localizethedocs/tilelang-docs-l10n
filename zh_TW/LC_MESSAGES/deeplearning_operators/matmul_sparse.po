@@ -1,0 +1,454 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../deeplearning_operators/matmul_sparse.md:1
+msgid "Sparse Matrix-Matrix Multiplication with Tile Library"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:3
+msgid ""
+"<div style=\"text-align: left;\">\n"
+"    <em>Author:</em> <a href=\"https://github.com/botbw\">botbw</a>\n"
+"</div>\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:8
+msgid "This document is still **experimental** and may be incomplete."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:10
+msgid "This feature is still **experimental** and need further optimization."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:12
+msgid "Suggestions and improvements are highly encouraged—please submit a PR!"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:16
+msgid ""
+"It's suggested to go through `docs/deeplearning_operators/matmul.md` first."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:18
+msgid "Example code can be found at `examples/gemm_sp`."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:21
+msgid "Structured sparsity in the NVIDIA Ampere architecture"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:23
+msgid ""
+"Since the Ampere architecture (sm80 and above), sparsity support has been "
+"integrated into Tensor Cores. This allows a 2:4 (or 1:2 for 32-bit data "
+"types) semi-structured matrix to be compressed into its non-zero values "
+"along with associated metadata, which can then be fed into the Tensor Core. "
+"This enables up to **2x throughput** compared to the equivalent dense "
+"computation."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:26
+msgid ""
+"This tutorial primarily focuses on CUDA, as this feature is not yet "
+"supported on ROCm. However, AMD provides a similar capability in the matrix "
+"cores of GPUs such as the MI300X."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:32
+msgid "Figure: Sparse MMA storage example (from PTX doc)"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:35
+msgid "Compress a dense tensor"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:37
+msgid ""
+"To utilize sparse Tensor Cores, a dense tensor must first be **compressed** "
+"into its non-zero values along with the corresponding metadata."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:39
+msgid ""
+"Both `PyTorch` and `vLLM` use `CUTLASS` as their computation backend (see "
+"references [here](https://github.com/pytorch/pytorch/blob/"
+"a8d6afb511a69687bbb2b7e88a3cf67917e1697e/aten/src/ATen/native/sparse/cuda/"
+"SparseSemiStructuredOps.cu#L47) and [here](https://github.com/vllm-project/"
+"vllm/blob/a5dd03c1ebc5e4f56f3c9d3dc0436e9c582c978f/csrc/sparse/cutlass/"
+"sparse_scaled_mm_c3x.cuh#L116)), leveraging `CUTLASS`’s built-in compressor "
+"(or reimplementing it in `PyTorch`)."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:41
+msgid ""
+"A set of **CUTLASS-compatible** compressors is provided in `tilelang.utils."
+"sparse`, where a dense tensor—along with other required arguments (e.g., "
+"block_K for sm90, transpose options)—can be passed in to perform the "
+"compression."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:43
+msgid ""
+"from tilelang.utils.sparse import compress\n"
+"A_sparse, E = compress(A, transposed=trans_A, block_k=block_K)\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:48
+msgid ""
+"Here, `A_sparse` contains all the non-zero elements of `A`, while `E` stores "
+"the corresponding metadata (indexing information) required to reconstruct "
+"the original sparse pattern."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:50
+msgid ""
+"NOTE: When using CUTLASS compressor, there is no naive position "
+"correspondence between the positions in `A_sparse`/`A` and `E`. (i.e. the 4-"
+"element group at [n, k] doesn't match the 4-bit metadata at [n, k] if you "
+"consider metadata as int4 tensor) The metadata is reordered internally to "
+"optimize memory access patterns (e.g., for ldsm instructions and vectorized "
+"loads). For more information, see **A note on `gemm_sp` and `gemm_sp_v2`**."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:55
+msgid "`T.gemm_sp` with CUTLASS's compressor"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:59
+msgid ""
+"It is strongly recommended to use T.gemm_sp_v2 due to its greater "
+"flexibility and faster compilation time."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:63
+msgid ""
+"A 2:4 sparse GEMM kernel is similar to its dense counterpart, except that it "
+"also requires handling the associated metadata."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:65
+msgid "Check comments in below kernel code for required modification."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:67
+msgid ""
+"def matmul_sp_sm80(\n"
+"    M,\n"
+"    N,\n"
+"    K,\n"
+"    block_M,\n"
+"    block_N,\n"
+"    block_K,\n"
+"    in_dtype,\n"
+"    out_dtype,\n"
+"    accum_dtype,\n"
+"    num_stages,\n"
+"    threads,\n"
+"    trans_A,\n"
+"    trans_B,\n"
+"):\n"
+"    is_8_bit = \"8\" in in_dtype\n"
+"    metadata_dtype = 'int32' if is_8_bit else 'int16'\n"
+"    E_factor = SparseTensorCoreIntrinEmitter.E_FACTOR_MAP[in_dtype]"
+"[metadata_dtype]  # Calculate shape for given datatypes\n"
+"    A_sparse_shape = (M, K // 2) if not trans_A else (K // 2, M)\n"
+"    B_shape = (K, N) if not trans_B else (N, K)\n"
+"    A_shared_shape = (block_M, block_K // 2) if not trans_A else (block_K // "
+"2, block_M)\n"
+"    B_shared_shape = (block_K, block_N) if not trans_B else (block_N, "
+"block_K)\n"
+"\n"
+"    import tilelang.language as T\n"
+"\n"
+"    @T.prim_func\n"
+"    def main(\n"
+"            A_sparse: T.Tensor(A_sparse_shape, in_dtype),\n"
+"            E: T.Tensor((M, K // E_factor), metadata_dtype),\n"
+"            B: T.Tensor(B_shape, in_dtype),\n"
+"            C: T.Tensor((M, N), out_dtype),\n"
+"    ):\n"
+"        with T.Kernel(T.ceildiv(N, block_N), T.ceildiv(M, block_M), "
+"threads=threads) as (bx, by):\n"
+"            A_shared = T.alloc_shared(A_shared_shape, in_dtype)\n"
+"            B_shared = T.alloc_shared(B_shared_shape, in_dtype)\n"
+"            E_shared = T.alloc_shared((block_M, block_K // E_factor), "
+"metadata_dtype)  # Allocate smem for metadata\n"
+"            C_frag = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"            T.annotate_layout({  # Annotate reordered cutlass metadata "
+"layout\n"
+"                E:\n"
+"                    make_cutlass_metadata_layout(E, mma_dtype=in_dtype, "
+"arch=\"8.0\"),\n"
+"                E_shared:\n"
+"                    make_cutlass_metadata_layout(\n"
+"                        E_shared, mma_dtype=in_dtype, arch=\"8.0\"),\n"
+"            })\n"
+"            T.clear(C_frag)\n"
+"            for k in T.Pipelined(T.ceildiv(K, block_K), "
+"num_stages=num_stages):\n"
+"                T.copy(E[by * block_M, k * block_K // E_factor], E_shared)\n"
+"                if trans_A:\n"
+"                    T.copy(A_sparse[k * block_K // 2, by * block_M], "
+"A_shared)\n"
+"                else:\n"
+"                    T.copy(A_sparse[by * block_M, k * block_K // 2], "
+"A_shared)\n"
+"                if trans_B:\n"
+"                    T.copy(B[bx * block_N, k * block_K], B_shared)\n"
+"                else:\n"
+"                    T.copy(B[k * block_K, bx * block_N], B_shared)\n"
+"                T.gemm_sp(A_shared, E_shared, B_shared, C_frag, trans_A, "
+"trans_B)  # Call gemm_sp with non-zero values and metadata\n"
+"            T.copy(C_frag, C[by * block_M, bx * block_N])\n"
+"\n"
+"    return main\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:129
+msgid ""
+"Under the hood, `gemm_sp` invokes templates adapted from `CUTLASS`, and a "
+"compatible metadata layout must be specified using `T.annotate_layout`."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:131
+msgid "`T.gemm_sp_v2` with a custom compressor"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:133
+msgid "To migrate to `gemm_sp_v2`, simply replace occurrences of `gemm_sp`."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:135
+msgid ""
+"Unlike `gemm_sp`, `gemm_sp_v2` can operate without `T.annotate_layout`, and "
+"it also supports user-defined layouts and compressors."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:137
+msgid ""
+"The metadata is stored in a `(u)int8`/`(u)int16`/`(u)int32` tensor, where "
+"**each 4-bit chunk represents two 2-bit indices** of non-zero elements "
+"within four consecutive elements. Here, we start with an `int16` example, "
+"which is the **default dtype** for `bf16` and `fp16` on Ampere GPUs."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:139
+msgid "Suppose we have the following row vector:"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:140
+msgid ""
+"t = tensor([[0, 7, 0, 3], [1, 5, 0, 0], [0, 0, 2, 4], [9, 0, 9, 0]], "
+"dtype=torch.float16).flatten()\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:144
+msgid "The non-zero elements and their corresponding indices are:"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:146
+msgid ""
+"t_sp = tensor([[7, 3], [1, 5], [2, 4], [9, 9]], dtype=torch.float16)."
+"flatten()\n"
+"indices = tensor([[1, 3], [0, 1], [2, 3], [0, 2]], dtype=torch.float16)."
+"flatten()\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:151
+msgid "The corresponding uint16 metadata is:"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:152
+msgid ""
+"# metadata_bits = tensor([0b1101, 0b0100, 0b1110, 0b1000])\n"
+"# Note: storage uses little-endian order: tensor(0b1000111001001101, "
+"dtype=torch.int16)\n"
+"# Note: the above code is not runnable in python as the interpreter won't "
+"take the binary\n"
+"#       as 2's complement\n"
+"metadata_int16 = tensor(-29107)\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:160
+msgid "You can decode an int16 metadata tensor using the following utility:"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:161
+msgid ""
+"def decode_metadata(meta: torch.Tensor) -> torch.Tensor:\n"
+"    assert meta.dtype is torch.int16\n"
+"    groups_per_meta = 16 // 4\n"
+"    out = []\n"
+"    for g in range(groups_per_meta):\n"
+"        group_bits = (meta >> (g * 4)) & 0xF\n"
+"        idx0 = group_bits & 0x3\n"
+"        idx1 = (group_bits >> 2) & 0x3\n"
+"        out.append(torch.stack([idx0, idx1], dim=-1))\n"
+"    return torch.concat(out, dim=-1).view(meta.shape[0], -1)\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:174
+msgid ""
+"The compressor can be implement at either `PyTorch`/`NumPy` level or kernel "
+"level."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:176
+msgid ""
+"For example, `PyTorch` provides an Ampere compressor [here](https://github."
+"com/pytorch/pytorch/blob/267d0197bfca0232488d51dd1ff735d619adc2cf/torch/"
+"sparse/_semi_structured_conversions.py#L47-L179). Note that in this "
+"implementation, a [permutation](https://github.com/pytorch/pytorch/"
+"blob/267d0197bfca0232488d51dd1ff735d619adc2cf/torch/sparse/"
+"_semi_structured_conversions.py#L173-L175) is applied to match CUTLASS’s "
+"metadata layout. If you do not annotate a metadata layout when using "
+"`gemm_sp_v2`, your compressor should replicate the same behavior as the "
+"PyTorch example—but without using the "
+"`_calculate_meta_reordering_scatter_offsets` function."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:178
+msgid ""
+"If you want to use a custom metadata layout in your kernel, one approach is "
+"to define the layout in `TileLang` and then apply the same layout to both "
+"your compressor kernel and the matmul_sp kernel."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:180
+msgid ""
+"\n"
+"@tilelang.jit(out_idx=[1, 2], pass_configs={\n"
+"    tilelang.PassConfigKey.TIR_DISABLE_VECTORIZE: True,\n"
+"})\n"
+"def compress_kernel(M, K, block_M, block_K, dtype, use_cutlass_layout):\n"
+"    e_factor, e_dtype = ARCH_INFO[\"8.0\"]\n"
+"    e_K = K // e_factor\n"
+"    elem, group = 2, 4\n"
+"\n"
+"    assert M % block_M == 0, \"M must be divisible by block_M\"\n"
+"    assert K % block_K == 0, \"K must be divisible by block_K\"\n"
+"    assert K % e_factor == 0, \"K must be divisible by e_factor\"\n"
+"    assert block_K % e_factor == 0, \"block_K must be divisible by "
+"e_factor\"\n"
+"\n"
+"    @T.prim_func\n"
+"    def kernel(\n"
+"        A: T.Tensor((M, K), dtype),\n"
+"        A_sp: T.Tensor((M, K // 2), dtype),\n"
+"        E: T.Tensor((M, e_K), e_dtype),\n"
+"    ):\n"
+"        with T.Kernel(T.ceildiv(M, block_M), T.ceildiv(K, block_K), "
+"threads=block_M) as (bx, by):\n"
+"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"            A_sp_shared = T.alloc_shared((block_M, block_K // 2), dtype)\n"
+"            E_shared = T.alloc_shared((block_M, block_K // e_factor), "
+"e_dtype)\n"
+"            if use_cutlass_layout:  # NOTE: Make sure compressor metadata "
+"layout\n"
+"                T.annotate_layout({ # is same with your computation kernel\n"
+"                    E:\n"
+"                        make_cutlass_metadata_layout(\n"
+"                            E, mma_dtype=\"float16\", arch=\"8.0\", "
+"block_k=block_K),\n"
+"                    E_shared:\n"
+"                        make_cutlass_metadata_layout(\n"
+"                            E_shared,\n"
+"                            mma_dtype=\"float16\",\n"
+"                            arch=\"8.0\",\n"
+"                            block_k=block_K),\n"
+"                })\n"
+"            T.clear(A_sp_shared)\n"
+"            T.clear(E_shared)\n"
+"            non_zero_cnt = T.alloc_local((1, ), dtype=\"uint8\")\n"
+"            non_zero_elt_log_idx = T.alloc_local((elem, ), dtype=\"uint8\")\n"
+"            T.copy(A[bx * block_M, by * block_K], A_shared)\n"
+"            for tm in T.Parallel(block_M):\n"
+"                for g_i in range(0, block_K // group):\n"
+"                    a_k = g_i * group\n"
+"                    T.clear(non_zero_cnt)\n"
+"                    T.clear(non_zero_elt_log_idx)\n"
+"                    for i in range(group):\n"
+"                        val = A_shared[tm, a_k + i]\n"
+"                        if val != 0.0:\n"
+"                            non_zero_elt_log_idx[non_zero_cnt[0]] = i\n"
+"                            A_sp_shared[tm, a_k // 2 + non_zero_cnt[0]] = "
+"val\n"
+"                            non_zero_cnt[0] += 1\n"
+"                    if non_zero_cnt[0] == 1 and non_zero_elt_log_idx[0] == "
+"3:\n"
+"                        non_zero_elt_log_idx[0] = 0\n"
+"                        non_zero_elt_log_idx[1] = 3\n"
+"                        A_sp_shared[tm, a_k // 2 + 1] = A_sp_shared[tm, "
+"a_k // 2]\n"
+"                        A_sp_shared[tm, a_k // 2] = 0.0\n"
+"                    elif non_zero_cnt[0] == 1:\n"
+"                        A_sp_shared[tm, a_k // 2 + 1] = 0\n"
+"                        non_zero_elt_log_idx[1] = 3\n"
+"                    for i in T.serial(elem):\n"
+"                        val = non_zero_elt_log_idx[i]\n"
+"                        E_shared[tm, a_k // e_factor] |= T.shift_left(val, 4 "
+"* (g_i % (e_factor // group)) + 2 * i)\n"
+"            T.copy(A_sp_shared, A_sp[bx * block_M, by * block_K // 2])\n"
+"            T.copy(E_shared, E[bx * block_M, by * block_K // e_factor])\n"
+"\n"
+"    return kernel\n"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:250
+msgid "A note on `gemm_sp` and `gemm_sp_v2`"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:252
+msgid ""
+"Initially, `T.gemm_sp` followed the same design as `T.gemm`, lowering to a "
+"`CUTLASS` template. This inherently requires metadata to be reordered "
+"offline following a predetermined layout."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:254
+msgid "However, fixing a specific layout introduces several potential issues:"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:256
+msgid ""
+"Painful debugging experience: Debugging a failed kernel becomes difficult "
+"due to the reordered indexing, including permutations and swizzling."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:258
+msgid ""
+"Limited flexibility: For example, concatenating two compressed tensors, such "
+"as `A_sparse_0` and `A_sparse_1`, into a new `A_sparse` makes sense. "
+"However, concatenating their metadata `E_0` and `E_1` may not be valid "
+"unless the layout allows it mathematically."
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:260
+msgid ""
+"Alignment requirements: `CUTLASS` enforces strict alignment checks, and many "
+"hyperparameter configurations can lead to compilation errors. (For "
+"reference, sm8x was implemented in `CUTLASS 2`.)"
+msgstr ""
+
+#: ../../../deeplearning_operators/matmul_sparse.md:262
+msgid ""
+"`T.gemm_sp_v2` was designed to address these limitations, following the "
+"approach of `T.gemm_v2`. It lowers directly to PTX, removing the need for a "
+"fixed metadata layout."
+msgstr ""
