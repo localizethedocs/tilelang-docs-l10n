@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,7 @@ msgid ""
 "TLHIPSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:471
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:489
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:38:<autosummary>:1
 msgid "A wrapper class for the TileLang HIP backend."
 msgstr ""
@@ -132,8 +132,8 @@ msgstr ""
 msgid ":py:obj:`TLWrapper <tilelang.jit.adapter.wrapper.TLWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:634
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:692
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:652
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:710
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:38:<autosummary>:1
 msgid "A wrapper class for the TileLang backend."
 msgstr ""
@@ -148,15 +148,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:45
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:68
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:91
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:121
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:143
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:164
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:189
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:211
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:251
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:295
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:488
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:109
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:139
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:161
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:182
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:207
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:229
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:269
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:313
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:506
 msgid "<details><summary>Show Value</summary>"
 msgstr ""
 
@@ -175,32 +175,53 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:59
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:82
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:112
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:134
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:155
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:180
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:202
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:242
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:286
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:317
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:509
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:100
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:130
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:152
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:173
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:198
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:220
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:260
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:304
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:335
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:527
 msgid "</details>"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:72
 msgid ""
 "\"\"\"\n"
-"    if ({1} > 65536) {{\n"
-"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to set the allowed "
-"dynamic shared memory size for {0} to %d\", {1});\n"
+"    int device_{0} = 0;\n"
+"    hipError_t dev_res_{0} = hipGetDevice(&device_{0});\n"
+"    if (dev_res_{0} != hipSuccess) {{\n"
+"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to get HIP device for "
+"{0}: %s\", hipGetErrorString(dev_res_{0}));\n"
+"        return -1;\n"
+"    }}\n"
+"    int max_smem_{0} = 0;\n"
+"    hipError_t attr_res_{0} = hipDeviceGetAttribute(&max_smem_{0}, "
+"hipDeviceAttributeMaxSharedMemoryPerBlock, device_{0});\n"
+"    if (attr_res_{0} != hipSuccess || max_smem_{0} <= 0) {{\n"
+"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to query HIP max shared "
+"memory for {0}: %s\", hipGetErrorString(attr_res_{0}));\n"
+"        return -1;\n"
+"    }}\n"
+"    if ({1} > max_smem_{0}) {{\n"
+"        snprintf(\n"
+"            error_buf,\n"
+"            ERROR_BUF_SIZE,\n"
+"            \"Requested dynamic shared memory %d exceeds device limit %d for "
+"{0}\",\n"
+"            {1},\n"
+"            max_smem_{0}\n"
+"        );\n"
 "        return -1;\n"
 "    }}\n"
 "    return 0;\n"
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:95
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:113
 msgid ""
 "\"\"\"\n"
 "#define ERROR_BUF_SIZE 1024\n"
@@ -218,7 +239,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:125
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:143
 msgid ""
 "\"\"\"\n"
 "extern \"C\" int call({}) {{\n"
@@ -228,7 +249,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:147
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:165
 msgid ""
 "\"\"\"\n"
 "  cudaStreamAttrValue stream_attribute;\n"
@@ -238,7 +259,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:168
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:186
 msgid ""
 "\"\"\"\n"
 "  stream_attribute.accessPolicyWindow.hitRatio = {1};\n"
@@ -254,7 +275,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:193
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:211
 msgid ""
 "\"\"\"\n"
 "  stream_attribute.accessPolicyWindow.num_bytes = 0;\n"
@@ -266,7 +287,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:215
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:233
 msgid ""
 "\"\"\"\n"
 "  CUtensorMap {0};\n"
@@ -297,7 +318,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:255
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:273
 msgid ""
 "\"\"\"\n"
 "  CUtensorMap {0};\n"
@@ -333,7 +354,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:299
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:317
 msgid ""
 "\"\"\"\n"
 "  {{\n"
@@ -353,11 +374,11 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:325
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:343
 msgid "Bases: :py:obj:`abc.ABC`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:328
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:346
 msgid ""
 "Helper class that provides a standard way to create an ABC using inheritance."
 msgstr ""
@@ -370,11 +391,11 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:468
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:486
 msgid "Bases: :py:obj:`TLCUDASourceWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:492
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:510
 msgid ""
 "\"\"\"\n"
 "#define ERROR_BUF_SIZE 1024\n"
@@ -392,10 +413,10 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:631
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:649
 msgid "Bases: :py:obj:`BaseWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:689
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:707
 msgid "Bases: :py:obj:`TLWrapper`"
 msgstr ""

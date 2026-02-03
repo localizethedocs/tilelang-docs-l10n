@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,482 +29,552 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
-msgid ""
-":py:obj:`create_list_of_mbarrier <tilelang.language.builtin."
-"create_list_of_mbarrier>`\\ \\(\\*args\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:68
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
-msgid "Create a list of memory barrier handles."
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
-msgid ""
-":py:obj:`get_mbarrier <tilelang.language.builtin.get_mbarrier>`\\ "
-"\\(\\*args\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:86
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
-msgid "Retrieve a memory barrier operation."
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`create_tma_descriptor <tilelang.language.builtin."
 "create_tma_descriptor>`\\ \\(\\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:96
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:74
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Create a Tensor Memory Access (TMA) descriptor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ":py:obj:`tma_load <tilelang.language.builtin.tma_load>`\\ \\(\\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:106
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:84
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Perform a Tensor Memory Access (TMA) load operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`fence_proxy_async <tilelang.language.builtin.fence_proxy_async>`\\ "
 "\\(\\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:116
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:94
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Create a fence for asynchronous proxy operations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`tma_store_arrive <tilelang.language.builtin.tma_store_arrive>`\\ "
 "\\(\\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:126
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:104
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Signal the arrival of a TMA store operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`tma_store_wait <tilelang.language.builtin.tma_store_wait>`\\ "
 "\\(\\*args\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:136
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:114
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Wait for completion of TMA store operations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`set_max_nreg <tilelang.language.builtin.set_max_nreg>`\\ "
 "\\(reg\\_count\\, is\\_inc\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Set the maximum number of registers to use."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`inc_max_nreg <tilelang.language.builtin.inc_max_nreg>`\\ "
 "\\(reg\\_count\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:162
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:140
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Increment the maximum number of registers to use."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`dec_max_nreg <tilelang.language.builtin.dec_max_nreg>`\\ "
 "\\(reg\\_count\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:167
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:145
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Decrement the maximum number of registers to use."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_producer_reg_dealloc <tilelang.language.builtin."
 "annotate_producer_reg_dealloc>`\\ \\(\\[reg\\_count\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:172
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:150
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Annotate the producer reg dealloc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_consumer_reg_alloc <tilelang.language.builtin."
 "annotate_consumer_reg_alloc>`\\ \\(\\[reg\\_count\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:177
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:155
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Annotate the consumer reg alloc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`no_set_max_nreg <tilelang.language.builtin.no_set_max_nreg>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:182
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:160
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Disable the maximum register limit setting."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`disable_warp_group_reg_alloc <tilelang.language.builtin."
 "disable_warp_group_reg_alloc>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:187
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:165
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Disable the warp group reg alloc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`mbarrier_wait_parity <tilelang.language.builtin."
 "mbarrier_wait_parity>`\\ \\(mbarrier\\, parity\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:192
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:170
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Wait for memory barrier parity condition."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`mbarrier_arrive <tilelang.language.builtin.mbarrier_arrive>`\\ "
 "\\(mbarrier\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:235
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:211
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Arrive at memory barrier."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`mbarrier_expect_tx <tilelang.language.builtin."
-"mbarrier_expect_tx>`\\ \\(\\*args\\)"
+"mbarrier_expect_tx>`\\ \\(mbarrier\\, tx\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:243
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:219
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Set expected transaction count for memory barrier."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`warpgroup_arrive <tilelang.language.builtin.warpgroup_arrive>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:253
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:232
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Signal warpgroup readiness for subsequent WGMMA operations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`warpgroup_commit_batch <tilelang.language.builtin."
 "warpgroup_commit_batch>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:261
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:240
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Commit the current warpgroup batch for WGMMA operations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`warpgroup_wait <tilelang.language.builtin.warpgroup_wait>`\\ "
 "\\(num\\_mma\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:269
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:248
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Wait for completion of the specified warpgroup batch."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`get_lane_idx <tilelang.language.builtin.get_lane_idx>`\\ "
 "\\(\\[warp\\_size\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:280
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:259
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Return the logical lane index of the calling thread within a warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`get_warp_idx_sync <tilelang.language.builtin.get_warp_idx_sync>`\\ "
 "\\(\\[warp\\_size\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:299
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:278
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 "Return the canonical warp index, assuming the warp's threads are converged."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`get_warp_idx <tilelang.language.builtin.get_warp_idx>`\\ "
 "\\(\\[warp\\_size\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:317
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:296
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Return the canonical warp index without synchronizing the warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`get_warp_group_idx <tilelang.language.builtin."
 "get_warp_group_idx>`\\ \\(\\[warp\\_size\\, warps\\_per\\_group\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:335
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:314
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Return the canonical warp group index for the calling thread."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`shuffle_elect <tilelang.language.builtin.shuffle_elect>`\\ "
 "\\(thread\\_extent\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:356
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:335
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Elect exactly one lane within a logical thread group."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`warpgroup_fence_operand <tilelang.language.builtin."
 "warpgroup_fence_operand>`\\ \\(buffer\\_or\\_ptr\\[\\, offset\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:377
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:356
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Insert a warpgroup fence for the destination accumulator registers."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ":py:obj:`wait_wgmma <tilelang.language.builtin.wait_wgmma>`\\ \\(id\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:402
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:381
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 "Wait for WGMMA (Warp Group Matrix Multiply-Accumulate) operations to "
 "complete."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`barrier_wait <tilelang.language.builtin.barrier_wait>`\\ "
-"\\(barrier\\_id\\[\\, parity\\]\\)"
+"\\(mbarrier\\, parity\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:413
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:392
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Wait for a memory barrier to complete."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`barrier_arrive <tilelang.language.builtin.barrier_arrive>`\\ "
-"\\(barrier\\_id\\)"
+"\\(mbarrier\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:428
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:407
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Arrive at a memory barrier."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`shfl_xor <tilelang.language.builtin.shfl_xor>`\\ \\(value\\, "
 "offset\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:436
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:415
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Perform a shuffle operation with XOR offset."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`shfl_down <tilelang.language.builtin.shfl_down>`\\ \\(value\\, "
 "offset\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:449
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:428
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Perform a shuffle operation with down offset."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`shfl_up <tilelang.language.builtin.shfl_up>`\\ \\(value\\, offset\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:457
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:436
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Perform a shuffle operation with up offset."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`sync_threads <tilelang.language.builtin.sync_threads>`\\ "
 "\\(\\[barrier\\_id\\, arrive\\_count\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:465
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:444
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Synchronize all threads in a block."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`sync_warp <tilelang.language.builtin.sync_warp>`\\ \\(\\[mask\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:470
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:449
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Synchronize all threads in a warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`shfl_sync <tilelang.language.builtin.shfl_sync>`\\ \\(mask\\, "
 "value\\, srcLane\\[\\, width\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:475
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:454
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Receives data from a thread in the same warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ":py:obj:`sync_global <tilelang.language.builtin.sync_global>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:480
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:459
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Synchronize all threads in the entire grid."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ":py:obj:`sync_grid <tilelang.language.builtin.sync_grid>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:485
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:464
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Synchronize all threads in a grid."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`initialize_wgmma_descriptor <tilelang.language.builtin."
 "initialize_wgmma_descriptor>`\\ \\(descriptor\\, start\\_address\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:490
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:469
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Initialize a WGMMA/UTCMMA shared-memory descriptor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`initialize_tcgen05_descriptor <tilelang.language.builtin."
 "initialize_tcgen05_descriptor>`\\ \\(descriptor\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:495
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:474
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Initialize a TCGEN05 shared-memory descriptor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`increase_descriptor_offset <tilelang.language.builtin."
 "increase_descriptor_offset>`\\ \\(descriptor\\, offset\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:500
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:479
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Increase the offset of a memory descriptor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ":py:obj:`loop_break <tilelang.language.builtin.loop_break>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:513
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:492
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Break out of the innermost loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`cp_async_barrier_noinc <tilelang.language.builtin."
-"cp_async_barrier_noinc>`\\ \\(barrier\\_id\\)"
+"cp_async_barrier_noinc>`\\ \\(barrier\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:518
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:497
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "Perform a ptx async copy barrier using cp.async.mbarrier.arrive.noinc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`tcgen05_mma_arrive <tilelang.language.builtin."
 "tcgen05_mma_arrive>`\\ \\(mbar\\_ptr\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:523
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:502
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 "Signal UMMA (TCGEN05) barrier arrival for a shared-memory mbarrier pointer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid ""
 ":py:obj:`ptx_mma_sm70 <tilelang.language.builtin.ptx_mma_sm70>`\\ "
 "\\(shape\\, A\\_layout\\, B\\_layout\\, A\\_dtype\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:531
-#: ../../../autoapi/tilelang/language/builtin/index.rst:62:<autosummary>:1
+#: ../../../autoapi/tilelang/language/builtin/index.rst:510
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
 msgid "TVM intrinsic for ptx tensor core mma instructions on SM70 (Volta)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:64
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`ldg32 <tilelang.language.builtin.ldg32>`\\ \\(src\\[\\, pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:564
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Load 32 bits (4 bytes) from global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`ldg64 <tilelang.language.builtin.ldg64>`\\ \\(src\\[\\, pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:583
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Load 64 bits (8 bytes) from global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`ldg128 <tilelang.language.builtin.ldg128>`\\ \\(src\\[\\, pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:602
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Load 128 bits (16 bytes) from global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`ldg256 <tilelang.language.builtin.ldg256>`\\ \\(src\\[\\, pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:621
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Load 256 bits (32 bytes) from global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`stg32 <tilelang.language.builtin.stg32>`\\ \\(dst\\, value\\[\\, "
+"pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:640
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Store 32 bits (4 bytes) to global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`stg64 <tilelang.language.builtin.stg64>`\\ \\(dst\\, value\\[\\, "
+"pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:656
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Store 64 bits (8 bytes) to global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`stg128 <tilelang.language.builtin.stg128>`\\ \\(dst\\, value\\[\\, "
+"pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:672
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Store 128 bits (16 bytes) to global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+":py:obj:`stg256 <tilelang.language.builtin.stg256>`\\ \\(dst\\, value\\[\\, "
+"pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:688
+#: ../../../autoapi/tilelang/language/builtin/index.rst:68:<autosummary>:1
+msgid ""
+"Store 256 bits (32 bytes) to global memory using explicit PTX instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:70
 msgid "Module Contents"
 msgstr ""
 
@@ -512,246 +582,237 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:70
-msgid "Either a single list of arguments, or multiple arguments directly."
+#: ../../../autoapi/tilelang/language/builtin/index.rst:76
+msgid "Variable arguments defining the TMA descriptor configuration"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:73
-msgid "Handle to the created list of memory barriers."
+#: ../../../autoapi/tilelang/language/builtin/index.rst:78
+msgid "A handle to the created TMA descriptor"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:0
-msgid "Raises"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:76
-msgid "If the input is not a list or variadic arguments."
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:79
-#: ../../../autoapi/tilelang/language/builtin/index.rst:200
-#: ../../../autoapi/tilelang/language/builtin/index.rst:565
-msgid "Examples"
-msgstr "範例"
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:88
-msgid "Variable arguments to specify which memory barrier to retrieve"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:90
-msgid "A handle to the requested memory barrier"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:98
-msgid "Variable arguments defining the TMA descriptor configuration"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:100
-msgid "A handle to the created TMA descriptor"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/builtin/index.rst:108
+#: ../../../autoapi/tilelang/language/builtin/index.rst:86
 msgid "Variable arguments specifying the TMA load parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:110
+#: ../../../autoapi/tilelang/language/builtin/index.rst:88
 msgid "A handle to the TMA load operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:118
+#: ../../../autoapi/tilelang/language/builtin/index.rst:96
 msgid "Variable arguments for fence configuration"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:120
+#: ../../../autoapi/tilelang/language/builtin/index.rst:98
 msgid "A handle to the fence operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:128
+#: ../../../autoapi/tilelang/language/builtin/index.rst:106
 msgid "Variable arguments for the store arrival operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:130
+#: ../../../autoapi/tilelang/language/builtin/index.rst:108
 msgid "A handle to the store arrive operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:138
+#: ../../../autoapi/tilelang/language/builtin/index.rst:116
 msgid "Variable arguments specifying which store operations to wait for"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:140
+#: ../../../autoapi/tilelang/language/builtin/index.rst:118
 msgid "A handle to the store wait operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:146
+#: ../../../autoapi/tilelang/language/builtin/index.rst:124
 msgid ""
 "Set the maximum number of registers to use. Detailed Documentation: https://"
 "docs.nvidia.com/cuda/parallel-thread-execution/#miscellaneous-instructions-"
 "setmaxnreg"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:150
+#: ../../../autoapi/tilelang/language/builtin/index.rst:128
 msgid "int The number of registers to allocate"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:152
+#: ../../../autoapi/tilelang/language/builtin/index.rst:130
 msgid ""
 "int Whether to increment or decrement the register count 0 if decrement, 1 "
 "if increment"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:156
+#: ../../../autoapi/tilelang/language/builtin/index.rst:134
 msgid "A handle to the register setting operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:194
-#: ../../../autoapi/tilelang/language/builtin/index.rst:415
-msgid "Optional[int, PrimExpr] The memory barrier to wait on"
+#: ../../../autoapi/tilelang/language/builtin/index.rst:172
+msgid "Buffer | BufferLoad"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:196
-#: ../../../autoapi/tilelang/language/builtin/index.rst:417
-msgid "Optional[int, Var] The parity value to wait for"
+#: ../../../autoapi/tilelang/language/builtin/index.rst:173
+msgid "parity: int | Var     The parity value to wait for"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:201
+#: ../../../autoapi/tilelang/language/builtin/index.rst:175
+msgid "parity: int | Var"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:176
+msgid "The parity value to wait for"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:178
+#: ../../../autoapi/tilelang/language/builtin/index.rst:544
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:179
 msgid ""
-"# Wait for parity 0 on barrier 0\n"
-"T.mbarrier_wait_parity(0, 0)\n"
+"mbar = T.alloc_barrier(1)\n"
+"# Wait for parity 0 on a single mbarrier\n"
+"T.mbarrier_wait_parity(mbar, 0)\n"
 "\n"
-"# Wait for parity value in variable ko on barrier 1\n"
-"T.mbarrier_wait_parity(1, ko)\n"
-"\n"
-"# Wait using barrier handle\n"
-"barrier = T.get_mbarrier(0)\n"
-"T.mbarrier_wait_parity(barrier, 1)\n"
+"mbars = T.alloc_barrier([128] * n)\n"
+"# Wait for parity value on one of the mbarriers\n"
+"T.mbarrier_wait_parity(mbars[ko], ko)\n"
 "\n"
 "# Common usage in pipelined kernels:\n"
 "for ko in range(num_stages):\n"
 "    # Producer waits for consumer to finish previous iteration\n"
-"    T.mbarrier_wait_parity(1, ko ^ 1)\n"
+"    T.mbarrier_wait_parity(mbars[1], ko ^ 1)\n"
 "    # Producer copies data\n"
 "    T.copy(A_global, A_shared)\n"
 "    # Producer signals data ready\n"
-"    T.mbarrier_arrive(0)\n"
+"    T.mbarrier_arrive(mbars[0])\n"
 "\n"
 "    # Consumer waits for producer data\n"
-"    T.mbarrier_wait_parity(0, ko)\n"
+"    T.mbarrier_wait_parity(mbars[0], ko)\n"
 "    # Consumer computes\n"
 "    T.gemm(A_shared, B_shared, C_local)\n"
 "    # Consumer signals completion\n"
-"    T.mbarrier_arrive(1)"
+"    T.mbarrier_arrive(mbars[1])"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:229
-#: ../../../autoapi/tilelang/language/builtin/index.rst:420
+#: ../../../autoapi/tilelang/language/builtin/index.rst:205
+#: ../../../autoapi/tilelang/language/builtin/index.rst:399
 msgid "A handle to the barrier wait operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:237
-#: ../../../autoapi/tilelang/language/builtin/index.rst:430
-msgid "Optional[int, PrimExpr] The memory barrier to arrive at"
+#: ../../../autoapi/tilelang/language/builtin/index.rst:213
+#: ../../../autoapi/tilelang/language/builtin/index.rst:409
+msgid "Buffer | BufferLoad The memory barrier to arrive at"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:245
-msgid "Variable arguments specifying the expected transaction count"
+#: ../../../autoapi/tilelang/language/builtin/index.rst:221
+msgid "Buffer | BufferLoad The memory barrier to expect transaction count for"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:247
+#: ../../../autoapi/tilelang/language/builtin/index.rst:223
+msgid "int The expected transaction count"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:226
 msgid "A handle to the barrier expectation operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:255
+#: ../../../autoapi/tilelang/language/builtin/index.rst:234
 msgid "A handle to the warpgroup arrive operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:263
+#: ../../../autoapi/tilelang/language/builtin/index.rst:242
 msgid "A handle to the warpgroup commit batch operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:271
+#: ../../../autoapi/tilelang/language/builtin/index.rst:250
 msgid "int Identifier of the warpgroup MMA batch to wait on."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:274
+#: ../../../autoapi/tilelang/language/builtin/index.rst:253
 msgid "A handle to the warpgroup wait operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:282
+#: ../../../autoapi/tilelang/language/builtin/index.rst:261
 msgid ""
 "Logical warp (or wavefront) size. Defaults to 32 on NVIDIA and 64 on AMD."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:286
-#: ../../../autoapi/tilelang/language/builtin/index.rst:305
-#: ../../../autoapi/tilelang/language/builtin/index.rst:323
-#: ../../../autoapi/tilelang/language/builtin/index.rst:343
-#: ../../../autoapi/tilelang/language/builtin/index.rst:363
+#: ../../../autoapi/tilelang/language/builtin/index.rst:265
+#: ../../../autoapi/tilelang/language/builtin/index.rst:284
+#: ../../../autoapi/tilelang/language/builtin/index.rst:302
+#: ../../../autoapi/tilelang/language/builtin/index.rst:322
+#: ../../../autoapi/tilelang/language/builtin/index.rst:342
+#: ../../../autoapi/tilelang/language/builtin/index.rst:575
+#: ../../../autoapi/tilelang/language/builtin/index.rst:594
+#: ../../../autoapi/tilelang/language/builtin/index.rst:613
+#: ../../../autoapi/tilelang/language/builtin/index.rst:632
+#: ../../../autoapi/tilelang/language/builtin/index.rst:649
+#: ../../../autoapi/tilelang/language/builtin/index.rst:665
+#: ../../../autoapi/tilelang/language/builtin/index.rst:681
+#: ../../../autoapi/tilelang/language/builtin/index.rst:697
 msgid "Example"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:291
-#: ../../../autoapi/tilelang/language/builtin/index.rst:310
-#: ../../../autoapi/tilelang/language/builtin/index.rst:328
-#: ../../../autoapi/tilelang/language/builtin/index.rst:348
-#: ../../../autoapi/tilelang/language/builtin/index.rst:368
+#: ../../../autoapi/tilelang/language/builtin/index.rst:270
+#: ../../../autoapi/tilelang/language/builtin/index.rst:289
+#: ../../../autoapi/tilelang/language/builtin/index.rst:307
+#: ../../../autoapi/tilelang/language/builtin/index.rst:327
+#: ../../../autoapi/tilelang/language/builtin/index.rst:347
 msgid "Implementation Notes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:292
+#: ../../../autoapi/tilelang/language/builtin/index.rst:271
 msgid ""
 "Lowers to the CUDA helper `tl::get_lane_idx(warp_size)` defined in `src/"
 "tl_templates/cuda/intrin.h`, which computes the lane index from the linear "
 "thread id using the provided `warp_size`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:301
-#: ../../../autoapi/tilelang/language/builtin/index.rst:319
+#: ../../../autoapi/tilelang/language/builtin/index.rst:280
+#: ../../../autoapi/tilelang/language/builtin/index.rst:298
 msgid "Logical warp size used for the index calculation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:311
+#: ../../../autoapi/tilelang/language/builtin/index.rst:290
 msgid ""
 "Emits `tl::get_warp_idx_sync(warp_size)` which divides the block-linear "
 "thread id by `warp_size`, matching the semantics of CUTLASS' canonical "
 "helpers."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:329
+#: ../../../autoapi/tilelang/language/builtin/index.rst:308
 msgid ""
 "Lowers to `tl::get_warp_idx(warp_size)` which divides the block-linear "
 "thread id by the provided `warp_size` without requiring warp convergence."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:337
+#: ../../../autoapi/tilelang/language/builtin/index.rst:316
 msgid "Logical warp size to use (defaults to 32 on NVIDIA / 64 on AMD)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:339
+#: ../../../autoapi/tilelang/language/builtin/index.rst:318
 msgid "Number of warps per warp-group. Defaults to 4 on NVIDIA architectures."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:349
+#: ../../../autoapi/tilelang/language/builtin/index.rst:328
 msgid ""
 "Generates `tl::get_warp_group_idx(warp_size, warps_per_group)` which divides "
 "the block-linear thread id by `warp_size * warps_per_group`, matching the "
 "canonical ordering while allowing architecture-specific overrides."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:358
+#: ../../../autoapi/tilelang/language/builtin/index.rst:337
 msgid ""
 "Size (in threads) of the group in which a single lane should be elected. "
 "Passing 0 elects a single lane in the entire thread block."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:369
+#: ../../../autoapi/tilelang/language/builtin/index.rst:348
 msgid ""
 "Lowered to the CUDA helper `tl::tl_shuffle_elect<thread_extent>()` defined "
 "in `src/tl_templates/cuda/intrin.h`, which relies on `cutlass::"
@@ -759,14 +820,14 @@ msgid ""
 "to pick one lane per group."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:379
+#: ../../../autoapi/tilelang/language/builtin/index.rst:358
 msgid ""
 "This prevents NVCC from sinking uses of accumulator fragments past the "
 "corresponding WGMMA operations by issuing an empty inline assembly barrier "
 "on every register."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:382
+#: ../../../autoapi/tilelang/language/builtin/index.rst:361
 msgid ""
 "Buffer | BufferLoad | BufferRegion | PrimExpr A buffer representing the "
 "accumulator fragment, a buffer load/region that identifies a starting "
@@ -774,126 +835,228 @@ msgid ""
 "address_of/typed Var)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:386
+#: ../../../autoapi/tilelang/language/builtin/index.rst:365
 msgid ""
 "int | PrimExpr Element offset from the start of the accumulator fragment."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:388
+#: ../../../autoapi/tilelang/language/builtin/index.rst:367
 msgid ""
 "int | PrimExpr | None Number of 32-bit registers to fence. If None and a "
 "Buffer is provided, it will be derived from the buffer shape and dtype."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:391
+#: ../../../autoapi/tilelang/language/builtin/index.rst:370
 msgid ""
 "str | None Data type string of the accumulator elements. When passing a "
 "buffer or buffer-derived expression, dtype is inferred. It is required only "
 "when passing a raw pointer expression that cannot be inferred."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:396
+#: ../../../autoapi/tilelang/language/builtin/index.rst:375
 msgid "A handle to the warpgroup fence operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:404
+#: ../../../autoapi/tilelang/language/builtin/index.rst:383
 msgid "int The id of the WGMMA operation to wait for"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:407
+#: ../../../autoapi/tilelang/language/builtin/index.rst:386
 msgid "A handle to the WGMMA wait operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:423
+#: ../../../autoapi/tilelang/language/builtin/index.rst:394
+msgid "Buffer | BufferLoad The memory barrier to wait on"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:396
+msgid "int | Var The parity value to wait for"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:402
 msgid ""
 "Current implementation is a sugar syntax for mbarrier_wait_parity, as we "
 "only support parity 0 and 1."
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/builtin/index.rst:417
+#: ../../../autoapi/tilelang/language/builtin/index.rst:430
 #: ../../../autoapi/tilelang/language/builtin/index.rst:438
-#: ../../../autoapi/tilelang/language/builtin/index.rst:451
-#: ../../../autoapi/tilelang/language/builtin/index.rst:459
 msgid "Optional[int, PrimExpr] The value to shuffle"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:440
+#: ../../../autoapi/tilelang/language/builtin/index.rst:419
 msgid "Optional[int, PrimExpr] The offset for the shuffle operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:443
+#: ../../../autoapi/tilelang/language/builtin/index.rst:422
 msgid "A handle to the shuffle operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:502
+#: ../../../autoapi/tilelang/language/builtin/index.rst:481
 msgid "The memory descriptor to modify."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:504
+#: ../../../autoapi/tilelang/language/builtin/index.rst:483
 msgid "The offset value to increase."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:507
+#: ../../../autoapi/tilelang/language/builtin/index.rst:486
 msgid "A handle representing the modified descriptor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:525
+#: ../../../autoapi/tilelang/language/builtin/index.rst:504
 msgid "Pointer to the mbarrier object in shared memory (e.g., Barrier*)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:533
+#: ../../../autoapi/tilelang/language/builtin/index.rst:512
 msgid ""
 "This intrinsic provides SM70-specific MMA operations that support m16n16k4 "
 "shape with FP16 inputs and FP16/FP32 accumulation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:536
+#: ../../../autoapi/tilelang/language/builtin/index.rst:515
 msgid "The shape of mma fragment (e.g., \"m16n16k4\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:538
+#: ../../../autoapi/tilelang/language/builtin/index.rst:517
 msgid "The layout of multiplicand fragment A (\"row\" or \"col\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:540
+#: ../../../autoapi/tilelang/language/builtin/index.rst:519
 msgid "The layout of multiplicand fragment B (\"row\" or \"col\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:542
+#: ../../../autoapi/tilelang/language/builtin/index.rst:521
 msgid "The data type of multiplicand fragment A (typically \"fp16\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:544
+#: ../../../autoapi/tilelang/language/builtin/index.rst:523
 msgid "The data type of multiplicand fragment B (typically \"fp16\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:546
+#: ../../../autoapi/tilelang/language/builtin/index.rst:525
 msgid "The data type of accumulator fragment C (\"fp16\" or \"fp32\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:548
+#: ../../../autoapi/tilelang/language/builtin/index.rst:527
 msgid "The multiplicand fragment A variable."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:550
+#: ../../../autoapi/tilelang/language/builtin/index.rst:529
 msgid "The index of multiplicand fragment A."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:552
+#: ../../../autoapi/tilelang/language/builtin/index.rst:531
 msgid "The multiplicand fragment B variable."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:554
+#: ../../../autoapi/tilelang/language/builtin/index.rst:533
 msgid "The index of multiplicand fragment B."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:556
+#: ../../../autoapi/tilelang/language/builtin/index.rst:535
 msgid "The accumulator fragment C variable."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:558
+#: ../../../autoapi/tilelang/language/builtin/index.rst:537
 msgid "The index of accumulator fragment C."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/builtin/index.rst:561
+#: ../../../autoapi/tilelang/language/builtin/index.rst:540
 msgid "**call** -- The call expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:566
+msgid "Usage: `T.ldg32(x[i])` or `T.ldg32(x[i:i+2])` emits `tl::ldg32(ptr)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:568
+#: ../../../autoapi/tilelang/language/builtin/index.rst:587
+#: ../../../autoapi/tilelang/language/builtin/index.rst:606
+#: ../../../autoapi/tilelang/language/builtin/index.rst:625
+msgid "A `Buffer`, `BufferRegion`, or `BufferLoad`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:569
+#: ../../../autoapi/tilelang/language/builtin/index.rst:588
+#: ../../../autoapi/tilelang/language/builtin/index.rst:607
+#: ../../../autoapi/tilelang/language/builtin/index.rst:626
+msgid "Optional predicate condition. If False, the load is skipped."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:571
+msgid "The loaded 32-bit value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:585
+msgid "Usage: `T.ldg64(x[i])` or `T.ldg64(x[i:i+4])` emits `tl::ldg64(ptr)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:590
+msgid "The loaded 64-bit value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:604
+msgid ""
+"Usage: `T.ldg128(x[i])` or `T.ldg128(x[i:i+8])` emits `tl::ldg128(ptr)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:609
+msgid "The loaded 128-bit value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:623
+msgid ""
+"Usage: `T.ldg256(x[i])` or `T.ldg256(x[i:i+16])` emits `tl::ldg256(ptr)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:628
+msgid "The loaded 256-bit value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:642
+msgid "Usage: `T.stg32(y[i], value)` emits `tl::stg32(ptr, value)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:644
+#: ../../../autoapi/tilelang/language/builtin/index.rst:660
+#: ../../../autoapi/tilelang/language/builtin/index.rst:676
+#: ../../../autoapi/tilelang/language/builtin/index.rst:692
+msgid "A `Buffer`, `BufferRegion`, or `BufferLoad` indicating the destination."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:645
+msgid "The 32-bit value to store."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:646
+#: ../../../autoapi/tilelang/language/builtin/index.rst:662
+#: ../../../autoapi/tilelang/language/builtin/index.rst:678
+#: ../../../autoapi/tilelang/language/builtin/index.rst:694
+msgid "Optional predicate condition. If False, the store is skipped."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:658
+msgid "Usage: `T.stg64(y[i:i+2], value)` emits `tl::stg64(ptr, value)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:661
+msgid "The 64-bit value to store (e.g., uint2)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:674
+msgid "Usage: `T.stg128(y[i:i+4], value)` emits `tl::stg128(ptr, value)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:677
+msgid "The 128-bit value to store (e.g., uint4)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:690
+msgid "Usage: `T.stg256(y[i:i+8], value)` emits `tl::stg256(ptr, value)`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/builtin/index.rst:693
+msgid "The 256-bit value to store (e.g., ulonglong4)."
 msgstr ""

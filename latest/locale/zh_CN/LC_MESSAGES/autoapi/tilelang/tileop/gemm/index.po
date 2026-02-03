@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,17 +25,8 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:23
+#: ../../../autoapi/tilelang/tileop/gemm/index.rst:24
 msgid "Classes"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:30:<autosummary>:1
-msgid ":py:obj:`GemmInst <tilelang.tileop.gemm.GemmInst>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:52
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:30:<autosummary>:1
-msgid "Enum where members are also (and must be) ints"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:30:<autosummary>:1
@@ -67,26 +58,14 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:49
-msgid "Bases: :py:obj:`enum.IntEnum`"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:0
-msgid "Return type"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:89
-msgid "Return repr(self)."
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:95
 msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:154
+#: ../../../autoapi/tilelang/tileop/gemm/index.rst:108
 msgid "Infer the layout for the GEMM operation based on target architecture."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:160
+#: ../../../autoapi/tilelang/tileop/gemm/index.rst:114
 msgid ""
 "Lower the GEMM operation to TIR statements based on target architecture."
 msgstr ""

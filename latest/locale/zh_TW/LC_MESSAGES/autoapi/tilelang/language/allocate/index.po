@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,7 +131,7 @@ msgid ""
 "dtype\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:146
+#: ../../../autoapi/tilelang/language/allocate/index.rst:151
 #: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
 msgid ""
 "Allocate a Tensor Memory (TMEM) buffer for use with 5th generation Tensor "
@@ -144,7 +144,7 @@ msgid ""
 "\\(shape\\, dtype\\[\\, op\\, replication\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:172
+#: ../../../autoapi/tilelang/language/allocate/index.rst:177
 #: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
 msgid "Allocate a reducer buffer."
 msgstr ""
@@ -155,7 +155,7 @@ msgid ""
 "\\(\\[kind\\, dtype\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:201
+#: ../../../autoapi/tilelang/language/allocate/index.rst:206
 #: ../../../autoapi/tilelang/language/allocate/index.rst:52:<autosummary>:1
 msgid "Allocate a descriptor buffer for WGMMA and TCGEN5.MMA."
 msgstr ""
@@ -201,7 +201,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/allocate/index.rst:60
 #: ../../../autoapi/tilelang/language/allocate/index.rst:75
 #: ../../../autoapi/tilelang/language/allocate/index.rst:90
-#: ../../../autoapi/tilelang/language/allocate/index.rst:184
+#: ../../../autoapi/tilelang/language/allocate/index.rst:189
 msgid "The shape of the buffer to allocate"
 msgstr ""
 
@@ -209,7 +209,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/allocate/index.rst:77
 #: ../../../autoapi/tilelang/language/allocate/index.rst:92
 #: ../../../autoapi/tilelang/language/allocate/index.rst:106
-#: ../../../autoapi/tilelang/language/allocate/index.rst:186
+#: ../../../autoapi/tilelang/language/allocate/index.rst:191
 msgid "The data type of the buffer (e.g., 'float32', 'int32')"
 msgstr ""
 
@@ -266,6 +266,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:122
+#: ../../../autoapi/tilelang/language/allocate/index.rst:144
 msgid "Examples"
 msgstr "範例"
 
@@ -283,14 +284,14 @@ msgid "A TVM buffer object allocated as a single-element variable"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:137
-msgid "The number of threads that need to arrive at the barrier"
+msgid "The number of threads that need to arrive at each barrier"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:140
 msgid "A TVM buffer object allocated as a barrier"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:148
+#: ../../../autoapi/tilelang/language/allocate/index.rst:153
 msgid ""
 "TMEM is a dedicated on-chip memory introduced in Hopper GPUs, designed to "
 "reduce register pressure and enable asynchronous, single-threaded MMA "
@@ -299,105 +300,105 @@ msgid ""
 "columns, and every lane of a column is allocated together."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:150
+#: ../../../autoapi/tilelang/language/allocate/index.rst:155
 msgid "Key properties and requirements:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:151
+#: ../../../autoapi/tilelang/language/allocate/index.rst:156
 msgid "The number of columns allocated must be a power of 2 and at least 32."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:152
+#: ../../../autoapi/tilelang/language/allocate/index.rst:157
 msgid "TMEM allocations are dynamic and must be explicitly deallocated."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:153
+#: ../../../autoapi/tilelang/language/allocate/index.rst:158
 msgid "Both allocation and deallocation must be performed by the same warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:154
+#: ../../../autoapi/tilelang/language/allocate/index.rst:159
 msgid ""
 "The base address of the TMEM allocation is stored in shared memory and used "
 "as the offset for TCGEN5.MMA accumulator tensors."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:155
+#: ../../../autoapi/tilelang/language/allocate/index.rst:160
 msgid ""
 "Only TCGEN5.MMA and specific TMEM load/store instructions can access TMEM; "
 "all pre-processing must occur before data is loaded into TMEM, and all post-"
 "processing after data is retrieved."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:156
+#: ../../../autoapi/tilelang/language/allocate/index.rst:161
 msgid ""
 "The number of columns allocated should not increase between any two "
 "allocations in the execution order within the CTA."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:158
+#: ../../../autoapi/tilelang/language/allocate/index.rst:163
 msgid ""
 "Number of columns to allocate in TMEM. Must be a power of 2 and >= 32 but "
 "less than or equal to 512."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:161
+#: ../../../autoapi/tilelang/language/allocate/index.rst:166
 msgid ""
 "A TVM buffer object allocated in TMEM scope, suitable for use as an "
 "accumulator or operand in TCGEN5.MMA operations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:166
+#: ../../../autoapi/tilelang/language/allocate/index.rst:171
 msgid ""
 "TMEM is only available on supported architectures (e.g., Hopper and later)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:167
+#: ../../../autoapi/tilelang/language/allocate/index.rst:172
 msgid ""
 "The buffer returned should be used according to TMEM access restrictions and "
 "deallocated appropriately."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:174
+#: ../../../autoapi/tilelang/language/allocate/index.rst:179
 msgid ""
 "Modifications needs to conform with `op`, such as `op=\"sum\"` requires "
 "`reducer[...] += ...` and `op=\"max\"` requires `reducer[...] = T."
 "max(reducer[...], ...)`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:178
+#: ../../../autoapi/tilelang/language/allocate/index.rst:183
 msgid ""
 "Only after T.fill with proper initializer the reduction may begin; only "
 "after T.finalize_reducer the partial results will be available."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:181
+#: ../../../autoapi/tilelang/language/allocate/index.rst:186
 msgid ""
 "For `op=\"sum\"`, filled value must be 0; for min and max, the filled "
 "initializer will become max or min clamper correspondingly. You may want to "
 "use `T.max_value` for min and `T.min_value` for max."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:188
+#: ../../../autoapi/tilelang/language/allocate/index.rst:193
 msgid "The reduce operation corresponded with the reducer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:190
+#: ../../../autoapi/tilelang/language/allocate/index.rst:195
 msgid ""
 "Replication strategy, can be \"all\" or \"none\". Defaults to not specified, "
 "and the compiler will do whatever it want."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:193
+#: ../../../autoapi/tilelang/language/allocate/index.rst:198
 msgid ""
 "A TVM buffer object allocated in thread-private storage, available to reduce "
 "values in T.Parallel loops."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:203
+#: ../../../autoapi/tilelang/language/allocate/index.rst:208
 msgid ""
 "The descriptor kind, one of \"wgmma\", \"tcgen05\" (\"utcmma\" as alias)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/allocate/index.rst:205
+#: ../../../autoapi/tilelang/language/allocate/index.rst:210
 msgid "A TVM buffer object allocated as a descriptor"
 msgstr ""
