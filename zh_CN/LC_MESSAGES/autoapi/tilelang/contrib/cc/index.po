@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:2
+msgid "tilelang.contrib.cc"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:8
+msgid "Util to invoke C/C++ compilers in the system."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ":py:obj:`get_cc <tilelang.contrib.cc.get_cc>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:33
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:41
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid "Return the path to the default C/C++ compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`get_cplus_compiler <tilelang.contrib.cc.get_cplus_compiler>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ":py:obj:`is_darwin <tilelang.contrib.cc.is_darwin>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`create_shared <tilelang.contrib.cc.create_shared>`\\ \\(output\\, "
+"objects\\[\\, options\\, cc\\, cwd\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:51
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid "Create shared library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`create_staticlib <tilelang.contrib.cc.create_staticlib>`\\ "
+"\\(output\\, inputs\\[\\, ar\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:69
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid "Create static library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`create_executable <tilelang.contrib.cc.create_executable>`\\ "
+"\\(output\\, objects\\[\\, options\\, cc\\, cwd\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:82
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid "Create executable binary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`get_global_symbol_section_map <tilelang.contrib.cc."
+"get_global_symbol_section_map>`\\ \\(path\\, \\*\\[\\, nm\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:100
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid "Get global symbols from a library via nm -g"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`get_target_by_dump_machine <tilelang.contrib.cc."
+"get_target_by_dump_machine>`\\ \\(compiler\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:113
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+"Functor of get_target_triple that can get the target triple using compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`cross_compiler <tilelang.contrib.cc.cross_compiler>`\\ "
+"\\(compile\\_func\\[\\, options\\, output\\_format\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:124
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
+msgid ""
+"Create a cross compiler function by specializing compile_func with options."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:35
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:43
+msgid ""
+"**out** -- The path to the default C/C++ compiler, or None if none was found."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:53
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:71
+msgid "The target shared library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:55
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:86
+msgid "List of object files."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:57
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:88
+msgid "The list of additional options string."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:59
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:90
+msgid "The compiler command."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:61
+msgid "The current working directory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:63
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:94
+msgid ""
+"The environment variable for ccache. Set `None` to disable ccache by default."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:73
+msgid ""
+"List of inputs files. Each input file can be a tarball of objects or an "
+"object file."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:76
+msgid "Path to the ar command to be used"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:84
+msgid "The target executable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:92
+msgid "The urrent working directory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:102
+msgid "The library path"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:104
+msgid "The path to nm command"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:107
+msgid ""
+"**symbol_section_map** -- A map from defined global symbol to their sections"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:115
+msgid "The compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:118
+msgid ""
+"**out** -- A function that can get target triple according to dumpmachine "
+"option of compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:126
+msgid ""
+"This function can be used to construct compile functions that can be passed "
+"to AutoTVM measure or export_library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:130
+msgid "Function that performs the actual compilation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:132
+msgid "List of additional optional string."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:134
+msgid "Library output format."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:136
+msgid ""
+"Function that can target triple according to dumpmachine option of compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:138
+msgid ""
+"List of paths to additional object, source, library files to pass as part of "
+"the compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:142
+msgid ""
+"**fcompile** -- A compilation function that can be passed to export_library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:146
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cc/index.rst:147
+msgid ""
+"from tvm.contrib import cc, ndk\n"
+"# export using arm gcc\n"
+"mod = build_runtime_module()\n"
+"mod.export_library(path_dso,\n"
+"                   fcompile=cc.cross_compiler(\"arm-linux-gnueabihf-gcc\"))\n"
+"# specialize ndk compilation options.\n"
+"specialized_ndk = cc.cross_compiler(\n"
+"    ndk.create_shared,\n"
+"    [\"--sysroot=/path/to/sysroot\", \"-shared\", \"-fPIC\", \"-lm\"])\n"
+"mod.export_library(path_dso, fcompile=specialized_ndk)"
+msgstr ""

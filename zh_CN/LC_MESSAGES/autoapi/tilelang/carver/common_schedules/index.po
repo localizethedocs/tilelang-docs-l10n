@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:2
+msgid "tilelang.carver.common_schedules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:8
+msgid "Common schedule strategies for TIR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`get_block <tilelang.carver.common_schedules.get_block>`\\ \\(sch\\, "
+"blocks\\, name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:28
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid "Get the target block from a schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`get_output_blocks <tilelang.carver.common_schedules."
+"get_output_blocks>`\\ \\(sch\\, blocks\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:41
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid "Get the output blocks of a schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`try_inline <tilelang.carver.common_schedules.try_inline>`\\ "
+"\\(sch\\, blocks\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:54
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid ""
+"Try to inline as many blocks as possible, and return the remaining blocks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`try_inline_contiguous_spatial <tilelang.carver.common_schedules."
+"try_inline_contiguous_spatial>`\\ \\(sch\\, block\\_infos\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:67
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
+msgid "Try to inline contiguous spatial blocks in a schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:30
+msgid "The TIR schedule used to get target block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:32
+msgid "The name of the target block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:35
+msgid "**target_block** -- The target block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:43
+msgid "The TIR schedule used to get output blocks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:45
+msgid "The blocks to be analyzed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:48
+msgid "**output_blocks** -- The output blocks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:56
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:69
+msgid "The TIR schedule used to inline blocks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:58
+msgid "The blocks to be inlined."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:61
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:74
+msgid "**remaining** -- The remaining blocks that cannot be inlined."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/common_schedules/index.rst:71
+msgid "The blocks to be try."
+msgstr ""

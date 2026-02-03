@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:2
+msgid "tilelang.transform.simplify"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid ":py:obj:`LetInline <tilelang.transform.simplify.LetInline>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:23
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid "LetInline"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`Simplify <tilelang.transform.simplify.Simplify>`\\ "
+"\\(\\[simplify\\_arguments\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:31
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid "Simplify"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`simplify_prim_func <tilelang.transform.simplify."
+"simplify_prim_func>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`apply_simplify <tilelang.transform.simplify.apply_simplify>`\\ "
+"\\(stmt\\[\\, inline\\_let\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:41
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
+msgid "Apply Simplify pass to a PrimFunc or IRModule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:19
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:25
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:33
+msgid "**fpass** -- The result pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/simplify/index.rst:0
+msgid "Parameters"
+msgstr ""
