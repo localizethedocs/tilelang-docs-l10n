@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-02-09 08:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -652,7 +652,7 @@ msgid "A handle to the register setting operation"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:172
-msgid "Buffer | BufferLoad"
+msgid "BarrierType"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:173
@@ -706,11 +706,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:213
 #: ../../../autoapi/tilelang/language/builtin/index.rst:409
-msgid "Buffer | BufferLoad The memory barrier to arrive at"
+msgid "BarrierType The memory barrier to arrive at"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:221
-msgid "Buffer | BufferLoad The memory barrier to expect transaction count for"
+msgid "BarrierType The memory barrier to expect transaction count for"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:223
@@ -829,10 +829,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:361
 msgid ""
-"Buffer | BufferLoad | BufferRegion | PrimExpr A buffer representing the "
-"accumulator fragment, a buffer load/region that identifies a starting "
-"element within the fragment, or a pointer expression (e.g., tvm_access_ptr/"
-"address_of/typed Var)."
+"BufferLikeType | PrimExpr A buffer representing the accumulator fragment, a "
+"buffer load/region that identifies a starting element within the fragment, "
+"or a pointer expression (e.g., tvm_access_ptr/address_of/typed Var)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:365
@@ -848,7 +847,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:370
 msgid ""
-"str | None Data type string of the accumulator elements. When passing a "
+"DType | None Data type string of the accumulator elements. When passing a "
 "buffer or buffer-derived expression, dtype is inferred. It is required only "
 "when passing a raw pointer expression that cannot be inferred."
 msgstr ""
@@ -866,7 +865,7 @@ msgid "A handle to the WGMMA wait operation"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:394
-msgid "Buffer | BufferLoad The memory barrier to wait on"
+msgid "BarrierType The memory barrier to wait on"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:396

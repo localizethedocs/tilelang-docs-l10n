@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-02-02 15:48:14 +0800",
-      "hash" : "7bf43447d594450ef03c43e7f82849805323b459",
-      "title" : "[Feature] Add PassConfig for Controlling Let Statement Inlining in Simplify Pass (#1769)"
+      "date" : "2026-02-09 16:38:37 +0800",
+      "hash" : "c65dfae748376bcc27d39850bc7caf5254bada5f",
+      "title" : "[Dist] Add lazy-loading stubs for CUDART + NVRTC (CUDA 11/12/13 compatible wheels) (#1821)"
     }
   },
   "type" : "branch",
