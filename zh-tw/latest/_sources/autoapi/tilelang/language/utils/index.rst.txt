@@ -1,0 +1,72 @@
+tilelang.language.utils
+=======================
+
+.. py:module:: tilelang.language.utils
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.language.utils.region
+   tilelang.language.utils.buffer_region_to_tile_region
+   tilelang.language.utils.index_to_coordinates
+   tilelang.language.utils.linear_index
+
+
+Module Contents
+---------------
+
+.. py:function:: region(buffer, access_type, *args)
+
+   Create a tl.region call for a BufferLoad and extents.
+
+
+.. py:function:: buffer_region_to_tile_region(buffer_region, access_type, extents)
+
+   Clamp extents and return a tl.region call.
+
+
+.. py:function:: index_to_coordinates(index, shape)
+
+   Convert a flat (linear) index into multi-dimensional coordinates for a given shape.
+
+   Given a linear index and a shape (sequence of dimension extents), returns a list of coordinates (one per dimension) such that converting those coordinates back to a linear index using the usual row-major / C-order formula yields the original index. The computation iterates from the last dimension to the first using modulo and integer division, then reverses the collected coordinates.
+
+   :param index: The flat index to convert.
+   :type index: int or PrimExpr
+   :param shape: The extents of each dimension (length >= 1).
+   :type shape: Sequence[int]
+
+   :returns: Coordinates for each dimension in the same order as `shape`.
+   :rtype: List[PrimExpr]
+
+
+.. py:function:: linear_index(*args)
+
+   Compute a flat (linear) index from multi-dimensional coordinates and strides.
+
+   The function accepts a sequence of PrimExpr arguments where the first portion are coordinates
+   and the trailing portion are the corresponding strides. The number of strides must equal
+   (number of coordinates - 1). The linear index is computed as:
+
+       linear = coords[0]
+       for each (coord, stride) in zip(coords[1:], strides):
+           linear = linear * stride + coord
+
+   .. rubric:: 範例
+
+   - linear_index(i) -> i
+   - linear_index(i, j) -> i * j_stride + j  (requires j_stride provided as stride when needed)
+   - linear_index(i, j, stride_j) -> i * stride_j + j
+   - linear_index(i, j, k, stride_j, stride_k) -> i*stride_j*stride_k + j*stride_k + k
+   - linear_index(i, tx, v, threads, local_size) -> i*threads*local_size + tx*local_size + v
+
+   :raises ValueError: If called with no arguments, or if the number of strides is not one less than
+       the number of coordinates.
+
+   :returns: The computed linear index expression.
+   :rtype: PrimExpr
+
+
