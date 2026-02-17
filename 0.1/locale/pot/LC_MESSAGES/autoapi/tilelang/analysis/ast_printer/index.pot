@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,9 +32,26 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/ast_printer/index.rst:20
 #: ../../../autoapi/tilelang/analysis/ast_printer/index.rst:14:<autosummary>:1
-msgid "Print the AST of a given tilelang module for debugging."
+msgid ""
+"A visitor pass that renders the TileLang AST hierarchy in a visual tree "
+"format."
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/ast_printer/index.rst:16
 msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/ast_printer/index.rst:22
+msgid ""
+"Comparing with TL script, this printer is more suitable for debugging and "
+"understanding the internal structure of TensorIR, like the class structure "
+"of each node and their connections."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/ast_printer/index.rst:26
+msgid ""
+"This printer generates a human-readable, tree-structured representation of "
+"the Abstract Syntax Tree (AST). It uses ASCII/Unicode connectors to "
+"visualize parent-child relationships, making it easier to inspect nested "
+"structures (e.g., loops, blocks, scopes) and verify compiler transformations."
 msgstr ""

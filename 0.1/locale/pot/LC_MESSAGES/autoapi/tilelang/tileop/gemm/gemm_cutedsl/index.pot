@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:2
+msgid "tilelang.tileop.gemm.gemm_cutedsl"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:8
+msgid ""
+"GEMM implementation for CuTeDSL backend - directly calls tl::gemm intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:19:<autosummary>:1
+msgid ":py:obj:`GemmCuTeDSL <tilelang.tileop.gemm.gemm_cutedsl.GemmCuTeDSL>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:28
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:19:<autosummary>:1
+msgid "GEMM implementation for CuTeDSL that directly calls tl::gemm intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:25
+msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:30
+msgid ""
+"This implementation bypasses the complex lowering logic of MMA/WGMMA and "
+"directly emits a call to tl::gemm, similar to gemm_v1 behavior. This is "
+"necessary for CuTeDSL backend which requires simpler IR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:37
+msgid "For CuTeDSL, we still need proper layout inference for A, B, C buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:39
+msgid ""
+"CuTeDSL uses the same underlying hardware instructions (WGMMA/MMA), so it "
+"needs the same layout information. We delegate to the appropriate "
+"implementation based on the instruction type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:47
+msgid "Lower to a direct gemm_v1 call without complex MMA/WGMMA lowering."
+msgstr ""

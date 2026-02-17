@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,7 +31,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/elementwise.md:11
 msgid ""
-"This document is still **experimental** and may be incomplete.      "
+"This document is still **experimental** and may be incomplete.    "
 "Suggestions and improvements are highly encouraged—please submit a PR!"
 msgstr ""
 
@@ -76,7 +77,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/elementwise.md:26
 msgid ""
-"def elementwise_add(N, threads=256, dtype=\"bfloat16\"):\n"
+"def elementwise_add(N, threads=256, dtype=T.bfloat16):\n"
 "\n"
 "    @T.prim_func\n"
 "    def main(A: T.Tensor((N), dtype), B: T.Tensor((N), dtype), C: T."
@@ -119,7 +120,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/elementwise.md:45
 msgid ""
-"program = elementwise_add(1024, threads=256, dtype=\"bfloat16\")\n"
+"program = elementwise_add(1024, threads=256, dtype=T.bfloat16)\n"
 "kernel = tilelang.compile(program, out_idx=-1, target=\"cuda\", "
 "execution_backend=\"cython\")\n"
 msgstr ""
@@ -191,8 +192,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/elementwise.md:91
 msgid ""
-"program = elementwise_add(T.dynamic(\"N\"), threads=256, "
-"dtype=\"bfloat16\")\n"
+"program = elementwise_add(T.dynamic(\"N\"), threads=256, dtype=T.bfloat16)\n"
 "kernel = tilelang.compile(program, out_idx=-1, target=\"cuda\", "
 "execution_backend=\"cython\")\n"
 msgstr ""
@@ -222,7 +222,7 @@ msgstr ""
 #: ../../../deeplearning_operators/elementwise.md:104
 #: ../../../deeplearning_operators/elementwise.md:178
 msgid ""
-"def elementwise_add(N, num_per_thread=8, threads=256, dtype=\"bfloat16\"):\n"
+"def elementwise_add(N, num_per_thread=8, threads=256, dtype=T.bfloat16):\n"
 "\n"
 "    @T.prim_func\n"
 "    def main(A: T.Tensor((N), dtype), B: T.Tensor((N), dtype), C: T."
@@ -414,8 +414,8 @@ msgstr ""
 
 #: ../../../deeplearning_operators/elementwise.md:214
 msgid ""
-"def elementwise_add(N, NUM_ELE_PER_THREAD=8, threads=256, "
-"dtype=\"bfloat16\"):\n"
+"def elementwise_add(N, NUM_ELE_PER_THREAD=8, threads=256, dtype=T."
+"bfloat16):\n"
 "\n"
 "    @T.prim_func\n"
 "    def main(A: T.Tensor((N), dtype), B: T.Tensor((N), dtype), C: T."
@@ -519,8 +519,8 @@ msgstr ""
 #: ../../../deeplearning_operators/elementwise.md:281
 msgid ""
 "template<int NUM_ELE_PER_THREAD=8>\n"
-"__global__ void elementwise_add(nv_bfloat16* C, \n"
-"                                 const nv_bfloat16* A, \n"
+"__global__ void elementwise_add(nv_bfloat16* C,\n"
+"                                 const nv_bfloat16* A,\n"
 "                                 const nv_bfloat16* B,\n"
 "                                 int N) {\n"
 "  using namespace cute;\n"
