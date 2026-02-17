@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -118,22 +119,14 @@ msgstr ""
 
 #: ../../../get_started/overview.md:34
 msgid ""
-"**Tile Program**   A high-level specification of the computation. Depending "
-"on the user’s expertise, they may write a purely hardware-unaware tile "
-"program or incorporate constructs from the Tile Library or thread primitives."
-msgstr ""
-
-#: ../../../get_started/overview.md:7
-msgid "<br />\n"
-msgstr ""
-
-#: ../../../get_started/overview.md:7
-msgid "\\\\\n"
+"**Tile Program** A high-level specification of the computation. Depending on "
+"the user’s expertise, they may write a purely hardware-unaware tile program "
+"or incorporate constructs from the Tile Library or thread primitives."
 msgstr ""
 
 #: ../../../get_started/overview.md:37
 msgid ""
-"**Tile Program with Tile Library**   When developers choose from the Tile "
+"**Tile Program with Tile Library** When developers choose from the Tile "
 "Library, the original Tile Program is expanded with specialized library "
 "calls. These calls encapsulate efficient implementation patterns for "
 "different operations."
@@ -141,28 +134,28 @@ msgstr ""
 
 #: ../../../get_started/overview.md:40
 msgid ""
-"**Tile Program with Thread Primitives**   Expert-level developers can "
+"**Tile Program with Thread Primitives** Expert-level developers can "
 "explicitly use low-level threading constructs to hand-optimize data layout, "
 "synchronization, and memory usage."
 msgstr ""
 
 #: ../../../get_started/overview.md:43
 msgid ""
-"**IRModule**   After the program is composed with libraries or thread "
+"**IRModule** After the program is composed with libraries or thread "
 "primitives, it is lowered to an intermediate representation (IR) that "
 "captures the necessary hardware details."
 msgstr ""
 
 #: ../../../get_started/overview.md:46
 msgid ""
-"**Source Code Generation (C/CUDA/HIP/LLVM/…)**   From the IR, the system "
+"**Source Code Generation (C/CUDA/HIP/LLVM/…)** From the IR, the system "
 "generates target-specific source code. This source code is tuned for the "
 "desired backends or GPU architectures (e.g., NVIDIA, AMD)."
 msgstr ""
 
 #: ../../../get_started/overview.md:49
 msgid ""
-"**Hardware-Specific Executable/Runtime**   Finally, the generated source is "
+"**Hardware-Specific Executable/Runtime** Finally, the generated source is "
 "compiled into hardware-specific executables, ready to run on the "
 "corresponding devices. The pipeline supports multiple GPU backends and can "
 "be extended to additional architectures."
@@ -175,15 +168,15 @@ msgstr ""
 #: ../../../get_started/overview.md:54
 msgid ""
 "[Figure 2](#fig-overview-gemm) provides a concise matrix multiplication "
-"(GEMM) example in ``TileLang``,  illustrating how developers can employ high-"
-"level constructs such as tiles, memory placement, pipelining,  and operator "
+"(GEMM) example in ``TileLang``, illustrating how developers can employ high-"
+"level constructs such as tiles, memory placement, pipelining, and operator "
 "calls to manage data movement and computation with fine-grained control. In "
 "particular, this snippet ([Figure 2](#fig-overview-gemm) (a)) demonstrates "
-"how multi-level tiling  leverages different memory hierarchies (global, "
-"shared, and registers) to optimize bandwidth utilization  and reduce "
-"latency. Overall, [Figure 2](#fig-overview-gemm) (b) showcases how the "
-"Python-like syntax of ``TileLang``  allows developers to reason about "
-"performance-critical optimizations within a user-friendly programming model."
+"how multi-level tiling leverages different memory hierarchies (global, "
+"shared, and registers) to optimize bandwidth utilization and reduce latency. "
+"Overall, [Figure 2](#fig-overview-gemm) (b) showcases how the Python-like "
+"syntax of ``TileLang`` allows developers to reason about performance-"
+"critical optimizations within a user-friendly programming model."
 msgstr ""
 
 #: ../../../get_started/overview.md:63 ../../../get_started/overview.md:86

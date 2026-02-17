@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +22,7 @@ msgid "tilelang.language.atomic"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:8
-msgid "Atomic operations for tilelang."
+msgid "Atomic operations exposed on the TileLang language surface."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:13
@@ -47,7 +48,7 @@ msgid ""
 "value\\[\\, memory\\_order\\, return\\_prev\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:70
+#: ../../../autoapi/tilelang/language/atomic/index.rst:75
 #: ../../../autoapi/tilelang/language/atomic/index.rst:25:<autosummary>:1
 msgid ""
 "Atomically update the value at dst to the minimum of its current value and "
@@ -60,7 +61,7 @@ msgid ""
 "value\\[\\, memory\\_order\\, return\\_prev\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:111
+#: ../../../autoapi/tilelang/language/atomic/index.rst:119
 #: ../../../autoapi/tilelang/language/atomic/index.rst:25:<autosummary>:1
 msgid "Atomically add `value` into `dst`, returning a handle to the operation."
 msgstr ""
@@ -71,7 +72,7 @@ msgid ""
 "value\\[\\, return\\_prev\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:161
+#: ../../../autoapi/tilelang/language/atomic/index.rst:169
 #: ../../../autoapi/tilelang/language/atomic/index.rst:25:<autosummary>:1
 msgid "Perform an atomic addition operation with double-width operands."
 msgstr ""
@@ -82,7 +83,7 @@ msgid ""
 "value\\[\\, return\\_prev\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:199
+#: ../../../autoapi/tilelang/language/atomic/index.rst:207
 #: ../../../autoapi/tilelang/language/atomic/index.rst:25:<autosummary>:1
 msgid "Perform an atomic addition operation with quad-width operands."
 msgstr ""
@@ -93,7 +94,7 @@ msgid ""
 "memory\\_order\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:237
+#: ../../../autoapi/tilelang/language/atomic/index.rst:245
 #: ../../../autoapi/tilelang/language/atomic/index.rst:25:<autosummary>:1
 msgid ""
 "Load a value from the given buffer using the specified atomic memory "
@@ -106,7 +107,7 @@ msgid ""
 "src\\[\\, memory\\_order\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:275
+#: ../../../autoapi/tilelang/language/atomic/index.rst:283
 #: ../../../autoapi/tilelang/language/atomic/index.rst:25:<autosummary>:1
 msgid ""
 "Perform an atomic store of `src` into `dst` with the given memory ordering."
@@ -118,10 +119,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:33
 msgid ""
-"If memory_order is None the runtime extern \"AtomicMax\" is called without "
-"an explicit memory-order id; otherwise the provided memory_order string is "
-"mapped to a numeric id using the module's memory-order map and passed to the "
-"extern."
+"Supports scalar/addressed extern atomic max when neither argument exposes "
+"extents, or tile-region-based atomic max for Buffer/BufferRegion/BufferLoad "
+"inputs. If both arguments are plain Buffers their shapes must be "
+"structurally equal. If at least one side exposes extents, extents are "
+"aligned (missing dimensions are treated as size 1); an assertion is raised "
+"if extents cannot be deduced. The optional `memory_order` (one of "
+"\"relaxed\",\"consume\",\"acquire\",\"release\",\"acq_rel\",\"seq_cst\") is "
+"used only for the direct extern `AtomicMax` path when no extents are "
+"available — otherwise the tile-region path ignores `memory_order`."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:0
@@ -133,7 +139,7 @@ msgid "Destination buffer/address to apply the atomic max."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:37
-#: ../../../autoapi/tilelang/language/atomic/index.rst:78
+#: ../../../autoapi/tilelang/language/atomic/index.rst:81
 msgid "Value to compare/store atomically."
 msgstr ""
 
@@ -145,8 +151,8 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:42
-#: ../../../autoapi/tilelang/language/atomic/index.rst:82
-#: ../../../autoapi/tilelang/language/atomic/index.rst:121
+#: ../../../autoapi/tilelang/language/atomic/index.rst:85
+#: ../../../autoapi/tilelang/language/atomic/index.rst:129
 msgid ""
 "If True, return the previous value; if False, return handle (default False)."
 msgstr ""
@@ -166,40 +172,44 @@ msgid "Return type"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/atomic/index.rst:49
-#: ../../../autoapi/tilelang/language/atomic/index.rst:89
-#: ../../../autoapi/tilelang/language/atomic/index.rst:130
-#: ../../../autoapi/tilelang/language/atomic/index.rst:174
-#: ../../../autoapi/tilelang/language/atomic/index.rst:212
-#: ../../../autoapi/tilelang/language/atomic/index.rst:247
-#: ../../../autoapi/tilelang/language/atomic/index.rst:294
+#: ../../../autoapi/tilelang/language/atomic/index.rst:92
+#: ../../../autoapi/tilelang/language/atomic/index.rst:138
+#: ../../../autoapi/tilelang/language/atomic/index.rst:182
+#: ../../../autoapi/tilelang/language/atomic/index.rst:220
+#: ../../../autoapi/tilelang/language/atomic/index.rst:255
+#: ../../../autoapi/tilelang/language/atomic/index.rst:302
 msgid "Examples"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:72
+#: ../../../autoapi/tilelang/language/atomic/index.rst:77
 msgid ""
-"If memory_order is provided, it selects the memory-order semantic used by "
-"the underlying extern call; allowed names are \"relaxed\", \"consume\", "
-"\"acquire\", \"release\", \"acq_rel\", and \"seq_cst\" (mapped internally to "
-"integer IDs). If memory_order is None, the extern is invoked without an "
-"explicit memory-order argument."
+"Supports scalar/addressed extern atomic min when neither argument exposes "
+"extents, or tile-region-based atomic min for Buffer/BufferRegion/BufferLoad "
+"inputs. If both arguments are plain Buffers their shapes must be "
+"structurally equal. If at least one side exposes extents, extents are "
+"aligned (missing dimensions are treated as size 1); an assertion is raised "
+"if extents cannot be deduced. The optional `memory_order` (one of "
+"\"relaxed\",\"consume\",\"acquire\",\"release\",\"acq_rel\",\"seq_cst\") is "
+"used only for the direct extern `AtomicMin` path when no extents are "
+"available — otherwise the tile-region path ignores `memory_order`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:76
+#: ../../../autoapi/tilelang/language/atomic/index.rst:79
 msgid "Destination buffer/address to apply the atomic min."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:80
-#: ../../../autoapi/tilelang/language/atomic/index.rst:119
+#: ../../../autoapi/tilelang/language/atomic/index.rst:83
+#: ../../../autoapi/tilelang/language/atomic/index.rst:127
 msgid "Optional memory-order name controlling the atomic operation's ordering."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:85
+#: ../../../autoapi/tilelang/language/atomic/index.rst:88
 msgid ""
 "A handle expression representing the atomic-min operation, or the previous "
 "value if return_prev is True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:113
+#: ../../../autoapi/tilelang/language/atomic/index.rst:121
 msgid ""
 "Supports scalar/addressed extern atomic add when neither argument exposes "
 "extents, or tile-region-based atomic add for Buffer/BufferRegion/BufferLoad "
@@ -212,58 +222,58 @@ msgid ""
 "available — otherwise the tile-region path ignores `memory_order`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:115
+#: ../../../autoapi/tilelang/language/atomic/index.rst:123
 msgid "Destination buffer/address to apply the atomic add."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:117
+#: ../../../autoapi/tilelang/language/atomic/index.rst:125
 msgid "Value to add atomically."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:123
+#: ../../../autoapi/tilelang/language/atomic/index.rst:131
 msgid ""
 "If True, use TMA (cp.reduce) to perform the atomic add. This is available "
 "only for sm90+ (default False)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:126
+#: ../../../autoapi/tilelang/language/atomic/index.rst:134
 msgid ""
 "A handle representing the atomic addition operation, or the previous value "
 "if return_prev is True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:163
-#: ../../../autoapi/tilelang/language/atomic/index.rst:201
+#: ../../../autoapi/tilelang/language/atomic/index.rst:171
+#: ../../../autoapi/tilelang/language/atomic/index.rst:209
 msgid "Destination buffer where the atomic addition will be performed"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:165
+#: ../../../autoapi/tilelang/language/atomic/index.rst:173
 msgid "Value to be atomically added (double-width)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:167
-#: ../../../autoapi/tilelang/language/atomic/index.rst:205
+#: ../../../autoapi/tilelang/language/atomic/index.rst:175
+#: ../../../autoapi/tilelang/language/atomic/index.rst:213
 msgid ""
 "If True, return the previous value; if False, return handle (default False)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:170
+#: ../../../autoapi/tilelang/language/atomic/index.rst:178
 msgid ""
 "Handle to the double-width atomic addition operation, or the previous value "
 "if return_prev is True"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:203
+#: ../../../autoapi/tilelang/language/atomic/index.rst:211
 msgid "Value to be atomically added (quad-width)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:208
+#: ../../../autoapi/tilelang/language/atomic/index.rst:216
 msgid ""
 "Handle to the quad-width atomic addition operation, or the previous value if "
 "return_prev is True"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:239
+#: ../../../autoapi/tilelang/language/atomic/index.rst:247
 msgid ""
 "Performs an atomic load from `src` and returns a PrimExpr representing the "
 "loaded value. memory_order selects the ordering and must be one of: "
@@ -272,28 +282,28 @@ msgid ""
 "provided."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:244
+#: ../../../autoapi/tilelang/language/atomic/index.rst:252
 msgid ""
 "Note: atomic_load always returns the loaded value, so no return_prev "
 "parameter is needed."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:277
+#: ../../../autoapi/tilelang/language/atomic/index.rst:285
 msgid "Destination buffer to store into."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:279
+#: ../../../autoapi/tilelang/language/atomic/index.rst:287
 msgid "Value to store."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:281
+#: ../../../autoapi/tilelang/language/atomic/index.rst:289
 msgid ""
 "Memory ordering name; one of \"relaxed\", \"consume\", \"acquire\", "
 "\"release\", \"acq_rel\", or \"seq_cst\". Defaults to \"seq_cst\". The name "
 "is mapped to an internal numeric ID used by the underlying runtime."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:286
+#: ../../../autoapi/tilelang/language/atomic/index.rst:294
 msgid "A handle representing the issued atomic store operation."
 msgstr ""
 
@@ -301,11 +311,11 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:289
+#: ../../../autoapi/tilelang/language/atomic/index.rst:297
 msgid "If `memory_order` is not one of the supported names."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/atomic/index.rst:291
+#: ../../../autoapi/tilelang/language/atomic/index.rst:299
 msgid ""
 "Note: atomic_store doesn't return a previous value, so no return_prev "
 "parameter is needed."

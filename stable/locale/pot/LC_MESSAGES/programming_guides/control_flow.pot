@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../programming_guides/control_flow.md:1
+msgid "Control Flow"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:3
+msgid ""
+"This guide covers the control‑flow primitives in TileLang and how they lower "
+"to efficient GPU code. You will use these to structure loops, handle "
+"boundaries, and express pipelined compute."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:7
+msgid "Overview"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:8
+msgid "Conditionals: `if` / `elif` / `else`, ternary (`x if c else y`)"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:9
+msgid "Loops: `T.serial`, `T.unroll`, `T.Parallel`, `T.Pipelined`"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:10
+msgid "While loops: `while` with a TIR condition"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:11
+msgid "Flow control: Python `break` / `continue`"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:12
+msgid "Safety: automatic OOB guards via the LegalizeSafeMemoryAccess pass"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:14
+msgid "The examples assume `import tilelang.language as T`."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:16
+msgid "Conditionals"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:18
+msgid ""
+"Standard Python `if`/`elif`/`else` is supported inside `@T.prim_func` "
+"kernels. Conditions should be TIR expressions (e.g., `i < N`). Python plain "
+"booleans are treated as compile‑time constants and will be folded."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:22
+msgid ""
+"for i in T.serial(N):\n"
+"    if i < N:            # TIR condition\n"
+"        C[i] = A[i] + B[i]\n"
+"    else:\n"
+"        pass\n"
+"\n"
+"# Ternary\n"
+"x = (A[i] if i < N else 0)\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:33
+msgid ""
+"Short‑circuit boolean ops are supported. For multi‑dimensional bounds, use "
+"`T.any_of` / `T.all_of` for clarity:"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:36
+msgid ""
+"if T.all_of(i < M, j < N):\n"
+"    C[i, j] = A[i, j] + B[i, j]\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:41
+msgid "Boundary handling note"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:42
+msgid ""
+"The LegalizeSafeMemoryAccess pass automatically inserts guards when an "
+"access may be out‑of‑bounds, and elides them when proven safe. You can often "
+"omit explicit `if` checks for simple edge handling, but keep them when you "
+"need custom logic or clarity."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:47
+msgid "Loops"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:49
+msgid "Serial"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:51
+msgid "`T.serial` creates a plain for‑loop. Common forms:"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:53
+msgid ""
+"for i in T.serial(N):\n"
+"    ...                     # 0..N-1\n"
+"\n"
+"for i in T.serial(0, N, 2):\n"
+"    ...                     # 0, 2, 4, ...\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:61
+msgid "Unroll"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:63
+msgid "`T.unroll` requests loop unrolling for small trip counts."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:65
+msgid ""
+"for k in T.unroll(K_TILE):\n"
+"    acc += a[k] * b[k]\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:70
+msgid ""
+"Advanced: TileLang forwards unroll hints to TIR; factor/explicit knobs are "
+"available for expert tuning."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:73
+msgid "Parallel (elementwise)"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:75
+msgid ""
+"`T.Parallel(ext0, ext1, ...)` builds nested loops that map well to "
+"elementwise operations. The body receives all indices in one `for` header:"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:78
+msgid ""
+"for i, j in T.Parallel(M, N):\n"
+"    C[i, j] = A[i, j] + B[i, j]\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:83
+msgid "Optional hints:"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:84
+msgid ""
+"`coalesced_width=` controls memory coalescing width (used for vectorization "
+"checks)."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:85
+msgid ""
+"`loop_layout=` accepts a `T.Fragment` to annotate the layout of the entire "
+"nested parallel loop. The annotation is attached to the outermost loop only "
+"and must have `InputDim == number of nested parallel extents`."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:89
+msgid "Pipelined (software pipelining)"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:91
+msgid ""
+"`T.Pipelined(iters, num_stages=...)` overlaps producer/consumer stages (e."
+"g., Global→Shared copies with compute). This is the backbone of GEMM/"
+"attention pipelines."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:95
+msgid ""
+"for ko in T.Pipelined(T.ceildiv(K, BK), num_stages=3):\n"
+"    T.copy(A[by * BM, ko * BK], A_s)  # stage: copy A tile\n"
+"    T.copy(B[ko * BK, bx * BN], B_s)  # stage: copy B tile\n"
+"    T.gemm(A_s, B_s, C_f)             # stage: compute\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:102
+msgid "Persistent (advanced)"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:104
+msgid ""
+"`T.Persistent(domain, wave_size, index, group_size=...)` exposes persistent "
+"thread‑block style looping. It is an advanced construct that TileLang lowers "
+"in later passes and is typically used by specialized templates."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:108
+msgid "While Loops"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:110
+msgid ""
+"`while` is supported when the condition is a TIR expression. Avoid infinite "
+"loops; TileLang will error if it detects a constant‑true condition."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:113
+msgid ""
+"i = 0\n"
+"while i < N:\n"
+"    ...\n"
+"    if done:\n"
+"        break\n"
+"    i += 1\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:122
+msgid "Break and Continue"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:124
+msgid ""
+"Use Python `break`/`continue` to exit or skip within `T.serial`/`T.unroll`/ "
+"`T.Parallel`/`while` loops. Keep the body clean after a `break`/`continue` "
+"for readability; the compiler will ignore the dead path."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:128
+msgid "Putting It Together: Residual Tile Handling"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:130
+msgid ""
+"Below is a typical edge pattern for a 2D kernel. With "
+"LegalizeSafeMemoryAccess, the explicit guard can be omitted when you don’t "
+"need a custom edge path."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:133
+msgid ""
+"for i, j in T.Parallel(M, N):\n"
+"    gi = by * BM + i\n"
+"    gj = bx * BN + j\n"
+"    if T.all_of(gi < M, gj < N):     # optional in many cases\n"
+"        C[gi, gj] = A[gi, gj] + B[gi, gj]\n"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:141
+msgid "Debugging Conditions"
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:143
+msgid ""
+"Use `T.print` to inspect values under predicates. For buffers, TileLang "
+"prints from a single thread to avoid duplicate outputs."
+msgstr ""
+
+#: ../../../programming_guides/control_flow.md:146
+msgid ""
+"if i == 0:\n"
+"    T.print(C, msg='C tile:')\n"
+msgstr ""

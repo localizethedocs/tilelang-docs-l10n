@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:2
+msgid "tilelang.jit.adapter.cutedsl.adapter"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:14:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.jit.adapter.cutedsl.adapter.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`CuTeDSLKernelAdapter <tilelang.jit.adapter.cutedsl.adapter."
+"CuTeDSLKernelAdapter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:22:<autosummary>:1
+msgid "Helper class that provides a standard way to create an ABC using"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:30
+msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:33
+msgid ""
+"Helper class that provides a standard way to create an ABC using inheritance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:109
+msgid "Get the CUDA kernel source code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:111
+msgid "The kernel source code, or None if not available"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:118
+msgid "Explicitly cleanup this adapter's CUDA resources."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:120
+msgid ""
+"This method can be called explicitly to immediately release CUDA resources "
+"without waiting for garbage collection. Useful in Jupyter notebooks or tests."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:123
+msgid ""
+"Note: This is safe to call multiple times as the C++ implementation is "
+"idempotent."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:131
+msgid "Returns the primary TIR function from the IR module."
+msgstr ""
