@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:2
+msgid "tilelang.tileop.gemm.inst"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:14:<autosummary>:1
+msgid ":py:obj:`GemmInst <tilelang.tileop.gemm.inst.GemmInst>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:23
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:14:<autosummary>:1
+msgid "Enum where members are also (and must be) ints"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:20
+msgid "Bases: :py:obj:`enum.IntEnum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:60
+msgid "Return repr(self)."
+msgstr ""

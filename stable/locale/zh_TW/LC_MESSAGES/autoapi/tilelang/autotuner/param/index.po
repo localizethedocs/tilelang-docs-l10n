@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgstr ""
 msgid ":py:obj:`AutotuneResult <tilelang.autotuner.param.AutotuneResult>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:300
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:310
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:38:<autosummary>:1
 msgid "Results from auto-tuning process."
 msgstr ""
@@ -158,69 +158,74 @@ msgid "Maximum time per configuration."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:174
-msgid "Type of tensor supply mechanism."
+msgid ""
+"Profiler backend - \"event\" (CUDA events), \"cupti\", or \"cudagraph\"."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:178
-msgid "Reference program for correctness validation."
+msgid "Type of tensor supply mechanism."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:182
-msgid "Supply program for input tensors."
+msgid "Reference program for correctness validation."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:186
-msgid "Union[List[int], int] = -1"
+msgid "Supply program for input tensors."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:190
-msgid "tilelang.TensorSupplyType = tilelang.TensorSupplyType.Auto"
+msgid "Union[List[int], int] = -1"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:194
+msgid "tilelang.TensorSupplyType = tilelang.TensorSupplyType.Auto"
+msgstr ""
+
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:198
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:218
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:202
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:222
 msgid "Callable = None"
 msgstr "Callable = None"
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:202
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:206
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:210
 msgid "float = 1e-2"
 msgstr "float = 1e-2"
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:210
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:214
 msgid "float = 0.01"
 msgstr "float = 0.01"
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:214
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:218
 msgid "bool = False"
 msgstr "bool = False"
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:222
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:226
 msgid "bool = True"
 msgstr "bool = True"
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:304
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:314
 msgid "Best achieved execution latency."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:308
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:318
 msgid "Configuration that produced the best result."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:312
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:322
 msgid "Reference implementation latency."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:316
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:326
 msgid "Generated library code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:320
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:330
 msgid "Optimized function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:324
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:334
 msgid "Compiled kernel function."
 msgstr ""
 

@@ -1,0 +1,407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:2
+msgid "tilelang.transform.decouple_type_cast"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:8
+msgid "Decouple type cast vectorization constraints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:10
+msgid ""
+"When a vectorized loop has mixed-precision operations between local and "
+"memory buffers, the vectorization length would be constrained by the GCD of "
+"all involved dtypes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:14
+msgid ""
+"This pass decouples the constraints by inserting a local buffer as an "
+"intermediate stage, allowing optimal vectorization for both computation and "
+"memory access."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:18
+msgid "Two cases are handled:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:21
+msgid "Case 1: local → memory (store to memory with mixed types)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:22
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:34
+msgid "Before:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:23
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:27
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:35
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:41
+msgid "for vec in T.vectorized(16):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:24
+msgid "b[vec] = T.cast(a_frag[vec], \"float4_e2m1fn\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:26
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:38
+msgid "After:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:28
+msgid "cast_buf[vec] = T.cast(a_frag[vec], \"float4_e2m1fn\")  # compute"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:29
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:39
+msgid "for vec_copy in T.vectorized(16):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:30
+msgid "b[vec_copy] = cast_buf[vec_copy]                      # copy to memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:33
+msgid "Case 2: memory → local (load from memory with different dtype)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:36
+msgid "a_frag[vec] = T.cast(b[vec], \"float32\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:40
+msgid ""
+"cast_buf[vec_copy] = b[vec_copy]                      # copy from memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:42
+msgid "a_frag[vec] = T.cast(cast_buf[vec], \"float32\")        # compute"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:47
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:53:<autosummary>:1
+msgid ""
+":py:obj:`CastBufferMap <tilelang.transform.decouple_type_cast."
+"CastBufferMap>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:55
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+":py:obj:`MixedTypeChecker <tilelang.transform.decouple_type_cast."
+"MixedTypeChecker>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:108
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+"Check if expression contains BufferLoads with different dtypes, skipping "
+"indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+":py:obj:`GlobalSharedBufferLoadCollector <tilelang.transform."
+"decouple_type_cast.GlobalSharedBufferLoadCollector>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:137
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+"Collect BufferLoads from global/shared buffers, skipping if_then_else "
+"conditions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+":py:obj:`StoreCollector <tilelang.transform.decouple_type_cast."
+"StoreCollector>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:182
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+"Collect BufferStore nodes that need transformation, skipping indices "
+"traversal."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+":py:obj:`DecoupleTypeCastMutator <tilelang.transform.decouple_type_cast."
+"DecoupleTypeCastMutator>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:228
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid "Mutator that decouples type cast vectorization constraints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+":py:obj:`StoreReplacer <tilelang.transform.decouple_type_cast."
+"StoreReplacer>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:246
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid "Mutator to replace memory BufferStores with cast buffer BufferStores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid ""
+":py:obj:`LoadReplacer <tilelang.transform.decouple_type_cast.LoadReplacer>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:263
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
+msgid "Mutator to replace memory BufferLoads with cast buffer BufferLoads."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:68
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`is_local_buffer <tilelang.transform.decouple_type_cast."
+"is_local_buffer>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:88
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Check if a buffer is local (register-level), including local.var."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`is_global_or_shared_buffer <tilelang.transform.decouple_type_cast."
+"is_global_or_shared_buffer>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:93
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Check if a buffer is a global or shared buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`validate_buffer_scope <tilelang.transform.decouple_type_cast."
+"validate_buffer_scope>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:98
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Validate that buffer has a known scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`has_mixed_types <tilelang.transform.decouple_type_cast."
+"has_mixed_types>`\\ \\(expr\\, target\\_dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:126
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+"Check if expression contains BufferLoads with different dtypes than target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`get_global_or_shared_buffer_loads <tilelang.transform."
+"decouple_type_cast.get_global_or_shared_buffer_loads>`\\ \\(expr\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:162
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Get BufferLoads from global/shared buffers in the expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`has_global_or_shared_load_with_different_dtype <tilelang.transform."
+"decouple_type_cast.has_global_or_shared_load_with_different_dtype>`\\ "
+"\\(expr\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:171
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+"Check if expression has global/shared BufferLoad with different dtype than "
+"target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`contains_seq_stmt <tilelang.transform.decouple_type_cast."
+"contains_seq_stmt>`\\ \\(stmt\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:208
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Check if statement contains SeqStmt (multiple statements)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`extract_if_condition <tilelang.transform.decouple_type_cast."
+"extract_if_condition>`\\ \\(stmt\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:216
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Extract IfThenElse condition from statement if present."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid ""
+":py:obj:`DecoupleTypeCast <tilelang.transform.decouple_type_cast."
+"DecoupleTypeCast>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:277
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:82:<autosummary>:1
+msgid "Create a TVM pass that decouples type cast vectorization constraints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:84
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:100
+msgid "If buffer scope is unknown or empty."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:105
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:134
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:179
+msgid "Bases: :py:obj:`tvm.tir.PyStmtExprVisitor`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:128
+msgid ""
+"If any BufferLoad in the expression has a different dtype than the target "
+"(store buffer's dtype), vectorization may be constrained by GCD of all "
+"dtypes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:139
+msgid ""
+"The condition part of if_then_else doesn't participate in type casting, so "
+"we skip collecting BufferLoads from there."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:164
+msgid "The expression to search."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:165
+msgid ""
+"If True, skip BufferLoads in if_then_else conditions, since they don't "
+"participate in type casting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:173
+msgid ""
+"Used to detect memory→local cases where we need to insert cast buffer. Skips "
+"if_then_else condition since it doesn't participate in type casting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:184
+msgid ""
+"This avoids visiting BufferLoad/BufferStore nodes inside indices, which "
+"don't participate in the type casting transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:210
+msgid ""
+"When the For body has SeqStmt, the transformation is more complex and we "
+"skip the optimization for now."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:218
+msgid ""
+"A tuple of (condition, inner_body). If no IfThenElse, returns (None, stmt)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:225
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:243
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:260
+msgid "Bases: :py:obj:`tvm.tir.PyStmtExprMutator`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:230
+msgid ""
+"This mutator transforms vectorized loops that store to memory buffers "
+"(global/shared) with mixed-precision expressions by inserting local cache "
+"buffers as intermediate stages."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:237
+msgid "Visit For nodes, transforming vectorized loops with mixed-type stores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:279
+msgid ""
+"This pass inserts a local buffer as an intermediate stage for vectorized "
+"stores to non-local buffers (global/shared) where the store value contains "
+"expressions with different dtypes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:283
+msgid ""
+"This allows optimal vectorization for both computation and memory access."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:287
+msgid ""
+"This pass must be applied before VectorizeLoop and StorageRewrite passes, "
+"while the IR still uses BufferLoad/BufferStore (not tvm_access_ptr)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:290
+msgid "A TVM PrimFunc pass."
+msgstr ""

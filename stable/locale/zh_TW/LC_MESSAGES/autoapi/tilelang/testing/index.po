@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,69 +22,73 @@ msgid "tilelang.testing"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:8
+msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:17
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:14:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:23:<autosummary>:1
 msgid ":py:obj:`__all__ <tilelang.testing.__all__>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:16
+#: ../../../autoapi/tilelang/testing/index.rst:25
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ":py:obj:`main <tilelang.testing.main>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`set_random_seed <tilelang.testing.set_random_seed>`\\ "
 "\\(\\[seed\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version <tilelang.testing."
 "requires_cuda_compute_version>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:41
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:50
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid "Mark a test as requiring at least a compute architecture"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_ge <tilelang.testing."
 "requires_cuda_compute_version_ge>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_gt <tilelang.testing."
 "requires_cuda_compute_version_gt>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_eq <tilelang.testing."
 "requires_cuda_compute_version_eq>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_lt <tilelang.testing."
 "requires_cuda_compute_version_lt>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_le <tilelang.testing."
 "requires_cuda_compute_version_le>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:31
+#: ../../../autoapi/tilelang/testing/index.rst:40
 msgid "Package Contents"
 msgstr ""
 
@@ -96,25 +100,25 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:43
+#: ../../../autoapi/tilelang/testing/index.rst:52
 msgid ""
 "Unit test marked with this decorator will run only if the CUDA compute "
 "architecture of the GPU is at least `(major_version, minor_version)`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:47
+#: ../../../autoapi/tilelang/testing/index.rst:56
 msgid "This also marks the test as requiring a cuda support."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:49
+#: ../../../autoapi/tilelang/testing/index.rst:58
 msgid "The major version of the (major,minor) version tuple."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:51
+#: ../../../autoapi/tilelang/testing/index.rst:60
 msgid "The minor version of the (major,minor) version tuple."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:53
+#: ../../../autoapi/tilelang/testing/index.rst:62
 msgid ""
 "The mode of the comparison. - \"ge\": greater than or equal to - \"gt\": "
 "greater than - \"le\": less than or equal to - \"lt\": less than"

@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tutorials/logging.md:1
+msgid "Logging in Tilelang/TVM"
+msgstr ""
+
+#: ../../../tutorials/logging.md:3
+msgid ""
+"<div style=\"text-align: left;\">\n"
+"<em>Author:</em> <a href=\"https://github.com/SiriusNEO\">SiriusNEO</a>\n"
+"</div>\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:7
+msgid "TVM Logging Overview"
+msgstr ""
+
+#: ../../../tutorials/logging.md:9
+msgid ""
+"Tilelang currently utilizes the logging system from TVM. The implementation "
+"can be found in:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:11
+msgid ""
+"[include/tvm/runtime/logging.h](https://github.com/apache/tvm/blob/main/"
+"include/tvm/runtime/logging.h): Macro definitions"
+msgstr ""
+
+#: ../../../tutorials/logging.md:12
+msgid ""
+"[src/runtime/logging.cc](https://github.com/apache/tvm/blob/main/src/runtime/"
+"logging.cc): Logging logic implementation"
+msgstr ""
+
+#: ../../../tutorials/logging.md:14
+msgid ""
+"The design style is inspired by [Google's glog](https://google.github.io/"
+"glog/stable/)."
+msgstr ""
+
+#: ../../../tutorials/logging.md:16
+msgid "Logging Categories"
+msgstr ""
+
+#: ../../../tutorials/logging.md:18
+msgid "There are three primary macro types:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:20
+msgid ""
+"LOG(INFO) << \"aaa\";\n"
+"DLOG(INFO) << \"aaa\";\n"
+"VLOG(1) << \"aaa\";\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:26
+msgid ""
+"**LOG**: Standard logging preserved in code for displaying necessary "
+"information at different levels during runtime. Most Tilelang C++ error "
+"reporting is implemented via `LOG(FATAL) << \"error msg\"`."
+msgstr ""
+
+#: ../../../tutorials/logging.md:27
+msgid ""
+"**DLOG**: Debug logging for developer debugging output. DLOG is controlled "
+"at build time by the TVM_LOG_DEBUG environment variable and is **eliminated "
+"in Release builds through dead code elimination**."
+msgstr ""
+
+#: ../../../tutorials/logging.md:28
+msgid ""
+"The key difference between LOG(DEBUG) and DLOG is this build-time "
+"elimination. We recommend using DLOG over LOG(DEBUG), as the latter has "
+"overlapping functionality and gets compiled into the release runtime."
+msgstr ""
+
+#: ../../../tutorials/logging.md:29
+msgid ""
+"**VLOG**: [Verbose logging](https://google.github.io/glog/stable/logging/"
+"#verbose-logging), primarily for debugging. Its main feature is customizable "
+"verbosity levels. For example, VLOG(n) where n can be 1, 2, 3, 4, 5, or 6, "
+"enabling complex tracing requirements. In contrast, LOG and DLOG typically "
+"use predefined verbose levels like INFO and DEBUG."
+msgstr ""
+
+#: ../../../tutorials/logging.md:30
+msgid "In practical Tilelang development, VLOG is used less frequently."
+msgstr ""
+
+#: ../../../tutorials/logging.md:31
+msgid ""
+"TVM's VLOG is implemented using DLOG, thus inheriting DLOG's characteristics."
+msgstr ""
+
+#: ../../../tutorials/logging.md:33
+msgid "Additional useful macros include various **CHECK** variants:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:35
+msgid ""
+"CHECK(cond) << \"error msg\";\n"
+"DCHECK(cond) << \"error msg\";\n"
+"ICHECK(cond) << \"error msg\";\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:41
+msgid "The implementation routes errors to LogFatal:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:43
+msgid ""
+"#define CHECK(x)                                                \\\n"
+"  if (!(x))                                                     \\\n"
+"  ::tvm::runtime::detail::LogFatal(__FILE__, __LINE__).stream() \\\n"
+"      << \"Check failed: (\" #x << \") is false: \"\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:49
+msgid "**DCHECK**: Debug mode CHECK, only compiled in debug builds"
+msgstr ""
+
+#: ../../../tutorials/logging.md:50
+msgid ""
+"**ICHECK**: Internal Check that should exist in Release builds. When ICHECK "
+"fails, the entire system should report an error."
+msgstr ""
+
+#: ../../../tutorials/logging.md:52
+msgid "Logging Verbose Levels"
+msgstr ""
+
+#: ../../../tutorials/logging.md:54
+msgid "TVM defines 5 levels for LOG and DLOG (adding DEBUG compared to glog):"
+msgstr ""
+
+#: ../../../tutorials/logging.md:56
+msgid ""
+"#define TVM_LOG_LEVEL_DEBUG 0\n"
+"#define TVM_LOG_LEVEL_INFO 1\n"
+"#define TVM_LOG_LEVEL_WARNING 2\n"
+"#define TVM_LOG_LEVEL_ERROR 3\n"
+"#define TVM_LOG_LEVEL_FATAL 4\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:64
+msgid "Using Logging in TileLang Development"
+msgstr ""
+
+#: ../../../tutorials/logging.md:66
+msgid "Guidelines"
+msgstr ""
+
+#: ../../../tutorials/logging.md:68
+msgid ""
+"For temporary debugging output in your code, there are no restrictions (you "
+"can even use std::cout). Just remember to remove it before submitting a PR."
+msgstr ""
+
+#: ../../../tutorials/logging.md:70
+msgid "For meaningful logging that should remain in the Tilelang codebase:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:72
+msgid ""
+"Critical correctness checks: Use ICHECK with sufficient error messages to "
+"facilitate debugging when issues arise."
+msgstr ""
+
+#: ../../../tutorials/logging.md:73
+msgid ""
+"Complex Pass debugging: For passes requiring intermediate output that may "
+"need future review (e.g., LayoutInference), use DLOG."
+msgstr ""
+
+#: ../../../tutorials/logging.md:74
+msgid "General INFO/WARNING messages: Use standard LOG."
+msgstr ""
+
+#: ../../../tutorials/logging.md:76
+msgid "Enabling Log Output in Tilelang"
+msgstr ""
+
+#: ../../../tutorials/logging.md:78
+msgid ""
+"To specify current log level at runtime, we need to set the environment "
+"variable `TVM_LOG_LEVEL`. An example usage is:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:80
+msgid "TVM_LOG_DEBUG=1 python3 code.py\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:84
+msgid "which enables all DEBUG/INFO (level <= 1) logs for all files."
+msgstr ""
+
+#: ../../../tutorials/logging.md:86
+msgid "Detailed Rules for TVM_LOG_DEBUG Specification"
+msgstr ""
+
+#: ../../../tutorials/logging.md:88
+msgid ""
+"The parsing logic is in `logging.cc`. Reference: [HyperAI Zhihu Article]"
+"(https://zhuanlan.zhihu.com/p/1933106843468665163)."
+msgstr ""
+
+#: ../../../tutorials/logging.md:90
+msgid ""
+"Launch Python with `TVM_LOG_DEBUG=<spec>`, where `<spec>` is a comma-"
+"separated list of level assignments in the form `<file_name>=<level>`. "
+"Important notes:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:92
+msgid "The special filename DEFAULT sets the LOG level for all files."
+msgstr ""
+
+#: ../../../tutorials/logging.md:93
+msgid "`<level>` can be set to -1 to disable LOG for that file."
+msgstr ""
+
+#: ../../../tutorials/logging.md:94
+msgid ""
+"`<file_name>` is the C++ source filename (e.g., .cc, not .h) relative to the "
+"`src/` directory in the TVM repository. The `src/` prefix is optional when "
+"specifying file paths."
+msgstr ""
+
+#: ../../../tutorials/logging.md:96
+msgid "Enabling Debug Mode"
+msgstr ""
+
+#: ../../../tutorials/logging.md:98
+msgid ""
+"To enable DLOG/DCHECK, developers need to first build Tilelang in Debug mode:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:100
+msgid "cmake .. -DCMAKE_BUILD_TYPE=Debug -DUSE_CUDA=ON\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:104
+msgid ""
+"Tilelang's CMake logic automatically adds the `TVM_LOG_DEBUG` macro, "
+"compiling all DLOG statements:"
+msgstr ""
+
+#: ../../../tutorials/logging.md:106
+msgid "target_compile_definitions(tilelang_objs PRIVATE \"TVM_LOG_DEBUG\")\n"
+msgstr ""
+
+#: ../../../tutorials/logging.md:110
+msgid ""
+"Then you also need to specify the runtime environment variables. For "
+"example, to use `DLOG(INFO) << \"xxx\"` for debugging, run your code with "
+"INFO level (1): `TVM_LOG_DEBUG=1`."
+msgstr ""
+
+#: ../../../tutorials/logging.md:113
+msgid ""
+"**Important**: There are two TVM_LOG_DEBUG variables. (1) Compile-time "
+"macro: Determines whether debug content (like DLOG) is compiled into the .so "
+"file. Referenced in C++ source via #ifdef TVM_LOG_DEBUG. This is "
+"automatically enabled when using Debug build mode in CMake. (2) Runtime "
+"environment variable: Controls logging level at runtime. TVM provides a "
+"specification for this variable, allowing control over per-file logging "
+"levels."
+msgstr ""
+
+#: ../../../tutorials/logging.md:115
+msgid ""
+"These two should ideally have different names, but TVM uses the same name "
+"for both, which can cause confusion."
+msgstr ""
