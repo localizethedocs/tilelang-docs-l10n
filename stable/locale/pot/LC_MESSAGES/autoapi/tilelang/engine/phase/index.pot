@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,101 +25,113 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`allow_warp_specialized <tilelang.engine.phase."
 "allow_warp_specialized>`\\ \\(\\[pass\\_ctx\\, target\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`allow_tma_and_warp_specialized <tilelang.engine.phase."
 "allow_tma_and_warp_specialized>`\\ \\(\\[pass\\_ctx\\, target\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`allow_fence_proxy <tilelang.engine.phase.allow_fence_proxy>`\\ "
 "\\(\\[target\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`allow_vectorize <tilelang.engine.phase.allow_vectorize>`\\ "
 "\\(\\[pass\\_ctx\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`allow_global_thread_synchronization <tilelang.engine.phase."
 "allow_global_thread_synchronization>`\\ \\(\\[pass\\_ctx\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`should_enable_aggressive_merge <tilelang.engine.phase."
 "should_enable_aggressive_merge>`\\ \\(\\[pass\\_ctx\\, target\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`should_force_let_inline <tilelang.engine.phase."
 "should_force_let_inline>`\\ \\(\\[pass\\_ctx\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`should_enable_ast_print <tilelang.engine.phase."
+"should_enable_ast_print>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`should_enable_layout_visual <tilelang.engine.phase."
 "should_enable_layout_visual>`\\ \\(\\[pass\\_ctx\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`should_enable_race_check <tilelang.engine.phase."
+"should_enable_race_check>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`get_layout_visual_formats <tilelang.engine.phase."
 "get_layout_visual_formats>`\\ \\(\\[pass\\_ctx\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ":py:obj:`LayoutVisual <tilelang.engine.phase.LayoutVisual>`\\ \\(mod\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:50
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:56
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid "Apply layout visualization pass if enabled."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`PreLowerSemanticCheck <tilelang.engine.phase."
 "PreLowerSemanticCheck>`\\ \\(mod\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 "Check whether the module is valid before lowering. If not, raise a user-"
 "friendly error"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`LowerAndLegalize <tilelang.engine.phase.LowerAndLegalize>`\\ "
 "\\(mod\\, target\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:62
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:68
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 "Bind target information and progressively legalize and lower frontend Tile "
 "IR into a form suitable for downstream optimization and codegen."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`OptimizeForTarget <tilelang.engine.phase.OptimizeForTarget>`\\ "
 "\\(mod\\, target\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:28
+#: ../../../autoapi/tilelang/engine/phase/index.rst:30
 msgid "Module Contents"
 msgstr ""
 
@@ -130,7 +143,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:55
+#: ../../../autoapi/tilelang/engine/phase/index.rst:61
 msgid ""
 "Check whether the module is valid before lowering. If not, raise a user-"
 "friendly error in Python side instead of letting the error dive into the "
@@ -138,7 +151,7 @@ msgid ""
 "passes and does not modify or return the module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:64
+#: ../../../autoapi/tilelang/engine/phase/index.rst:70
 msgid ""
 "This pass pipeline: - Binds the provided target to the module. - Legalizes "
 "frontend Tile IR into TVM-compatible constructs. - Simplifies expressions. - "
@@ -149,11 +162,11 @@ msgid ""
 "loop vectorization for dynamic-shaped loops."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:74
+#: ../../../autoapi/tilelang/engine/phase/index.rst:80
 msgid "The input IR module containing frontend Tile IR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:76
+#: ../../../autoapi/tilelang/engine/phase/index.rst:82
 msgid "Target device information to bind into the module."
 msgstr ""
 
@@ -161,6 +174,6 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/phase/index.rst:79
+#: ../../../autoapi/tilelang/engine/phase/index.rst:85
 msgid "The transformed module, ready for target-specific optimization passes."
 msgstr ""

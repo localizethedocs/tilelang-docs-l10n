@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +22,9 @@ msgid "tilelang.language.customize"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/customize/index.rst:8
-msgid "The language interface for tl programs."
+msgid ""
+"Some customized operations frequently used in tensor programming, exposed on "
+"the TileLang language surface."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/customize/index.rst:13

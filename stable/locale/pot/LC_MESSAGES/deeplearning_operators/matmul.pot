@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> stable\n"
+"Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -273,146 +274,146 @@ msgid ""
 "compiler will infer how loops map to these threads."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:151
+#: ../../../deeplearning_operators/matmul.md:150
 msgid "Parallel"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:158
+#: ../../../deeplearning_operators/matmul.md:156
 msgid "**Shared & Fragment Memory**:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:160
+#: ../../../deeplearning_operators/matmul.md:158
 msgid ""
 "A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
 "B_shared = T.alloc_shared((block_K, block_N), dtype)\n"
 "C_local  = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:166
+#: ../../../deeplearning_operators/matmul.md:164
 msgid ""
 "`T.alloc_shared` allocates shared memory across the entire thread block."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:167
+#: ../../../deeplearning_operators/matmul.md:165
 msgid ""
 "`T.alloc_fragment` allocates register space for local accumulation. Though "
 "it is written as `(block_M, block_N)`, the compiler’s layout inference "
 "assigns slices of this space to each thread."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:169
+#: ../../../deeplearning_operators/matmul.md:167
 msgid "**Software Pipelining**:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:171
+#: ../../../deeplearning_operators/matmul.md:169
 msgid ""
 "for ko in T.Pipelined(T.ceildiv(K, block_K), num_stages=3):\n"
 "    ...\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:176
+#: ../../../deeplearning_operators/matmul.md:174
 msgid ""
 "`T.Pipelined` automatically arranges asynchronous copy and compute "
 "instructions to overlap memory operations with arithmetic."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:177
+#: ../../../deeplearning_operators/matmul.md:175
 msgid "The argument `num_stages=3` indicates the pipeline depth."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:179
+#: ../../../deeplearning_operators/matmul.md:177
 msgid "Software Pipeline Inference"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:186
+#: ../../../deeplearning_operators/matmul.md:183
 msgid "**Parallel Copy**:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:188
+#: ../../../deeplearning_operators/matmul.md:185
 msgid ""
 "for k, j in T.Parallel(block_K, block_N):\n"
 "    B_shared[k, j] = B[ko * block_K + k, bx * block_N + j]\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:193
+#: ../../../deeplearning_operators/matmul.md:190
 msgid "`T.Parallel` marks the loop for thread-level parallelization."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:194
+#: ../../../deeplearning_operators/matmul.md:191
 msgid ""
 "The compiler will map these loops to the available threads in the block."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:196
+#: ../../../deeplearning_operators/matmul.md:193
 msgid "**Tile-Level GEMM**:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:198
+#: ../../../deeplearning_operators/matmul.md:195
 msgid "T.gemm(A_shared, B_shared, C_local)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:202
+#: ../../../deeplearning_operators/matmul.md:199
 msgid ""
 "A single call that performs a tile-level matrix multiplication using the "
 "specified buffers."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:203
+#: ../../../deeplearning_operators/matmul.md:200
 msgid ""
 "Under the hood, for NVIDIA targets, it can use CUTLASS/Cute or WMMA "
 "instructions. On AMD GPUs, TileLang uses a separate HIP or composable kernel "
 "approach."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:205
+#: ../../../deeplearning_operators/matmul.md:202
 msgid "**Copying Back Results**:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:207
+#: ../../../deeplearning_operators/matmul.md:204
 msgid "T.copy(C_local, C[by * block_M, bx * block_N])\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:211
+#: ../../../deeplearning_operators/matmul.md:208
 msgid ""
 "After computation, data in the local register fragment is written back to "
 "global memory."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:213
+#: ../../../deeplearning_operators/matmul.md:210
 msgid "Comparison with Other DSLs"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:215
+#: ../../../deeplearning_operators/matmul.md:212
 msgid ""
 "TileLang Level 2 is conceptually similar to Triton in that the user can "
 "control tiling and parallelization, while letting the compiler handle many "
 "low-level details. However, TileLang also:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:217
+#: ../../../deeplearning_operators/matmul.md:214
 msgid ""
 "Allows explicit memory layout annotations (e.g. `make_mma_swizzle_layout`)."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:218
+#: ../../../deeplearning_operators/matmul.md:215
 msgid ""
 "Supports a flexible pipeline pass (`T.Pipelined`) that can be automatically "
 "inferred or manually defined."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:219
+#: ../../../deeplearning_operators/matmul.md:216
 msgid ""
 "Enables mixing different levels in a single program—for example, you can "
 "write some parts of your kernel in Level 3 (thread primitives) for fine-"
 "grained PTX/inline-assembly and keep the rest in Level 2."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:221
-#: ../../../deeplearning_operators/matmul.md:223
+#: ../../../deeplearning_operators/matmul.md:218
+#: ../../../deeplearning_operators/matmul.md:220
 msgid "Performance on Different Platforms"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:229
+#: ../../../deeplearning_operators/matmul.md:226
 msgid ""
 "When appropriately tuned (e.g., by using an auto-tuner), TileLang achieves "
 "performance comparable to or better than vendor libraries and Triton on "
@@ -420,65 +421,65 @@ msgid ""
 "4090, A100, H100, MI300X), TileLang has shown:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:231
+#: ../../../deeplearning_operators/matmul.md:228
 msgid "~1.1x speedup over cuBLAS on RTX 4090"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:232
+#: ../../../deeplearning_operators/matmul.md:229
 msgid "~0.97x on A100 (on par with cuBLAS)"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:233
+#: ../../../deeplearning_operators/matmul.md:230
 msgid "~1.0x on H100"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:234
+#: ../../../deeplearning_operators/matmul.md:231
 msgid "~1.04x on MI300X"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:235
+#: ../../../deeplearning_operators/matmul.md:232
 msgid ""
 "Compared to Triton, speedups range from 1.08x to 1.25x depending on the "
 "hardware."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:237
+#: ../../../deeplearning_operators/matmul.md:234
 msgid ""
 "These measurements will vary based on tile sizes, pipeline stages, and the "
 "hardware’s capabilities."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:239
+#: ../../../deeplearning_operators/matmul.md:236
 msgid "Conclusion"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:241
+#: ../../../deeplearning_operators/matmul.md:238
 msgid ""
 "This tutorial demonstrated a Level 2 TileLang kernel for matrix "
 "multiplication. With just a few lines of code:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:243
+#: ../../../deeplearning_operators/matmul.md:240
 msgid "We allocated shared memory and register fragments."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:244
+#: ../../../deeplearning_operators/matmul.md:241
 msgid "We pipelined the loading and computation along the K dimension."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:245
+#: ../../../deeplearning_operators/matmul.md:242
 msgid "We used parallel copying to efficiently load tiles from global memory."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:246
+#: ../../../deeplearning_operators/matmul.md:243
 msgid "We invoked `T.gemm` to dispatch a tile-level matrix multiply."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:247
+#: ../../../deeplearning_operators/matmul.md:244
 msgid "We verified correctness against PyTorch and examined performance."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:249
+#: ../../../deeplearning_operators/matmul.md:246
 msgid ""
 "By balancing high-level abstractions (like `T.copy`, `T.Pipelined`, `T."
 "gemm`) with the ability to annotate layouts or drop to thread primitives "
@@ -487,7 +488,7 @@ msgid ""
 "explicit scheduling to see how performance scales across different GPUs."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:251
+#: ../../../deeplearning_operators/matmul.md:248
 msgid ""
 "For more advanced usage—including partial lowering, explicitly controlling "
 "thread primitives, or using inline assembly—you can explore Level 3. "
@@ -495,30 +496,30 @@ msgid ""
 "tuning, consider Level 1."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:253
+#: ../../../deeplearning_operators/matmul.md:250
 msgid "Further Resources"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:255
+#: ../../../deeplearning_operators/matmul.md:252
 msgid "[TileLang GitHub](https://github.com/tile-ai/tilelang)"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:256
+#: ../../../deeplearning_operators/matmul.md:253
 msgid "[BitBLAS](https://github.com/tile-ai/bitblas)"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:257
+#: ../../../deeplearning_operators/matmul.md:254
 msgid "[Triton](https://github.com/openai/triton)"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:258
+#: ../../../deeplearning_operators/matmul.md:255
 msgid "[Cutlass](https://github.com/NVIDIA/cutlass)"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:259
+#: ../../../deeplearning_operators/matmul.md:256
 msgid "[PyCUDA](https://documen.tician.de/pycuda/)  <!-- codespell:ignore -->"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul.md:259
+#: ../../../deeplearning_operators/matmul.md:256
 msgid "<!-- codespell:ignore -->"
 msgstr ""
