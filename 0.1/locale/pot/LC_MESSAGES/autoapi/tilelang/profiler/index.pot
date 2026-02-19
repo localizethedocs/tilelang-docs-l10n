@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -86,7 +87,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:85
 #: ../../../autoapi/tilelang/profiler/index.rst:97
-#: ../../../autoapi/tilelang/profiler/index.rst:137
+#: ../../../autoapi/tilelang/profiler/index.rst:125
 msgid "Optional pre-generated input tensors"
 msgstr ""
 
@@ -114,53 +115,44 @@ msgid "Number of times to repeat the consistency check"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:117
-msgid "Determines which profiler backend to use based on function type."
+msgid "Benchmarks the execution time of a given function."
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:119
-msgid "Function to be profiled"
+msgid "Function to benchmark (uses adapter if None)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:120
-msgid "Explicitly specified profiler type or \"auto\" for automatic detection"
+msgid "Warmup time in milliseconds"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:121
+msgid "Number of repetitions for timing"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:122
+msgid "Number of warmup iterations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:123
+msgid "Number of timing iterations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:124
+msgid "Which profiling backend to use - \"event\", \"cupti\", or \"cudagraph\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/index.rst:126
+msgid ""
+"Optional dict mapping dynamic symbolic variable names to concrete int "
+"values. Use this when benchmarking kernels with dynamic shapes, e.g., "
+"{\"m\": 2048, \"n\": 1024}"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/index.rst:122
-msgid "The determined profiler type (\"torch\" or \"tvm\")"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:129
-msgid "Benchmarks the execution time of a given function."
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:131
-msgid "Function to benchmark (uses adapter if None)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:132
-msgid "Warmup time in milliseconds"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:133
-msgid "Number of repetitions for timing"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:134
-msgid "Number of warmup iterations"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:135
-msgid "Number of timing iterations"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:136
-msgid "Which profiling backend to use"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/index.rst:139
+#: ../../../autoapi/tilelang/profiler/index.rst:130
 msgid "Average execution time in milliseconds"
 msgstr ""

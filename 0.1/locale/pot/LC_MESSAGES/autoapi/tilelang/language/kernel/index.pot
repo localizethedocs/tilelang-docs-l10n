@@ -6,12 +6,13 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +22,7 @@ msgid "tilelang.language.kernel"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:8
-msgid "The language interface for tl programs."
+msgid "Kernel launching language interface in TileLang."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:13
@@ -78,7 +79,7 @@ msgid ""
 "get_thread_bindings>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:253
+#: ../../../autoapi/tilelang/language/kernel/index.rst:252
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three thread bindings."
 msgstr ""
@@ -89,7 +90,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:259
+#: ../../../autoapi/tilelang/language/kernel/index.rst:257
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the block binding for the given dimension."
 msgstr ""
@@ -101,7 +102,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:173
-#: ../../../autoapi/tilelang/language/kernel/index.rst:265
+#: ../../../autoapi/tilelang/language/kernel/index.rst:262
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three block bindings."
 msgstr ""
@@ -112,7 +113,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:271
+#: ../../../autoapi/tilelang/language/kernel/index.rst:267
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the thread extent for the given dimension."
 msgstr ""
@@ -123,7 +124,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:277
+#: ../../../autoapi/tilelang/language/kernel/index.rst:272
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three thread extents."
 msgstr ""
@@ -134,7 +135,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:283
+#: ../../../autoapi/tilelang/language/kernel/index.rst:277
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the block extent for the given dimension."
 msgstr ""
@@ -145,7 +146,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:289
+#: ../../../autoapi/tilelang/language/kernel/index.rst:282
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three block extents."
 msgstr ""
