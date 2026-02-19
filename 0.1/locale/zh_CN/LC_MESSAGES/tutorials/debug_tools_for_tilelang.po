@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,34 +56,34 @@ msgid ""
 "a hardware-executable file."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:16
+#: ../../../tutorials/debug_tools_for_tilelang.md:15
 msgid "Overview of the compilation process"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:23
+#: ../../../tutorials/debug_tools_for_tilelang.md:22
 msgid ""
 "During this process, users may encounter roughly three categories of issues:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:25
+#: ../../../tutorials/debug_tools_for_tilelang.md:24
 msgid ""
 "**Generation issues**: The Tile Language program fails to generate a valid "
 "hardware-executable file (i.e., errors during the lowering process)."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:26
+#: ../../../tutorials/debug_tools_for_tilelang.md:25
 msgid ""
 "**Correctness issues**: The resulting executable runs, but produces "
 "incorrect results."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:27
+#: ../../../tutorials/debug_tools_for_tilelang.md:26
 msgid ""
 "**Performance issues**: The executable runs with performance significantly "
 "below the expected theoretical hardware limits."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:29
+#: ../../../tutorials/debug_tools_for_tilelang.md:28
 msgid ""
 "This tutorial focuses on the first two issues—how to debug generation and "
 "correctness problems. Performance tuning often requires using vendor-"
@@ -91,23 +91,23 @@ msgid ""
 "further hardware-level analysis, which we will address in future materials."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:31
+#: ../../../tutorials/debug_tools_for_tilelang.md:30
 msgid ""
 "Below, we take matrix multiplication (GEMM) as an example to demonstrate how "
 "to write and debug a Tile Language program."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:33
+#: ../../../tutorials/debug_tools_for_tilelang.md:32
 msgid "Matrix Multiplication Example"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:35
+#: ../../../tutorials/debug_tools_for_tilelang.md:34
 msgid ""
 "In **Tile Language**, you can use the **Tile Library** to implement matrix "
 "multiplication. Here's a complete example:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:37
+#: ../../../tutorials/debug_tools_for_tilelang.md:36
 msgid ""
 "import tilelang\n"
 "import tilelang.language as T\n"
@@ -123,11 +123,11 @@ msgid ""
 "# ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:51
+#: ../../../tutorials/debug_tools_for_tilelang.md:50
 msgid "Debugging Generation Issues"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:53
+#: ../../../tutorials/debug_tools_for_tilelang.md:52
 msgid ""
 "TileLang essentially performs *progressive lowering*. For example, a `T."
 "copy` may first be expanded into `T.Parallel` (see the pass `LowerTileOP`), "
@@ -135,11 +135,11 @@ msgid ""
 "that can be translated to CUDA C code."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:56
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "IR transformation diagram"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:63
+#: ../../../tutorials/debug_tools_for_tilelang.md:61
 msgid ""
 "When the code fails to generate (for instance, a compilation error occurs), "
 "you do **not** necessarily need to jump directly into C++ passes to debug. "
@@ -147,32 +147,32 @@ msgid ""
 "Python by printing them."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:65
+#: ../../../tutorials/debug_tools_for_tilelang.md:63
 msgid ""
 "For example, consider a case where a simple `T.copy` in 1D causes the "
 "lowering process to fail. The snippet below illustrates a simplified version "
 "of the problem (based on community Issue #35):"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:67
+#: ../../../tutorials/debug_tools_for_tilelang.md:65
 msgid ""
 "@T.prim_func\n"
 "def main(Q: T.Tensor(shape_q, dtype)):\n"
 "    # ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:73
+#: ../../../tutorials/debug_tools_for_tilelang.md:71
 msgid "The TileLang lower process might yield an error such as:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:75
+#: ../../../tutorials/debug_tools_for_tilelang.md:73
 msgid ""
 "File \"/root/TileLang/src/target/codegen_cuda.cc\", line 1257\n"
 "ValueError: Check failed: lanes <= 4 (8 vs. 4) : Ramp of more than 4 lanes "
 "is not allowed.\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:80
+#: ../../../tutorials/debug_tools_for_tilelang.md:78
 msgid ""
 "This indicates that somewhere during code generation, an unsupported "
 "vectorization pattern was introduced (a ramp of 8 lanes). Before diving into "
@@ -180,46 +180,46 @@ msgid ""
 "generation. For instance:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:82
+#: ../../../tutorials/debug_tools_for_tilelang.md:80
 msgid ""
 "device_mod = tir.transform.Filter(is_device_call)(mod)\n"
 "# ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:87
+#: ../../../tutorials/debug_tools_for_tilelang.md:85
 msgid "Debugging Correctness Issues"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:89
+#: ../../../tutorials/debug_tools_for_tilelang.md:87
 msgid ""
 "Sometimes, the kernel compiles and runs but produces incorrect results. In "
 "such cases, there are two main strategies to help debug:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:91
+#: ../../../tutorials/debug_tools_for_tilelang.md:89
 msgid ""
 "**Use post-processing callbacks to inspect or modify the generated CUDA code."
 "**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:92
+#: ../../../tutorials/debug_tools_for_tilelang.md:90
 msgid ""
 "**Use the built-in `T.print` debugging primitive to inspect values at "
 "runtime.**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:94
+#: ../../../tutorials/debug_tools_for_tilelang.md:92
 msgid "Post-Processing Callbacks for Generated Source"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:96
+#: ../../../tutorials/debug_tools_for_tilelang.md:94
 msgid ""
 "After code generation (in the codegen pass), TileLang calls a callback "
 "function (if registered) to allow post-processing of the generated source "
 "code. In `src/target/rt_mod_cuda.cc`:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:98
+#: ../../../tutorials/debug_tools_for_tilelang.md:96
 msgid ""
 "std::string code = cg.Finish();\n"
 "if (const auto *f = Registry::Get(\"tilelang_callback_cuda_postproc\")) {\n"
@@ -227,14 +227,14 @@ msgid ""
 "}\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:105
+#: ../../../tutorials/debug_tools_for_tilelang.md:103
 msgid ""
 "Hence, by registering a Python function named "
 "`tilelang_callback_cuda_postproc`, you can intercept the final CUDA code "
 "string. For example:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:107
+#: ../../../tutorials/debug_tools_for_tilelang.md:105
 msgid ""
 "import tilelang\n"
 "import tilelang.language as T\n"
@@ -257,11 +257,11 @@ msgid ""
 "'''\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:129
+#: ../../../tutorials/debug_tools_for_tilelang.md:127
 msgid "Runtime Debug Prints with `T.print`"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:131
+#: ../../../tutorials/debug_tools_for_tilelang.md:129
 msgid ""
 "TileLang provides a built-in debugging primitive called `T.print` for "
 "printing within kernels. Be mindful of concurrency and thread "
@@ -269,92 +269,92 @@ msgid ""
 "how to print buffers, variables, and other data inside TileLang programs."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:133
+#: ../../../tutorials/debug_tools_for_tilelang.md:131
 msgid "**Printing an Entire Buffer**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:135
+#: ../../../tutorials/debug_tools_for_tilelang.md:133
 msgid ""
 "def debug_print_buffer(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:140
+#: ../../../tutorials/debug_tools_for_tilelang.md:138
 msgid "**Conditional Printing**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:142
+#: ../../../tutorials/debug_tools_for_tilelang.md:140
 msgid ""
 "def debug_print_buffer_conditional(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:147
+#: ../../../tutorials/debug_tools_for_tilelang.md:145
 msgid "**Printing Thread Indices or Scalar Values**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:149
+#: ../../../tutorials/debug_tools_for_tilelang.md:147
 msgid ""
 "def debug_print_value_conditional(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:154
+#: ../../../tutorials/debug_tools_for_tilelang.md:152
 msgid "**Printing Fragment (Register File) Contents**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:156
+#: ../../../tutorials/debug_tools_for_tilelang.md:154
 msgid ""
 "def debug_print_register_files(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:161
+#: ../../../tutorials/debug_tools_for_tilelang.md:159
 msgid "**Adding a Message Prefix**"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:163
+#: ../../../tutorials/debug_tools_for_tilelang.md:161
 msgid ""
 "def debug_print_msg(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:168
+#: ../../../tutorials/debug_tools_for_tilelang.md:166
 msgid "The output messages will include something like:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:170
+#: ../../../tutorials/debug_tools_for_tilelang.md:168
 msgid "msg='hello world' BlockIdx=(0, 0, 0), ThreadIdx=(0, 0, 0): 0\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:174
+#: ../../../tutorials/debug_tools_for_tilelang.md:172
 msgid "Visual Layout Inference For TileLang"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:175
+#: ../../../tutorials/debug_tools_for_tilelang.md:173
 msgid ""
 "The **Visual Layout Inference** tool automatically generates visual diagrams "
 "that illustrate the mapping between logical indices, thread IDs, and "
 "register file locations."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:177
+#: ../../../tutorials/debug_tools_for_tilelang.md:175
 msgid ""
 "When TileLang performs layout inference, it determines how fragment buffers "
 "are distributed across threads. The visual layout tool captures this "
 "information and generates:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:178
+#: ../../../tutorials/debug_tools_for_tilelang.md:176
 msgid "**Textual output**: A human-readable description of the layout mapping"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:179
+#: ../../../tutorials/debug_tools_for_tilelang.md:177
 msgid ""
 "**Visual diagrams**: Color-coded plots showing the thread-to-data mapping"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:181
+#: ../../../tutorials/debug_tools_for_tilelang.md:179
 msgid ""
 "The visual layout inference tool is controlled through the "
 "`TL_LAYOUT_VISUALIZATION_ENABLE` and `TL_LAYOUT_VISUALIZATION_FORMATS` pass "
@@ -362,43 +362,43 @@ msgid ""
 "to avoid performance overhead during compilation."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:183
+#: ../../../tutorials/debug_tools_for_tilelang.md:181
 msgid ""
 "When enabled, `TL_LAYOUT_VISUALIZATION_FORMATS` accepts string values to "
 "control output formats:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:184
+#: ../../../tutorials/debug_tools_for_tilelang.md:182
 msgid "\"txt\": Text output only (same as default)"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:185
+#: ../../../tutorials/debug_tools_for_tilelang.md:183
 msgid "\"all\": Generates all formats (TXT, PDF, PNG, SVG)"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:186
+#: ../../../tutorials/debug_tools_for_tilelang.md:184
 msgid "\"png\": Generate PNG format only"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:187
+#: ../../../tutorials/debug_tools_for_tilelang.md:185
 msgid "\"pdf\": Generate PDF format only"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:188
+#: ../../../tutorials/debug_tools_for_tilelang.md:186
 msgid "\"svg\": Generate SVG format only"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:189
+#: ../../../tutorials/debug_tools_for_tilelang.md:187
 msgid ""
 "\"txt,svg\": Generate multiple formats (comma-separated) in addition to text "
 "output"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:191
+#: ../../../tutorials/debug_tools_for_tilelang.md:189
 msgid "The output messages of \"txt\" will include something like:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:192
+#: ../../../tutorials/debug_tools_for_tilelang.md:190
 msgid ""
 "C_local inferenced layout:\n"
 "  Shape: [32, 32] -> [8]\n"
@@ -406,11 +406,282 @@ msgid ""
 "  Index:  [_j % 16 // 8 * 4 + _i % 16 // 8 * 2 + _j % 2]\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:200
+#: ../../../tutorials/debug_tools_for_tilelang.md:197
+msgid "AutoDD: Automatic Delta Debugging"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:199
+msgid ""
+"When dealing with complex TileLang programs that produce errors, manually "
+"isolating the bug can be tedious. **AutoDD** (Automatic Delta Debugging) is "
+"a built-in tool that automatically simplifies your program to the minimal "
+"code needed to reproduce a specific error."
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:201
+msgid "What is Delta Debugging?"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:203
+msgid "Delta Debugging is an automated debugging technique that:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:204
+msgid "Takes a program that triggers a bug"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:205
+msgid "Systematically removes code fragments"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:206
+msgid "Checks if the simplified program still triggers the same bug"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Produces the minimal code that reproduces the bug"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:209
+msgid ""
+"AutoDD uses a Probability Distribution Driven Delta Debugging (PDD) "
+"algorithm for efficient minimization."
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:211
+msgid "Why Use AutoDD?"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:213
+msgid ""
+"**Large codebases**: Real projects often have hundreds of lines of "
+"configuration, helper functions, and logging"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:214
+msgid ""
+"**Hard-to-locate errors**: Error messages may point to TVM/CUDA internals "
+"rather than your TileLang code"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:215
+msgid ""
+"**Time-saving**: Manually deleting code to isolate bugs is very time-"
+"consuming"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:217
+msgid ""
+"AutoDD can reduce a 200+ line program to just 30 lines, directly exposing "
+"the root cause."
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:219
+msgid "Basic Usage"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:221
+msgid ""
+"python -m tilelang.autodd <source_file> --err-msg \"<error_message>\" -o "
+"<output_file>\n"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:225
+msgid "Parameters"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Parameter"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Description"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "`source`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Path to the input Python source file"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "`--err-msg`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Error message to match (searched in stdout or stderr)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "`-o, --output`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Path to the minimized output file"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "`--backend`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid ""
+"Execution backend: `runner` (faster) or `subproc` (more stable), default "
+"`runner`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "`--timeout`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Timeout for each task in seconds, default 60"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "`-j, --jobs`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:54
+msgid "Number of parallel jobs, default 1"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:236
+msgid "Example"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:238
+msgid ""
+"Suppose you have a complex TileLang program with a GEMM shape mismatch bug:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:240
+msgid ""
+"# buggy_matmul.py (200+ lines)\n"
+"@tilelang.jit\n"
+"def buggy_matmul(M, N, K, block_M, block_N, block_K, ...):\n"
+"    @T.prim_func\n"
+"    def matmul_kernel(...):\n"
+"        with T.Kernel(...) as (bx, by):\n"
+"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"            B_shared = T.alloc_shared((block_M, block_N), dtype)  # Bug: "
+"should be (block_K, block_N)\n"
+"            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"            # ... lots of other code ...\n"
+"            T.gemm(A_shared, B_shared, C_local)  # Error here\n"
+"    return matmul_kernel\n"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:255
+msgid "Run AutoDD to minimize:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:257
+msgid ""
+"python -m tilelang.autodd buggy_matmul.py --err-msg \"Dimension mismatch\" -"
+"o minimized.py -j 4\n"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:261
+msgid "AutoDD will produce a minimal reproduction:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:263
+msgid ""
+"# minimized.py (~30 lines)\n"
+"import tilelang.language as T\n"
+"\n"
+"def buggy_matmul(M, N, K, block_M, block_N, block_K, dtype=T.float16, "
+"accum_dtype=T.float32, *args, **kwargs):\n"
+"    @T.prim_func\n"
+"    def matmul_kernel():\n"
+"        with T.Kernel():\n"
+"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"            B_shared = T.alloc_shared((block_M, block_N), dtype)  # Bug "
+"exposed!\n"
+"            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"            T.gemm(A_shared, B_shared, C_local)\n"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:277
+msgid "How AutoDD Works"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:279
+msgid ""
+"AutoDD uses AST (Abstract Syntax Tree) analysis with multiple rewrite rules:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:281
+msgid "**Fast Reducers**: Remove statements, simplify if/for constructs"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:282
+msgid ""
+"**Canonicalizers**: Expand with statements, add `*args, **kwargs` for "
+"compatibility"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:283
+msgid ""
+"**Simplifiers**: Replace expressions with constants, simplify function calls"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:284
+msgid ""
+"**Slow Reducers**: Remove arbitrary expressions, reduce integer constants"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:286
+msgid "Tips"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:288
+msgid ""
+"**Error message matching**: Use a unique substring from the error output"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:289
+msgid ""
+"**Timeout**: Increase `--timeout` for programs with long compilation times"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:290
+msgid "**Parallel jobs**: Use `-j 4` or higher to speed up minimization"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:291
+msgid "**Backend**: Try `--backend subproc` if `runner` is unstable"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:293
+msgid "Complete Example"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:295
+msgid "A complete example is available in `examples/autodd/`:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:296
+msgid "`tilelang_buggy.py`: A complex program with a bug (~200 lines)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:297
+msgid ""
+"`tilelang_minimized_expected.py`: Expected output after AutoDD (~30 lines)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:298
+msgid "`README.md`: Detailed documentation"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:300
 msgid "Conclusion"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:202
+#: ../../../tutorials/debug_tools_for_tilelang.md:302
 msgid ""
 "By carefully examining intermediate representations (IR) before final code "
 "generation—and by leveraging runtime printing through `T.print`—one can "
@@ -420,7 +691,14 @@ msgid ""
 "for resolving generation and correctness issues in TileLang programs."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:204
+#: ../../../tutorials/debug_tools_for_tilelang.md:304
+msgid ""
+"For complex programs where manual debugging is tedious, **AutoDD** provides "
+"automated delta debugging to quickly isolate the minimal code that "
+"reproduces a bug."
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:306
 msgid ""
 "For advanced performance tuning (e.g., analyzing memory bandwidth or "
 "occupancy), more specialized profiling tools such as **Nsight Compute**, "

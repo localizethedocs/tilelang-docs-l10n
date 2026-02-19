@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,51 +25,95 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
 ":py:obj:`register_cuda_postproc <tilelang.engine.callback."
 "register_cuda_postproc>`\\ \\(func\\[\\, override\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:23
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:27
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid "Register a post-processing function for CUDA code generation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
 ":py:obj:`register_hip_postproc <tilelang.engine.callback."
 "register_hip_postproc>`\\ \\(func\\[\\, override\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:32
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:36
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid "Register a post-processing function for HIP code generation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`register_c_postproc <tilelang.engine.callback."
+"register_c_postproc>`\\ \\(func\\[\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:45
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid "Register a post-processing function for C host code generation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`register_metal_postproc <tilelang.engine.callback."
+"register_metal_postproc>`\\ \\(func\\[\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:58
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid "Register a post-processing function for Metal code generation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
 ":py:obj:`register_cuda_postproc_callback <tilelang.engine.callback."
 "register_cuda_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:41
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:67
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid "Decorator for registering CUDA post-processing callback function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
 ":py:obj:`register_hip_postproc_callback <tilelang.engine.callback."
 "register_hip_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:59
-#: ../../../autoapi/tilelang/engine/callback/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/callback/index.rst:85
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid "Decorator for registering HIP post-processing callback function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:19
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`register_c_postproc_callback <tilelang.engine.callback."
+"register_c_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:103
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid "Decorator for registering C host post-processing callback function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`register_metal_postproc_callback <tilelang.engine.callback."
+"register_metal_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:121
+#: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
+msgid "Decorator for registering Metal post-processing callback function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:23
 msgid "Module Contents"
 msgstr ""
 
@@ -77,52 +121,95 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:25
-#: ../../../autoapi/tilelang/engine/callback/index.rst:34
+#: ../../../autoapi/tilelang/engine/callback/index.rst:29
+#: ../../../autoapi/tilelang/engine/callback/index.rst:38
+#: ../../../autoapi/tilelang/engine/callback/index.rst:51
+#: ../../../autoapi/tilelang/engine/callback/index.rst:60
 msgid ""
 "A callable that takes generated code (str) and target (Target) as input, and "
 "returns the processed code (str)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:27
-#: ../../../autoapi/tilelang/engine/callback/index.rst:36
-#: ../../../autoapi/tilelang/engine/callback/index.rst:54
-#: ../../../autoapi/tilelang/engine/callback/index.rst:72
+#: ../../../autoapi/tilelang/engine/callback/index.rst:31
+#: ../../../autoapi/tilelang/engine/callback/index.rst:40
+#: ../../../autoapi/tilelang/engine/callback/index.rst:53
+#: ../../../autoapi/tilelang/engine/callback/index.rst:62
+#: ../../../autoapi/tilelang/engine/callback/index.rst:80
+#: ../../../autoapi/tilelang/engine/callback/index.rst:98
+#: ../../../autoapi/tilelang/engine/callback/index.rst:116
+#: ../../../autoapi/tilelang/engine/callback/index.rst:134
 msgid "Whether to override existing registered function. Defaults to True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:43
-#: ../../../autoapi/tilelang/engine/callback/index.rst:61
+#: ../../../autoapi/tilelang/engine/callback/index.rst:47
+msgid ""
+"This callback intercepts C host code emitted by TileLang just before it is "
+"wrapped into a CSourceModule. It should take the generated code string and "
+"the `Target` as inputs, and return the (possibly) modified code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:69
+#: ../../../autoapi/tilelang/engine/callback/index.rst:87
+#: ../../../autoapi/tilelang/engine/callback/index.rst:105
+#: ../../../autoapi/tilelang/engine/callback/index.rst:123
 msgid "Can be used with or without parentheses:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:44
+#: ../../../autoapi/tilelang/engine/callback/index.rst:70
 msgid "@register_cuda_postproc_callback def func(code, target): ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:47
+#: ../../../autoapi/tilelang/engine/callback/index.rst:73
 msgid "@register_cuda_postproc_callback() def func(code, target): ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:50
+#: ../../../autoapi/tilelang/engine/callback/index.rst:76
 msgid ""
 "@register_cuda_postproc_callback(override=False) def func(code, target): ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:53
-#: ../../../autoapi/tilelang/engine/callback/index.rst:71
+#: ../../../autoapi/tilelang/engine/callback/index.rst:79
+#: ../../../autoapi/tilelang/engine/callback/index.rst:97
+#: ../../../autoapi/tilelang/engine/callback/index.rst:115
+#: ../../../autoapi/tilelang/engine/callback/index.rst:133
 msgid "The function to be decorated or a boolean override flag"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:62
+#: ../../../autoapi/tilelang/engine/callback/index.rst:88
 msgid "@register_hip_postproc_callback def func(code, target): ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:65
+#: ../../../autoapi/tilelang/engine/callback/index.rst:91
 msgid "@register_hip_postproc_callback() def func(code, target): ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/callback/index.rst:68
+#: ../../../autoapi/tilelang/engine/callback/index.rst:94
 msgid ""
 "@register_hip_postproc_callback(override=False) def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:106
+msgid "@register_c_postproc_callback def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:109
+msgid "@register_c_postproc_callback() def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:112
+msgid ""
+"@register_c_postproc_callback(override=False) def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:124
+msgid "@register_metal_postproc_callback def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:127
+msgid "@register_metal_postproc_callback() def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/callback/index.rst:130
+msgid ""
+"@register_metal_postproc_callback(override=False) def func(code, target): ..."
 msgstr ""

@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../programming_guides/python_compatibility.md:1
+msgid "Python Compatibility"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:3
+msgid ""
+"TileLang is a Python-embedded DSL, but not all Python syntax is supported "
+"inside TileLang DSL. This guide clarifies what works, what doesn't, and how "
+"to translate common Python patterns into TileLang equivalents. Specially, we "
+"focus on the kernel part (scripts inside `with T.Kernel`) semantics. For "
+"host-side semantics when using eager-style JIT, please stay tuned for our "
+"upcoming documentation."
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:9
+msgid "The following codes use the conventional aliases:"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:11
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import jit\n"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:17
+msgid "Control Flow & Loops"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Python Feature"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Supported"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Notes / Alternative"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`for i in range(n)`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "✅"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Maps to `T.serial(n)`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`for i in range(a,b,s)`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Maps to `T.serial(a, b, s)`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`for x in list`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "❌"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Use index-based loop"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`while condition`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`if` / `elif` / `else`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`x if cond else y`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Ternary expression"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`break` / `continue`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`enumerate()` / `zip()`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:30
+msgid "Data Access"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`a[i]` indexing"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Multi-dim indexing supported: `a[i, j, k]`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`a[i:j]` slicing"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Creates `BufferRegion`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`a[-1]` negative index"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:38
+msgid "Assignment & Arithmetic Operations"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`x = expr`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`+`, `-`, `*`, `/`, `%`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Maps to device-side arithmetic operations"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`+=`, `-=`, `*=`, etc."
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Augmented assignment"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`a = b = c`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Use separate assignments"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:47
+msgid "Functions & Classes"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:49
+msgid ""
+"As a kernel script language, TileLang doesn't support functions or classes. "
+"You can use `@T.macro` to define reusable code blocks, which will be inlined "
+"at compile time like `__device__` function."
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:51
+msgid "Statements & Built-in Functions"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`with`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "⚠️"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Only `T.Kernel`, `T.ws`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`assert`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Use `T.device_assert` or `T.assert`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`print()`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Use `T.print()`; `print` works for Python expressions"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`len()`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "Use `buffer.shape[dim]`"
+msgstr ""
+
+#: ../../../programming_guides/python_compatibility.md:0
+msgid "`type()`, `isinstance()`"
+msgstr ""

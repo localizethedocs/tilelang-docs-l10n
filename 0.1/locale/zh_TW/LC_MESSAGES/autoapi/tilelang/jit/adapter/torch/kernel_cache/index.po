@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:2
+msgid "tilelang.jit.adapter.torch.kernel_cache"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`TorchKernelCache <tilelang.jit.adapter.torch.kernel_cache."
+"TorchKernelCache>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:20
+msgid "Bases: :py:obj:`tilelang.cache.kernel_cache.KernelCache`"
+msgstr ""

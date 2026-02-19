@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,8 +128,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/mxfp/index.rst:96
 msgid ""
-"Target floating-point type for decoded values; either \"float16\" or "
-"\"bfloat16\"."
+"Target floating-point type for decoded values; either T.float16 or T."
+"bfloat16."
 msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/mxfp/index.rst:97
@@ -141,8 +141,7 @@ msgid "Bit width of the packed source format (e.g., 4)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/mxfp/index.rst:99
-msgid ""
-"Underlying storage integer dtype (one of \"int32\", \"int8\", \"uint8\")."
+msgid "Underlying storage integer dtype (one of T.int32, T.int8, T.uint8)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/mxfp/index.rst:100

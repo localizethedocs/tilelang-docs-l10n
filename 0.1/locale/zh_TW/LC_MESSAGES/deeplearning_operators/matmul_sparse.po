@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,27 +126,27 @@ msgid ""
 "loads). For more information, see **A note on `gemm_sp` and `gemm_sp_v2`**."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:55
+#: ../../../deeplearning_operators/matmul_sparse.md:54
 msgid "`T.gemm_sp` with CUTLASS's compressor"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:59
+#: ../../../deeplearning_operators/matmul_sparse.md:58
 msgid ""
 "It is strongly recommended to use T.gemm_sp_v2 due to its greater "
 "flexibility and faster compilation time."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:63
+#: ../../../deeplearning_operators/matmul_sparse.md:62
 msgid ""
 "A 2:4 sparse GEMM kernel is similar to its dense counterpart, except that it "
 "also requires handling the associated metadata."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:65
+#: ../../../deeplearning_operators/matmul_sparse.md:64
 msgid "Check comments in below kernel code for required modification."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:67
+#: ../../../deeplearning_operators/matmul_sparse.md:66
 msgid ""
 "def matmul_sp_sm80(\n"
 "    M,\n"
@@ -220,27 +220,27 @@ msgid ""
 "    return main\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:129
+#: ../../../deeplearning_operators/matmul_sparse.md:128
 msgid ""
 "Under the hood, `gemm_sp` invokes templates adapted from `CUTLASS`, and a "
 "compatible metadata layout must be specified using `T.annotate_layout`."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:131
+#: ../../../deeplearning_operators/matmul_sparse.md:130
 msgid "`T.gemm_sp_v2` with a custom compressor"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:133
+#: ../../../deeplearning_operators/matmul_sparse.md:132
 msgid "To migrate to `gemm_sp_v2`, simply replace occurrences of `gemm_sp`."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:135
+#: ../../../deeplearning_operators/matmul_sparse.md:134
 msgid ""
 "Unlike `gemm_sp`, `gemm_sp_v2` can operate without `T.annotate_layout`, and "
 "it also supports user-defined layouts and compressors."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:137
+#: ../../../deeplearning_operators/matmul_sparse.md:136
 msgid ""
 "The metadata is stored in a `(u)int8`/`(u)int16`/`(u)int32` tensor, where "
 "**each 4-bit chunk represents two 2-bit indices** of non-zero elements "
@@ -248,21 +248,21 @@ msgid ""
 "which is the **default dtype** for `bf16` and `fp16` on Ampere GPUs."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:139
+#: ../../../deeplearning_operators/matmul_sparse.md:138
 msgid "Suppose we have the following row vector:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:140
+#: ../../../deeplearning_operators/matmul_sparse.md:139
 msgid ""
 "t = tensor([[0, 7, 0, 3], [1, 5, 0, 0], [0, 0, 2, 4], [9, 0, 9, 0]], "
 "dtype=torch.float16).flatten()\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:144
+#: ../../../deeplearning_operators/matmul_sparse.md:143
 msgid "The non-zero elements and their corresponding indices are:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:146
+#: ../../../deeplearning_operators/matmul_sparse.md:145
 msgid ""
 "t_sp = tensor([[7, 3], [1, 5], [2, 4], [9, 9]], dtype=torch.float16)."
 "flatten()\n"
@@ -270,11 +270,11 @@ msgid ""
 "flatten()\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:151
+#: ../../../deeplearning_operators/matmul_sparse.md:150
 msgid "The corresponding uint16 metadata is:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:152
+#: ../../../deeplearning_operators/matmul_sparse.md:151
 msgid ""
 "# metadata_bits = tensor([0b1101, 0b0100, 0b1110, 0b1000])\n"
 "# Note: storage uses little-endian order: tensor(0b1000111001001101, "
@@ -285,11 +285,11 @@ msgid ""
 "metadata_int16 = tensor(-29107)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:160
+#: ../../../deeplearning_operators/matmul_sparse.md:159
 msgid "You can decode an int16 metadata tensor using the following utility:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:161
+#: ../../../deeplearning_operators/matmul_sparse.md:160
 msgid ""
 "def decode_metadata(meta: torch.Tensor) -> torch.Tensor:\n"
 "    assert meta.dtype is torch.int16\n"
@@ -303,13 +303,13 @@ msgid ""
 "    return torch.concat(out, dim=-1).view(meta.shape[0], -1)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:174
+#: ../../../deeplearning_operators/matmul_sparse.md:173
 msgid ""
 "The compressor can be implement at either `PyTorch`/`NumPy` level or kernel "
 "level."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:176
+#: ../../../deeplearning_operators/matmul_sparse.md:175
 msgid ""
 "For example, `PyTorch` provides an Ampere compressor [here](https://github."
 "com/pytorch/pytorch/blob/267d0197bfca0232488d51dd1ff735d619adc2cf/torch/"
@@ -323,14 +323,14 @@ msgid ""
 "`_calculate_meta_reordering_scatter_offsets` function."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:178
+#: ../../../deeplearning_operators/matmul_sparse.md:177
 msgid ""
 "If you want to use a custom metadata layout in your kernel, one approach is "
 "to define the layout in `TileLang` and then apply the same layout to both "
 "your compressor kernel and the matmul_sp kernel."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:180
+#: ../../../deeplearning_operators/matmul_sparse.md:179
 msgid ""
 "\n"
 "@tilelang.jit(out_idx=[1, 2], pass_configs={\n"
@@ -410,28 +410,28 @@ msgid ""
 "    return kernel\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:250
+#: ../../../deeplearning_operators/matmul_sparse.md:249
 msgid "A note on `gemm_sp` and `gemm_sp_v2`"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:252
+#: ../../../deeplearning_operators/matmul_sparse.md:251
 msgid ""
 "Initially, `T.gemm_sp` followed the same design as `T.gemm`, lowering to a "
 "`CUTLASS` template. This inherently requires metadata to be reordered "
 "offline following a predetermined layout."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:254
+#: ../../../deeplearning_operators/matmul_sparse.md:253
 msgid "However, fixing a specific layout introduces several potential issues:"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:256
+#: ../../../deeplearning_operators/matmul_sparse.md:255
 msgid ""
 "Painful debugging experience: Debugging a failed kernel becomes difficult "
 "due to the reordered indexing, including permutations and swizzling."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:258
+#: ../../../deeplearning_operators/matmul_sparse.md:257
 msgid ""
 "Limited flexibility: For example, concatenating two compressed tensors, such "
 "as `A_sparse_0` and `A_sparse_1`, into a new `A_sparse` makes sense. "
@@ -439,14 +439,14 @@ msgid ""
 "unless the layout allows it mathematically."
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:260
+#: ../../../deeplearning_operators/matmul_sparse.md:259
 msgid ""
 "Alignment requirements: `CUTLASS` enforces strict alignment checks, and many "
 "hyperparameter configurations can lead to compilation errors. (For "
 "reference, sm8x was implemented in `CUTLASS 2`.)"
 msgstr ""
 
-#: ../../../deeplearning_operators/matmul_sparse.md:262
+#: ../../../deeplearning_operators/matmul_sparse.md:261
 msgid ""
 "`T.gemm_sp_v2` was designed to address these limitations, following the "
 "approach of `T.gemm_v2`. It lowers directly to PTX, removing the need for a "

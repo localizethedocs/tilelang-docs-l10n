@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Tile Language <br> 0.1\n"
+"Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 17:52+0000\n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,12 +348,32 @@ msgid ""
 "options."
 msgstr ""
 
-#: ../../../autoapi/tilelang/env/index.rst:291
+#: ../../../autoapi/tilelang/env/index.rst:300
 msgid "Return True if GEMM v1 should be used based on env."
 msgstr ""
 
-#: ../../../autoapi/tilelang/env/index.rst:293
+#: ../../../autoapi/tilelang/env/index.rst:302
 msgid ""
 "Controlled by `TILELANG_USE_GEMM_V1`. Truthy values are one of {\"1\", "
 "\"true\", \"yes\", \"on\"} (case-insensitive)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:309
+msgid "Get default compilation target from environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:315
+msgid "Get default execution backend from environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:321
+msgid "Get default verbose flag from environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:327
+msgid "Return True if we are running under `python -m tilelang.autodd`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/env/index.rst:333
+msgid "Return True if we are running in light import mode."
 msgstr ""
