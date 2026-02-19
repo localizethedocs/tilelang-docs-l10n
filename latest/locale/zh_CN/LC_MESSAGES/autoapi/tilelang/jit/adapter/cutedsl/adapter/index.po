@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:107
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:109
 msgid "Get the CUDA kernel source code."
 msgstr ""
 
@@ -68,7 +68,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:109
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:111
 msgid "The kernel source code, or None if not available"
 msgstr ""
 
@@ -76,22 +76,22 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:116
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:118
 msgid "Explicitly cleanup this adapter's CUDA resources."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:118
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:120
 msgid ""
 "This method can be called explicitly to immediately release CUDA resources "
 "without waiting for garbage collection. Useful in Jupyter notebooks or tests."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:121
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:123
 msgid ""
 "Note: This is safe to call multiple times as the C++ implementation is "
 "idempotent."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:129
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:131
 msgid "Returns the primary TIR function from the IR module."
 msgstr ""

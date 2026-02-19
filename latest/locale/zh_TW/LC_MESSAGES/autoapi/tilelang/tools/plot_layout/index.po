@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:21
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:15:<autosummary>:1
-msgid "Plot the layout of a buffer."
+msgid "Plot the layout mapping as a 2D grid visualization."
 msgstr ""
 
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:15:<autosummary>:1
@@ -50,41 +50,49 @@ msgstr ""
 msgid "Module Contents"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:23
+msgid ""
+"Dispatches to Fragment-specific or Layout-specific plotting based on the "
+"type of the layout object."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:23
-msgid "The layout object that describes how indices are mapped."
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:26
+msgid "The layout object to visualize."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:25
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:28
+msgid "Output directory (default \"./tmp\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:30
+msgid "Base filename for saved images (default \"layout\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:32
 msgid ""
-"The directory where the output images will be saved (default is \"./tmp\")."
+"Matplotlib colormap name. Defaults to \"RdPu\" for Fragment, \"Spectral\" "
+"for Layout."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:27
-msgid "The base name of the output files (default is \"layout\")."
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:34
+msgid "If True, print mapping details."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:29
-msgid "The colormap to use for visualization (default is \"RdPu\")."
-msgstr ""
-
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:31
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:36
 msgid ""
-"If True, prints additional information about the mapping (default is False)."
-msgstr ""
-
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:33
-msgid "The formats to save the image in (default is \"png\")."
+"Output format(s): \"pdf\", \"png\", \"svg\", \"all\", or comma-separated "
+"(default \"pdf\")."
 msgstr ""
 
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:41
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:42
 msgid ""
 "Plot fragment in terms of thread and local index mapping. :param frag: The "
 "fragment object that describes how indices are mapped. :type frag: T."
@@ -96,7 +104,7 @@ msgid ""
 "colormap: The colormap to use for visualization (default is \"RdPu\"). :type "
 "colormap: str, optional :param item_scale: The scale factor for each item in "
 "the plot (default is 0.75). :type item_scale: float, optional :param "
-"formats: The formats to save the image in (default is \"png\"). :type "
+"formats: The formats to save the image in (default is \"pdf\"). :type "
 "formats: str | list[str], optional :param dpi: The resolution in dots per "
 "inch for the saved image (default is 80). :type dpi: int, optional"
 msgstr ""

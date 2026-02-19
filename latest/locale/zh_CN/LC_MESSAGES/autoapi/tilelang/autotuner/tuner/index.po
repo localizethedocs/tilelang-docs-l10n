@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgid ""
 "warmup\\, rep\\, timeout\\, supply\\_type\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:306
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:307
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:50:<autosummary>:1
 msgid "Just-In-Time (JIT) compiler decorator for TileLang functions."
 msgstr ""
@@ -206,7 +206,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:152
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:174
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:175
 msgid "Self for method chaining."
 msgstr ""
 
@@ -251,137 +251,142 @@ msgid "Whether to cache input tensors."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:170
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:192
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:193
 msgid "Number of warmup iterations."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:171
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:193
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:194
 msgid "Number of repetitions for timing."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:172
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:194
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:195
 msgid "Maximum time per configuration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:184
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:173
+msgid ""
+"Profiler backend - \"event\" (CUDA events), \"cupti\", or \"cudagraph\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:185
 msgid "Generate a cache key for the auto-tuning process."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:190
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:191
 msgid "Run the auto-tuning process."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:196
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:205
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:197
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:206
 msgid "Results of the auto-tuning process."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:203
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:204
 msgid "Make the AutoTuner callable, running the auto-tuning process."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:212
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:213
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:308
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:309
 msgid "This decorator can be used without arguments (e.g., `@tilelang.jit`):"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:309
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:310
 msgid "Applies JIT compilation with default settings."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:311
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:312
 msgid "Tips:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:312
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:313
 msgid ""
 "If you want to skip the auto-tuning process, you can set override the "
 "tunable parameters in the function signature."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:313
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:314
 msgid "```python"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:314
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:315
 msgid "if enable_autotune:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:315
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:316
 msgid "kernel = flashattn(batch, heads, seq_len, dim, is_causal)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:316
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:317
 msgid "else:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:317
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:318
 msgid "kernel = flashattn("
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:318
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:319
 msgid ""
 "batch, heads, seq_len, dim, is_causal, groups=groups, block_M=128, "
 "block_N=128, num_stages=2, threads=256)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:319
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:320
 msgid "```"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:321
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:322
 msgid ""
 "If using `@tilelang.jit(...)` to configure, this is the `out_idx` parameter. "
 "If using `@tilelang.jit` directly on a function, this argument is implicitly "
 "the function to be decorated (and `out_idx` will be `None`)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:325
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:326
 msgid "Configuration space to explore during auto-tuning."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:327
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:328
 msgid "Number of warmup iterations before timing."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:329
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:330
 msgid "Number of repetitions for timing measurements."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:333
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:334
 msgid ""
 "Compilation target for TVM (e.g., \"cuda\", \"llvm\"). Defaults to \"auto\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:335
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:336
 msgid "Target host for cross-compilation. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:337
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:338
 msgid ""
 "Backend for kernel execution and argument passing. Use \"auto\" to pick a "
 "sensible default per target (cuda->tvm_ffi, metal->torch, others->cython)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:340
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:341
 msgid "Enables verbose logging during compilation. Defaults to False."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:342
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:343
 msgid "Configurations for TVM's pass context. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:344
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:345
 msgid ""
 "Directory to save compiled kernel source for debugging. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:347
+#: ../../../autoapi/tilelang/autotuner/tuner/index.rst:348
 msgid ""
 "Either a JIT-compiled wrapper around the input function, or a configured "
 "decorator instance that can then be applied to a function."

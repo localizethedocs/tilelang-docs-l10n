@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,8 +86,8 @@ msgid ""
 "This function provides accurate GPU kernel timing by: - Clearing L2 cache "
 "between runs for consistent measurements - Auto-calculating warmup and "
 "repeat counts based on kernel runtime - Supporting multiple profiling "
-"backends (CUDA events or CUPTI) - Offering flexible result aggregation (mean/"
-"median/min/max/quantiles)"
+"backends (CUDA events, CUPTI, or CUDA graph replay) - Offering flexible "
+"result aggregation (mean/median/min/max/quantiles)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:0
@@ -124,7 +124,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:79
 msgid ""
-"Profiler backend - \"event\" (CUDA events) or \"cupti\" (default: \"event\")"
+"Profiler backend - \"event\" (CUDA events), \"cupti\", or "
+"\"cudagraph\" (default: \"event\")"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:80

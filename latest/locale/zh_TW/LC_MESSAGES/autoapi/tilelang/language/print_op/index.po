@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,7 +123,7 @@ msgid ""
 "warp\\_group\\_id\\, warp\\_id\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:123
+#: ../../../autoapi/tilelang/language/print_op/index.rst:120
 #: ../../../autoapi/tilelang/language/print_op/index.rst:29:<autosummary>:1
 msgid ""
 "A generic print function that handles both TIR buffers and primitive "
@@ -150,8 +150,6 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/print_op/index.rst:40
 #: ../../../autoapi/tilelang/language/print_op/index.rst:73
 #: ../../../autoapi/tilelang/language/print_op/index.rst:88
-#: ../../../autoapi/tilelang/language/print_op/index.rst:108
-#: ../../../autoapi/tilelang/language/print_op/index.rst:138
 msgid "The TIR expression for the debug print operation."
 msgstr ""
 
@@ -183,39 +181,39 @@ msgstr ""
 msgid "The number of elements in the buffer to print."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:116
+#: ../../../autoapi/tilelang/language/print_op/index.rst:113
 msgid ""
 "Device-side assert emulation. Emits a device-side assert call on CUDA "
 "targets when CUDA is available. The assert is always enabled and cannot be "
 "disabled at runtime."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:125
+#: ../../../autoapi/tilelang/language/print_op/index.rst:122
 msgid ""
 "If the input is a TIR buffer, it prints its values, but only on the first "
 "thread (tx=0, ty=0, tz=0)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:126
+#: ../../../autoapi/tilelang/language/print_op/index.rst:123
 msgid ""
 "If the input is a TIR primitive expression, it prints its value directly."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:128
+#: ../../../autoapi/tilelang/language/print_op/index.rst:125
 msgid ""
 "The object to print. It can be either a tir.Buffer, tir.PrimExpr, or None "
 "(for msg-only print)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:130
+#: ../../../autoapi/tilelang/language/print_op/index.rst:127
 msgid "An optional message to include in the print statement."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:132
+#: ../../../autoapi/tilelang/language/print_op/index.rst:129
 msgid "The warp group id to print."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:134
+#: ../../../autoapi/tilelang/language/print_op/index.rst:131
 msgid "The warp id to print."
 msgstr ""
 
@@ -223,6 +221,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/print_op/index.rst:141
+#: ../../../autoapi/tilelang/language/print_op/index.rst:135
 msgid "If the input object type is unsupported."
 msgstr ""

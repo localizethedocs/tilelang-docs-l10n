@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../runtime_internals/stubs.md:1
+msgid "CUDA/CUDART/NVRTC Stubs"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:3
+msgid ""
+"This document describes the stub mechanism in TileLang for CUDA-related "
+"libraries."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:5
+msgid "Purpose"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:7
+msgid ""
+"**CUDA Driver (`cuda`)**: Allows TileLang to be imported on systems without "
+"a GPU (e.g., CI/compilation nodes) by lazy-loading `libcuda.so` only when "
+"needed."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:8
+msgid ""
+"**Runtime & Compiler (`cudart`, `nvrtc`)**: Resolves SONAME versioning "
+"mismatches, enabling a single build to work across different CUDA versions. "
+"This is achieved by reusing the existing CUDA runtime loaded by frameworks "
+"like PyTorch."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:10
+msgid "Implementation"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:12
+msgid "The stubs in `src/target/stubs/` implement a lazy-loading mechanism:"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:14
+msgid ""
+"**Lazy Loading**: Libraries are loaded via `dlopen` only upon the first API "
+"call."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:15
+msgid ""
+"**Global Symbol Reuse**: For `cudart` and `nvrtc`, the stubs first check the "
+"global namespace (`RTLD_DEFAULT`) to use any already loaded symbols (e.g., "
+"from PyTorch)."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:16
+msgid ""
+"**Versioning Support**: Handles ABI differences between CUDA versions (e.g., "
+"`cudaGraphInstantiate` changes in CUDA 12)."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:18
+msgid "Build Option"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:20
+msgid ""
+"`TILELANG_USE_CUDA_STUBS` (Default: `ON`) controls this behavior. When "
+"enabled, TileLang links against these stubs instead of the system CUDA "
+"toolkit."
+msgstr ""

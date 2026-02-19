@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -776,15 +776,19 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1371
-#: ../../../autoapi/tilelang/language/tir/op/index.rst:1384
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:165:<autosummary>:1
 msgid "infinity value of dtype"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:165:<autosummary>:1
 msgid ""
-":py:obj:`reinterpret <tilelang.language.tir.op.reinterpret>`\\ \\(dtype\\, "
-"value\\[\\, span\\]\\)"
+":py:obj:`reinterpret <tilelang.language.tir.op.reinterpret>`\\ \\(value\\, "
+"dtype\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1384
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:165:<autosummary>:1
+msgid "Reinterpret cast a value to dtype."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:165:<autosummary>:1
@@ -1823,7 +1827,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1347
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1360
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1373
-#: ../../../autoapi/tilelang/language/tir/op/index.rst:1386
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1388
 msgid "The data type."
 msgstr ""
 
@@ -2393,7 +2397,7 @@ msgstr ""
 msgid "**value** -- The infinity value of dtype."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/tir/op/index.rst:1388
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1386
 msgid "The input value."
 msgstr ""
 

@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-02 15:48:14 +0800",
-        "hash" : "7bf43447d594450ef03c43e7f82849805323b459",
-        "title" : "[Feature] Add PassConfig for Controlling Let Statement Inlining in Simplify Pass (#1769)"
+        "date" : "2026-02-16 12:28:18 +0800",
+        "hash" : "110ef308a6635c6eb2243f743f1354510a564b0d",
+        "title" : "[AMD] Fix bugs about AMD FA kernel (#1701)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-02 15:48:14 +0800",
-        "hash" : "7bf43447d594450ef03c43e7f82849805323b459",
-        "title" : "[Feature] Add PassConfig for Controlling Let Statement Inlining in Simplify Pass (#1769)"
+        "date" : "2026-02-16 12:28:18 +0800",
+        "hash" : "110ef308a6635c6eb2243f743f1354510a564b0d",
+        "title" : "[AMD] Fix bugs about AMD FA kernel (#1701)"
       }
     }
   },

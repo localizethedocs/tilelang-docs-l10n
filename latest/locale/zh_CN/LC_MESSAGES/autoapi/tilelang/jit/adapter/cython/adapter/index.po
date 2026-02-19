@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,30 +93,30 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:167
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:173
 msgid "Returns the primary TIR function from the IR module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:172
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:178
 msgid "Returns the source path of the compiled library."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:177
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:183
 msgid "Returns the path to the compiled library."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:182
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:188
 msgid "Returns the code of the compiled library."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:187
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:193
 msgid "Indicates whether the kernel handles dynamic shapes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:192
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:198
 msgid "Returns the source code of the compiled kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:198
+#: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:204
 msgid "Returns the source code of the host function."
 msgstr ""

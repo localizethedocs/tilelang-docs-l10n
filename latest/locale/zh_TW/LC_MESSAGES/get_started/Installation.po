@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -497,9 +497,9 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:266
 msgid ""
-"pip install tilelang -f https://tile-ai.github.io/whl/nightly/cu121/\n"
-"# or pip install tilelang --find-links https://tile-ai.github.io/whl/nightly/"
-"cu121/\n"
+"pip install tilelang -f https://tile-ai.github.io/whl/nightly\n"
+"# or pip install tilelang --find-links https://tile-ai.github.io/whl/"
+"nightly\n"
 msgstr ""
 
 #: ../../../get_started/Installation.md:271

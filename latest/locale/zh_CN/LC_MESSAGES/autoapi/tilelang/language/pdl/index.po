@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,4 +35,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/pdl/index.rst:17
 msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/pdl/index.rst:0
+msgid "Return type"
 msgstr ""
