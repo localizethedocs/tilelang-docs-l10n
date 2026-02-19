@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,4 +67,8 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/logical/index.rst:30
 #: ../../../autoapi/tilelang/language/logical/index.rst:39
 msgid "A TVM intrinsic call that performs the any operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/logical/index.rst:0
+msgid "Return type"
 msgstr ""
