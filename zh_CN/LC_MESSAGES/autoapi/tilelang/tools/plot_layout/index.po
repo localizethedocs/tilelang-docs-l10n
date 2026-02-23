@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:2
+msgid "tilelang.tools.plot_layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`plot_layout <tilelang.tools.plot_layout.plot_layout>`\\ "
+"\\(layout\\[\\, save\\_directory\\, name\\, colormap\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:21
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:15:<autosummary>:1
+msgid "Plot the layout mapping as a 2D grid visualization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`plot_fragment_tv <tilelang.tools.plot_layout.plot_fragment_tv>`\\ "
+"\\(frag\\[\\, save\\_directory\\, name\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:15:<autosummary>:1
+msgid "Plot fragment in terms of thread and local index mapping."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:23
+msgid ""
+"Dispatches to Fragment-specific or Layout-specific plotting based on the "
+"type of the layout object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:26
+msgid "The layout object to visualize."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:28
+msgid "Output directory (default \"./tmp\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:30
+msgid "Base filename for saved images (default \"layout\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:32
+msgid ""
+"Matplotlib colormap name. Defaults to \"RdPu\" for Fragment, \"Spectral\" "
+"for Layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:34
+msgid "If True, print mapping details."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:36
+msgid ""
+"Output format(s): \"pdf\", \"png\", \"svg\", \"all\", or comma-separated "
+"(default \"pdf\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:42
+msgid ""
+"Plot fragment in terms of thread and local index mapping. :param frag: The "
+"fragment object that describes how indices are mapped. :type frag: T."
+"Fragment :param save_directory: The directory where the output images will "
+"be saved. :type save_directory: str | None, optional :param name: The base "
+"name of the output files (default is \"layout\"). :type name: str, optional :"
+"param apply_idx_fn: A function to apply to the source indices for labeling "
+"(default is identity). :type apply_idx_fn: function, optional :param "
+"colormap: The colormap to use for visualization (default is \"RdPu\"). :type "
+"colormap: str, optional :param item_scale: The scale factor for each item in "
+"the plot (default is 0.75). :type item_scale: float, optional :param "
+"formats: The formats to save the image in (default is \"pdf\"). :type "
+"formats: str | list[str], optional :param dpi: The resolution in dots per "
+"inch for the saved image (default is 80). :type dpi: int, optional"
+msgstr ""

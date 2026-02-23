@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:2
+msgid "tilelang.language.experimental.gemm_sp"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:8
+msgid "The language interface for tl programs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`gemm_sp <tilelang.language.experimental.gemm_sp.gemm_sp>`\\ "
+"\\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, transpose\\_B\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:26
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:20:<autosummary>:1
+msgid "Perform a Sparse General Matrix Multiplication (GEMM-sp) operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`gemm_sp_v2 <tilelang.language.experimental.gemm_sp.gemm_sp_v2>`\\ "
+"\\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:60
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:20:<autosummary>:1
+msgid "Perform a General Matrix Multiplication (GEMM) operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:28
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:62
+msgid ""
+"This function computes C = A @ B where A and B can optionally be transposed. "
+"The operation supports various warp policies and accumulation modes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:31
+msgid "First input matrix dense values"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:33
+msgid "First input matrix sparse metadata"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:35
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:69
+msgid "Second input matrix"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:37
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:71
+msgid "Output matrix for results"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:39
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:73
+msgid "Whether to transpose matrix A. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:41
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:75
+msgid "Whether to transpose matrix B. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:43
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:77
+msgid "Warp execution policy. Defaults to GemmWarpPolicy.Square."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:45
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:79
+msgid "Whether to clear accumulator before computation. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:47
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:81
+msgid "Number of k dimensions packed into a single warp. Defaults to 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:49
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:83
+msgid "Warp group wait count. Defaults to 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:52
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:86
+msgid "A handle to the GEMM operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:55
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:89
+msgid "If the K dimensions of matrices A and B don't match"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:65
+msgid "First input matrix, contains only non-zero elements"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:67
+msgid "The metadata of A_sparse, noted as E"
+msgstr ""

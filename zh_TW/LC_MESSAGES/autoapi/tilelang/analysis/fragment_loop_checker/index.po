@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:2
+msgid "tilelang.analysis.fragment_loop_checker"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`collect_local_buffer_accesses <tilelang.analysis."
+"fragment_loop_checker.collect_local_buffer_accesses>`\\ \\(statement\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:21
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1
+msgid "Collect local buffer accesses in the loop body."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`FragmentLoopChecker <tilelang.analysis.fragment_loop_checker."
+"FragmentLoopChecker>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1
+msgid ""
+"When using T.Parallel over a local/fragment buffer, there are several "
+"restrictions:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:23
+msgid "The TIR statement to analyze"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:25
+msgid "Tuple of buffer accesses in the loop body."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:30
+msgid ""
+"When using T.Parallel over a local/fragment buffer, there are several "
+"restrictions: to ensure that the parallelization is valid."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:33
+msgid "The range of loop can not be symbolic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:35
+msgid "A prim_func_pass that applies the transformation"
+msgstr ""

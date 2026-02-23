@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:2
+msgid "tilelang.layout.swizzle"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:8
+msgid "Wrapping Layouts."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_swizzled_layout <tilelang.layout.swizzle."
+"make_swizzled_layout>`\\ \\(buffer\\[\\, k\\_major\\, allow\\_pad\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_volta_swizzled_layout <tilelang.layout.swizzle."
+"make_volta_swizzled_layout>`\\ \\(buffer\\[\\, is\\_a\\, k\\_inner\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_wgmma_swizzled_layout <tilelang.layout.swizzle."
+"make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, k\\_major\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_tcgen05mma_swizzled_layout <tilelang.layout.swizzle."
+"make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_full_bank_swizzled_layout <tilelang.layout.swizzle."
+"make_full_bank_swizzled_layout>`\\ \\(\\*args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_half_bank_swizzled_layout <tilelang.layout.swizzle."
+"make_half_bank_swizzled_layout>`\\ \\(\\*args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_quarter_bank_swizzled_layout <tilelang.layout.swizzle."
+"make_quarter_bank_swizzled_layout>`\\ \\(\\*args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_linear_layout <tilelang.layout.swizzle.make_linear_layout>`\\ "
+"\\(buffer\\_or\\_load\\_or\\_region\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:73
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid "Create a row-major linear layout for any dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_gemm_fragment_8x8 <tilelang.layout.swizzle."
+"make_gemm_fragment_8x8>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:83
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid "Create a standard 8x8 GEMM fragment layout for ldmatrix/stmatrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_gemm_fragment_8x8_transposed <tilelang.layout.swizzle."
+"make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:93
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid "Create a transposed 8x8 GEMM fragment layout for ldmatrix/stmatrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_fully_replicated_layout_fragment <tilelang.layout.swizzle."
+"make_fully_replicated_layout_fragment>`\\ \\(buffer\\, threads\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:104
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid "Create a fully replicated layout for a fragment buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:31
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:43
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:53
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:63
+msgid "buffer/BufferLoad/BufferRegion or (stride, continuous, element_size)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:46
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:56
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:66
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:47
+msgid ""
+"make_full_bank_swizzled_layout(buffer) "
+"make_full_bank_swizzled_layout(stride, continuous, element_size)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:57
+msgid ""
+"make_half_bank_swizzled_layout(buffer) "
+"make_half_bank_swizzled_layout(stride, continuous, element_size)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:67
+msgid ""
+"make_quarter_bank_swizzled_layout(buffer) "
+"make_quarter_bank_swizzled_layout(stride, continuous, element_size)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:75
+msgid "Buffer, BufferLoad, or BufferRegion"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:77
+msgid "A row-major linear layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:85
+msgid ""
+"This layout matches the warp-level matrix multiplication pattern used in "
+"tensor cores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:87
+msgid "An 8x8 fragment layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:95
+msgid ""
+"This layout is the transposed version of make_gemm_fragment_8x8, useful for "
+"different access patterns in matrix operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:98
+msgid "A transposed 8x8 fragment layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:106
+msgid ""
+"A fully replicated fragment means all threads hold identical copies of the "
+"entire buffer. This is useful for index buffers or masks that need to be "
+"accessed uniformly across all threads."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:110
+msgid "Buffer, BufferLoad, or BufferRegion to get shape information"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:111
+msgid "Number of threads (replicate extent)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:113
+msgid "A fully replicated layout where each thread has a complete copy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:117
+msgid "Example"
+msgstr ""

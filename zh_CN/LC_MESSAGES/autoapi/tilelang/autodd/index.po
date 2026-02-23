@@ -1,0 +1,251 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/autodd/index.rst:2
+msgid "tilelang.autodd"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:15:<autosummary>:1
+msgid ":py:obj:`ASTPatKind <tilelang.autodd.ASTPatKind>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:15:<autosummary>:1
+msgid ":py:obj:`JobBackend <tilelang.autodd.JobBackend>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:17
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`ASTRewrite <tilelang.autodd.ASTRewrite>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid "Helper class that provides a standard way to create an ABC using"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`GeneralRemove <tilelang.autodd.GeneralRemove>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`CallFwdArg1 <tilelang.autodd.CallFwdArg1>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`AttachFullFuncArgs <tilelang.autodd.AttachFullFuncArgs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`IntConstApply <tilelang.autodd.IntConstApply>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`BinOpFwdArg <tilelang.autodd.BinOpFwdArg>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`ASTPat <tilelang.autodd.ASTPat>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`ASTPatRewrite <tilelang.autodd.ASTPatRewrite>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`ASTMutator <tilelang.autodd.ASTMutator>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`LabeledRewrite <tilelang.autodd.LabeledRewrite>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`RewriteAttacher <tilelang.autodd.RewriteAttacher>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`RewriteApplier <tilelang.autodd.RewriteApplier>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`Task <tilelang.autodd.Task>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`PDD <tilelang.autodd.PDD>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`TaskManager <tilelang.autodd.TaskManager>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`ASTPDD <tilelang.autodd.ASTPDD>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`LinePDD <tilelang.autodd.LinePDD>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`Ruff <tilelang.autodd.Ruff>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`AsyncPythonRunner <tilelang.autodd.AsyncPythonRunner>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`SubProcRunner <tilelang.autodd.SubProcRunner>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`ParTaskManager <tilelang.autodd.ParTaskManager>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:44:<autosummary>:1
+msgid ":py:obj:`Args <tilelang.autodd.Args>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:46
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ""
+":py:obj:`ast_replace <tilelang.autodd.ast_replace>`\\ \\(node\\, "
+"\\*\\*changes\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ":py:obj:`parse_stmts <tilelang.autodd.parse_stmts>`\\ \\(s\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ":py:obj:`parse_expr <tilelang.autodd.parse_expr>`\\ \\(s\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ":py:obj:`expr_to_zeros <tilelang.autodd.expr_to_zeros>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ""
+":py:obj:`attach_rewrites <tilelang.autodd.attach_rewrites>`\\ \\(tree\\, "
+"rewrites\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ""
+":py:obj:`apply_rewrites <tilelang.autodd.apply_rewrites>`\\ \\(tree\\, "
+"target\\_labels\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ""
+":py:obj:`test_rewrite <tilelang.autodd.test_rewrite>`\\ \\(rewrite\\, code\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ""
+":py:obj:`ruff_fix_code <tilelang.autodd.ruff_fix_code>`\\ "
+"\\(code\\_string\\[\\, fix\\_lint\\, format\\_code\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ""
+":py:obj:`clean_empty_pass <tilelang.autodd.clean_empty_pass>`\\ \\(code\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ":py:obj:`main <tilelang.autodd.main>`\\ \\(args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:62:<autosummary>:1
+msgid ":py:obj:`cli_main <tilelang.autodd.cli_main>`\\ \\(\\[argv\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:64
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:74
+#: ../../../autoapi/tilelang/autodd/index.rst:405
+msgid "Bases: :py:obj:`abc.ABC`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:77
+#: ../../../autoapi/tilelang/autodd/index.rst:101
+#: ../../../autoapi/tilelang/autodd/index.rst:141
+#: ../../../autoapi/tilelang/autodd/index.rst:159
+#: ../../../autoapi/tilelang/autodd/index.rst:177
+#: ../../../autoapi/tilelang/autodd/index.rst:207
+#: ../../../autoapi/tilelang/autodd/index.rst:257
+#: ../../../autoapi/tilelang/autodd/index.rst:408
+#: ../../../autoapi/tilelang/autodd/index.rst:434
+#: ../../../autoapi/tilelang/autodd/index.rst:459
+#: ../../../autoapi/tilelang/autodd/index.rst:482
+msgid ""
+"Helper class that provides a standard way to create an ABC using inheritance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:98
+#: ../../../autoapi/tilelang/autodd/index.rst:138
+#: ../../../autoapi/tilelang/autodd/index.rst:156
+#: ../../../autoapi/tilelang/autodd/index.rst:174
+#: ../../../autoapi/tilelang/autodd/index.rst:204
+#: ../../../autoapi/tilelang/autodd/index.rst:254
+msgid "Bases: :py:obj:`ASTRewrite`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:322
+#: ../../../autoapi/tilelang/autodd/index.rst:348
+msgid "Bases: :py:obj:`ASTMutator`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:0
+msgid "abstractmethod"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:431
+#: ../../../autoapi/tilelang/autodd/index.rst:456
+msgid "Bases: :py:obj:`TaskManager`, :py:obj:`PDD`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:479
+msgid "Bases: :py:obj:`TaskManager`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autodd/index.rst:656
+msgid "Bases: :py:obj:`NamedTuple`"
+msgstr ""
