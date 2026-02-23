@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:2
+msgid "tilelang.contrib.cutedsl.ieee_math"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:8
+msgid ""
+"IEEE-754 compliant floating-point operations with explicit rounding modes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:10
+msgid ""
+"These correspond to CUDA __fadd_rn, __fsub_rz, etc. Implemented via inline "
+"PTX to ensure exact rounding mode compliance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:13
+msgid ""
+"Rounding modes: rn (nearest), rz (toward zero), rm (toward -inf), rp (toward "
+"+inf)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:18
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fadd <tilelang.contrib.cutedsl.ieee_math.ieee_fadd>`\\ \\(a\\, "
+"b\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:36
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 add with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fsub <tilelang.contrib.cutedsl.ieee_math.ieee_fsub>`\\ \\(a\\, "
+"b\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:41
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 subtract with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fmul <tilelang.contrib.cutedsl.ieee_math.ieee_fmul>`\\ \\(a\\, "
+"b\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:46
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 multiply with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fmaf <tilelang.contrib.cutedsl.ieee_math.ieee_fmaf>`\\ \\(a\\, "
+"b\\, c\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:51
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 fused multiply-add with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_frcp <tilelang.contrib.cutedsl.ieee_math.ieee_frcp>`\\ "
+"\\(a\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:56
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 reciprocal with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fsqrt <tilelang.contrib.cutedsl.ieee_math.ieee_fsqrt>`\\ "
+"\\(a\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:61
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 square root with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`ieee_fdiv <tilelang.contrib.cutedsl.ieee_math.ieee_fdiv>`\\ \\(a\\, "
+"b\\[\\, rounding\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:66
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
+msgid "IEEE-754 divide with explicit rounding mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:32
+msgid "Module Contents"
+msgstr ""

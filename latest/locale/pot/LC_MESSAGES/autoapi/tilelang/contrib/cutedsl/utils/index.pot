@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:2
+msgid "tilelang.contrib.cutedsl.utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:8
+msgid "Utility functions for CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:10
+msgid ""
+"Provides common helpers used across the CuTeDSL codegen: bitcast, tensor "
+"construction, warp election, barrier sync, and FP16 packing."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:16
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`BYTES_PER_TENSORMAP <tilelang.contrib.cutedsl.utils."
+"BYTES_PER_TENSORMAP>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`BYTES_PER_POINTER <tilelang.contrib.cutedsl.utils."
+"BYTES_PER_POINTER>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:24:<autosummary>:1
+msgid ":py:obj:`type_map <tilelang.contrib.cutedsl.utils.type_map>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:26
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`bitcast <tilelang.contrib.cutedsl.utils.bitcast>`\\ \\(value\\, "
+"target\\_dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid "Reinterpret the bits of a value as a different type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`make_filled_tensor <tilelang.contrib.cutedsl.utils."
+"make_filled_tensor>`\\ \\(shape\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`make_tensor_at_offset <tilelang.contrib.cutedsl.utils."
+"make_tensor_at_offset>`\\ \\(ptr\\, offset\\, shape\\[\\, div\\_by\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`shuffle_elect <tilelang.contrib.cutedsl.utils.shuffle_elect>`\\ "
+"\\(thread\\_extent\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`sync_thread_partial <tilelang.contrib.cutedsl.utils."
+"sync_thread_partial>`\\ \\(\\[barrier\\_id\\, thread\\_count\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`pack_half2 <tilelang.contrib.cutedsl.utils.pack_half2>`\\ \\(x\\, "
+"y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+msgid "Pack two half-precision (fp16) values into a single 32-bit value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:53
+msgid ""
+"Reinterpret the bits of a value as a different type. Equivalent to C's "
+"(*(target_type *)(&value))."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:56
+msgid "Source value (Numeric type from CuTeDSL)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:57
+msgid "Target type (CuTeDSL type like Int8, Float16, etc.)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:59
+msgid "Value reinterpreted as target type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:72
+msgid ""
+"Pack two half-precision (fp16) values into a single 32-bit value. "
+"Corresponds to CUDA's __pack_half2 intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:75
+msgid ""
+"This packs two fp16 values into a single int32 by treating the fp16 bits as "
+"raw data and concatenating them."
+msgstr ""

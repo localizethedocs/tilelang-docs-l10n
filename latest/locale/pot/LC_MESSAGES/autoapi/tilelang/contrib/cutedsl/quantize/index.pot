@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:2
+msgid "tilelang.contrib.cutedsl.quantize"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:8
+msgid ""
+"Quantization/dequantization functions for CuTeDSL backend. These implement "
+"the same functionality as the CUDA templates in tilelang/quantize/lop3.py "
+"using inline PTX via llvm.inline_asm."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:15
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
+msgid ":py:obj:`BOTTOM_MASK <tilelang.contrib.cutedsl.quantize.BOTTOM_MASK>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`FP16_TOP_MAGIC_NUM <tilelang.contrib.cutedsl.quantize."
+"FP16_TOP_MAGIC_NUM>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
+msgid ":py:obj:`IMMLUT <tilelang.contrib.cutedsl.quantize.IMMLUT>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`MEDIAN_NUM_UNSIGNED <tilelang.contrib.cutedsl.quantize."
+"MEDIAN_NUM_UNSIGNED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`MEDIAN_NUM_SIGNED <tilelang.contrib.cutedsl.quantize."
+"MEDIAN_NUM_SIGNED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`decode_i4u_to_f16 <tilelang.contrib.cutedsl.quantize."
+"decode_i4u_to_f16>`\\ \\(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:61
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
+msgid "Decode unsigned INT4 to FP16."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`decode_i4s_to_f16 <tilelang.contrib.cutedsl.quantize."
+"decode_i4s_to_f16>`\\ \\(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:73
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
+msgid "Decode signed INT4 to FP16. N must be even."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`decode_fp4_to_bf16_twiddling <tilelang.contrib.cutedsl.quantize."
+"decode_fp4_to_bf16_twiddling>`\\ \\(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:78
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
+msgid "Decode FP4 to BF16 using twiddling technique."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:37
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:63
+msgid "Equivalent to CUDA template:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:64
+msgid "decode_i4b_to_f16<T1, T2, false>(_i4u, B_local_decode, N);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:66
+msgid "Pointer to packed INT4 data (4 bytes for 8 elements)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:67
+msgid "Pointer to FP16 output (16 bytes for 8 elements)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:68
+msgid "Number of elements to decode (default 8, must be even)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:80
+msgid "Reference: triton/tensor_details/layout_details/hopper_value.py"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:82
+msgid "For each iteration:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:83
+msgid "Input: 4 bytes (uint32) = 8 FP4 values"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:84
+msgid "Output: 8 BF16 values (16 bytes)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:86
+msgid "C code output layout:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:87
+msgid ""
+"B_local_decode[(i << 3) + j] = vec[j].high  (j=0..3) B_local_decode[(i << 3) "
+"+ j + 4] = vec[j].low  (j=0..3)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:90
+msgid "So output as uint32:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:91
+msgid ""
+"dst[i*4 + 0] = {r1.high, r0.high} dst[i*4 + 1] = {r3.high, r2.high} dst[i*4 "
+"+ 2] = {r1.low, r0.low} dst[i*4 + 3] = {r3.low, r2.low}"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:96
+msgid "Pointer to packed FP4 data"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:97
+msgid "Pointer to BF16 output"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:98
+msgid "Number of iterations (default 8, processing 64 FP4 -> 64 BF16)"
+msgstr ""

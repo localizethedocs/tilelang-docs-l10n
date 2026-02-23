@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:2
+msgid "tilelang.contrib.cutedsl.gemm_v2"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`GmmaDescriptor <tilelang.contrib.cutedsl.gemm_v2.GmmaDescriptor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`initialize_wgmma_descriptor <tilelang.contrib.cutedsl.gemm_v2."
+"initialize_wgmma_descriptor>`\\ \\(layout\\_type\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`increase_descriptor_offset <tilelang.contrib.cutedsl.gemm_v2."
+"increase_descriptor_offset>`\\ \\(desc\\, offset\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`warpgroup_fence_operand <tilelang.contrib.cutedsl.gemm_v2."
+"warpgroup_fence_operand>`\\ \\(\\*args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`warpgroup_arrive <tilelang.contrib.cutedsl.gemm_v2."
+"warpgroup_arrive>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`warpgroup_commit_batch <tilelang.contrib.cutedsl.gemm_v2."
+"warpgroup_commit_batch>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`warpgroup_wait <tilelang.contrib.cutedsl.gemm_v2.warpgroup_wait>`\\ "
+"\\(N\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`wgmma_ss <tilelang.contrib.cutedsl.gemm_v2.wgmma_ss>`\\ "
+"\\(A\\_dtype\\, B\\_dtype\\, C\\_dtype\\, M\\, N\\, K\\, tnspA\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`wgmma_rs <tilelang.contrib.cutedsl.gemm_v2.wgmma_rs>`\\ "
+"\\(A\\_dtype\\, B\\_dtype\\, C\\_dtype\\, M\\, N\\, K\\, tnspB\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:60
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:29:<autosummary>:1
+msgid "WGMMA register-shared variant using PTX inline asm."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:31
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2/index.rst:62
+msgid ""
+"A operand comes from registers, B from shared memory descriptor. M is always "
+"64. A is always K-major (not transposed)."
+msgstr ""

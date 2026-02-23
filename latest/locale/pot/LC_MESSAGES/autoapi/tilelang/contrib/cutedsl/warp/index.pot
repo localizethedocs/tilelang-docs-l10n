@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:2
+msgid "tilelang.contrib.cutedsl.warp"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:8
+msgid ""
+"Warp-level primitives for CuTeDSL backend. Re-exports from cutlass.cute.arch "
+"with TileLang naming conventions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:14
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_sum <tilelang.contrib.cutedsl.warp.warp_reduce_sum>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:30
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid "Warp-level parallel reduction: sum across all 32 lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_max <tilelang.contrib.cutedsl.warp.warp_reduce_max>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:35
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid "Warp-level parallel reduction: max across all 32 lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_min <tilelang.contrib.cutedsl.warp.warp_reduce_min>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:40
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid "Warp-level parallel reduction: min across all 32 lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_bitand <tilelang.contrib.cutedsl.warp."
+"warp_reduce_bitand>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:45
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid "Warp-level parallel reduction: bitwise AND across all 32 lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_bitor <tilelang.contrib.cutedsl.warp."
+"warp_reduce_bitor>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:50
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+msgid "Warp-level parallel reduction: bitwise OR across all 32 lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:26
+msgid "Module Contents"
+msgstr ""
