@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/libgen/index.rst:15
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/libgen/index.rst:21:<autosummary>:1
 msgid ""

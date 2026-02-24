@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:14
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:25:<autosummary>:1
 msgid ":py:obj:`SumOp <tilelang.contrib.cutedsl.reduce.SumOp>`\\"

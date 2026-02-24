@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:19
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:26:<autosummary>:1
 msgid ":py:obj:`dtype <tilelang.language.dtypes.dtype>`\\"

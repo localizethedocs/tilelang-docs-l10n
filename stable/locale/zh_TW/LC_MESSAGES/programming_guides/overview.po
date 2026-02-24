@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:17
 msgid "Language Basics"
-msgstr ""
+msgstr "語言基礎"
 
 #: ../../../programming_guides/overview.md:18
 msgid "Control Flow"

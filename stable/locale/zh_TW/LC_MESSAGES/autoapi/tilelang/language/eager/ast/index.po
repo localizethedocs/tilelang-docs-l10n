@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:17
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
 msgid ":py:obj:`QuoteVisitor <tilelang.language.eager.ast.QuoteVisitor>`\\"
@@ -226,7 +226,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:245
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:359
 msgid "node = YourTransformer().visit(node)"
-msgstr ""
+msgstr "node = YourTransformer().visit(node)"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:110
 msgid "Called if no explicit visitor function exists for a node."

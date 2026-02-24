@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:16
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:22:<autosummary>:1
 msgid ""

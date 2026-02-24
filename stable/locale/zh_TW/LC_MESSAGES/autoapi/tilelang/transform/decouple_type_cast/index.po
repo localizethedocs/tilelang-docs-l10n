@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:55
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:66:<autosummary>:1
 msgid ""
