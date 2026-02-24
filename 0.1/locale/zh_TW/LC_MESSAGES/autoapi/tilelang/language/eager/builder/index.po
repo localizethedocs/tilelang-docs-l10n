@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:22
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`Frame <tilelang.language.eager.builder.Frame>`\\"

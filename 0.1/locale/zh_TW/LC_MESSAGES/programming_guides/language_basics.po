@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../programming_guides/language_basics.md:1
 msgid "Language Basics"
-msgstr ""
+msgstr "語言基礎"
 
 #: ../../../programming_guides/language_basics.md:3
 msgid ""
@@ -193,7 +193,7 @@ msgstr ""
 
 #: ../../../programming_guides/language_basics.md:95
 msgid "3. Loops and Control Flow"
-msgstr ""
+msgstr "3. 迴圈與控制流程"
 
 #: ../../../programming_guides/language_basics.md:97
 msgid "Core loop constructs map to familiar hardware patterns:"

@@ -2227,7 +2227,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:986
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1005
 msgid ""

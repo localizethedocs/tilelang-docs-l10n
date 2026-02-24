@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:14:<autosummary>:1
 msgid ":py:obj:`dim3 <tilelang.contrib.cutedsl.threadblock_swizzle.dim3>`\\"

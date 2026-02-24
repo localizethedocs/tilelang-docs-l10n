@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:14:<autosummary>:1
 msgid ":py:obj:`GemmInst <tilelang.tileop.gemm.inst.GemmInst>`\\"

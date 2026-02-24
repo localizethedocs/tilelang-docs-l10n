@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../programming_guides/control_flow.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../programming_guides/control_flow.md:8
 msgid "Conditionals: `if` / `elif` / `else`, ternary (`x if c else y`)"
