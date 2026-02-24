@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:2
+msgid "tilelang.carver.template.base"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:8
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:14:<autosummary>:1
+msgid ":py:obj:`BaseTemplate <tilelang.carver.template.base.BaseTemplate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:14:<autosummary>:1
+msgid "Base class template for hardware-aware configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:20
+msgid "Bases: :py:obj:`abc.ABC`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:23
+msgid ""
+"Base class template for hardware-aware configurations. This serves as an "
+"abstract base class (ABC) that defines the structure for subclasses "
+"implementing hardware-specific optimizations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:32
+msgid ""
+"Abstract method that must be implemented by subclasses. It should return a "
+"list of hardware-aware configurations (hints) based on the specified "
+"architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:36
+msgid "The target architecture. Defaults to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:38
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:142
+msgid "Number of top configurations to return. Defaults to 10."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:41
+msgid "A list of recommended hardware-aware configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:48
+msgid "Sets the architecture for this template and returns itself."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:50
+msgid "The architecture to set."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:53
+msgid "The instance with the updated architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:60
+msgid "Checks whether the architecture is set."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:62
+msgid "True if the architecture is set, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:69
+msgid "Checks if the current architecture is a Volta architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:71
+msgid "True if the architecture is Volta, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:78
+msgid "Checks if the current architecture is an Ampere architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:80
+msgid "True if the architecture is Ampere, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:87
+msgid "Checks if the current architecture is a CDNA architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:89
+msgid "True if the architecture is CDNA, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:96
+msgid "Returns the function associated with this template."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:98
+msgid "The stored function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:107
+msgid ""
+"Placeholder method that should be implemented by subclasses. This method is "
+"responsible for initializing the function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:110
+msgid "If not implemented in the subclass."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:116
+msgid "Sets the function for this template and returns itself."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:118
+msgid "The function to associate with this template."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:121
+msgid "The instance with the updated function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:128
+msgid "Sets the output nodes for this template and returns itself."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:130
+msgid "The output nodes to associate with this template."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:133
+msgid "The instance with the updated output nodes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:140
+msgid "Provides a list of recommended hardware-aware configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:145
+msgid "A list of recommended configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:154
+msgid "Returns the current architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:156
+msgid "The architecture of this template."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:164
+msgid "Returns the output nodes associated with this template."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:166
+msgid "The output nodes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:172
+msgid ""
+"Post-initialization method that is called after the data class is created. "
+"Ensures that the function is initialized."
+msgstr ""

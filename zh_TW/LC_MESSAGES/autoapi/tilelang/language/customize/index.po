@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:2
+msgid "tilelang.language.customize"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:8
+msgid ""
+"Some customized operations frequently used in tensor programming, exposed on "
+"the TileLang language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid ":py:obj:`dp4a <tilelang.language.customize.dp4a>`\\ \\(A\\, B\\, C\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:29
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid "Perform a 4-element dot product with accumulation (DP4A)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`clamp <tilelang.language.customize.clamp>`\\ \\(dst\\, min\\_val\\, "
+"max\\_val\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:44
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid "Clamps the input value dst between [min_val, max_val]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`reshape <tilelang.language.customize.reshape>`\\ \\(src\\, shape\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:55
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid "Reshapes the input buffer to the specified shape."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`view <tilelang.language.customize.view>`\\ \\(src\\[\\, shape\\, "
+"dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:68
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid ""
+"Return a Tensor view of the input buffer with an optional new shape and "
+"dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid ":py:obj:`loop_break <tilelang.language.customize.loop_break>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:75
+#: ../../../autoapi/tilelang/language/customize/index.rst:23:<autosummary>:1
+msgid "Break out of the current loop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:25
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:31
+msgid "First input buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:33
+msgid "Second input buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:35
+msgid "Accumulation buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:38
+msgid "Handle to the DP4A operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:46
+msgid "Input value to be clamped"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:47
+msgid "Minimum value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:48
+msgid "Maximum value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:50
+msgid "Value clamped to the specified range"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:57
+msgid "Input buffer to be reshaped"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:59
+msgid "New shape for the buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:62
+msgid "A new buffer view with the specified shape"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:70
+msgid ""
+"If `shape` is None the source buffer's shape is used; if `dtype` is None the "
+"source buffer's dtype is used. The returned buffer shares the same "
+"underlying data as `src` (no copy)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/customize/index.rst:77
+msgid "A call to the `tl.loop_break` intrinsic."
+msgstr ""

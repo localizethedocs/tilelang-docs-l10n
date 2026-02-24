@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:2
+msgid "tilelang.utils.sparse"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:14:<autosummary>:1
+msgid ":py:obj:`compress_util <tilelang.utils.sparse.compress_util>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`compress_sm90 <tilelang.utils.sparse.compress_sm90>`\\ \\(A\\, "
+"block\\_k\\, transposed\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`compress_sm80 <tilelang.utils.sparse.compress_sm80>`\\ \\(A\\, "
+"transposed\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`compress <tilelang.utils.sparse.compress>`\\ \\(A\\, "
+"transposed\\[\\, arch\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:39
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+"Compress a tensor using the appropriate method based on the CUDA "
+"architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`randn_semi_sparse <tilelang.utils.sparse.randn_semi_sparse>`\\ "
+"\\(M\\, K\\[\\, dtype\\, device\\, transposed\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+"Generate a random semi-sparse tensor. The generated tensor will have 2:4 "
+"sparsity along the K dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`randint_semi_sparse <tilelang.utils.sparse.randint_semi_sparse>`\\ "
+"\\(M\\, K\\, low\\, high\\[\\, dtype\\, device\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+"Generate a random semi-sparse integer tensor. The generated tensor will have "
+"2:4 sparsity along the K dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`arange_semi_sparse <tilelang.utils.sparse.arange_semi_sparse>`\\ "
+"\\(M\\, K\\[\\, dtype\\, device\\, transposed\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
+msgid ""
+"Generate a semi-sparse tensor with values from 0 to M*K-1. The generated "
+"tensor will have 2:4 sparsity along the K dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:44
+msgid ""
+"Generate a random semi-sparse tensor. The generated tensor will have 2:4 "
+"sparsity along the K dimension. :param M: Number of rows :type M: int :param "
+"K: Number of columns :type K: int :param dtype: Data type of the tensor :"
+"param device: Device to create the tensor on :param transposed: If True, "
+"returns a transposed tensor of shape (K, M) :type transposed: bool"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:57
+msgid ""
+"Generate a random semi-sparse integer tensor. The generated tensor will have "
+"2:4 sparsity along the K dimension. :param M: Number of rows :type M: int :"
+"param K: Number of columns :type K: int :param low: Lower bound of the "
+"random integers :type low: int :param high: Upper bound of the random "
+"integers :type high: int :param dtype: Data type of the tensor :param "
+"device: Device to create the tensor on :param transposed: If True, returns a "
+"transposed tensor of shape (K, M) :type transposed: bool"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/sparse/index.rst:74
+msgid ""
+"Generate a semi-sparse tensor with values from 0 to M*K-1. The generated "
+"tensor will have 2:4 sparsity along the K dimension. :param M: Number of "
+"rows :type M: int :param K: Number of columns :type K: int :param dtype: "
+"Data type of the tensor :param device: Device to create the tensor on :param "
+"transposed: If True, returns a transposed tensor of shape (K, M) :type "
+"transposed: bool"
+msgstr ""

@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:2
+msgid "tilelang.language.dtypes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:17:<autosummary>:1
+msgid ":py:obj:`AnyDType <tilelang.language.dtypes.AnyDType>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:17:<autosummary>:1
+msgid ":py:obj:`dtype_name <tilelang.language.dtypes.dtype_name>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:17:<autosummary>:1
+msgid ":py:obj:`int_ <tilelang.language.dtypes.int_>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:17:<autosummary>:1
+msgid ":py:obj:`__all__ <tilelang.language.dtypes.__all__>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:19
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:26:<autosummary>:1
+msgid ":py:obj:`dtype <tilelang.language.dtypes.dtype>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:26:<autosummary>:1
+msgid ":py:obj:`bool <tilelang.language.dtypes.bool>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_call__ <tilelang.language.dtypes.__dtype_call__>`\\ "
+"\\(self\\[\\, expr\\, is\\_size\\_var\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_as_torch__ <tilelang.language.dtypes.__dtype_as_torch__>`\\ "
+"\\(self\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:72
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid "Convert TileLang dtype to PyTorch dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_new__ <tilelang.language.dtypes.__dtype_new__>`\\ \\(cls\\, "
+"value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_bytes__ <tilelang.language.dtypes.__dtype_bytes__>`\\ "
+"\\(self\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:79
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid "Return the number of bytes for this dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`get_tvm_dtype <tilelang.language.dtypes.get_tvm_dtype>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:40
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:44
+msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_T`\\ ]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:86
+msgid "Bases: :py:obj:`dtype`"
+msgstr ""

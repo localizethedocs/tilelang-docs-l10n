@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Tile Language <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-14 17:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:2
+msgid "tilelang.primitives.gemm.base"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:8
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`GemmWarpPolicy <tilelang.primitives.gemm.base.GemmWarpPolicy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:24
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:15:<autosummary>:1
+msgid "Enumeration for GEMM Warp Partitioning Policies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`GemmBaseParams <tilelang.primitives.gemm.base.GemmBaseParams>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:21
+msgid "Bases: :py:obj:`enum.IntEnum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:44
+msgid "Check if the policy is a square partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:46
+msgid "True if the policy is square, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:53
+msgid "Check if the policy is a full row partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:55
+msgid "True if the policy is full row, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:62
+msgid "Check if the policy is a full column partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:64
+msgid "True if the policy is full column, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:73
+msgid "Compute the prime factorization of a given number."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:75
+msgid "The number to factorize."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:78
+msgid "A list of prime factors of the number."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:85
+msgid "Compute the warp partition (m_warp, n_warp) based on the given policy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:87
+msgid "The number of rows in the GEMM workload."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:89
+msgid "The number of columns in the GEMM workload."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:91
+msgid "The total number of warps available."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:94
+msgid "A tuple (m_warp, n_warp) representing the partitioning of warps."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:97
+msgid "If the policy is invalid or the partitioning fails."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:98
+msgid ""
+"If M or N is not divisible by the required factor for FullRow or FullCol "
+"policies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:106
+msgid "Determine the warp policy based on the given warp partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:108
+msgid "Number of warps in the row dimension"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:110
+msgid "Number of warps in the column dimension"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:113
+msgid "The corresponding warp policy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:117
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:201
+msgid ""
+"Infer and set block partition parameters (e.g., block_row_warps, "
+"block_col_warps, warp_row_tiles, warp_col_tiles, chunk) based on the shape "
+"of A and B. If these parameters are not already specified, the method will "
+"attempt to infer them automatically based on the given `threads`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:207
+msgid ""
+"The total number of threads in a block. Must be provided if any block "
+"partition parameter is not already set."
+msgstr ""
+
+#: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:211
+msgid ""
+"If `threads` is None but any block partition parameter is missing, or if A "
+"and B have inconsistent shapes for GEMM."
+msgstr ""
