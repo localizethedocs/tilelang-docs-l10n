@@ -1,0 +1,97 @@
+tilelang.jit.adapter.libgen
+===========================
+
+.. py:module:: tilelang.jit.adapter.libgen
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   tilelang.jit.adapter.libgen.logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.jit.adapter.libgen.LibraryGenerator
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:class:: LibraryGenerator(target, verbose = False)
+
+   .. py:attribute:: srcpath
+      :type:  str | None
+      :value: None
+
+
+
+   .. py:attribute:: libpath
+      :type:  str | None
+      :value: None
+
+
+
+   .. py:attribute:: lib_code
+      :type:  str | None
+      :value: None
+
+
+
+   .. py:attribute:: pass_configs
+      :type:  dict[str, Any] | None
+      :value: None
+
+
+
+   .. py:attribute:: compile_flags
+      :type:  list[str] | None
+      :value: None
+
+
+
+   .. py:attribute:: target
+
+
+   .. py:attribute:: verbose
+      :value: False
+
+
+
+   .. py:method:: assign_pass_configs(pass_configs = None)
+
+
+   .. py:method:: assign_compile_flags(compile_flags = None)
+
+
+   .. py:method:: update_lib_code(lib_code)
+
+
+   .. py:method:: load_lib(lib_path = None)
+
+
+   .. py:method:: compile_lib(timeout = None)
+
+
+   .. py:method:: remove_lib()
+
+
+   .. py:method:: get_source_path()
+
+
+   .. py:method:: get_lib_path()
+
+
+   .. py:method:: set_lib_path(libpath)
+
+
+   .. py:method:: set_src_path(srcpath)
+
+

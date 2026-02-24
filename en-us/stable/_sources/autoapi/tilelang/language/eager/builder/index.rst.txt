@@ -1,0 +1,637 @@
+tilelang.language.eager.builder
+===============================
+
+.. py:module:: tilelang.language.eager.builder
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   tilelang.language.eager.builder.logger
+   tilelang.language.eager.builder.thread_local_storage
+   tilelang.language.eager.builder.ContinueOrBreak
+   tilelang.language.eager.builder.AnyFrame
+   tilelang.language.eager.builder.TIR_CONTROL_FRAME
+   tilelang.language.eager.builder.TIR_VAR_SCOPE_FRAME
+   tilelang.language.eager.builder.EagerJITStage
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.language.eager.builder.Frame
+   tilelang.language.eager.builder.MacroFrame
+   tilelang.language.eager.builder.ExitedMacroFrame
+   tilelang.language.eager.builder.BoolOpFrame
+   tilelang.language.eager.builder.ContinueFrame
+   tilelang.language.eager.builder.BreakFrame
+   tilelang.language.eager.builder.SerialForWithStep
+   tilelang.language.eager.builder.OutTensor
+   tilelang.language.eager.builder.Ref
+   tilelang.language.eager.builder.UnrollForWithStep
+   tilelang.language.eager.builder.Builder
+   tilelang.language.eager.builder.PrimFunc
+   tilelang.language.eager.builder.Macro
+   tilelang.language.eager.builder.TirTemplate
+   tilelang.language.eager.builder.JITFunc
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.language.eager.builder.unwrap_expr
+   tilelang.language.eager.builder.unwrap_cond
+   tilelang.language.eager.builder.is_var
+   tilelang.language.eager.builder.macro
+   tilelang.language.eager.builder.get_type_hints
+   tilelang.language.eager.builder.const
+   tilelang.language.eager.builder.substitute_primfunc
+   tilelang.language.eager.builder.prim_func
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:function:: unwrap_expr(expr)
+
+   unwrap expr and convert it into PrimExpr like
+
+
+.. py:function:: unwrap_cond(expr)
+
+   unwrap expr and convert to bool condition
+
+
+.. py:data:: thread_local_storage
+
+.. py:class:: Frame
+
+   Frame are virtual context managers used in frontend only
+   They do not have any runtime representation in the generated TIR.
+
+
+   .. py:method:: __enter__()
+
+
+   .. py:method:: __exit__(exc_type, exc_value, traceback)
+
+
+.. py:class:: MacroFrame
+
+   Bases: :py:obj:`Frame`
+
+
+   Frame are virtual context managers used in frontend only
+   They do not have any runtime representation in the generated TIR.
+
+
+.. py:class:: ExitedMacroFrame
+
+   Bases: :py:obj:`Frame`
+
+
+   Frame are virtual context managers used in frontend only
+   They do not have any runtime representation in the generated TIR.
+
+
+.. py:class:: BoolOpFrame
+
+   Bases: :py:obj:`Frame`
+
+
+   Frame are virtual context managers used in frontend only
+   They do not have any runtime representation in the generated TIR.
+
+
+.. py:class:: ContinueFrame
+
+   Bases: :py:obj:`Frame`
+
+
+   Frame are virtual context managers used in frontend only
+   They do not have any runtime representation in the generated TIR.
+
+
+.. py:class:: BreakFrame
+
+   Bases: :py:obj:`Frame`
+
+
+   Frame are virtual context managers used in frontend only
+   They do not have any runtime representation in the generated TIR.
+
+
+.. py:class:: SerialForWithStep
+
+   .. py:attribute:: start
+      :type:  tvm.tir.expr.PrimExpr
+
+
+   .. py:attribute:: stop
+      :type:  tvm.tir.expr.PrimExpr
+
+
+   .. py:attribute:: step
+      :type:  tvm.tir.expr.PrimExpr
+
+
+   .. py:attribute:: annotations
+      :type:  dict[str, Any] | None
+      :value: None
+
+
+
+.. py:class:: OutTensor
+
+   .. py:attribute:: shape
+      :type:  collections.abc.Sequence[tvm.tir.expr.PrimExpr]
+
+
+   .. py:attribute:: dtype
+      :type:  tilelang.language.dtypes.dtype
+
+
+   .. py:property:: strides
+
+
+.. py:class:: Ref
+
+   .. py:attribute:: bufload
+      :type:  tvm.tir.expr.BufferLoad
+
+
+   .. py:property:: buffer
+
+
+   .. py:method:: store(value)
+
+
+   .. py:method:: load()
+
+
+.. py:class:: UnrollForWithStep
+
+   Bases: :py:obj:`SerialForWithStep`
+
+
+.. py:data:: ContinueOrBreak
+
+.. py:data:: AnyFrame
+
+.. py:data:: TIR_CONTROL_FRAME
+
+.. py:data:: TIR_VAR_SCOPE_FRAME
+
+.. py:function:: is_var(v)
+
+.. py:data:: EagerJITStage
+
+.. py:class:: Builder
+
+   Bases: :py:obj:`tilelang.language.eager.ast.BaseBuilder`
+
+
+   .. py:attribute:: frames
+      :type:  list[AnyFrame]
+      :value: []
+
+
+
+   .. py:attribute:: ir_builder
+
+
+   .. py:attribute:: name_inside_frame
+      :type:  dict[str, AnyFrame]
+
+
+   .. py:attribute:: macro_arg_annot
+
+
+   .. py:attribute:: out_idx
+      :value: []
+
+
+
+   .. py:attribute:: out_tensor_cnt
+      :value: 0
+
+
+
+   .. py:attribute:: constexpr_var
+
+
+   .. py:attribute:: eager_jit
+      :type:  EagerJITStage
+      :value: 'none'
+
+
+
+   .. py:attribute:: eager_jit_subs
+      :type:  dict[str, tvm.tir.expr.PrimExpr]
+
+
+   .. py:attribute:: current_file
+      :value: '<unknown>'
+
+
+
+   .. py:attribute:: current_line
+      :value: 0
+
+
+
+   .. py:attribute:: current_macro_name
+      :value: '<unknown-macro>'
+
+
+
+   .. py:attribute:: macro_fileline_stack
+      :type:  list[tuple[str, int, str]]
+      :value: []
+
+
+
+   .. py:method:: current()
+      :classmethod:
+
+
+
+   .. py:method:: prim_func(name)
+
+
+   .. py:method:: macro(name=None, annotations=None)
+
+
+   .. py:method:: get()
+
+
+   .. py:method:: find_frame_idx(frame, start=0)
+
+
+   .. py:method:: enter_frame(frame)
+
+
+   .. py:method:: check_continue_break()
+
+
+   .. py:method:: with_frame(frame)
+
+
+   .. py:method:: ctx_if(cond)
+
+
+   .. py:method:: ctx_then(val)
+
+
+   .. py:method:: ctx_else(val)
+
+
+   .. py:method:: eval(val)
+
+
+   .. py:method:: ctx_for(it)
+
+
+   .. py:method:: ctx_continue()
+
+
+   .. py:method:: ctx_break()
+
+
+   .. py:method:: ctx_while(cond)
+
+
+   .. py:method:: bind(name, value, annot=BaseBuilder.empty)
+
+
+   .. py:method:: unwrap_value(value)
+
+      Unwrap some tilelang objects to get their inner value
+
+
+
+   .. py:method:: bind_immutable(name, value)
+
+      Bind an immutable tilelang objects.
+      The immutability means the result is usually not changed or re-assigned in a python block.
+
+
+
+   .. py:method:: assign_slice(lval, sl, value, annot=BaseBuilder.empty)
+
+
+   .. py:method:: aug_assign(op, target, aug_value, name = None)
+
+
+   .. py:method:: aug_assign_slice(op, target, sl, aug_value)
+
+
+   .. py:method:: boolop(op, left, right=None)
+
+
+   .. py:method:: ifexp(cond, then, otherwise)
+
+
+   .. py:method:: ret(value=None)
+
+
+   .. py:method:: ctx_with(ctx)
+
+
+   .. py:method:: assert_expr(cond, msg=None)
+
+
+   .. py:method:: rval(name, value)
+
+
+   .. py:method:: macro_arg(name, value)
+
+
+   .. py:method:: prim_func_arg(name, value)
+
+
+   .. py:method:: arg(name, value)
+
+
+   .. py:method:: override(name)
+
+
+   .. py:method:: constexpr(name, dtype = 'int32')
+
+
+   .. py:method:: set_fileline(filename, lineno, name)
+
+
+   .. py:method:: get_fileline_stack(stacklevel=1)
+
+
+   .. py:method:: skip_kernel_ctx()
+
+
+.. py:class:: PrimFunc
+
+   Bases: :py:obj:`Generic`\ [\ :py:obj:`_P`\ , :py:obj:`_T`\ ], :py:obj:`tvm.tir.PrimFunc`
+
+
+   .. py:attribute:: params
+      :type:  list[tvm.tir.Var | tvm.tir.Buffer]
+
+
+   .. py:attribute:: body
+      :type:  tvm.tir.Stmt
+
+
+   .. py:attribute:: ret_type
+      :type:  tvm.ir.Type
+
+
+   .. py:attribute:: buffer_map
+      :type:  tvm_ffi.container.Map[tvm.tir.Var, tvm.tir.Buffer]
+
+
+   .. py:attribute:: attrs
+      :type:  tvm.Attrs | None
+
+
+   .. py:attribute:: span
+      :type:  tvm.ir.base.Span | None
+
+
+   .. py:attribute:: ir_gen
+      :type:  tilelang.language.eager.ast.IRGenerator[_P, _T] | None
+
+
+   .. py:attribute:: orig_func
+      :type:  Callable[_P, _T] | None
+
+
+   .. py:attribute:: out_idx_override
+      :type:  list[int] | None
+
+
+.. py:class:: Macro
+
+   Bases: :py:obj:`Generic`\ [\ :py:obj:`_P`\ , :py:obj:`_T`\ ]
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: orig_func
+      :type:  Callable[_P, _T]
+
+
+   .. py:attribute:: ir_gen
+      :type:  tilelang.language.eager.ast.IRGenerator[_P, _T]
+
+
+   .. py:attribute:: annotations
+      :type:  dict[str, Any]
+
+
+   .. py:property:: source
+      :type: str
+
+
+
+   .. py:method:: __call__(*args, **kwargs)
+
+
+   .. py:method:: __hash__()
+
+
+   .. py:method:: __eq__(other)
+
+
+.. py:function:: macro(func = None)
+
+   Decorator that converts a Python function into a TileLang macro.
+   TileLang macro is very similar to PrimFunc, it can be used in prim_func or another macro.
+   :param func: The Python function to be converted into a macro. This function will be analyzed
+                and transformed into an IR generation function. The function can take any parameters
+                (_P) and return any type (_T).
+   :type func: Callable[_P, _T]
+
+   :returns: * *Macro[_P, _T]* -- A Macro object that wraps the original function with IR generation capabilities.
+               The returned Macro preserves the original function's signature (parameters _P and
+               return type _T) while adding metaprogramming capabilities.
+             * *Example*
+             * *--------* -- >>> @macro
+               ... def my_macro(x: T.int32) -> T.int32:
+               ...    return x ** 2
+               >>> @prim_func
+               ... def my_func(A: T.Tensor((10,), T.int32), B: T.Tensor((10,), T.int32)):
+               ...    with T.Kernel(1) as _:
+               ...        for i in T.serial(10):
+               ...            B[i] = my_macro(A[i])
+
+   .. seealso::
+
+      :py:obj:`Macro`
+          The class that wraps macro functions
+
+      :py:obj:`mutate`
+          The function that transforms Python code into IR generators
+
+
+.. py:function:: get_type_hints(func)
+
+.. py:function:: const(name, dtype = 'int32')
+
+   Declare constexpr variables for dynamic tensor dimensions (eager mode only).
+
+   In eager mode, use T.const() to declare shape dimensions that will be
+   inferred from actual tensor arguments at runtime.
+
+   Example::
+
+       @tilelang.jit
+       def kernel(A, B):
+           M, N = T.const("M, N")
+           A: T.Tensor[[M, N], T.float32]
+           ...
+
+
+.. py:class:: TirTemplate
+
+   Bases: :py:obj:`Generic`\ [\ :py:obj:`_P`\ , :py:obj:`_T`\ ]
+
+
+   Template for generating TIR PrimFunc with dynamic shape substitution.
+
+   For lazy-style functions, the PrimFunc is used directly without substitution.
+   For eager-style functions, constexpr variables are substituted based on
+   actual tensor shapes at runtime.
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: prim_func
+      :type:  PrimFunc[_P, _T]
+
+
+   .. py:attribute:: matcher
+      :type:  dict[tvm.tir.expr.Var, tuple[tvm.tir.Var, str, int, str]] | None
+      :value: None
+
+
+
+   .. py:attribute:: constexprs
+      :type:  set[tvm.tir.expr.Var]
+      :value: None
+
+
+
+   .. py:attribute:: is_lazy_style
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: ir_gen
+      :type:  tilelang.language.eager.ast.IRGenerator[_P, _T] | None
+      :value: None
+
+
+
+   .. py:method:: create(name, prim_func, constexpr, ir_gen = None)
+      :classmethod:
+
+
+
+   .. py:method:: from_lazy_style(name, prim_func)
+      :classmethod:
+
+
+      Create template from lazy-style function that returns PrimFunc directly.
+
+
+
+   .. py:method:: get_tir(tensor_args, given_tensor_args, kwargs)
+
+
+.. py:class:: JITFunc
+
+   Bases: :py:obj:`Generic`\ [\ :py:obj:`_P`\ , :py:obj:`_T`\ ]
+
+
+   Internal wrapper for JIT-compiled functions.
+
+   This class handles both lazy and eager execution styles:
+
+   - **lazy style**: Function explicitly returns a PrimFunc. The original function
+     is called directly to obtain the TIR.
+
+   - **eager style**: Function uses the DSL builder pattern with tensor type
+     annotations. The TIR is constructed by tracing the function body through
+     the Builder.
+
+   The style is determined by `_is_lazy_style()` which checks if calling the
+   original function returns a PrimFunc directly.
+
+
+   .. py:attribute:: orig_func
+      :type:  Callable[_P, _T]
+
+
+   .. py:attribute:: arg_names
+      :type:  list[str]
+
+
+   .. py:attribute:: tensor_args
+      :type:  dict[str, tvm.tir.Buffer | tvm.tir.expr.Var]
+
+
+   .. py:attribute:: tensor_args_defaults
+      :type:  dict[str, Any]
+
+
+   .. py:attribute:: ir_gen
+      :type:  tilelang.language.eager.ast.IRGenerator[_P, _T]
+
+
+   .. py:attribute:: mode
+      :type:  Literal['auto', 'lazy', 'eager']
+      :value: 'auto'
+
+
+
+   .. py:method:: __post_init__()
+
+
+   .. py:method:: parse_args(*args, **kwargs)
+
+      Parse arguments and return cache key and tensor args.
+
+
+
+   .. py:method:: get_tir(*args, **kwargs)
+
+
+   .. py:method:: __call__(*args, **kwargs)
+
+
+   .. py:method:: set_mode(mode)
+
+      Set the JIT execution mode (internal use only).
+
+
+
+   .. py:method:: __getattr__(name)
+
+
+.. py:function:: substitute_primfunc(prim_func, vmap)
+
+.. py:function:: prim_func(func = None, *, eager_jit = False)
+

@@ -1,0 +1,22 @@
+tilelang.jit.adapter.torch.kernel_cache
+=======================================
+
+.. py:module:: tilelang.jit.adapter.torch.kernel_cache
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.jit.adapter.torch.kernel_cache.TorchKernelCache
+
+
+Module Contents
+---------------
+
+.. py:class:: TorchKernelCache
+
+   Bases: :py:obj:`tilelang.cache.kernel_cache.KernelCache`
+
+
