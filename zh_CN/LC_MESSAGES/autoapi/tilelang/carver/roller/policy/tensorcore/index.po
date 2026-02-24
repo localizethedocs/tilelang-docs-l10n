@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:2
+msgid "tilelang.carver.roller.policy.tensorcore"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:8
+msgid "Policy for tensorcore schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:19:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.carver.roller.policy.tensorcore.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:21
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`TensorCorePolicy <tilelang.carver.roller.policy.tensorcore."
+"TensorCorePolicy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:27:<autosummary>:1
+msgid "Default Policy for fastdlight, a heuristic plan that tries to"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:35
+msgid "Bases: :py:obj:`tilelang.carver.roller.policy.default.DefaultPolicy`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:38
+msgid ""
+"Default Policy for fastdlight, a heuristic plan that tries to minimize "
+"memory traffic and maximize parallelism.for BitBLAS Schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:68
+msgid ""
+"Infers the shared memory usage of a node given a TileDict configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:70
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:113
+msgid "The TileDict object containing the tile configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:72
+msgid "The node for which to infer the shared memory usage."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:75
+msgid "The estimated amount of shared memory used by the node."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:82
+msgid ""
+"Calculates reduction step candidates for each reduction axis in a "
+"PrimFuncNode. General idea : use factor first, since it does not require "
+"extra boundary check. for large prime number, which is rare case, use power "
+"of 2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:84
+msgid ""
+"The node for which to calculate reduction step candidates. It contains "
+"reduction axes (raxis) with their domains (dom.extent)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:88
+msgid ""
+"A dictionary mapping axis variable names to lists of step candidates. For "
+"each axis in the node, this function calculates possible step sizes. For "
+"axes with a large prime domain, it uses powers of 2 as step candidates; for "
+"others, it uses all factors of the domain."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:97
+msgid ""
+"Checks if the tile shapes in the TileDict are valid for the nodes in this "
+"context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:99
+msgid ""
+"Parameters: - td (TileDict): The TileDict object containing tile shapes and "
+"other configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:102
+msgid "Returns: - bool: True if all tile shapes are valid, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:109
+msgid ""
+"Computes the stride map for a given node based on the TileDict configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:111
+msgid "The node for which to compute the stride map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:116
+msgid ""
+"A tuple of dictionaries containing the output strides and tensor strides."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:123
+msgid ""
+"Plans the rasterization for the given TileDict. This function is not "
+"implemented yet."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:125
+msgid "The TileDict object to plan rasterization for."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:128
+msgid "This function is not implemented yet."
+msgstr ""

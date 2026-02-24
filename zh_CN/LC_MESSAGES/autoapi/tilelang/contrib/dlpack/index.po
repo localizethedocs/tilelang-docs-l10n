@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:2
+msgid "tilelang.contrib.dlpack"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:8
+msgid "Wrapping functions to bridge frameworks with DLPack support to TVM"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`convert_func <tilelang.contrib.dlpack.convert_func>`\\ "
+"\\(tvm\\_func\\, tensor\\_type\\, to\\_dlpack\\_func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:25
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:19:<autosummary>:1
+msgid "Convert a tvm function into one that accepts a tensor from another"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:26
+msgid "framework, provided the other framework supports DLPACK"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:28
+msgid "Built tvm function operating on arrays"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:30
+msgid "Type of the tensors of the target framework"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/dlpack/index.rst:32
+msgid "Function to convert the source tensors to DLPACK"
+msgstr ""
