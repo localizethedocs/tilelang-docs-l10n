@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:2
+msgid "tilelang.contrib.cutedsl.atomic"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:8
+msgid "Atomic operations for CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:10
+msgid ""
+"This module provides implementations of atomic operations using NVVM and "
+"LLVM dialects."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:15
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicAdd <tilelang.contrib.cutedsl.atomic.AtomicAdd>`\\ \\(ptr\\, "
+"value\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:36
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic addition on a pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicAddRet <tilelang.contrib.cutedsl.atomic.AtomicAddRet>`\\ "
+"\\(ptr\\, value\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:44
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic addition and return the previous value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicAddx2 <tilelang.contrib.cutedsl.atomic.AtomicAddx2>`\\ "
+"\\(dst\\_ptr\\, src\\_values\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:51
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Vectorized atomic add for 2 consecutive elements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicAddx4 <tilelang.contrib.cutedsl.atomic.AtomicAddx4>`\\ "
+"\\(dst\\_ptr\\, src\\_values\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:61
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Vectorized atomic add for 4 consecutive float32 elements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicMax <tilelang.contrib.cutedsl.atomic.AtomicMax>`\\ \\(ptr\\, "
+"value\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:71
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic maximum operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicMaxRet <tilelang.contrib.cutedsl.atomic.AtomicMaxRet>`\\ "
+"\\(ptr\\, value\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:79
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic maximum and return the previous value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicMin <tilelang.contrib.cutedsl.atomic.AtomicMin>`\\ \\(ptr\\, "
+"value\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:84
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic minimum operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicMinRet <tilelang.contrib.cutedsl.atomic.AtomicMinRet>`\\ "
+"\\(ptr\\, value\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:92
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic minimum and return the previous value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicLoad <tilelang.contrib.cutedsl.atomic.AtomicLoad>`\\ "
+"\\(ptr\\, memory\\_order\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:97
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic load with specified memory ordering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`AtomicStore <tilelang.contrib.cutedsl.atomic.AtomicStore>`\\ "
+"\\(ptr\\, value\\, memory\\_order\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:112
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
+msgid "Perform atomic store with specified memory ordering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:32
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:38
+msgid ""
+"Supports float16, float32, int32, and int64 types. Returns the old value "
+"before addition (atomicrmw semantics)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:46
+msgid ""
+"This is the same as AtomicAdd since nvvm.atomicrmw always returns old value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:53
+msgid ""
+"Uses PTX atom.add.v2.f32 for float32 or atom.add.noftz.v2.f16 for float16."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:55
+msgid "Pointer to destination (2 consecutive elements)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:56
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:66
+msgid "Source values - can be TensorSSA (loaded tensor) or Pointer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:63
+msgid ""
+"Uses PTX atom.global.add.v4.f32 for true vectorized atomic operation on "
+"SM90+."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:65
+msgid "Pointer to destination (4 consecutive float32 elements)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:73
+msgid ""
+"For integers, uses nvvm.atomicrmw with MAX. For floats, uses CAS loop since "
+"PTX doesn't have atomic max for float32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:86
+msgid ""
+"For integers, uses nvvm.atomicrmw with MIN. For floats, uses CAS loop since "
+"PTX doesn't have atomic min for float32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:99
+msgid "Pointer to load from"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:100
+msgid "TileLang memory order ID (0=relaxed, 2=acquire, 5=seq_cst, etc.)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:102
+msgid "The loaded value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:104
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:118
+msgid "PTX mapping (per NVIDIA ABI):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:105
+msgid ""
+"relaxed: ld.relaxed.<scope> acquire: ld.acquire.<scope> seq_cst: fence.sc."
+"<scope>; ld.relaxed.<scope>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:114
+msgid "Pointer to store to"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:115
+msgid "Value to store"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:116
+msgid "TileLang memory order ID (0=relaxed, 3=release, 5=seq_cst, etc.)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:119
+msgid ""
+"relaxed: st.relaxed.<scope> release: st.release.<scope> seq_cst: fence.sc."
+"<scope>; st.relaxed.<scope>"
+msgstr ""

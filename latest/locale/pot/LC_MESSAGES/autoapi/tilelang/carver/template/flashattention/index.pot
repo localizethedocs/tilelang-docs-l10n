@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,6 @@ msgid ""
 "FlashAttentionTemplate>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:14:<autosummary>:1
-msgid "Base class template for hardware-aware configurations."
-msgstr ""
-
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:16
 msgid "Module Contents"
 msgstr ""
@@ -43,14 +39,7 @@ msgstr ""
 msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:23
-msgid ""
-"Base class template for hardware-aware configurations. This serves as an "
-"abstract base class (ABC) that defines the structure for subclasses "
-"implementing hardware-specific optimizations."
-msgstr ""
-
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:84
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:79
 msgid "Retrieves optimized hardware-aware configurations."
 msgstr ""
 
@@ -58,11 +47,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:86
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:81
 msgid "The target hardware architecture."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:88
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:83
 msgid "Number of top configurations to consider."
 msgstr ""
 
@@ -70,7 +59,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:91
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:86
 msgid "A list of optimization hints for hardware acceleration."
 msgstr ""
 
@@ -78,11 +67,11 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:98
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:93
 msgid "Defines and initializes the matrix multiplication computation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:100
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:95
 msgid ""
 "This method sets up placeholders for input matrices, computes the matrix "
 "multiplication using TVM's compute API, and optionally applies bias and type "
@@ -93,30 +82,30 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:104
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:99
 msgid "If M, N, or K are not positive integers."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:110
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:105
 msgid "Returns the template parameters as a dictionary."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:112
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:107
 msgid "Dictionary containing template parameter values."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:119
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:114
 msgid "Returns the class attributes in dictionary form."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:121
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:116
 msgid "Dictionary of class attributes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:127
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:122
 msgid "Returns a string representation of the class instance."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:129
+#: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:124
 msgid "A formatted string representation of the class."
 msgstr ""

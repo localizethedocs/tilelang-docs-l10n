@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,12 @@ msgstr ""
 #: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
 msgid ""
 ":py:obj:`host_codegen <tilelang.engine.lower.host_codegen>`\\ "
-"\\(host\\_mod\\, target\\_host\\)"
+"\\(host\\_mod\\, target\\_host\\[\\, target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:61
+#: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
+msgid "Generate host-side code from the lowered IR module."
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/lower/index.rst:32:<autosummary>:1
@@ -135,7 +140,22 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
+#: ../../../autoapi/tilelang/engine/lower/index.rst:63
+msgid "The host-side IR module to compile."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:65
+msgid "The host compilation target (e.g. \"llvm\" or \"c\")."
+msgstr ""
+
 #: ../../../autoapi/tilelang/engine/lower/index.rst:67
+msgid ""
+"The device target.  When the device target is Metal, the pass "
+"MarkHostMetalContext is applied so that the generated host code contains the "
+"Metal/MPS synchronisation logic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:79
 msgid ""
 "enable_host_codegen: whether to enable host codegen, default is False, as we "
 "have our own host codegen implementation in jit. enable_device_compile: "

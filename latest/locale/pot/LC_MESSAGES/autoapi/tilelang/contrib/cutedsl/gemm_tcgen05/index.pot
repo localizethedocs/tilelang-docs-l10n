@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:2
+msgid "tilelang.contrib.cutedsl.gemm_tcgen05"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:8
+msgid "tcgen05 (SM100/Blackwell) MMA support for CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:10
+msgid "Provides:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:11
+msgid "Tcgen05SmemDescriptor: 64-bit SMEM descriptor for tcgen05 MMA"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:12
+msgid ""
+"initialize_tcgen05_descriptor: bitfield packing matching common.h layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:13
+msgid "tcgen05mma_ss / tcgen05mma_ws_ss / tcgen05mma_ts: MMA PTX inline asm"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:14
+msgid "tcgen05_mma_arrive: mbarrier arrive for MMA commit"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:15
+msgid "tmem_allocate / tmem_deallocate: TMEM allocation/deallocation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:20
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`Tcgen05SmemDescriptor <tilelang.contrib.cutedsl.gemm_tcgen05."
+"Tcgen05SmemDescriptor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:50
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:26:<autosummary>:1
+msgid "64-bit shared-memory descriptor for tcgen05 MMA (Blackwell)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`initialize_tcgen05_descriptor <tilelang.contrib.cutedsl."
+"gemm_tcgen05.initialize_tcgen05_descriptor>`\\ \\(desc\\, "
+"start\\_address\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:70
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid "Pack the tcgen05 SMEM descriptor bitfields."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05mma_ss <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05mma_ss>`\\ \\(kind\\_dtype\\, desc\\_a\\, desc\\_b\\, tmem\\_c\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:86
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"tcgen05.mma.cta_group::1.kind::{kind} [tmem_c], desc_a, desc_b, desc_val, "
+"{masks}, p;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05mma_ws_ss <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05mma_ws_ss>`\\ \\(kind\\_dtype\\, desc\\_a\\, desc\\_b\\, "
+"tmem\\_c\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:95
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"tcgen05.mma.ws.cta_group::1.kind::{kind} [tmem_c], desc_a, desc_b, desc_val, "
+"p, 0;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05mma_ts <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05mma_ts>`\\ \\(kind\\_dtype\\, tmem\\_a\\, desc\\_b\\, tmem\\_c\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:100
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"tcgen05.mma.cta_group::1.kind::{kind} [tmem_c], [tmem_a], desc_b, desc_val, "
+"{masks}, p;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_mma_arrive <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05_mma_arrive>`\\ \\(mbar\\_ptr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:105
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"tcgen05.commit.cta_group::1.mbarrier::arrive::one.shared::cluster.b64 [mbar];"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tmem_allocate <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tmem_allocate>`\\ \\(tmem\\_buffer\\_ptr\\, num\\_cols\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:112
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [dst], num_cols;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tmem_deallocate <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tmem_deallocate>`\\ \\(tmem\\_ptr\\, num\\_cols\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:120
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid "tcgen05.dealloc.cta_group::1.sync.aligned.b32 tmem_addr, num_cols;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_ld_32dp32bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05_ld_32dp32bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:128
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid "Load N uint32 values from TMEM using tcgen05.ld.sync.aligned.32x32b."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_ld_32dp64bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05_ld_32dp64bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:140
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"Load from TMEM using 32dp64b pattern (2x 16x64b for lower/upper 16 rows)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_ld_32dp128bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05_ld_32dp128bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:148
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"Load from TMEM using 32dp128b pattern (2x 16x128b for lower/upper 16 rows)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_ld_32dp256bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
+"tcgen05_ld_32dp256bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:157
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
+msgid ""
+"Load from TMEM using 32dp256b pattern (2x 16x256b for lower/upper 16 rows)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:46
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:52
+msgid ""
+"Mirrors tl::Tcgen05SMemDescriptor from common.h. Stored as two Int32 "
+"registers; recast to Int64 for the PTX operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:64
+msgid "Add byte offset.  Like C++ operator+, shifts offset >> 4."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:72
+msgid "Matches the C++ ``initialize_tcgen05_descriptor`` in common.h:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:73
+msgid "Low 32 bits (reg32_[0]):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:74
+msgid ""
+"[0:14)   start_address >> 4 [16:30)  leading_byte_offset  (already >>4 from "
+"TIR)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:76
+msgid "High 32 bits (reg32_[1]):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:77
+msgid ""
+"[0:14)   stride_byte_offset   (already >>4 from TIR) [14:16)  version = 1 "
+"[17:20)  base_offset & 0x7 [20:21)  lbo_mode (leading_is_absolute ? 1 : 0) "
+"[29:32)  layout_type (swizzle_mode & 0x7)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:88
+msgid ""
+"Guarded by elect_one_sync — only one thread in the warp issues the MMA. The "
+"TIR codegen also wraps calls in ``if (threadIdx.x >> 5) == 0`` which selects "
+"warp 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:107
+msgid ""
+"Guarded by elect_one_sync — only one thread in the warp issues the commit."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:114
+msgid ""
+"tmem_buffer_ptr: SMEM pointer that receives the allocated TMEM address. "
+"num_cols: number of columns to allocate."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:122
+msgid ""
+"tmem_ptr: SMEM pointer to the uint32 holding the TMEM address. num_cols: "
+"number of columns to deallocate."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:130
+msgid ""
+"Matches tl::tcgen05_ld_32dp32bNx from copy_sm100.h. N: number of 32-bit "
+"elements to load (x-count, compile-time constant). pack16: if True, use 16-"
+"bit packing (not implemented yet). tmem_start_col: TMEM base column address. "
+"tmem_col_offset: additional column offset. dst_ptr: destination pointer "
+"(register memory)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:142
+msgid ""
+"Matches tl::tmem_ld_32dp64bNx from tcgen_05_ld.h. N: x-count for 16x64b "
+"instructions. Total output: 2*N i32 regs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:150
+msgid ""
+"Matches tl::tmem_ld_32dp128bNx from tcgen_05_ld.h. N: x-count for 16x128b "
+"instructions. Total output: 4*N i32 regs. 16x128b.xN produces 2*N i32 regs "
+"per half."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:159
+msgid ""
+"Matches tl::tmem_ld_32dp256bNx from tcgen_05_ld.h. N: x-count for 16x256b "
+"instructions. Total output: 8*N i32 regs. 16x256b.xN produces 4*N i32 regs "
+"per half."
+msgstr ""

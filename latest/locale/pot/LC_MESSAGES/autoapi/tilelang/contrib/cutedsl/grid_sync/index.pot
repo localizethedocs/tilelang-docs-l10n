@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:2
+msgid "tilelang.contrib.cutedsl.grid_sync"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:8
+msgid "Grid-level synchronization for CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:10
+msgid ""
+"Implements a software grid barrier using atomic operations on a device-"
+"global counter declared via llvm.mlir.global. Requires cooperative kernel "
+"launch (cuLaunchCooperativeKernel) to guarantee all thread blocks are "
+"resident."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:14
+msgid ""
+"The barrier: 1. __syncthreads() within each block 2. Thread 0 atomically "
+"increments global counter, spin-waits until all blocks arrive 3. Thread 0 "
+"resets counter 4. __syncthreads() within each block"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`sync_grid <tilelang.contrib.cutedsl.grid_sync.sync_grid>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:35
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:29:<autosummary>:1
+msgid "Synchronize all thread blocks in a grid."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:31
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:37
+msgid ""
+"NOTE: This requires the kernel to be launched with cuLaunchCooperativeKernel "
+"to guarantee all blocks are resident simultaneously. The CuTeDSL wrapper "
+"handles this automatically when the kernel uses sync_grid()."
+msgstr ""

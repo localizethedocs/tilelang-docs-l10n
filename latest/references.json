@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-02-16 12:28:18 +0800",
-      "hash" : "110ef308a6635c6eb2243f743f1354510a564b0d",
-      "title" : "[AMD] Fix bugs about AMD FA kernel (#1701)"
+      "date" : "2026-02-23 01:22:47 +0800",
+      "hash" : "391cf5b6b92167586d49a657cafafbdd55ad96b7",
+      "title" : "[Enhancement] GEMM V2 on SM90/SM100 CuTeDSL backend (#1855)"
     }
   },
   "type" : "branch",

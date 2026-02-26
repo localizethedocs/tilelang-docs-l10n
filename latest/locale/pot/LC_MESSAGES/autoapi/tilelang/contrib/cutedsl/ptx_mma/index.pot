@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-23 08:41+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:2
+msgid "tilelang.contrib.cutedsl.ptx_mma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:8
+msgid ""
+"PTX MMA operations for CuTeDSL backend. Based on tl_templates/cuda/"
+"instruction/mma.h"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:11
+msgid ""
+"These functions provide wrappers around PTX mma.sync instructions for "
+"performing matrix multiply-accumulate operations using Tensor Cores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:14
+msgid "Uses inline PTX assembly for direct MMA instruction generation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:16
+msgid ""
+"Supported dense configurations (from mma.h): - FP16: m16n8k16 -> f16/f32 "
+"accumulator - BF16: m16n8k16 -> f32 accumulator - INT8: m16n8k32 -> i32 "
+"accumulator - UINT8: m16n8k32 -> i32 accumulator - INT4: m16n8k32 -> i32 "
+"accumulator (mapped to m16n8k64 in PTX) - UINT4: m16n8k32 -> i32 accumulator "
+"- FP8 (e4m3/e5m2): m16n8k32 -> f16/f32 accumulator - TF32: m16n8k4, m16n8k8 -"
+"> f32 accumulator - FP64: m8n8k4 -> f64 accumulator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:27
+msgid ""
+"Sparse (mma.sp) variants mirror the dense ones with halved A registers, an "
+"extra metadata register, and a sparse_selector literal."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:33
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k16_f16_f16_f32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k16_f16_f16_f32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k16_f16_f16_f16 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k16_f16_f16_f16>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k16_bf16_bf16_f32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k16_bf16_bf16_f32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_s8_s8_s32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_s8_s8_s32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_u8_u8_s32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_u8_u8_s32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_s4_s4_s32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_s4_s4_s32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_u4_u4_s32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_u4_u4_s32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k4_tf32_tf32_f32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k4_tf32_tf32_f32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k8_tf32_tf32_f32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k8_tf32_tf32_f32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m8n8k4_f64_f64_f64 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m8n8k4_f64_f64_f64>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_e4m3_e4m3_f32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_e4m3_e4m3_f32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_e4m3_e4m3_f16 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_e4m3_e4m3_f16>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_m16n8k32_e5m2_e5m2_f32 <tilelang.contrib.cutedsl.ptx_mma."
+"ptx_mma_m16n8k32_e5m2_e5m2_f32>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:53
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:60:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma <tilelang.contrib.cutedsl.ptx_mma.ptx_mma>`\\ \\(shape\\, "
+"a\\_layout\\, b\\_layout\\, a\\_dtype\\, b\\_dtype\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:92
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:60:<autosummary>:1
+msgid "Generic PTX MMA dispatcher."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:60:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_sp <tilelang.contrib.cutedsl.ptx_mma.ptx_mma_sp>`\\ "
+"\\(shape\\, a\\_layout\\, b\\_layout\\, a\\_dtype\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:100
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:60:<autosummary>:1
+msgid "Generic PTX sparse MMA dispatcher."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:62
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:94
+msgid ""
+"Dispatches to the appropriate specialized MMA function based on shape and "
+"data types."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:102
+msgid ""
+"Dispatches to the appropriate specialized sparse MMA function based on shape "
+"and data types."
+msgstr ""
