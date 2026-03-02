@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,11 @@ msgstr ""
 msgid ":py:obj:`GemmMFMA <tilelang.tileop.gemm.gemm_mfma.GemmMFMA>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:23
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:14:<autosummary>:1
+msgid "Base class for GEMM tile operators."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:16
 msgid "Module Contents"
 msgstr ""
@@ -37,10 +42,35 @@ msgstr ""
 msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:25
+msgid ""
+"Classifies the GEMM variant by the memory scopes of operands A and B (SS, "
+"SR, RS, TS, RR) and provides common property accessors for the underlying "
+"``gemm_node`` IR node."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:0
 msgid "Parameters"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:38
+msgid "Return True if both A and B are in shared memory (SS variant)."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:0
 msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:44
+msgid ""
+"Return True if A is in shared memory and B is in registers (SR variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:50
+msgid ""
+"Return True if A is in registers and B is in shared memory (RS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_mfma/index.rst:56
+msgid "Return True if both A and B are in registers (RR variant)."
 msgstr ""

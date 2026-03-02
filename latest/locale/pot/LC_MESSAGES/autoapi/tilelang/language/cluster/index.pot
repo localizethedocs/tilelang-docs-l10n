@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:2
+msgid "tilelang.language.cluster"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`cluster_arrive_relaxed <tilelang.language.cluster."
+"cluster_arrive_relaxed>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid "Issue barrier.cluster.arrive.relaxed.aligned."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`cluster_arrive <tilelang.language.cluster.cluster_arrive>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:29
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid "Issue barrier.cluster.arrive.aligned."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`cluster_wait <tilelang.language.cluster.cluster_wait>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:34
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid "Issue barrier.cluster.wait.aligned."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`cluster_sync <tilelang.language.cluster.cluster_sync>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:39
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid "Issue cluster barrier arrive + wait (full synchronization)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`block_rank_in_cluster <tilelang.language.cluster."
+"block_rank_in_cluster>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:44
+#: ../../../autoapi/tilelang/language/cluster/index.rst:18:<autosummary>:1
+msgid ""
+"Return the 1-D rank of the calling CTA within its cluster (%"
+"%cluster_ctarank)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:20
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:0
+msgid "Return type"
+msgstr ""

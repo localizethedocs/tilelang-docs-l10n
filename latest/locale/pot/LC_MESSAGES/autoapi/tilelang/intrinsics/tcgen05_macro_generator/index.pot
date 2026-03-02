@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:80
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:23:<autosummary>:1
-msgid "To eliminate Python syntax within TIR Macro."
+msgid "Intrinsic emitter for Blackwell (SM100) TCGEN5MMA instructions."
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:25
@@ -73,15 +73,77 @@ msgid ""
 "TensorCoreIntrinEmitter`"
 msgstr ""
 
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:82
+msgid ""
+"Generates TIR macros that lower to ``tcgen05.mma`` PTX instructions for both "
+"the SS (Shared-Shared) and TS (TensorMemory-Shared) GEMM variants. Also "
+"provides layout helpers for tensor-memory (TMEM) buffers."
+msgstr ""
+
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:109
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:105
+msgid ""
+"Emit a TCGEN5MMA operation, dispatching to SS or TS variant based on A's "
+"memory scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:107
+msgid ""
+"If *A_buf* resides in tensor memory (``shared.tmem``), the TS variant is "
+"emitted; otherwise the SS variant is used (both A and B from shared memory)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:110
+msgid "Operand A — either in shared memory (SS) or tensor memory (TS)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:112
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:134
+msgid "Operand B in shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:114
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:136
+msgid "Accumulator buffer in tensor memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:116
+msgid "Memory barrier used for MMA completion signalling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:118
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:140
+msgid "Whether to zero the accumulator before the first MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:125
+msgid "Emit the TS (TensorMemory-Shared) variant of TCGEN5MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:127
+msgid ""
+"Reads operand A directly from tensor memory (TMEM) and operand B from shared "
+"memory via a descriptor.  The TMEM column offset for A is computed assuming "
+"packed storage (e.g. two ``bfloat16`` values per ``uint32`` column) to match "
+"the output of ``tcgen05.st``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:132
+msgid "Operand A residing in tensor memory (``shared.tmem``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:138
+msgid "Memory barrier for MMA completion signalling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:152
 msgid "Create the TCGEN5 tensor-memory layout used to store MMA accumulators."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:111
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:154
 msgid "The local buffer representing tensormemory of a mma's output"
 msgstr ""
 
@@ -89,7 +151,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:114
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:157
 msgid ""
 "Layout object describing how logical (i, j) coordinates map to the swizzled "
 "tensor-memory offsets required by TCGEN5MMA."
@@ -99,6 +161,16 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:118
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:161
 msgid "If `tmem_buf` is not detected to be a tensor-memory buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:167
+msgid ""
+"Query the FFI for TCGEN5MMA atom metadata (atom_m, atom_n, atom_k, "
+"enable_ws, enable_2cta)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:173
+msgid "Build the 64-bit instruction descriptor for a ``tcgen05.mma`` PTX call."
 msgstr ""
