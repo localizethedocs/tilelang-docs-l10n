@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:2
+msgid "tilelang.language.fill_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:8
+msgid "Fill operations exposed on the TileLang language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
+msgid ":py:obj:`fill <tilelang.language.fill_op.fill>`\\ \\(buffer\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:26
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
+msgid "Fill a buffer or buffer region with a specified value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
+msgid ":py:obj:`clear <tilelang.language.fill_op.clear>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:36
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
+msgid "Clear a buffer by filling it with zeros."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:28
+msgid "Either a TVM buffer or buffer region to be filled"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:29
+msgid "The value to fill the buffer with"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:31
+msgid "A TVM intrinsic call that performs the fill operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:38
+msgid "Either a TVM buffer or a variable that contains a buffer region"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:40
+msgid "A fill operation that sets the buffer contents to zero"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:42
+msgid "If the buffer variable contains an invalid buffer region"
+msgstr ""
