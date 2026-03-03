@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:2
+msgid "tilelang.utils.target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:14:<autosummary>:1
+msgid ":py:obj:`SUPPORTED_TARGETS <tilelang.utils.target.SUPPORTED_TARGETS>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`describe_supported_targets <tilelang.utils.target."
+"describe_supported_targets>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:52
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid "Return a mapping of supported target names to usage descriptions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`check_cuda_availability <tilelang.utils.target."
+"check_cuda_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid "Check if CUDA is available on the system by locating the CUDA path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`check_hip_availability <tilelang.utils.target."
+"check_hip_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+"Check if HIP (ROCm) is available on the system by locating the ROCm path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`check_metal_availability <tilelang.utils.target."
+"check_metal_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`determine_fp8_type <tilelang.utils.target.determine_fp8_type>`\\ "
+"\\(\\[fp8\\_format\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid "Select the correct FP8 dtype string for the current platform."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`determine_torch_fp8_type <tilelang.utils.target."
+"determine_torch_fp8_type>`\\ \\(\\[fp8\\_format\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`normalize_cutedsl_target <tilelang.utils.target."
+"normalize_cutedsl_target>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`determine_target <tilelang.utils.target.determine_target>`\\ "
+"\\(\\[target\\, return\\_object\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:84
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+"Determine the appropriate target for compilation (CUDA, HIP, or manual "
+"selection)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_cuda <tilelang.utils.target.target_is_cuda>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_hip <tilelang.utils.target.target_is_hip>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_metal <tilelang.utils.target.target_is_metal>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_volta <tilelang.utils.target.target_is_volta>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_turing <tilelang.utils.target.target_is_turing>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_ampere <tilelang.utils.target.target_is_ampere>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_hopper <tilelang.utils.target.target_is_hopper>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_sm120 <tilelang.utils.target.target_is_sm120>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_is_cdna <tilelang.utils.target.target_is_cdna>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_has_async_copy <tilelang.utils.target."
+"target_has_async_copy>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_has_ldmatrix <tilelang.utils.target.target_has_ldmatrix>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_has_stmatrix <tilelang.utils.target.target_has_stmatrix>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_has_bulk_copy <tilelang.utils.target."
+"target_has_bulk_copy>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`target_get_warp_size <tilelang.utils.target."
+"target_get_warp_size>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:45
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:57
+msgid ""
+"Check if CUDA is available on the system by locating the CUDA path. :"
+"returns: True if CUDA is available, False otherwise. :rtype: bool"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:64
+msgid ""
+"Check if HIP (ROCm) is available on the system by locating the ROCm path. :"
+"returns: True if HIP is available, False otherwise. :rtype: bool"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:73
+msgid ""
+"Select the correct FP8 dtype string for the current platform. - CUDA "
+"defaults to FP8 E4M3FN / E5M2. - ROCm uses FNUZ except gfx950 (OCP), which "
+"prefers non-FNUZ when available."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:86
+msgid ""
+"User-specified target. - If \"auto\", the system will automatically detect "
+"whether CUDA or HIP is available. - If a string or Target, it is directly "
+"validated."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:91
+msgid "The selected target (\"cuda\", \"hip\", or a valid Target object)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:94
+msgid "If no CUDA or HIP is available and the target is \"auto\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/target/index.rst:95
+msgid "If the target is invalid."
+msgstr ""

@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:2
+msgid "tilelang.layout.fragment"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:8
+msgid "Wrapping Layouts."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:13
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:19:<autosummary>:1
+msgid ":py:obj:`Fragment <tilelang.layout.fragment.Fragment>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:19:<autosummary>:1
+msgid ""
+"A Fragment layout object that encapsulates iteration variables "
+"(forward_vars),"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:25
+msgid "Bases: :py:obj:`tilelang.layout.Layout`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:28
+msgid ""
+"A Fragment layout object that encapsulates iteration variables "
+"(forward_vars), thread iteration variables (forward_thread), and index "
+"transformations (forward_index). This class supports replication "
+"(thread_replicate) and index mapping for fine-grained control over multi-"
+"dimensional data layouts."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:36
+msgid ""
+"Returns the forward_thread (IterVar) of the Fragment, representing the "
+"thread dimension or mapping."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:42
+msgid ""
+"Returns the extent (range size) of the thread dimension. If the Fragment was "
+"replicated over threads, this will reflect the number of threads."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:50
+msgid ""
+"Returns a new Fragment that repeats the iteration space a given number of "
+"times."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:52
+msgid "Number of times to repeat."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:54
+msgid "If set, the repeat will happen on the thread dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:56
+msgid "If set to True, repeat on lower dimensions first."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:59
+msgid "A new Fragment with the repeated iteration space."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:66
+msgid "Replicate the Fragment across a new thread dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:68
+msgid "The replication factor or number of threads."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:71
+msgid "A new Fragment with an additional replicate dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:78
+msgid ""
+"Condense or fold the replicate variable into the existing iteration space. "
+"This operation may be used to reduce dimensionality if the replicate "
+"variable is no longer needed as a separate dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:82
+msgid "A new Fragment where the replicate variable is condensed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:89
+msgid "Get the thread mapping expression for a given set of argument indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:91
+msgid "Indices for which to compute the thread mapping."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:94
+msgid "The computed thread expression for the provided indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:101
+msgid "String representation of the Fragment for debugging and logging."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:103
+msgid "A string showing the thread dimension and the index dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/fragment/index.rst:110
+msgid "Check if the current fragment is equal to another fragment."
+msgstr ""

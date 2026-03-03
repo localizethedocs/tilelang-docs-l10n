@@ -1,0 +1,542 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:2
+msgid "tilelang.jit.adapter.nvrtc.wrapper"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:8
+msgid "NVRTC Source Wrapper for TileLang."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:10
+msgid ""
+"Generates Python runtime code for launching CUDA kernels compiled via NVRTC."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:12
+msgid ""
+"Why this exists: - NVRTC compiles kernels at runtime, needs Python launch "
+"code (not C++) - TMA descriptors must be initialized once per unique buffer, "
+"not per kernel - L2 cache policies require explicit CUDA Driver API setup/"
+"teardown"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:17
+msgid ""
+"Key design: - Two-pass generation: collect all descriptors first, then "
+"generate launches - Dict-based deduplication ensures TMA descriptors created "
+"only once - Generates pure Python using cuda.bindings.driver for zero C++ "
+"dependency"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:25
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_HOST_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
+"PREDEF_HOST_FUNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`TMA_DESC_INIT_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
+"TMA_DESC_INIT_FUNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`TMA_IM2COL_DESC_INIT_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
+"TMA_IM2COL_DESC_INIT_FUNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE_PY <tilelang.jit.adapter.nvrtc."
+"wrapper.L2_PERSISTENT_MAP_CREATE_HANDLE_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
+"L2_PERSISTENT_MAP_INIT_FUNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE_PY <tilelang.jit.adapter.nvrtc."
+"wrapper.L2_PERSISTENT_MAP_RESET_HANDLE_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`PDL_SYNC_PY <tilelang.jit.adapter.nvrtc.wrapper.PDL_SYNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`KERNEL_LAUNCH_FUNC_PY <tilelang.jit.adapter.nvrtc.wrapper."
+"KERNEL_LAUNCH_FUNC_PY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:40
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`TLNVRTCSourceWrapper <tilelang.jit.adapter.nvrtc.wrapper."
+"TLNVRTCSourceWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:361
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:46:<autosummary>:1
+msgid "NVRTC backend wrapper: generates Python kernel launch code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:48
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:53
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:97
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:143
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:195
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:228
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:260
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:290
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:315
+msgid "<details><summary>Show Value</summary>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:57
+msgid ""
+"\"\"\"\n"
+"from cuda.bindings.driver import (\n"
+"    CUtensorMapDataType,\n"
+"    CUtensorMapInterleave,\n"
+"    CUtensorMapSwizzle,\n"
+"    CUtensorMapL2promotion,\n"
+"    CUtensorMapFloatOOBfill,\n"
+"    cuTensorMapEncodeTiled,\n"
+"    cuTensorMapEncodeIm2col,\n"
+"    CUresult,\n"
+"    cuKernelSetAttribute,\n"
+"    CUfunction_attribute,\n"
+"    CUdevice,\n"
+"    CUlaunchConfig,\n"
+"    cuLaunchKernelEx,\n"
+"    cuuint64_t,\n"
+"    cuuint32_t,\n"
+"    CUkernel,\n"
+"    CUlaunchAttribute,\n"
+"    CUlaunchAttributeID,\n"
+")\n"
+"import ctypes\n"
+"\n"
+"_function_names = {}\n"
+"\n"
+"def call({}):\n"
+"    {}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:88
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:134
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:186
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:219
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:251
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:281
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:306
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:350
+msgid "</details>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:101
+msgid ""
+"\"\"\"\n"
+"    {0}_type = CUtensorMapDataType({1})\n"
+"    {0}_tensorRank = {2}\n"
+"    {0}_globalAddress = {3}.data_ptr()\n"
+"    {0}_globalDim = [{4}]\n"
+"    {0}_globalStride = [{5}][1:]\n"
+"    {0}_boxDim = [{6}]\n"
+"    {0}_elementStrides = [{7}]\n"
+"    {0}_interleave = CUtensorMapInterleave({8})\n"
+"    {0}_swizzle = CUtensorMapSwizzle({9})\n"
+"    {0}_l2Promotion = CUtensorMapL2promotion({10})\n"
+"    {0}_oobFill = CUtensorMapFloatOOBfill({11})\n"
+"\n"
+"    res, {0} = cuTensorMapEncodeTiled(\n"
+"        {0}_type,\n"
+"        {0}_tensorRank,\n"
+"        {0}_globalAddress,\n"
+"        {0}_globalDim,\n"
+"        {0}_globalStride,\n"
+"        {0}_boxDim,\n"
+"        {0}_elementStrides,\n"
+"        {0}_interleave,\n"
+"        {0}_swizzle,\n"
+"        {0}_l2Promotion,\n"
+"        {0}_oobFill,\n"
+"    )\n"
+"\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to initialize the TMA descriptor {0}: "
+"{{res}}\")\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:147
+msgid ""
+"\"\"\"\n"
+"    {0}_type = CUtensorMapDataType({1})\n"
+"    {0}_tensorRank = {2}\n"
+"    {0}_globalAddress = {3}.data_ptr()\n"
+"    {0}_globalDim = [{4}]\n"
+"    {0}_globalStride = [{5}][1:]\n"
+"    {0}_elementStrides = [{6}]\n"
+"    {0}_lowerCorner = [{7}]\n"
+"    {0}_upperCorner = [{8}]\n"
+"    {0}_channelsPerPixel = {9}\n"
+"    {0}_pixelsPerColumn = {10}\n"
+"    {0}_interleave = CUtensorMapInterleave({11})\n"
+"    {0}_swizzle = CUtensorMapSwizzle({12})\n"
+"    {0}_l2Promotion = CUtensorMapL2promotion({13})\n"
+"    {0}_oobFill = CUtensorMapFloatOOBfill({14})\n"
+"\n"
+"    res, {0} = cuTensorMapEncodeIm2col(\n"
+"        {0}_type,\n"
+"        {0}_tensorRank,\n"
+"        {0}_globalAddress,\n"
+"        {0}_globalDim,\n"
+"        {0}_globalStride,\n"
+"        {0}_lowerCorner,\n"
+"        {0}_upperCorner,\n"
+"        {0}_channelsPerPixel,\n"
+"        {0}_pixelsPerColumn,\n"
+"        {0}_elementStrides,\n"
+"        {0}_interleave,\n"
+"        {0}_swizzle,\n"
+"        {0}_l2Promotion,\n"
+"        {0}_oobFill,\n"
+"    )\n"
+"\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to initialize the TMA descriptor {0}: "
+"{{res}}\")\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:199
+msgid ""
+"\"\"\"\n"
+"    from cuda.bindings.driver import (\n"
+"        CUstreamAttrValue,\n"
+"        CUstreamAttrID,\n"
+"        CUlimit,\n"
+"        CUaccessProperty,\n"
+"        cuCtxGetLimit,\n"
+"        cuCtxSetLimit,\n"
+"        cuStreamSetAttribute,\n"
+"        cuCtxResetPersistingL2Cache,\n"
+"    )\n"
+"\n"
+"    stream_attribute = CUstreamAttrValue()\n"
+"    res, init_persisting_l2_cache_size = cuCtxGetLimit(CUlimit."
+"CU_LIMIT_PERSISTING_L2_CACHE_SIZE)\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to get L2 cache size limit: {{res}}\")\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:232
+msgid ""
+"\"\"\"\n"
+"    stream_attribute.accessPolicyWindow.hitRatio = {1}\n"
+"    stream_attribute.accessPolicyWindow.hitProp = CUaccessProperty."
+"CU_ACCESS_PROPERTY_PERSISTING\n"
+"    stream_attribute.accessPolicyWindow.missProp = CUaccessProperty."
+"CU_ACCESS_PROPERTY_STREAMING\n"
+"\n"
+"    res = cuCtxSetLimit(CUlimit.CU_LIMIT_PERSISTING_L2_CACHE_SIZE, {2})[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to set L2 cache size limit: {{res}}\")\n"
+"\n"
+"    stream_attribute.accessPolicyWindow.base_ptr = {0}.data_ptr()\n"
+"    stream_attribute.accessPolicyWindow.num_bytes = {2}\n"
+"\n"
+"    res = cuStreamSetAttribute(stream, CUstreamAttrID."
+"CU_LAUNCH_ATTRIBUTE_ACCESS_POLICY_WINDOW, stream_attribute)[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to set stream L2 access policy: "
+"{{res}}\")\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:264
+msgid ""
+"\"\"\"\n"
+"    stream_attribute.accessPolicyWindow.num_bytes = 0\n"
+"    res = cuStreamSetAttribute(stream, CUstreamAttrID."
+"CU_LAUNCH_ATTRIBUTE_ACCESS_POLICY_WINDOW, stream_attribute)[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to reset stream L2 access policy: "
+"{{res}}\")\n"
+"\n"
+"    res = cuCtxResetPersistingL2Cache()[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to reset L2 cache: {{res}}\")\n"
+"\n"
+"    res = cuCtxSetLimit(CUlimit.CU_LIMIT_PERSISTING_L2_CACHE_SIZE, "
+"init_persisting_l2_cache_size)[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to restore L2 cache size limit: "
+"{{res}}\")\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:294
+msgid ""
+"\"\"\"\n"
+"    num_attrs = 1\n"
+"    attrs = [CUlaunchAttribute()]\n"
+"    attrs[0].id = CUlaunchAttributeID."
+"CU_LAUNCH_ATTRIBUTE_PROGRAMMATIC_STREAM_SERIALIZATION\n"
+"    attrs[0].value.programmaticStreamSerializationAllowed = 1\n"
+"\n"
+"    config.numAttrs = num_attrs\n"
+"    config.attrs = attrs\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:319
+msgid ""
+"\"\"\"\n"
+"    res = cuKernelSetAttribute(\n"
+"        CUfunction_attribute."
+"CU_FUNC_ATTRIBUTE_MAX_DYNAMIC_SHARED_SIZE_BYTES,\n"
+"        {7},\n"
+"        kernels[\"{0}\"],\n"
+"        CUdevice({10})\n"
+"    )[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to set max dynamic shared memory size "
+"to {7} for kernel {0}: {{res}}\")\n"
+"\n"
+"    config = CUlaunchConfig()\n"
+"    config.gridDimX = {1}\n"
+"    config.gridDimY = {2}\n"
+"    config.gridDimZ = {3}\n"
+"    config.blockDimX = {4}\n"
+"    config.blockDimY = {5}\n"
+"    config.blockDimZ = {6}\n"
+"    config.sharedMemBytes = {7}\n"
+"    config.hStream = stream\n"
+"    {11}\n"
+"\n"
+"    arg_values = {8}\n"
+"    arg_types = {9}\n"
+"\n"
+"    res = cuLaunchKernelEx(config, kernels[\"{0}\"], (arg_values, "
+"arg_types), 0)[0]\n"
+"    if res != CUresult.CUDA_SUCCESS:\n"
+"        raise RuntimeError(f\"Failed to launch kernel {0}: {{res}}\")\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:358
+msgid "Bases: :py:obj:`tilelang.jit.adapter.wrapper.TLCUDASourceWrapper`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:363
+msgid ""
+"Core responsibility: transform TVM IRModule into executable Python function "
+"that initializes resources (TMA descriptors, L2 cache) and launches kernels "
+"via CUDA Driver API."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:367
+msgid "Data flow:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:368
+msgid ""
+"IRModule → collect kernel metadata → deduplicate resources → generate Python "
+"code → executable function"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:371
+msgid "Why Python generation instead of C++:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:372
+msgid ""
+"NVRTC workflow requires runtime compilation, Python is the natural host. "
+"Using cuda.bindings.driver eliminates C++ wrapper complexity."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:378
+msgid "Override parent's host_func to return generated Python code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:383
+msgid "Generate Python dispatch function that launches multiple CUDA kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:385
+msgid "Why two-pass design:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:386
+msgid ""
+"Pass 1: Collect TMA descriptors from all kernels into shared dicts Pass 2: "
+"Generate code - descriptors first (deduplicated), then launches"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:389
+msgid ""
+"Single-pass would create duplicate descriptors for each kernel. Dict "
+"naturally deduplicates by descriptor name."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:392
+msgid "CUDA C++ source containing kernel declarations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:393
+msgid ""
+"Dict mapping kernel names to metadata (grid/block dims, params, shared "
+"memory size)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:396
+msgid ""
+"1. Initializes L2 cache policies (if needed) 2. Creates TMA descriptors once "
+"per unique buffer 3. Launches each kernel with cuLaunchKernelEx 4. Resets L2 "
+"cache policies (if needed)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:398
+msgid "Initializes L2 cache policies (if needed)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:399
+msgid "Creates TMA descriptors once per unique buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:400
+msgid "Launches each kernel with cuLaunchKernelEx"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:401
+msgid "Resets L2 cache policies (if needed)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:408
+msgid "Generate Python code to configure L2 cache persistence for a kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:410
+msgid ""
+"L2 persistence pins frequently-accessed data in L2 cache to reduce memory "
+"bandwidth. Requires explicit setup via CUDA stream attributes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:413
+msgid "Kernel name to check for L2 persistence config"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:415
+msgid ""
+"Python code that sets stream access policy window, or empty string if no L2 "
+"persistence configured for this kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:422
+msgid "Generate Python code to insert PDL synchronization for a given kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:428
+msgid "Generate Python code to initialize TMA descriptors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:430
+msgid ""
+"TMA (Tensor Memory Accelerator) descriptors are opaque CUDA objects that "
+"describe memory layout for async copies. Must be created on host before "
+"kernel launch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:434
+msgid "Maps descriptor variable names to buffer names"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:435
+msgid "Maps descriptor names to TVM variables"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:437
+msgid ""
+"Python code that calls cuTensorMapEncodeTiled/Im2col for each unique "
+"descriptor. Empty string if no TMA descriptors needed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:444
+msgid "Update library code and generate host dispatch function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:446
+msgid ""
+"Entry point for code generation. Walks the host IR to extract kernel call "
+"sites, matches them with device kernels, then generates Python dispatch code "
+"via create_dispatch_func()."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:450
+msgid "CUDA C++ source code containing compiled kernels"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:452
+msgid "sets self.host_func to generated Python dispatcher."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:459
+msgid "Return stream parameter spec for Python signature."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:461
+msgid ""
+"NVRTC backend uses raw int for stream handle (not cudaStream_t pointer). "
+"Default to 0 (NULL stream) for convenience."
+msgstr ""
