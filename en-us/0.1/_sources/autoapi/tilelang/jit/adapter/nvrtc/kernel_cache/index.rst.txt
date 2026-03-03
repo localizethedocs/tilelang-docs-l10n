@@ -1,0 +1,32 @@
+tilelang.jit.adapter.nvrtc.kernel_cache
+=======================================
+
+.. py:module:: tilelang.jit.adapter.nvrtc.kernel_cache
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.jit.adapter.nvrtc.kernel_cache.NVRTCKernelCache
+
+
+Module Contents
+---------------
+
+.. py:class:: NVRTCKernelCache
+
+   Bases: :py:obj:`tilelang.cache.kernel_cache.KernelCache`
+
+
+   .. py:attribute:: kernel_lib_path
+      :value: 'kernel.cubin'
+
+
+
+   .. py:attribute:: kernel_py_path
+      :value: 'kernel.py'
+
+
+
