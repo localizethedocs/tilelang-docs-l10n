@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:2
+msgid "tilelang.carver.roller.rasterization"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:8
+msgid "Rasteration Plan For L2 Cache Locality"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:13
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Rasterization <tilelang.carver.roller.rasterization."
+"Rasterization>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`NoRasterization <tilelang.carver.roller.rasterization."
+"NoRasterization>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Rasterization2DRow <tilelang.carver.roller.rasterization."
+"Rasterization2DRow>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:57
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
+msgid "Rasterization by Row, each Row line width is panel_width"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Rasterization2DColumn <tilelang.carver.roller.rasterization."
+"Rasterization2DColumn>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:82
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
+msgid "Rasterization by Column, each column line width is panel_width"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:43
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:54
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:79
+msgid "Bases: :py:obj:`Rasterization`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:59
+msgid "_________|"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:60
+msgid "|_________ __________|"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:83
+msgid "_"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:0
+msgid "| | |"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:86
+msgid "|_| |_|"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:0
+msgid "Parameters"
+msgstr ""

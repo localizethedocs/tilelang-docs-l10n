@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:2
+msgid "tilelang.transform.hoist_broadcast_values"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:8
+msgid "Classes"
+msgstr "類別"
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`HoistBroadcastValuesMutator <tilelang.transform."
+"hoist_broadcast_values.HoistBroadcastValuesMutator>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`HoistBroadcastValues <tilelang.transform.hoist_broadcast_values."
+"HoistBroadcastValues>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:52
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:22:<autosummary>:1
+msgid "TVM Pass: HoistBroadcastValues."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:28
+msgid "Bases: :py:obj:`tvm.tir.PyStmtExprMutator`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:54
+msgid ""
+"This pass scans the TIR for Broadcast operations involving immediate "
+"constants (IntImm, FloatImm). It extracts these constants into variables "
+"defined via LetStmt immediately surrounding the statement where the "
+"broadcast occurs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:59
+msgid "Example Transformation:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:60
+msgid "Before:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:61
+msgid "A[i] = B[i] + T.Broadcast(3.14, 4) + T.Broadcast(3.14, 4)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:63
+msgid "After:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:64
+msgid ""
+"bv_3_14 = 3.14 bv_3_14_1 = 3.14 A[i] = B[i] + T.Broadcast(bv_3_14, 4) + T."
+"Broadcast(bv_3_14_1, 4)"
+msgstr ""

@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:2
+msgid "tilelang.layout.gemm_sp"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:8
+msgid "Wrapping Layouts."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`decompose_col_major <tilelang.layout.gemm_sp."
+"decompose_col_major>`\\ \\(index\\_1d\\, basis\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`make_cutlass_metadata_layout_sm90 <tilelang.layout.gemm_sp."
+"make_cutlass_metadata_layout_sm90>`\\ \\(buffer\\, mma\\_dtype\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:30
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
+msgid ""
+"Make a layout of metadata that is compatible with cutlass sm90 compression "
+"kernel. Note that layout atom is the same for smem and gmem."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`make_cutlass_metadata_layout_sm8x <tilelang.layout.gemm_sp."
+"make_cutlass_metadata_layout_sm8x>`\\ \\(buffer\\, mma\\_dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:39
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
+msgid ""
+"Make a layout of metadata that is compatible with cutlass sm8x compression "
+"kernel. Note that layout atom is the same for smem and gmem."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`make_cutlass_metadata_layout <tilelang.layout.gemm_sp."
+"make_cutlass_metadata_layout>`\\ \\(buffer\\[\\, mma\\_dtype\\, arch\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:32
+msgid "metadata buffer shape, for sm90 it should be a 8-bit type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:33
+msgid ""
+"dtype of mma operand A, different dtypes result in different layout atom"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:34
+msgid ""
+"tiling size along K dim, different block_ks results in different layout atom."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:40
+msgid ""
+"ref: https://github.com/pytorch/pytorch/blob/"
+"d0c24b392cbb7b213d22e42c52c6c2d1ac2da1bd/torch/sparse/"
+"_semi_structured_conversions.py#L5"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:41
+msgid "metadata buffer shape, for sm80 it should be a 16bit type"
+msgstr ""
