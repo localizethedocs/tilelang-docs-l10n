@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-16 12:28:18 +0800",
-        "hash" : "110ef308a6635c6eb2243f743f1354510a564b0d",
-        "title" : "[AMD] Fix bugs about AMD FA kernel (#1701)"
+        "date" : "2026-03-02 13:17:08 +0800",
+        "hash" : "d94e4de9f57b7d5b9ff1c5ba764898f4ce725302",
+        "title" : "[CI]: Bump actions/download-artifact from 7 to 8 (#1889)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-02-16 12:28:18 +0800",
-        "hash" : "110ef308a6635c6eb2243f743f1354510a564b0d",
-        "title" : "[AMD] Fix bugs about AMD FA kernel (#1701)"
+        "date" : "2026-03-02 13:17:08 +0800",
+        "hash" : "d94e4de9f57b7d5b9ff1c5ba764898f4ce725302",
+        "title" : "[CI]: Bump actions/download-artifact from 7 to 8 (#1889)"
       }
     }
   },

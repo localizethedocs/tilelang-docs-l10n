@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,11 @@ msgstr ""
 msgid ":py:obj:`GemmTCGEN5 <tilelang.tileop.gemm.gemm_tcgen05.GemmTCGEN5>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:23
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:14:<autosummary>:1
+msgid "GEMM operator for Blackwell (SM100) TCGEN5MMA instructions."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:16
 msgid "Module Contents"
 msgstr ""
@@ -37,6 +42,27 @@ msgstr ""
 msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:25
+msgid ""
+"Supports the SS (Shared-Shared) and TS (TensorMemory-Shared) variants. "
+"Layout inference and lowering are dispatched based on the memory scopes of "
+"operands A and B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:32
+msgid "Infer swizzled layouts for operands and accumulator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:34
+msgid ""
+"For SS: both A and B get swizzled shared-memory layouts. For TS: A and C get "
+"TMEM store layouts, B gets a swizzled shared-memory layout."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:0
 msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:41
+msgid "Lower the GEMM tile-op into a TIR prim_func containing TCGEN5MMA calls."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid ""
 ":py:obj:`Kernel <tilelang.language.kernel.Kernel>`\\ \\(\\*blocks\\[\\, "
-"threads\\, is\\_cpu\\, prelude\\]\\)"
+"threads\\, cluster\\_dims\\, is\\_cpu\\, prelude\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:200
@@ -68,7 +68,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:247
+#: ../../../autoapi/tilelang/language/kernel/index.rst:252
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the thread binding for the given dimension."
 msgstr ""
@@ -81,7 +81,7 @@ msgstr ""
 ":py:obj:`get_thread_bindings <tilelang.language.kernel."
 "get_thread_bindings>`\\ \\(\\)"
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:252
+#: ../../../autoapi/tilelang/language/kernel/index.rst:257
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three thread bindings."
 msgstr ""
@@ -92,7 +92,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:257
+#: ../../../autoapi/tilelang/language/kernel/index.rst:262
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the block binding for the given dimension."
 msgstr ""
@@ -104,7 +104,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:173
-#: ../../../autoapi/tilelang/language/kernel/index.rst:262
+#: ../../../autoapi/tilelang/language/kernel/index.rst:267
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three block bindings."
 msgstr ""
@@ -115,7 +115,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:267
+#: ../../../autoapi/tilelang/language/kernel/index.rst:272
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the thread extent for the given dimension."
 msgstr ""
@@ -126,7 +126,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:272
+#: ../../../autoapi/tilelang/language/kernel/index.rst:277
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three thread extents."
 msgstr ""
@@ -137,7 +137,7 @@ msgid ""
 "\\(\\[dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:277
+#: ../../../autoapi/tilelang/language/kernel/index.rst:282
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns the block extent for the given dimension."
 msgstr ""
@@ -148,7 +148,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:282
+#: ../../../autoapi/tilelang/language/kernel/index.rst:287
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid "Returns all three block extents."
 msgstr ""
@@ -282,11 +282,18 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:208
 msgid ""
+"The cluster dimensions for SM90+ cluster launch. For example, use 2 or (2, "
+"1, 1) to create 2-CTA clusters. When specified, the kernel will be launched "
+"using cudaLaunchKernelEx with cudaLaunchAttributeClusterDimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/kernel/index.rst:213
+msgid ""
 "Whether the kernel is running on CPU. Thus we will not bind threadIdx.x, "
 "threadIdx.y, threadIdx.z. and blockIdx.x, blockIdx.y, blockIdx.z."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:212
+#: ../../../autoapi/tilelang/language/kernel/index.rst:217
 msgid ""
 "The import c code of the kernel, will be injected before the generated "
 "kernel code."
@@ -296,41 +303,41 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:216
+#: ../../../autoapi/tilelang/language/kernel/index.rst:221
 msgid "**res** -- The result LaunchThreadFrame."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:220
+#: ../../../autoapi/tilelang/language/kernel/index.rst:225
 msgid "Examples"
 msgstr "範例"
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:221
+#: ../../../autoapi/tilelang/language/kernel/index.rst:226
 msgid "Create a 1-D CUDA kernel launch and unpack the single block index:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:223
+#: ../../../autoapi/tilelang/language/kernel/index.rst:228
 msgid ""
 "with T.Kernel(T.ceildiv(N, 128), threads=128) as bx:\n"
 "    # bx is the blockIdx.x binding (also iterable as (bx,))\n"
 "    ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:229
+#: ../../../autoapi/tilelang/language/kernel/index.rst:234
 msgid "Launch a 2-D grid while requesting two thread dimensions:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:231
+#: ../../../autoapi/tilelang/language/kernel/index.rst:236
 msgid ""
 "with T.Kernel(grid_x, grid_y, threads=(64, 2)) as (bx, by):\n"
 "    tx, ty = T.get_thread_bindings()\n"
 "    ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:237
+#: ../../../autoapi/tilelang/language/kernel/index.rst:242
 msgid "Emit a CPU kernel where thread bindings are skipped:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/kernel/index.rst:239
+#: ../../../autoapi/tilelang/language/kernel/index.rst:244
 msgid ""
 "with T.Kernel(loop_extent, is_cpu=True) as (i,):\n"
 "    ..."

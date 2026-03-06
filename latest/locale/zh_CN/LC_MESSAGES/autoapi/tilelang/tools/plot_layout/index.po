@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,11 +88,39 @@ msgid ""
 "(default \"pdf\")."
 msgstr ""
 
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:38
+msgid ""
+"For `T.Layout` only: choose which space is shown as the 2D grid.  - "
+"\"input\" (default): grid is input space, labels show output (flattened) "
+"coordinates. - \"output\": grid is output space, labels show input "
+"coordinates."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:38
+msgid "For `T.Layout` only: choose which space is shown as the 2D grid."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:40
+msgid ""
+"\"input\" (default): grid is input space, labels show output (flattened) "
+"coordinates."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:41
+msgid "\"output\": grid is output space, labels show input coordinates."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:43
+msgid ""
+"For `view=\"input\"` only: override the 2D grid shape (rows, cols). The "
+"product must match the total number of input elements."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:42
+#: ../../../autoapi/tilelang/tools/plot_layout/index.rst:50
 msgid ""
 "Plot fragment in terms of thread and local index mapping. :param frag: The "
 "fragment object that describes how indices are mapped. :type frag: T."
