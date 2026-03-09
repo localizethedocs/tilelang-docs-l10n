@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-03-09 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgid ""
 "TLHIPSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:528
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:531
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid "A wrapper class for the TileLang HIP backend."
 msgstr ""
@@ -138,8 +138,8 @@ msgstr ""
 msgid ":py:obj:`TLWrapper <tilelang.jit.adapter.wrapper.TLWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:691
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:749
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:697
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:755
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid "A wrapper class for the TileLang backend."
 msgstr ""
@@ -163,7 +163,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:270
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:314
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:345
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:545
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:551
 msgid "<details><summary>Show Value</summary>"
 msgstr ""
 
@@ -192,7 +192,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:305
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:336
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:374
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:566
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:572
 msgid "</details>"
 msgstr ""
 
@@ -428,11 +428,11 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:525
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:528
 msgid "Bases: :py:obj:`TLCUDASourceWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:549
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:555
 msgid ""
 "\"\"\"\n"
 "#define ERROR_BUF_SIZE 1024\n"
@@ -450,10 +450,10 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:688
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:694
 msgid "Bases: :py:obj:`BaseWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:746
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:752
 msgid "Bases: :py:obj:`TLWrapper`"
 msgstr ""
