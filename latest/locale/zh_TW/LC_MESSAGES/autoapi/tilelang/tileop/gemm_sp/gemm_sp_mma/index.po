@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm_sp/gemm_sp_mma/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/gemm_sp/gemm_sp_mma/index.rst:0
 msgid "Return type"

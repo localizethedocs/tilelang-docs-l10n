@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:43
 msgid "Return True if both A and B are in shared memory (SS variant)."

@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:13
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:20:<autosummary>:1
 msgid ""
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:28
 msgid "Source memory region"

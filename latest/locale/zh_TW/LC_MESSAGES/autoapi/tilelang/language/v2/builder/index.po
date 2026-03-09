@@ -131,7 +131,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:53:<autosummary>:1
 msgid ""
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:193
 msgid "Bases: :py:obj:`tilelang.language.v2.ast.BaseBuilder`"

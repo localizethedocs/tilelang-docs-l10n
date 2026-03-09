@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:20
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:26:<autosummary>:1
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:28
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
@@ -217,7 +217,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:64
 msgid "Add byte offset.  Like C++ operator+, shifts offset >> 4."

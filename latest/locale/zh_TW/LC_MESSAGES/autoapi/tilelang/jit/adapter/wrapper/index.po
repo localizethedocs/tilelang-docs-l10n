@@ -422,7 +422,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
 msgid "Return type"

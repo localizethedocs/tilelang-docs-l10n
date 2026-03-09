@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:142
 msgid "Returns the source code of the host module."

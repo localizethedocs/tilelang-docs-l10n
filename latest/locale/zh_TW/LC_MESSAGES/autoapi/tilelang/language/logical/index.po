@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/logical/index.rst:13
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/logical/index.rst:20:<autosummary>:1
 msgid ":py:obj:`any_of <tilelang.language.logical.any_of>`\\ \\(buffer\\)"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/logical/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/logical/index.rst:28
 #: ../../../autoapi/tilelang/language/logical/index.rst:37

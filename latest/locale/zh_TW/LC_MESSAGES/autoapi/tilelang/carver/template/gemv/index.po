@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:75
 msgid "The target hardware architecture."

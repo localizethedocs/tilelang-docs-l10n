@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:44
 msgid "TVM Buffer object containing dtype and shape information"

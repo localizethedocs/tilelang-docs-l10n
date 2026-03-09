@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:2
 msgid "tilelang.language.frame"
-msgstr ""
+msgstr "tilelang.language.frame"
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:8
 msgid "Override the LetFrame to print a message when entering the frame."
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:22
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:29:<autosummary>:1
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:46
 msgid "The frame object to push onto the stack"

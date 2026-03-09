@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:52
 msgid "Number of times to repeat."

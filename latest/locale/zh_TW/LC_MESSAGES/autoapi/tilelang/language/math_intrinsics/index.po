@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:13
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:29:<autosummary>:1
 msgid ""
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:37
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:54

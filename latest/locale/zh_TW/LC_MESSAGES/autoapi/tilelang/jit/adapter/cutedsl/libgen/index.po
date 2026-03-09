@@ -51,4 +51,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/libgen/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

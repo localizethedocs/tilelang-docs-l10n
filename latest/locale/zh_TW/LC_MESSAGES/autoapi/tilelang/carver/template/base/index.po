@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:36
 msgid "The target architecture. Defaults to None."

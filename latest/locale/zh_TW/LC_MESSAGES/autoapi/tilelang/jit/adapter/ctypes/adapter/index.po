@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/ctypes/adapter/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/ctypes/adapter/index.rst:118
 msgid "Returns the primary TIR function from the IR module."

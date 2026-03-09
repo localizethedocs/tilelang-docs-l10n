@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:66
 msgid "Function to be compiled or a prepared PrimFunc"

@@ -705,6 +705,3 @@ msgid ""
 "2025-10-14 11:11:29  [TileLang:tilelang.env:WARNING]: Loading tilelang libs "
 "from dev root: /Users/yyc/repo/tilelang/build\n"
 msgstr ""
-
-#~ msgid "**CUDA Version**: >= 10.0"
-#~ msgstr "**CUDA 版本**：>= 10.0"

@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:41
 msgid "Lower the GEMM tile-op into a TIR prim_func containing TCGEN5MMA calls."

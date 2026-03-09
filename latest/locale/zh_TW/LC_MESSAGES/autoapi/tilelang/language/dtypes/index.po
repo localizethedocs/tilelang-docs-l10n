@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:28
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid ""
@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:86
 msgid "Bases: :py:obj:`dtype`"

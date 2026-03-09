@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:2
 msgid "tilelang.language.kernel"
-msgstr ""
+msgstr "tilelang.language.kernel"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:8
 msgid "Kernel launching language interface in TileLang."
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:22
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:36:<autosummary>:1
 msgid ""
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:127
 msgid "Returns the block extents for all three dimensions."

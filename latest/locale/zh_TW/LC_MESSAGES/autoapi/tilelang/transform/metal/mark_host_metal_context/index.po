@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:24
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:30:<autosummary>:1
 msgid ""
@@ -61,4 +61,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
