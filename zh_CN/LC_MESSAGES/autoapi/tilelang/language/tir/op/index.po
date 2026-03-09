@@ -1,0 +1,2877 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2
+msgid "tilelang.language.tir.op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:16:<autosummary>:1
+msgid ":py:obj:`sum <tilelang.language.tir.op.sum>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:16:<autosummary>:1
+msgid ":py:obj:`min <tilelang.language.tir.op.min>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:16:<autosummary>:1
+msgid ":py:obj:`max <tilelang.language.tir.op.max>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:18
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_packed <tilelang.language.tir.op.call_packed>`\\ "
+"\\(\\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:172
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:197
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Build expression by call an external packed function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_cpacked <tilelang.language.tir.op.call_cpacked>`\\ "
+"\\(\\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_packed_lowered <tilelang.language.tir.op."
+"call_packed_lowered>`\\ \\(\\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Lowered version of call packed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_cpacked_lowered <tilelang.language.tir.op."
+"call_cpacked_lowered>`\\ \\(\\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Lowered version of call c-packed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_intrin <tilelang.language.tir.op.call_intrin>`\\ \\(dtype\\, "
+"func\\_name\\, \\*args\\[\\, annotations\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:261
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Build expression by calling an intrinsic function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_pure_extern <tilelang.language.tir.op.call_pure_extern>`\\ "
+"\\(dtype\\, func\\_name\\, \\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:281
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Build expression by calling a pure extern function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_extern <tilelang.language.tir.op.call_extern>`\\ \\(dtype\\, "
+"func\\_name\\, \\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:298
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Build expression by calling a extern function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_llvm_intrin <tilelang.language.tir.op.call_llvm_intrin>`\\ "
+"\\(dtype\\, name\\, \\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:315
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Build expression by calling a llvm intrinsic function"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_llvm_pure_intrin <tilelang.language.tir.op."
+"call_llvm_pure_intrin>`\\ \\(dtype\\, name\\, \\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:332
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Build expression by calling a pure llvm intrinsic function"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_check_return <tilelang.language.tir.op.tvm_check_return>`\\ "
+"\\(expected\\, return\\_unexpected\\, nested\\_call\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:363
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Return new on stack dtype[num]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_stack_alloca <tilelang.language.tir.op.tvm_stack_alloca>`\\ "
+"\\(dtype\\_str\\, num\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_stack_make_shape <tilelang.language.tir.op."
+"tvm_stack_make_shape>`\\ \\(\\*args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:376
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Allocate a shape tuple on stack, return the handle"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_stack_make_array <tilelang.language.tir.op."
+"tvm_stack_make_array>`\\ \\(data\\, shape\\, strides\\, ndim\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:387
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Allocate a NDArray(DLTensor) on stack, return the handle"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`assume <tilelang.language.tir.op.assume>`\\ \\(\\[cond\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:408
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Provide a true statement that can be used for simplifications"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`undef <tilelang.language.tir.op.undef>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:419
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Returns an initialized but arbitrary value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`call_tir <tilelang.language.tir.op.call_tir>`\\ \\(global\\_var\\, "
+"\\*args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:427
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Performs a call into another PrimFunc in the same IRModule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`start_profile_intrinsic <tilelang.language.tir.op."
+"start_profile_intrinsic>`\\ \\(id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Start profile intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`end_profile_intrinsic <tilelang.language.tir.op."
+"end_profile_intrinsic>`\\ \\(id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "End profile intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_tuple <tilelang.language.tir.op.tvm_tuple>`\\ \\(\\*value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:455
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Create a tuple structure in value field of AttrStmt"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_struct_get <tilelang.language.tir.op.tvm_struct_get>`\\ "
+"\\(arr\\, index\\, field\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:466
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Get struct field value in array"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_struct_set <tilelang.language.tir.op.tvm_struct_set>`\\ "
+"\\(arr\\, index\\, field\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:483
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Set value in struct field in array"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`address_of <tilelang.language.tir.op.address_of>`\\ "
+"\\(buffer\\_load\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:500
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Returns the address of an element in the buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`lookup_param <tilelang.language.tir.op.lookup_param>`\\ "
+"\\(param\\_name\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:513
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Returns the param by name"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_thread_allreduce <tilelang.language.tir.op."
+"tvm_thread_allreduce>`\\ \\(\\*freduce\\_args\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:526
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Perform allreduce inside threadblock."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_thread_invariant <tilelang.language.tir.op."
+"tvm_thread_invariant>`\\ \\(cond\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:537
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Mark condition as thread invariant."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_storage_sync <tilelang.language.tir.op.tvm_storage_sync>`\\ "
+"\\(storage\\_scope\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:548
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Perform synchronization in specified scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_shuffle <tilelang.language.tir.op.tvm_warp_shuffle>`\\ "
+"\\(mask\\, value\\, warp\\_id\\, width\\, warp\\_size\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:559
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Exchange value between threads inside a warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_shuffle_up <tilelang.language.tir.op."
+"tvm_warp_shuffle_up>`\\ \\(mask\\, value\\, offset\\, width\\, warp\\_size\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:578
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Copy value from a lane with lower (by offset) index relative to caller."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_shuffle_down <tilelang.language.tir.op."
+"tvm_warp_shuffle_down>`\\ \\(mask\\, value\\, offset\\, width\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:598
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"Copy value from a lane with higher (by offset) index relative to caller."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_activemask <tilelang.language.tir.op."
+"tvm_warp_activemask>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:618
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"Return a 32-bit mask indicates currently active threads in a calling warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`type_annotation <tilelang.language.tir.op.type_annotation>`\\ "
+"\\(dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:626
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Create a type annotation expression"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_access_ptr <tilelang.language.tir.op.tvm_access_ptr>`\\ "
+"\\(ptype\\, data\\, offset\\, extent\\, rw\\_mask\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:637
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Get head access address with memory access pattern info"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_throw_last_error <tilelang.language.tir.op."
+"tvm_throw_last_error>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:656
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Throw TVMGetLastError()"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_load_matrix_sync <tilelang.language.tir.op."
+"tvm_load_matrix_sync>`\\ \\(fragment\\, m\\, n\\, k\\, index\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:664
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for tensor core load operators"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_mma_sync <tilelang.language.tir.op.tvm_mma_sync>`\\ "
+"\\(fragment\\_d\\, index\\_d\\, fragment\\_a\\, index\\_a\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:689
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for tensor core mma_sync operators"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_bmma_sync <tilelang.language.tir.op.tvm_bmma_sync>`\\ "
+"\\(fragment\\_d\\, index\\_d\\, fragment\\_a\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:714
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for tensor core bmma_sync operators"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_fill_fragment <tilelang.language.tir.op.tvm_fill_fragment>`\\ "
+"\\(fragment\\, m\\, n\\, k\\, index\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:739
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for tensor core fill_fragment operators"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_store_matrix_sync <tilelang.language.tir.op."
+"tvm_store_matrix_sync>`\\ \\(fragment\\, m\\, n\\, k\\, index\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:760
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for tensor core store operators"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma <tilelang.language.tir.op.ptx_mma>`\\ \\(dtype\\, shape\\, "
+"A\\_layout\\, B\\_layout\\, A\\_dtype\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx tensor core mma instructions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_mma_sp <tilelang.language.tir.op.ptx_mma_sp>`\\ \\(dtype\\, "
+"shape\\, A\\_layout\\, B\\_layout\\, A\\_dtype\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for sparse tensor core ptx instructions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_wgmma_ss <tilelang.language.tir.op.ptx_wgmma_ss>`\\ \\(dtype\\, "
+"wgmma\\_prefix\\, a\\_is\\_k\\_major\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx tensor core wmma instructions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_wgmma_rs <tilelang.language.tir.op.ptx_wgmma_rs>`\\ \\(dtype\\, "
+"wgmma\\_prefix\\, b\\_is\\_k\\_major\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_tcgen05_mma_ss <tilelang.language.tir.op.ptx_tcgen05_mma_ss>`\\ "
+"\\(kind\\_dtype\\, desc\\_a\\, A\\_offset\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:877
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for tcgen05.mma shared-memory × shared-memory instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_tcgen05_mma_ts <tilelang.language.tir.op.ptx_tcgen05_mma_ts>`\\ "
+"\\(kind\\_dtype\\, A\\_ptr\\, A\\_offset\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:890
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for tcgen05.mma tensor-memory × shared-memory instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`mma_store <tilelang.language.tir.op.mma_store>`\\ \\(dtype\\, m\\, "
+"n\\, dst\\_ptr\\, src\\_ptr\\, src\\_offset\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:901
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1087
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1146
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for storing the result of PTX MMA into a destination pointer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`mma_fill <tilelang.language.tir.op.mma_fill>`\\ \\(dtype\\, "
+"local\\_size\\, local\\_ptr\\, offset\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:924
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for zero-initalizing an MMA accumulation register"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix <tilelang.language.tir.op.ptx_ldmatrix>`\\ \\(dtype\\, "
+"trans\\, num\\, type\\, local\\_ptr\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx load matrix from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_cp_async <tilelang.language.tir.op.ptx_cp_async>`\\ "
+"\\(dst\\_access\\_ptr\\, src\\_access\\_ptr\\, bytes\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for ptx async copy from global to shared memory using cp.async"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_cp_async_bulk <tilelang.language.tir.op.ptx_cp_async_bulk>`\\ "
+"\\(dtype\\, shared\\_ptr\\, shared\\_offset\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for ptx async copy from global to shared memory using cp.async."
+"bulk"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_commit_group <tilelang.language.tir.op.ptx_commit_group>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx async copy commit"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_wait_group <tilelang.language.tir.op.ptx_wait_group>`\\ "
+"\\(num\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx async copy wait"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_mfma <tilelang.language.tir.op.tvm_mfma>`\\ \\(dtype\\, "
+"shape\\, A\\_layout\\, B\\_layout\\, A\\_dtype\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for amd matrix core mfma instructions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_mfma_store <tilelang.language.tir.op.tvm_mfma_store>`\\ "
+"\\(dtype\\, m\\, n\\, dst\\_ptr\\, src\\_ptr\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_rdna_wmma <tilelang.language.tir.op.tvm_rdna_wmma>`\\ "
+"\\(dtype\\, shape\\, A\\_layout\\, B\\_layout\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`tvm_rdna_wmma_store <tilelang.language.tir.op."
+"tvm_rdna_wmma_store>`\\ \\(dtype\\, m\\, n\\, dst\\_ptr\\, src\\_ptr\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_cp_async_barrier <tilelang.language.tir.op."
+"ptx_cp_async_barrier>`\\ \\(barrier\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx async copy barrier using cp.async.mbarrier.arrive"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_init_barrier_thread_count <tilelang.language.tir.op."
+"ptx_init_barrier_thread_count>`\\ \\(barrier\\_id\\, thread\\_count\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for ptx barrier initialization of thread count using mbarrier."
+"init"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_fence_barrier_init <tilelang.language.tir.op."
+"ptx_fence_barrier_init>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1195
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx fence barrier initialization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_arrive_barrier <tilelang.language.tir.op.ptx_arrive_barrier>`\\ "
+"\\(barrier\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx barrier arrival using mbarrier.arrive"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_arrive_barrier_expect_tx <tilelang.language.tir.op."
+"ptx_arrive_barrier_expect_tx>`\\ \\(barrier\\_id\\, byte\\_count\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"TVM intrinsic for ptx barrier arrival with expect tx using mbarrier.arrive."
+"expect_tx"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ptx_wait_barrier <tilelang.language.tir.op.ptx_wait_barrier>`\\ "
+"\\(barrier\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic for ptx barrier wait using mbarrier.try_wait"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`create_barriers <tilelang.language.tir.op.create_barriers>`\\ "
+"\\(barrier\\_count\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1243
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "TVM intrinsic to create N barriers"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`vectorlow <tilelang.language.tir.op.vectorlow>`\\ \\(dtype\\, vec\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1254
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Get the low level half of the vector"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`vectorhigh <tilelang.language.tir.op.vectorhigh>`\\ \\(dtype\\, "
+"vec\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1267
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Get the high level half of the vector"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`vectorcombine <tilelang.language.tir.op.vectorcombine>`\\ "
+"\\(dtype\\, vec1\\, vec2\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1280
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Concat two vectors"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`ret <tilelang.language.tir.op.ret>`\\ \\(val\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1293
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Create a tir return expression"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`any <tilelang.language.tir.op.any>`\\ \\(\\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1304
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Create a new expression of the union of all conditions in the arguments"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`all <tilelang.language.tir.op.all>`\\ \\(\\*args\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1317
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Create a new expression of the intersection of all conditions in the"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`trace <tilelang.language.tir.op.trace>`\\ \\(args\\[\\, "
+"trace\\_action\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1331
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Trace tensor data at the runtime."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`min_value <tilelang.language.tir.op.min_value>`\\ \\(dtype\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1354
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "minimum value of dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`max_value <tilelang.language.tir.op.max_value>`\\ \\(dtype\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1367
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "maximum value of dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`infinity <tilelang.language.tir.op.infinity>`\\ \\(dtype\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1380
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "infinity value of dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`reinterpret <tilelang.language.tir.op.reinterpret>`\\ \\(value\\, "
+"dtype\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1393
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Reinterpret cast a value to dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`exp <tilelang.language.tir.op.exp>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1408
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take exponential of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`exp2 <tilelang.language.tir.op.exp2>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1419
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Calculate 2**x"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`exp10 <tilelang.language.tir.op.exp10>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1430
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Calculate 10**x"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`erf <tilelang.language.tir.op.erf>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1441
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take gauss error function of the input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`tanh <tilelang.language.tir.op.tanh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1452
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take hyperbolic tanh of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`sigmoid <tilelang.language.tir.op.sigmoid>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1463
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Quick function to get sigmoid"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`log <tilelang.language.tir.op.log>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1474
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take log of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`log2 <tilelang.language.tir.op.log2>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1485
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take log2 of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`log10 <tilelang.language.tir.op.log10>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1496
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take log10 of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`log1p <tilelang.language.tir.op.log1p>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1507
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take log(x + 1) with respect to input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`tan <tilelang.language.tir.op.tan>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1518
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take tan of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`cos <tilelang.language.tir.op.cos>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1529
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take cos of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`cosh <tilelang.language.tir.op.cosh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1540
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take cosh of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`acos <tilelang.language.tir.op.acos>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1551
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1562
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take acos of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`acosh <tilelang.language.tir.op.acosh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`sin <tilelang.language.tir.op.sin>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1573
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take sin of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`sinh <tilelang.language.tir.op.sinh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1584
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take sinh of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`asin <tilelang.language.tir.op.asin>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1595
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take asin of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`asinh <tilelang.language.tir.op.asinh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1606
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take asinh of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`atan <tilelang.language.tir.op.atan>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1617
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take atan of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`atanh <tilelang.language.tir.op.atanh>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1628
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take atanh of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`atan2 <tilelang.language.tir.op.atan2>`\\ \\(x1\\, x2\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1639
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take arctan2(x1, x2)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`sqrt <tilelang.language.tir.op.sqrt>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1652
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take square root of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`rsqrt <tilelang.language.tir.op.rsqrt>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1663
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take reciprocal of square root of input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`clz <tilelang.language.tir.op.clz>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1674
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Count leading zero bits of an integer x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`floor <tilelang.language.tir.op.floor>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1686
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take floor of float input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`ceil <tilelang.language.tir.op.ceil>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1699
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take ceil of float input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`trunc <tilelang.language.tir.op.trunc>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1712
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Get truncated value of the input."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`abs <tilelang.language.tir.op.abs>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1728
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Get absolute value of the input element-wise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`bitwise_and <tilelang.language.tir.op.bitwise_and>`\\ \\(x\\, "
+"y\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1741
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take bitwise and of two values"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`bitwise_not <tilelang.language.tir.op.bitwise_not>`\\ \\(x\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1756
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take bitwise not of input value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`bitwise_or <tilelang.language.tir.op.bitwise_or>`\\ \\(x\\, y\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1769
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take bitwise or of two values"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`bitwise_xor <tilelang.language.tir.op.bitwise_xor>`\\ \\(x\\, "
+"y\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1784
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Take bitwise xor of two values"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`round <tilelang.language.tir.op.round>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1799
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Round elements of the array to the nearest integer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`nearbyint <tilelang.language.tir.op.nearbyint>`\\ \\(x\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`nextafter <tilelang.language.tir.op.nextafter>`\\ \\(x1\\, x2\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1832
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Return the next floating-point value after x1 towards x2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`hypot <tilelang.language.tir.op.hypot>`\\ \\(x1\\, x2\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1845
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Equivalent to sqrt(x1**2 + x2**2), element-wise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`copysign <tilelang.language.tir.op.copysign>`\\ \\(x1\\, x2\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1858
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Change the sign of x1 to that of x2, element-wise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`ldexp <tilelang.language.tir.op.ldexp>`\\ \\(x1\\, x2\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1871
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Returns x1 * (2 ** x2)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`likely <tilelang.language.tir.op.likely>`\\ \\(cond\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1884
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Mark condition as likely."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`isnan <tilelang.language.tir.op.isnan>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1897
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Check if input value is Nan."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`isnullptr <tilelang.language.tir.op.isnullptr>`\\ \\(x\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1910
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Check if input value is nullptr."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`isfinite <tilelang.language.tir.op.isfinite>`\\ \\(x\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1923
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Check if input value is finite."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`isinf <tilelang.language.tir.op.isinf>`\\ \\(x\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1936
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Check if input value is infinite."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`pow_of_int <tilelang.language.tir.op.pow_of_int>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1949
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Fast power operation than pow(float, float)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`power <tilelang.language.tir.op.power>`\\ \\(x\\, y\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1959
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1974
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "x power y"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`pow <tilelang.language.tir.op.pow>`\\ \\(x\\, y\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`popcount <tilelang.language.tir.op.popcount>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1989
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Count the number of set bits in input x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`q_multiply_shift <tilelang.language.tir.op.q_multiply_shift>`\\ "
+"\\(x\\, y\\, q\\, s\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2024
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Execute a multiplication between two Q-numbers x and y"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`q_multiply_shift_per_axis <tilelang.language.tir.op."
+"q_multiply_shift_per_axis>`\\ \\(x\\, y\\, ls\\, rs\\, q\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`shift_left <tilelang.language.tir.op.shift_left>`\\ \\(x\\, y\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2047
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Return the result of x left shifted by y bits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`shift_right <tilelang.language.tir.op.shift_right>`\\ \\(x\\, "
+"y\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2060
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Return the result of x right shifted by y bits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`fmod <tilelang.language.tir.op.fmod>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2073
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Return the remainder of x divided by y with the same sign as x."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`if_then_else <tilelang.language.tir.op.if_then_else>`\\ \\(cond\\, "
+"t\\, f\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2086
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Conditional selection expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`div <tilelang.language.tir.op.div>`\\ \\(a\\, b\\[\\, span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2111
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute a / b as in C/C++ semantics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`indexdiv <tilelang.language.tir.op.indexdiv>`\\ \\(a\\, b\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2128
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute floor(a / b) where a and b are non-negative."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`indexmod <tilelang.language.tir.op.indexmod>`\\ \\(a\\, b\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2149
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute the remainder of indexdiv. a and b are non-negative."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`truncdiv <tilelang.language.tir.op.truncdiv>`\\ \\(a\\, b\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2170
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute the truncdiv of two expressions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`truncmod <tilelang.language.tir.op.truncmod>`\\ \\(a\\, b\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2187
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute the truncmod of two expressions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`floordiv <tilelang.language.tir.op.floordiv>`\\ \\(a\\, b\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2204
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute the floordiv of two expressions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`floormod <tilelang.language.tir.op.floormod>`\\ \\(a\\, b\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2219
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Compute the floormod of two expressions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`ceildiv <tilelang.language.tir.op.ceildiv>`\\ \\(lhs\\, rhs\\[\\, "
+"span\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2234
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Generic ceildiv operator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`comm_reducer <tilelang.language.tir.op.comm_reducer>`\\ "
+"\\(fcombine\\, fidentity\\[\\, name\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2249
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Create a commutative reducer for reduction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`TVMBackendAllocWorkspace <tilelang.language.tir.op."
+"TVMBackendAllocWorkspace>`\\ \\(device\\_type\\, device\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2279
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Backend function to allocate temporal workspace"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`TVMBackendFreeWorkspace <tilelang.language.tir.op."
+"TVMBackendFreeWorkspace>`\\ \\(device\\_type\\, device\\_id\\, ptr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2298
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Backend function to free temporal workspace."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`anylist_getitem <tilelang.language.tir.op.anylist_getitem>`\\ "
+"\\(list\\_handle\\, index\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Returns an item from any list."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`anylist_resetitem <tilelang.language.tir.op.anylist_resetitem>`\\ "
+"\\(list\\_handle\\, index\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Reset an item from any list."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`anylist_setitem_call_packed <tilelang.language.tir.op."
+"anylist_setitem_call_packed>`\\ \\(list\\_handle\\, index\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid "Set anylist item by result of packed call."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+":py:obj:`anylist_setitem_call_cpacked <tilelang.language.tir.op."
+"anylist_setitem_call_cpacked>`\\ \\(list\\_handle\\, index\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ":py:obj:`vscale <tilelang.language.tir.op.vscale>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
+msgid ""
+"Get the target's vscale value. It will be lowered to llvm.vscale intrinsic"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:168
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:174
+msgid ""
+"The argument to packed function can be Expr or Buffer. The argument is the "
+"corresponding POD type when Expr is presented."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:177
+msgid ""
+"When the argument is Buffer, the corresponding PackedFunc will receive an "
+"TVMArrayHandle whose content is valid during the callback period. If the "
+"PackedFunc is a python callback, then the corresponding argument is NDArray."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:181
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:202
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:225
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:245
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:270
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:287
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:304
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:321
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:338
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1338
+msgid "Positional arguments."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:183
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:204
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:227
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:247
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:272
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:289
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:306
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:323
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:340
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:504
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:517
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1308
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1322
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1358
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1371
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1384
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1399
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1690
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1703
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1719
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1732
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1747
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1760
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1775
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1790
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1803
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1823
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1888
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1901
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1914
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1927
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1940
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1965
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1980
+msgid "The location of this operator in the source code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:186
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:207
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:230
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:250
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:275
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:292
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:309
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:326
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:343
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:357
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:370
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:381
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:402
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:413
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:421
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:429
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:439
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:449
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:460
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:477
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:494
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:507
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:520
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:531
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:542
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:553
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:572
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:592
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:612
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:620
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:631
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:650
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:683
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:708
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:733
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:754
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:779
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:819
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:863
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:918
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:935
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:961
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:983
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1024
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1033
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1045
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1081
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1104
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1140
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1163
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1175
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1189
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1197
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1209
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1225
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1237
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1248
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1261
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1274
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1287
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1343
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2292
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2307
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2318
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2329
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2344
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2359
+msgid "**call** -- The call expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:191
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:212
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:235
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:255
+msgid ":py:obj:`te.extern`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:192
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:213
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:236
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:256
+msgid "Create tensor with extern function call."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:199
+msgid ""
+"Same as call_packed, except that the first argument is the function name (as "
+"in call_extern), and the last argument is the resource handle."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:218
+msgid ""
+"Lowered version of call packed. The argument to packed function can be Expr "
+"or Buffer. The argument is the corresponding POD type when Expr is "
+"presented. When the argument is Buffer, the corresponding PackedFunc will "
+"receive an TVMArrayHandle whose content is valid during the callback period. "
+"If the PackedFunc is a python callback, then the corresponding argument is "
+"NDArray."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:241
+msgid ""
+"Lowered version of call c-packed. Same as call_packed, except that the first "
+"argument is the function name (as in call_extern), and the last argument is "
+"the resource handle."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:263
+msgid ""
+"Intrinsics can be overloaded with multiple data types via the intrinsic "
+"translation rule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:266
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:283
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:300
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:317
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:334
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:788
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:828
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:903
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:926
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:944
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1009
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1054
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1089
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1113
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1148
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1256
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1269
+msgid "The data type of the result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:268
+msgid "The intrinsic function name."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:285
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:302
+msgid "The extern function name."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:319
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:336
+msgid "The name of the llvm intrinsic function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:349
+msgid ""
+"Return new on stack dtype[num] :param expected: The expected return code. :"
+"type expected: int :param return_unexpected: The unexpected return code. :"
+"type return_unexpected: int :param nested_call: The call expression to check "
+"return. :type nested_call: PrimExpr"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:365
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:397
+msgid "The data type of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:367
+msgid "The size of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:378
+msgid "The tuple shape."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:389
+msgid "The data of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:391
+msgid "The shape of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:393
+msgid "The strides of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:395
+msgid "The dimensions of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:399
+msgid "The element offset of array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:410
+msgid "The constraint condition."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:435
+msgid "Start profile intrinsic. :param id: The intrinsic id. :type id: int"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:445
+msgid "End profile intrinsic. :param id: The intrinsic id. :type id: int"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:457
+msgid "The value in tuple."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:468
+msgid "The date type of the result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:470
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:485
+msgid "The array of struct."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:472
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:487
+msgid "The index of struct."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:474
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:489
+msgid "The field of struct."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:491
+msgid "The value to be set in field."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:502
+msgid "The buffer load."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:515
+msgid "The name of param."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:528
+msgid "The args."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:539
+msgid "The condition."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:550
+msgid "The storage scope to perform synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:561
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:580
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:600
+msgid "The warp mask indicates active threads inside warp."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:563
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:582
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:602
+msgid "The value to exchange."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:565
+msgid "The source lane index to fetch value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:567
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:587
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:607
+msgid "The width of sub-sections to perform warp shuffle."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:569
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:589
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:609
+msgid "The warp size."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:584
+msgid ""
+"The difference between source lane index and destination lane index: `offset "
+"= dst_lane_idx - src_lane_idx`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:604
+msgid ""
+"The difference between source lane index and destination lane index: `offset "
+"= src_lane_idx - dst_lane_idx`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:628
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1356
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1369
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1382
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1397
+msgid "The data type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:639
+msgid "The data type of pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:641
+msgid "The data of pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:643
+msgid "The offset of pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:645
+msgid "The extent of pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:647
+msgid "The read write mask."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:658
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1298
+msgid "**ret** -- The return expression"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:666
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:762
+msgid "The wmma fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:668
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:670
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:672
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:743
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:745
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:747
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:764
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:766
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:768
+msgid "The shape of wmma fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:674
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:749
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:770
+msgid "The fragment index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:676
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:772
+msgid "The fragment buffer pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:678
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:774
+msgid "The fragment stride."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:680
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:776
+msgid "The fragment layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:691
+msgid "The wmma fragment_d."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:693
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:718
+msgid "The fragment_d index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:695
+msgid "The wmma fragment_a."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:697
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:722
+msgid "The fragment_a index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:699
+msgid "The wmma fragment_b."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:701
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:726
+msgid "The fragment_b index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:703
+msgid "The wmma fragment_c."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:705
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:730
+msgid "The fragment_c index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:716
+msgid "The bwmma fragment_d."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:720
+msgid "The bwmma fragment_a."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:724
+msgid "The bwmma fragment_b."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:728
+msgid "The bwmma fragment_c."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:741
+msgid "The wmma fragment"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:751
+msgid "The value to be filled in fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:785
+msgid ""
+"TVM intrinsic for ptx tensor core mma instructions https://docs.nvidia.com/"
+"cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-for-"
+"mma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:790
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:830
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:905
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:907
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1056
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1091
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1093
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1115
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1150
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1152
+msgid "The shape of mma fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:792
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:832
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1058
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1117
+msgid "The layout of multiplicand fragment A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:794
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:834
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1060
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1119
+msgid "The layout of multiplicand fragment B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:796
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:836
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1062
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1121
+msgid "The data type of multiplicand fragment A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:798
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:838
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1064
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1123
+msgid "The data type of multiplicand fragment B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:800
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:840
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1066
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1125
+msgid "The data type of accumulator fragment C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:802
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:842
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1068
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1127
+msgid "The multiplicand fragment A variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:804
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:808
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:844
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1070
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1074
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1129
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1133
+msgid "The index of multiplicand fragment A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:806
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:846
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1072
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1131
+msgid "The multiplicand fragment B variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:810
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:850
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1076
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1135
+msgid "The accumulator fragment C variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:812
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:852
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1078
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1137
+msgid "The index of accumulator fragment C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:814
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:860
+msgid "The optional saturation at the output."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:816
+msgid "The 1-bit operator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:825
+msgid ""
+"TVM intrinsic for sparse tensor core ptx instructions https://docs.nvidia."
+"com/cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-"
+"for-sparse-mma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:848
+msgid "The index of multiplicand fragment B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:854
+msgid "The metadata of operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:856
+msgid "The metadata index of operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:858
+msgid "The sparse selector indicating the thread that stores the metadata."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:869
+msgid ""
+"TVM intrinsic for ptx tensor core wmma instructions https://docs.nvidia.com/"
+"cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-for-"
+"wmma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:879
+msgid ""
+"Expects 13 or 14 positional arguments: (kind_dtype, desc_a, A_offset, "
+"desc_b, B_offset, C_ptr, C_offset,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:881
+msgid "desc_val, scale_out, mask0, mask1, mask2, mask3[, enable_ws])."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:882
+msgid ""
+"Aliases: you can also pass `ws` or `warp_specialized` (booleans) instead of "
+"`enable_ws`. Alternatively, use `variant=\"ws\"` (or \"default\"). - "
+"kind_dtype: instruction kind selector (e.g., T.float16 for kind::f16,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:885
+msgid ""
+"\"tf32\" for kind::tf32, \"int8\" for kind::i8, \"float8_e4m3\" for kind::"
+"f8f6f4)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:892
+msgid ""
+"Expects 13 positional arguments: (kind_dtype, A_ptr, A_offset, desc_b, "
+"B_offset, C_ptr, C_offset,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:894
+msgid "desc_val, scale_out, mask0, mask1, mask2, mask3)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:895
+msgid ""
+"kind_dtype: instruction kind selector (e.g., T.float16 for kind::f16, "
+"\"tf32\" for kind::tf32, \"int8\" for kind::i8, \"float8_e4m3\" for kind::"
+"f8f6f4)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:909
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:930
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1095
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1154
+msgid "The destination pointer variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:911
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1097
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1156
+msgid "The source pointer variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:913
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1099
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1158
+msgid "The source offset."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:915
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1101
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1160
+msgid "The destination stride."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:928
+msgid "The number of elements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:932
+msgid "The destination offset."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:941
+msgid ""
+"TVM intrinsic for ptx load matrix from shared memory https://docs.nvidia.com/"
+"cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-"
+"ldmatrix"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:946
+msgid "The matrix is loaded in column-major format."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:948
+msgid "The number of matrices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:950
+msgid "The data type of the matrices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:952
+msgid "The local pointer variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:954
+msgid "The offset of local pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:956
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1011
+msgid "The shared memory pointer variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:958
+msgid "The offset of shared memort pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:967
+msgid ""
+"TVM intrinsic for ptx async copy from global to shared memory using cp.async "
+"https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#data-"
+"movement-and-conversion-instructions-cp-async"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:970
+msgid ""
+"The destination (shared memory) access pointer created by tvm_access_ptr. "
+"Should include pointer, offset, extent, and write access flag (rw_mask=2)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:973
+msgid ""
+"The source (global memory) access pointer created by tvm_access_ptr. Should "
+"include pointer, offset, extent, and read access flag (rw_mask=1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:976
+msgid "The number of bytes to copy (must be 4, 8, or 16)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:978
+msgid ""
+"Optional predicate condition for conditional cp.async. When provided, the "
+"copy will only be performed if the predicate evaluates to true. Otherwise, "
+"the destination will be filled with zeros (default behavior of cp.async)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:987
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1006
+msgid ""
+"TVM intrinsic for ptx async copy from global to shared memory using cp.async."
+"bulk https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#data-"
+"movement-and-conversion-instructions-cp-async-bulk"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1013
+msgid "The offset of shared memory pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1015
+msgid "The global memory pointer variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1017
+msgid "The offset of global memory pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1019
+msgid "The data size to copy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1021
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1172
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1184
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1206
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1219
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1234
+msgid "The ID of the barrier shared memory pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1030
+msgid ""
+"TVM intrinsic for ptx async copy commit https://docs.nvidia.com/cuda/"
+"parallel-thread-execution/index.html#data-movement-and-conversion-"
+"instructions-cp-async-commit-group"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1039
+msgid ""
+"TVM intrinsic for ptx async copy wait https://docs.nvidia.com/cuda/parallel-"
+"thread-execution/index.html#data-movement-and-conversion-instructions-cp-"
+"async-wait-group"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1042
+msgid ""
+"The number of the most recent uncommitted pending cp.async groups to wait."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1051
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1110
+msgid ""
+"TVM intrinsic for amd matrix core mfma instructions https://docs.nvidia.com/"
+"cuda/parallel-thread-execution/index.html#warp-level-matrix-instructions-for-"
+"mma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1169
+msgid ""
+"TVM intrinsic for ptx async copy barrier using cp.async.mbarrier.arrive "
+"https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#parallel-"
+"synchronization-and-communication-instructions-cp-async-mbarrier-arrive"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1181
+msgid ""
+"TVM intrinsic for ptx barrier initialization of thread count using mbarrier."
+"init https://docs.nvidia.com/cuda/parallel-thread-execution/index."
+"html#parallel-synchronization-and-communication-instructions-mbarrier-init"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1186
+msgid "Number of threads expected to arrive at the barrier."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1203
+msgid ""
+"TVM intrinsic for ptx barrier arrival using mbarrier.arrive https://docs."
+"nvidia.com/cuda/parallel-thread-execution/index.html#parallel-"
+"synchronization-and-communication-instructions-mbarrier-arrive"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1215
+msgid ""
+"TVM intrinsic for ptx barrier arrival with expect tx using mbarrier.arrive."
+"expect_tx https://docs.nvidia.com/cuda/parallel-thread-execution/index."
+"html#parallel-synchronization-and-communication-instructions-mbarrier-arrive "
+"https://docs.nvidia.com/cuda/parallel-thread-execution/index.html#parallel-"
+"synchronization-and-communication-instructions-mbarrier-expect-tx-operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1221
+msgid ""
+"Increases the tx count of the mbarrier object to track completion of "
+"additional async transactions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1231
+msgid ""
+"TVM intrinsic for ptx barrier wait using mbarrier.try_wait https://docs."
+"nvidia.com/cuda/parallel-thread-execution/index.html#parallel-"
+"synchronization-and-communication-instructions-mbarrier-test-wait-mbarrier-"
+"try-wait"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1245
+msgid "The number of barriers to create."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1258
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1271
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1282
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1284
+msgid "The input vector."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1295
+msgid ""
+"The returned tir expression, whose data type is int, float or void pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1306
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1320
+msgid "List of symbolic boolean expressions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1311
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1325
+msgid "**expr** -- Expression"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1318
+msgid "arguments"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1333
+msgid ""
+"The trace function allows to trace specific tensor at the runtime. The "
+"tracing value should come as last argument. The trace action should be "
+"specified, by default tvm.default_trace_action is used."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1340
+msgid "The name of the trace action."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1348
+msgid ":py:obj:`tvm.tir.call_packed`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1349
+msgid "Creates packed function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1361
+msgid "**value** -- The minimum value of dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1374
+msgid "**value** -- The maximum value of dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1387
+msgid "**value** -- The infinity value of dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1395
+msgid "The input value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1402
+msgid "**value** -- The reinterpret cast value of dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1410
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1421
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1432
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1443
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1454
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1465
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1476
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1487
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1498
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1509
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1520
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1531
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1542
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1553
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1564
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1575
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1586
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1597
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1608
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1619
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1630
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1641
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1643
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1654
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1665
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1688
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1701
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1717
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1730
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1801
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1821
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1834
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1836
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1847
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1849
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1860
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1862
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1873
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1875
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1886
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1899
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1912
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1925
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1938
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1961
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1976
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1991
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2049
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2051
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2062
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2064
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2075
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2077
+msgid "Input argument."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1413
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1424
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1435
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1446
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1457
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1468
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1479
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1490
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1501
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1512
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1523
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1534
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1545
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1556
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1567
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1578
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1589
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1600
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1611
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1622
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1633
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1646
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1657
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1668
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1680
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1693
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1706
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1722
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1735
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1806
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1826
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1839
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1852
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1865
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1878
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1904
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1917
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1930
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1943
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1994
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2018
+msgid "**y** -- The result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1676
+msgid "Input 32 or 64 bit integer. The result is undefined if the input is 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1714
+msgid ""
+"The truncated value of the scalar x is the nearest integer i which is closer "
+"to zero than x is."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1743
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1771
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1786
+msgid "Left operand"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1745
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1773
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1788
+msgid "Right operand"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1750
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1763
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1778
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1793
+msgid "**res** -- The result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1758
+msgid "Input operand"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1812
+msgid ""
+"Round elements of the array to the nearest integer. This intrinsic uses llvm."
+"nearbyint instead of llvm.round which is faster but will results different "
+"from te.round. Notably nearbyint rounds according to the rounding mode, "
+"whereas te.round (llvm.round) ignores that. For differences between the two "
+"see: https://en.cppreference.com/w/cpp/numeric/math/round https://en."
+"cppreference.com/w/cpp/numeric/math/nearbyint"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1891
+msgid "**y** -- The marked expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1951
+msgid "Base value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1953
+msgid "Exponent value"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1963
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1978
+msgid "The exponent"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1968
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:1983
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2041
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2054
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2067
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2080
+msgid "**z** -- The result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2000
+msgid ""
+"Execute a multiplication between two Q-numbers x and y followed by a right "
+"shift s. The mathematical expression is:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2003
+msgid "out = round(x*y*2^-s)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2005
+msgid ""
+"More about Q-numbers here: https://en.wikipedia.org/wiki/Q_(number_format) "
+"The rounding rule is to the nearest value, rounding half up (i.e., "
+"round(x.1) = x and round (x.5) = x+1)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2009
+msgid "First Q-number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2011
+msgid "Second Q-number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2013
+msgid "Number of fractional bits in x and y. Needs to be > 0"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2015
+msgid "Integer shift"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2026
+msgid "First Q-number."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2028
+msgid "Second Q-number."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2030
+msgid "Integer left shift."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2032
+msgid "Integer right shift."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2034
+msgid "Number of fractional bits in x and y. Needs to be > 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2036
+msgid "Whether we need to do left shift or not."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2038
+msgid "Whether we need to do right shift or not."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2088
+msgid "The condition"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2090
+msgid "The result expression if cond is true."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2092
+msgid "The result expression if cond is false."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2094
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2117
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2134
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2155
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2176
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2193
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2210
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2225
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2240
+msgid "The location of this operator in the source."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2097
+msgid "**result** -- The result of conditional expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2102
+msgid ""
+"Unlike Select, if_then_else will not execute the branch that does not "
+"satisfy the condition. You can use it to guard against out of bound access. "
+"Unlike Select, if_then_else cannot be vectorized if some lanes in the vector "
+"have different conditions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2113
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2130
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2151
+msgid "The left hand operand, known to be non-negative."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2115
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2132
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2153
+msgid "The right hand operand, known to be non-negative."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2120
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2137
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2158
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2179
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2196
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2213
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2228
+msgid "**res** -- The result expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2123
+msgid "When operands are integers, returns truncdiv(a, b, span)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2142
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2163
+msgid ""
+"Use this function to split non-negative indices. This function may take "
+"advantage of operands' non-negativeness."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2172
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2189
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2206
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2221
+msgid "The left hand operand"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2174
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2191
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2208
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2223
+msgid "The right hand operand"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2182
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2199
+msgid "This is the default integer division behavior in C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2236
+msgid "The left operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2238
+msgid "The right operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2243
+msgid "**op** -- The result Expr of ceildiv operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2251
+msgid "A binary function which takes two Expr as input to return a Expr."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2253
+msgid "A function which takes a type string as input to return a const Expr."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2256
+msgid ""
+"**reducer** -- A function which creates a reduce expression over axis. There "
+"are two ways to use it:  1. accept (expr, axis, where) to produce an Reduce "
+"Expr on    specified axis; 2. simply use it with multiple Exprs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2256
+msgid ""
+"**reducer** -- A function which creates a reduce expression over axis. There "
+"are two ways to use it:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2259
+msgid "accept (expr, axis, where) to produce an Reduce Expr on specified axis;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2261
+msgid "simply use it with multiple Exprs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2265
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2266
+msgid ""
+"n = te.var(\"n\")\n"
+"m = te.var(\"m\")\n"
+"mysum = te.comm_reducer(lambda x, y: x+y,\n"
+"    lambda t: tvm.tir.const(0, dtype=t), name=\"mysum\")\n"
+"A = te.placeholder((n, m), name=\"A\")\n"
+"k = te.reduce_axis((0, m), name=\"k\")\n"
+"B = te.compute((n,), lambda i: mysum(A[i, k], axis=k), name=\"B\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2281
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2300
+msgid "The device type which the space will be allocated."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2283
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2302
+msgid "The device id which the space will be allocated."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2285
+msgid "The size of the space requested."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2287
+msgid ""
+"The type code of the array elements. Only used in certain backends such as "
+"OpenGL."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2289
+msgid ""
+"The type bits of the array elements. Only used in certain backends such as "
+"OpenGL."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2304
+msgid "The result allocated space pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2313
+msgid "Returns an item from any list. list_handle: Var"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2315
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2326
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2337
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2352
+msgid "The handle to anylist"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2316
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2327
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2338
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2353
+msgid "index"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:-1
+msgid "int"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2317
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2328
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2339
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2354
+msgid "The index"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2324
+msgid "Reset an item from any list. list_handle: Var"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2335
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2350
+msgid "Set anylist item by result of packed call. list_handle: Var"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2340
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2355
+msgid "func_name: str"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2341
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2356
+msgid "The name of the function to be called."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/op/index.rst:2365
+msgid ""
+"Get the target's vscale value. It will be lowered to llvm.vscale intrinsic "
+"(https://llvm.org/docs/LangRef.html#llvm-vscale-intrinsic) :returns: "
+"**call** -- Call to the vscale intrinsic :rtype: PrimExpr"
+msgstr ""

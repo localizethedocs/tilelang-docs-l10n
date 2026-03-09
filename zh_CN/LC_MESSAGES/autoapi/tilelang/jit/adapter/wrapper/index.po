@@ -1,0 +1,459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:2
+msgid "tilelang.jit.adapter.wrapper"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY <tilelang.jit.adapter.wrapper."
+"PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP <tilelang.jit.adapter."
+"wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_INIT_FUNC <tilelang.jit.adapter.wrapper.PREDEF_INIT_FUNC>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_HOST_FUNC <tilelang.jit.adapter.wrapper.PREDEF_HOST_FUNC>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE <tilelang.jit.adapter.wrapper."
+"L2_PERSISTENT_MAP_CREATE_HANDLE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC <tilelang.jit.adapter.wrapper."
+"L2_PERSISTENT_MAP_INIT_FUNC>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE <tilelang.jit.adapter.wrapper."
+"L2_PERSISTENT_MAP_RESET_HANDLE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`TMA_DESC_INIT_FUNC <tilelang.jit.adapter.wrapper."
+"TMA_DESC_INIT_FUNC>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`TMA_IM2COL_DESC_INIT_FUNC <tilelang.jit.adapter.wrapper."
+"TMA_IM2COL_DESC_INIT_FUNC>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`KERNEL_LAUNCH_FUNC_CODE <tilelang.jit.adapter.wrapper."
+"KERNEL_LAUNCH_FUNC_CODE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`KERNEL_CLUSTER_LAUNCH_FUNC_CODE <tilelang.jit.adapter.wrapper."
+"KERNEL_CLUSTER_LAUNCH_FUNC_CODE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.jit.adapter.wrapper.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:27
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ":py:obj:`BaseWrapper <tilelang.jit.adapter.wrapper.BaseWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid "Helper class that provides a standard way to create an ABC using"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`TLCUDASourceWrapper <tilelang.jit.adapter.wrapper."
+"TLCUDASourceWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`TLHIPSourceWrapper <tilelang.jit.adapter.wrapper."
+"TLHIPSourceWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:528
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid "A wrapper class for the TileLang HIP backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`TLCPUSourceWrapper <tilelang.jit.adapter.wrapper."
+"TLCPUSourceWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`TLMetalSourceWrapper <tilelang.jit.adapter.wrapper."
+"TLMetalSourceWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ":py:obj:`TLWrapper <tilelang.jit.adapter.wrapper.TLWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:691
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:749
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid "A wrapper class for the TileLang backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+msgid ":py:obj:`TLPyWrapper <tilelang.jit.adapter.wrapper.TLPyWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:41
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:46
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:69
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:110
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:140
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:162
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:183
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:208
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:230
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:270
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:314
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:345
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:545
+msgid "<details><summary>Show Value</summary>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:50
+msgid ""
+"\"\"\"\n"
+"    cudaError_t result_{0} = cudaFuncSetAttribute({0}, "
+"cudaFuncAttributeMaxDynamicSharedMemorySize, {1});\n"
+"    if (result_{0} != cudaSuccess) {{\n"
+"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to set the allowed "
+"dynamic shared memory size to %d with error: %s\", {1}, "
+"cudaGetErrorString(result_{0}));\n"
+"        return -1;\n"
+"    }}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:60
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:101
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:131
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:153
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:174
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:199
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:221
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:261
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:305
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:336
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:374
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:566
+msgid "</details>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:73
+msgid ""
+"\"\"\"\n"
+"    int device_{0} = 0;\n"
+"    hipError_t dev_res_{0} = hipGetDevice(&device_{0});\n"
+"    if (dev_res_{0} != hipSuccess) {{\n"
+"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to get HIP device for "
+"{0}: %s\", hipGetErrorString(dev_res_{0}));\n"
+"        return -1;\n"
+"    }}\n"
+"    int max_smem_{0} = 0;\n"
+"    hipError_t attr_res_{0} = hipDeviceGetAttribute(&max_smem_{0}, "
+"hipDeviceAttributeMaxSharedMemoryPerBlock, device_{0});\n"
+"    if (attr_res_{0} != hipSuccess || max_smem_{0} <= 0) {{\n"
+"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to query HIP max shared "
+"memory for {0}: %s\", hipGetErrorString(attr_res_{0}));\n"
+"        return -1;\n"
+"    }}\n"
+"    if ({1} > max_smem_{0}) {{\n"
+"        snprintf(\n"
+"            error_buf,\n"
+"            ERROR_BUF_SIZE,\n"
+"            \"Requested dynamic shared memory %d exceeds device limit %d for "
+"{0}\",\n"
+"            {1},\n"
+"            max_smem_{0}\n"
+"        );\n"
+"        return -1;\n"
+"    }}\n"
+"    return 0;\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:114
+msgid ""
+"\"\"\"\n"
+"#define ERROR_BUF_SIZE 1024\n"
+"static char error_buf[ERROR_BUF_SIZE];\n"
+"\n"
+"extern \"C\" const char* get_last_error() {{\n"
+"    return error_buf;\n"
+"}}\n"
+"\n"
+"extern \"C\" int init() {{\n"
+"    error_buf[0] = '\\0';\n"
+"    {0}\n"
+"    return 0;\n"
+"}}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:144
+msgid ""
+"\"\"\"\n"
+"extern \"C\" int call({}) {{\n"
+"{}\n"
+"  return 0;\n"
+"}}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:166
+msgid ""
+"\"\"\"\n"
+"  cudaStreamAttrValue stream_attribute;\n"
+"  size_t init_persisting_l2_cache_size;\n"
+"  cudaDeviceGetLimit(&init_persisting_l2_cache_size, "
+"cudaLimitPersistingL2CacheSize);\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:187
+msgid ""
+"\"\"\"\n"
+"  stream_attribute.accessPolicyWindow.hitRatio = {1};\n"
+"  stream_attribute.accessPolicyWindow.hitProp = "
+"cudaAccessPropertyPersisting;\n"
+"  stream_attribute.accessPolicyWindow.missProp = "
+"cudaAccessPropertyStreaming;\n"
+"  cudaDeviceSetLimit(cudaLimitPersistingL2CacheSize, {2});\n"
+"  stream_attribute.accessPolicyWindow.base_ptr = (void*)({0});\n"
+"  stream_attribute.accessPolicyWindow.num_bytes = {2};\n"
+"  cudaStreamSetAttribute(stream, cudaStreamAttributeAccessPolicyWindow, "
+"&stream_attribute);\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:212
+msgid ""
+"\"\"\"\n"
+"  stream_attribute.accessPolicyWindow.num_bytes = 0;\n"
+"  cudaStreamSetAttribute(stream, cudaStreamAttributeAccessPolicyWindow, "
+"&stream_attribute);\n"
+"  cudaCtxResetPersistingL2Cache();\n"
+"  cudaDeviceSetLimit(cudaLimitPersistingL2CacheSize, "
+"init_persisting_l2_cache_size);\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:234
+msgid ""
+"\"\"\"\n"
+"  CUtensorMap {0};\n"
+"  CUtensorMapDataType {0}_type= (CUtensorMapDataType){1};\n"
+"  cuuint32_t {0}_tensorRank= {2};\n"
+"  void *{0}_globalAddress= {3};\n"
+"  cuuint64_t {0}_globalDim[{2}]= {{{4}}};\n"
+"  cuuint64_t {0}_globalStride[{2}]= {{{5}}};\n"
+"  cuuint32_t {0}_boxDim[{2}]= {{{6}}};\n"
+"  cuuint32_t {0}_elementStrides[{2}]= {{{7}}};\n"
+"  CUtensorMapInterleave {0}_interleave= (CUtensorMapInterleave){8};\n"
+"  CUtensorMapSwizzle {0}_swizzle= (CUtensorMapSwizzle){9};\n"
+"  CUtensorMapL2promotion {0}_l2Promotion= (CUtensorMapL2promotion){10};\n"
+"  CUtensorMapFloatOOBfill {0}_oobFill= (CUtensorMapFloatOOBfill){11};\n"
+"\n"
+"  CUresult {0}_result = "
+"CUTLASS_CUDA_DRIVER_WRAPPER_CALL(cuTensorMapEncodeTiled)(\n"
+"    &{0}, {0}_type, {0}_tensorRank, {0}_globalAddress, {0}_globalDim, {0}"
+"_globalStride + 1, {0}_boxDim, {0}_elementStrides, {0}_interleave, {0}"
+"_swizzle, {0}_l2Promotion, {0}_oobFill);\n"
+"\n"
+"  if ({0}_result != CUDA_SUCCESS) {{\n"
+"          std::stringstream ss;\n"
+"          ss << \"Error: Failed to initialize the TMA descriptor {0}\";\n"
+"          snprintf(error_buf, ERROR_BUF_SIZE, \"%s\", ss.str().c_str());\n"
+"          return -1;\n"
+"  }}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:274
+msgid ""
+"\"\"\"\n"
+"  CUtensorMap {0};\n"
+"  CUtensorMapDataType {0}_type= (CUtensorMapDataType){1};\n"
+"  cuuint32_t {0}_tensorRank= {2};\n"
+"  void *{0}_globalAddress= {3};\n"
+"  cuuint64_t {0}_globalDim[{2}]= {{{4}}};\n"
+"  cuuint64_t {0}_globalStride[{2}]= {{{5}}};\n"
+"  cuuint32_t {0}_elementStrides[{2}]= {{{6}}};\n"
+"  int {0}_lowerCorner[{2} - 2]= {{{7}}};\n"
+"  int {0}_upperCorner[{2} - 2]= {{{8}}};\n"
+"  cuuint32_t {0}_channelsPerPixel= {9};\n"
+"  cuuint32_t {0}_pixelsPerColumn= {10};\n"
+"  CUtensorMapInterleave {0}_interleave= (CUtensorMapInterleave){11};\n"
+"  CUtensorMapSwizzle {0}_swizzle= (CUtensorMapSwizzle){12};\n"
+"  CUtensorMapL2promotion {0}_l2Promotion= (CUtensorMapL2promotion){13};\n"
+"  CUtensorMapFloatOOBfill {0}_oobFill= (CUtensorMapFloatOOBfill){14};\n"
+"\n"
+"  CUresult {0}_result = "
+"CUTLASS_CUDA_DRIVER_WRAPPER_CALL(cuTensorMapEncodeIm2col)(\n"
+"    &{0}, {0}_type, {0}_tensorRank, {0}_globalAddress, {0}_globalDim, {0}"
+"_globalStride + 1,\n"
+"    {0}_lowerCorner, {0}_upperCorner, {0}_channelsPerPixel, {0}"
+"_pixelsPerColumn, {0}_elementStrides, {0}_interleave, {0}_swizzle, {0}"
+"_l2Promotion, {0}_oobFill);\n"
+"\n"
+"  if ({0}_result != CUDA_SUCCESS) {{\n"
+"          std::stringstream ss;\n"
+"          ss << \"Error: Failed to initialize the TMA descriptor {0}\";\n"
+"          snprintf(error_buf, ERROR_BUF_SIZE, \"%s\", ss.str().c_str());\n"
+"          return -1;\n"
+"  }}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:318
+msgid ""
+"\"\"\"\n"
+"  {{\n"
+"          cudaLaunchConfig_t config;\n"
+"          cudaLaunchAttribute attribute[1];\n"
+"          attribute[0].id = "
+"cudaLaunchAttributeProgrammaticStreamSerialization;\n"
+"          attribute[0].val.programmaticStreamSerializationAllowed = 1;\n"
+"          config.attrs = attribute;\n"
+"          config.numAttrs = 1;\n"
+"          config.stream = stream;\n"
+"          config.gridDim = {0};\n"
+"          config.blockDim = {1};\n"
+"          config.dynamicSmemBytes = {2};\n"
+"          cudaLaunchKernelEx(&config, {4}, {3});\n"
+"  }}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:349
+msgid ""
+"\"\"\"\n"
+"  {{\n"
+"          cudaLaunchConfig_t config;\n"
+"          cudaLaunchAttribute attribute[2];\n"
+"          attribute[0].id = cudaLaunchAttributeClusterDimension;\n"
+"          attribute[0].val.clusterDim = {{{5}, {6}, {7}}};\n"
+"          attribute[1].id = "
+"cudaLaunchAttributeProgrammaticStreamSerialization;\n"
+"          attribute[1].val.programmaticStreamSerializationAllowed = 1;\n"
+"          config.attrs = attribute;\n"
+"          config.numAttrs = 2;\n"
+"          config.stream = stream;\n"
+"          config.gridDim = {0};\n"
+"          config.blockDim = {1};\n"
+"          config.dynamicSmemBytes = {2};\n"
+"          cudaError_t cluster_attr_result = cudaFuncSetAttribute({4}, "
+"cudaFuncAttributeNonPortableClusterSizeAllowed, 1);\n"
+"          if (cluster_attr_result != cudaSuccess) {{\n"
+"                  snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to set "
+"cluster attribute for {4}: %s\", cudaGetErrorString(cluster_attr_result));\n"
+"                  return -1;\n"
+"          }}\n"
+"          cudaLaunchKernelEx(&config, {4}, {3});\n"
+"  }}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:382
+msgid "Bases: :py:obj:`abc.ABC`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:385
+msgid ""
+"Helper class that provides a standard way to create an ABC using inheritance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:525
+msgid "Bases: :py:obj:`TLCUDASourceWrapper`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:549
+msgid ""
+"\"\"\"\n"
+"#define ERROR_BUF_SIZE 1024\n"
+"static char error_buf[ERROR_BUF_SIZE];\n"
+"\n"
+"extern \"C\" const char* get_last_error() {\n"
+"    return error_buf;\n"
+"}\n"
+"\n"
+"extern \"C\" int init() {\n"
+"    error_buf[0] = '\\0';\n"
+"\n"
+"    return 0;\n"
+"}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:688
+msgid "Bases: :py:obj:`BaseWrapper`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:746
+msgid "Bases: :py:obj:`TLWrapper`"
+msgstr ""
