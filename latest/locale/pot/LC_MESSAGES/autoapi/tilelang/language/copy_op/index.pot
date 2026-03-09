@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-03-09 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,29 +29,40 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:21:<autosummary>:1
 msgid ""
 ":py:obj:`copy <tilelang.language.copy_op.copy>`\\ \\(src\\, dst\\, \\*\\[\\, "
 "coalesced\\_width\\, disable\\_tma\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:26
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:27
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:21:<autosummary>:1
 msgid "Copy data between memory regions."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`async_copy <tilelang.language.copy_op.async_copy>`\\ \\(src\\, "
+"dst\\, \\*\\[\\, coalesced\\_width\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:74
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:21:<autosummary>:1
+msgid "Asynchronous copy primitive lowered through cp.async."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:21:<autosummary>:1
 msgid ""
 ":py:obj:`c2d_im2col <tilelang.language.copy_op.c2d_im2col>`\\ \\(img\\, "
 "col\\, nhw\\_step\\, c\\_step\\, kernel\\, stride\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:73
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:98
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:21:<autosummary>:1
 msgid "Perform im2col transformation for 2D convolution."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:22
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:23
 msgid "Module Contents"
 msgstr ""
 
@@ -59,34 +70,37 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:28
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:29
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:81
 msgid "Source memory region"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:30
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:31
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:83
 msgid "Destination memory region"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:32
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:33
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:85
 msgid "Width for coalesced memory access. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:34
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:35
 msgid "Whether to disable TMA acceleration. Defaults to False."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:36
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:37
 msgid "Cache eviction policy. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:38
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:39
 msgid ""
 "Additional annotations dict. If provided, coalesced_width, disable_tma, and "
 "eviction_policy can also be specified here. Values in annotations take "
 "precedence over individual arguments."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:42
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:43
 msgid ""
 "A parallel loop layout hint for the SIMT copy (only valid for normal SIMT "
 "copy; incompatible with TMA/LDSM/STSM/TMem). When provided, it is attached "
@@ -97,7 +111,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:47
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:48
 msgid "If copy extents cannot be deduced from arguments"
 msgstr ""
 
@@ -105,7 +119,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:49
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:50
 msgid "A handle to the copy operation"
 msgstr ""
 
@@ -113,19 +127,19 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:52
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:53
 msgid ""
 "Range handling notes: - Accepts `Buffer`/`BufferRegion`/`BufferLoad` on "
 "either side. Extents are"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:54
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:55
 msgid ""
 "derived as follows: `Buffer -> shape`, `BufferRegion -> [r.extent]`, "
 "`BufferLoad -> extents from its inferred/encoded region`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:56
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:57
 msgid ""
 "Normally, we require the extents of both sides to be the same. If they "
 "differ, the copy instruction follows an internal rule to select one side as "
@@ -133,13 +147,13 @@ msgid ""
 "code. And if some dimensions are 1, unexpected errors may happen."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:60
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:61
 msgid ""
 "Small Optimization: If both `src` and `dst` are scalar `BufferLoad` without "
 "region extents, lowers to a direct store: `dst[...] = src[...]`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:62
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:63
 msgid ""
 "Syntactic Sugar: TileLang supports passing the head address of a buffer to "
 "represent the whole buffer if there are no ambiguity. For example, T.copy(A, "
@@ -147,45 +161,72 @@ msgid ""
 "remember currently we don't support something like \"broadcast\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:66
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:67
 msgid ""
 "The finalized extents are encoded with `tl.region` via `to_buffer_region` "
 "and passed through to the backend; low-level loop construction and any scope-"
 "specific decisions happen during lowering."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:75
-msgid "Input image buffer"
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:76
+msgid ""
+"This operator is intended for explicitly asynchronous global->shared copy. "
+"The backend enforces cp.async constraints and emits:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:77
-msgid "Output column buffer"
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:78
+msgid "`ptx_cp_async(...)` + `ptx_commit_group()`."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:79
-msgid "Step size for batch and spatial dimensions"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:81
-msgid "Step size for channel dimension"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:83
-msgid "Kernel size"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:85
-msgid "Stride of the convolution"
+msgid ""
+"No wait is auto-inserted for `T.async_copy`; synchronization is explicit."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:87
-msgid "Dilation rate"
+msgid "Additional annotations dict."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:89
-msgid "Padding size"
+msgid "A parallel loop layout hint for the SIMT copy loop."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:92
+msgid "A handle to the async copy operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:100
+msgid "Input image buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:102
+msgid "Output column buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:104
+msgid "Step size for batch and spatial dimensions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:106
+msgid "Step size for channel dimension"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:108
+msgid "Kernel size"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:110
+msgid "Stride of the convolution"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:112
+msgid "Dilation rate"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:114
+msgid "Padding size"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:117
 msgid "A handle to the im2col operation"
 msgstr ""

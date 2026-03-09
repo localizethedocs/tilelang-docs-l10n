@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-03-09 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid ""
 ":py:obj:`Parallel <tilelang.language.loop.Parallel>`\\ \\(\\*extents\\[\\, "
-"coalesced\\_width\\, loop\\_layout\\]\\)"
+"coalesced\\_width\\, loop\\_layout\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:33
@@ -46,7 +46,7 @@ msgid ""
 "wave\\_size\\, index\\[\\, group\\_size\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:75
+#: ../../../autoapi/tilelang/language/loop/index.rst:84
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Tools to construct persistent for loop."
 msgstr ""
@@ -57,7 +57,7 @@ msgid ""
 "stop\\, num\\_stages\\, order\\, stage\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:89
+#: ../../../autoapi/tilelang/language/loop/index.rst:98
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Tools to construct pipelined for loop."
 msgstr ""
@@ -68,7 +68,7 @@ msgid ""
 "step\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:105
+#: ../../../autoapi/tilelang/language/loop/index.rst:114
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "The serial For statement."
 msgstr ""
@@ -79,7 +79,7 @@ msgid ""
 "step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:122
+#: ../../../autoapi/tilelang/language/loop/index.rst:131
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "The unrolled For statement."
 msgstr ""
@@ -90,7 +90,7 @@ msgid ""
 "step\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:143
+#: ../../../autoapi/tilelang/language/loop/index.rst:152
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Alias of T.serial."
 msgstr ""
@@ -101,7 +101,7 @@ msgid ""
 "step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:148
+#: ../../../autoapi/tilelang/language/loop/index.rst:157
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Alias of T.unroll."
 msgstr ""
@@ -112,7 +112,7 @@ msgid ""
 "stop\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:153
+#: ../../../autoapi/tilelang/language/loop/index.rst:162
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "The vectorized For statement."
 msgstr ""
@@ -123,7 +123,7 @@ msgid ""
 "stop\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:168
+#: ../../../autoapi/tilelang/language/loop/index.rst:177
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Alias of T.vectorized."
 msgstr ""
@@ -157,20 +157,35 @@ msgid ""
 "equal ``k``."
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/loop/index.rst:46
+msgid ""
+"Optional hint for PTX async-copy rewrite in this parallel loop subtree. When "
+"set to ``True``, it requests cp.async injection even outside pipelined "
+"loops. ``False``/``None`` keeps default behavior. Internally lowered as loop "
+"annotation ``\"parallel_prefer_async\"``."
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/loop/index.rst:51
+msgid ""
+"Optional user-provided loop annotations attached to the outermost generated "
+"parallel loop. For example: ``{\"parallel_async_without_async_commit_wait\": "
+"True}``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:60
 msgid ""
 "layout inference. For a nested parallel nest, this annotation must live on "
 "the outermost loop; inner parallel loops must not carry the layout "
 "annotation themselves."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:54
-#: ../../../autoapi/tilelang/language/loop/index.rst:55
+#: ../../../autoapi/tilelang/language/loop/index.rst:63
+#: ../../../autoapi/tilelang/language/loop/index.rst:64
 msgid "``InputDim == k``."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:56
-#: ../../../autoapi/tilelang/language/loop/index.rst:57
+#: ../../../autoapi/tilelang/language/loop/index.rst:65
+#: ../../../autoapi/tilelang/language/loop/index.rst:66
 msgid "inner loops, or mismatched ``InputDim``) cause a compilation error."
 msgstr ""
 
@@ -178,11 +193,11 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:69
-#: ../../../autoapi/tilelang/language/loop/index.rst:99
-#: ../../../autoapi/tilelang/language/loop/index.rst:116
-#: ../../../autoapi/tilelang/language/loop/index.rst:137
-#: ../../../autoapi/tilelang/language/loop/index.rst:162
+#: ../../../autoapi/tilelang/language/loop/index.rst:78
+#: ../../../autoapi/tilelang/language/loop/index.rst:108
+#: ../../../autoapi/tilelang/language/loop/index.rst:125
+#: ../../../autoapi/tilelang/language/loop/index.rst:146
+#: ../../../autoapi/tilelang/language/loop/index.rst:171
 msgid "**res** -- The ForFrame."
 msgstr ""
 
@@ -190,57 +205,57 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:77
+#: ../../../autoapi/tilelang/language/loop/index.rst:86
 msgid "The list of dominators."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:79
+#: ../../../autoapi/tilelang/language/loop/index.rst:88
 msgid "The wave size."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:81
+#: ../../../autoapi/tilelang/language/loop/index.rst:90
 msgid "The tile index in one wave."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:83
+#: ../../../autoapi/tilelang/language/loop/index.rst:92
 msgid "The group size."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:91
-#: ../../../autoapi/tilelang/language/loop/index.rst:107
-#: ../../../autoapi/tilelang/language/loop/index.rst:124
-#: ../../../autoapi/tilelang/language/loop/index.rst:155
+#: ../../../autoapi/tilelang/language/loop/index.rst:100
+#: ../../../autoapi/tilelang/language/loop/index.rst:116
+#: ../../../autoapi/tilelang/language/loop/index.rst:133
+#: ../../../autoapi/tilelang/language/loop/index.rst:164
 msgid "The minimum value of iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:93
-#: ../../../autoapi/tilelang/language/loop/index.rst:109
-#: ../../../autoapi/tilelang/language/loop/index.rst:126
-#: ../../../autoapi/tilelang/language/loop/index.rst:157
+#: ../../../autoapi/tilelang/language/loop/index.rst:102
+#: ../../../autoapi/tilelang/language/loop/index.rst:118
+#: ../../../autoapi/tilelang/language/loop/index.rst:135
+#: ../../../autoapi/tilelang/language/loop/index.rst:166
 msgid "The maximum value of iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:95
+#: ../../../autoapi/tilelang/language/loop/index.rst:104
 msgid ""
 "The max number of buffer used between pipeline producers and consumers. if "
 "num_stages is 0, pipeline will not be enabled."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:111
-#: ../../../autoapi/tilelang/language/loop/index.rst:128
+#: ../../../autoapi/tilelang/language/loop/index.rst:120
+#: ../../../autoapi/tilelang/language/loop/index.rst:137
 msgid "The step size of the iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:113
-#: ../../../autoapi/tilelang/language/loop/index.rst:134
-#: ../../../autoapi/tilelang/language/loop/index.rst:159
+#: ../../../autoapi/tilelang/language/loop/index.rst:122
+#: ../../../autoapi/tilelang/language/loop/index.rst:143
+#: ../../../autoapi/tilelang/language/loop/index.rst:168
 msgid "The optional annotations of the For statement."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:130
+#: ../../../autoapi/tilelang/language/loop/index.rst:139
 msgid "Whether to explicitly unroll the loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:132
+#: ../../../autoapi/tilelang/language/loop/index.rst:141
 msgid "The unroll factor of the loop."
 msgstr ""

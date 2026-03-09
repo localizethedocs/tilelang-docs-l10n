@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-03-09 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,7 +147,7 @@ msgid ""
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:77
-#: ../../../programming_guides/language_basics.md:187
+#: ../../../programming_guides/language_basics.md:195
 msgid "Notes"
 msgstr ""
 
@@ -292,10 +292,21 @@ msgid ""
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:151
+msgid ""
+"If you need explicitly asynchronous global->shared prefetch for manual "
+"pipelining, use `T.async_copy(src, dst)`. Unlike `T.copy`, it does not auto-"
+"insert any wait: you must explicitly insert `T.ptx_wait_group(...)` before "
+"consuming `dst`. A shared-memory barrier is still required for cross-thread "
+"consumption, but in most TileLang programs you do not need to write it "
+"manually because `ThreadSync(\"shared\")` will insert the necessary `T."
+"tvm_storage_sync(\"shared\")` before the first read from `dst`."
+msgstr ""
+
+#: ../../../programming_guides/language_basics.md:159
 msgid "6. A Minimal End‑to‑End Example (Vector Add)"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:153
+#: ../../../programming_guides/language_basics.md:161
 msgid ""
 "import tilelang\n"
 "import tilelang.language as T\n"
@@ -331,29 +342,29 @@ msgid ""
 "torch.testing.assert_close(C, A + B)\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:188
+#: ../../../programming_guides/language_basics.md:196
 msgid ""
 "The `@jit` wrapper returns a callable kernel after the first compilation."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:189
+#: ../../../programming_guides/language_basics.md:197
 msgid ""
 "You can pass compile‑time tunables (tile sizes, dtypes) through the outer "
 "Python function and bake them into the generated TIR."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:192
+#: ../../../programming_guides/language_basics.md:200
 msgid "7. Tiled GEMM Skeleton"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:194
+#: ../../../programming_guides/language_basics.md:202
 msgid ""
 "Below is a minimal pattern for a tiled GEMM using shared memory staging and "
 "a fragment accumulator. It mirrors the quickstart style found in the "
 "repository."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:197
+#: ../../../programming_guides/language_basics.md:205
 msgid ""
 "@T.prim_func\n"
 "def gemm(\n"
@@ -377,41 +388,41 @@ msgid ""
 "        T.copy(C_f, C[by * BM, bx * BN])\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:218
+#: ../../../programming_guides/language_basics.md:226
 msgid "8. Debugging and Printing"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:220
+#: ../../../programming_guides/language_basics.md:228
 msgid ""
 "Use `T.print` inside a kernel for quick introspection. TileLang emits "
 "printing from a single thread for shared/fragment scopes to avoid floods."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:223
+#: ../../../programming_guides/language_basics.md:231
 msgid ""
 "T.print(C_f, msg='accumulator:')\n"
 "T.print(A_s, msg='A tile:')\n"
 "T.print(C[0], msg='C[0] = ')\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:229
+#: ../../../programming_guides/language_basics.md:237
 msgid "9. Where to Go Next"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:231
+#: ../../../programming_guides/language_basics.md:239
 msgid "Control flow details: see Programming Guides → Control Flow"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:232
+#: ../../../programming_guides/language_basics.md:240
 msgid ""
 "Memory topics: see Programming Guides → (removed cache/layout); basics are "
 "covered inline"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:233
+#: ../../../programming_guides/language_basics.md:241
 msgid "Autotuning tile sizes and mappings: Programming Guides → Autotuning"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:234
+#: ../../../programming_guides/language_basics.md:242
 msgid "Operator examples (GEMM, GEMV, attention): see Deep Learning Operators"
 msgstr ""
