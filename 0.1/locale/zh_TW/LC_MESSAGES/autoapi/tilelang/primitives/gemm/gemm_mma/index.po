@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
 msgid "Return type"

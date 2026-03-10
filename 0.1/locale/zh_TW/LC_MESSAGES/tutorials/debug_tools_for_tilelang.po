@@ -488,7 +488,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:225
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Parameter"

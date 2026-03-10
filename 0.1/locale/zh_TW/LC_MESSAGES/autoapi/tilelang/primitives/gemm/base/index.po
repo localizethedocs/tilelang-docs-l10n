@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/primitives/gemm/base/index.rst:75
 msgid "The number to factorize."

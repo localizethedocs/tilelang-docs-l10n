@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:99
 msgid "Get the CUDA kernel source code."

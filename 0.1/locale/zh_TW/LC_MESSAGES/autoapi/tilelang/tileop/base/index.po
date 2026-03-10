@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:74
 msgid "The number to factorize."

@@ -31,7 +31,7 @@ msgstr "子模組"
 
 #: ../../../autoapi/tilelang/transform/index.rst:27
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/transform/index.rst:85:<autosummary>:1
 msgid ""
@@ -629,7 +629,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/transform/index.rst:197
 #: ../../../autoapi/tilelang/transform/index.rst:208

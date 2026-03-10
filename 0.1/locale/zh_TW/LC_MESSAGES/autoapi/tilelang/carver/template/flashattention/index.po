@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:86
 msgid "The target hardware architecture."

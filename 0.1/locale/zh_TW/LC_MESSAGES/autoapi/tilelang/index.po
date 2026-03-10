@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:48
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/index.rst:54:<autosummary>:1
 msgid ":py:obj:`set_log_level <tilelang.set_log_level>`\\ \\(level\\)"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/index.rst:66
 msgid ""

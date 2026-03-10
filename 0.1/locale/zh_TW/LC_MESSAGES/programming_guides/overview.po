@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:21
 msgid "Type System"
-msgstr ""
+msgstr "型別系統"
 
 #: ../../../programming_guides/overview.md:23
 msgid "Related Docs"

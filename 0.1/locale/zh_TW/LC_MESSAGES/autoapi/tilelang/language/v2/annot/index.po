@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:84
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:256

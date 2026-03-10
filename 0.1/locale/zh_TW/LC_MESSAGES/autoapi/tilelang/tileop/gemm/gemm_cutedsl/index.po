@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_cutedsl/index.rst:47
 msgid "Lower to a direct gemm_v1 call without complex MMA/WGMMA lowering."

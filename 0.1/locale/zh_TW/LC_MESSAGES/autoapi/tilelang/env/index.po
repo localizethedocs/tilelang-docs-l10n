@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:49
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/env/index.rst:55:<autosummary>:1
 msgid ""

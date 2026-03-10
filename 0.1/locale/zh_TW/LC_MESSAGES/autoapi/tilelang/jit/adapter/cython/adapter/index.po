@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:29
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:35:<autosummary>:1
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:173
 msgid "Returns the primary TIR function from the IR module."

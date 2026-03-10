@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:13
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ":py:obj:`get_cc <tilelang.contrib.cc.get_cc>`\\ \\(\\)"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:53
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:71

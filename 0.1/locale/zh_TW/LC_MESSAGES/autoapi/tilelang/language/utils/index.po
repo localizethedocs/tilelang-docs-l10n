@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/utils/index.rst:13
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/utils/index.rst:24:<autosummary>:1
 msgid ""
@@ -101,7 +101,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/utils/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/utils/index.rst:0
 msgid "Return type"

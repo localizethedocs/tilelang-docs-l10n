@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:68
 msgid ""

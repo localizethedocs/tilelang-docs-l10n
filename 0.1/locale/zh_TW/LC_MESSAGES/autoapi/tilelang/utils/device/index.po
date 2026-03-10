@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:2
 msgid "tilelang.utils.device"
-msgstr ""
+msgstr "tilelang.utils.device"
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:8
 msgid "Attributes"
@@ -27,15 +27,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:16:<autosummary>:1
 msgid ":py:obj:`IS_CUDA <tilelang.utils.device.IS_CUDA>`\\"
-msgstr ""
+msgstr ":py:obj:`IS_CUDA <tilelang.utils.device.IS_CUDA>`\\"
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:16:<autosummary>:1
 msgid ":py:obj:`IS_MPS <tilelang.utils.device.IS_MPS>`\\"
-msgstr ""
+msgstr ":py:obj:`IS_MPS <tilelang.utils.device.IS_MPS>`\\"
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:18
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:24:<autosummary>:1
 msgid ""
