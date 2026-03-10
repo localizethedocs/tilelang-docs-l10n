@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:2
+msgid "tilelang.carver.template.elementwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`ElementwiseTemplate <tilelang.carver.template.elementwise."
+"ElementwiseTemplate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:23
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:14:<autosummary>:1
+msgid "A template for element-wise operations using TVM."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:20
+msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:27
+msgid "The shape of the tensor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:0
+msgid "type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:29
+msgid "List[int]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:33
+msgid "The data type of the tensor (default: \"float16\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:35
+msgid "str"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:52
+msgid "Retrieves hardware-aware optimization configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:54
+msgid "The target hardware architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:56
+msgid "Number of top configurations to consider."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:59
+msgid "A list of optimization hints for the given architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:66
+msgid "Initializes the element-wise computation function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:68
+msgid ""
+"Defines a simple element-wise computation: B = A + 1, where A is an input "
+"tensor. The computation graph is built using TVM's tensor expressions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:75
+msgid "Returns the parameters of the template as a dictionary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:77
+msgid "A dictionary containing shape and dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:84
+msgid "Returns class attributes as a dictionary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:86
+msgid "A dictionary representation of the class attributes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:92
+msgid "Returns a string representation of the object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:94
+msgid "A string describing the instance with its parameters."
+msgstr ""

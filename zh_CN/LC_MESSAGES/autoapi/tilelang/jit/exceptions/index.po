@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:2
+msgid "tilelang.jit.exceptions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:8
+msgid "Custom exceptions for TileLang JIT compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:13
+msgid "Exceptions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`JITNoBuilderError <tilelang.jit.exceptions.JITNoBuilderError>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:29
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:20:<autosummary>:1
+msgid ""
+"Exception raised when JIT-related operations require a Builder but none "
+"exists."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`EagerJITBuildError <tilelang.jit.exceptions.EagerJITBuildError>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:41
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:20:<autosummary>:1
+msgid "Exception raised for errors when building TileLang eager JIT kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:26
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:38
+msgid "Bases: :py:obj:`Exception`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:31
+msgid ""
+"In eager mode, TileLang constructs AST directly without an explicit "
+"prim_func, so there must be a Builder available. This error is raised when "
+"eager-only features like T.const() or T.Kernel() are called outside of a JIT/"
+"prim_func context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/exceptions/index.rst:43
+msgid ""
+"This error indicates that something went wrong during the eager-style kernel "
+"construction process."
+msgstr ""
