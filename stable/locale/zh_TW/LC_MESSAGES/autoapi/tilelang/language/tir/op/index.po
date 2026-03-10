@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:18
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:165:<autosummary>:1
 msgid ""
@@ -1477,7 +1477,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:180
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:201

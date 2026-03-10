@@ -29,7 +29,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/mbar/index.rst:14
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/mbar/index.rst:23:<autosummary>:1
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/mbar/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/mbar/index.rst:0
 msgid "Return type"

@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:8
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
 msgid ":py:obj:`LetInline <tilelang.transform.simplify.LetInline>`\\ \\(\\)"
@@ -81,4 +81,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

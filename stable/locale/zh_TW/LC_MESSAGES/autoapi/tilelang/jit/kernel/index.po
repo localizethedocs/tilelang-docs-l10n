@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:37
 msgid "The compiled artifact containing the runtime module and parameters."

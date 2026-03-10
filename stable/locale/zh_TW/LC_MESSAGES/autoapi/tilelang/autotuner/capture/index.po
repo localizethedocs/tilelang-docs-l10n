@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:17
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:24:<autosummary>:1
 msgid ""
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:43
 msgid "The item to be pushed onto the stack."

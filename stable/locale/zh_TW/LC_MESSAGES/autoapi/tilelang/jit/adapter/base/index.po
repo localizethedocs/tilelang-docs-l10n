@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/base/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/base/index.rst:51
 msgid "Return a callable that reads Torch's current CUDA stream pointer."

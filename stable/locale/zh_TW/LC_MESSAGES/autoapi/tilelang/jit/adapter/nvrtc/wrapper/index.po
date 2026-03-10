@@ -396,7 +396,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:378
 msgid "Override parent's host_func to return generated Python code."

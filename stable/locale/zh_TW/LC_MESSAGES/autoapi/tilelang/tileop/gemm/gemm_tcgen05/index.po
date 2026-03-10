@@ -39,4 +39,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

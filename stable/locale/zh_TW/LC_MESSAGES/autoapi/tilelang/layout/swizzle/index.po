@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:2
 msgid "tilelang.layout.swizzle"
-msgstr ""
+msgstr "tilelang.layout.swizzle"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:8
 msgid "Wrapping Layouts."
@@ -27,31 +27,39 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:13
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`make_swizzled_layout <tilelang.layout.swizzle."
 "make_swizzled_layout>`\\ \\(buffer\\[\\, k\\_major\\, allow\\_pad\\]\\)"
 msgstr ""
+":py:obj:`make_swizzled_layout <tilelang.layout.swizzle."
+"make_swizzled_layout>`\\ \\(buffer\\[\\, k\\_major\\, allow\\_pad\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`make_volta_swizzled_layout <tilelang.layout.swizzle."
 "make_volta_swizzled_layout>`\\ \\(buffer\\[\\, is\\_a\\, k\\_inner\\]\\)"
 msgstr ""
+":py:obj:`make_volta_swizzled_layout <tilelang.layout.swizzle."
+"make_volta_swizzled_layout>`\\ \\(buffer\\[\\, is\\_a\\, k\\_inner\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`make_wgmma_swizzled_layout <tilelang.layout.swizzle."
 "make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, k\\_major\\]\\)"
 msgstr ""
+":py:obj:`make_wgmma_swizzled_layout <tilelang.layout.swizzle."
+"make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, k\\_major\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`make_tcgen05mma_swizzled_layout <tilelang.layout.swizzle."
 "make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, ...\\]\\)"
 msgstr ""
+":py:obj:`make_tcgen05mma_swizzled_layout <tilelang.layout.swizzle."
+"make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, ...\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
@@ -87,6 +95,8 @@ msgid ""
 ":py:obj:`make_gemm_fragment_8x8 <tilelang.layout.swizzle."
 "make_gemm_fragment_8x8>`\\ \\(\\)"
 msgstr ""
+":py:obj:`make_gemm_fragment_8x8 <tilelang.layout.swizzle."
+"make_gemm_fragment_8x8>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:83
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
@@ -98,6 +108,8 @@ msgid ""
 ":py:obj:`make_gemm_fragment_8x8_transposed <tilelang.layout.swizzle."
 "make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
 msgstr ""
+":py:obj:`make_gemm_fragment_8x8_transposed <tilelang.layout.swizzle."
+"make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:93
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
@@ -121,7 +133,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:43
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:53

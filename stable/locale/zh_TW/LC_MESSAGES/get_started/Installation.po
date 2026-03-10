@@ -94,7 +94,7 @@ msgstr "**作業系統**：Linux"
 
 #: ../../../get_started/Installation.md:41
 msgid "**CUDA Version**: >= 10.0"
-msgstr "**CUDA 版本**：>= 10.0"
+msgstr ""
 
 #: ../../../get_started/Installation.md:43
 msgid ""

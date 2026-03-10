@@ -43,4 +43,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/common/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

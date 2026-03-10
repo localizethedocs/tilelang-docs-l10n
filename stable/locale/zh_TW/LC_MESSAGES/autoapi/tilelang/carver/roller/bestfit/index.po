@@ -47,4 +47,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/bestfit/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

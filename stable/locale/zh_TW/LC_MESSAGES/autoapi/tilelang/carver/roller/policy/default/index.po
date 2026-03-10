@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:0
 msgid "Return type"

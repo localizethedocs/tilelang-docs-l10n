@@ -44,4 +44,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/libgen/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

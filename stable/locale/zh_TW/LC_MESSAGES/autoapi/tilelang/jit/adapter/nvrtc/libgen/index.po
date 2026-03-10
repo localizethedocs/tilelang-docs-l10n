@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:66
 msgid "Generated Python launch code (from wrapper)"

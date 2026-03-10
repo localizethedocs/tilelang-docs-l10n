@@ -50,4 +50,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/metal/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

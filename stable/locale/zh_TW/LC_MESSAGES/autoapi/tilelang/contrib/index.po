@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/index.rst:2
 msgid "tilelang.contrib"
-msgstr ""
+msgstr "tilelang.contrib"
 
 #: ../../../autoapi/tilelang/contrib/index.rst:8
 msgid "Submodules"

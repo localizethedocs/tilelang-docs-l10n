@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:19
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:27:<autosummary>:1
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:99
 msgid ""

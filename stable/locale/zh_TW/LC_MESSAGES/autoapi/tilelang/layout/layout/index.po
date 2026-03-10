@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:70
 msgid "The input indices to be mapped to their corresponding output indices."
