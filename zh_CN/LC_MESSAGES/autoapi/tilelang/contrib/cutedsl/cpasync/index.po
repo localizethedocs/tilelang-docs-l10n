@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:2
+msgid "tilelang.contrib.cutedsl.cpasync"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`BYTES_PER_TENSORMAP <tilelang.contrib.cutedsl.cpasync."
+"BYTES_PER_TENSORMAP>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`BYTES_PER_POINTER <tilelang.contrib.cutedsl.cpasync."
+"BYTES_PER_POINTER>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:17
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`cp_async_gs <tilelang.contrib.cutedsl.cpasync.cp_async_gs>`\\ "
+"\\(size\\, dst\\, src\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`cp_async_gs_conditional <tilelang.contrib.cutedsl.cpasync."
+"cp_async_gs_conditional>`\\ \\(size\\, dst\\, src\\, cond\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`extract_tensormap_ptr <tilelang.contrib.cutedsl.cpasync."
+"extract_tensormap_ptr>`\\ \\(tma\\_atom\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid "extract the tensormap pointer from a TMA Copy Atom."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`tma_load <tilelang.contrib.cutedsl.cpasync.tma_load>`\\ "
+"\\(tma\\_desc\\, mbar\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:56
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+"Load data from global memory to shared memory using TMA (Tensor Memory "
+"Access)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`tma_store <tilelang.contrib.cutedsl.cpasync.tma_store>`\\ "
+"\\(tma\\_desc\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:70
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+"Store data from shared memory to global memory using TMA (Tensor Memory "
+"Access)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`tma_store_arrive <tilelang.contrib.cutedsl.cpasync."
+"tma_store_arrive>`\\ \\(\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid "Indicate arrival of warp issuing TMA_STORE."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`tma_store_wait <tilelang.contrib.cutedsl.cpasync.tma_store_wait>`\\ "
+"\\(count\\, \\*\\[\\, read\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid "Wait for TMA_STORE operations to complete."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`cp_async_shared_global <tilelang.contrib.cutedsl.cpasync."
+"cp_async_shared_global>`\\ \\(dst\\, src\\, cp\\_size\\, modifier\\, \\*\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:97
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid "Asynchronously copy data from global memory to shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`prefetch_tma_descriptor <tilelang.contrib.cutedsl.cpasync."
+"prefetch_tma_descriptor>`\\ \\(tma\\_desc\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:31:<autosummary>:1
+msgid "Prefetch a TMA descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:33
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:49
+msgid ""
+"extract the tensormap pointer from a TMA Copy Atom. :param tma_atom:      "
+"The TMA Copy Atom :type tma_atom:       CopyAtom"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:58
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:72
+msgid "TMA descriptor for the tensor"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:60
+msgid "Mbarrier pointer in shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:62
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:99
+msgid "Destination pointer in shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:64
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:76
+msgid "Coordinates tuple for the tensor access"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:74
+msgid "Source pointer in shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:82
+msgid ""
+"Indicate arrival of warp issuing TMA_STORE. Corresponds to PTX instruction: "
+"cp.async.bulk.commit_group;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:88
+msgid ""
+"Wait for TMA_STORE operations to complete. Corresponds to PTX instruction: "
+"cp.async.bulk.wait_group.read <count>;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:91
+msgid "The number of outstanding bulk async groups to wait for"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:101
+msgid "Source pointer in global memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:103
+msgid "Size of the copy in bytes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:105
+msgid "Cache modifier"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:107
+msgid "Optional copy size override"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:113
+msgid ""
+"Prefetch a TMA descriptor. Corresponds to PTX instruction: prefetch."
+"tensormap;"
+msgstr ""

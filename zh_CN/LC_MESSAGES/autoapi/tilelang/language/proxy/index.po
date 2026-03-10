@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:2
+msgid "tilelang.language.proxy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:8
+msgid "Buffer/Tensor proxy in TileLang."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:19:<autosummary>:1
+msgid ":py:obj:`Buffer <tilelang.language.proxy.Buffer>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:21
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ":py:obj:`BufferProxy <tilelang.language.proxy.BufferProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:49
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid "Buffer proxy class for constructing tir buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ":py:obj:`BaseTensorProxy <tilelang.language.proxy.BaseTensorProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:72
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid "Base proxy class for tensor types with configurable defaults."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ":py:obj:`TensorProxy <tilelang.language.proxy.TensorProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:117
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid "Main tensor proxy class for global scope buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`StridedTensorProxy <tilelang.language.proxy.StridedTensorProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:131
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ""
+"Main tensor proxy class for global scope buffers, with strides supported."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`FragmentBufferProxy <tilelang.language.proxy.FragmentBufferProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:144
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid "Proxy class for fragment memory buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`SharedBufferProxy <tilelang.language.proxy.SharedBufferProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:160
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid "Proxy class for shared memory buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ":py:obj:`LocalBufferProxy <tilelang.language.proxy.LocalBufferProxy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:176
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid "Proxy class for local memory buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:34:<autosummary>:1
+msgid ":py:obj:`BaseTensor <tilelang.language.proxy.BaseTensor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:36
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`ptr <tilelang.language.proxy.ptr>`\\ \\(\\[dtype\\, "
+"storage\\_scope\\, is\\_size\\_var\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:209
+#: ../../../autoapi/tilelang/language/proxy/index.rst:43:<autosummary>:1
+msgid "Create a TIR var that represents a pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`make_tensor <tilelang.language.proxy.make_tensor>`\\ \\(ptr\\, "
+"shape\\[\\, dtype\\, strides\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:45
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:60
+#: ../../../autoapi/tilelang/language/proxy/index.rst:102
+msgid "Create a buffer from a pointer, shape, and data type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:62
+#: ../../../autoapi/tilelang/language/proxy/index.rst:104
+msgid "The pointer variable"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:63
+#: ../../../autoapi/tilelang/language/proxy/index.rst:105
+msgid "The shape of the buffer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:64
+#: ../../../autoapi/tilelang/language/proxy/index.rst:106
+msgid "The data type of the buffer (default: float32)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:66
+#: ../../../autoapi/tilelang/language/proxy/index.rst:108
+msgid "A buffer created from the given parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:74
+msgid ""
+"This class serves as a foundation for different tensor proxy types, "
+"providing customizable default values for scope, alignment, and offset "
+"factors. It implements the core functionality for creating TIR buffers with "
+"specific memory configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:114
+#: ../../../autoapi/tilelang/language/proxy/index.rst:128
+#: ../../../autoapi/tilelang/language/proxy/index.rst:141
+#: ../../../autoapi/tilelang/language/proxy/index.rst:157
+#: ../../../autoapi/tilelang/language/proxy/index.rst:173
+msgid "Bases: :py:obj:`BaseTensorProxy`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:119
+msgid ""
+"This class implements the default tensor proxy with global memory scope, the "
+"tensor should be by default contiguous."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:133
+msgid ""
+"This class implements the default tensor proxy with global memory scope, "
+"with the stride information required."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:146
+msgid ""
+"This class represents tensor proxies specifically for local fragment memory, "
+"typically used in GPU tensor core operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:162
+msgid ""
+"This class represents tensor proxies for dynamic shared memory, commonly "
+"used in GPU shared memory operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:178
+msgid ""
+"This class represents tensor proxies for local memory scope, typically used "
+"for temporary computations in GPU kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:211
+msgid "The data type of the pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:213
+msgid "The storage scope of the pointer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:215
+msgid "Whether or not to return a SizeVar instead of Var."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/proxy/index.rst:218
+msgid ""
+"**res** -- The new tir.Var with type handle or casted expression with type "
+"handle."
+msgstr ""

@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:2
+msgid "tilelang.analysis.nested_loop_checker"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`is_pipelined_for <tilelang.analysis.nested_loop_checker."
+"is_pipelined_for>`\\ \\(op\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:22
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
+msgid "Check if a for loop is pipelined."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`is_tile_op <tilelang.analysis.nested_loop_checker.is_tile_op>`\\ "
+"\\(op\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:27
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
+msgid "Check if a call is a tile-op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`NestedLoopChecker <tilelang.analysis.nested_loop_checker."
+"NestedLoopChecker>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:32
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
+msgid ""
+"User-friendly pass which identifies any invalid any nested-loop pattern."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:18
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:34
+msgid ""
+"Nested loops is an annoying problem in tilelang or other polyhedral-style "
+"compilers. It contains many corner cases and undefined behaviours."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:37
+msgid "In tilelang, there are four loops:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:38
+msgid "T.serial T.Parallel (T.vectorized) T.Pipelined T.Persistent"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:43
+msgid "T.Persistent is a new feature which we do not consider here."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:45
+msgid ""
+"We define the following rules: - (Rule 1) T.serial can be nested inside any "
+"other loop type without restriction. - (Rule 2) Consecutive T.Parallel "
+"nested loops are not allowed. Including any TileOp (T.copy, etc.) which has"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:48
+msgid "\"parallel\" behaviours is also forbidden."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:50
+msgid "Examples: for i in T.Parallel(M):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:52
+msgid "stmt for j in T.Parallel(N):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:54
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:70
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:74
+msgid "..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:56
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:62
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:68
+msgid "for i in T.Parallel(M):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:57
+msgid "T.copy(A, B) # forbidden!"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:59
+msgid ""
+"**Only a special case is allowed: strict continuous Parallel loops.** Since "
+"we can fuse them into a single T.Parallel loop. Example:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:63
+msgid "for j in T.Parallel(N):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:64
+msgid "... # allowed"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:65
+msgid "(Rule 3) T.Pipelined inside a T.Parallel is forbidden."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:67
+msgid "Examples:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:69
+msgid "for j in T.Pipelined(K): # forbidden!"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:72
+msgid "for i in T.Pipelined(K):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:73
+msgid "for j in T.Parallel(N): # allowed, ok"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:76
+msgid ""
+"In summary, the problem mainly lies in the \"T.Parallel\". We highly "
+"recommend to use T.Parallel to implement a tiled operator inside a kernel (e."
+"g. T.gemm level) instead of other usages. This guideline can help you avoid "
+"most of the issues."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:80
+msgid "A prim_func_pass that applies the transformation"
+msgstr ""

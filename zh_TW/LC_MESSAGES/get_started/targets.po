@@ -1,0 +1,430 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../get_started/targets.md:1
+msgid "Understanding Targets"
+msgstr ""
+
+#: ../../../get_started/targets.md:3
+msgid ""
+"TileLang is built on top of TVM, which relies on **targets** to describe the "
+"device you want to compile for. The target determines which code generator "
+"is used (CUDA, HIP, Metal, LLVM, …) and allows you to pass device-specific "
+"options such as GPU architecture flags. This page summarises how to pick and "
+"customise a target when compiling TileLang programs."
+msgstr ""
+
+#: ../../../get_started/targets.md:8
+msgid "Common target strings"
+msgstr ""
+
+#: ../../../get_started/targets.md:10
+msgid ""
+"TileLang ships with a small set of common targets; each accepts the full "
+"range of TVM options so you can fine-tune the generated code. The most "
+"frequent choices are listed below:"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "Base name"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "Description"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`auto`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid ""
+"Detects CUDA → HIP → Metal in that order. Useful when running the same "
+"script across machines."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`cuda`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid ""
+"NVIDIA GPUs. Supports options such as `-arch=sm_80`, `-"
+"max_num_threads=1024`, etc."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`cutedsl`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid ""
+"NVIDIA CUTLASS/CuTe DSL backend. Requires `nvidia-cutlass-dsl`. `cuda` "
+"options can also be applied to this target."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`hip`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "AMD GPUs via ROCm. Options like `-mcpu=gfx90a` can be appended."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`metal`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "Apple Silicon GPUs (arm64 Macs)."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`llvm`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "CPU execution; accepts the standard TVM LLVM switches."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`webgpu`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "Browser / WebGPU runtimes."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`c`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "Emit plain C source for inspection or custom toolchains."
+msgstr ""
+
+#: ../../../get_started/targets.md:24
+msgid ""
+"To add options, append them after the base name, separated by spaces. For "
+"example:"
+msgstr ""
+
+#: ../../../get_started/targets.md:26
+msgid ""
+"target = \"cuda -arch=sm_90\"\n"
+"kernel = tilelang.compile(func, target=target, "
+"execution_backend=\"cython\")\n"
+"# or\n"
+"@tilelang.jit(target=target)\n"
+"def compiled_kernel(*args):\n"
+"    return func(*args)\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:35
+msgid ""
+"The same convention works for HIP or LLVM (e.g. `hip -mcpu=gfx940`, `llvm -"
+"mtriple=x86_64-linux-gnu`)."
+msgstr ""
+
+#: ../../../get_started/targets.md:37
+msgid "Advanced: Specify Exact Hardware"
+msgstr ""
+
+#: ../../../get_started/targets.md:39
+msgid ""
+"When you already know the precise GPU model, you can encode it in the target "
+"string—either via `-arch=sm_XX` or by using one of TVM’s pre-defined target "
+"tags such as `nvidia/nvidia-h100`.  Supplying this detail is optional for "
+"TileLang in general use, but it becomes valuable when the TVM cost model is "
+"enabled (e.g. during autotuning).  The cost model uses the extra attributes "
+"to make better scheduling predictions.  If you skip this step (or do not use "
+"the cost model), generic targets like `cuda` or `auto` are perfectly fine."
+msgstr ""
+
+#: ../../../get_started/targets.md:45
+msgid ""
+"All CUDA compute capabilities recognised by TVM’s target registry are listed "
+"below.  Pick the one that matches your GPU and append it to the target "
+"string or use the corresponding target tag—for example `nvidia/nvidia-a100`."
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "Architecture"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "GPUs (examples)"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_20`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/tesla-c2050`, `nvidia/tesla-c2070`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_21`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvs-5400m`, `nvidia/geforce-gt-520`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_30`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/quadro-k5000`, `nvidia/geforce-gtx-780m`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_35`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/tesla-k40`, `nvidia/quadro-k6000`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_37`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/tesla-k80`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_50`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/quadro-k2200`, `nvidia/geforce-gtx-950m`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_52`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/tesla-m40`, `nvidia/geforce-gtx-980`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_53`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/jetson-tx1`, `nvidia/jetson-nano`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_60`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/tesla-p100`, `nvidia/quadro-gp100`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_61`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/tesla-p4`, `nvidia/quadro-p6000`, `nvidia/geforce-gtx-1080`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_62`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/jetson-tx2`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_70`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvidia-v100`, `nvidia/quadro-gv100`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_72`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/jetson-agx-xavier`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_75`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvidia-t4`, `nvidia/quadro-rtx-8000`, `nvidia/geforce-rtx-2080`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_80`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvidia-a100`, `nvidia/nvidia-a30`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_86`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvidia-a40`, `nvidia/nvidia-a10`, `nvidia/geforce-rtx-3090`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_87`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/jetson-agx-orin-32gb`, `nvidia/jetson-agx-orin-64gb`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_89`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/geforce-rtx-4090`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_90a`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvidia-h100` (DPX profile)"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`sm_100a`"
+msgstr ""
+
+#: ../../../get_started/targets.md:0
+msgid "`nvidia/nvidia-b100`"
+msgstr ""
+
+#: ../../../get_started/targets.md:71
+msgid ""
+"Refer to NVIDIA’s [CUDA GPUs](https://developer.nvidia.com/cuda-gpus) page "
+"or the TVM source (`3rdparty/tvm/src/target/tag.cc`) for the latest mapping "
+"between devices and compute capabilities."
+msgstr ""
+
+#: ../../../get_started/targets.md:74
+msgid "Creating targets programmatically"
+msgstr ""
+
+#: ../../../get_started/targets.md:76
+msgid ""
+"If you prefer working with TVM’s `Target` objects, TileLang exposes the "
+"helper `tilelang.utils.target.determine_target` (returns a canonical target "
+"string by default, or the `Target` object when `return_object=True`):"
+msgstr ""
+
+#: ../../../get_started/targets.md:80
+msgid ""
+"from tilelang.utils.target import determine_target\n"
+"\n"
+"tvm_target = determine_target(\"cuda -arch=sm_80\", return_object=True)\n"
+"kernel = tilelang.compile(func, target=tvm_target)\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:87
+msgid "You can also build targets directly through TVM:"
+msgstr ""
+
+#: ../../../get_started/targets.md:89
+msgid ""
+"from tvm.target import Target\n"
+"\n"
+"target = Target(\"cuda\", host=\"llvm\")\n"
+"target = target.with_host(Target(\"llvm -mcpu=skylake\"))\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:96
+msgid ""
+"TileLang accepts either `str` or `Target` inputs; internally they are "
+"normalised and cached using the canonical string representation.  **In user "
+"code we strongly recommend passing target strings rather than `tvm.target."
+"Target` instances—strings keep cache keys compact and deterministic across "
+"runs, whereas constructing fresh `Target` objects may lead to slightly "
+"higher hashing overhead or inconsistent identity semantics.**"
+msgstr ""
+
+#: ../../../get_started/targets.md:101
+msgid "Discovering supported targets in code"
+msgstr ""
+
+#: ../../../get_started/targets.md:103
+msgid ""
+"Looking for a quick reminder of the built-in base names and their "
+"descriptions? Use:"
+msgstr ""
+
+#: ../../../get_started/targets.md:105
+msgid ""
+"from tilelang.utils.target import describe_supported_targets\n"
+"\n"
+"for name, doc in describe_supported_targets().items():\n"
+"    print(f\"{name:>6}: {doc}\")\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:112
+msgid ""
+"This helper mirrors the table above and is safe to call at runtime (for "
+"example when validating CLI arguments)."
+msgstr ""
+
+#: ../../../get_started/targets.md:114
+msgid "Troubleshooting tips"
+msgstr ""
+
+#: ../../../get_started/targets.md:116
+msgid ""
+"If you see `Target cuda -arch=sm_80 is not supported`, double-check the "
+"spellings and that the option is valid for TVM. Any invalid switch will "
+"surface as a target-construction error."
+msgstr ""
+
+#: ../../../get_started/targets.md:118
+msgid ""
+"Runtime errors such as “no kernel image is available” usually mean the `-"
+"arch` flag does not match the GPU you are running on. Try dropping the flag "
+"or switching to the correct compute capability."
+msgstr ""
+
+#: ../../../get_started/targets.md:120
+msgid ""
+"When targeting multiple environments, use `auto` for convenience and "
+"override with an explicit string only when you need architecture-specific "
+"tuning."
+msgstr ""
