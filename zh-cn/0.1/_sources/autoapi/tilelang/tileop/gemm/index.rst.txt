@@ -1,0 +1,117 @@
+tilelang.tileop.gemm
+====================
+
+.. py:module:: tilelang.tileop.gemm
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/tilelang/tileop/gemm/gemm_base/index
+   /autoapi/tilelang/tileop/gemm/gemm_cutedsl/index
+   /autoapi/tilelang/tileop/gemm/gemm_mfma/index
+   /autoapi/tilelang/tileop/gemm/gemm_mma/index
+   /autoapi/tilelang/tileop/gemm/gemm_mma_sm70/index
+   /autoapi/tilelang/tileop/gemm/gemm_tcgen05/index
+   /autoapi/tilelang/tileop/gemm/gemm_wgmma/index
+   /autoapi/tilelang/tileop/gemm/inst/index
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.tileop.gemm.GemmPy
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.tileop.gemm.gemm_py_infer_layout
+   tilelang.tileop.gemm.gemm_py_lower
+
+
+Package Contents
+----------------
+
+.. py:function:: gemm_py_infer_layout(gemm_py, target, thread_bounds)
+
+.. py:function:: gemm_py_lower(gemm_py, layout_map, target, thread_bounds, thread_var)
+
+.. py:class:: GemmPy
+
+   Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`
+
+
+   .. py:property:: A
+
+
+   .. py:property:: B
+
+
+   .. py:property:: C
+
+
+   .. py:property:: APtr
+
+
+   .. py:property:: BPtr
+
+
+   .. py:property:: CPtr
+
+
+   .. py:property:: M
+
+
+   .. py:property:: N
+
+
+   .. py:property:: K
+
+
+   .. py:property:: trans_A
+
+
+   .. py:property:: trans_B
+
+
+   .. py:property:: stride_A
+
+
+   .. py:property:: stride_B
+
+
+   .. py:property:: offset_A
+
+
+   .. py:property:: offset_B
+
+
+   .. py:property:: clear_accum
+
+
+   .. py:property:: k_pack
+
+
+   .. py:property:: wg_wait
+
+
+   .. py:method:: infer_layout(target, thread_nums)
+
+      Infer the layout for the GEMM operation based on target architecture.
+
+
+
+   .. py:method:: lower(layout_map, target, thread_bounds, thread_var)
+
+      Lower the GEMM operation to TIR statements based on target architecture.
+
+
+
