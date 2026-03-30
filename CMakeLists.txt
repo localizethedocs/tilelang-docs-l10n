@@ -267,12 +267,14 @@ endif()
 # Set VERSION_OF_XXX to $CACHE{VERSION_OF_XXX} if it's not "[default]".
 #]============================================================]
 
-if     (VERSION MATCHES "^(latest|stable)$")
-    set(VERSION_OF_PYTHON   "3.12")
+if     (VERSION MATCHES "^(latest)$")
+    set(VERSION_OF_PYTHON   "3.10")
+elseif (VERSION MATCHES "^(stable)$")
+    set(VERSION_OF_PYTHON   "3.10")
 elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
     if     (VERSION VERSION_LESS_EQUAL    "0.1" AND
             VERSION VERSION_GREATER_EQUAL "0.1")
-        set(VERSION_OF_PYTHON   "3.12")
+        set(VERSION_OF_PYTHON   "3.10")
     else()
         message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
     endif()
