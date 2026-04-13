@@ -23,7 +23,7 @@ msgstr "安裝指南"
 
 #: ../../../get_started/Installation.md:3
 msgid "Installing with pip"
-msgstr ""
+msgstr "使用 pip 安裝"
 
 #: ../../../get_started/Installation.md:5
 msgid "**Prerequisites for installation via wheel or PyPI:**"
@@ -528,7 +528,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:286
 msgid "Install with Nightly Version"
-msgstr ""
+msgstr "使用 Nightly 版本安裝"
 
 #: ../../../get_started/Installation.md:288
 msgid ""
@@ -556,7 +556,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:299
 msgid "Build-time environment variables"
-msgstr ""
+msgstr "建置時環境變數"
 
 #: ../../../get_started/Installation.md:300
 msgid ""
@@ -619,7 +619,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:323
 msgid "Run-time environment variables"
-msgstr ""
+msgstr "執行時環境變數"
 
 #: ../../../get_started/Installation.md:325
 msgid ""
@@ -629,7 +629,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:327
 msgid "Other Tips"
-msgstr ""
+msgstr "其他提示"
 
 #: ../../../get_started/Installation.md:329
 msgid "IDE Configs"

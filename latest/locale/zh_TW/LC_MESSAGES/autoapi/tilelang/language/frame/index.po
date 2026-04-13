@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:83
 msgid "Return the top item of the stack without removing it."
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:106
 msgid "Bases: :py:obj:`tvm.script.ir_builder.tir.frame.TIRFrame`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tvm.script.ir_builder.tir.frame.TIRFrame`"
 
 #: ../../../autoapi/tilelang/language/frame/index.rst:111
 msgid ""

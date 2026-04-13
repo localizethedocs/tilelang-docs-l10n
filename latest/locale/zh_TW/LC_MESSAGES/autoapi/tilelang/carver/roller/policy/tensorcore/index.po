@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:82
 msgid ""

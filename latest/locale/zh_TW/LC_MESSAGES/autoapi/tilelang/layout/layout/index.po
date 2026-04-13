@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:25
 msgid "Bases: :py:obj:`tvm.ir.Node`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tvm.ir.Node`"
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:30
 msgid "Property to retrieve the forward index of the layout."
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:38
 msgid "Get the input shape of the layout."
@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:109
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/layout/layout/index.rst:110
 msgid ""

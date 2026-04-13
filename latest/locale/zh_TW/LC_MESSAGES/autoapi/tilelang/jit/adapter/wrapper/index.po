@@ -413,7 +413,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:382
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:385
 msgid ""
@@ -426,7 +426,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:525
 msgid "Bases: :py:obj:`TLCUDASourceWrapper`"

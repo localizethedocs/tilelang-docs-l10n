@@ -73,7 +73,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:144
 msgid ""
@@ -119,7 +119,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:198
 #: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:216
 msgid "Bases: :py:obj:`TensorCoreIntrinEmitter`"
-msgstr ""
+msgstr "基底類別：:py:obj:`TensorCoreIntrinEmitter`"
 
 #: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:201
 #: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:230

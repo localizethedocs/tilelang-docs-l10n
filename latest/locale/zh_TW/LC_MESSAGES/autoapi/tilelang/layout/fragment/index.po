@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:66
 msgid "Replicate the Fragment across a new thread dimension."

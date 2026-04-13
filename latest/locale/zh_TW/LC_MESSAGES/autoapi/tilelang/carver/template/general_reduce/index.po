@@ -45,7 +45,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/general_reduce/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/general_reduce/index.rst:46
 msgid ""

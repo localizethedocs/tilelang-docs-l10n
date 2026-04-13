@@ -170,7 +170,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/mxfp/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/quantize/mxfp/index.rst:0
 msgid "Raises"

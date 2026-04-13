@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:148
 msgid ""

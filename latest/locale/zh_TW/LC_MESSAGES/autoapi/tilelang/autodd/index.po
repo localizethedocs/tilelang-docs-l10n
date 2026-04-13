@@ -197,12 +197,12 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/autodd/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/autodd/index.rst:74
 #: ../../../autoapi/tilelang/autodd/index.rst:405
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/autodd/index.rst:77
 #: ../../../autoapi/tilelang/autodd/index.rst:101

@@ -41,4 +41,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/common/transform_kind/index.rst:20
 msgid "Bases: :py:obj:`enum.IntEnum`"
-msgstr ""
+msgstr "基底類別：:py:obj:`enum.IntEnum`"

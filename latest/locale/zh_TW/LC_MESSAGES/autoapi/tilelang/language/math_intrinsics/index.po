@@ -188,7 +188,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:58
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:73

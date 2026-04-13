@@ -189,7 +189,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:73
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:88
@@ -208,11 +208,11 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:112
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:121
 msgid "Bases: :py:obj:`Frame`"
-msgstr ""
+msgstr "基底類別：:py:obj:`Frame`"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:178
 msgid "Bases: :py:obj:`SerialForWithStep`"
-msgstr ""
+msgstr "基底類別：:py:obj:`SerialForWithStep`"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:0
 msgid "Parameters"
@@ -220,7 +220,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:193
 msgid "Bases: :py:obj:`tilelang.language.v2.ast.BaseBuilder`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.language.v2.ast.BaseBuilder`"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:285
 msgid "Unwrap some tilelang objects to get their inner value"

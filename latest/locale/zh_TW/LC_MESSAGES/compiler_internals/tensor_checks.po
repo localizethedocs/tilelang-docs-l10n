@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../compiler_internals/tensor_checks.md:1
 msgid "Tensor Checks (Host-Side Auto-Validation)"
-msgstr ""
+msgstr "張量檢查（主機端自動驗證）"
 
 #: ../../../compiler_internals/tensor_checks.md:3
 msgid ""

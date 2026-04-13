@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/index.rst:96
 msgid "The TileLang TIR functions to compile and wrap."

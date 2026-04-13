@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:20
 msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.carver.template.base.BaseTemplate`"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:25
 msgid ""
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:87
 msgid "Defines and initializes the GEMV computation function."

@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../index.md:29
 msgid "PROGRAMMING GUIDES"
-msgstr ""
+msgstr "程式設計指南"
 
 #: ../../../index.md:42
 msgid "DEEP LEARNING OPERATORS"

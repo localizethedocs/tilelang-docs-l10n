@@ -149,13 +149,13 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:58
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:211
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:325
 msgid "Bases: :py:obj:`ast.NodeTransformer`"
-msgstr ""
+msgstr "基底類別：:py:obj:`ast.NodeTransformer`"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:61
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:214
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:413
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:421
 msgid ""

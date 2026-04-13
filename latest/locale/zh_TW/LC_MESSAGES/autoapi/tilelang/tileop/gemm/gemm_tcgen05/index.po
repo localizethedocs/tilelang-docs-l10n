@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:20
 msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:25
 msgid ""

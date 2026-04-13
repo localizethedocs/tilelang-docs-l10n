@@ -1616,7 +1616,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:191
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:212
@@ -2778,7 +2778,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:2265
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:2266
 msgid ""

@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:0
 msgid "Raises"

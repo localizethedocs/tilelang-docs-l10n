@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:49
 msgid ""

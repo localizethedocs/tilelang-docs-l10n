@@ -970,7 +970,7 @@ msgstr ""
 
 #: directives/other.py:209
 msgid "Author: "
-msgstr ""
+msgstr "作者： "
 
 #: directives/other.py:269
 msgid ".. acks content is not a list"
@@ -1900,7 +1900,7 @@ msgstr ""
 #: domains/c/__init__.py:345 domains/javascript.py:293
 #: domains/python/_object.py:227
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: domains/javascript.py:370
 #, python-format
@@ -3625,7 +3625,7 @@ msgstr ""
 
 #: ext/napoleon/docstring.py:895
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ext/napoleon/docstring.py:896
 msgid "Examples"
@@ -4184,7 +4184,7 @@ msgstr ""
 #: ext/autodoc/__init__.py:1966
 #, python-format
 msgid "Bases: %s"
-msgstr ""
+msgstr "基底類別：%s"
 
 #: ext/autodoc/__init__.py:1985
 #, python-format

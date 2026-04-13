@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:52
 msgid ""

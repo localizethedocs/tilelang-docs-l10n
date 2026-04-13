@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/customize/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/customize/index.rst:46
 msgid "Input value to be clamped"

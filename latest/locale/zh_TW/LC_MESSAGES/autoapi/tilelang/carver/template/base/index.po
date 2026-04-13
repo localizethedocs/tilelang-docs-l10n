@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:20
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:23
 msgid ""
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:48
 msgid "Sets the architecture for this template and returns itself."

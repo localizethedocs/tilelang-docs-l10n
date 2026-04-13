@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/base/index.rst:25
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/jit/adapter/base/index.rst:28
 msgid ""
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/base/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/base/index.rst:64
 msgid "Return a callable that yields Torch's current device."

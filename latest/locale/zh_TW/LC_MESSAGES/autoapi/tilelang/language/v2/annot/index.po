@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:43
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:46
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:115
@@ -170,7 +170,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:70
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:168

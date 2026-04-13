@@ -139,7 +139,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:60
 #: ../../../autoapi/tilelang/language/proxy/index.rst:102

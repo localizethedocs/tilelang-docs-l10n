@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/tools/plot_layout/index.rst:50
 msgid ""

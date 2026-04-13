@@ -43,4 +43,4 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/math/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

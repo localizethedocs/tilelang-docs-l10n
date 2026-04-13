@@ -1644,4 +1644,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/lop3/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
