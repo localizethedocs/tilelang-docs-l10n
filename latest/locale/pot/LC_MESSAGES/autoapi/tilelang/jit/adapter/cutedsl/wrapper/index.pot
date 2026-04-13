@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,7 +131,7 @@ msgid ""
 "TLCuTeDSLSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:822
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:821
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:48:<autosummary>:1
 msgid "Wrapper class for TileLang CuTe DSL backend with C++ launcher."
 msgstr ""
@@ -197,7 +197,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:623
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:649
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:700
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:811
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:810
 msgid "</details>"
 msgstr ""
 
@@ -798,8 +798,7 @@ msgid ""
 "      \"torch.uint8\": cutlass.Uint8,\n"
 "      \"torch.int16\": cutlass.Int16,\n"
 "      \"torch.uint16\": cutlass.Uint16,\n"
-"      \"torch.uchar\": cutlass.Uint8,\n"
-"  }}\n"
+"      \"torch.uchar\": cutlass.Uint8}}\n"
 "\n"
 "{cubin_gen_code}\n"
 "\n"
@@ -846,11 +845,11 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:819
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:818
 msgid "Bases: :py:obj:`tilelang.jit.adapter.wrapper.TLCUDASourceWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:824
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:823
 msgid ""
 "Generates optimized C++ launcher code that: - Loads cubin via CUDA Driver "
 "API - Passes TMA descriptors by value (host-side, no device copy) - Launches "
@@ -862,11 +861,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:833
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:832
 msgid "Override parent's host_func to return generated Python code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:838
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:837
 msgid "Generate TMA descriptor information for C++ code generation."
 msgstr ""
 
@@ -874,7 +873,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:840
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:839
 msgid "List of descriptor variable names in the order they were processed."
 msgstr ""
 
@@ -882,18 +881,18 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:846
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:845
 msgid "Create dispatch function - always use C++ launcher."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:852
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:851
 msgid "Create dispatch function using C++ launcher."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:858
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:857
 msgid "Get the generated C++ launcher code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:864
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:863
 msgid "Update the library code with the given code string."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:44
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:19:<autosummary>:1
-msgid "Create a collection of name/value pairs."
+msgid "Generic enumeration."
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:21
@@ -95,46 +95,20 @@ msgid "Bases: :py:obj:`enum.Enum`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:46
-msgid "Example enumeration:"
+msgid "Derive from this class to define new enumerations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:53
-msgid "Access them by:"
-msgstr ""
-
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:55
-msgid "attribute access:"
-msgstr ""
-
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:60
-msgid "value lookup:"
-msgstr ""
-
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:65
-msgid "name lookup:"
-msgstr ""
-
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:70
-msgid "Enumerations can be iterated over, and know how many members they have:"
-msgstr ""
-
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:78
-msgid ""
-"Methods can be added to enumerations, and members can have their own "
-"attributes -- see the documentation for details."
-msgstr ""
-
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:123
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:90
 msgid ""
 "Custom function to assert that two tensors are \"close enough,\" allowing a "
 "specified percentage of mismatched elements."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:127
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:94
 msgid "Parameters:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:128
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:95
 msgid "tensor_a"
 msgstr ""
 
@@ -142,19 +116,19 @@ msgstr ""
 msgid "torch.Tensor"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:129
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:96
 msgid "The first tensor to compare."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:130
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:97
 msgid "tensor_b"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:131
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:98
 msgid "The second tensor to compare."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:132
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:99
 msgid "rtol"
 msgstr ""
 
@@ -162,36 +136,36 @@ msgstr ""
 msgid "float, optional"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:133
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:100
 msgid "Relative tolerance for comparison. Default is 1e-2."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:134
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:101
 msgid "atol"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:135
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:102
 msgid "Absolute tolerance for comparison. Default is 1e-3."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:136
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:103
 msgid "max_mismatched_ratio"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:137
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:104
 msgid ""
 "Maximum ratio of mismatched elements allowed (relative to the total number "
 "of elements). Default is 0.001 (0.1% of total elements)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:141
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:108
 msgid "Raises:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:142
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:109
 msgid "AssertionError:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/tensor/index.rst:143
+#: ../../../autoapi/tilelang/utils/tensor/index.rst:110
 msgid "If the ratio of mismatched elements exceeds `max_mismatched_ratio`."
 msgstr ""

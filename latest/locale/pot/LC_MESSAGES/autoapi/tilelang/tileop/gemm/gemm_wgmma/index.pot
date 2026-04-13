@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,11 @@ msgstr ""
 msgid ":py:obj:`GemmWGMMA <tilelang.tileop.gemm.gemm_wgmma.GemmWGMMA>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:23
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:14:<autosummary>:1
+msgid "Base class for GEMM tile operators."
+msgstr ""
+
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:16
 msgid "Module Contents"
 msgstr ""
@@ -38,33 +43,40 @@ msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:25
+msgid ""
+"Classifies the GEMM variant by the memory scopes of operands A and B (SS, "
+"SR, RS, TS, RR) and provides common property accessors for the underlying "
+"``gemm_node`` IR node."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:32
 msgid "Infer the swizzle layout for shared memory based on continuity."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:27
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:34
 msgid ""
 "WGMMA can directly use shared memory as input, so the swizzle layout must "
 "match the tensor core's access pattern. The swizzle granularity is "
 "determined by the continuous dimension size:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:30
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:37
 msgid "128B swizzle (Full):    continuity % (vectorized_size * 8) == 0"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:31
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:38
 msgid "64B swizzle (Half):     continuity % (vectorized_size * 4) == 0"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:32
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:39
 msgid "32B swizzle (Quarter):  continuity % (vectorized_size * 2) == 0"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:33
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:40
 msgid "Linear (no swizzle):    otherwise"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:35
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:42
 msgid ""
 "See: https://docs.nvidia.com/cuda/cuda-driver-api/"
 "group__CUDA__TENSOR__MEMORY.html"
@@ -76,4 +88,22 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:0
 msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:54
+msgid "Return True if both A and B are in shared memory (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:60
+msgid ""
+"Return True if A is in shared memory and B is in registers (SR variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:66
+msgid ""
+"Return True if A is in registers and B is in shared memory (RS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:72
+msgid "Return True if both A and B are in registers (RR variant)."
 msgstr ""
