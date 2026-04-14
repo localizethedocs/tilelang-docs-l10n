@@ -75,11 +75,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/utils/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/quantize/utils/index.rst:39
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/quantize/utils/index.rst:40
 msgid ""

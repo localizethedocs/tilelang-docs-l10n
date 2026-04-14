@@ -61,11 +61,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:31
 msgid "Bases: :py:obj:`enum.IntEnum`"
-msgstr ""
+msgstr "基底類別：:py:obj:`enum.IntEnum`"
 
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:77
 msgid ""

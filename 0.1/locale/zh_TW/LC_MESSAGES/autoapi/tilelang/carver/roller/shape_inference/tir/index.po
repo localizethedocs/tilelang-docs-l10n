@@ -91,4 +91,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/tir/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

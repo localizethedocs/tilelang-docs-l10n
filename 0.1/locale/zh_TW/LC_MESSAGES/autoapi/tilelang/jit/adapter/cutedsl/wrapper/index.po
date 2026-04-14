@@ -840,7 +840,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:804
 msgid "Create dispatch function - always use C++ launcher."

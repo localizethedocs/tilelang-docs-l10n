@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../programming_guides/control_flow.md:1
 msgid "Control Flow"
-msgstr ""
+msgstr "控制流程"
 
 #: ../../../programming_guides/control_flow.md:3
 msgid ""
@@ -209,7 +209,7 @@ msgstr ""
 
 #: ../../../programming_guides/control_flow.md:108
 msgid "While Loops"
-msgstr ""
+msgstr "While 迴圈"
 
 #: ../../../programming_guides/control_flow.md:110
 msgid ""
@@ -226,10 +226,16 @@ msgid ""
 "        break\n"
 "    i += 1\n"
 msgstr ""
+"i = 0\n"
+"while i < N:\n"
+"    ...\n"
+"    if done:\n"
+"        break\n"
+"    i += 1\n"
 
 #: ../../../programming_guides/control_flow.md:122
 msgid "Break and Continue"
-msgstr ""
+msgstr "Break 與 Continue"
 
 #: ../../../programming_guides/control_flow.md:124
 msgid ""
@@ -273,3 +279,5 @@ msgid ""
 "if i == 0:\n"
 "    T.print(C, msg='C tile:')\n"
 msgstr ""
+"if i == 0:\n"
+"    T.print(C, msg='C tile:')\n"

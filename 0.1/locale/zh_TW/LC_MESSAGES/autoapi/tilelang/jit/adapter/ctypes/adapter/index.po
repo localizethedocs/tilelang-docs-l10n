@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/ctypes/adapter/index.rst:25
 msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
 
 #: ../../../autoapi/tilelang/jit/adapter/ctypes/adapter/index.rst:30
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/ctypes/adapter/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/ctypes/adapter/index.rst:123
 msgid "Returns the source path of the compiled library."

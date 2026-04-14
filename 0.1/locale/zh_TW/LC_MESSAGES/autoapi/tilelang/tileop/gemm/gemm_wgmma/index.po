@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:20
 msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:25
 msgid "Infer the swizzle layout for shared memory based on continuity."
@@ -76,4 +76,4 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

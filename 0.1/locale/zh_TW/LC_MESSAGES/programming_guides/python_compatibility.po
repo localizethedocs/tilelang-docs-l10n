@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../programming_guides/python_compatibility.md:1
 msgid "Python Compatibility"
-msgstr ""
+msgstr "Python 相容性"
 
 #: ../../../programming_guides/python_compatibility.md:3
 msgid ""
@@ -41,10 +41,13 @@ msgid ""
 "import tilelang.language as T\n"
 "from tilelang import jit\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import jit\n"
 
 #: ../../../programming_guides/python_compatibility.md:17
 msgid "Control Flow & Loops"
-msgstr ""
+msgstr "控制流程與迴圈"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Python Feature"
@@ -92,15 +95,15 @@ msgstr ""
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`while condition`"
-msgstr ""
+msgstr "`while condition`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`if` / `elif` / `else`"
-msgstr ""
+msgstr "`if` / `elif` / `else`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`x if cond else y`"
-msgstr ""
+msgstr "`x if cond else y`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Ternary expression"

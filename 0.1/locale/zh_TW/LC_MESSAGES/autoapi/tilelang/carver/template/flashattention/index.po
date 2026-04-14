@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:98
 msgid "Defines and initializes the matrix multiplication computation."

@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/metal/index.rst:20
 msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/metal/index.rst:23
 msgid ""

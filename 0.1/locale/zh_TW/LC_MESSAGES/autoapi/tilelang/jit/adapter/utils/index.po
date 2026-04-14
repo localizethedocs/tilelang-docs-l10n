@@ -167,7 +167,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:50
 msgid "Source code containing the function"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:57
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:58
 msgid "For code:"

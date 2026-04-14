@@ -461,7 +461,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/wrapper/index.rst:408
 msgid "Generate Python code to configure L2 cache persistence for a kernel."

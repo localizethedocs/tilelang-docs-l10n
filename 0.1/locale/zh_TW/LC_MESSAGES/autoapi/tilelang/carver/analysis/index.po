@@ -164,7 +164,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:92
 msgid "The iteration domain of the block."

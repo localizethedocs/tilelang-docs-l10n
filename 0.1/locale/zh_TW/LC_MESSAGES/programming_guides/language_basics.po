@@ -38,6 +38,9 @@ msgid ""
 "import tilelang.language as T\n"
 "from tilelang import jit\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import jit\n"
 
 #: ../../../programming_guides/language_basics.md:15
 msgid "1. Defining a Kernel with `@T.prim_func`"

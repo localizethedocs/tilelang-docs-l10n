@@ -221,7 +221,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:77
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:92
@@ -240,11 +240,11 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:116
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:125
 msgid "Bases: :py:obj:`Frame`"
-msgstr ""
+msgstr "基底類別：:py:obj:`Frame`"
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:182
 msgid "Bases: :py:obj:`SerialForWithStep`"
-msgstr ""
+msgstr "基底類別：:py:obj:`SerialForWithStep`"
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:0
 msgid "Parameters"

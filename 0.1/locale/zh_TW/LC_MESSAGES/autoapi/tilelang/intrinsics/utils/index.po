@@ -111,4 +111,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

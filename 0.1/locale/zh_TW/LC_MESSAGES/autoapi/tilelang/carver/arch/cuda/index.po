@@ -90,7 +90,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:48
 msgid "Bases: :py:obj:`tilelang.carver.arch.arch_base.TileDevice`"

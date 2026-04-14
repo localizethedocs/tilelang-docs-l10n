@@ -139,12 +139,12 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:56
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:209
 msgid "Bases: :py:obj:`ast.NodeTransformer`"
-msgstr ""
+msgstr "基底類別：:py:obj:`ast.NodeTransformer`"
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:59
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:212
@@ -258,7 +258,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:344
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:352
 msgid ""

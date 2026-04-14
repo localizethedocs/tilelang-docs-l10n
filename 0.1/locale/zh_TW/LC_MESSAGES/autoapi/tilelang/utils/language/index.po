@@ -290,7 +290,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:56
 msgid "True if the buffer is in shared memory, False otherwise."

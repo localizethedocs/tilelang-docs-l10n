@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/matmul_sparse.md:1
 msgid "Sparse Matrix-Matrix Multiplication with Tile Library"
-msgstr ""
+msgstr "使用 Tile 程式庫進行稀疏矩陣乘法"
 
 #: ../../../deeplearning_operators/matmul_sparse.md:3
 msgid ""

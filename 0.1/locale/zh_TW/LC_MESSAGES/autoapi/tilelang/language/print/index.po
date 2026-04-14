@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/print/index.rst:46
 #: ../../../autoapi/tilelang/language/print/index.rst:64

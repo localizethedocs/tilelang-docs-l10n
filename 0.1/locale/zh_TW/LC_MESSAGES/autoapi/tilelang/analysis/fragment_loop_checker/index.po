@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:30
 msgid ""

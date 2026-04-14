@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/copy/index.rst:40
 msgid ""
