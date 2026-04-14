@@ -57,7 +57,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:43
 msgid ""

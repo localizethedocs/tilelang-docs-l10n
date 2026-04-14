@@ -102,7 +102,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tools/Analyzer/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/tools/Analyzer/index.rst:126
 msgid ""

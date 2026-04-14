@@ -111,7 +111,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:76
 msgid "Checks if the parameter represents an unsigned integer type."
@@ -161,7 +161,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:121
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/engine/param/index.rst:129
 msgid "Converts the TVM DataType to TileLang dtype."

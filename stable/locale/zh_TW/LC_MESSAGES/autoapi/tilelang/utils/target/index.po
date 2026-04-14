@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:57
 msgid ""

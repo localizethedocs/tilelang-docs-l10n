@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:43
 msgid "The TIR schedule used to get output blocks."

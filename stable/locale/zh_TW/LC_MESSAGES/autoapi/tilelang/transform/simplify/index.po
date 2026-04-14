@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:0
 msgid "Parameters"

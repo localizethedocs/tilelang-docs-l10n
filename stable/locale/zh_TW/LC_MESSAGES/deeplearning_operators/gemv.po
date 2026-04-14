@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/gemv.md:1
 msgid "General Matrix-Vector Multiplication (GEMV)"
-msgstr ""
+msgstr "一般矩陣向量乘法（GEMV）"
 
 #: ../../../deeplearning_operators/gemv.md:2
 msgid "==========================================="

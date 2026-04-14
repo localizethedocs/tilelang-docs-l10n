@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../get_started/targets.md:1
 msgid "Understanding Targets"
-msgstr ""
+msgstr "理解目標"
 
 #: ../../../get_started/targets.md:3
 msgid ""

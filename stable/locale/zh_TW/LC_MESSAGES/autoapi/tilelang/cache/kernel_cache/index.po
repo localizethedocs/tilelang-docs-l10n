@@ -109,11 +109,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:78
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:79
 msgid "TILELANG_TARGET"

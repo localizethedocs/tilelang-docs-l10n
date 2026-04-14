@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/entry/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/tir/entry/index.rst:42
 msgid ""

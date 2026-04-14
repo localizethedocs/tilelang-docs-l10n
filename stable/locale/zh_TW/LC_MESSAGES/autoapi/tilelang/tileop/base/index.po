@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:20
 msgid "Bases: :py:obj:`enum.IntEnum`"
-msgstr ""
+msgstr "基底類別：:py:obj:`enum.IntEnum`"
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:43
 msgid "Check if the policy is a square partitioning."
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/tileop/base/index.rst:52
 msgid "Check if the policy is a full row partitioning."

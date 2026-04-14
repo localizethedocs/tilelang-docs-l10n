@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:78
 msgid "Return the number of items in the stack (len operator support)."

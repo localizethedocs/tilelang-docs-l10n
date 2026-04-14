@@ -117,7 +117,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/arch/driver/cuda_driver/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/arch/driver/cuda_driver/index.rst:81
 msgid "The CUDA device ID. Defaults to 0."

@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:0
 msgid "Parameters"

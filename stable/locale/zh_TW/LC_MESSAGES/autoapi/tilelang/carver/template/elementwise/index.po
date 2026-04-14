@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:66
 msgid "Initializes the element-wise computation function."

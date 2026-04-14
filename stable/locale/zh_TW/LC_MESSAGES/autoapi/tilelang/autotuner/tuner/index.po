@@ -119,7 +119,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:77
 msgid ""
@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:147
 msgid "Environment Variables:"
-msgstr ""
+msgstr "環境變數："
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:148
 msgid ""

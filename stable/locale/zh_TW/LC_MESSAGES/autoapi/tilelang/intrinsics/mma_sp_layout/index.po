@@ -208,4 +208,4 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/intrinsics/mma_sp_layout/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

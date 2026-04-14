@@ -672,7 +672,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:121
 msgid "Variable arguments defining the TMA descriptor configuration"
@@ -840,7 +840,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/builtin/index.rst:726
 #: ../../../autoapi/tilelang/language/builtin/index.rst:742
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:315
 #: ../../../autoapi/tilelang/language/builtin/index.rst:334

@@ -603,7 +603,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/transform/index.rst:152
 msgid ""

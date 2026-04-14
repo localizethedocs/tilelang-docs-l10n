@@ -101,4 +101,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:56
 msgid "Example"
-msgstr ""
+msgstr "範例"

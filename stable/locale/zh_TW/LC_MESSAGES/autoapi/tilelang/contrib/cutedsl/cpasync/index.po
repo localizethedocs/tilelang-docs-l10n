@@ -146,7 +146,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:58
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:72

@@ -88,7 +88,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:41
 msgid "Bases: :py:obj:`enum.Enum`"
@@ -132,7 +132,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:127
 msgid "Parameters:"
-msgstr ""
+msgstr "參數："
 
 #: ../../../autoapi/tilelang/utils/tensor/index.rst:128
 msgid "tensor_a"
