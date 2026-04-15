@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,6 +49,12 @@ msgstr ""
 msgid ":py:obj:`dtype <tilelang.language.dtypes.dtype>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:47
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:109
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:26:<autosummary>:1
+msgid "Abstract base class for generic types."
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:26:<autosummary>:1
 msgid ":py:obj:`bool <tilelang.language.dtypes.bool>`\\"
 msgstr ""
@@ -60,7 +66,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_call__ <tilelang.language.dtypes.__dtype_call__>`\\ "
-"\\(self\\[\\, expr\\, is\\_size\\_var\\]\\)"
+"\\(self\\, \\*args\\[\\, is\\_size\\_var\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
@@ -69,7 +75,7 @@ msgid ""
 "\\(self\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:72
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:92
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid "Convert TileLang dtype to PyTorch dtype."
 msgstr ""
@@ -86,7 +92,7 @@ msgid ""
 "\\(self\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:79
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:99
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid "Return the number of bytes for this dtype."
 msgstr ""
@@ -105,6 +111,38 @@ msgstr ""
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_T`\\ ]"
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:49
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:111
+msgid ""
+"A generic type is typically declared by inheriting from this class "
+"parameterized with one or more type variables. For example, a generic "
+"mapping type might be defined as::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:53
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:115
+msgid ""
+"class Mapping(Generic[KT, VT]):\n"
+"    def __getitem__(self, key: KT) -> VT:\n"
+"        ...\n"
+"    # Etc."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:58
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:120
+msgid "This class can then be used as follows::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:60
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:122
+msgid ""
+"def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:\n"
+"    try:\n"
+"        return mapping[key]\n"
+"    except KeyError:\n"
+"        return default"
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:0
 msgid "Return type"
 msgstr ""
@@ -113,6 +151,6 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:86
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:106
 msgid "Bases: :py:obj:`dtype`"
 msgstr ""

@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-03-02 13:17:08 +0800",
-        "hash" : "d94e4de9f57b7d5b9ff1c5ba764898f4ce725302",
-        "title" : "[CI]: Bump actions/download-artifact from 7 to 8 (#1889)"
+        "date" : "2026-04-13 16:18:24 +0800",
+        "hash" : "8243f7e08922641a07258d82bc17bf78df9b8202",
+        "title" : "Nan propagation option for bf16 and half16 (#1958)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-03-02 13:17:08 +0800",
-        "hash" : "d94e4de9f57b7d5b9ff1c5ba764898f4ce725302",
-        "title" : "[CI]: Bump actions/download-artifact from 7 to 8 (#1889)"
+        "date" : "2026-04-13 16:18:24 +0800",
+        "hash" : "8243f7e08922641a07258d82bc17bf78df9b8202",
+        "title" : "Nan propagation option for bf16 and half16 (#1958)"
       }
     }
   },

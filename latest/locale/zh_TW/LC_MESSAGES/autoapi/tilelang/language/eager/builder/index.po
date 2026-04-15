@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,6 +124,12 @@ msgstr ""
 msgid ":py:obj:`PrimFunc <tilelang.language.eager.builder.PrimFunc>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:398
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:455
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
+msgid "Abstract base class for generic types."
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`Macro <tilelang.language.eager.builder.Macro>`\\"
 msgstr ""
@@ -132,7 +138,7 @@ msgstr ""
 msgid ":py:obj:`TirTemplate <tilelang.language.eager.builder.TirTemplate>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:509
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:591
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid "Template for generating TIR PrimFunc with dynamic shape substitution."
 msgstr ""
@@ -141,7 +147,7 @@ msgstr ""
 msgid ":py:obj:`JITFunc <tilelang.language.eager.builder.JITFunc>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:569
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:651
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid "Internal wrapper for JIT-compiled functions."
 msgstr ""
@@ -150,72 +156,94 @@ msgstr ""
 msgid "Functions"
 msgstr "函式"
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`unwrap_expr <tilelang.language.eager.builder.unwrap_expr>`\\ "
 "\\(expr\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:65
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:67
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid "unwrap expr and convert it into PrimExpr like"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`unwrap_cond <tilelang.language.eager.builder.unwrap_cond>`\\ "
 "\\(expr\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:70
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:72
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid "unwrap expr and convert to bool condition"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ":py:obj:`is_var <tilelang.language.eager.builder.is_var>`\\ \\(v\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`macro <tilelang.language.eager.builder.macro>`\\ \\(\\[func\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid "Decorator that converts a Python function into a TileLang macro."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`get_type_hints <tilelang.language.eager.builder.get_type_hints>`\\ "
 "\\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`const <tilelang.language.eager.builder.const>`\\ \\(name\\[\\, "
 "dtype\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:490
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:540
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 "Declare constexpr variables for dynamic tensor dimensions (eager mode only)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`annotate_compile_flags <tilelang.language.eager.builder."
+"annotate_compile_flags>`\\ \\(flags\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:556
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
+msgid "Annotate additional device compile flags inside a function body."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
+msgid ""
+":py:obj:`annotate_pass_configs <tilelang.language.eager.builder."
+"annotate_pass_configs>`\\ \\(configs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:571
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
+msgid "Annotate pass configuration inside a function body."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`substitute_primfunc <tilelang.language.eager.builder."
 "substitute_primfunc>`\\ \\(prim\\_func\\, vmap\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:57:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
 ":py:obj:`prim_func <tilelang.language.eager.builder.prim_func>`\\ "
 "\\(\\[func\\, eager\\_jit\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:59
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:61
 msgid "Module Contents"
 msgstr ""
 
@@ -223,26 +251,26 @@ msgstr ""
 msgid "Return type"
 msgstr "回傳值型別"
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:77
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:92
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:101
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:110
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:119
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:128
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:79
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:94
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:103
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:112
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:121
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:130
 msgid ""
 "Frame are virtual context managers used in frontend only They do not have "
 "any runtime representation in the generated TIR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:89
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:98
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:107
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:116
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:125
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:91
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:100
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:109
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:118
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:127
 msgid "Bases: :py:obj:`Frame`"
 msgstr "基底類別：:py:obj:`Frame`"
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:182
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:184
 msgid "Bases: :py:obj:`SerialForWithStep`"
 msgstr "基底類別：:py:obj:`SerialForWithStep`"
 
@@ -250,33 +278,65 @@ msgstr "基底類別：:py:obj:`SerialForWithStep`"
 msgid "Parameters"
 msgstr "參數"
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:199
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:201
 msgid "Bases: :py:obj:`tilelang.language.eager.ast.BaseBuilder`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:317
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:331
 msgid "Unwrap some tilelang objects to get their inner value"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:323
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:337
 msgid ""
 "Bind an immutable tilelang objects. The immutability means the result is "
 "usually not changed or re-assigned in a python block."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:381
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:395
 msgid ""
 "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ], :py:obj:"
 "`tvm.tir.PrimFunc`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:422
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:506
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:566
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:400
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:457
+msgid ""
+"A generic type is typically declared by inheriting from this class "
+"parameterized with one or more type variables. For example, a generic "
+"mapping type might be defined as::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:404
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:461
+msgid ""
+"class Mapping(Generic[KT, VT]):\n"
+"    def __getitem__(self, key: KT) -> VT:\n"
+"        ...\n"
+"    # Etc."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:409
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:466
+msgid "This class can then be used as follows::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:411
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:468
+msgid ""
+"def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:\n"
+"    try:\n"
+"        return mapping[key]\n"
+"    except KeyError:\n"
+"        return default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:452
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:588
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:648
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:457
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:507
 msgid ""
 "Decorator that converts a Python function into a TileLang macro. TileLang "
 "macro is very similar to PrimFunc, it can be used in prim_func or another "
@@ -284,7 +344,7 @@ msgid ""
 "function will be analyzed"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:460
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:510
 msgid ""
 "and transformed into an IR generation function. The function can take any "
 "parameters (_P) and return any type (_T)."
@@ -294,7 +354,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:464
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:514
 msgid ""
 "* *Macro[_P, _T]* -- A Macro object that wraps the original function with IR "
 "generation capabilities.   The returned Macro preserves the original "
@@ -306,7 +366,7 @@ msgid ""
 "serial(10):   ...            B[i] = my_macro(A[i])"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:464
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:514
 msgid ""
 "*Macro[_P, _T]* -- A Macro object that wraps the original function with IR "
 "generation capabilities. The returned Macro preserves the original "
@@ -314,11 +374,11 @@ msgid ""
 "metaprogramming capabilities."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:467
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:517
 msgid "*Example*"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:468
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:518
 msgid ""
 "*--------* -- >>> @macro ... def my_macro(x: T.int32) -> T.int32: ...    "
 "return x ** 2 >>> @prim_func ... def my_func(A: T.Tensor((10,), T.int32), B: "
@@ -326,33 +386,35 @@ msgid ""
 "T.serial(10): ...            B[i] = my_macro(A[i])"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:479
-msgid ":py:obj:`Macro`"
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:529
+msgid ":obj:`Macro`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:480
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:530
 msgid "The class that wraps macro functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:482
-msgid ":py:obj:`mutate`"
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:532
+msgid ":obj:`mutate`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:483
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:533
 msgid "The function that transforms Python code into IR generators"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:492
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:542
 msgid ""
 "In eager mode, use T.const() to declare shape dimensions that will be "
 "inferred from actual tensor arguments at runtime."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:495
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:545
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:561
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:577
 msgid "Example::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:497
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:547
 msgid ""
 "@tilelang.jit\n"
 "def kernel(A, B):\n"
@@ -361,45 +423,75 @@ msgid ""
 "    ..."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:511
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:558
+msgid ""
+"The flags will be merged with any externally provided compile_flags at "
+"compilation time. Can be placed before or after tensor type annotations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:563
+msgid ""
+"@tilelang.jit\n"
+"def kernel(A, B):\n"
+"    T.annotate_compile_flags([\"--use_fast_math\"])\n"
+"    ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:573
+msgid ""
+"The configs will be merged with any externally provided pass_configs at "
+"compilation time (function-level configs take lower priority, i.e. external "
+"configs override). Can be placed before or after tensor type annotations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:579
+msgid ""
+"@tilelang.jit\n"
+"def kernel(A, B):\n"
+"    T.annotate_pass_configs({\n"
+"        PassConfigKey.TL_ENABLE_FAST_MATH: True})\n"
+"    ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:593
 msgid ""
 "For lazy-style functions, the PrimFunc is used directly without "
 "substitution. For eager-style functions, constexpr variables are substituted "
 "based on actual tensor shapes at runtime."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:557
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:639
 msgid ""
 "Create template from lazy-style function that returns PrimFunc directly."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:571
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:653
 msgid "This class handles both lazy and eager execution styles:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:573
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:655
 msgid ""
 "**lazy style**: Function explicitly returns a PrimFunc. The original "
 "function is called directly to obtain the TIR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:576
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:658
 msgid ""
 "**eager style**: Function uses the DSL builder pattern with tensor type "
 "annotations. The TIR is constructed by tracing the function body through the "
 "Builder."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:580
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:662
 msgid ""
 "The style is determined by `_is_lazy_style()` which checks if calling the "
 "original function returns a PrimFunc directly."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:615
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:697
 msgid "Parse arguments and return cache key and tensor args."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/builder/index.rst:627
+#: ../../../autoapi/tilelang/language/eager/builder/index.rst:709
 msgid "Set the JIT execution mode (internal use only)."
 msgstr ""

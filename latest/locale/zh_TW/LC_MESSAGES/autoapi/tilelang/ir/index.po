@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,80 +25,75 @@ msgstr ""
 msgid "Classes"
 msgstr "類別"
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`Fill <tilelang.ir.Fill>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`AtomicAdd <tilelang.ir.AtomicAdd>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`Copy <tilelang.ir.Copy>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`Conv2DIm2ColOp <tilelang.ir.Conv2DIm2ColOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`GemmWarpPolicy <tilelang.ir.GemmWarpPolicy>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`GemmSPWarpPolicy <tilelang.ir.GemmSPWarpPolicy>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
-msgid ":py:obj:`Gemm <tilelang.ir.Gemm>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`GemmSP <tilelang.ir.GemmSP>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`FinalizeReducerOp <tilelang.ir.FinalizeReducerOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`ParallelOp <tilelang.ir.ParallelOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`ReduceOp <tilelang.ir.ReduceOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`CumSumOp <tilelang.ir.CumSumOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`RegionOp <tilelang.ir.RegionOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
 msgid ":py:obj:`ReduceType <tilelang.ir.ReduceType>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:29
+#: ../../../autoapi/tilelang/ir/index.rst:28
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:33
-#: ../../../autoapi/tilelang/ir/index.rst:38
-#: ../../../autoapi/tilelang/ir/index.rst:43
-#: ../../../autoapi/tilelang/ir/index.rst:48
-#: ../../../autoapi/tilelang/ir/index.rst:53
-#: ../../../autoapi/tilelang/ir/index.rst:73
-#: ../../../autoapi/tilelang/ir/index.rst:93
-#: ../../../autoapi/tilelang/ir/index.rst:98
-#: ../../../autoapi/tilelang/ir/index.rst:103
-#: ../../../autoapi/tilelang/ir/index.rst:108
-#: ../../../autoapi/tilelang/ir/index.rst:113
-#: ../../../autoapi/tilelang/ir/index.rst:118
-#: ../../../autoapi/tilelang/ir/index.rst:123
-#: ../../../autoapi/tilelang/ir/index.rst:128
+#: ../../../autoapi/tilelang/ir/index.rst:32
+#: ../../../autoapi/tilelang/ir/index.rst:37
+#: ../../../autoapi/tilelang/ir/index.rst:42
+#: ../../../autoapi/tilelang/ir/index.rst:47
+#: ../../../autoapi/tilelang/ir/index.rst:52
+#: ../../../autoapi/tilelang/ir/index.rst:72
+#: ../../../autoapi/tilelang/ir/index.rst:92
+#: ../../../autoapi/tilelang/ir/index.rst:97
+#: ../../../autoapi/tilelang/ir/index.rst:102
+#: ../../../autoapi/tilelang/ir/index.rst:107
+#: ../../../autoapi/tilelang/ir/index.rst:112
+#: ../../../autoapi/tilelang/ir/index.rst:117
+#: ../../../autoapi/tilelang/ir/index.rst:122
 msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-04-13 09:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -488,19 +488,19 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:877
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
 msgid ""
-"TVM intrinsic for tcgen05.mma shared-memory × shared-memory instructions."
+"TVM intrinsic for tcgen05.mma shared-memory x shared-memory instructions."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
 msgid ""
 ":py:obj:`ptx_tcgen05_mma_ts <tilelang.language.tir.op.ptx_tcgen05_mma_ts>`\\ "
-"\\(kind\\_dtype\\, A\\_ptr\\, A\\_offset\\, ...\\)"
+"\\(kind\\_dtype\\, A\\_ptr\\, A\\_offset\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:890
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
 msgid ""
-"TVM intrinsic for tcgen05.mma tensor-memory × shared-memory instructions."
+"TVM intrinsic for tcgen05.mma tensor-memory x shared-memory instructions."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:166:<autosummary>:1
@@ -1622,7 +1622,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:212
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:235
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:255
-msgid ":py:obj:`te.extern`"
+msgid ":obj:`te.extern`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:192
@@ -2100,7 +2100,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:879
 msgid ""
-"Expects 13 or 14 positional arguments: (kind_dtype, desc_a, A_offset, "
+"Expects 14 or 15 positional arguments: (kind_dtype, desc_a, A_offset, "
 "desc_b, B_offset, C_ptr, C_offset,"
 msgstr ""
 
@@ -2390,7 +2390,7 @@ msgid "The name of the trace action."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1348
-msgid ":py:obj:`tvm.tir.call_packed`"
+msgid ":obj:`tvm.tir.call_packed`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/tir/op/index.rst:1349
