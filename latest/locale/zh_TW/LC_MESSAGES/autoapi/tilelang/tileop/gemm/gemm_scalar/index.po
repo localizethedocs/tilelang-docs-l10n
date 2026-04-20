@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_scalar/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_scalar/index.rst:14:<autosummary>:1
 msgid ":py:obj:`GemmScalar <tilelang.tileop.gemm.gemm_scalar.GemmScalar>`\\"
@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_scalar/index.rst:20
 msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_scalar/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
