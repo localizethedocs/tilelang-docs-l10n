@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:31
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:205
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:195
 #: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:23:<autosummary>:1
 msgid "To eliminate Python syntax within TIR Macro."
 msgstr ""
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:152
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:142
 msgid ""
 "is_m_first: True if the thread binding is in the form of (tx, warp_n, "
 "warp_m) which represents [warp_size, block_row_warps (split n), "
@@ -71,14 +71,14 @@ msgid ""
 "block_col_warps (split m), block_row_warps (split n)]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:172
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:187
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:162
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:177
 msgid ""
 "Create a layout function for storing MFMA results into a fragment buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:174
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:189
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:164
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:179
 msgid "The local buffer representing a fragment of a matrix."
 msgstr ""
 
@@ -86,8 +86,8 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:177
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:192
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:167
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:182
 msgid ""
 "A fragment object that describes how threads and indices in `local_buf` are "
 "laid out."
@@ -97,11 +97,11 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:181
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:196
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:171
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:186
 msgid "If `local_buf` is not detected to be a fragment buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:202
+#: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:192
 msgid "Bases: :py:obj:`MatrixCoreIntrinEmitter`"
 msgstr ""

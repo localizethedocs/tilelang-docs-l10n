@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -231,6 +231,17 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:339
 msgid "Compiled kernel function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:380
+msgid "Persist autotune result to disk using atomic directory rename."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:382
+msgid ""
+"All files are written into a temporary staging directory under the shared "
+"namespace staging root. Once complete, the staging directory is atomically "
+"renamed to *path* so that concurrent readers never see a half-written result."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:0

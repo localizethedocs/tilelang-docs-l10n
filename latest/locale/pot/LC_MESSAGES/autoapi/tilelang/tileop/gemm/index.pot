@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,11 +61,11 @@ msgstr ""
 msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:112
+#: ../../../autoapi/tilelang/tileop/gemm/index.rst:118
 msgid "Infer the layout for the GEMM operation based on target architecture."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/index.rst:118
+#: ../../../autoapi/tilelang/tileop/gemm/index.rst:124
 msgid ""
 "Lower the GEMM operation to TIR statements based on target architecture."
 msgstr ""
