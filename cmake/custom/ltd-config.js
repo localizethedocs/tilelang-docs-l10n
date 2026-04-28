@@ -9,7 +9,7 @@ var CONFIG_OPTIONS = {
   CONFIG_VERSIONS: [
     ["latest",    "Development"],
     ["stable",    "Stable Release"],
-    ["0.1",       "Release 0.1"],
+    ["0",         "Release 0.x"],
   ],
   CONFIG_PROJECTS: [
     ["Index",     "https://projects.localizethedocs.org"],
