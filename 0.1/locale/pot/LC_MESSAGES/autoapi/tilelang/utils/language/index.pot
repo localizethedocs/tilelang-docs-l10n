@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-04-28 10:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,7 +219,7 @@ msgid ""
 "\\(lhs\\, rhs\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:205
+#: ../../../autoapi/tilelang/utils/language/index.rst:209
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid "Robust equality for PrimExpr shapes/extents."
 msgstr ""
@@ -230,7 +230,7 @@ msgid ""
 "legalize_pairwise_extents>`\\ \\(src\\_extents\\, dst\\_extents\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:213
+#: ../../../autoapi/tilelang/utils/language/index.rst:217
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid "Right-align and broadcast two extent lists to be mutually compatible."
 msgstr ""
@@ -241,7 +241,7 @@ msgid ""
 "\\(buffer\\_region\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:234
+#: ../../../autoapi/tilelang/utils/language/index.rst:238
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid "Check whether a BufferRegion covers the full buffer region."
 msgstr ""
@@ -252,7 +252,7 @@ msgid ""
 "\\(func\\[\\, default\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:247
+#: ../../../autoapi/tilelang/utils/language/index.rst:251
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid "Extract a human‑readable function name from a TVM PrimFunc."
 msgstr ""
@@ -419,82 +419,89 @@ msgstr ""
 msgid "BufferLoad -> load.dtype"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:207
+#: ../../../autoapi/tilelang/utils/language/index.rst:202
+msgid ""
+"For vector types (e.g. ``bfloat16x2``) ``DataType.bits`` returns the per-"
+"lane width, not the full element width.  Multiply by ``lanes`` so that the "
+"total bit count is correct."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/language/index.rst:211
 msgid ""
 "Tries structural_equal first, then falls back to expr_deep_equal. Python "
 "ints are converted to IntImm for comparison."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:215
+#: ../../../autoapi/tilelang/utils/language/index.rst:219
 msgid ""
 "Early-exit rule: - If the number of non-1 dimensions in `src_extents` equals "
 "that in `dst_extents`,"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:217
+#: ../../../autoapi/tilelang/utils/language/index.rst:221
 msgid ""
 "no adjustment is made; the original extents are returned unchanged. This "
 "preserves the per-dimension iteration mapping (one loop var per non-1 dim) "
 "and avoids creating extra varying axes on either side."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:221
+#: ../../../autoapi/tilelang/utils/language/index.rst:225
 msgid "Otherwise, for each pair of tail-aligned dimensions (x, y):"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:222
+#: ../../../autoapi/tilelang/utils/language/index.rst:226
 msgid "if x == y: keep both"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:223
+#: ../../../autoapi/tilelang/utils/language/index.rst:227
 msgid "elif x == 1: set x = y"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:224
+#: ../../../autoapi/tilelang/utils/language/index.rst:228
 msgid "elif y == 1: set y = x"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:225
+#: ../../../autoapi/tilelang/utils/language/index.rst:229
 msgid "else: promote both to tir.max(x, y) to handle dynamic-vs-static safely"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:227
+#: ../../../autoapi/tilelang/utils/language/index.rst:231
 msgid "Leading unmatched dimensions are kept as-is."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:229
+#: ../../../autoapi/tilelang/utils/language/index.rst:233
 msgid "Returns a tuple of new lists (src_new, dst_new)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:236
+#: ../../../autoapi/tilelang/utils/language/index.rst:240
 msgid ""
 "A full region means each dimension has start 0 and extent equal to the "
 "corresponding dimension in the buffer's shape."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:239
+#: ../../../autoapi/tilelang/utils/language/index.rst:243
 msgid "The TVM BufferRegion to check."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:241
+#: ../../../autoapi/tilelang/utils/language/index.rst:245
 msgid "True if the region is full; otherwise False."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:249
+#: ../../../autoapi/tilelang/utils/language/index.rst:253
 msgid ""
 "Prefer the `global_symbol` attribute set on the PrimFunc. If it is missing "
 "(e.g., private PrimFunc without a global symbol), return the provided "
 "`default` value."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:253
+#: ../../../autoapi/tilelang/utils/language/index.rst:257
 msgid "TVM PrimFunc instance or None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:254
+#: ../../../autoapi/tilelang/utils/language/index.rst:258
 msgid "Fallback name to return when no name can be determined."
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/language/index.rst:256
+#: ../../../autoapi/tilelang/utils/language/index.rst:260
 msgid "The function name as a string, or `default` when unavailable."
 msgstr ""

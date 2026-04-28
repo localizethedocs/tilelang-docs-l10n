@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-04-28 10:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -58,6 +59,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
 msgid ":py:obj:`IRGenerator <tilelang.language.eager.ast.IRGenerator>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:379
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+msgid "Abstract base class for generic types."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:29
@@ -239,7 +245,35 @@ msgstr ""
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:395
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:381
+msgid ""
+"A generic type is typically declared by inheriting from this class "
+"parameterized with one or more type variables. For example, a generic "
+"mapping type might be defined as::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:385
+msgid ""
+"class Mapping(Generic[KT, VT]):\n"
+"    def __getitem__(self, key: KT) -> VT:\n"
+"        ...\n"
+"    # Etc."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:390
+msgid "This class can then be used as follows::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:392
+msgid ""
+"def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:\n"
+"    try:\n"
+"        return mapping[key]\n"
+"    except KeyError:\n"
+"        return default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:415
 msgid ""
 "Transform a Python function into an IR (Intermediate Representation) "
 "generator. This function takes a regular Python function and performs AST "
@@ -248,7 +282,7 @@ msgid ""
 "transformed. This should be a"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:399
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:419
 msgid ""
 "callable that will be analyzed and mutated at the AST level. The function's "
 "signature is preserved through generic type parameters _P (parameters) and "
@@ -259,7 +293,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:404
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:424
 msgid ""
 "An IRGenerator instance wrapping the transformed function.     The generator "
 "contains:     - gen: The compiled and mutated version of the original "
@@ -267,32 +301,32 @@ msgid ""
 "string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:406
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:426
 msgid "An IRGenerator instance wrapping the transformed function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:407
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:427
 msgid ""
 "The generator contains: - gen: The compiled and mutated version of the "
 "original function - source: The unparsed source code of the transformed AST "
 "as a string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:413
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:433
 msgid "Example"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:421
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:441
 msgid ""
 "The original function's closure variables and captured context are preserved"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:422
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:442
 msgid ""
 "The transformation is performed at compile-time through AST manipulation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:423
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:443
 msgid ""
 "The returned IRGenerator maintains type information from the original "
 "function"
