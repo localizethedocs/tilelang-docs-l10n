@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-13 16:18:24 +0800",
-      "hash" : "8243f7e08922641a07258d82bc17bf78df9b8202",
-      "title" : "Nan propagation option for bf16 and half16 (#1958)"
+      "date" : "2026-04-27 15:10:48 +0800",
+      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
+      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
     }
   },
   "type" : "branch",
