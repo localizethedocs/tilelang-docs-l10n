@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:2
+msgid "tilelang.intrinsics.wmma_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:8
+msgid "WMMA intrinsic emitter for AMD RDNA architectures (gfx11 / gfx12)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:10
+msgid "Only supports the f16->f32, 16x16x16 variant with warp-size=32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:12
+msgid "Thread-data mapping (per AMDGPU ISA):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:13
+msgid ""
+"A[16][K=16]: thread t holds A[t//2][(t%2)*8 : (t%2)*8+8]  (8 fp16 = 4 f32 "
+"per thread) B[K=16][16]: same mapping as A for the transposed dimension C/"
+"D[16][16]: thread t holds D[t//2][(t%2)*8 : (t%2)*8+8]  (8 f32 per thread)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:20
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:26:<autosummary>:1
+msgid ":py:obj:`lift <tilelang.intrinsics.wmma_macro_generator.lift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:28
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`WMMAIntrinEmitter <tilelang.intrinsics.wmma_macro_generator."
+"WMMAIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:42
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:34:<autosummary>:1
+msgid "Intrinsic emitter for AMD RDNA WMMA (16×16×16, warp-size=32)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:44
+msgid "Supports:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:45
+msgid "fp16 -> fp32  (f32_16x16x16_f16_w32 / _gfx12)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:188
+msgid "Return (lane_id, warp_n, warp_m)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:194
+msgid "Return (forward, reverse) index maps for shared→local loading."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:196
+msgid "For WMMA gfx12:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:197
+msgid "A is stored row-major [M, K]. Thread t loads A[t%16][(t//16)*8+local]."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:198
+msgid ""
+"B (non-transposed) is stored row-major [K, N]. Thread t loads B[t%16]"
+"[(t//16)*8+local] (same shape/pattern as A)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:200
+msgid ""
+"B (transposed) is stored [N, K]. Thread t loads B_T[t%16][(t//16)*8+local] "
+"(N-row, K-col)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:207
+msgid "Return the store index map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:209
+msgid ""
+"The forward map is (thread_id, local_id) -> (i, j), which is affine. The "
+"inverse map is (i, j) -> (thread_id, local_id)."
+msgstr ""
