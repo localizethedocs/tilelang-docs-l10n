@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-04-28 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr "函式"
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 ":py:obj:`reduce <tilelang.language.reduce_op.reduce>`\\ \\(buffer\\, out\\, "
-"reduce\\_type\\, dim\\, clear\\)"
+"reduce\\_type\\, dim\\, clear\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:51
@@ -51,10 +51,10 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 ":py:obj:`reduce_max <tilelang.language.reduce_op.reduce_max>`\\ \\(buffer\\, "
-"out\\[\\, dim\\, clear\\]\\)"
+"out\\[\\, dim\\, clear\\, nan\\_propagate\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:67
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:72
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform reduce max on input buffer, store the result to output buffer"
 msgstr ""
@@ -62,10 +62,10 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 ":py:obj:`reduce_min <tilelang.language.reduce_op.reduce_min>`\\ \\(buffer\\, "
-"out\\[\\, dim\\, clear\\]\\)"
+"out\\[\\, dim\\, clear\\, nan\\_propagate\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:84
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:93
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform reduce min on input buffer, store the result to output buffer."
 msgstr ""
@@ -76,7 +76,7 @@ msgid ""
 "out\\[\\, dim\\, clear\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:101
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:114
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform reduce sum on input buffer, store the result to output buffer."
 msgstr ""
@@ -87,7 +87,7 @@ msgid ""
 "\\(buffer\\, out\\[\\, dim\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:128
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:141
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Perform reduce absolute sum on input buffer, store the result to output "
@@ -97,10 +97,10 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 ":py:obj:`reduce_absmax <tilelang.language.reduce_op.reduce_absmax>`\\ "
-"\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
+"\\(buffer\\, out\\[\\, dim\\, clear\\, nan\\_propagate\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:143
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:156
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Perform reduce absolute max on input buffer, store the result to output "
@@ -113,7 +113,7 @@ msgid ""
 "\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:158
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:175
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Perform reduce bitwise-and on input buffer, store the result to output "
@@ -126,7 +126,7 @@ msgid ""
 "\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:173
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:190
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Perform reduce bitwise-or on input buffer, store the result to output buffer."
@@ -138,7 +138,7 @@ msgid ""
 "\\(buffer\\, out\\[\\, dim\\, clear\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:188
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:205
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Perform reduce bitwise-xor on input buffer, store the result to output "
@@ -151,7 +151,7 @@ msgid ""
 "\\(src\\, dst\\, dim\\, reverse\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:203
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:220
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Compute cumulative sum for fragment buffers by copying to shared memory "
@@ -164,7 +164,7 @@ msgid ""
 "dim\\, reverse\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:216
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:233
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Compute the cumulative sum of `src` along `dim`, writing results to `dst`."
@@ -176,7 +176,7 @@ msgid ""
 "\\(reducer\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:261
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:278
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid ""
 "Finalize a reducer buffer by emitting the `tl.tileop.finalize_reducer` "
@@ -189,7 +189,7 @@ msgid ""
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:275
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:292
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform warp reduction sum on a register value."
 msgstr ""
@@ -200,7 +200,7 @@ msgid ""
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:290
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:307
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform warp reduction max on a register value."
 msgstr ""
@@ -211,7 +211,7 @@ msgid ""
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:305
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:322
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform warp reduction min on a register value."
 msgstr ""
@@ -222,7 +222,7 @@ msgid ""
 "warp_reduce_bitand>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:320
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:337
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform warp reduction bitwise-and on a register value."
 msgstr ""
@@ -233,7 +233,7 @@ msgid ""
 "warp_reduce_bitor>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:335
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:352
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:43:<autosummary>:1
 msgid "Perform warp reduction bitwise-or on a register value."
 msgstr ""
@@ -266,136 +266,163 @@ msgstr ""
 msgid "Whether to initialize the output buffer before reduction"
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:63
+msgid ""
+"Only meaningful for max/min/absmax on float16/bfloat16. When True, lower to "
+"CUDA __hmax_nan/__hmin_nan so NaNs propagate through the reduction. When "
+"False (default), use __hmax/__hmin which return the non-NaN operand. CUDA-"
+"only."
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:0
 msgid "Return type"
 msgstr "回傳值型別"
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:69
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:74
 msgid "The input buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:71
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:76
 msgid "The output buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:73
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:90
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:107
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:134
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:149
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:164
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:179
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:194
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:78
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:99
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:120
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:147
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:162
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:181
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:196
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:211
 msgid "The dimension to perform reduce on"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:75
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:80
 msgid "If set to True, the output buffer will first be initialized to -inf."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:82
+msgid ""
+"For float16/bfloat16 only. When True, NaN inputs propagate through the "
+"reduction (CUDA __hmax_nan). When False (default), NaN inputs are ignored in "
+"favor of the other operand (CUDA __hmax). CUDA-only."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/reduce_op/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:78
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:87
 msgid "**handle**"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:86
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:103
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:130
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:145
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:160
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:175
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:190
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:95
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:116
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:143
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:158
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:177
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:192
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:207
 msgid "The input buffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:88
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:105
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:132
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:147
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:162
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:177
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:192
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:97
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:118
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:145
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:160
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:179
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:194
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:209
 msgid "The output buffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:92
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:101
 msgid "If True, output buffer will be initialized to inf. Defaults to True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:95
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:122
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:137
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:152
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:167
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:182
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:197
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:103
+msgid ""
+"For float16/bfloat16 only. When True, NaN inputs propagate (CUDA "
+"__hmin_nan). When False (default), NaNs are ignored (CUDA __hmin). CUDA-only."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:108
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:135
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:150
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:169
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:184
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:199
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:214
 msgid "Handle to the reduction operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:109
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:122
 msgid ""
 "If True, output buffer will be cleared before reduction. If False, results "
 "will be accumulated on existing values. Defaults to True."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:114
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:127
 msgid ""
 "Note: When clear=True, reduce_sum will not compute directly on the output "
 "buffer. This is because"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:115
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:128
 msgid ""
 "during warp reduction, the same value would be accumulated multiple times "
 "(number of threads in the warp). Therefore, the implementation with "
 "clear=True follows these steps:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:117
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:130
 msgid "create a temp buffer with same shape and dtype as out"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:118
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:131
 msgid "copy out to temp buffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:119
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:132
 msgid "call reduce_sum with temp buffer and out"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:120
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:133
 msgid "Add temp buffer to out"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:205
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:164
+msgid ""
+"For float16/bfloat16 only. When True, NaN inputs propagate (CUDA "
+"__hmax_nan). When False (default), NaNs are ignored. CUDA-only."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:222
 msgid ""
 "This macro handles cumulative sum operations on fragment buffers by first "
 "copying the data to shared memory, performing the cumsum operation, and then "
 "copying back."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:208
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:225
 msgid ""
 "Source buffer (Buffer, BufferRegion, or BufferLoad) containing input data."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:209
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:226
 msgid ""
 "Destination buffer (Buffer, BufferRegion, or BufferLoad) for output data."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:210
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:227
 msgid "Dimension along which to compute cumulative sum."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:211
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:228
 msgid "If True, compute cumulative sum in reverse order."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:218
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:235
 msgid ""
 "Negative `dim` indices are normalized (Python-style). If `dst` is None, the "
 "operation is performed in-place into `src`. Raises ValueError when `dim` is "
@@ -404,91 +431,91 @@ msgid ""
 "intrinsic."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:220
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:237
 msgid ""
 "Supports Buffer, BufferRegion, and BufferLoad inputs, allowing operations on "
 "buffer slices/regions."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:223
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:240
 msgid "Examples"
 msgstr "範例"
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:224
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:241
 msgid ""
 "A 1D inclusive scan that writes the result into a separate shared-memory "
 "buffer:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:235
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:252
 msgid "A 2D prefix sum along the last dimension with reverse accumulation:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:246
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:263
 msgid "Operating on a buffer region (slice):"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:255
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:272
 msgid "A handle to the emitted cumulative-sum operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:263
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:280
 msgid ""
 "This returns a TVM `tir.Call` handle that finalizes the given reducer using "
 "its writable pointer. The call does not modify Python objects directly; it "
 "produces the low-level intrinsic call used by the IR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:266
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:283
 msgid "Reducer buffer whose writable pointer will be finalized."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:269
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:286
 msgid "Handle to the finalize reducer intrinsic call."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:277
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:294
 msgid ""
 "This function reduces a value across all threads in a warp using shuffle "
 "operations. Each thread provides a  register `value`, and after the "
 "reduction, all threads will have the sum of all values across the warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:281
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:296
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:311
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:326
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:341
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:298
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:313
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:328
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:343
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:358
 msgid "The input register value to reduce"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:284
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:301
 msgid "The reduced sum value (same on all threads in the warp)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:292
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:309
 msgid ""
 "This function reduces a value across all threads in a warp using shuffle "
 "operations. Each thread provides a  register `value`, and after the "
 "reduction, all threads will have the max of all values across the warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:299
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:316
 msgid "The reduced max value (same on all threads in the warp)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:307
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:324
 msgid ""
 "This function reduces a value across all threads in a warp using shuffle "
 "operations. Each thread provides a  register `value`, and after the "
 "reduction, all threads will have the min of all values across the warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:314
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:331
 msgid "The reduced min value (same on all threads in the warp)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:322
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:339
 msgid ""
 "This function reduces a value across all threads in a warp using shuffle "
 "operations. Each thread provides a  register `value`, and after the "
@@ -496,11 +523,11 @@ msgid ""
 "warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:329
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:346
 msgid "The reduced bitwise-and value (same on all threads in the warp)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:337
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:354
 msgid ""
 "This function reduces a value across all threads in a warp using shuffle "
 "operations. Each thread provides a  register `value`, and after the "
@@ -508,6 +535,6 @@ msgid ""
 "warp."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/reduce_op/index.rst:344
+#: ../../../autoapi/tilelang/language/reduce_op/index.rst:361
 msgid "The reduced bitwise-or value (same on all threads in the warp)"
 msgstr ""

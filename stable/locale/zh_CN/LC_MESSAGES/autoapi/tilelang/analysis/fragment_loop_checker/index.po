@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-04-28 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,13 +27,13 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`collect_local_buffer_accesses <tilelang.analysis."
-"fragment_loop_checker.collect_local_buffer_accesses>`\\ \\(statement\\)"
+":py:obj:`collect_fragment_accesses <tilelang.analysis.fragment_loop_checker."
+"collect_fragment_accesses>`\\ \\(statement\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:21
 #: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1
-msgid "Collect local buffer accesses in the loop body."
+msgid "Collect fragment accesses in the loop body."
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/fragment_loop_checker/index.rst:15:<autosummary>:1

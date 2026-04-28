@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-04-28 10:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,37 +33,24 @@ msgstr ""
 msgid "Classes"
 msgstr "類別"
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:23:<autosummary>:1
 msgid ""
 ":py:obj:`TensorCoreIntrinEmitter <tilelang.intrinsics.mma_macro_generator."
 "TensorCoreIntrinEmitter>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:33
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:219
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:31
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:23:<autosummary>:1
 msgid "To eliminate Python syntax within TIR Macro."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:23:<autosummary>:1
 msgid ""
 ":py:obj:`TensorCoreIntrinEmitterWithLadderTransform <tilelang.intrinsics."
 "mma_macro_generator.TensorCoreIntrinEmitterWithLadderTransform>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:25:<autosummary>:1
-msgid ""
-":py:obj:`INT4TensorCoreIntrinEmitter <tilelang.intrinsics."
-"mma_macro_generator.INT4TensorCoreIntrinEmitter>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:25:<autosummary>:1
-msgid ""
-":py:obj:`INT4TensorCoreIntrinEmitterWithLadderTransform <tilelang.intrinsics."
-"mma_macro_generator.INT4TensorCoreIntrinEmitterWithLadderTransform>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:27
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:25
 msgid "Module Contents"
 msgstr ""
 
@@ -75,7 +62,7 @@ msgstr "參數"
 msgid "Return type"
 msgstr "回傳值型別"
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:144
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:142
 msgid ""
 "is_m_first: True if the thread binding is in the form of (tx, warp_n, "
 "warp_m) which represents [warp_size, block_row_warps (split n), "
@@ -83,16 +70,16 @@ msgid ""
 "block_col_warps (split m), block_row_warps (split n)]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:164
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:181
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:162
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:179
 msgid ""
 "Create a layout function for storing MMA results into a fragment buffer. "
 "This layout is used in conjunction with `inverse_mma_store_layout` to map "
 "fragment indices to threads and local indices."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:168
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:185
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:166
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:183
 msgid "The local buffer representing a fragment of a matrix."
 msgstr ""
 
@@ -100,8 +87,8 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:171
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:188
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:169
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:186
 msgid ""
 "A fragment object that describes how threads and indices in `local_buf` are "
 "laid out."
@@ -111,22 +98,16 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:175
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:192
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:173
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:190
 msgid "If `local_buf` is not detected to be a fragment buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:198
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:216
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:196
 msgid "Bases: :py:obj:`TensorCoreIntrinEmitter`"
 msgstr "基底類別：:py:obj:`TensorCoreIntrinEmitter`"
 
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:201
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:230
+#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:199
 msgid ""
 "To eliminate Python syntax within TIR Macro. With Ladder Transform Plugin."
-msgstr ""
-
-#: ../../../autoapi/tilelang/intrinsics/mma_macro_generator/index.rst:227
-msgid "Bases: :py:obj:`TensorCoreIntrinEmitterWithLadderTransform`"
 msgstr ""
