@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgstr ""
 msgid "Functions"
 msgstr "函式"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x4_to_local_64x1_layout_A <tilelang.intrinsics.mfma_layout."
 "shared_16x4_to_local_64x1_layout_A>`\\ \\(i\\, j\\)"
@@ -69,7 +69,7 @@ msgstr ""
 ":py:obj:`shared_16x4_to_local_64x1_layout_A <tilelang.intrinsics.mfma_layout."
 "shared_16x4_to_local_64x1_layout_A>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x1_to_16x4_layout_A <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x1_to_16x4_layout_A>`\\ \\(...\\)"
@@ -77,7 +77,7 @@ msgstr ""
 ":py:obj:`thread_id_shared_access_64x1_to_16x4_layout_A <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x1_to_16x4_layout_A>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_4x16_to_local_64x1_layout_B <tilelang.intrinsics.mfma_layout."
 "shared_4x16_to_local_64x1_layout_B>`\\ \\(i\\, j\\)"
@@ -85,7 +85,7 @@ msgstr ""
 ":py:obj:`shared_4x16_to_local_64x1_layout_B <tilelang.intrinsics.mfma_layout."
 "shared_4x16_to_local_64x1_layout_B>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x1_to_4x16_layout_B <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x1_to_4x16_layout_B>`\\ \\(...\\)"
@@ -93,7 +93,7 @@ msgstr ""
 ":py:obj:`thread_id_shared_access_64x1_to_4x16_layout_B <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x1_to_4x16_layout_B>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x16_to_local_64x4_layout_C <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_local_64x4_layout_C>`\\ \\(i\\, j\\)"
@@ -101,7 +101,7 @@ msgstr ""
 ":py:obj:`shared_16x16_to_local_64x4_layout_C <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_local_64x4_layout_C>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x16_to_ldmatrix_64x4_layout <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_ldmatrix_64x4_layout>`\\ \\(ind\\)"
@@ -109,7 +109,7 @@ msgstr ""
 ":py:obj:`shared_16x16_to_ldmatrix_64x4_layout <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_ldmatrix_64x4_layout>`\\ \\(ind\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x4_to_16x16_layout_A <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x4_to_16x16_layout_A>`\\ \\(...\\)"
@@ -117,7 +117,7 @@ msgstr ""
 ":py:obj:`thread_id_shared_access_64x4_to_16x16_layout_A <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x4_to_16x16_layout_A>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x16_to_local_64x4_layout_A <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_local_64x4_layout_A>`\\ \\(i\\, j\\)"
@@ -125,7 +125,7 @@ msgstr ""
 ":py:obj:`shared_16x16_to_local_64x4_layout_A <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_local_64x4_layout_A>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x4_to_16x16_layout_B <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x4_to_16x16_layout_B>`\\ \\(...\\)"
@@ -133,7 +133,7 @@ msgstr ""
 ":py:obj:`thread_id_shared_access_64x4_to_16x16_layout_B <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x4_to_16x16_layout_B>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x16_to_local_64x4_layout_B <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_local_64x4_layout_B>`\\ \\(i\\, j\\)"
@@ -141,7 +141,7 @@ msgstr ""
 ":py:obj:`shared_16x16_to_local_64x4_layout_B <tilelang.intrinsics."
 "mfma_layout.shared_16x16_to_local_64x4_layout_B>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x4_to_16x16_layout_C_m_n <tilelang."
 "intrinsics.mfma_layout."
@@ -151,7 +151,7 @@ msgstr ""
 "intrinsics.mfma_layout."
 "thread_id_shared_access_64x4_to_16x16_layout_C_m_n>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x4_to_16x16_layout_C_n_m <tilelang."
 "intrinsics.mfma_layout."
@@ -161,7 +161,7 @@ msgstr ""
 "intrinsics.mfma_layout."
 "thread_id_shared_access_64x4_to_16x16_layout_C_n_m>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x8_to_16x32_layout_A <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x8_to_16x32_layout_A>`\\ \\(...\\)"
@@ -169,7 +169,7 @@ msgstr ""
 ":py:obj:`thread_id_shared_access_64x8_to_16x32_layout_A <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x8_to_16x32_layout_A>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x32_to_local_64x8_layout_A <tilelang.intrinsics."
 "mfma_layout.shared_16x32_to_local_64x8_layout_A>`\\ \\(i\\, j\\)"
@@ -177,7 +177,7 @@ msgstr ""
 ":py:obj:`shared_16x32_to_local_64x8_layout_A <tilelang.intrinsics."
 "mfma_layout.shared_16x32_to_local_64x8_layout_A>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x8_to_16x32_layout_B <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x8_to_16x32_layout_B>`\\ \\(...\\)"
@@ -185,7 +185,7 @@ msgstr ""
 ":py:obj:`thread_id_shared_access_64x8_to_16x32_layout_B <tilelang.intrinsics."
 "mfma_layout.thread_id_shared_access_64x8_to_16x32_layout_B>`\\ \\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x32_to_local_64x8_layout_B <tilelang.intrinsics."
 "mfma_layout.shared_16x32_to_local_64x8_layout_B>`\\ \\(i\\, j\\)"
@@ -193,7 +193,7 @@ msgstr ""
 ":py:obj:`shared_16x32_to_local_64x8_layout_B <tilelang.intrinsics."
 "mfma_layout.shared_16x32_to_local_64x8_layout_B>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x16_to_16x64_layout_A <tilelang."
 "intrinsics.mfma_layout.thread_id_shared_access_64x16_to_16x64_layout_A>`\\ "
@@ -203,7 +203,7 @@ msgstr ""
 "intrinsics.mfma_layout.thread_id_shared_access_64x16_to_16x64_layout_A>`\\ "
 "\\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x64_to_local_64x16_layout_A <tilelang.intrinsics."
 "mfma_layout.shared_16x64_to_local_64x16_layout_A>`\\ \\(i\\, j\\)"
@@ -211,7 +211,7 @@ msgstr ""
 ":py:obj:`shared_16x64_to_local_64x16_layout_A <tilelang.intrinsics."
 "mfma_layout.shared_16x64_to_local_64x16_layout_A>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`thread_id_shared_access_64x16_to_16x64_layout_B <tilelang."
 "intrinsics.mfma_layout.thread_id_shared_access_64x16_to_16x64_layout_B>`\\ "
@@ -221,7 +221,7 @@ msgstr ""
 "intrinsics.mfma_layout.thread_id_shared_access_64x16_to_16x64_layout_B>`\\ "
 "\\(...\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x64_to_local_64x16_layout_B <tilelang.intrinsics."
 "mfma_layout.shared_16x64_to_local_64x16_layout_B>`\\ \\(i\\, j\\)"
@@ -229,7 +229,46 @@ msgstr ""
 ":py:obj:`shared_16x64_to_local_64x16_layout_B <tilelang.intrinsics."
 "mfma_layout.shared_16x64_to_local_64x16_layout_B>`\\ \\(i\\, j\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:45:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`shared_32x32_to_local_64x16_layout_C <tilelang.intrinsics."
+"mfma_layout.shared_32x32_to_local_64x16_layout_C>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`thread_id_shared_access_64x16_to_32x32_layout_C_n_m <tilelang."
+"intrinsics.mfma_layout."
+"thread_id_shared_access_64x16_to_32x32_layout_C_n_m>`\\ \\(...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`shared_32x32_to_local_64x16_layout_A <tilelang.intrinsics."
+"mfma_layout.shared_32x32_to_local_64x16_layout_A>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`thread_id_shared_access_64x16_to_32x32_layout_A <tilelang."
+"intrinsics.mfma_layout.thread_id_shared_access_64x16_to_32x32_layout_A>`\\ "
+"\\(...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`shared_32x32_to_local_64x16_layout_B <tilelang.intrinsics."
+"mfma_layout.shared_32x32_to_local_64x16_layout_B>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
+msgid ""
+":py:obj:`thread_id_shared_access_64x16_to_32x32_layout_B <tilelang."
+"intrinsics.mfma_layout.thread_id_shared_access_64x16_to_32x32_layout_B>`\\ "
+"\\(...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`make_mfma_swizzle_layout <tilelang.intrinsics.mfma_layout."
 "make_mfma_swizzle_layout>`\\ \\(shared\\_buf\\[\\, vecSize\\]\\)"
@@ -237,6 +276,6 @@ msgstr ""
 ":py:obj:`make_mfma_swizzle_layout <tilelang.intrinsics.mfma_layout."
 "make_mfma_swizzle_layout>`\\ \\(shared\\_buf\\[\\, vecSize\\]\\)"
 
-#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:47
+#: ../../../autoapi/tilelang/intrinsics/mfma_layout/index.rst:53
 msgid "Module Contents"
 msgstr ""

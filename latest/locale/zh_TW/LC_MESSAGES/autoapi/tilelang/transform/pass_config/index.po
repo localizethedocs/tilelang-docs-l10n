@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid ""
 "normalize_pass_configs>`\\ \\(pass\\_configs\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:536
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:545
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:22:<autosummary>:1
 msgid "Canonicalize known pass-config keys and emit compatibility warnings."
 msgstr ""
@@ -74,7 +74,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:48
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:396
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:405
 msgid "Usage:"
 msgstr ""
 
@@ -101,23 +101,24 @@ msgstr ""
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:95
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:113
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:122
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:149
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:194
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:131
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:158
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:203
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:269
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:212
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:278
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:287
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:296
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:305
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:334
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:314
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:343
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:352
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:421
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:439
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:361
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:430
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:448
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:466
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:511
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:457
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:475
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:520
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:529
 msgid "False"
 msgstr ""
 
@@ -146,11 +147,11 @@ msgid "Propagate known values to simplify expressions. Default"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:104
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:412
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:430
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:457
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:475
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:493
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:421
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:439
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:466
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:484
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:502
 msgid "True"
 msgstr ""
 
@@ -163,84 +164,88 @@ msgid "Disable data race check in TileLang. Default"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:124
+msgid "Disable Python-side pre-lower semantic checks. Default"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:133
 msgid "Disable warp specialization optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:131
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:140
 msgid "False if enabled, --use_fast_math will be passed to nvcc"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:134
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:143
 msgid "Enable fast math optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:141
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:150
 msgid ""
 "The PTXAS register usage level in [0, 10], which controls the aggressiveness "
 "of optimizations that affect register usage. Default: None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:151
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:160
 msgid "Enable ptxas verbose output. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:158
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:167
 msgid "Additional device compiler flags passed to nvcc/NVRTC."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:160
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:169
 msgid ""
 "Accepts either a string (parsed with shell-like splitting) or a list of "
 "strings. Typical usage is to provide extra include paths, defines or ptxas "
 "options, e.g.:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:164
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:173
 msgid "\"-I/opt/include -DMY_SWITCH=1 --ptxas-options=--verbose\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:165
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:174
 msgid "[\"-I/opt/include\", \"-DMY_SWITCH=1\", \"--ptxas-options=--verbose\"]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:167
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:176
 msgid ""
 "These flags are appended to the compiler options used in the tvm_ffi CUDA "
 "compile callback. Default: None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:175
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:184
 msgid "32"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:177
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:186
 msgid "Bitwidth for configuration indices. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:184
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:193
 msgid ""
 "Deprecated flag — prevents plain T.copy() from auto-lowering to TMA store."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:186
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:195
 msgid ""
 "Temporarily re-enabled for backward compatibility. Will be removed in "
 "v0.1.10."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:196
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:205
 msgid "Disable safe memory access optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:205
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:214
 msgid "Disable usage of LDG/STG 256. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:212
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:221
 msgid "Enable lowering eligible global->shared copies to PTX `cp.async`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:214
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:223
 msgid ""
 "When True (default), TileLang may lower: - `T.copy(global -> shared, ...)` "
 "to `ptx_cp_async + commit + wait` - `T.async_copy(global -> shared, ...)` to "
@@ -248,11 +253,11 @@ msgid ""
 "stores (e.g. in `T.Parallel`) to"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:218
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:227
 msgid "`ptx_cp_async + commit + wait`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:220
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:229
 msgid ""
 "Important: Automatic cp.async lowering is gated by the surrounding loop "
 "context. TileLang will only auto-enable cp.async when the copy is observed "
@@ -263,32 +268,32 @@ msgid ""
 "parallel loop via `T.Parallel(..., prefer_async=True)`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:229
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:238
 msgid ""
 "When False, TileLang will avoid the cp.async lowering path for `T.copy`. "
 "Explicit `T.async_copy` still requires cp.async support and may error if it "
 "cannot be lowered."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:233
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:242
 msgid "Default: True"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:240
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:249
 msgid ""
 "Enable non-predicated LDG/STG lowering for global memory access. When "
 "enabled, converts Ramp-based global buffer load/store to ldg/stg intrinsics. "
 "Default: False"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:249
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:258
 msgid ""
 "Enable predicated LDG/STG lowering. When True, predicated loads "
 "(if_then_else with else=0) and predicated stores (IfThenElse with empty then "
 "case) are lowered to ldg/stg intrinsics. Default: False"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:259
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:268
 msgid ""
 "Enable verbose output for vectorize planner. When enabled, prints detailed "
 "information about each buffer's inferred vector size and which buffer "
@@ -296,37 +301,37 @@ msgid ""
 "vectorization issues. Default: False"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:271
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:280
 msgid "Disable usage of Hopper WGMMA. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:280
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:289
 msgid "Enable debug information for merge shared memory allocations. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:289
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:298
 msgid "Enable aggressive merge of shared memory allocations. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:298
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:307
 msgid "Disable shuffle election optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:307
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:316
 msgid "Disable loop unswitching optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:314
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:323
 msgid ""
 "Allow loop unswitching even when the else-version of the loop body has side "
 "effects."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:316
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:325
 msgid "This is more aggressive and may increase code size. Default: False."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:323
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:332
 msgid ""
 "Disable thread storage synchronization pass. When enabled, disables the "
 "automatic insertion of thread synchronization barriers (e.g., "
@@ -335,35 +340,35 @@ msgid ""
 "preferred or when synchronization is not needed. Default: False"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:336
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:345
 msgid "Force TileLang to inline let bindings during simplification. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:345
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:354
 msgid "Enable TIR AST printing for debugging purposes. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:354
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:363
 msgid "Enable layout inference visualization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:361
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:370
 msgid ""
 "Layout visualization formats. Acceptable values: \"pdf\", \"png\", \"svg\", "
 "\"all\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:369
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:378
 msgid "Control StorageRewrite inplace detection."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:371
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:380
 msgid ""
 "When False (default) StorageRewrite keeps distinct temporaries for patterns "
 "such as `dst[i] = f(src[i])`, avoiding implicit aliasing:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:374
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:383
 msgid ""
 "``` read = T.allocate([1], T.int32, \"local.var\") write = T.allocate([1], T."
 "int32, \"local.var\") read_buf = T.Buffer((1,), T.int32, data=read, "
@@ -371,117 +376,117 @@ msgid ""
 "scope=\"local.var\") write_buf[0] = read_buf[0] * 2 f(write_buf[0]) ```"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:383
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:392
 msgid ""
 "Setting the flag to True allows StorageRewrite to reuse the `read` buffer "
 "for the write when it can prove the update is safely inplace, producing IR "
 "like:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:387
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:396
 msgid ""
 "``` read = T.allocate([1], T.int32, \"local.var\") read_buf = T.Buffer((1,), "
 "T.int32, data=read, scope=\"local.var\") read_buf[0] = read_buf[0] * 2 "
 "f(read_buf[0]) ```"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:394
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:403
 msgid ""
 "This reduces local memory usage but introduces aliasing between the buffers."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:398
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:407
 msgid "```python from tilelang.transform import PassContext, PassConfigKey"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:401
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:410
 msgid "with PassContext("
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:402
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:411
 msgid "config={PassConfigKey.TL_STORAGE_REWRITE_DETECT_INPLACE.value: True}"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:403
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:412
 msgid "):"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:404
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:413
 msgid "mod = tilelang.transform.StorageRewrite()(mod)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:405
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:414
 msgid "```"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:414
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:423
 msgid ""
 "Enable equivalent terms in TIR Common Subexpression Elimination. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:423
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:432
 msgid "Disable TIR Common Subexpression Elimination. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:432
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:441
 msgid "Enable/disable TIR simplification passes. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:441
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:450
 msgid "Disable storage rewrite optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:450
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:459
 msgid "Disable vectorization optimization. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:459
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:468
 msgid "Enable asynchronous memory copy operations. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:468
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:477
 msgid "Enable debug information in generated code. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:477
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:486
 msgid "Merge static shared memory allocations. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:484
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:493
 msgid "None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:486
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:495
 msgid "Additional lowering passes to be applied. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:495
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:504
 msgid "Enable pointer non-aliasing assumptions. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:502
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:511
 msgid "empty string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:504
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:513
 msgid "Output directory for generated CUDA kernels. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:513
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:522
 msgid ""
 "Disable out-of-bound access warnings in safe memory access legalization. "
 "Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:522
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:531
 msgid "Enable dumping IR during lowering between passes. Default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:529
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:538
 msgid "./dump_ir/"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/pass_config/index.rst:531
+#: ../../../autoapi/tilelang/transform/pass_config/index.rst:540
 msgid "Path to the directory where IR will be dumped. Default"
 msgstr ""
 

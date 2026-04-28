@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,61 +25,67 @@ msgstr ""
 msgid "Functions"
 msgstr "函式"
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`get_ldmatrix_offset <tilelang.intrinsics.utils."
 "get_ldmatrix_offset>`\\ \\(matrix\\, row\\_idx\\, col\\_idx\\, stride\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x16_to_mma_32x8_layout <tilelang.intrinsics.utils."
 "shared_16x16_to_mma_32x8_layout>`\\ \\(i\\, j\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`shared_16x32_to_mma_32x16_layout <tilelang.intrinsics.utils."
 "shared_16x32_to_mma_32x16_layout>`\\ \\(i\\, j\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`shared_32x16_to_mma_32x16_layout <tilelang.intrinsics.utils."
 "shared_32x16_to_mma_32x16_layout>`\\ \\(i\\, j\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`mma_store_index_map <tilelang.intrinsics.utils."
 "mma_store_index_map>`\\ \\(thread\\_id\\, local\\_id\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`mma_store_index_map_fp64 <tilelang.intrinsics.utils."
 "mma_store_index_map_fp64>`\\ \\(thread\\_id\\, local\\_id\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`mfma_store_index_map <tilelang.intrinsics.utils."
 "mfma_store_index_map>`\\ \\(thread\\_id\\, local\\_id\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`mfma_store_index_map_32x32 <tilelang.intrinsics.utils."
+"mfma_store_index_map_32x32>`\\ \\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 ":py:obj:`get_mma_micro_size <tilelang.intrinsics.utils."
 "get_mma_micro_size>`\\ \\(dtype\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:41
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:44
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:22:<autosummary>:1
 msgid ""
 "Return the MMA (Tensor Core) micro-tile dimensions for a given data type."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:23
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:24
 msgid "Module Contents"
 msgstr ""
 
@@ -87,14 +93,14 @@ msgstr ""
 msgid "Parameters"
 msgstr "參數"
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:43
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:46
 msgid ""
 "This function returns the micro tile sizes (x, y, k) used by MMA/Tensor Core "
 "operations. - x: tile width in the output/result dimension - y: tile height "
 "in the output/result dimension - k: tile depth in the reduction/K dimension"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:48
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:51
 msgid ""
 "Accepted dtype strings include \"float16\", \"int8\" and some FP8 "
 "identifiers (\"float8_e4m3\", \"float8_e5m2\"). For FP8 and int8 types the "
@@ -105,7 +111,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:50
+#: ../../../autoapi/tilelang/intrinsics/utils/index.rst:53
 msgid "(micro_size_x, micro_size_y, micro_size_k)"
 msgstr ""
 

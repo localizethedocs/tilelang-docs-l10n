@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,12 +39,6 @@ msgstr ""
 #: ../../../autoapi/tilelang/engine/phase/index.rst:36
 #: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
 msgid "Check if any function in the module was lowered with TMA operations."
-msgstr ""
-
-#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
-msgid ""
-":py:obj:`allow_fence_proxy <tilelang.engine.phase.allow_fence_proxy>`\\ "
-"\\(\\[target\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
@@ -87,6 +81,12 @@ msgstr ""
 msgid ""
 ":py:obj:`should_enable_race_check <tilelang.engine.phase."
 "should_enable_race_check>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`should_enable_prelower_semantic_check <tilelang.engine.phase."
+"should_enable_prelower_semantic_check>`\\ \\(\\[pass\\_ctx\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/phase/index.rst:28:<autosummary>:1

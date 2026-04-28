@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,11 +155,25 @@ msgstr ""
 msgid "Operand A residing in tensor memory (``shared.tmem``)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:171
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:166
+msgid "Emit a block-scaled TCGEN5MMA (SS variant with TMEM scale factors)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:168
+msgid ""
+"Uses ``tcgen05.mma.cta_group::1|2.kind::mxf8f6f4.block_scale`` PTX "
+"instruction. Scale factors must already reside in tensor memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:175
+msgid "Build the block-scaled instruction descriptor via FFI."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:186
 msgid "Create the TCGEN5 tensor-memory layout used to store MMA accumulators."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:173
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:188
 msgid "The local buffer representing tensormemory of a mma's output"
 msgstr ""
 
@@ -167,7 +181,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:176
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:191
 msgid ""
 "Layout object describing how logical (i, j) coordinates map to the swizzled "
 "tensor-memory offsets required by TCGEN5MMA."
@@ -177,16 +191,16 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:180
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:195
 msgid "If `tmem_buf` is not detected to be a tensor-memory buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:186
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:201
 msgid ""
 "Query the FFI for TCGEN5MMA atom metadata (atom_m, atom_n, atom_k, "
 "enable_ws, enable_2cta), and record them in `self.meta`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:192
+#: ../../../autoapi/tilelang/intrinsics/tcgen05_macro_generator/index.rst:207
 msgid "Build the 64-bit instruction descriptor for a ``tcgen05.mma`` PTX call."
 msgstr ""
