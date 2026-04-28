@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:2
+msgid "tilelang.intrinsics.mma_sm70_layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x4_to_mma_a_32x4_layout <tilelang.intrinsics."
+"mma_sm70_layout.shared_16x4_to_mma_a_32x4_layout>`\\ \\(row\\, col\\, rep\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`shared_4x16_to_mma_b_32x4_layout <tilelang.intrinsics."
+"mma_sm70_layout.shared_4x16_to_mma_b_32x4_layout>`\\ \\(row\\, col\\, rep\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x4_to_mma_b_32x4_layout_trans <tilelang.intrinsics."
+"mma_sm70_layout.shared_16x4_to_mma_b_32x4_layout_trans>`\\ \\(row\\, col\\, "
+"rep\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`mma_32x8_to_shared_16x16_layout_fp32 <tilelang.intrinsics."
+"mma_sm70_layout.mma_32x8_to_shared_16x16_layout_fp32>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`mma_32x8_to_shared_16x16_layout_fp16 <tilelang.intrinsics."
+"mma_sm70_layout.mma_32x8_to_shared_16x16_layout_fp16>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_a_32x4_to_shared_16x4_layout <tilelang.intrinsics."
+"mma_sm70_layout.mma_load_a_32x4_to_shared_16x4_layout>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_b_32x4_to_shared_16x4_layout_trans <tilelang.intrinsics."
+"mma_sm70_layout.mma_load_b_32x4_to_shared_16x4_layout_trans>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_b_32x4_to_shared_4x16_layout <tilelang.intrinsics."
+"mma_sm70_layout.mma_load_b_32x4_to_shared_4x16_layout>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/mma_sm70_layout/index.rst:23
+msgid "Module Contents"
+msgstr ""

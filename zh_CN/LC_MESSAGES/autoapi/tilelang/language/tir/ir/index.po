@@ -1,0 +1,738 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:2
+msgid "tilelang.language.tir.ir"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`abs <tilelang.language.tir.ir.abs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`acos <tilelang.language.tir.ir.acos>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`acosh <tilelang.language.tir.ir.acosh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`address_of <tilelang.language.tir.ir.address_of>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`asin <tilelang.language.tir.ir.asin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`asinh <tilelang.language.tir.ir.asinh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`atan <tilelang.language.tir.ir.atan>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`atan2 <tilelang.language.tir.ir.atan2>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`atanh <tilelang.language.tir.ir.atanh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`bitwise_and <tilelang.language.tir.ir.bitwise_and>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`bitwise_not <tilelang.language.tir.ir.bitwise_not>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`bitwise_or <tilelang.language.tir.ir.bitwise_or>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`bitwise_xor <tilelang.language.tir.ir.bitwise_xor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ceil <tilelang.language.tir.ir.ceil>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`clz <tilelang.language.tir.ir.clz>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`copysign <tilelang.language.tir.ir.copysign>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`cos <tilelang.language.tir.ir.cos>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`cosh <tilelang.language.tir.ir.cosh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`erf <tilelang.language.tir.ir.erf>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`exp <tilelang.language.tir.ir.exp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`exp2 <tilelang.language.tir.ir.exp2>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`exp10 <tilelang.language.tir.ir.exp10>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`floor <tilelang.language.tir.ir.floor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ceildiv <tilelang.language.tir.ir.ceildiv>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`floordiv <tilelang.language.tir.ir.floordiv>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`floormod <tilelang.language.tir.ir.floormod>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`fmod <tilelang.language.tir.ir.fmod>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`hypot <tilelang.language.tir.ir.hypot>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`if_then_else <tilelang.language.tir.ir.if_then_else>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`infinity <tilelang.language.tir.ir.infinity>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`isfinite <tilelang.language.tir.ir.isfinite>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`isinf <tilelang.language.tir.ir.isinf>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`isnan <tilelang.language.tir.ir.isnan>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`isnullptr <tilelang.language.tir.ir.isnullptr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ldexp <tilelang.language.tir.ir.ldexp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`likely <tilelang.language.tir.ir.likely>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`log <tilelang.language.tir.ir.log>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`log1p <tilelang.language.tir.ir.log1p>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`log2 <tilelang.language.tir.ir.log2>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`log10 <tilelang.language.tir.ir.log10>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`lookup_param <tilelang.language.tir.ir.lookup_param>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`max_value <tilelang.language.tir.ir.max_value>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`min_value <tilelang.language.tir.ir.min_value>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`nearbyint <tilelang.language.tir.ir.nearbyint>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`nextafter <tilelang.language.tir.ir.nextafter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`popcount <tilelang.language.tir.ir.popcount>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`pow <tilelang.language.tir.ir.pow>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`q_multiply_shift <tilelang.language.tir.ir.q_multiply_shift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`q_multiply_shift_per_axis <tilelang.language.tir.ir."
+"q_multiply_shift_per_axis>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ret <tilelang.language.tir.ir.ret>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`round <tilelang.language.tir.ir.round>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`rsqrt <tilelang.language.tir.ir.rsqrt>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`shift_left <tilelang.language.tir.ir.shift_left>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`shift_right <tilelang.language.tir.ir.shift_right>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`sigmoid <tilelang.language.tir.ir.sigmoid>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`sin <tilelang.language.tir.ir.sin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`sinh <tilelang.language.tir.ir.sinh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`sqrt <tilelang.language.tir.ir.sqrt>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tan <tilelang.language.tir.ir.tan>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tanh <tilelang.language.tir.ir.tanh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`trunc <tilelang.language.tir.ir.trunc>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`truncdiv <tilelang.language.tir.ir.truncdiv>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`truncmod <tilelang.language.tir.ir.truncmod>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_access_ptr <tilelang.language.tir.ir.tvm_access_ptr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_throw_last_error <tilelang.language.tir.ir."
+"tvm_throw_last_error>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_stack_alloca <tilelang.language.tir.ir.tvm_stack_alloca>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_stack_make_shape <tilelang.language.tir.ir."
+"tvm_stack_make_shape>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_stack_make_array <tilelang.language.tir.ir."
+"tvm_stack_make_array>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_check_return <tilelang.language.tir.ir.tvm_check_return>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`call_packed <tilelang.language.tir.ir.call_packed>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`call_cpacked <tilelang.language.tir.ir.call_cpacked>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`call_packed_lowered <tilelang.language.tir.ir."
+"call_packed_lowered>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`call_cpacked_lowered <tilelang.language.tir.ir."
+"call_cpacked_lowered>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_tuple <tilelang.language.tir.ir.tvm_tuple>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_struct_set <tilelang.language.tir.ir.tvm_struct_set>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_struct_get <tilelang.language.tir.ir.tvm_struct_get>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_thread_invariant <tilelang.language.tir.ir."
+"tvm_thread_invariant>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_thread_allreduce <tilelang.language.tir.ir."
+"tvm_thread_allreduce>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_load_matrix_sync <tilelang.language.tir.ir."
+"tvm_load_matrix_sync>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_mma_sync <tilelang.language.tir.ir.tvm_mma_sync>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_bmma_sync <tilelang.language.tir.ir.tvm_bmma_sync>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_fill_fragment <tilelang.language.tir.ir.tvm_fill_fragment>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_store_matrix_sync <tilelang.language.tir.ir."
+"tvm_store_matrix_sync>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_storage_sync <tilelang.language.tir.ir.tvm_storage_sync>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_shuffle <tilelang.language.tir.ir.tvm_warp_shuffle>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_shuffle_up <tilelang.language.tir.ir."
+"tvm_warp_shuffle_up>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_shuffle_down <tilelang.language.tir.ir."
+"tvm_warp_shuffle_down>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_warp_activemask <tilelang.language.tir.ir."
+"tvm_warp_activemask>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_wait_group <tilelang.language.tir.ir.ptx_wait_group>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_commit_group <tilelang.language.tir.ir.ptx_commit_group>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_cp_async_barrier <tilelang.language.tir.ir."
+"ptx_cp_async_barrier>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_init_barrier_thread_count <tilelang.language.tir.ir."
+"ptx_init_barrier_thread_count>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_arrive_barrier <tilelang.language.tir.ir.ptx_arrive_barrier>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_arrive_barrier_expect_tx <tilelang.language.tir.ir."
+"ptx_arrive_barrier_expect_tx>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_wait_barrier <tilelang.language.tir.ir.ptx_wait_barrier>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`create_barriers <tilelang.language.tir.ir.create_barriers>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`assume <tilelang.language.tir.ir.assume>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`undef <tilelang.language.tir.ir.undef>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`TVMBackendAllocWorkspace <tilelang.language.tir.ir."
+"TVMBackendAllocWorkspace>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`TVMBackendFreeWorkspace <tilelang.language.tir.ir."
+"TVMBackendFreeWorkspace>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`start_profile_intrinsic <tilelang.language.tir.ir."
+"start_profile_intrinsic>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`end_profile_intrinsic <tilelang.language.tir.ir."
+"end_profile_intrinsic>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`anylist_getitem <tilelang.language.tir.ir.anylist_getitem>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`anylist_resetitem <tilelang.language.tir.ir.anylist_resetitem>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`anylist_setitem_call_packed <tilelang.language.tir.ir."
+"anylist_setitem_call_packed>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`anylist_setitem_call_cpacked <tilelang.language.tir.ir."
+"anylist_setitem_call_cpacked>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`vscale <tilelang.language.tir.ir.vscale>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`reinterpret <tilelang.language.tir.ir.reinterpret>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`call_extern <tilelang.language.tir.ir.call_extern>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`call_intrin <tilelang.language.tir.ir.call_intrin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`call_llvm_intrin <tilelang.language.tir.ir.call_llvm_intrin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`call_llvm_pure_intrin <tilelang.language.tir.ir."
+"call_llvm_pure_intrin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`call_pure_extern <tilelang.language.tir.ir.call_pure_extern>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_mma <tilelang.language.tir.ir.ptx_mma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_mma_sp <tilelang.language.tir.ir.ptx_mma_sp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_wgmma_ss <tilelang.language.tir.ir.ptx_wgmma_ss>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_wgmma_rs <tilelang.language.tir.ir.ptx_wgmma_rs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_tcgen05_mma_ss <tilelang.language.tir.ir.ptx_tcgen05_mma_ss>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_tcgen05_mma_ts <tilelang.language.tir.ir.ptx_tcgen05_mma_ts>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_ldmatrix <tilelang.language.tir.ir.ptx_ldmatrix>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`ptx_cp_async <tilelang.language.tir.ir.ptx_cp_async>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`ptx_cp_async_bulk <tilelang.language.tir.ir.ptx_cp_async_bulk>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`mma_store <tilelang.language.tir.ir.mma_store>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`mma_fill <tilelang.language.tir.ir.mma_fill>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`vectorlow <tilelang.language.tir.ir.vectorlow>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`vectorhigh <tilelang.language.tir.ir.vectorhigh>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`vectorcombine <tilelang.language.tir.ir.vectorcombine>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_mfma <tilelang.language.tir.ir.tvm_mfma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_mfma_store <tilelang.language.tir.ir.tvm_mfma_store>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ":py:obj:`tvm_rdna_wmma <tilelang.language.tir.ir.tvm_rdna_wmma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:144:<autosummary>:1
+msgid ""
+":py:obj:`tvm_rdna_wmma_store <tilelang.language.tir.ir."
+"tvm_rdna_wmma_store>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:146
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid ""
+":py:obj:`serial <tilelang.language.tir.ir.serial>`\\ \\(start\\[\\, stop\\, "
+"annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:163
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid "The serial For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid ""
+":py:obj:`parallel <tilelang.language.tir.ir.parallel>`\\ \\(start\\[\\, "
+"stop\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:178
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid "The parallel For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid ""
+":py:obj:`vectorized <tilelang.language.tir.ir.vectorized>`\\ \\(start\\[\\, "
+"stop\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:193
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid "The vectorized For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid ""
+":py:obj:`unroll <tilelang.language.tir.ir.unroll>`\\ \\(start\\[\\, stop\\, "
+"annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:208
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid "The unrolled For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid ""
+":py:obj:`thread_binding <tilelang.language.tir.ir.thread_binding>`\\ "
+"\\(start\\[\\, stop\\, thread\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:223
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid "The thread-binding For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid ":py:obj:`grid <tilelang.language.tir.ir.grid>`\\ \\(\\*extents\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:240
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:157:<autosummary>:1
+msgid "The grid For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:159
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:165
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:180
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:195
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:210
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:225
+msgid "The minimum value of iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:167
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:182
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:197
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:212
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:227
+msgid "The maximum value of iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:169
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:184
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:199
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:214
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:231
+msgid "The optional annotations of the For statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:172
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:187
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:202
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:217
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:234
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:245
+msgid "**res** -- The ForFrame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:229
+msgid "The thread for loop variable to bind."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tir/ir/index.rst:242
+msgid "The extents of the iteration."
+msgstr ""
