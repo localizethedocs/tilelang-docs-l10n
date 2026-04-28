@@ -176,9 +176,9 @@ get_members_of_json_object(
 #   - Set VERSION_TYPE    to "tag"
 #   - Set TAG_PATTERN     to "^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(.post[1-9][0-9]*)?$"
 #   - Set TAG_SUFFIX      to ".post"
-# - For "[MAJOR].[MINOR]":
+# - For "[MAJOR]":
 #   - Set VERSION_TYPE    to "tag"
-#   - Set TAG_PATTERN     to "^v([MAJOR])\\.([MINOR])\\.([0-9]+)(.post[1-9][0-9]*)?$"
+#   - Set TAG_PATTERN     to "^v([MAJOR])\\.([0-9]+)\\.([0-9]+)(.post[1-9][0-9]*)?$"
 #   - Set TAG_SUFFIX      to ".post"
 #]============================================================]
 
@@ -189,11 +189,10 @@ elseif (VERSION MATCHES "^(stable)$")
     set(VERSION_TYPE    "tag")
     set(TAG_PATTERN     "^v([0-9]+)\\.([0-9]+)\\.([0-9]+)(.post[1-9][0-9]*)?$")
     set(TAG_SUFFIX      ".post")
-elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
+elseif (VERSION MATCHES "^([0-9]+)$")
     set(MAJOR           "${CMAKE_MATCH_1}")
-    set(MINOR           "${CMAKE_MATCH_2}")
     set(VERSION_TYPE    "tag")
-    set(TAG_PATTERN     "^v(${MAJOR})\\.(${MINOR})\\.([0-9]+)(.post[1-9][0-9]*)?$")
+    set(TAG_PATTERN     "^v(${MAJOR})\\.([0-9]+)\\.([0-9]+)(.post[1-9][0-9]*)?$")
     set(TAG_SUFFIX      ".post")
 else()
     message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
@@ -271,9 +270,9 @@ if     (VERSION MATCHES "^(latest)$")
     set(VERSION_OF_PYTHON   "3.10")
 elseif (VERSION MATCHES "^(stable)$")
     set(VERSION_OF_PYTHON   "3.10")
-elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
-    if     (VERSION VERSION_LESS_EQUAL    "0.1" AND
-            VERSION VERSION_GREATER_EQUAL "0.1")
+elseif (VERSION MATCHES "^([0-9]+)$")
+    if     (VERSION VERSION_LESS_EQUAL    "0" AND
+            VERSION VERSION_GREATER_EQUAL "0")
         set(VERSION_OF_PYTHON   "3.10")
     else()
         message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
