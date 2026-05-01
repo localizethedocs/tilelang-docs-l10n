@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../get_started/overview.md:1
 msgid "The Tile Language: A Brief Introduction"
-msgstr ""
+msgstr "Tile 语言：简要介绍"
 
 #: ../../../get_started/overview.md:3
 msgid "Programming Interface"
-msgstr ""
+msgstr "编程接口"
 
 #: ../../../get_started/overview.md:5
 msgid ""
@@ -35,94 +35,100 @@ msgid ""
 "interfaces within the same kernel, enabling users to work at whichever level "
 "of abstraction best suits their needs."
 msgstr ""
+"下图展示了 **TileLang** 程序如何从高层描述逐步降级为硬件特定的可执行文件。我们提供"
+"三种不同的编程接口——分别面向**初级**、**开发**和**专家**级用户——每种接口位于此降级"
+"流水线的不同层级。**Tile 语言**还允许在同一内核中混合使用这些接口，使用户能够在最"
+"适合其需求的抽象层级上工作。"
 
 #: ../../../get_started/overview.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../../get_started/overview.md:12
 msgid "Figure 1: High-level overview of the TileLang compilation flow."
-msgstr ""
+msgstr "图 1：TileLang 编译流程的高层概述。"
 
 #: ../../../get_started/overview.md:15
 msgid "Programming Interfaces"
-msgstr ""
+msgstr "编程接口"
 
 #: ../../../get_started/overview.md:17
 msgid "**Beginner Level (Hardware-Unaware)**"
-msgstr ""
+msgstr "**初级（硬件无关）**"
 
 #: ../../../get_started/overview.md:18
 msgid ""
 "Intended for users who need to write code that is independent of specific "
 "hardware details."
-msgstr ""
+msgstr "面向需要编写独立于特定硬件细节代码的用户。"
 
 #: ../../../get_started/overview.md:19
 msgid ""
 "The goal is to let developers focus on the basic logic without worrying "
 "about memory hierarchies or hardware-specific optimizations."
-msgstr ""
+msgstr "其目标是让开发者专注于基本逻辑，无需关心内存层级或硬件特定的优化。"
 
 #: ../../../get_started/overview.md:20
 msgid "*Note:* This interface is not yet fully implemented."
-msgstr ""
+msgstr "*注意：* 此接口尚未完全实现。"
 
 #: ../../../get_started/overview.md:22
 msgid "**Developer Level (Hardware-Aware with Tile Library)**"
-msgstr ""
+msgstr "**开发级（硬件感知，使用 Tile 库）**"
 
 #: ../../../get_started/overview.md:23
 msgid ""
 "Designed for developers who have a basic understanding of GPU memory "
 "hierarchies and performance considerations."
-msgstr ""
+msgstr "面向对 GPU 内存层级和性能考量有基本了解的开发者。"
 
 #: ../../../get_started/overview.md:24
 msgid ""
 "Provides a **Tile Library**, containing predefined operations and patterns "
 "optimized for various hardware architectures."
-msgstr ""
+msgstr "提供 **Tile 库**，包含针对各种硬件架构优化的预定义操作和模式。"
 
 #: ../../../get_started/overview.md:25
 msgid ""
 "Users at this level can leverage these ready-made primitives without diving "
 "into low-level threading details."
-msgstr ""
+msgstr "此级别的用户可以直接利用这些现成的原语，而无需深入底层线程细节。"
 
 #: ../../../get_started/overview.md:27
 msgid "**Expert Level (Hardware-Aware with Thread Primitives)**"
-msgstr ""
+msgstr "**专家级（硬件感知，使用线程原语）**"
 
 #: ../../../get_started/overview.md:28
 msgid ""
 "For highly experienced users who have an in-depth understanding of low-level "
 "hardware characteristics (e.g., threading models, memory coalescing)."
-msgstr ""
+msgstr "面向对底层硬件特性（如线程模型、内存合并）有深入理解的高级用户。"
 
 #: ../../../get_started/overview.md:29
 msgid ""
 "Offers direct access to **thread primitives** and other low-level "
 "constructs, allowing for fine-grained control of performance-critical "
 "kernels."
-msgstr ""
+msgstr "提供对**线程原语**及其他底层结构的直接访问，能够对性能关键的内核进行细粒度控制。"
 
 #: ../../../get_started/overview.md:30
 msgid ""
 "This level grants maximum flexibility for specialized optimizations tailored "
 "to specific GPU or multi-core architectures."
-msgstr ""
+msgstr "此级别为针对特定 GPU 或多核架构的专项优化提供了最大的灵活性。"
 
 #: ../../../get_started/overview.md:32
 msgid "Compilation Flow"
-msgstr ""
+msgstr "编译流程"
 
 #: ../../../get_started/overview.md:34
 msgid ""
 "**Tile Program** A high-level specification of the computation. Depending on "
-"the user’s expertise, they may write a purely hardware-unaware tile program "
+"the user's expertise, they may write a purely hardware-unaware tile program "
 "or incorporate constructs from the Tile Library or thread primitives."
 msgstr ""
+"**Tile 程序**：计算的高层规范。根据用户的专业水平，他们可以编写纯硬件无关的 Tile "
+"程序，也可以融入 Tile 库或线程原语中的构造。"
 
 #: ../../../get_started/overview.md:37
 msgid ""
@@ -131,6 +137,8 @@ msgid ""
 "calls. These calls encapsulate efficient implementation patterns for "
 "different operations."
 msgstr ""
+"**结合 Tile 库的 Tile 程序**：当开发者从 Tile 库中选择时，原始 Tile 程序会扩展专"
+"门的库调用。这些调用封装了不同操作的高效实现模式。"
 
 #: ../../../get_started/overview.md:40
 msgid ""
@@ -138,6 +146,8 @@ msgid ""
 "explicitly use low-level threading constructs to hand-optimize data layout, "
 "synchronization, and memory usage."
 msgstr ""
+"**结合线程原语的 Tile 程序**：专家级开发者可以显式使用底层线程构造来手动优化数据"
+"布局、同步和内存使用。"
 
 #: ../../../get_started/overview.md:43
 msgid ""
@@ -145,6 +155,8 @@ msgid ""
 "primitives, it is lowered to an intermediate representation (IR) that "
 "captures the necessary hardware details."
 msgstr ""
+"**IRModule**：程序与库或线程原语组合后，被降级为中间表示（IR），该 IR 捕获了"
+"必要的硬件细节。"
 
 #: ../../../get_started/overview.md:46
 msgid ""
@@ -152,6 +164,8 @@ msgid ""
 "generates target-specific source code. This source code is tuned for the "
 "desired backends or GPU architectures (e.g., NVIDIA, AMD)."
 msgstr ""
+"**源代码生成（C/CUDA/HIP/LLVM/…）**：系统从 IR 生成目标特定的源代码。此源代码"
+"针对所需的后端或 GPU 架构（如 NVIDIA、AMD）进行了调优。"
 
 #: ../../../get_started/overview.md:49
 msgid ""
@@ -160,10 +174,12 @@ msgid ""
 "corresponding devices. The pipeline supports multiple GPU backends and can "
 "be extended to additional architectures."
 msgstr ""
+"**硬件特定的可执行文件/运行时**：最后，生成的源代码被编译为硬件特定的可执行文件，"
+"准备在相应设备上运行。该流水线支持多个 GPU 后端，并可扩展到其他架构。"
 
 #: ../../../get_started/overview.md:52
 msgid "Tile-based Programming Model"
-msgstr ""
+msgstr "基于 Tile 的编程模型"
 
 #: ../../../get_started/overview.md:54
 msgid ""
@@ -178,19 +194,25 @@ msgid ""
 "syntax of ``TileLang`` allows developers to reason about performance-"
 "critical optimizations within a user-friendly programming model."
 msgstr ""
+"[图 2](#fig-overview-gemm) 提供了一个简洁的 ``TileLang`` 矩阵乘法（GEMM）示例，"
+"展示了开发者如何使用分块、内存放置、流水线和算子调用等高层构造来细粒度地管理数据"
+"移动与计算。特别地，此代码片段（[图 2](#fig-overview-gemm) (a)）演示了多级分块如何"
+"利用不同的内存层级（全局内存、共享内存和寄存器）来优化带宽利用率并降低延迟。"
+"总体而言，[图 2](#fig-overview-gemm) (b) 展示了 ``TileLang`` 类 Python 的语法如何"
+"使开发者能够在一个用户友好的编程模型中对性能关键的优化进行推理。"
 
 #: ../../../get_started/overview.md:63 ../../../get_started/overview.md:86
 msgid "GEMM with Multi-Level Tiling on GPUs"
-msgstr ""
+msgstr "GPU 上的多级分块 GEMM"
 
 #: ../../../get_started/overview.md:69
 msgid ""
 "Figure 2: Optimizing GEMM with Multi-Level Tiling on GPUs via ``TileLang``."
-msgstr ""
+msgstr "图 2：通过 ``TileLang`` 在 GPU 上使用多级分块优化 GEMM。"
 
 #: ../../../get_started/overview.md:72
 msgid "Tile declarations"
-msgstr ""
+msgstr "Tile 声明"
 
 #: ../../../get_started/overview.md:74
 msgid ""
@@ -206,10 +228,16 @@ msgid ""
 "computation. Additionally, these contexts allow users to manually control "
 "the behavior of each independent thread within a thread block."
 msgstr ""
+"我们方法的核心是将 *Tile* 作为编程模型中的一等对象。Tile 表示一块有形状的数据，"
+"可以由一个 Warp、线程块或等效的并行单元拥有和操作。在 `Matmul` 示例中，`A` 和 `B` "
+"缓冲区在内核循环内以分块的方式（由 `block_M`、`block_N`、`block_K` 决定）读取。"
+"通过 `T.Kernel`，`TileLang` 定义了执行上下文，包括线程块索引（`bx` 和 `by`）和"
+"线程数。这些上下文有助于计算每个线程块的索引，并使 `TileLang` 更容易自动推断和优化"
+"内存访问与计算。此外，这些上下文还允许用户手动控制线程块内每个独立线程的行为。"
 
 #: ../../../get_started/overview.md:76
 msgid "Explicit Hardware Memory Allocation"
-msgstr ""
+msgstr "显式硬件内存分配"
 
 #: ../../../get_started/overview.md:78
 msgid ""
@@ -219,6 +247,9 @@ msgid ""
 "intrinsics that map directly to physical memory spaces or accelerator-"
 "specific constructs. In particular:"
 msgstr ""
+"`TileLang` 的一个标志性特性是能够将这些 Tile 缓冲区显式放置在硬件内存层级中。"
+"`TileLang` 不是将其留给编译器不透明的优化过程，而是暴露面向用户的内建函数，这些"
+"内建函数直接映射到物理内存空间或加速器特定的构造。具体而言："
 
 #: ../../../get_started/overview.md:80
 msgid ""
@@ -230,6 +261,10 @@ msgid ""
 "matrices can be loaded into shared memory to reduce global memory bandwidth "
 "demands and improve performance."
 msgstr ""
+"`T.alloc_shared`：在快速的片上存储空间中分配内存，对应 NVIDIA GPU 上的共享内存。"
+"共享内存非常适合在计算过程中缓存中间数据，因为它比全局内存快得多，并且允许同一"
+"线程块中的线程之间高效共享数据。例如，在矩阵乘法中，可以将矩阵的分块加载到共享"
+"内存中，以减少全局内存带宽需求并提高性能。"
 
 #: ../../../get_started/overview.md:82
 msgid ""
@@ -245,6 +280,13 @@ msgid ""
 "allocate the corresponding register files for each thread. This process will "
 "be discussed in detail in subsequent sections."
 msgstr ""
+"`T.alloc_fragment`：在片段内存中分配累加器，对应 NVIDIA GPU 上的寄存器文件。通过"
+"将输入和部分和保留在寄存器或硬件级缓存中，可以进一步最小化延迟。请注意，在此 Tile "
+"程序中，每个 Tile 将相同的局部缓冲区分配为共享内存，这可能看起来有违直觉，因为共"
+"享内存通常更快且更充裕，而寄存器文件空间有限。这是因为此处的分配指的是整个线程块的"
+"寄存器文件。`TileLang` 在编译期间使用布局推断遍（Layout Inference Pass）来推导出"
+"布局对象 `T.Fragment`，该对象决定如何为每个线程分配相应的寄存器文件。此过程将在后"
+"续章节中详细讨论。"
 
 #: ../../../get_started/overview.md:84
 msgid ""
@@ -254,3 +296,6 @@ msgid ""
 "can also be performed in parallel using `T.Parallel`, as demonstrated in "
 "Layout Inference Pass in the following sections."
 msgstr ""
+"全局内存与硬件特定内存之间的数据传输可以使用 `T.copy` 来管理。此外，硬件特定的缓"
+"冲区可以使用 `T.clear` 或 `T.fill` 来初始化。对于数据赋值，操作也可以使用 "
+"`T.Parallel` 并行执行，如后续章节中的布局推断遍所示。"

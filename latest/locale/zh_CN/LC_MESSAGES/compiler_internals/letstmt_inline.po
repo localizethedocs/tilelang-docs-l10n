@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../compiler_internals/letstmt_inline.md:1
 msgid "LetStmt Inlining in TileLang"
-msgstr ""
+msgstr "TileLang 中的 LetStmt 内联"
 
 #: ../../../compiler_internals/letstmt_inline.md:3
 msgid ""
@@ -27,10 +27,11 @@ msgid ""
 "simplification pipeline, which is an important optimization that affects "
 "code generation and performance."
 msgstr ""
+"本文档解释了 `LetStmt` 内联如何在 TileLang 的简化流水线中工作，这是一个影响代码生成和性能的重要优化。"
 
 #: ../../../compiler_internals/letstmt_inline.md:5
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../../compiler_internals/letstmt_inline.md:7
 msgid ""
@@ -41,44 +42,46 @@ msgid ""
 "before the main legalization pipeline. However, not all `LetStmt` nodes can "
 "be safely inlined."
 msgstr ""
+"`LetStmt`（Let 语句）是 IR（中间表示）中的临时变量绑定。在编译过程中，TileLang 的简化器可能会选择内联这些临时变量以简化代码。TileLang 还提供了一个独立的 `LetInline` Pass，在主规范化流水线之前执行急切替换。然而，并非所有 `LetStmt` 节点都能安全地内联。"
 
 #: ../../../compiler_internals/letstmt_inline.md:9
 msgid "When Does LetStmt Get Inlined?"
-msgstr ""
+msgstr "LetStmt 何时被内联？"
 
 #: ../../../compiler_internals/letstmt_inline.md:11
 msgid ""
 "The inlining logic is implemented in `src/transform/simplify.cc`. A "
 "`LetStmt` will be inlined if **both** of the following conditions are met:"
 msgstr ""
+"内联逻辑在 `src/transform/simplify.cc` 中实现。如果**同时**满足以下两个条件，`LetStmt` 将被内联："
 
 #: ../../../compiler_internals/letstmt_inline.md:13
 msgid "1. The value satisfies `CanInlineLetStmt`"
-msgstr ""
+msgstr "1. 值满足 `CanInlineLetStmt`"
 
 #: ../../../compiler_internals/letstmt_inline.md:15
 msgid "The `CanInlineLetStmt` helper returns `true` when:"
-msgstr ""
+msgstr "`CanInlineLetStmt` 辅助函数在以下情况下返回 `true`："
 
 #: ../../../compiler_internals/letstmt_inline.md:17
 msgid "**The value is a constant** (`is_const_number(op->value)` returns true)"
-msgstr ""
+msgstr "**该值是常量**（`is_const_number(op->value)` 返回 true）"
 
 #: ../../../compiler_internals/letstmt_inline.md:18
 msgid "**The value is a variable** (`op->value.as<VarNode>()` returns a node)"
-msgstr ""
+msgstr "**该值是变量**（`op->value.as<VarNode>()` 返回节点）"
 
 #: ../../../compiler_internals/letstmt_inline.md:19
 msgid "**The value is an integer expression without side effects**:"
-msgstr ""
+msgstr "**该值是无副作用的整数表达式**："
 
 #: ../../../compiler_internals/letstmt_inline.md:20
 msgid "The value has `int` dtype"
-msgstr ""
+msgstr "该值具有 `int` 数据类型"
 
 #: ../../../compiler_internals/letstmt_inline.md:21
 msgid "The side effect level is `kPure` or lower (no observable side effects)"
-msgstr ""
+msgstr "副作用级别为 `kPure` 或更低（无可见副作用）"
 
 #: ../../../compiler_internals/letstmt_inline.md:23
 msgid ""
@@ -95,10 +98,22 @@ msgid ""
 "  return SideEffect(op->value) <= CallEffectKind::kPure;\n"
 "}\n"
 msgstr ""
+"bool CanInlineLetStmt(const LetStmtNode *op) {\n"
+"  if (is_const_number(op->value))\n"
+"    return true;\n"
+"  if (op->value.as<VarNode>())\n"
+"    return true;\n"
+"  // Won't face the deep expression explosion problem as in Let expression.\n"
+"  // attempt to inline as much as possible if the value integer type(can be\n"
+"  // index).\n"
+"  if (!op->value.dtype().is_int())\n"
+"    return false;\n"
+"  return SideEffect(op->value) <= CallEffectKind::kPure;\n"
+"}\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:38
 msgid "2. The variable is NOT used in buffer definitions"
-msgstr ""
+msgstr "2. 变量未在缓冲区定义中使用"
 
 #: ../../../compiler_internals/letstmt_inline.md:40
 msgid ""
@@ -106,28 +121,30 @@ msgid ""
 "inlined if it's used in a buffer's definition (shape, strides, elem_offset, "
 "or data fields)."
 msgstr ""
+"即使 `CanInlineLetStmt` 返回 true，如果变量用于缓冲区的定义（形状、步长、元素偏移或数据字段），也**不会**被内联。"
 
 #: ../../../compiler_internals/letstmt_inline.md:42
 msgid "This protection exists because:"
-msgstr ""
+msgstr "此保护存在的原因是："
 
 #: ../../../compiler_internals/letstmt_inline.md:43
 msgid "Buffer definitions are not updated during the simplification pass"
-msgstr ""
+msgstr "缓冲区定义在简化 Pass 期间不会被更新"
 
 #: ../../../compiler_internals/letstmt_inline.md:44
 msgid ""
 "If a variable used in a buffer definition is inlined, later references to "
 "that buffer would fail to find the variable definition"
 msgstr ""
+"如果用于缓冲区定义的变量被内联，后续对该缓冲区的引用将找不到该变量定义"
 
 #: ../../../compiler_internals/letstmt_inline.md:45
 msgid "This would cause compilation errors or incorrect behavior"
-msgstr ""
+msgstr "这将导致编译错误或不正确的行为"
 
 #: ../../../compiler_internals/letstmt_inline.md:47
 msgid "The mutator checks this before dropping the binding:"
-msgstr ""
+msgstr "变更器在移除绑定之前检查这一点："
 
 #: ../../../compiler_internals/letstmt_inline.md:49
 msgid ""
@@ -137,14 +154,19 @@ msgid ""
 "    return body;  // Inline: remove LetStmt and return body directly\n"
 "}\n"
 msgstr ""
+"bool used_in_buffer_def = used_in_buffer_def_.count(op->var.get());\n"
+"\n"
+"if (can_inline && !used_in_buffer_def) {\n"
+"    return body;  // Inline: remove LetStmt and return body directly\n"
+"}\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:57
 msgid "Example: Why Buffer Definition Variables Are Protected"
-msgstr ""
+msgstr "示例：为什么缓冲区定义变量受到保护"
 
 #: ../../../compiler_internals/letstmt_inline.md:59
 msgid "Consider this code:"
-msgstr ""
+msgstr "考虑以下代码："
 
 #: ../../../compiler_internals/letstmt_inline.md:61
 msgid ""
@@ -152,39 +174,45 @@ msgid ""
 "let buffer_a = Buffer(data, shape=[M, N], strides=[stride, 1])\n"
 "buffer_a[i, j] = ...\n"
 msgstr ""
+"let stride = M * 16\n"
+"let buffer_a = Buffer(data, shape=[M, N], strides=[stride, 1])\n"
+"buffer_a[i, j] = ...\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:67
 msgid ""
 "`stride` satisfies `CanInlineLetStmt` (it's an int expression with no side "
 "effects)"
 msgstr ""
+"`stride` 满足 `CanInlineLetStmt`（它是一个无副作用的整数表达式）"
 
 #: ../../../compiler_internals/letstmt_inline.md:68
 msgid "However, `stride` is used in `buffer_a`'s `strides` field"
-msgstr ""
+msgstr "然而，`stride` 被用于 `buffer_a` 的 `strides` 字段"
 
 #: ../../../compiler_internals/letstmt_inline.md:69
 msgid "If we inline it, the buffer definition becomes `strides=[M*16, 1]`"
-msgstr ""
+msgstr "如果将其内联，缓冲区定义将变为 `strides=[M*16, 1]`"
 
 #: ../../../compiler_internals/letstmt_inline.md:70
 msgid "But the Buffer object's fields are not updated during simplification"
-msgstr ""
+msgstr "但 Buffer 对象的字段在简化期间不会被更新"
 
 #: ../../../compiler_internals/letstmt_inline.md:71
 msgid ""
 "Later code accessing `buffer_a` would fail to find the `stride` variable"
 msgstr ""
+"后续访问 `buffer_a` 的代码将找不到 `stride` 变量"
 
 #: ../../../compiler_internals/letstmt_inline.md:73
 msgid ""
 "Therefore, `stride` is added to `used_in_buffer_def_` and will **not** be "
 "inlined."
 msgstr ""
+"因此，`stride` 被添加到 `used_in_buffer_def_` 中，并且**不会**被内联。"
 
 #: ../../../compiler_internals/letstmt_inline.md:75
 msgid "How Variables Are Collected"
-msgstr ""
+msgstr "变量如何被收集"
 
 #: ../../../compiler_internals/letstmt_inline.md:77
 msgid ""
@@ -192,6 +220,7 @@ msgid ""
 "and `BufferStore` nodes and collects variables used in their buffer "
 "definitions:"
 msgstr ""
+"`CollectVarsUsedInBufferDefinition` 辅助函数遍历所有 `BufferLoad` 和 `BufferStore` 节点，并收集在其缓冲区定义中使用的变量："
 
 #: ../../../compiler_internals/letstmt_inline.md:79
 msgid ""
@@ -213,14 +242,31 @@ msgid ""
 "  }\n"
 "}\n"
 msgstr ""
+"void VisitBuffer(const Buffer &buf) {\n"
+"  // Collect variables that should remain defined\n"
+"  VarUseDefAnalyzer usage(Array<Var>{});\n"
+"  usage(buf->data);\n"
+"  for (const auto &dim : buf->shape) {\n"
+"    usage(dim);\n"
+"  }\n"
+"  for (const auto &dim : buf->strides) {\n"
+"    usage(dim);\n"
+"  }\n"
+"  usage(buf->elem_offset);\n"
+"\n"
+"  // Track for use in LetStmtNode mutator\n"
+"  for (const auto &var : usage.undefined_) {\n"
+"    used_in_buffer_def_.insert(var.get());\n"
+"  }\n"
+"}\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:99
 msgid "Practical Example: Temporary Variable Issue"
-msgstr ""
+msgstr "实际示例：临时变量问题"
 
 #: ../../../compiler_internals/letstmt_inline.md:101
 msgid "Consider this TileLang code:"
-msgstr ""
+msgstr "考虑以下 TileLang 代码："
 
 #: ../../../compiler_internals/letstmt_inline.md:103
 msgid ""
@@ -230,30 +276,35 @@ msgid ""
 "    B[idx] = tmp / 2\n"
 "    A[idx] = tmp * 2\n"
 msgstr ""
+"for i in T.Parallel(block_N):\n"
+"    idx = bx * block_N + i\n"
+"    tmp = T.max(A[idx], 1)\n"
+"    B[idx] = tmp / 2\n"
+"    A[idx] = tmp * 2\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:111
 msgid "In this case:"
-msgstr ""
+msgstr "在这种情况下："
 
 #: ../../../compiler_internals/letstmt_inline.md:112
 msgid "`tmp` is an integer-like temporary variable"
-msgstr ""
+msgstr "`tmp` 是一个类似整数的临时变量"
 
 #: ../../../compiler_internals/letstmt_inline.md:113
 msgid "It satisfies `CanInlineLetStmt` (pure int expression)"
-msgstr ""
+msgstr "它满足 `CanInlineLetStmt`（纯整数表达式）"
 
 #: ../../../compiler_internals/letstmt_inline.md:114
 msgid "It's **not** used in any buffer definition"
-msgstr ""
+msgstr "它**没有**在任何缓冲区定义中使用"
 
 #: ../../../compiler_internals/letstmt_inline.md:115
 msgid "Therefore, `tmp` **will be inlined**"
-msgstr ""
+msgstr "因此，`tmp` **将被内联**"
 
 #: ../../../compiler_internals/letstmt_inline.md:117
 msgid "This means the IR becomes:"
-msgstr ""
+msgstr "这意味着 IR 变为："
 
 #: ../../../compiler_internals/letstmt_inline.md:119
 msgid ""
@@ -262,6 +313,10 @@ msgid ""
 "    B[idx] = T.max(A[idx], 1) / 2\n"
 "    A[idx] = T.max(A[idx], 1) * 2\n"
 msgstr ""
+"for i in T.Parallel(block_N):\n"
+"    idx = bx * block_N + i\n"
+"    B[idx] = T.max(A[idx], 1) / 2\n"
+"    A[idx] = T.max(A[idx], 1) * 2\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:126
 msgid ""
@@ -269,10 +324,11 @@ msgid ""
 "due to the first write), it indicates a potential problem with the inlining "
 "heuristic or the code pattern."
 msgstr ""
+"如果这导致问题（例如，由于第一次写入导致 `A[idx]` 被读取两次且值不同），则表明内联启发式或代码模式可能存在潜在问题。"
 
 #: ../../../compiler_internals/letstmt_inline.md:128
 msgid "Controlling Let Inlining via Pass Config"
-msgstr ""
+msgstr "通过 Pass 配置控制 Let 内联"
 
 #: ../../../compiler_internals/letstmt_inline.md:130
 msgid ""
@@ -284,6 +340,7 @@ msgid ""
 "useful when debugging LetStmt-related issues or when deterministic inlining "
 "behavior is desired across different environments."
 msgstr ""
+"TileLang 暴露了一个显式的 Pass 配置键 `tilelang.PassConfigKey.TL_FORCE_LET_INLINE`（`\"tl.force_let_inline\"`），允许用户在规范化流水线开始之前强制运行急切的 `LetInline` Pass。启用后，流水线在 `LowerAndLegalize` 开始时调用 `tilelang.transform.LetInline()`（参见 `tilelang/engine/phase.py`）。此配置在调试 LetStmt 相关问题或希望在跨不同环境时具有确定性的内联行为时非常有用。"
 
 #: ../../../compiler_internals/letstmt_inline.md:132
 msgid ""
@@ -295,6 +352,13 @@ msgid ""
 "):\n"
 "    lowered_mod = LowerAndLegalize(input_mod, target)\n"
 msgstr ""
+"from tilelang import transform\n"
+"from tilelang.engine.phase import LowerAndLegalize\n"
+"\n"
+"with transform.PassContext(\n"
+"    config={transform.PassConfigKey.TL_FORCE_LET_INLINE: True}\n"
+"):\n"
+"    lowered_mod = LowerAndLegalize(input_mod, target)\n"
 
 #: ../../../compiler_internals/letstmt_inline.md:142
 msgid ""
@@ -304,73 +368,76 @@ msgid ""
 "phase.py` ensures the eager pass is only triggered when the user explicitly "
 "requests it."
 msgstr ""
+"如果该标志保持未设置（默认），则仅当下游变换选择加入时才应用急切 Pass（例如，在 Tile 操作符内部调用 `_Simplify(..., inline_let=True)`）。`tilelang/engine/phase.py` 中的守卫确保仅在用户明确请求时才触发急切 Pass。"
 
 #: ../../../compiler_internals/letstmt_inline.md:144
 msgid "Summary"
-msgstr ""
+msgstr "总结"
 
 #: ../../../compiler_internals/letstmt_inline.md:146
 msgid "The LetStmt inlining mechanism is a **conservative optimization** that:"
-msgstr ""
+msgstr "LetStmt 内联机制是一种**保守的优化**，它："
 
 #: ../../../compiler_internals/letstmt_inline.md:147
 msgid ""
 "Aggressively inlines simple, pure integer expressions to simplify the IR"
-msgstr ""
+msgstr "积极内联简单的纯整数表达式以简化 IR"
 
 #: ../../../compiler_internals/letstmt_inline.md:148
 msgid ""
 "Protects variables used in buffer definitions to avoid breaking buffer access"
-msgstr ""
+msgstr "保护在缓冲区定义中使用的变量，以避免破坏缓冲区访问"
 
 #: ../../../compiler_internals/letstmt_inline.md:149
 msgid "Helps reduce IR complexity and improve code generation"
-msgstr ""
+msgstr "有助于降低 IR 复杂性并改进代码生成"
 
 #: ../../../compiler_internals/letstmt_inline.md:150
 msgid ""
 "Can be forced through `TL_FORCE_LET_INLINE` when deterministic eager "
 "inlining is required"
 msgstr ""
+"可以通过 `TL_FORCE_LET_INLINE` 在需要确定性急切内联时强制启用"
 
 #: ../../../compiler_internals/letstmt_inline.md:152
 msgid "Understanding when inlining happens is crucial for:"
-msgstr ""
+msgstr "理解内联何时发生对于以下方面至关重要："
 
 #: ../../../compiler_internals/letstmt_inline.md:153
 msgid "Debugging compilation issues"
-msgstr ""
+msgstr "调试编译问题"
 
 #: ../../../compiler_internals/letstmt_inline.md:154
 msgid "Understanding generated code"
-msgstr ""
+msgstr "理解生成的代码"
 
 #: ../../../compiler_internals/letstmt_inline.md:155
 msgid "Writing efficient TileLang programs"
-msgstr ""
+msgstr "编写高效的 TileLang 程序"
 
 #: ../../../compiler_internals/letstmt_inline.md:156
 msgid "Identifying potential optimization opportunities or bugs"
-msgstr ""
+msgstr "识别潜在的优化机会或错误"
 
 #: ../../../compiler_internals/letstmt_inline.md:158
 msgid "Related Files"
-msgstr ""
+msgstr "相关文件"
 
 #: ../../../compiler_internals/letstmt_inline.md:160
 msgid "`src/transform/simplify.cc`: Main Simplify implementation"
-msgstr ""
+msgstr "`src/transform/simplify.cc`：主要的 Simplify 实现"
 
 #: ../../../compiler_internals/letstmt_inline.md:161
 msgid "`src/transform/frontend_legalize.cc`: Standalone LetInline pass"
-msgstr ""
+msgstr "`src/transform/frontend_legalize.cc`：独立的 LetInline Pass"
 
 #: ../../../compiler_internals/letstmt_inline.md:162
 msgid "`tilelang/engine/phase.py`: Pipeline integration for eager LetInlining"
-msgstr ""
+msgstr "`tilelang/engine/phase.py`：急切 Let 内联的流水线集成"
 
 #: ../../../compiler_internals/letstmt_inline.md:163
 msgid ""
 "`testing/python/transform/test_tilelang_transform_let_inline.py`: Regression "
 "coverage for the pass"
 msgstr ""
+"`testing/python/transform/test_tilelang_transform_let_inline.py`：该 Pass 的回归测试覆盖"

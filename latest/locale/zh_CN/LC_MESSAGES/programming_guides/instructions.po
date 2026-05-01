@@ -19,45 +19,51 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:1
 msgid "Instructions"
-msgstr ""
+msgstr "指令"
 
 #: ../../../programming_guides/instructions.md:3
 msgid ""
-"This page summarizes the core TileLang “instructions” available at the DSL "
+"This page summarizes the core TileLang "instructions" available at the DSL "
 "level, how they map to hardware concepts, and how to use them correctly."
 msgstr ""
+"本页面总结了 TileLang DSL 层面可用的核心"指令"，涵盖它们如何映射到硬件"
+"概念，以及如何正确使用它们。"
 
 #: ../../../programming_guides/instructions.md:6
 msgid "Quick Categories"
-msgstr ""
+msgstr "快速分类"
 
 #: ../../../programming_guides/instructions.md:7
 msgid ""
 "Data movement: `T.copy`, `T.async_copy`, `T.c2d_im2col`, staging Global ↔ "
 "Shared ↔ Fragment"
 msgstr ""
+"数据搬运：`T.copy`、`T.async_copy`、`T.c2d_im2col`，在 Global ↔ "
+"Shared ↔ Fragment 之间传递数据"
 
 #: ../../../programming_guides/instructions.md:8
 msgid ""
 "Compute primitives: `T.gemm`/`T.gemm_sp`, elementwise math (`T.exp`, `T."
 "max`), reductions (`T.reduce_sum`, `T.cumsum`, warp reducers)"
 msgstr ""
+"计算原语：`T.gemm`/`T.gemm_sp`，逐元素数学运算（`T.exp`、`T."
+"max`），归约（`T.reduce_sum`、`T.cumsum`、Warp 归约器）"
 
 #: ../../../programming_guides/instructions.md:10
 msgid "Control helpers: `T.clear`/`T.fill`, `T.reshape`/`T.view`"
-msgstr ""
+msgstr "控制辅助：`T.clear`/`T.fill`、`T.reshape`/`T.view`"
 
 #: ../../../programming_guides/instructions.md:11
 msgid "Diagnostics: `T.print`, `T.device_assert`"
-msgstr ""
+msgstr "诊断：`T.print`、`T.device_assert`"
 
 #: ../../../programming_guides/instructions.md:12
 msgid "Advanced: atomics, memory barriers, warp‑group ops"
-msgstr ""
+msgstr "高级：原子操作、内存屏障、Warp 组操作"
 
 #: ../../../programming_guides/instructions.md:14
 msgid "Data Movement"
-msgstr ""
+msgstr "数据搬运"
 
 #: ../../../programming_guides/instructions.md:16
 msgid ""
@@ -66,6 +72,10 @@ msgid ""
 "scopes. It accepts `tir.Buffer`, `BufferLoad`, or `BufferRegion`; extents "
 "are inferred or broadcast when possible."
 msgstr ""
+"使用 `T.copy(src, dst, *, coalesced_width=None, disable_tma=False, "
+"eviction_policy=None, loop_layout=None)` 在不同内存作用域之间移动 tile。"
+"它接受 `tir.Buffer`、`BufferLoad` 或 `BufferRegion`；在可能的情况下会自动"
+"推断或广播维度大小。"
 
 #: ../../../programming_guides/instructions.md:20
 msgid ""
@@ -76,44 +86,53 @@ msgid ""
 "# Fragment/Register → Global (store result)\n"
 "T.copy(C_f, C[by * BM, bx * BN])\n"
 msgstr ""
+"# Global → Shared tile（从目标推断维度）\n"
+"T.copy(A[by * BM, ko * BK], A_s)\n"
+"T.copy(B[ko * BK, bx * BN], B_s)\n"
+"\n"
+"# Fragment/寄存器 → Global（存储结果）\n"
+"T.copy(C_f, C[by * BM, bx * BN])\n"
 
 #: ../../../programming_guides/instructions.md:29
 msgid "Semantics"
-msgstr ""
+msgstr "语义"
 
 #: ../../../programming_guides/instructions.md:30
 msgid ""
-"Extents are deduced from arguments; missing sides broadcast to the other’s "
+"Extents are deduced from arguments; missing sides broadcast to the other's "
 "rank."
-msgstr ""
+msgstr "维度大小从参数推导得出；缺失的维度广播到另一参数对应的秩。"
 
 #: ../../../programming_guides/instructions.md:31
 msgid ""
 "Access patterns are legalized and coalesced during lowering. Explicit "
 "vectorization is not required in HL mode."
 msgstr ""
+"访问模式在 lowering 阶段被合法化和合并。HL 模式下不需要显式指定向量化。"
 
 #: ../../../programming_guides/instructions.md:33
 msgid ""
 "Safety: the LegalizeSafeMemoryAccess pass inserts boundary guards when an "
 "access may be out‑of‑bounds and drops them when proven safe."
 msgstr ""
+"安全性：LegalizeSafeMemoryAccess pass 在访问可能越界时插入边界保护，"
+"在经证明安全时将其移除。"
 
 #: ../../../programming_guides/instructions.md:36
 msgid "`T.copy` vs `T.async_copy`"
-msgstr ""
+msgstr "`T.copy` 与 `T.async_copy`"
 
 #: ../../../programming_guides/instructions.md:38
 msgid "TileLang supports both synchronous and explicitly-asynchronous copies."
-msgstr ""
+msgstr "TileLang 同时支持同步拷贝和显式异步拷贝。"
 
 #: ../../../programming_guides/instructions.md:40
 msgid "`T.copy(src, dst, ...)` (synchronous semantics)"
-msgstr ""
+msgstr "`T.copy(src, dst, ...)`（同步语义）"
 
 #: ../../../programming_guides/instructions.md:41
 msgid "Intended default for most TileLang programs."
-msgstr ""
+msgstr "面向大多数 TileLang 程序的推荐默认方式。"
 
 #: ../../../programming_guides/instructions.md:42
 msgid ""
@@ -122,6 +141,9 @@ msgid ""
 "observable semantics are *synchronous*: after the statement, it is safe to "
 "use `dst`."
 msgstr ""
+"编译器可以根据目标/提示将其 lowering 为不同的机制（SIMT 拷贝、"
+"`ldmatrix`、TMA、`cp.async` 等），但可观测语义是*同步的*："
+"在该语句之后，可以安全地使用 `dst`。"
 
 #: ../../../programming_guides/instructions.md:45
 msgid ""
@@ -129,37 +151,42 @@ msgid ""
 "semantics by emitting the required `commit`/`wait` (and any required "
 "synchronization) so that consuming `dst` is correct."
 msgstr ""
+"如果 `T.copy` 被 lowering 为 `cp.async`，TileLang 仍将通过发出所需的 "
+"`commit`/`wait`（以及任何必要的同步）来保持同步语义，从而确保"
+"消费 `dst` 是正确的。"
 
 #: ../../../programming_guides/instructions.md:49
 msgid "`T.async_copy(src, dst, ...)` (explicit async semantics)"
-msgstr ""
+msgstr "`T.async_copy(src, dst, ...)`（显式异步语义）"
 
 #: ../../../programming_guides/instructions.md:50
 msgid ""
 "Intended for writing manual pipelines or warp-specialized code where you "
 "want to overlap global->shared copies with compute."
 msgstr ""
+"用于编写手动流水线或 Warp 专用代码，适用于需要将 global→shared 拷贝"
+"与计算重叠的场景。"
 
 #: ../../../programming_guides/instructions.md:52
 msgid "Lowers through `cp.async` and emits:"
-msgstr ""
+msgstr "通过 `cp.async` lowering，并发出："
 
 #: ../../../programming_guides/instructions.md:53
 msgid "`ptx_cp_async(...)`"
-msgstr ""
+msgstr "`ptx_cp_async(...)`"
 
 #: ../../../programming_guides/instructions.md:54
 msgid "`ptx_commit_group()`"
-msgstr ""
+msgstr "`ptx_commit_group()`"
 
 #: ../../../programming_guides/instructions.md:55
 msgid "No `ptx_wait_group(...)` is auto-inserted."
-msgstr ""
+msgstr "不会自动插入 `ptx_wait_group(...)`。"
 
 #: ../../../programming_guides/instructions.md:56
 msgid ""
 "You must explicitly insert `T.ptx_wait_group(...)` before consuming `dst`."
-msgstr ""
+msgstr "必须在消费 `dst` 之前显式插入 `T.ptx_wait_group(...)`。"
 
 #: ../../../programming_guides/instructions.md:57
 msgid ""
@@ -171,6 +198,11 @@ msgid ""
 "`T.tvm_storage_sync(\"shared\")` yourself (or `T.tvm_storage_sync(\"warp\")` "
 "for warp-local consumption)."
 msgstr ""
+"当 `dst` 由协作产生并在多个线程间消费时，仍然需要屏障。在大多数 TileLang "
+"程序中你不需要手动编写它：`ThreadSync(\"shared\")` 会在首次读取 `dst` 之前"
+"插入所需的 `T.tvm_storage_sync(\"shared\")`。如果你需要显式控制（或者你正在"
+"编写非常底层的代码），你可以自行插入 `T.tvm_storage_sync(\"shared\")`"
+"（或使用 `T.tvm_storage_sync(\"warp\")` 进行 Warp 级消费）。"
 
 #: ../../../programming_guides/instructions.md:64
 msgid ""
@@ -178,10 +210,13 @@ msgid ""
 "(e.g., wrong scopes, unsupported vector width), compilation fails instead of "
 "silently falling back to a synchronous copy."
 msgstr ""
+"该操作有意保持严格：如果拷贝无法被 lowering 为 `cp.async`"
+"（例如，错误的作用域、不支持的向量宽度），编译将直接失败，而非静默回退到"
+"同步拷贝。"
 
 #: ../../../programming_guides/instructions.md:68
 msgid "Example (manual async prefetch)"
-msgstr ""
+msgstr "示例（手动异步预取）"
 
 #: ../../../programming_guides/instructions.md:69
 msgid ""
@@ -198,98 +233,123 @@ msgid ""
 "pipeline.\n"
 "T.gemm(A_s, B_s, C_f)\n"
 msgstr ""
+"# 异步预取到共享内存（发出 cp.async + commit）。\n"
+"T.async_copy(A[by * BM, ko * BK], A_s)\n"
+"\n"
+"# ... 此处可以执行独立的工作 ...\n"
+"\n"
+"# 在消费 A_s 之前，确保异步拷贝已完成。\n"
+"T.ptx_wait_group(0)\n"
+"# 在默认 lowering 流水线中，所需的共享内存屏障将由 ThreadSync(\"shared\")\n"
+"# 在首次读取 A_s 之前自动插入。\n"
+"T.gemm(A_s, B_s, C_f)\n"
 
 #: ../../../programming_guides/instructions.md:82
 msgid "Other helpers"
-msgstr ""
+msgstr "其他辅助函数"
 
 #: ../../../programming_guides/instructions.md:83
 msgid "`T.c2d_im2col(img, col, ...)`: convenience for conv‑style transforms."
-msgstr ""
+msgstr "`T.c2d_im2col(img, col, ...)`：用于卷积风格变换的便捷函数。"
 
 #: ../../../programming_guides/instructions.md:85
 msgid "Compute Primitives"
-msgstr ""
+msgstr "计算原语"
 
 #: ../../../programming_guides/instructions.md:87
 msgid "GEMM and sparse GEMM"
-msgstr ""
+msgstr "GEMM 与稀疏 GEMM"
 
 #: ../../../programming_guides/instructions.md:88
 msgid ""
 "`T.gemm(A_shared, B_shared, C_fragment)`: computes a tile GEMM using shared "
 "inputs and a fragment accumulator; lowered to target‑specific tensor cores."
 msgstr ""
+"`T.gemm(A_shared, B_shared, C_fragment)`：使用共享输入和片段累加器计算 tile "
+"GEMM；被 lowering 为目标特定的 Tensor Core。"
 
 #: ../../../programming_guides/instructions.md:90
 msgid ""
 "`T.gemm_sp(...)`: 2:4 sparse tensor core variant (see examples and README)."
 msgstr ""
+"`T.gemm_sp(...)`：2:4 稀疏 Tensor Core 变体（参见示例和 README）。"
 
 #: ../../../programming_guides/instructions.md:92
 msgid "Reductions and scans"
-msgstr ""
+msgstr "归约与扫描"
 
 #: ../../../programming_guides/instructions.md:93
 msgid ""
 "`T.reduce_sum`, `T.reduce_max`, `T.reduce_min`, `T.cumsum`, plus warp "
 "reducers (`T.warp_reduce_sum`, etc.)."
 msgstr ""
+"`T.reduce_sum`、`T.reduce_max`、`T.reduce_min`、`T.cumsum`，以及 Warp 归约器"
+"（`T.warp_reduce_sum` 等）。"
 
 #: ../../../programming_guides/instructions.md:95
 msgid ""
 "Allocate and initialize accumulators via `T.alloc_fragment` + `T.clear` or "
 "`T.fill`."
 msgstr ""
+"通过 `T.alloc_fragment` + `T.clear` 或 `T.fill` 分配和初始化累加器。"
 
 #: ../../../programming_guides/instructions.md:98
 msgid "Elementwise math"
-msgstr ""
+msgstr "逐元素数学运算"
 
 #: ../../../programming_guides/instructions.md:99
 msgid ""
 "Most math ops mirror TVM TIR: `T.exp`, `T.log`, `T.max`, `T.min`, `T.rsqrt`, "
 "`T.sigmoid`, etc. Compose freely inside loops."
 msgstr ""
+"大多数数学运算与 TVM TIR 一致：`T.exp`、`T.log`、`T.max`、`T.min`、`T.rsqrt`、"
+"`T.sigmoid` 等。可以在循环内自由组合使用。"
 
 #: ../../../programming_guides/instructions.md:102
 msgid "Reshape/view (no copy)"
-msgstr ""
+msgstr "重塑/视图（无拷贝）"
 
 #: ../../../programming_guides/instructions.md:103
 msgid ""
 "`T.reshape(buf, new_shape)` and `T.view(buf, shape=None, dtype=None)` create "
 "new views that share storage, with shape/dtype checks enforced."
 msgstr ""
+"`T.reshape(buf, new_shape)` 和 `T.view(buf, shape=None, dtype=None)` 创建"
+"共享存储的新视图，并强制执行形状/数据类型的检查。"
 
 #: ../../../programming_guides/instructions.md:106
 msgid "Synchronization (HL usage)"
-msgstr ""
+msgstr "同步（HL 用法）"
 
 #: ../../../programming_guides/instructions.md:108
 msgid ""
-"In HL pipelines, you usually don’t need to write explicit barriers. Passes "
+"In HL pipelines, you usually don't need to write explicit barriers. Passes "
 "such as PipelinePlanning/InjectSoftwarePipeline/InjectTmaBarrier orchestrate "
 "producer/consumer ordering and thread synchronization behind the scenes."
 msgstr ""
+"在 HL 流水线中，通常不需要编写显式的屏障。PipelinePlanning/"
+"InjectSoftwarePipeline/InjectTmaBarrier 等 pass 会在幕后编排"
+"生产者/消费者的顺序和线程同步。"
 
 #: ../../../programming_guides/instructions.md:112
 msgid "If you need debugging or explicit checks:"
-msgstr ""
+msgstr "如果你需要调试或显式检查："
 
 #: ../../../programming_guides/instructions.md:113
 msgid ""
 "`T.device_assert(cond, msg='')` emits device‑side asserts on CUDA targets."
 msgstr ""
+"`T.device_assert(cond, msg='')` 在 CUDA 目标上发出设备端断言。"
 
 #: ../../../programming_guides/instructions.md:114
 msgid ""
 "`T.print(obj, msg='...')` prints scalars or buffers safely from one thread."
 msgstr ""
+"`T.print(obj, msg='...')` 从一个线程安全地打印标量或缓冲区内容。"
 
 #: ../../../programming_guides/instructions.md:116
 msgid "Putting It Together: GEMM Tile"
-msgstr ""
+msgstr "综合示例：GEMM Tile"
 
 #: ../../../programming_guides/instructions.md:118
 msgid ""
@@ -313,10 +373,29 @@ msgid ""
 "\n"
 "        T.copy(C_f, C[by * BM, bx * BN])      # store back\n"
 msgstr ""
+"@T.prim_func\n"
+"def gemm(\n"
+"    A: T.Tensor((M, K), 'float16'),\n"
+"    B: T.Tensor((K, N), 'float16'),\n"
+"    C: T.Tensor((M, N), 'float16'),\n"
+"):\n"
+"    with T.Kernel(T.ceildiv(N, BN), T.ceildiv(M, BM), threads=128) as (bx, "
+"by):\n"
+"        A_s = T.alloc_shared((BM, BK), 'float16')\n"
+"        B_s = T.alloc_shared((BK, BN), 'float16')\n"
+"        C_f = T.alloc_fragment((BM, BN), 'float32')\n"
+"        T.clear(C_f)\n"
+"\n"
+"        for ko in T.Pipelined(T.ceildiv(K, BK), num_stages=3):\n"
+"            T.copy(A[by * BM, ko * BK], A_s)  # Global → Shared\n"
+"            T.copy(B[ko * BK, bx * BN], B_s)\n"
+"            T.gemm(A_s, B_s, C_f)             # 计算到片段中\n"
+"\n"
+"        T.copy(C_f, C[by * BM, bx * BN])      # 写回\n"
 
 #: ../../../programming_guides/instructions.md:139
 msgid "Instruction Reference (Concise)"
-msgstr ""
+msgstr "指令参考（简明版）"
 
 #: ../../../programming_guides/instructions.md:141
 msgid ""
@@ -324,222 +403,241 @@ msgid ""
 "full signatures, behaviors, constraints, and examples, refer to API "
 "Reference (`autoapi/tilelang/index`)."
 msgstr ""
+"下面按类别列出了 TileLang 指令的简明列表。完整的签名、行为、约束和示例，"
+"请参阅 API 参考（`autoapi/tilelang/index`）。"
 
 #: ../../../programming_guides/instructions.md:145
 msgid "Data movement"
-msgstr ""
+msgstr "数据搬运"
 
 #: ../../../programming_guides/instructions.md:146
 msgid "`T.copy(src, dst, ...)`: Move tiles between Global/Shared/Fragment."
-msgstr ""
+msgstr "`T.copy(src, dst, ...)`：在 Global/Shared/Fragment 之间移动 tile。"
 
 #: ../../../programming_guides/instructions.md:147
 msgid ""
 "`T.async_copy(src, dst, ...)`: Explicit async global→shared copy via `cp."
 "async`."
 msgstr ""
+"`T.async_copy(src, dst, ...)`：通过 `cp.async` 执行显式异步 global→shared 拷贝。"
 
 #: ../../../programming_guides/instructions.md:148
 msgid ""
 "`T.transpose(src, dst)`: Transpose a 2D shared buffer: `dst[j, i] = src[i, "
 "j]`."
 msgstr ""
+"`T.transpose(src, dst)`：转置 2D 共享缓冲区：`dst[j, i] = src[i, j]`。"
 
 #: ../../../programming_guides/instructions.md:149
 msgid "`T.c2d_im2col(img, col, ...)`: 2D im2col transform for conv."
-msgstr ""
+msgstr "`T.c2d_im2col(img, col, ...)`：用于卷积的 2D im2col 变换。"
 
 #: ../../../programming_guides/instructions.md:151
 msgid "Memory allocation and descriptors"
-msgstr ""
+msgstr "内存分配与描述符"
 
 #: ../../../programming_guides/instructions.md:152
 msgid ""
 "`T.alloc_shared(shape, dtype, scope='shared.dyn')`: Allocate shared buffer."
 msgstr ""
+"`T.alloc_shared(shape, dtype, scope='shared.dyn')`：分配共享内存缓冲区。"
 
 #: ../../../programming_guides/instructions.md:153
 msgid ""
 "`T.alloc_fragment(shape, dtype, scope='local.fragment')`: Allocate fragment."
 msgstr ""
+"`T.alloc_fragment(shape, dtype, scope='local.fragment')`：分配片段。"
 
 #: ../../../programming_guides/instructions.md:154
 msgid ""
 "`T.alloc_var(dtype, [init], scope='local.var')`: Scalar var buffer (1 elem)."
 msgstr ""
+"`T.alloc_var(dtype, [init], scope='local.var')`：标量变量缓冲区（1 个元素）。"
 
 #: ../../../programming_guides/instructions.md:155
 msgid ""
 "`T.alloc_barrier(arrive_count)`: Allocate and initialize one or more "
 "mbarriers."
 msgstr ""
+"`T.alloc_barrier(arrive_count)`：分配并初始化一个或多个内存屏障。"
 
 #: ../../../programming_guides/instructions.md:156
 msgid "`T.alloc_tmem(shape, dtype)`: Tensor memory (TMEM) buffer (Hopper+)."
-msgstr ""
+msgstr "`T.alloc_tmem(shape, dtype)`：张量内存（TMEM）缓冲区（Hopper 及以上）。"
 
 #: ../../../programming_guides/instructions.md:157
 msgid ""
 "`T.deallocate_tmem(buffer)`: Explicitly release a TMEM buffer at the current "
 "site."
 msgstr ""
+"`T.deallocate_tmem(buffer)`：在当前位置显式释放 TMEM 缓冲区。"
 
 #: ../../../programming_guides/instructions.md:158
 msgid ""
 "`T.alloc_reducer(shape, dtype, op='sum', replication=None)`: Reducer buf."
 msgstr ""
+"`T.alloc_reducer(shape, dtype, op='sum', replication=None)`：归约器缓冲区。"
 
 #: ../../../programming_guides/instructions.md:159
 msgid "`T.alloc_descriptor(kind, dtype)`: Generic descriptor allocator."
-msgstr ""
+msgstr "`T.alloc_descriptor(kind, dtype)`：通用描述符分配器。"
 
 #: ../../../programming_guides/instructions.md:160
 msgid "`T.alloc_wgmma_desc(dtype='uint64')`"
-msgstr ""
+msgstr "`T.alloc_wgmma_desc(dtype='uint64')`"
 
 #: ../../../programming_guides/instructions.md:161
 msgid "`T.alloc_tcgen05_smem_desc(dtype='uint64')`"
-msgstr ""
+msgstr "`T.alloc_tcgen05_smem_desc(dtype='uint64')`"
 
 #: ../../../programming_guides/instructions.md:162
 msgid "`T.alloc_tcgen05_instr_desc(dtype='uint32')`"
-msgstr ""
+msgstr "`T.alloc_tcgen05_instr_desc(dtype='uint32')`"
 
 #: ../../../programming_guides/instructions.md:163
 msgid "`T.empty(shape, dtype='float32')`: Declare function output tensors."
-msgstr ""
+msgstr "`T.empty(shape, dtype='float32')`：声明函数输出张量。"
 
 #: ../../../programming_guides/instructions.md:165
 msgid "Compute primitives"
-msgstr ""
+msgstr "计算原语"
 
 #: ../../../programming_guides/instructions.md:166
 msgid "`T.gemm(A_s, B_s, C_f)`: Tile GEMM into fragment accumulator."
-msgstr ""
+msgstr "`T.gemm(A_s, B_s, C_f)`：Tile GEMM，结果写入片段累加器。"
 
 #: ../../../programming_guides/instructions.md:167
 msgid "`T.gemm_sp(...)`: Sparse (2:4) tensor core GEMM."
-msgstr ""
+msgstr "`T.gemm_sp(...)`：稀疏（2:4）Tensor Core GEMM。"
 
 #: ../../../programming_guides/instructions.md:168
 msgid "Reductions: `T.reduce_sum/max/min/abssum/absmax`, bitwise `and/or/xor`."
-msgstr ""
+msgstr "归约：`T.reduce_sum/max/min/abssum/absmax`，按位 `and/or/xor`。"
 
 #: ../../../programming_guides/instructions.md:169
 msgid "Scans: `T.cumsum`, finalize: `T.finalize_reducer`."
-msgstr ""
+msgstr "扫描：`T.cumsum`，最终化：`T.finalize_reducer`。"
 
 #: ../../../programming_guides/instructions.md:170
 msgid "Warp reducers: `T.warp_reduce_sum/max/min/bitand/bitor`."
-msgstr ""
+msgstr "Warp 归约器：`T.warp_reduce_sum/max/min/bitand/bitor`。"
 
 #: ../../../programming_guides/instructions.md:171
 msgid ""
 "Elementwise math: TIR ops (`T.exp`, `T.log`, `T.max`, `T.min`, `T."
 "rsqrt`, ...)."
 msgstr ""
+"逐元素数学运算：TIR 运算（`T.exp`、`T.log`、`T.max`、`T.min`、`T.rsqrt` 等）。"
 
 #: ../../../programming_guides/instructions.md:172
 msgid ""
 "Fast math: `T.__log/__log2/__log10/__exp/__exp2/__exp10/__sin/__cos/__tan`."
 msgstr ""
+"快速数学：`T.__log/__log2/__log10/__exp/__exp2/__exp10/__sin/__cos/__tan`。"
 
 #: ../../../programming_guides/instructions.md:173
 msgid "IEEE math: `T.ieee_add/sub/mul/fmaf` (configurable rounding)."
-msgstr ""
+msgstr "IEEE 数学：`T.ieee_add/sub/mul/fmaf`（可配置的舍入方式）。"
 
 #: ../../../programming_guides/instructions.md:174
 msgid "Helpers: `T.clear(buf)`, `T.fill(buf, value)`."
-msgstr ""
+msgstr "辅助函数：`T.clear(buf)`、`T.fill(buf, value)`。"
 
 #: ../../../programming_guides/instructions.md:175
 msgid "Views: `T.reshape(buf, shape)`, `T.view(buf, shape=None, dtype=None)`."
-msgstr ""
+msgstr "视图：`T.reshape(buf, shape)`、`T.view(buf, shape=None, dtype=None)`。"
 
 #: ../../../programming_guides/instructions.md:177
 msgid "Diagnostics"
-msgstr ""
+msgstr "诊断"
 
 #: ../../../programming_guides/instructions.md:178
 msgid "`T.print(obj, msg='')`: Print scalar/buffer from one thread."
-msgstr ""
+msgstr "`T.print(obj, msg='')`：从一个线程打印标量/缓冲区内容。"
 
 #: ../../../programming_guides/instructions.md:179
 msgid "`T.device_assert(cond, msg='')`: Device-side assert (CUDA)."
-msgstr ""
+msgstr "`T.device_assert(cond, msg='')`：设备端断言（CUDA）。"
 
 #: ../../../programming_guides/instructions.md:181
 msgid "Logical helpers"
-msgstr ""
+msgstr "逻辑辅助函数"
 
 #: ../../../programming_guides/instructions.md:182
 msgid "`T.any_of(a, b, ...)`, `T.all_of(a, b, ...)`: Multi-term predicates."
-msgstr ""
+msgstr "`T.any_of(a, b, ...)`、`T.all_of(a, b, ...)`：多项谓词。"
 
 #: ../../../programming_guides/instructions.md:184
 msgid "Annotation helpers"
-msgstr ""
+msgstr "标注辅助函数"
 
 #: ../../../programming_guides/instructions.md:185
 msgid "`T.use_swizzle(panel_size=..., enable=True)`: Rasterization hint."
-msgstr ""
+msgstr "`T.use_swizzle(panel_size=..., enable=True)`：光栅化提示。"
 
 #: ../../../programming_guides/instructions.md:186
 msgid "`T.annotate_layout({...})`: Attach explicit layouts to buffers."
-msgstr ""
+msgstr "`T.annotate_layout({...})`：为缓冲区附加显式布局。"
 
 #: ../../../programming_guides/instructions.md:187
 msgid "`T.annotate_safe_value(var, ...)`: Safety/const hints."
-msgstr ""
+msgstr "`T.annotate_safe_value(var, ...)`：安全性/常量提示。"
 
 #: ../../../programming_guides/instructions.md:188
 msgid "`T.annotate_l2_hit_ratio(buf, ratio)`: Cache behavior hint."
-msgstr ""
+msgstr "`T.annotate_l2_hit_ratio(buf, ratio)`：缓存行为提示。"
 
 #: ../../../programming_guides/instructions.md:190
 msgid "Synchronization helpers"
-msgstr ""
+msgstr "同步辅助函数"
 
 #: ../../../programming_guides/instructions.md:191
 msgid ""
 "`T.sync_threads([barrier_id, arrive_count])`: Block-wide barrier "
 "(`__syncthreads()`)."
 msgstr ""
+"`T.sync_threads([barrier_id, arrive_count])`：块级屏障（`__syncthreads()`）。"
 
 #: ../../../programming_guides/instructions.md:192
 msgid "`T.sync_warp([mask])`: Warp-wide barrier (`__syncwarp([mask])`)."
-msgstr ""
+msgstr "`T.sync_warp([mask])`：Warp 级屏障（`__syncwarp([mask])`）。"
 
 #: ../../../programming_guides/instructions.md:193
 msgid ""
 "`T.sync_grid()`: Cooperative grid barrier (requires cooperative launch)."
 msgstr ""
+"`T.sync_grid()`：协作 Grid 屏障（需要配合 cooperative launch 使用）。"
 
 #: ../../../programming_guides/instructions.md:194
 msgid ""
 "`T.pdl_trigger()`: Signal programmatic launch completion for the current "
 "kernel."
 msgstr ""
+"`T.pdl_trigger()`：发出当前内核的编程式启动完成信号。"
 
 #: ../../../programming_guides/instructions.md:195
 msgid "`T.pdl_sync()`: Wait until kernel dependencies are satisfied."
-msgstr ""
+msgstr "`T.pdl_sync()`：等待直到内核依赖关系得以满足。"
 
 #: ../../../programming_guides/instructions.md:197
 msgid "Warp-vote / warp-ballot (CUDA ≥ 9 / HIP)"
-msgstr ""
+msgstr "Warp 投票 / Warp 表决（CUDA ≥ 9 / HIP）"
 
 #: ../../../programming_guides/instructions.md:198
 msgid ""
 "`T.any_sync(predicate[, mask])` → `int32`: Non-zero if ANY lane in `mask` "
 "has non-zero predicate (`__any_sync`). `mask` defaults to `0xFFFFFFFF`."
 msgstr ""
+"`T.any_sync(predicate[, mask])` → `int32`：如果 `mask` 中任一通道具有非零"
+"谓词，则返回非零值（`__any_sync`）。`mask` 默认为 `0xFFFFFFFF`。"
 
 #: ../../../programming_guides/instructions.md:199
 msgid ""
 "`T.all_sync(predicate[, mask])` → `int32`: Non-zero if ALL lanes in `mask` "
 "have non-zero predicate (`__all_sync`). `mask` defaults to `0xFFFFFFFF`."
 msgstr ""
+"`T.all_sync(predicate[, mask])` → `int32`：如果 `mask` 中所有通道都具有非零"
+"谓词，则返回非零值（`__all_sync`）。`mask` 默认为 `0xFFFFFFFF`。"
 
 #: ../../../programming_guides/instructions.md:200
 msgid ""
@@ -548,82 +646,108 @@ msgid ""
 "HIP: `__ballot` returns natively as `uint64`, covering all 64 wavefront "
 "lanes. `mask` defaults to `0xFFFFFFFF`."
 msgstr ""
+"`T.ballot_sync(predicate[, mask])` → `uint64`：`mask` 中具有非零谓词的通道"
+"位掩码。CUDA：`__ballot_sync` 零扩展至 64 位；HIP：`__ballot` 原生返回 "
+"`uint64`，覆盖全部 64 个 wavefront 通道。`mask` 默认为 `0xFFFFFFFF`。"
 
 #: ../../../programming_guides/instructions.md:201
 msgid ""
 "`T.ballot(predicate)` → `uint64`: Full-warp/wavefront ballot (mask = "
 "`0xFFFFFFFF`). No truncation on HIP."
 msgstr ""
+"`T.ballot(predicate)` → `uint64`：全 Warp/Wavefront 表决（mask = "
+"`0xFFFFFFFF`）。HIP 上不会截断。"
 
 #: ../../../programming_guides/instructions.md:202
 msgid ""
 "`T.activemask()` → `uint64`: Bitmask of currently active lanes. CUDA: "
 "`__activemask` zero-extended to 64 bits; HIP: `__ballot(1)` as `uint64`."
 msgstr ""
+"`T.activemask()` → `uint64`：当前活跃通道的位掩码。CUDA：`__activemask` "
+"零扩展至 64 位；HIP：`__ballot(1)` 作为 `uint64`。"
 
 #: ../../../programming_guides/instructions.md:204
 msgid "Block-wide predicated sync"
-msgstr ""
+msgstr "块级谓词同步"
 
 #: ../../../programming_guides/instructions.md:205
 msgid ""
 "`T.syncthreads_count(predicate)` → `int32`: Sync all threads; return count "
 "with non-zero predicate (`__syncthreads_count`)."
 msgstr ""
+"`T.syncthreads_count(predicate)` → `int32`：同步所有线程；返回具有非零谓词"
+"的线程计数（`__syncthreads_count`）。"
 
 #: ../../../programming_guides/instructions.md:206
 msgid ""
 "`T.syncthreads_and(predicate)` → `int32`: Sync; non-zero iff ALL threads "
 "have non-zero predicate (`__syncthreads_and`)."
 msgstr ""
+"`T.syncthreads_and(predicate)` → `int32`：同步；当且仅当所有线程都具有非零"
+"谓词时返回非零值（`__syncthreads_and`）。"
 
 #: ../../../programming_guides/instructions.md:207
 msgid ""
 "`T.syncthreads_or(predicate)` → `int32`: Sync; non-zero iff ANY thread has "
 "non-zero predicate (`__syncthreads_or`)."
 msgstr ""
+"`T.syncthreads_or(predicate)` → `int32`：同步；当且仅当任一线程具有非零"
+"谓词时返回非零值（`__syncthreads_or`）。"
 
 #: ../../../programming_guides/instructions.md:209
 msgid ""
 "Warp-shuffle (intra-warp data exchange). All accept a trailing `mask` kwarg "
 "that defaults to `0xFFFFFFFF`."
 msgstr ""
+"Warp 混洗（Warp 内数据交换）。所有函数均接受一个末尾的 `mask` 关键字参数，"
+"默认为 `0xFFFFFFFF`。"
 
 #: ../../../programming_guides/instructions.md:210
 msgid ""
 "`T.shfl_sync(value, src_lane[, width, mask])`: Broadcast value from "
 "`src_lane` to all lanes (`__shfl_sync`)."
 msgstr ""
+"`T.shfl_sync(value, src_lane[, width, mask])`：将 `src_lane` 的值广播到所有通道"
+"（`__shfl_sync`）。"
 
 #: ../../../programming_guides/instructions.md:211
 msgid ""
 "`T.shfl_xor(value, delta[, width, mask])`: XOR-swap across lanes "
 "(`__shfl_xor_sync`)."
 msgstr ""
+"`T.shfl_xor(value, delta[, width, mask])`：跨通道 XOR 交换"
+"（`__shfl_xor_sync`）。"
 
 #: ../../../programming_guides/instructions.md:212
 msgid ""
 "`T.shfl_down(value, delta[, width, mask])`: Shift down by `delta` lanes "
 "(`__shfl_down_sync`)."
 msgstr ""
+"`T.shfl_down(value, delta[, width, mask])`：向下移动 `delta` 个通道"
+"（`__shfl_down_sync`）。"
 
 #: ../../../programming_guides/instructions.md:213
 msgid ""
 "`T.shfl_up(value, delta[, width, mask])`: Shift up by `delta` lanes "
 "(`__shfl_up_sync`)."
 msgstr ""
+"`T.shfl_up(value, delta[, width, mask])`：向上移动 `delta` 个通道"
+"（`__shfl_up_sync`）。"
 
 #: ../../../programming_guides/instructions.md:215
 msgid ""
 "Warp-match (CUDA sm_70+, not supported on HIP). `mask` defaults to "
 "`0xFFFFFFFF`."
 msgstr ""
+"Warp 匹配（CUDA sm_70+，HIP 不支持）。`mask` 默认为 `0xFFFFFFFF`。"
 
 #: ../../../programming_guides/instructions.md:216
 msgid ""
 "`T.match_any_sync(value[, mask])` → `uint32`: Bitmask of lanes in `mask` "
 "whose `value` matches the calling lane's (`__match_any_sync`)."
 msgstr ""
+"`T.match_any_sync(value[, mask])` → `uint32`：`mask` 中其 `value` 与调用"
+"通道匹配的通道的位掩码（`__match_any_sync`）。"
 
 #: ../../../programming_guides/instructions.md:217
 msgid ""
@@ -631,6 +755,9 @@ msgid ""
 "`mask` agree on `value`, else 0 (`__match_all_sync`). The C-level `int*` "
 "predicate output is hidden; reconstruct it as `result != 0`."
 msgstr ""
+"`T.match_all_sync(value[, mask])` → `uint32`：如果 `mask` 中所有通道在 "
+"`value` 上一致，则返回 `mask`，否则返回 0（`__match_all_sync`）。C 级别的 "
+"`int*` 谓词输出被隐藏；可通过 `result != 0` 来重建它。"
 
 #: ../../../programming_guides/instructions.md:219
 msgid ""
@@ -642,144 +769,166 @@ msgid ""
 "signatures on both platforms. `match_any_sync` and `match_all_sync` have no "
 "HIP equivalent and will fail to codegen on HIP."
 msgstr ""
+"**HIP 注意事项：** `any_sync`/`all_sync` 忽略掩码，直接调用 `__any`/"
+"`__all`。`ballot_sync`、`ballot` 和 `activemask` 调用 `__ballot`，"
+"在 64 线程 wavefront 上原生返回 `uint64`——不会发生截断。混洗内建函数"
+"lowering 为 `__shfl`/`__shfl_xor`/`__shfl_down`/`__shfl_up`（掩码被忽略）。"
+"`syncthreads_count/and/or` 在两个平台上具有相同的签名。`match_any_sync` 和 "
+"`match_all_sync` 没有 HIP 等价实现，在 HIP 上 codegen 会失败。"
 
 #: ../../../programming_guides/instructions.md:221
 msgid "Atomics"
-msgstr ""
+msgstr "原子操作"
 
 #: ../../../programming_guides/instructions.md:222
 msgid ""
 "`T.atomic_add(dst, value, memory_order=None, return_prev=False, "
 "use_tma=False)`."
 msgstr ""
+"`T.atomic_add(dst, value, memory_order=None, return_prev=False, "
+"use_tma=False)`。"
 
 #: ../../../programming_guides/instructions.md:223
 msgid "`T.atomic_addx2(dst, value, return_prev=False)`; `T.atomic_addx4(...)`."
-msgstr ""
+msgstr "`T.atomic_addx2(dst, value, return_prev=False)`；`T.atomic_addx4(...)`。"
 
 #: ../../../programming_guides/instructions.md:224
 msgid "`T.atomic_max(dst, value, memory_order=None, return_prev=False)`."
-msgstr ""
+msgstr "`T.atomic_max(dst, value, memory_order=None, return_prev=False)`。"
 
 #: ../../../programming_guides/instructions.md:225
 msgid "`T.atomic_min(dst, value, memory_order=None, return_prev=False)`."
-msgstr ""
+msgstr "`T.atomic_min(dst, value, memory_order=None, return_prev=False)`。"
 
 #: ../../../programming_guides/instructions.md:226
 msgid "`T.atomic_load(dst)`, `T.atomic_store(dst, value)`."
-msgstr ""
+msgstr "`T.atomic_load(dst)`、`T.atomic_store(dst, value)`。"
 
 #: ../../../programming_guides/instructions.md:228
 msgid "Custom intrinsics"
-msgstr ""
+msgstr "自定义内建函数"
 
 #: ../../../programming_guides/instructions.md:229
 msgid "`T.dp4a(A, B, C)`: 4‑element dot‑product accumulate."
-msgstr ""
+msgstr "`T.dp4a(A, B, C)`：4 元素点积累加。"
 
 #: ../../../programming_guides/instructions.md:230
 msgid "`T.clamp(x, lo, hi)`: Clamp to [lo, hi]."
-msgstr ""
+msgstr "`T.clamp(x, lo, hi)`：钳位到 [lo, hi] 区间。"
 
 #: ../../../programming_guides/instructions.md:231
 msgid "`T.loop_break()`: Break from current loop via intrinsic."
-msgstr ""
+msgstr "`T.loop_break()`：通过内建函数从当前循环中退出。"
 
 #: ../../../programming_guides/instructions.md:233
 msgid "Barriers, TMA, warp‑group"
-msgstr ""
+msgstr "屏障、TMA、Warp 组"
 
 #: ../../../programming_guides/instructions.md:234
 msgid "Barriers: `T.alloc_barrier(arrive_count)`."
-msgstr ""
+msgstr "屏障：`T.alloc_barrier(arrive_count)`。"
 
 #: ../../../programming_guides/instructions.md:235
 msgid ""
 "Parity ops: `T.mbarrier_wait_parity(barrier, parity)`, `T."
 "mbarrier_arrive(barrier)`."
 msgstr ""
+"奇偶校验操作：`T.mbarrier_wait_parity(barrier, parity)`、`T."
+"mbarrier_arrive(barrier)`。"
 
 #: ../../../programming_guides/instructions.md:236
 msgid ""
 "Expect tx: `T.mbarrier_expect_tx(...)`; sugar: `T.barrier_wait(id, "
 "parity=None)`."
 msgstr ""
+"期望事务：`T.mbarrier_expect_tx(...)`；语法糖：`T.barrier_wait(id, "
+"parity=None)`。"
 
 #: ../../../programming_guides/instructions.md:237
 msgid ""
 "TMA: `T.create_tma_descriptor(...)`, `T.tma_load(...)`, `T."
 "tma_store_arrive(...)`, `T.tma_store_wait(...)`."
 msgstr ""
+"TMA：`T.create_tma_descriptor(...)`、`T.tma_load(...)`、`T."
+"tma_store_arrive(...)`、`T.tma_store_wait(...)`。"
 
 #: ../../../programming_guides/instructions.md:239
 msgid ""
 "Proxy/fences: `T.fence_proxy_async(...)`, `T.warpgroup_fence_operand(...)`."
 msgstr ""
+"代理/栅栏：`T.fence_proxy_async(...)`、`T.warpgroup_fence_operand(...)`。"
 
 #: ../../../programming_guides/instructions.md:240
 msgid ""
 "Warp‑group: `T.warpgroup_arrive()`, `T.warpgroup_commit_batch()`, `T."
 "warpgroup_wait(num_mma)`, `T.wait_wgmma(id)`."
 msgstr ""
+"Warp 组：`T.warpgroup_arrive()`、`T.warpgroup_commit_batch()`、`T."
+"warpgroup_wait(num_mma)`、`T.wait_wgmma(id)`。"
 
 #: ../../../programming_guides/instructions.md:243
 msgid "Lane/warp index"
-msgstr ""
+msgstr "通道/Warp 索引"
 
 #: ../../../programming_guides/instructions.md:244
 msgid "`T.get_lane_idx(warp_size=None)`: Lane id in warp."
-msgstr ""
+msgstr "`T.get_lane_idx(warp_size=None)`：Warp 内的通道 ID。"
 
 #: ../../../programming_guides/instructions.md:245
 msgid "`T.get_warp_idx_sync(warp_size=None)`: Canonical warp id (sync)."
-msgstr ""
+msgstr "`T.get_warp_idx_sync(warp_size=None)`：规范 Warp ID（同步）。"
 
 #: ../../../programming_guides/instructions.md:246
 msgid "`T.get_warp_idx(warp_size=None)`: Canonical warp id (no sync)."
-msgstr ""
+msgstr "`T.get_warp_idx(warp_size=None)`：规范 Warp ID（无同步）。"
 
 #: ../../../programming_guides/instructions.md:247
 msgid "`T.get_warp_group_idx(warp_size=None, warps_per_group=None)`: Group id."
-msgstr ""
+msgstr "`T.get_warp_group_idx(warp_size=None, warps_per_group=None)`：组 ID。"
 
 #: ../../../programming_guides/instructions.md:249
 msgid "Register control"
-msgstr ""
+msgstr "寄存器控制"
 
 #: ../../../programming_guides/instructions.md:250
 msgid ""
 "`T.set_max_nreg(reg_count, is_inc)`, `T.inc_max_nreg(n)`, `T."
 "dec_max_nreg(n)`."
 msgstr ""
+"`T.set_max_nreg(reg_count, is_inc)`、`T.inc_max_nreg(n)`、`T."
+"dec_max_nreg(n)`。"
 
 #: ../../../programming_guides/instructions.md:251
 msgid ""
 "`T.annotate_producer_reg_dealloc(n=24)`, `T."
 "annotate_consumer_reg_alloc(n=240)`."
 msgstr ""
+"`T.annotate_producer_reg_dealloc(n=24)`、`T."
+"annotate_consumer_reg_alloc(n=240)`。"
 
 #: ../../../programming_guides/instructions.md:252
 msgid "`T.no_set_max_nreg()`, `T.disable_warp_group_reg_alloc()`."
-msgstr ""
+msgstr "`T.no_set_max_nreg()`、`T.disable_warp_group_reg_alloc()`。"
 
 #: ../../../programming_guides/instructions.md:254
 msgid "Notes on Dtypes"
-msgstr ""
+msgstr "数据类型说明"
 
 #: ../../../programming_guides/instructions.md:256
 msgid "Dtypes accept three equivalent forms:"
-msgstr ""
+msgstr "数据类型接受三种等价形式："
 
 #: ../../../programming_guides/instructions.md:257
 msgid "String: `'float32'`"
-msgstr ""
+msgstr "字符串：`'float32'`"
 
 #: ../../../programming_guides/instructions.md:258
 msgid "TileLang dtype: `T.float32`"
-msgstr ""
+msgstr "TileLang 数据类型：`T.float32`"
 
 #: ../../../programming_guides/instructions.md:259
 msgid ""
 "Framework dtype: `torch.float32` All are normalized internally. See Type "
 "System for details."
 msgstr ""
+"框架数据类型：`torch.float32`。内部均会标准化。详情请参见类型系统文档。"

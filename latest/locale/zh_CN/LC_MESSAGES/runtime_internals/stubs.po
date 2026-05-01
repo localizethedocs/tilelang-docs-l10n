@@ -19,21 +19,22 @@ msgstr ""
 
 #: ../../../runtime_internals/stubs.md:1
 msgid "CUDA and ROCm Stub Libraries"
-msgstr ""
+msgstr "CUDA 和 ROCm 存根库"
 
 #: ../../../runtime_internals/stubs.md:3
 msgid ""
 "This document describes TileLang's stub mechanism for GPU driver/runtime "
 "libraries (CUDA and ROCm/HIP)."
 msgstr ""
+"本文档描述了 TileLang 针对 GPU 驱动/运行时库（CUDA 和 ROCm/HIP）的存根机制。"
 
 #: ../../../runtime_internals/stubs.md:6
 msgid "Purpose"
-msgstr ""
+msgstr "目的"
 
 #: ../../../runtime_internals/stubs.md:8
 msgid "CUDA:"
-msgstr ""
+msgstr "CUDA："
 
 #: ../../../runtime_internals/stubs.md:10
 msgid ""
@@ -41,6 +42,7 @@ msgid ""
 "without a GPU (e.g., CI/compilation nodes) by lazy-loading `libcuda.so` only "
 "when needed."
 msgstr ""
+"**CUDA 驱动（`cuda_stub`）**：允许在无 GPU 的系统上（例如 CI/编译节点）导入 TileLang，仅在需要时延迟加载 `libcuda.so`。"
 
 #: ../../../runtime_internals/stubs.md:13
 msgid ""
@@ -50,10 +52,11 @@ msgid ""
 "achieved by reusing CUDA libraries already loaded by frameworks like PyTorch "
 "when possible."
 msgstr ""
+"**CUDA 运行时和编译器（`cudart_stub`、`nvrtc_stub`）**：解决 SONAME 版本不匹配问题（例如 `libcudart.so.11` 与 `libcudart.so.12`），使单个构建能够跨不同 CUDA 版本工作。这是通过尽可能重用已由 PyTorch 等框架加载的 CUDA 库来实现的。"
 
 #: ../../../runtime_internals/stubs.md:19
 msgid "ROCm:"
-msgstr ""
+msgstr "ROCm："
 
 #: ../../../runtime_internals/stubs.md:21
 msgid ""
@@ -62,26 +65,28 @@ msgid ""
 "needed. The stub also prefers already-loaded symbols via `RTLD_DEFAULT` / "
 "`RTLD_NEXT` to interoperate with frameworks that have already loaded HIP."
 msgstr ""
+"**HIP 运行时/模块 API（`hip_stub`）**：允许在未安装 ROCm 的系统上导入 TileLang，仅在需要时延迟加载 `libamdhip64.so`。存根还通过 `RTLD_DEFAULT` / `RTLD_NEXT` 优先使用已加载的符号，以便与已加载 HIP 的框架进行互操作。"
 
 #: ../../../runtime_internals/stubs.md:25
 msgid ""
 "**HIP Runtime Compiler (`hiprtc_stub`)**: Lazily loads `libhiprtc.so` and "
 "exposes the minimal HIPRTC API subset used by TileLang/TVM."
 msgstr ""
+"**HIP 运行时编译器（`hiprtc_stub`）**：延迟加载 `libhiprtc.so`，并暴露 TileLang/TVM 使用的最小 HIPRTC API 子集。"
 
 #: ../../../runtime_internals/stubs.md:28
 msgid "Implementation"
-msgstr ""
+msgstr "实现"
 
 #: ../../../runtime_internals/stubs.md:30
 msgid "The stubs in `src/target/stubs/` implement a lazy-loading mechanism:"
-msgstr ""
+msgstr "`src/target/stubs/` 中的存根实现了一种延迟加载机制："
 
 #: ../../../runtime_internals/stubs.md:32
 msgid ""
 "**Lazy Loading**: Libraries are loaded via `dlopen` only upon the first API "
 "call."
-msgstr ""
+msgstr "**延迟加载**：仅在第一次 API 调用时通过 `dlopen` 加载库。"
 
 #: ../../../runtime_internals/stubs.md:33
 msgid ""
@@ -89,6 +94,7 @@ msgid ""
 "global namespace (`RTLD_DEFAULT`) to use any already loaded symbols (e.g., "
 "from PyTorch)."
 msgstr ""
+"**全局符号重用**：对于 `cudart` 和 `nvrtc`，存根首先检查全局命名空间（`RTLD_DEFAULT`）以使用已加载的符号（例如来自 PyTorch）。"
 
 #: ../../../runtime_internals/stubs.md:34
 msgid ""
@@ -97,16 +103,17 @@ msgid ""
 "wrappers for `hsa_init` / `hsa_shut_down` so that ROCm-enabled wheels do not "
 "record a hard dependency on `libhsa-runtime64` at import time."
 msgstr ""
+"**ROCm 说明**：`hip_stub` 首先检查 `RTLD_DEFAULT` / `RTLD_NEXT`，然后回退到 `dlopen(\"libamdhip64.so\")`。它还提供了 `hsa_init` / `hsa_shut_down` 的封装，以便启用 ROCm 的 wheel 在导入时不会记录对 `libhsa-runtime64` 的硬依赖。"
 
 #: ../../../runtime_internals/stubs.md:38
 msgid ""
 "**Versioning Support**: Handles ABI differences between CUDA versions (e.g., "
 "`cudaGraphInstantiate` changes in CUDA 12)."
-msgstr ""
+msgstr "**版本支持**：处理 CUDA 版本之间的 ABI 差异（例如 CUDA 12 中的 `cudaGraphInstantiate` 变更）。"
 
 #: ../../../runtime_internals/stubs.md:40
 msgid "Build Option"
-msgstr ""
+msgstr "构建选项"
 
 #: ../../../runtime_internals/stubs.md:42
 msgid ""
@@ -114,6 +121,7 @@ msgid ""
 "TileLang links against these stubs instead of the system CUDA toolkit "
 "libraries."
 msgstr ""
+"`TILELANG_USE_CUDA_STUBS`（默认：`ON`）控制 CUDA 存根。启用后，TileLang 链接这些存根而不是系统 CUDA 工具包库。"
 
 #: ../../../runtime_internals/stubs.md:45
 msgid ""
@@ -121,3 +129,4 @@ msgid ""
 "(and `USE_ROCM=ON`), TileLang/TVM link against `hip_stub` / `hiprtc_stub` "
 "instead of the system ROCm libraries."
 msgstr ""
+"`TILELANG_USE_HIP_STUBS`（默认：`ON`）控制 ROCm 存根。启用后（且 `USE_ROCM=ON`），TileLang/TVM 链接 `hip_stub` / `hiprtc_stub` 而不是系统 ROCm 库。"

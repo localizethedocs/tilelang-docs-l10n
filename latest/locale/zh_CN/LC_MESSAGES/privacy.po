@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../../privacy.md:1
 msgid "Privacy"
-msgstr ""
+msgstr "隐私政策"
 
 #: ../../../privacy.md:3
 msgid "All data stays in users' device and is not collected by the app."
-msgstr ""
+msgstr "所有数据均保留在用户设备上，应用程序不会收集任何数据。"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025-2025, Tile Lang Contributors
-# This file is distributed under the same license as the Tile Language <br> package.
+# This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../compiler_internals/tensor_checks.md:1
 msgid "Tensor Checks (Host-Side Auto-Validation)"
-msgstr ""
+msgstr "张量检查（主机端自动验证）"
 
 #: ../../../compiler_internals/tensor_checks.md:3
 msgid ""
@@ -31,215 +31,218 @@ msgid ""
 "significantly reduces Python overhead compared to doing equivalent checks in "
 "Python or via pybind."
 msgstr ""
+"本页解释了 TileLang 自动插入到生成的内核主机存根中的主机端检查。当你将 `torch.Tensor` 或任何 DLPack 兼容对象传递给 TileLang 内核时，主机存根会验证参数数量、指针类型、数据类型、形状、步长、设备等——因此你无需手写 Python 检查。这保持了 ABI 稳定性，并显著减少了与在 Python 中或通过 pybind 执行等效检查相比的 Python 开销。"
 
 #: ../../../compiler_internals/tensor_checks.md:5
 msgid "Why Host-Side Checks"
-msgstr ""
+msgstr "为什么需要主机端检查"
 
 #: ../../../compiler_internals/tensor_checks.md:6
 msgid ""
 "ABI stability: the entry is based on TVM FFI + DLPack, consistently "
 "accepting tensors and scalars."
-msgstr ""
+msgstr "ABI 稳定性：入口基于 TVM FFI + DLPack，一致地接受张量和标量。"
 
 #: ../../../compiler_internals/tensor_checks.md:7
 msgid ""
 "Lower overhead: shifting checks from Python into C reduces interpreter/"
 "property-access costs; the call overhead is lower than pybind-based "
 "approaches."
-msgstr ""
+msgstr "更低的开销：将检查从 Python 转移到 C 中减少了解释器/属性访问成本；调用开销低于基于 pybind 的方法。"
 
 #: ../../../compiler_internals/tensor_checks.md:8
-msgid ""
-"Focused error reporting: assertions are raised close to the call site with "
-"precise “which field failed” messages."
-msgstr ""
+msgid “”
+“Focused error reporting: assertions are raised close to the call site with “
+“precise “which field failed” messages.”
+msgstr “精准的错误报告：断言在调用点附近抛出，并带有精确的”哪个字段失败”消息。”
 
 #: ../../../compiler_internals/tensor_checks.md:10
 msgid "How To Inspect Host Source"
-msgstr ""
+msgstr "如何检查主机源代码"
 
 #: ../../../compiler_internals/tensor_checks.md:11
 msgid ""
 "You can inspect the auto-generated host source (with all checks and the "
 "final device-kernel call) for debugging:"
 msgstr ""
+"你可以检查自动生成的主机源代码（包含所有检查和最终的设备内核调用）以进行调试："
 
 #: ../../../compiler_internals/tensor_checks.md:13
 msgid "print(matmul_relu_kernel.get_host_source())\n"
-msgstr ""
+msgstr "print(matmul_relu_kernel.get_host_source())\n"
 
 #: ../../../compiler_internals/tensor_checks.md:19
 msgid "What The Host Checks"
-msgstr ""
+msgstr "主机检查的内容"
 
 #: ../../../compiler_internals/tensor_checks.md:21
 msgid "1) Argument count and pointer kind"
-msgstr ""
+msgstr "1) 参数数量和指针类型"
 
 #: ../../../compiler_internals/tensor_checks.md:22
 msgid ""
 "`num_args` must match the number of formal parameters; otherwise the kernel "
 "returns `-1` with an error message."
 msgstr ""
+"`num_args` 必须与形式参数的数量匹配；否则内核返回 `-1` 并附带错误消息。"
 
 #: ../../../compiler_internals/tensor_checks.md:23
 msgid ""
 "Each argument’s FFI type must be a pointer kind (for DLTensor/handle) or a "
 "valid scalar type; otherwise you’ll see errors like `Expect arg[i] to be "
 "pointer` or a scalar type error."
-msgstr ""
+msgstr "每个参数的 FFI 类型必须是指针类型（对于 DLTensor/句柄）或有效的标量类型；否则你会看到类似 `Expect arg[i] to be pointer` 或标量类型错误的提示。"
 
 #: ../../../compiler_internals/tensor_checks.md:25
 msgid "2) Tensor checks (per tensor, after nullability decision)"
-msgstr ""
+msgstr "2) 张量检查（逐个张量，在可空性判定之后）"
 
 #: ../../../compiler_internals/tensor_checks.md:26
 msgid "Nullability"
-msgstr ""
+msgstr "可空性"
 
 #: ../../../compiler_internals/tensor_checks.md:27
 msgid ""
 "If the tensor is “statically reachable/used” by the function body, the "
 "handle must be non-NULL; otherwise: `xxx is expected to have non-NULL "
 "pointer`."
-msgstr ""
+msgstr "如果张量在函数体中是“静态可达/使用”的，则句柄必须为非 NULL；否则：`xxx is expected to have non-NULL pointer`。"
 
 #: ../../../compiler_internals/tensor_checks.md:28
 msgid ""
 "If an input tensor is not used by the function (statically unreachable), "
 "NULL is allowed; other field checks are executed only when `handle != NULL`."
-msgstr ""
+msgstr "如果输入张量未被函数使用（静态不可达），则允许为 NULL；仅在 `handle != NULL` 时才执行其他字段检查。"
 
 #: ../../../compiler_internals/tensor_checks.md:29
 msgid "Rank (`ndim`)"
-msgstr ""
+msgstr "秩（`ndim`）"
 
 #: ../../../compiler_internals/tensor_checks.md:30
 msgid "Runtime `ndim` must equal the compile-time rank."
-msgstr ""
+msgstr "运行时 `ndim` 必须等于编译时秩。"
 
 #: ../../../compiler_internals/tensor_checks.md:31
 msgid "Data type (`dtype`)"
-msgstr ""
+msgstr "数据类型（`dtype`）"
 
 #: ../../../compiler_internals/tensor_checks.md:32
 msgid "Match the triple `(code, bits, lanes)` with tolerance:"
-msgstr ""
+msgstr "匹配三元组 `(code, bits, lanes)`，容差如下："
 
 #: ../../../compiler_internals/tensor_checks.md:33
 msgid "`float8_e4m3`: accept `e4m3`, `e4m3fn`, `e4m3fnuz`."
-msgstr ""
+msgstr "`float8_e4m3`：接受 `e4m3`、`e4m3fn`、`e4m3fnuz`。"
 
 #: ../../../compiler_internals/tensor_checks.md:34
 msgid "`float8_e5m2`: accept `e5m2`, `e5m2fnuz`."
-msgstr ""
+msgstr "`float8_e5m2`：接受 `e5m2`、`e5m2fnuz`。"
 
 #: ../../../compiler_internals/tensor_checks.md:35
 msgid ""
 "`bool`: accept `int8/uint8` with `bits=8` (same lanes), `kDLBool(code=6, "
 "bits=1 or 8)`, and any `bitwidth=1` (lanes must match)."
-msgstr ""
+msgstr "`bool`：接受 `int8/uint8`（`bits=8`，相同 lanes）、`kDLBool(code=6, bits=1 or 8)`，以及任何 `bitwidth=1`（lanes 必须匹配）。"
 
 #: ../../../compiler_internals/tensor_checks.md:36
 msgid ""
 "For packed-bit dtypes (e.g., `Int(1)`, `Int(4)`, `UInt(4)`), strict dtype "
 "checking is skipped."
-msgstr ""
+msgstr "对于打包位数据类型（例如 `Int(1)`、`Int(4)`、`UInt(4)`），跳过严格的数据类型检查。"
 
 #: ../../../compiler_internals/tensor_checks.md:37
 #: ../../../compiler_internals/tensor_checks.md:221
 msgid "Shape"
-msgstr ""
+msgstr "形状"
 
 #: ../../../compiler_internals/tensor_checks.md:38
 msgid ""
 "Each runtime dimension is bound to the compile-time shape (constants or "
 "symbols) and checked for consistency."
-msgstr ""
+msgstr "每个运行时维度都绑定到编译时形状（常量或符号）并进行一致性检查。"
 
 #: ../../../compiler_internals/tensor_checks.md:39
 msgid ""
 "Linear equations among symbolic dims can be solved on the fly (when there’s "
 "only one unknown at a given check point), enabling cross-tensor constraints."
-msgstr ""
+msgstr "符号维度之间的线性方程可以在运行时求解（当在给定检查点只有一个未知数时），从而实现跨张量的约束检查。"
 
 #: ../../../compiler_internals/tensor_checks.md:40
 #: ../../../compiler_internals/tensor_checks.md:223
 msgid "Strides"
-msgstr ""
+msgstr "步长"
 
 #: ../../../compiler_internals/tensor_checks.md:41
 msgid ""
 "If `buffer_type = AutoBroadcast`: allow `strides == NULL` and derive strides "
 "from `shape`. If explicit `strides` is present, bind to compile-time "
 "constraints and check for equality."
-msgstr ""
+msgstr "如果 `buffer_type = AutoBroadcast`：允许 `strides == NULL` 并从 `shape` 推导步长。如果提供了显式 `strides`，则绑定到编译时约束并检查相等性。"
 
 #: ../../../compiler_internals/tensor_checks.md:42
 msgid ""
 "Otherwise: check per-dimension; if `strides == NULL`, derive from `shape` "
 "and compare (e.g., contiguous: `strides[-1] == 1`, `strides[-2] == "
 "shape[-1]`)."
-msgstr ""
+msgstr "否则：逐维度检查；如果 `strides == NULL`，则从 `shape` 推导并比较（例如，连续的：`strides[-1] == 1`、`strides[-2] == shape[-1]`）。"
 
 #: ../../../compiler_internals/tensor_checks.md:43
 msgid "`byte_offset`"
-msgstr ""
+msgstr "`byte_offset`"
 
 #: ../../../compiler_internals/tensor_checks.md:44
 msgid ""
 "Must be 0 (non-zero raises an error) to keep addressing simple and aligned."
-msgstr ""
+msgstr "必须为 0（非零则引发错误），以保持寻址简单和对齐。"
 
 #: ../../../compiler_internals/tensor_checks.md:45
 msgid "Device info"
-msgstr ""
+msgstr "设备信息"
 
 #: ../../../compiler_internals/tensor_checks.md:46
 msgid ""
 "Assert `device_type == target backend` (CUDA/ROCM/Metal/OneAPI/WebGPU/CPU, "
 "etc.). Error messages include a DLPack code legend."
-msgstr ""
+msgstr "断言 `device_type == target backend`（CUDA/ROCM/Metal/OneAPI/WebGPU/CPU 等）。错误消息包含 DLPack 代码说明。"
 
 #: ../../../compiler_internals/tensor_checks.md:47
 msgid ""
 "When multiple tensors participate, assert that `device_id` matches across "
 "them."
-msgstr ""
+msgstr "当有多个张量参与时，断言 `device_id` 在它们之间保持一致。"
 
 #: ../../../compiler_internals/tensor_checks.md:48
 #: ../../../compiler_internals/tensor_checks.md:229
 msgid "Data pointer"
-msgstr ""
+msgstr "数据指针"
 
 #: ../../../compiler_internals/tensor_checks.md:49
 msgid ""
 "Must be non-NULL when the tensor is required to be non-null by the "
 "nullability rule."
-msgstr ""
+msgstr "当张量根据可空性规则要求为非 NULL 时，必须为非 NULL。"
 
 #: ../../../compiler_internals/tensor_checks.md:51
 msgid "3) Scalar checks"
-msgstr ""
+msgstr "3) 标量检查"
 
 #: ../../../compiler_internals/tensor_checks.md:52
 msgid "`T.int*` family: require integer; error: `Expect arg[i] to be int`."
-msgstr ""
+msgstr "`T.int*` 系列：要求为整数；错误：`Expect arg[i] to be int`。"
 
 #: ../../../compiler_internals/tensor_checks.md:53
 msgid "`T.bool`: require boolean; error: `Expect arg[i] to be boolean`."
-msgstr ""
+msgstr "`T.bool`：要求为布尔值；错误：`Expect arg[i] to be boolean`。"
 
 #: ../../../compiler_internals/tensor_checks.md:57
 msgid "Shapes and Symbolic Equations: Linear Solving"
-msgstr ""
+msgstr "形状与符号方程：线性求解"
 
 #: ../../../compiler_internals/tensor_checks.md:58
 msgid ""
 "When shapes are symbolic, the host binds and (when possible) solves linear "
 "relations at runtime (only one unknown per check point). Example:"
-msgstr ""
+msgstr "当形状是符号化的时，主机在运行时绑定并（在可能时）求解线性关系（每个检查点只有一个未知数）。例如："
 
 #: ../../../compiler_internals/tensor_checks.md:60
 msgid ""
@@ -251,35 +254,43 @@ msgid ""
 "):\n"
 "    ...\n"
 msgstr ""
+"@T.prim_func\n"
+"def main(\n"
+"    A: T.Tensor((m,), dtype),\n"
+"    B: T.Tensor((m + n,), dtype),\n"
+"    C: T.Tensor((n * k,), dtype),\n"
+"):\n"
+"    ...\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:70
 msgid ""
 "This enables enforcing cross-tensor relationships like `len(B) == m + n` and "
 "`len(C) == n * k` at runtime."
-msgstr ""
+msgstr "这使得可以在运行时强制执行跨张量关系，如 `len(B) == m + n` 和 `len(C) == n * k`。"
 
 #: ../../../compiler_internals/tensor_checks.md:74
 msgid "Nullability Rules and Examples"
-msgstr ""
+msgstr "可空性规则和示例"
 
 #: ../../../compiler_internals/tensor_checks.md:75
 msgid "Which tensors may be NULL?"
-msgstr ""
+msgstr "哪些张量可以为 NULL？"
 
 #: ../../../compiler_internals/tensor_checks.md:77
 msgid ""
 "Rule: If an input tensor is not used by the function under static analysis "
 "(i.e., the access is statically unreachable), it is considered Nullable; "
 "otherwise it must be non-NULL."
-msgstr ""
+msgstr "规则：如果输入张量在静态分析下未被函数使用（即访问在静态上不可达），则被视为可空；否则必须为非 NULL。"
 
 #: ../../../compiler_internals/tensor_checks.md:78
 msgid "Examples:"
-msgstr ""
+msgstr "示例："
 
 #: ../../../compiler_internals/tensor_checks.md:80
 msgid "Must be non-NULL (used)"
-msgstr ""
+msgstr "必须为非 NULL（已使用）"
 
 #: ../../../compiler_internals/tensor_checks.md:81
 msgid ""
@@ -287,15 +298,19 @@ msgid ""
 "def main(A: T.Tensor((M, K), dtype)):\n"
 "    A[0] = 1\n"
 msgstr ""
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype)):\n"
+"    A[0] = 1\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:86
 msgid ""
 "Passing `None` raises: `main.A_handle is expected to have non-NULL pointer`."
-msgstr ""
+msgstr "传递 `None` 会引发：`main.A_handle is expected to have non-NULL pointer`。"
 
 #: ../../../compiler_internals/tensor_checks.md:88
 msgid "Still must be non-NULL (constant-true branch)"
-msgstr ""
+msgstr "仍必须为非 NULL（常量真分支）"
 
 #: ../../../compiler_internals/tensor_checks.md:89
 msgid ""
@@ -305,10 +320,16 @@ msgid ""
 "    if some_cond:\n"
 "        A[0] = 1\n"
 msgstr ""
+"some_cond: bool = True\n"
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype)):\n"
+"    if some_cond:\n"
+"        A[0] = 1\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:97
 msgid "Nullable (constant-false branch, statically unreachable)"
-msgstr ""
+msgstr "可空（常量假分支，静态不可达）"
 
 #: ../../../compiler_internals/tensor_checks.md:98
 msgid ""
@@ -318,10 +339,16 @@ msgid ""
 "    if some_cond:\n"
 "        A[0] = 1\n"
 msgstr ""
+"some_cond: bool = False\n"
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype)):\n"
+"    if some_cond:\n"
+"        A[0] = 1\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:106
 msgid "Must be non-NULL (runtime condition)"
-msgstr ""
+msgstr "必须为非 NULL（运行时条件）"
 
 #: ../../../compiler_internals/tensor_checks.md:107
 msgid ""
@@ -330,16 +357,21 @@ msgid ""
 "    if some_cond:\n"
 "        A[0] = 1\n"
 msgstr ""
+"@T.prim_func\n"
+"def main(A: T.Tensor((M, K), dtype), some_cond: T.bool):\n"
+"    if some_cond:\n"
+"        A[0] = 1\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:113
 msgid ""
 "Since `some_cond` is only known at runtime, static analysis cannot prove `A` "
 "is unused; `A` is thus non-nullable."
-msgstr ""
+msgstr "由于 `some_cond` 仅在运行时可知，静态分析无法证明 `A` 未被使用；因此 `A` 是不可空的。"
 
 #: ../../../compiler_internals/tensor_checks.md:117
 msgid "Device Type Codes (DLPack)"
-msgstr ""
+msgstr "设备类型代码（DLPack）"
 
 #: ../../../compiler_internals/tensor_checks.md:118
 msgid ""
@@ -347,208 +379,208 @@ msgid ""
 "7=Vulkan, 8=Metal, 10=ROCM, 14=OneAPI, 15=WebGPU`. Kernels assert that "
 "`device_type` matches the target backend, and require `device_id` "
 "consistency across tensors."
-msgstr ""
+msgstr "错误消息中支持并引用的设备代码：`1=CPU, 2=CUDA, 7=Vulkan, 8=Metal, 10=ROCM, 14=OneAPI, 15=WebGPU`。内核断言 `device_type` 与目标后端匹配，并要求张量之间的 `device_id` 保持一致。"
 
 #: ../../../compiler_internals/tensor_checks.md:123
 msgid "Common Error Examples (What you’ll see)"
-msgstr ""
+msgstr "常见错误示例（你将看到的内容）"
 
 #: ../../../compiler_internals/tensor_checks.md:124
 msgid "Argument count mismatch (num_args)"
-msgstr ""
+msgstr "参数数量不匹配 (num_args)"
 
 #: ../../../compiler_internals/tensor_checks.md:125
 msgid "Trigger: missing/extra argument"
-msgstr ""
+msgstr "触发条件：缺失或多余参数"
 
 #: ../../../compiler_internals/tensor_checks.md:126
 msgid "Error: `<kernel>: num_args should be N; expected: <num_args>, got: N`"
-msgstr ""
+msgstr "Error: `<kernel>: num_args should be N; expected: <num_args>, got: N`"
 
 #: ../../../compiler_internals/tensor_checks.md:128
 msgid "Pointer-typed argument expected"
-msgstr ""
+msgstr "期望指针类型的参数"
 
 #: ../../../compiler_internals/tensor_checks.md:129
 msgid "Trigger: scalar passed where a tensor is expected"
-msgstr ""
+msgstr "触发条件：在期望张量的位置传递了标量"
 
 #: ../../../compiler_internals/tensor_checks.md:130
 msgid "Error: `<kernel>: Expect arg[i] to be pointer`"
-msgstr ""
+msgstr "Error: `<kernel>: Expect arg[i] to be pointer`"
 
 #: ../../../compiler_internals/tensor_checks.md:132
 msgid "Rank (ndim) mismatch"
-msgstr ""
+msgstr "秩 (ndim) 不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:133
 msgid "Trigger: runtime rank differs from compile-time rank"
-msgstr ""
+msgstr "触发条件：运行时秩与编译时秩不同"
 
 #: ../../../compiler_internals/tensor_checks.md:134
 msgid ""
 "Error: `<kernel>.<name>.ndim is expected to equal R, but got mismatched ndim`"
-msgstr ""
+msgstr "Error: `<kernel>.<name>.ndim is expected to equal R, but got mismatched ndim`"
 
 #: ../../../compiler_internals/tensor_checks.md:136
 msgid "Dtype mismatch"
-msgstr ""
+msgstr "数据类型不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:137
 msgid ""
 "Trigger: dtype not equal to the compiled dtype and not within the tolerance "
 "set"
-msgstr ""
+msgstr "触发条件：数据类型与编译时的数据类型不相等且不在容差集合内"
 
 #: ../../../compiler_internals/tensor_checks.md:138
 msgid ""
 "Error: `<kernel>.<name>.dtype is expected to be <dtype>, but got "
 "incompatible dtype`"
-msgstr ""
+msgstr "Error: `<kernel>.<name>.dtype is expected to be <dtype>, but got incompatible dtype`"
 
 #: ../../../compiler_internals/tensor_checks.md:140
 msgid "Shape constraint violation"
-msgstr ""
+msgstr "形状约束违反"
 
 #: ../../../compiler_internals/tensor_checks.md:141
 msgid "Trigger: a dimension doesn’t match a constant/symbol binding"
-msgstr ""
+msgstr "触发条件：维度与常量/符号绑定不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:142
 msgid ""
 "Error: `Argument <kernel>.<name>.shape[i] has an unsatisfied constraint: ... "
 "== <expected>`"
-msgstr ""
+msgstr "Error: `Argument <kernel>.<name>.shape[i] has an unsatisfied constraint: ... == <expected>`"
 
 #: ../../../compiler_internals/tensor_checks.md:144
 msgid "Strides check failed (e.g., non-contiguous layout)"
-msgstr ""
+msgstr "步长检查失败（例如，非连续布局）"
 
 #: ../../../compiler_internals/tensor_checks.md:145
 msgid "Trigger: transposed/sliced tensors that violate expected strides"
-msgstr ""
+msgstr "触发条件：转置/切片后的张量违反了预期的步长"
 
 #: ../../../compiler_internals/tensor_checks.md:146
 msgid ""
 "Error: `Argument <kernel>.<name>.strides[j] has an unsatisfied "
 "constraint: ... == <expected>`"
-msgstr ""
+msgstr "Error: `Argument <kernel>.<name>.strides[j] has an unsatisfied constraint: ... == <expected>`"
 
 #: ../../../compiler_internals/tensor_checks.md:148
 msgid "Device type mismatch"
-msgstr ""
+msgstr "设备类型不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:149
 msgid "Trigger: calling a CUDA kernel with CPU tensors, etc."
-msgstr ""
+msgstr "触发条件：使用 CPU 张量调用 CUDA 内核等"
 
 #: ../../../compiler_internals/tensor_checks.md:150
 msgid ""
 "Error: `<kernel>.<name>.device_type mismatch [expected: <code> (<name>)] ...`"
-msgstr ""
+msgstr "Error: `<kernel>.<name>.device_type mismatch [expected: <code> (<name>)] ...`"
 
 #: ../../../compiler_internals/tensor_checks.md:152
 msgid "Device id mismatch"
-msgstr ""
+msgstr "设备 ID 不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:153
 msgid "Trigger: mixing tensors from different GPUs"
-msgstr ""
+msgstr "触发条件：混合使用来自不同 GPU 的张量"
 
 #: ../../../compiler_internals/tensor_checks.md:154
 msgid ""
 "Error: `Argument <kernel>.<name>.device_id has an unsatisfied "
 "constraint: ... == ...`"
-msgstr ""
+msgstr "Error: `Argument <kernel>.<name>.device_id has an unsatisfied constraint: ... == ...`"
 
 #: ../../../compiler_internals/tensor_checks.md:156
 msgid "NULL data pointer"
-msgstr ""
+msgstr "NULL 数据指针"
 
 #: ../../../compiler_internals/tensor_checks.md:157
 msgid "Trigger: tensor required to be non-null has a NULL data pointer"
-msgstr ""
+msgstr "触发条件：要求为非 NULL 的张量具有 NULL 数据指针"
 
 #: ../../../compiler_internals/tensor_checks.md:158
 msgid ""
 "Error: `<kernel>.<name> is expected to have non-NULL data pointer, but got "
 "NULL`"
-msgstr ""
+msgstr "Error: `<kernel>.<name> is expected to have non-NULL data pointer, but got NULL`"
 
 #: ../../../compiler_internals/tensor_checks.md:160
 msgid "Scalar type mismatch"
-msgstr ""
+msgstr "标量类型不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:161
 msgid "Trigger: passing float to `T.int32`, or non-boolean to `T.bool`"
-msgstr ""
+msgstr "触发条件：将 float 传递给 `T.int32`，或将非布尔值传递给 `T.bool`"
 
 #: ../../../compiler_internals/tensor_checks.md:162
 msgid "Error: `<kernel>: Expect arg[i] to be int/boolean`"
-msgstr ""
+msgstr "Error: `<kernel>: Expect arg[i] to be int/boolean`"
 
 #: ../../../compiler_internals/tensor_checks.md:166
 msgid "Troubleshooting Tips"
-msgstr ""
+msgstr "故障排除提示"
 
 #: ../../../compiler_internals/tensor_checks.md:167
 msgid ""
 "Print the host source: `print(fn.get_host_source())` to see the exact "
 "assertion and expected vs. actual fields."
-msgstr ""
+msgstr "打印主机源代码：`print(fn.get_host_source())` 查看确切的断言以及预期与实际字段的对比。"
 
 #: ../../../compiler_internals/tensor_checks.md:168
 msgid ""
 "Fix strides: call `.contiguous()` for non-contiguous tensors, or avoid "
 "generating transposed/sliced layouts that break assumptions."
-msgstr ""
+msgstr "修复步长：对非连续张量调用 `.contiguous()`，或避免生成破坏假设的转置/切片布局。"
 
 #: ../../../compiler_internals/tensor_checks.md:169
 msgid ""
 "Align devices: ensure all participating tensors share the same `device_type` "
 "and `device_id`."
-msgstr ""
+msgstr "对齐设备：确保所有参与的张量共享相同的 `device_type` 和 `device_id`。"
 
 #: ../../../compiler_internals/tensor_checks.md:170
 msgid ""
 "Align dtype: use `.to(<dtype>)` or construct tensors with the correct dtype; "
 "pay attention to `float8` and `bool` tolerance."
-msgstr ""
+msgstr "对齐数据类型：使用 `.to(<dtype>)` 或构造具有正确数据类型的张量；注意 `float8` 和 `bool` 的容差。"
 
 #: ../../../compiler_internals/tensor_checks.md:171
 msgid ""
 "Dynamic shapes: ensure cross-tensor linear relations can be uniquely "
 "determined at the check point (only one unknown at a time)."
-msgstr ""
+msgstr "动态形状：确保跨张量线性关系在检查点处可以唯一确定（一次只有一个未知数）。"
 
 #: ../../../compiler_internals/tensor_checks.md:175
 msgid "FAQ"
-msgstr ""
+msgstr "常见问题"
 
 #: ../../../compiler_internals/tensor_checks.md:176
 msgid "Can I disable the checks?"
-msgstr ""
+msgstr "我可以禁用这些检查吗？"
 
 #: ../../../compiler_internals/tensor_checks.md:177
 msgid ""
 "Not recommended and usually not supported. Checks are done on the host to "
 "preserve ABI stability and fail early close to the device call."
-msgstr ""
+msgstr "不推荐且通常不支持。检查在主机端执行，以保持 ABI 稳定性并在靠近设备调用处尽早失败。"
 
 #: ../../../compiler_internals/tensor_checks.md:178
 msgid "Is the overhead noticeable?"
-msgstr ""
+msgstr "开销明显吗？"
 
 #: ../../../compiler_internals/tensor_checks.md:179
 msgid ""
 "The checks are lightweight (branches and field reads). Compared to Python-"
 "side checks, it’s faster; the dominating cost remains the Python→C boundary. "
 "Overall it’s cheaper than equivalent checks in Python."
-msgstr ""
+msgstr "检查是轻量级的（分支和字段读取）。与 Python 端的检查相比，速度更快；主要的开销仍然是 Python 到 C 的边界。总体而言，比在 Python 中等效的检查成本更低。"
 
 #: ../../../compiler_internals/tensor_checks.md:183
 msgid "Reference Example (Matmul + ReLU)"
-msgstr ""
+msgstr "参考示例（矩阵乘法 + ReLU）"
 
 #: ../../../compiler_internals/tensor_checks.md:185
 msgid ""
@@ -574,101 +606,122 @@ msgid ""
 "# For debugging, print the host source\n"
 "print(matmul_relu_kernel.get_host_source())\n"
 msgstr ""
+"@T.prim_func\n"
+"def matmul_relu_kernel(\n"
+"    A: T.Tensor((M, K), dtype),\n"
+"    B: T.Tensor((K, N), dtype),\n"
+"    C: T.Tensor((M, N), dtype),\n"
+"):\n"
+"    # Initialize Kernel Context\n"
+"    with T.Kernel(T.ceildiv(N, block_N), T.ceildiv(M, block_M), threads=128) as (bx, by):\n"
+"        A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"        B_shared = T.alloc_shared((block_K, block_N), dtype)\n"
+"        C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"        T.clear(C_local)\n"
+"        for ko in T.Pipelined(T.ceildiv(K, block_K), num_stages=0):\n"
+"            T.copy(A[by * block_M, ko * block_K], A_shared)\n"
+"            T.copy(B[ko * block_K, bx * block_N], B_shared)\n"
+"            T.gemm(A_shared, B_shared, C_local)\n"
+"        T.copy(C_local, C[by * block_M, bx * block_N])\n"
+"\n"
+"# For debugging, print the host source\n"
+"print(matmul_relu_kernel.get_host_source())\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:208
 msgid "The host will insert all checks described above for this example."
-msgstr ""
+msgstr "主机将为此示例插入上述所有检查。"
 
 #: ../../../compiler_internals/tensor_checks.md:212
 msgid "Quick Error Reference (Short List)"
-msgstr ""
+msgstr "快速错误参考（简短列表）"
 
 #: ../../../compiler_internals/tensor_checks.md:213
 msgid "Argument count"
-msgstr ""
+msgstr "参数数量"
 
 #: ../../../compiler_internals/tensor_checks.md:214
 msgid ""
 "Trigger: missing/extra args; Error: `num_args should be N; expected: "
 "<num_args>, got: N`."
-msgstr ""
+msgstr "Trigger: missing/extra args; Error: `num_args should be N; expected: <num_args>, got: N`."
 
 #: ../../../compiler_internals/tensor_checks.md:215
 msgid "Pointer kind"
-msgstr ""
+msgstr "指针类型"
 
 #: ../../../compiler_internals/tensor_checks.md:216
 msgid ""
 "Trigger: scalar passed to tensor arg; Error: `Expect arg[i] to be pointer`."
-msgstr ""
+msgstr "Trigger: scalar passed to tensor arg; Error: `Expect arg[i] to be pointer`."
 
 #: ../../../compiler_internals/tensor_checks.md:217
 msgid "Rank (ndim)"
-msgstr ""
+msgstr "秩 (ndim)"
 
 #: ../../../compiler_internals/tensor_checks.md:218
 msgid ""
 "Trigger: runtime rank != compile-time; Error: `ndim ... expected to equal R`."
-msgstr ""
+msgstr "触发条件：运行时秩 != 编译时秩；错误：`ndim ... expected to equal R`。"
 
 #: ../../../compiler_internals/tensor_checks.md:219
 msgid "Dtype"
-msgstr ""
+msgstr "数据类型"
 
 #: ../../../compiler_internals/tensor_checks.md:220
 msgid ""
 "Trigger: mismatch and not tolerated; Error: `dtype ... expected to be "
 "<dtype>`."
-msgstr ""
+msgstr "触发条件：不匹配且不在容差内；错误：`dtype ... expected to be <dtype>`。"
 
 #: ../../../compiler_internals/tensor_checks.md:222
 msgid ""
 "Trigger: constant/symbol binding violated; Error: `shape[i] ... == "
 "<expected>`."
-msgstr ""
+msgstr "触发条件：违反常量/符号绑定；错误：`shape[i] ... == <expected>`。"
 
 #: ../../../compiler_internals/tensor_checks.md:224
 msgid "Trigger: layout mismatch; Error: `strides[j] ... == <expected>`."
-msgstr ""
+msgstr "触发条件：布局不匹配；错误：`strides[j] ... == <expected>`。"
 
 #: ../../../compiler_internals/tensor_checks.md:225
 msgid "Device type"
-msgstr ""
+msgstr "设备类型"
 
 #: ../../../compiler_internals/tensor_checks.md:226
 msgid ""
 "Trigger: wrong backend device; Error: `device_type mismatch [expected: ...]`."
-msgstr ""
+msgstr "触发条件：错误的后端设备；错误：`device_type mismatch [expected: ...]`。"
 
 #: ../../../compiler_internals/tensor_checks.md:227
 msgid "Device id"
-msgstr ""
+msgstr "设备 ID"
 
 #: ../../../compiler_internals/tensor_checks.md:228
 msgid "Trigger: tensors on different GPUs; Error: `device_id ... == ...`."
-msgstr ""
+msgstr "触发条件：张量位于不同 GPU 上；错误：`device_id ... == ...`。"
 
 #: ../../../compiler_internals/tensor_checks.md:230
 msgid "Trigger: required non-NULL but NULL; Error: `non-NULL data pointer`."
-msgstr ""
+msgstr "触发条件：需要非 NULL 但为 NULL；错误：`non-NULL data pointer`。"
 
 #: ../../../compiler_internals/tensor_checks.md:231
 msgid "Scalar types"
-msgstr ""
+msgstr "标量类型"
 
 #: ../../../compiler_internals/tensor_checks.md:232
 msgid "Trigger: wrong scalar type; Error: `Expect arg[i] to be int/boolean`."
-msgstr ""
+msgstr "触发条件：错误的标量类型；错误：`Expect arg[i] to be int/boolean`。"
 
 #: ../../../compiler_internals/tensor_checks.md:236
 msgid "Host Error Troubleshooting (Minimal Repros)"
-msgstr ""
+msgstr "主机错误故障排除（最小复现）"
 
 #: ../../../compiler_internals/tensor_checks.md:238
 msgid ""
 "Below are minimal repro snippets for common host-side errors, assuming a "
 "CUDA-targeted kernel like `matmul_relu_kernel` with:"
-msgstr ""
+msgstr "以下是常见主机端错误的最小复现代码片段，假设目标为 CUDA 的内核如 `matmul_relu_kernel`，其参数为："
 
 #: ../../../compiler_internals/tensor_checks.md:240
 msgid ""
@@ -680,22 +733,30 @@ msgid ""
 "fn = matmul_relu_kernel  # your compiled function\n"
 "M = N = K = 1024\n"
 msgstr ""
+"# Convention:\n"
+"# A: float16 [M, K]\n"
+"# B: float16 [K, N]\n"
+"# C: float16 [M, N]\n"
+"# Target: CUDA (device_type=2)\n"
+"fn = matmul_relu_kernel  # your compiled function\n"
+"M = N = K = 1024\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:250
 msgid "Adjust dtype/device if your kernel differs."
-msgstr ""
+msgstr "如果你的内核不同，请调整数据类型/设备。"
 
 #: ../../../compiler_internals/tensor_checks.md:252
 msgid "0. Tip: print the host source"
-msgstr ""
+msgstr "0. 提示：打印主机源代码"
 
 #: ../../../compiler_internals/tensor_checks.md:253
 msgid "print(fn.get_host_source())\n"
-msgstr ""
+msgstr "print(fn.get_host_source())\n"
 
 #: ../../../compiler_internals/tensor_checks.md:257
 msgid "1. num_args mismatch"
-msgstr ""
+msgstr "1. num_args 不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:258
 msgid ""
@@ -706,19 +767,26 @@ msgid ""
 "# Missing C\n"
 "fn(A, B)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda', dtype=torch.float16)\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"# Missing C\n"
+"fn(A, B)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:266
 msgid ""
 "Expected: `<kernel>: num_args should be 3; expected: <num_args>, got: 3`."
-msgstr ""
+msgstr "Expected: `<kernel>: num_args should be 3; expected: <num_args>, got: 3`."
 
 #: ../../../compiler_internals/tensor_checks.md:268
 msgid "Fix: pass all arguments per the signature."
-msgstr ""
+msgstr "修复：根据签名传递所有参数。"
 
 #: ../../../compiler_internals/tensor_checks.md:270
 msgid "2. Expect pointer (tensor) but got scalar"
-msgstr ""
+msgstr "2. 期望指针（张量）但得到了标量"
 
 #: ../../../compiler_internals/tensor_checks.md:271
 msgid ""
@@ -728,18 +796,24 @@ msgid ""
 "C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
 "fn(1, B, C)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(1, B, C)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:278
 msgid "Expected: `<kernel>: Expect arg[0] to be pointer`."
-msgstr ""
+msgstr "Expected: `<kernel>: Expect arg[0] to be pointer`."
 
 #: ../../../compiler_internals/tensor_checks.md:280
 msgid "Fix: pass a DLPack-compatible tensor (e.g., torch.Tensor)."
-msgstr ""
+msgstr "修复：传递 DLPack 兼容的张量（例如，torch.Tensor）。"
 
 #: ../../../compiler_internals/tensor_checks.md:282
 msgid "3. ndim mismatch"
-msgstr ""
+msgstr "3. ndim 不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:283
 msgid ""
@@ -750,20 +824,27 @@ msgid ""
 "C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
 "fn(A, B, C)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K, 1), device='cuda', dtype=torch.float16)  # rank=3\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:291
 msgid ""
 "Expected: `<kernel>.A_handle.ndim is expected to equal 2, but got mismatched "
 "ndim`."
-msgstr ""
+msgstr "Expected: `<kernel>.A_handle.ndim is expected to equal 2, but got mismatched ndim`."
 
 #: ../../../compiler_internals/tensor_checks.md:293
 msgid "Fix: ensure runtime rank equals compiled rank."
-msgstr ""
+msgstr "修复：确保运行时秩等于编译时秩。"
 
 #: ../../../compiler_internals/tensor_checks.md:295
 msgid "4. dtype mismatch"
-msgstr ""
+msgstr "4. dtype 不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:296
 msgid ""
@@ -775,20 +856,27 @@ msgid ""
 "C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
 "fn(A, B, C)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda', dtype=torch.float32)  # should be float16\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:304
 msgid ""
 "Expected: `<kernel>.A_handle.dtype is expected to be float16, but got "
 "incompatible dtype`."
-msgstr ""
+msgstr "Expected: `<kernel>.A_handle.dtype is expected to be float16, but got incompatible dtype`."
 
 #: ../../../compiler_internals/tensor_checks.md:306
 msgid "Fix: `A = A.to(torch.float16)` or create with the correct dtype."
-msgstr ""
+msgstr "修复：`A = A.to(torch.float16)` 或使用正确的数据类型创建。"
 
 #: ../../../compiler_internals/tensor_checks.md:308
 msgid "5. Shape constant/symbol mismatch"
-msgstr ""
+msgstr "5. 形状常量/符号不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:309
 msgid ""
@@ -800,20 +888,27 @@ msgid ""
 "C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
 "fn(A, B, C)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K + 1), device='cuda', dtype=torch.float16)  # K mismatched\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:317
 msgid ""
 "Expected: `Argument <kernel>.A_handle.shape[i] has an unsatisfied "
 "constraint: ... == <expected>`."
-msgstr ""
+msgstr "Expected: `Argument <kernel>.A_handle.shape[i] has an unsatisfied constraint: ... == <expected>`."
 
 #: ../../../compiler_internals/tensor_checks.md:319
 msgid "Fix: satisfy linear constraints and constants across tensors."
-msgstr ""
+msgstr "修复：满足张量间的线性约束和常量条件。"
 
 #: ../../../compiler_internals/tensor_checks.md:321
 msgid "6. Strides check failure (non-contiguous)"
-msgstr ""
+msgstr "6. 步长检查失败（非连续）"
 
 #: ../../../compiler_internals/tensor_checks.md:322
 msgid ""
@@ -825,21 +920,29 @@ msgid ""
 "C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
 "fn(A_nc, B, C)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda', dtype=torch.float16)\n"
+"A_nc = A.t()  # transpose -> non-contiguous\n"
+"B = torch.empty((K, N), device='cuda', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda', dtype=torch.float16)\n"
+"fn(A_nc, B, C)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:331
 msgid ""
 "Expected: `Argument <kernel>.A_handle.strides[1] has an unsatisfied "
 "constraint: ... == 1`."
-msgstr ""
+msgstr "Expected: `Argument <kernel>.A_handle.strides[1] has an unsatisfied constraint: ... == 1`."
 
 #: ../../../compiler_internals/tensor_checks.md:333
 msgid ""
 "Fix: pass `A_nc.contiguous()` or align the layout expectation in the kernel."
-msgstr ""
+msgstr "修复：传递 `A_nc.contiguous()` 或在内核中对齐布局期望。"
 
 #: ../../../compiler_internals/tensor_checks.md:335
 msgid "7. device_type mismatch"
-msgstr ""
+msgstr "7. device_type 不匹配"
 
 #: ../../../compiler_internals/tensor_checks.md:336
 msgid ""
@@ -850,19 +953,26 @@ msgid ""
 "C = torch.empty((M, N), device='cpu', dtype=torch.float16)\n"
 "fn(A, B, C)  # CUDA-targeted kernel\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cpu', dtype=torch.float16)\n"
+"B = torch.empty((K, N), device='cpu', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cpu', dtype=torch.float16)\n"
+"fn(A, B, C)  # CUDA-targeted kernel\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:344
 msgid ""
 "Expected: `<kernel>.A_handle.device_type mismatch [expected: 2 (cuda)] ...`."
-msgstr ""
+msgstr "Expected: `<kernel>.A_handle.device_type mismatch [expected: 2 (cuda)] ...`."
 
 #: ../../../compiler_internals/tensor_checks.md:346
 msgid "Fix: move tensors to the CUDA device."
-msgstr ""
+msgstr "修复：将张量移动到 CUDA 设备。"
 
 #: ../../../compiler_internals/tensor_checks.md:348
 msgid "8. device_id mismatch (multi-GPU)"
-msgstr ""
+msgstr "8. device_id 不匹配（多 GPU）"
 
 #: ../../../compiler_internals/tensor_checks.md:349
 msgid ""
@@ -873,43 +983,50 @@ msgid ""
 "C = torch.empty((M, N), device='cuda:0', dtype=torch.float16)\n"
 "fn(A, B, C)\n"
 msgstr ""
+"import torch\n"
+"\n"
+"A = torch.empty((M, K), device='cuda:0', dtype=torch.float16)\n"
+"B = torch.empty((K, N), device='cuda:1', dtype=torch.float16)\n"
+"C = torch.empty((M, N), device='cuda:0', dtype=torch.float16)\n"
+"fn(A, B, C)\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:357
 msgid ""
 "Expected: `Argument <kernel>.B_handle.device_id has an unsatisfied "
 "constraint: ... == ...`."
-msgstr ""
+msgstr "Expected: `Argument <kernel>.B_handle.device_id has an unsatisfied constraint: ... == ...`."
 
 #: ../../../compiler_internals/tensor_checks.md:359
 msgid "Fix: place all tensors on the same GPU (e.g., `cuda:0`)."
-msgstr ""
+msgstr "修复：将所有张量放在同一个 GPU 上（例如，`cuda:0`）。"
 
 #: ../../../compiler_internals/tensor_checks.md:361
 msgid "9. NULL data pointer (advanced)"
-msgstr ""
+msgstr "9. NULL 数据指针（高级）"
 
 #: ../../../compiler_internals/tensor_checks.md:362
 msgid ""
 "This usually comes from hand-constructed DLTensor/NDArray, or external "
 "frameworks passing unallocated/freed storage. Regular `torch.Tensor` "
 "allocations rarely hit this."
-msgstr ""
+msgstr "这通常来自手动构造的 DLTensor/NDArray，或外部框架传递未分配/已释放的存储。常规的 `torch.Tensor` 分配很少遇到此情况。"
 
 #: ../../../compiler_internals/tensor_checks.md:364
 msgid ""
 "Expected: `<kernel>.<name> is expected to have non-NULL data pointer, but "
 "got NULL`."
-msgstr ""
+msgstr "Expected: `<kernel>.<name> is expected to have non-NULL data pointer, but got NULL`."
 
 #: ../../../compiler_internals/tensor_checks.md:366
 msgid ""
 "Fix: ensure valid underlying storage; in PyTorch scenarios, avoid "
 "constructing tensors from invalid external handles."
-msgstr ""
+msgstr "修复：确保有效的底层存储；在 PyTorch 场景中，避免从无效的外部句柄构造张量。"
 
 #: ../../../compiler_internals/tensor_checks.md:368
 msgid "10. Scalar type mismatch (int / bool)"
-msgstr ""
+msgstr "10. 标量类型不匹配（int / bool）"
 
 #: ../../../compiler_internals/tensor_checks.md:369
 msgid ""
@@ -922,23 +1039,32 @@ msgid ""
 "scalar_check(1.0, True)  # x is float -> Expect arg[0] to be int\n"
 "scalar_check(1, 2.5)     # flag is float -> Expect arg[1] to be boolean\n"
 msgstr ""
+"import tilelang.language as T\n"
+"\n"
+"@T.prim_func\n"
+"def scalar_check(x: T.int32, flag: T.bool()):\n"
+"    T.evaluate(0)\n"
+"\n"
+"scalar_check(1.0, True)  # x is float -> Expect arg[0] to be int\n"
+"scalar_check(1, 2.5)     # flag is float -> Expect arg[1] to be boolean\n"
+"\n"
 
 #: ../../../compiler_internals/tensor_checks.md:380
 msgid "Fix: pass correct scalar types, e.g., `scalar_check(1, True)`."
-msgstr ""
+msgstr "修复：传递正确的标量类型，例如 `scalar_check(1, True)`。"
 
 #: ../../../compiler_internals/tensor_checks.md:384
 msgid "Closing Notes"
-msgstr ""
+msgstr "结束语"
 
 #: ../../../compiler_internals/tensor_checks.md:385
 msgid ""
 "Cross-check “shape / strides / device / dtype” against the kernel signature "
 "to localize issues efficiently."
-msgstr ""
+msgstr "对照内核签名交叉检查“形状/步长/设备/数据类型”以高效定位问题。"
 
 #: ../../../compiler_internals/tensor_checks.md:386
 msgid ""
 "For complex symbolic relations, print the host source to confirm binding/"
 "solving order, then adjust runtime shapes/layouts accordingly."
-msgstr ""
+msgstr "对于复杂的符号关系，打印主机源代码以确认绑定/求解顺序，然后相应调整运行时的形状/布局。"

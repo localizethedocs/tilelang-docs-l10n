@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025-2025, Tile Lang Contributors
-# This file is distributed under the same license as the Tile Language <br> package.
+# This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: ../../../privacy.md:1
 msgid "Privacy"
-msgstr ""
+msgstr "隐私政策"
 
 #: ../../../privacy.md:3
 msgid "All data stays in users' device and is not collected by the app."
-msgstr ""
+msgstr "所有数据均保留在用户设备上，应用程序不会收集任何数据。"

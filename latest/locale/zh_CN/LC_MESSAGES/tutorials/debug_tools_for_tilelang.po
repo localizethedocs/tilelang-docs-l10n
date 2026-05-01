@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:1
 msgid "Debugging Tile Language Programs"
-msgstr ""
+msgstr "调试 Tile Language 程序"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:3
 msgid ""
@@ -27,20 +27,24 @@ msgid ""
 "<em>Author:</em> <a href=\"https://github.com/LeiWang1999\">Lei Wang</a>\n"
 "</div>\n"
 msgstr ""
+"<div style=\"text-align: left;\">\n"
+"<em>作者：</em> <a href=\"https://github.com/LeiWang1999\">Lei Wang</a>\n"
+"</div>\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:9
 msgid ""
 "A Tile Language program (hereafter referred to as a *program*) is "
 "transformed into a hardware-executable file through several stages:"
 msgstr ""
+"一个 Tile Language 程序（以下简称 *程序*）通过以下几个阶段转换为硬件可执行文件："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:11
 msgid "The user writes a Tile Language program."
-msgstr ""
+msgstr "用户编写了一个 Tile Language 程序。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:12
 msgid ""
@@ -49,39 +53,45 @@ msgid ""
 "intermediate representation (e.g., LLVM or C for CPU, CUDA for NVIDIA GPUs, "
 "etc.)."
 msgstr ""
+"程序经过多个 *Pass（编译器遍）* 进行转换和优化（*降级* 阶段，参见 `tilelang/engine/lower.py`），"
+"最终生成中间表示（例如，CPU 使用 LLVM 或 C，NVIDIA GPU 使用 CUDA 等）。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:13
 msgid ""
 "The generated code is compiled by the respective compiler (e.g., nvcc) into "
 "a hardware-executable file."
 msgstr ""
+"生成的代码由相应的编译器（例如 nvcc）编译为硬件可执行文件。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:15
 msgid "Overview of the compilation process"
-msgstr ""
+msgstr "编译过程概述"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:22
 msgid ""
 "During this process, users may encounter roughly three categories of issues:"
-msgstr ""
+msgstr "在此过程中，用户可能会遇到大致三类问题："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:24
 msgid ""
 "**Generation issues**: The Tile Language program fails to generate a valid "
 "hardware-executable file (i.e., errors during the lowering process)."
 msgstr ""
+"**生成问题**：Tile Language 程序未能生成有效的硬件可执行文件（即降级过程中出现错误）。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:25
 msgid ""
 "**Correctness issues**: The resulting executable runs, but produces "
 "incorrect results."
 msgstr ""
+"**正确性问题**：生成的可执行文件能够运行，但结果不正确。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:26
 msgid ""
 "**Performance issues**: The executable runs with performance significantly "
 "below the expected theoretical hardware limits."
 msgstr ""
+"**性能问题**：可执行文件的运行性能显著低于预期的硬件理论极限。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:28
 msgid ""
@@ -90,22 +100,27 @@ msgid ""
 "provided profiling tools (e.g., **Nsight Compute**, **rocProf**, etc.) for "
 "further hardware-level analysis, which we will address in future materials."
 msgstr ""
+"本教程重点介绍前两类问题——如何调试生成问题和正确性问题。性能调优通常需要使用厂商提供的"
+"性能分析工具（例如 **Nsight Compute**、**rocProf** 等）进行进一步的硬件级别分析，"
+"我们将在后续材料中讨论这些内容。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:30
 msgid ""
 "Below, we take matrix multiplication (GEMM) as an example to demonstrate how "
 "to write and debug a Tile Language program."
 msgstr ""
+"下面，我们以矩阵乘法（GEMM）为例，演示如何编写和调试 Tile Language 程序。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:32
 msgid "Matrix Multiplication Example"
-msgstr ""
+msgstr "矩阵乘法示例"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:34
 msgid ""
 "In **Tile Language**, you can use the **Tile Library** to implement matrix "
 "multiplication. Here's a complete example:"
 msgstr ""
+"在 **Tile Language** 中，你可以使用 **Tile Library** 来实现矩阵乘法。以下是一个完整示例："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:36
 msgid ""
@@ -122,10 +137,22 @@ msgid ""
 "# 2. Compile the kernel into a torch function\n"
 "# ...existing code...\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"\n"
+"def matmul(M, N, K, block_M, block_N, block_K, dtype=\"float16\", "
+"accum_dtype=\"float\"):\n"
+"    # ...现有代码...\n"
+"\n"
+"# 1. 使用所需维度定义内核（matmul）\n"
+"func = matmul(1024, 1024, 1024, 128, 128, 32)\n"
+"\n"
+"# 2. 将内核编译为 torch 函数\n"
+"# ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:50
 msgid "Debugging Generation Issues"
-msgstr ""
+msgstr "调试生成问题"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:52
 msgid ""
@@ -134,10 +161,12 @@ msgid ""
 "which is then expanded again, eventually resulting in lower-level statements "
 "that can be translated to CUDA C code."
 msgstr ""
+"TileLang 本质上执行的是 *渐进式降级*。例如，一个 `T.copy` 可能首先被展开为 `T.Parallel`"
+"（参见 Pass `LowerTileOP`），然后再次展开，最终生成可以被转换为 CUDA C 代码的低级语句。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "IR transformation diagram"
-msgstr ""
+msgstr "IR 转换示意图"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:61
 msgid ""
@@ -146,6 +175,8 @@ msgid ""
 "Instead, you can first inspect the intermediate representations (IR) in "
 "Python by printing them."
 msgstr ""
+"当代码无法生成时（例如出现编译错误），你并**不**需要直接跳入 C++ Pass 进行调试。"
+"相反，你可以先在 Python 中通过打印来检查中间表示（IR）。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:63
 msgid ""
@@ -153,6 +184,8 @@ msgid ""
 "lowering process to fail. The snippet below illustrates a simplified version "
 "of the problem (based on community Issue #35):"
 msgstr ""
+"例如，考虑一个简单的一维 `T.copy` 导致降级过程失败的情况。下面的代码片段展示了"
+"该问题的简化版本（基于社区 Issue #35）："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:65
 msgid ""
@@ -160,10 +193,13 @@ msgid ""
 "def main(Q: T.Tensor(shape_q, dtype)):\n"
 "    # ...existing code...\n"
 msgstr ""
+"@T.prim_func\n"
+"def main(Q: T.Tensor(shape_q, dtype)):\n"
+"    # ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:71
 msgid "The TileLang lower process might yield an error such as:"
-msgstr ""
+msgstr "TileLang 的降级过程可能会产生如下错误："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:73
 msgid ""
@@ -171,6 +207,9 @@ msgid ""
 "ValueError: Check failed: lanes <= 4 (8 vs. 4) : Ramp of more than 4 lanes "
 "is not allowed.\n"
 msgstr ""
+"File \"/root/TileLang/src/target/codegen_cuda.cc\", line 1257\n"
+"ValueError: Check failed: lanes <= 4 (8 vs. 4) : Ramp of more than 4 lanes "
+"is not allowed.\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:78
 msgid ""
@@ -179,38 +218,45 @@ msgid ""
 "the underlying C++ code, it is helpful to print the IR right before code "
 "generation. For instance:"
 msgstr ""
+"这表明在代码生成过程中的某个位置，引入了一个不支持的向量化模式（8 个通道的 ramp）。"
+"在深入底层 C++ 代码之前，最好在代码生成之前打印 IR。例如："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:80
 msgid ""
 "device_mod = tir.transform.Filter(is_device_call)(mod)\n"
 "# ...existing code...\n"
 msgstr ""
+"device_mod = tir.transform.Filter(is_device_call)(mod)\n"
+"# ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:85
 msgid "Debugging Correctness Issues"
-msgstr ""
+msgstr "调试正确性问题"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:87
 msgid ""
 "Sometimes, the kernel compiles and runs but produces incorrect results. In "
 "such cases, there are two main strategies to help debug:"
 msgstr ""
+"有时，内核编译并运行，但产生的结果不正确。在这种情况下，有两种主要策略可以帮助调试："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:89
 msgid ""
 "**Use post-processing callbacks to inspect or modify the generated CUDA code."
 "**"
 msgstr ""
+"**使用后处理回调函数检查或修改生成的 CUDA 代码。**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:90
 msgid ""
 "**Use the built-in `T.print` debugging primitive to inspect values at "
 "runtime.**"
 msgstr ""
+"**使用内置的 `T.print` 调试原语在运行时检查值。**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:92
 msgid "Post-Processing Callbacks for Generated Source"
-msgstr ""
+msgstr "生成源代码的后处理回调函数"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:94
 msgid ""
@@ -218,6 +264,8 @@ msgid ""
 "function (if registered) to allow post-processing of the generated source "
 "code. In `src/target/rt_mod_cuda.cc`:"
 msgstr ""
+"在代码生成之后（在 codegen Pass 中），TileLang 会调用一个回调函数（如果已注册）来"
+"允许对生成的源代码进行后处理。在 `src/target/rt_mod_cuda.cc` 中："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:96
 msgid ""
@@ -226,6 +274,10 @@ msgid ""
 "    code = (*f)(code, target).operator std::string();\n"
 "}\n"
 msgstr ""
+"std::string code = cg.Finish();\n"
+"if (const auto *f = Registry::Get(\"tilelang_callback_cuda_postproc\")) {\n"
+"    code = (*f)(code, target).operator std::string();\n"
+"}\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:103
 msgid ""
@@ -233,6 +285,8 @@ msgid ""
 "`tilelang_callback_cuda_postproc`, you can intercept the final CUDA code "
 "string. For example:"
 msgstr ""
+"因此，通过注册一个名为 `tilelang_callback_cuda_postproc` 的 Python 函数，"
+"你可以拦截最终的 CUDA 代码字符串。例如："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:105
 msgid ""
@@ -256,10 +310,29 @@ msgid ""
 "...\n"
 "'''\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import tvm\n"
+"from tilelang.engine.callback import register_cuda_postproc_callback\n"
+"\n"
+"@register_cuda_postproc_callback\n"
+"def tilelang_callback_cuda_postproc(code, _):\n"
+"    print(code) # 打印最终的 CUDA 代码\n"
+"    code = \"// modified by tilelang_callback_cuda_postproc\\n\" + code\n"
+"    return code\n"
+"\n"
+"kernel = tilelang.compile(matmul, target=\"cuda\")\n"
+"kernel_source = kernel.get_kernel_source()\n"
+"print(kernel_source)\n"
+"'''\n"
+"// modified by tilelang_callback_cuda_postproc\n"
+"#include \"cuda_runtime.h\"\n"
+"...\n"
+"'''\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:127
 msgid "Runtime Debug Prints with `T.print`"
-msgstr ""
+msgstr "使用 `T.print` 进行运行时调试打印"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:129
 msgid ""
@@ -268,68 +341,81 @@ msgid ""
 "synchronization when using it in GPU code. Below are some examples showing "
 "how to print buffers, variables, and other data inside TileLang programs."
 msgstr ""
+"TileLang 提供了一个名为 `T.print` 的内置调试原语，用于在内核中打印。"
+"在 GPU 代码中使用时，需要注意并发和线程同步。以下是一些示例，展示了如何在 TileLang 程序内部"
+"打印缓冲区、变量和其他数据。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:131
 msgid "**Printing an Entire Buffer**"
-msgstr ""
+msgstr "**打印整个缓冲区**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:133
 msgid ""
 "def debug_print_buffer(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
+"def debug_print_buffer(M=16, N=16):\n"
+"    # ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:138
 msgid "**Conditional Printing**"
-msgstr ""
+msgstr "**条件打印**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:140
 msgid ""
 "def debug_print_buffer_conditional(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
+"def debug_print_buffer_conditional(M=16, N=16):\n"
+"    # ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:145
 msgid "**Printing Thread Indices or Scalar Values**"
-msgstr ""
+msgstr "**打印线程索引或标量值**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:147
 msgid ""
 "def debug_print_value_conditional(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
+"def debug_print_value_conditional(M=16, N=16):\n"
+"    # ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:152
 msgid "**Printing Fragment (Register File) Contents**"
-msgstr ""
+msgstr "**打印片段（寄存器文件）内容**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:154
 msgid ""
 "def debug_print_register_files(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
+"def debug_print_register_files(M=16, N=16):\n"
+"    # ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:159
 msgid "**Adding a Message Prefix**"
-msgstr ""
+msgstr "**添加消息前缀**"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:161
 msgid ""
 "def debug_print_msg(M=16, N=16):\n"
 "    # ...existing code...\n"
 msgstr ""
+"def debug_print_msg(M=16, N=16):\n"
+"    # ...现有代码...\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:166
 msgid "The output messages will include something like:"
-msgstr ""
+msgstr "输出消息将包含类似以下内容："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:168
 msgid "msg='hello world' BlockIdx=(0, 0, 0), ThreadIdx=(0, 0, 0): 0\n"
-msgstr ""
+msgstr "msg='hello world' BlockIdx=(0, 0, 0), ThreadIdx=(0, 0, 0): 0\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:172
 msgid "Visual Layout Inference For TileLang"
-msgstr ""
+msgstr "TileLang 可视化布局推断"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:173
 msgid ""
@@ -337,6 +423,7 @@ msgid ""
 "that illustrate the mapping between logical indices, thread IDs, and "
 "register file locations."
 msgstr ""
+"**可视化布局推断**工具自动生成可视化图表，展示逻辑索引、线程 ID 和寄存器文件位置之间的映射关系。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:175
 msgid ""
@@ -344,15 +431,17 @@ msgid ""
 "are distributed across threads. The visual layout tool captures this "
 "information and generates:"
 msgstr ""
+"当 TileLang 执行布局推断时，它会确定片段缓冲区如何在线程之间分布。可视化布局工具捕获"
+"此信息并生成："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:176
 msgid "**Textual output**: A human-readable description of the layout mapping"
-msgstr ""
+msgstr "**文本输出**：布局映射的可读描述"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:177
 msgid ""
 "**Visual diagrams**: Color-coded plots showing the thread-to-data mapping"
-msgstr ""
+msgstr "**可视化图表**：展示线程到数据映射的颜色编码图"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:179
 msgid ""
@@ -361,42 +450,46 @@ msgid ""
 "configuration. By default, `TL_LAYOUT_VISUALIZATION_ENABLE` is **disabled** "
 "to avoid performance overhead during compilation."
 msgstr ""
+"可视化布局推断工具通过 `TL_LAYOUT_VISUALIZATION_ENABLE` 和 "
+"`TL_LAYOUT_VISUALIZATION_FORMATS` Pass 配置来控制。默认情况下，"
+"`TL_LAYOUT_VISUALIZATION_ENABLE` 处于**禁用**状态，以避免编译期间的性能开销。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:181
 msgid ""
 "When enabled, `TL_LAYOUT_VISUALIZATION_FORMATS` accepts string values to "
 "control output formats:"
 msgstr ""
+"启用后，`TL_LAYOUT_VISUALIZATION_FORMATS` 接受字符串值来控制输出格式："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:182
 msgid "\"txt\": Text output only (same as default)"
-msgstr ""
+msgstr "\"txt\"：仅文本输出（与默认相同）"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:183
 msgid "\"all\": Generates all formats (TXT, PDF, PNG, SVG)"
-msgstr ""
+msgstr "\"all\"：生成所有格式（TXT、PDF、PNG、SVG）"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:184
 msgid "\"png\": Generate PNG format only"
-msgstr ""
+msgstr "\"png\"：仅生成 PNG 格式"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:185
 msgid "\"pdf\": Generate PDF format only"
-msgstr ""
+msgstr "\"pdf\"：仅生成 PDF 格式"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:186
 msgid "\"svg\": Generate SVG format only"
-msgstr ""
+msgstr "\"svg\"：仅生成 SVG 格式"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:187
 msgid ""
 "\"txt,svg\": Generate multiple formats (comma-separated) in addition to text "
 "output"
-msgstr ""
+msgstr "\"txt,svg\"：除文本输出外，生成多种格式（以逗号分隔）"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:189
 msgid "The output messages of \"txt\" will include something like:"
-msgstr ""
+msgstr "\"txt\" 的输出消息将包含类似以下内容："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:190
 msgid ""
@@ -405,10 +498,14 @@ msgid ""
 "  Thread: _j // 16 * 64 + _i // 16 * 32 + _i % 8 * 4 + _j % 8 // 2\n"
 "  Index:  [_j % 16 // 8 * 4 + _i % 16 // 8 * 2 + _j % 2]\n"
 msgstr ""
+"C_local inferenced layout:\n"
+"  Shape: [32, 32] -> [8]\n"
+"  Thread: _j // 16 * 64 + _i // 16 * 32 + _i % 8 * 4 + _j % 8 // 2\n"
+"  Index:  [_j % 16 // 8 * 4 + _i % 16 // 8 * 2 + _j % 2]\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:197
 msgid "AutoDD: Automatic Delta Debugging"
-msgstr ""
+msgstr "AutoDD：自动 Delta 调试"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:199
 msgid ""
@@ -417,145 +514,153 @@ msgid ""
 "a built-in tool that automatically simplifies your program to the minimal "
 "code needed to reproduce a specific error."
 msgstr ""
+"当处理产生错误的复杂 TileLang 程序时，手动隔离错误可能非常繁琐。**AutoDD**"
+"（自动 Delta 调试）是一个内置工具，可以自动将程序简化为复现特定错误所需的最小代码。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:201
 msgid "What is Delta Debugging?"
-msgstr ""
+msgstr "什么是 Delta 调试？"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:203
 msgid "Delta Debugging is an automated debugging technique that:"
-msgstr ""
+msgstr "Delta 调试是一种自动化调试技术，其功能如下："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:204
 msgid "Takes a program that triggers a bug"
-msgstr ""
+msgstr "接收一个触发错误的程序"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:205
 msgid "Systematically removes code fragments"
-msgstr ""
+msgstr "系统性地移除代码片段"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:206
 msgid "Checks if the simplified program still triggers the same bug"
-msgstr ""
+msgstr "检查简化后的程序是否仍然触发相同的错误"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:207
 msgid "Produces the minimal code that reproduces the bug"
-msgstr ""
+msgstr "生成复现该错误的最小代码"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:209
 msgid ""
 "AutoDD uses a Probability Distribution Driven Delta Debugging (PDD) "
 "algorithm for efficient minimization."
 msgstr ""
+"AutoDD 使用概率分布驱动的 Delta 调试（PDD）算法进行高效的最小化。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:211
 msgid "Why Use AutoDD?"
-msgstr ""
+msgstr "为什么使用 AutoDD？"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:213
 msgid ""
 "**Large codebases**: Real projects often have hundreds of lines of "
 "configuration, helper functions, and logging"
 msgstr ""
+"**大型代码库**：实际项目通常有数百行配置、辅助函数和日志记录"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:214
 msgid ""
 "**Hard-to-locate errors**: Error messages may point to TVM/CUDA internals "
 "rather than your TileLang code"
 msgstr ""
+"**难以定位的错误**：错误消息可能指向 TVM/CUDA 内部，而不是你的 TileLang 代码"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:215
 msgid ""
 "**Time-saving**: Manually deleting code to isolate bugs is very time-"
 "consuming"
-msgstr ""
+msgstr "**节省时间**：手动删除代码以隔离错误非常耗时"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:217
 msgid ""
 "AutoDD can reduce a 200+ line program to just 30 lines, directly exposing "
 "the root cause."
-msgstr ""
+msgstr "AutoDD 可以将 200 多行的程序缩减到仅 30 行，直接暴露根本原因。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:219
 msgid "Basic Usage"
-msgstr ""
+msgstr "基本用法"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:221
 msgid ""
 "python -m tilelang.autodd <source_file> --err-msg \"<error_message>\" -o "
 "<output_file>\n"
 msgstr ""
+"python -m tilelang.autodd <source_file> --err-msg \"<error_message>\" -o "
+"<output_file>\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:225
 msgid "Parameters"
-msgstr ""
+msgstr "参数"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Parameter"
-msgstr ""
+msgstr "参数"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "`source`"
-msgstr ""
+msgstr "`source`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Path to the input Python source file"
-msgstr ""
+msgstr "输入 Python 源文件的路径"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "`--err-msg`"
-msgstr ""
+msgstr "`--err-msg`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Error message to match (searched in stdout or stderr)"
-msgstr ""
+msgstr "要匹配的错误消息（在 stdout 或 stderr 中搜索）"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "`-o, --output`"
-msgstr ""
+msgstr "`-o, --output`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Path to the minimized output file"
-msgstr ""
+msgstr "最小化输出文件的路径"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "`--backend`"
-msgstr ""
+msgstr "`--backend`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid ""
 "Execution backend: `runner` (faster) or `subproc` (more stable), default "
 "`runner`"
 msgstr ""
+"执行后端：`runner`（更快）或 `subproc`（更稳定），默认为 `runner`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "`--timeout`"
-msgstr ""
+msgstr "`--timeout`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Timeout for each task in seconds, default 60"
-msgstr ""
+msgstr "每个任务的超时时间（秒），默认为 60"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "`-j, --jobs`"
-msgstr ""
+msgstr "`-j, --jobs`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Number of parallel jobs, default 1"
-msgstr ""
+msgstr "并行任务数，默认为 1"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:236
 msgid "Example"
-msgstr ""
+msgstr "示例"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:238
 msgid ""
 "Suppose you have a complex TileLang program with a GEMM shape mismatch bug:"
-msgstr ""
+msgstr "假设你有一个包含 GEMM 形状不匹配错误 的复杂 TileLang 程序："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:240
 msgid ""
@@ -573,20 +678,35 @@ msgid ""
 "            T.gemm(A_shared, B_shared, C_local)  # Error here\n"
 "    return matmul_kernel\n"
 msgstr ""
+"# buggy_matmul.py （200+ 行）\n"
+"@tilelang.jit\n"
+"def buggy_matmul(M, N, K, block_M, block_N, block_K, ...):\n"
+"    @T.prim_func\n"
+"    def matmul_kernel(...):\n"
+"        with T.Kernel(...) as (bx, by):\n"
+"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"            B_shared = T.alloc_shared((block_M, block_N), dtype)  # Bug: "
+"应为 (block_K, block_N)\n"
+"            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"            # ... 大量其他代码 ...\n"
+"            T.gemm(A_shared, B_shared, C_local)  # 此处出错\n"
+"    return matmul_kernel\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:255
 msgid "Run AutoDD to minimize:"
-msgstr ""
+msgstr "运行 AutoDD 进行最小化："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:257
 msgid ""
 "python -m tilelang.autodd buggy_matmul.py --err-msg \"Dimension mismatch\" -"
 "o minimized.py -j 4\n"
 msgstr ""
+"python -m tilelang.autodd buggy_matmul.py --err-msg \"Dimension mismatch\" -"
+"o minimized.py -j 4\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:261
 msgid "AutoDD will produce a minimal reproduction:"
-msgstr ""
+msgstr "AutoDD 将生成一个最小复现："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:263
 msgid ""
@@ -604,82 +724,97 @@ msgid ""
 "            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
 "            T.gemm(A_shared, B_shared, C_local)\n"
 msgstr ""
+"# minimized.py （约 30 行）\n"
+"import tilelang.language as T\n"
+"\n"
+"def buggy_matmul(M, N, K, block_M, block_N, block_K, dtype=T.float16, "
+"accum_dtype=T.float32, *args, **kwargs):\n"
+"    @T.prim_func\n"
+"    def matmul_kernel():\n"
+"        with T.Kernel():\n"
+"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
+"            B_shared = T.alloc_shared((block_M, block_N), dtype)  # 错误暴露了！\n"
+"            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"            T.gemm(A_shared, B_shared, C_local)\n"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:277
 msgid "How AutoDD Works"
-msgstr ""
+msgstr "AutoDD 的工作原理"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:279
 msgid ""
 "AutoDD uses AST (Abstract Syntax Tree) analysis with multiple rewrite rules:"
 msgstr ""
+"AutoDD 使用 AST（抽象语法树）分析，并结合多种重写规则："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:281
 msgid "**Fast Reducers**: Remove statements, simplify if/for constructs"
-msgstr ""
+msgstr "**快速缩减器**：移除语句，简化 if/for 结构"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:282
 msgid ""
 "**Canonicalizers**: Expand with statements, add `*args, **kwargs` for "
 "compatibility"
 msgstr ""
+"**规范化器**：展开 with 语句，添加 `*args, **kwargs` 以提高兼容性"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:283
 msgid ""
 "**Simplifiers**: Replace expressions with constants, simplify function calls"
-msgstr ""
+msgstr "**简化器**：用常量替换表达式，简化函数调用"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:284
 msgid ""
 "**Slow Reducers**: Remove arbitrary expressions, reduce integer constants"
-msgstr ""
+msgstr "**慢速缩减器**：移除任意表达式，缩减整数常量"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:286
 msgid "Tips"
-msgstr ""
+msgstr "提示"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:288
 msgid ""
 "**Error message matching**: Use a unique substring from the error output"
-msgstr ""
+msgstr "**错误消息匹配**：使用错误输出中的唯一子字符串"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:289
 msgid ""
 "**Timeout**: Increase `--timeout` for programs with long compilation times"
-msgstr ""
+msgstr "**超时**：对于编译时间较长的程序，增加 `--timeout`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:290
 msgid "**Parallel jobs**: Use `-j 4` or higher to speed up minimization"
-msgstr ""
+msgstr "**并行任务**：使用 `-j 4` 或更高以提高最小化速度"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:291
 msgid "**Backend**: Try `--backend subproc` if `runner` is unstable"
-msgstr ""
+msgstr "**后端**：如果 `runner` 不稳定，请尝试 `--backend subproc`"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:293
 msgid "Complete Example"
-msgstr ""
+msgstr "完整示例"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:295
 msgid "A complete example is available in `examples/autodd/`:"
-msgstr ""
+msgstr "完整的示例可在 `examples/autodd/` 中找到："
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:296
 msgid "`tilelang_buggy.py`: A complex program with a bug (~200 lines)"
-msgstr ""
+msgstr "`tilelang_buggy.py`：一个包含错误的复杂程序（约 200 行）"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:297
 msgid ""
 "`tilelang_minimized_expected.py`: Expected output after AutoDD (~30 lines)"
 msgstr ""
+"`tilelang_minimized_expected.py`：AutoDD 预期输出（约 30 行）"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:298
 msgid "`README.md`: Detailed documentation"
-msgstr ""
+msgstr "`README.md`：详细文档"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:300
 msgid "Conclusion"
-msgstr ""
+msgstr "总结"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:302
 msgid ""
@@ -690,6 +825,10 @@ msgid ""
 "(inspecting IR transformations and using runtime prints) is often sufficient "
 "for resolving generation and correctness issues in TileLang programs."
 msgstr ""
+"通过仔细检查最终代码生成之前的中间表示（IR），并利用 `T.print` 进行运行时打印，"
+"你可以快速诊断出索引计算、复制逻辑或其他内核操作在何处偏离了预期行为。"
+"这种双管齐下的方法（检查 IR 转换和使用运行时打印）通常足以解决 TileLang 程序中的"
+"生成问题和正确性问题。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:304
 msgid ""
@@ -697,6 +836,8 @@ msgid ""
 "automated delta debugging to quickly isolate the minimal code that "
 "reproduces a bug."
 msgstr ""
+"对于手动调试繁琐的复杂程序，**AutoDD** 提供了自动化的 Delta 调试，可以快速隔离出"
+"复现错误的最小代码。"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:306
 msgid ""
@@ -705,3 +846,5 @@ msgid ""
 "**rocProf**, or vendor-specific profilers may be required. Those aspects "
 "will be covered in future documents."
 msgstr ""
+"对于高级性能调优（例如分析内存带宽或占用率），可能需要更专业的性能分析工具，"
+"如 **Nsight Compute**、**rocProf** 或厂商特定的分析器。这些方面将在后续文档中介绍。"

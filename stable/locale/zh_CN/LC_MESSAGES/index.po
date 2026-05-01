@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025-2025, Tile Lang Contributors
-# This file is distributed under the same license as the Tile Language <br> package.
+# This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-02-16 08:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,39 +19,39 @@ msgstr ""
 
 #: ../../../index.md:11
 msgid "GET STARTED"
-msgstr ""
+msgstr "快速入门"
 
 #: ../../../index.md:20
 msgid "TUTORIALS"
-msgstr ""
+msgstr "教程"
 
 #: ../../../index.md:29
 msgid "PROGRAMMING GUIDES"
-msgstr ""
+msgstr "编程指南"
 
 #: ../../../index.md:42
 msgid "DEEP LEARNING OPERATORS"
-msgstr ""
+msgstr "深度学习算子"
 
 #: ../../../index.md:53
 msgid "COMPILER INTERNALS"
-msgstr ""
+msgstr "编译器内部原理"
 
 #: ../../../index.md:62
 msgid "API Reference"
-msgstr ""
+msgstr "API 参考"
 
 #: ../../../index.md:69
 msgid "Privacy"
-msgstr ""
+msgstr "隐私政策"
 
 #: ../../../index.md:1
 msgid "👋 Welcome to Tile Language"
-msgstr ""
+msgstr "👋 欢迎来到 Tile Language"
 
 #: ../../../index.md:3
 msgid "[GitHub](https://github.com/tile-ai/tilelang)"
-msgstr ""
+msgstr "[GitHub](https://github.com/tile-ai/tilelang)"
 
 #: ../../../index.md:5
 msgid ""
@@ -62,3 +62,7 @@ msgid ""
 "allows developers to focus on productivity without sacrificing the low-level "
 "optimizations necessary for state-of-the-art performance."
 msgstr ""
+"Tile Language (tile-lang) 是一种简洁的领域特定语言，旨在简化高性能 GPU/CPU "
+"内核（如 GEMM、Dequant GEMM、FlashAttention、LinearAttention）的开发。"
+"通过采用 Python 风格语法并基于 TVM 构建底层编译器基础设施，tile-lang "
+"使开发者能够专注于生产力，同时不牺牲实现顶尖性能所必需的低级优化。"

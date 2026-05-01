@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../programming_guides/control_flow.md:1
 msgid "Control Flow"
-msgstr ""
+msgstr "控制流"
 
 #: ../../../programming_guides/control_flow.md:3
 msgid ""
@@ -27,38 +27,40 @@ msgid ""
 "to efficient GPU code. You will use these to structure loops, handle "
 "boundaries, and express pipelined compute."
 msgstr ""
+"本指南涵盖 TileLang 中的控制流原语以及它们如何降级为高效的 GPU 代码。你将使用"
+"这些原语来构建循环、处理边界以及表达流水线计算。"
 
 #: ../../../programming_guides/control_flow.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../../programming_guides/control_flow.md:8
 msgid "Conditionals: `if` / `elif` / `else`, ternary (`x if c else y`)"
-msgstr ""
+msgstr "条件判断：`if` / `elif` / `else`，三元表达式（`x if c else y`）"
 
 #: ../../../programming_guides/control_flow.md:9
 msgid "Loops: `T.serial`, `T.unroll`, `T.Parallel`, `T.Pipelined`"
-msgstr ""
+msgstr "循环：`T.serial`、`T.unroll`、`T.Parallel`、`T.Pipelined`"
 
 #: ../../../programming_guides/control_flow.md:10
 msgid "While loops: `while` with a TIR condition"
-msgstr ""
+msgstr "While 循环：使用 TIR 条件的 `while`"
 
 #: ../../../programming_guides/control_flow.md:11
 msgid "Flow control: Python `break` / `continue`"
-msgstr ""
+msgstr "流程控制：Python `break` / `continue`"
 
 #: ../../../programming_guides/control_flow.md:12
 msgid "Safety: automatic OOB guards via the LegalizeSafeMemoryAccess pass"
-msgstr ""
+msgstr "安全性：通过 LegalizeSafeMemoryAccess 遍自动插入越界保护"
 
 #: ../../../programming_guides/control_flow.md:14
 msgid "The examples assume `import tilelang.language as T`."
-msgstr ""
+msgstr "示例假定已执行 `import tilelang.language as T`。"
 
 #: ../../../programming_guides/control_flow.md:16
 msgid "Conditionals"
-msgstr ""
+msgstr "条件判断"
 
 #: ../../../programming_guides/control_flow.md:18
 msgid ""
@@ -66,6 +68,8 @@ msgid ""
 "kernels. Conditions should be TIR expressions (e.g., `i < N`). Python plain "
 "booleans are treated as compile‑time constants and will be folded."
 msgstr ""
+"`@T.prim_func` 内核内部支持标准 Python `if`/`elif`/`else`。条件应为 TIR 表达式"
+"（例如 `i < N`）。Python 普通布尔值被视为编译时常量，会被折叠。"
 
 #: ../../../programming_guides/control_flow.md:22
 msgid ""
@@ -78,22 +82,33 @@ msgid ""
 "# Ternary\n"
 "x = (A[i] if i < N else 0)\n"
 msgstr ""
+"for i in T.serial(N):\n"
+"    if i < N:            # TIR 条件\n"
+"        C[i] = A[i] + B[i]\n"
+"    else:\n"
+"        pass\n"
+"\n"
+"# 三元表达式\n"
+"x = (A[i] if i < N else 0)\n"
 
 #: ../../../programming_guides/control_flow.md:33
 msgid ""
 "Short‑circuit boolean ops are supported. For multi‑dimensional bounds, use "
 "`T.any_of` / `T.all_of` for clarity:"
 msgstr ""
+"支持短路布尔运算。对于多维边界，使用 `T.any_of` / `T.all_of` 以获得清晰性："
 
 #: ../../../programming_guides/control_flow.md:36
 msgid ""
 "if T.all_of(i < M, j < N):\n"
 "    C[i, j] = A[i, j] + B[i, j]\n"
 msgstr ""
+"if T.all_of(i < M, j < N):\n"
+"    C[i, j] = A[i, j] + B[i, j]\n"
 
 #: ../../../programming_guides/control_flow.md:41
 msgid "Boundary handling note"
-msgstr ""
+msgstr "边界处理说明"
 
 #: ../../../programming_guides/control_flow.md:42
 msgid ""
@@ -102,18 +117,21 @@ msgid ""
 "omit explicit `if` checks for simple edge handling, but keep them when you "
 "need custom logic or clarity."
 msgstr ""
+"当访问可能越界时，LegalizeSafeMemoryAccess 遍会自动插入保护，当可证明安全时"
+"则会省略保护。对于简单的边界处理，通常可以省略显式的 `if` 检查，但在需要自定义逻辑"
+"或提高清晰度时，请保留它们。"
 
 #: ../../../programming_guides/control_flow.md:47
 msgid "Loops"
-msgstr ""
+msgstr "循环"
 
 #: ../../../programming_guides/control_flow.md:49
 msgid "Serial"
-msgstr ""
+msgstr "串行"
 
 #: ../../../programming_guides/control_flow.md:51
 msgid "`T.serial` creates a plain for‑loop. Common forms:"
-msgstr ""
+msgstr "`T.serial` 创建一个普通 for 循环。常见形式："
 
 #: ../../../programming_guides/control_flow.md:53
 msgid ""
@@ -123,52 +141,65 @@ msgid ""
 "for i in T.serial(0, N, 2):\n"
 "    ...                     # 0, 2, 4, ...\n"
 msgstr ""
+"for i in T.serial(N):\n"
+"    ...                     # 0..N-1\n"
+"\n"
+"for i in T.serial(0, N, 2):\n"
+"    ...                     # 0, 2, 4, ...\n"
 
 #: ../../../programming_guides/control_flow.md:61
 msgid "Unroll"
-msgstr ""
+msgstr "展开"
 
 #: ../../../programming_guides/control_flow.md:63
 msgid "`T.unroll` requests loop unrolling for small trip counts."
-msgstr ""
+msgstr "`T.unroll` 针对较小的循环次数请求循环展开。"
 
 #: ../../../programming_guides/control_flow.md:65
 msgid ""
 "for k in T.unroll(K_TILE):\n"
 "    acc += a[k] * b[k]\n"
 msgstr ""
+"for k in T.unroll(K_TILE):\n"
+"    acc += a[k] * b[k]\n"
 
 #: ../../../programming_guides/control_flow.md:70
 msgid ""
 "Advanced: TileLang forwards unroll hints to TIR; factor/explicit knobs are "
 "available for expert tuning."
 msgstr ""
+"高级用法：TileLang 将展开提示转发给 TIR；因子/显式控制旋钮可供专家级调优使用。"
 
 #: ../../../programming_guides/control_flow.md:73
 msgid "Parallel (elementwise)"
-msgstr ""
+msgstr "并行（逐元素操作）"
 
 #: ../../../programming_guides/control_flow.md:75
 msgid ""
 "`T.Parallel(ext0, ext1, ...)` builds nested loops that map well to "
 "elementwise operations. The body receives all indices in one `for` header:"
 msgstr ""
+"`T.Parallel(ext0, ext1, ...)` 构建嵌套循环，能很好地映射到逐元素操作。"
+"循环体在一个 `for` 头中接收所有索引："
 
 #: ../../../programming_guides/control_flow.md:78
 msgid ""
 "for i, j in T.Parallel(M, N):\n"
 "    C[i, j] = A[i, j] + B[i, j]\n"
 msgstr ""
+"for i, j in T.Parallel(M, N):\n"
+"    C[i, j] = A[i, j] + B[i, j]\n"
 
 #: ../../../programming_guides/control_flow.md:83
 msgid "Optional hints:"
-msgstr ""
+msgstr "可选提示："
 
 #: ../../../programming_guides/control_flow.md:84
 msgid ""
 "`coalesced_width=` controls memory coalescing width (used for vectorization "
 "checks)."
 msgstr ""
+"`coalesced_width=` 控制内存合并宽度（用于向量化检查）。"
 
 #: ../../../programming_guides/control_flow.md:85
 msgid ""
@@ -176,10 +207,12 @@ msgid ""
 "nested parallel loop. The annotation is attached to the outermost loop only "
 "and must have `InputDim == number of nested parallel extents`."
 msgstr ""
+"`loop_layout=` 接受一个 `T.Fragment` 来标注整个嵌套并行循环的布局。该标注仅附加到最外层循环，"
+"且必须满足 `InputDim == 嵌套并行范围数量`。"
 
 #: ../../../programming_guides/control_flow.md:89
 msgid "Pipelined (software pipelining)"
-msgstr ""
+msgstr "流水线（软件流水线）"
 
 #: ../../../programming_guides/control_flow.md:91
 msgid ""
@@ -187,6 +220,8 @@ msgid ""
 "g., Global→Shared copies with compute). This is the backbone of GEMM/"
 "attention pipelines."
 msgstr ""
+"`T.Pipelined(iters, num_stages=...)` 重叠生产者/消费者阶段（例如 Global→Shared 复制"
+"与计算）。这是 GEMM/attention 流水线的基础。"
 
 #: ../../../programming_guides/control_flow.md:95
 msgid ""
@@ -195,10 +230,14 @@ msgid ""
 "    T.copy(B[ko * BK, bx * BN], B_s)  # stage: copy B tile\n"
 "    T.gemm(A_s, B_s, C_f)             # stage: compute\n"
 msgstr ""
+"for ko in T.Pipelined(T.ceildiv(K, BK), num_stages=3):\n"
+"    T.copy(A[by * BM, ko * BK], A_s)  # 阶段：复制 A 分块\n"
+"    T.copy(B[ko * BK, bx * BN], B_s)  # 阶段：复制 B 分块\n"
+"    T.gemm(A_s, B_s, C_f)             # 阶段：计算\n"
 
 #: ../../../programming_guides/control_flow.md:102
 msgid "Persistent (advanced)"
-msgstr ""
+msgstr "Persistent（高级）"
 
 #: ../../../programming_guides/control_flow.md:104
 msgid ""
@@ -206,16 +245,20 @@ msgid ""
 "thread‑block style looping. It is an advanced construct that TileLang lowers "
 "in later passes and is typically used by specialized templates."
 msgstr ""
+"`T.Persistent(domain, wave_size, index, group_size=...)` 暴露了持久化线程块风格"
+"的循环。这是一个高级结构，TileLang 在后续遍中进行降级，通常由专用模板使用。"
 
 #: ../../../programming_guides/control_flow.md:108
 msgid "While Loops"
-msgstr ""
+msgstr "While 循环"
 
 #: ../../../programming_guides/control_flow.md:110
 msgid ""
 "`while` is supported when the condition is a TIR expression. Avoid infinite "
 "loops; TileLang will error if it detects a constant‑true condition."
 msgstr ""
+"当条件为 TIR 表达式时，支持 `while`。避免无限循环；如果 TileLang 检测到恒为 true 的"
+"条件，将会报错。"
 
 #: ../../../programming_guides/control_flow.md:113
 msgid ""
@@ -226,10 +269,16 @@ msgid ""
 "        break\n"
 "    i += 1\n"
 msgstr ""
+"i = 0\n"
+"while i < N:\n"
+"    ...\n"
+"    if done:\n"
+"        break\n"
+"    i += 1\n"
 
 #: ../../../programming_guides/control_flow.md:122
 msgid "Break and Continue"
-msgstr ""
+msgstr "Break 和 Continue"
 
 #: ../../../programming_guides/control_flow.md:124
 msgid ""
@@ -237,17 +286,22 @@ msgid ""
 "`T.Parallel`/`while` loops. Keep the body clean after a `break`/`continue` "
 "for readability; the compiler will ignore the dead path."
 msgstr ""
+"使用 Python 的 `break`/`continue` 在 `T.serial`/`T.unroll`/`T.Parallel`/`while` "
+"循环中退出或跳过。为了可读性，在 `break`/`continue` 之后保持循环体简洁；"
+"编译器将忽略死路径。"
 
 #: ../../../programming_guides/control_flow.md:128
 msgid "Putting It Together: Residual Tile Handling"
-msgstr ""
+msgstr "综合应用：残差分块处理"
 
 #: ../../../programming_guides/control_flow.md:130
 msgid ""
 "Below is a typical edge pattern for a 2D kernel. With "
-"LegalizeSafeMemoryAccess, the explicit guard can be omitted when you don’t "
+"LegalizeSafeMemoryAccess, the explicit guard can be omitted when you don't "
 "need a custom edge path."
 msgstr ""
+"以下是一个典型的二维内核边界模式。使用 LegalizeSafeMemoryAccess 时，"
+"如果不需要自定义边界路径，可以省略显式保护。"
 
 #: ../../../programming_guides/control_flow.md:133
 msgid ""
@@ -257,19 +311,28 @@ msgid ""
 "    if T.all_of(gi < M, gj < N):     # optional in many cases\n"
 "        C[gi, gj] = A[gi, gj] + B[gi, gj]\n"
 msgstr ""
+"for i, j in T.Parallel(M, N):\n"
+"    gi = by * BM + i\n"
+"    gj = bx * BN + j\n"
+"    if T.all_of(gi < M, gj < N):     # 多数情况下可选\n"
+"        C[gi, gj] = A[gi, gj] + B[gi, gj]\n"
 
 #: ../../../programming_guides/control_flow.md:141
 msgid "Debugging Conditions"
-msgstr ""
+msgstr "调试条件"
 
 #: ../../../programming_guides/control_flow.md:143
 msgid ""
 "Use `T.print` to inspect values under predicates. For buffers, TileLang "
 "prints from a single thread to avoid duplicate outputs."
 msgstr ""
+"使用 `T.print` 检查谓词下的值。对于缓冲区，TileLang 从单个线程打印，"
+"以避免重复输出。"
 
 #: ../../../programming_guides/control_flow.md:146
 msgid ""
 "if i == 0:\n"
 "    T.print(C, msg='C tile:')\n"
 msgstr ""
+"if i == 0:\n"
+"    T.print(C, msg='C tile:')\n"

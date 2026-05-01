@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
@@ -19,7 +18,7 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:1
 msgid "Programming Guides Overview"
-msgstr ""
+msgstr "编程指南概览"
 
 #: ../../../programming_guides/overview.md:3
 msgid ""
@@ -27,81 +26,86 @@ msgid ""
 "with Tile Language (tile‑lang). It mirrors the structure of a similar guide "
 "in another project and adapts it to tile‑lang concepts and APIs."
 msgstr ""
+"本节提供了使用 Tile Language (tile‑lang) 编写高性能内核的实用指南。"
+"它借鉴了另一个项目中类似指南的结构，并针对 tile‑lang 的概念和 API 进行了适配。"
 
 #: ../../../programming_guides/overview.md:6
 msgid "Audience: Developers implementing custom GPU/CPU kernels with tile‑lang"
-msgstr ""
+msgstr "目标读者：使用 tile‑lang 实现自定义 GPU/CPU 内核的开发者"
 
 #: ../../../programming_guides/overview.md:7
 msgid ""
 "Prereqs: Basic Python, NumPy/Tensor concepts, and familiarity with GPU "
 "programming notions"
 msgstr ""
+"前置要求：具备基本的 Python 和 NumPy/张量概念知识，并熟悉 GPU "
+"编程的基本概念"
 
 #: ../../../programming_guides/overview.md:8
 msgid ""
 "Scope: Language basics, control flow, instructions, autotuning, and type "
 "system"
-msgstr ""
+msgstr "涵盖范围：语言基础、控制流、指令、自动调优以及类型系统"
 
 #: ../../../programming_guides/overview.md:10
 msgid "What You’ll Learn"
-msgstr ""
+msgstr "你将学到的内容"
 
 #: ../../../programming_guides/overview.md:11
 msgid "How to structure kernels with TileLang’s core DSL constructs"
-msgstr ""
+msgstr "如何使用 TileLang 核心 DSL 结构来组织内核"
 
 #: ../../../programming_guides/overview.md:12
 msgid "How to move data across global/shared/fragment and pipeline compute"
-msgstr ""
+msgstr "如何在 global/shared/fragment 之间移动数据以及如何流水线化计算"
 
 #: ../../../programming_guides/overview.md:13
 msgid "How to apply autotuning to tile sizes and schedules"
-msgstr ""
+msgstr "如何对 Tile 大小和调度进行自动调优"
 
 #: ../../../programming_guides/overview.md:14
 msgid "How to specify and work with dtypes in kernels"
-msgstr ""
+msgstr "如何在内核中指定和使用数据类型"
 
 #: ../../../programming_guides/overview.md:16
 msgid "Suggested Reading Order"
-msgstr ""
+msgstr "建议阅读顺序"
 
 #: ../../../programming_guides/overview.md:17
 msgid "Language Basics"
-msgstr ""
+msgstr "语言基础"
 
 #: ../../../programming_guides/overview.md:18
 msgid "Control Flow"
-msgstr ""
+msgstr "控制流"
 
 #: ../../../programming_guides/overview.md:19
 msgid "Instructions"
-msgstr ""
+msgstr "指令"
 
 #: ../../../programming_guides/overview.md:20
 msgid "Autotuning"
-msgstr ""
+msgstr "自动调优"
 
 #: ../../../programming_guides/overview.md:21
 msgid "Type System"
-msgstr ""
+msgstr "类型系统"
 
 #: ../../../programming_guides/overview.md:23
 msgid "Related Docs"
-msgstr ""
+msgstr "相关文档"
 
 #: ../../../programming_guides/overview.md:24
 msgid "Tutorials: see existing guides in `tutorials/`"
-msgstr ""
+msgstr "教程：请参阅 `tutorials/` 中的现有指南"
 
 #: ../../../programming_guides/overview.md:25
 msgid "Operators: examples in `deeplearning_operators/`"
-msgstr ""
+msgstr "算子：请参阅 `deeplearning_operators/` 中的示例"
 
 #: ../../../programming_guides/overview.md:27
 msgid ""
 "NOTE: This is a draft scaffold. Fill in code snippets and benchmarks as APIs "
 "evolve."
 msgstr ""
+"注意：这是一个初稿框架。随着 API 的发展，请补充代码片段和基准测试。"

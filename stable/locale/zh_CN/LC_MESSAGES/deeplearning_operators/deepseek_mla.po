@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025-2025, Tile Lang Contributors
-# This file is distributed under the same license as the Tile Language <br> package.
+# This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../deeplearning_operators/deepseek_mla.md:1
 msgid "🚀 Write High Performance FlashMLA with TileLang on Hopper"
-msgstr ""
+msgstr "🚀 使用 TileLang 在 Hopper 上编写高性能 FlashMLA"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:3
 msgid ""
@@ -29,6 +29,7 @@ msgid ""
 "a>\n"
 "</div>\n"
 msgstr ""
+"<div style=\\\"text-align: left;\\\">\\n\"\"    <em>作者：</em> <a href=\\\"https://github.com/chengyupku\\\">Yu Cheng</a>\\n\"\"    <em>作者：</em> <a href=\\\"https://github.com/LeiWang1999\\\">Lei Wang</\"\"a>\\n\"\"</div>\\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:8
 msgid ""
@@ -38,11 +39,11 @@ msgid ""
 "programming techniques to better leverage TileLang's powerful capabilities. "
 "Here, we'll use MLA as an example to demonstrate how to write high-"
 "performance kernels with TileLang."
-msgstr ""
+msgstr "TileLang 是一种用户友好的 AI 编程语言，能够显著降低内核编程的门槛，帮助用户快速构建自定义运算符。然而，用户仍需要掌握一定的编程技巧，以更好地发挥 TileLang 的强大能力。这里，我们将以 MLA 为例，演示如何使用 TileLang 编写高性能内核。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:10
 msgid "Introduction to MLA"
-msgstr ""
+msgstr "MLA 简介"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:12
 msgid ""
@@ -57,32 +58,33 @@ msgid ""
 "techniques from [FlashAttention](https://github.com/Dao-AILab/flash-"
 "attention), achieving impressive performance."
 msgstr ""
+"DeepSeek's MLA (Multi-Head Latent Attention) is a novel attention mechanism \"\"known for its hardware efficiency and significant improvements in model \"\"inference speed. Several deep learning compilers (such as [Triton](https://\"\"github.com/triton-lang/triton)) and libraries (such as [FlashInfer](https://\"\"github.com/flashinfer-ai/flashinfer)) have developed their own \"\"implementations of MLA. In February 2025, [FlashMLA](https://github.com/\"\"deepseek-ai/FlashMLA) was open-sourced on GitHub. FlashMLA utilizes [CUTLASS]\"\"(https://github.com/NVIDIA/cutlass) templates and incorporates optimization \"\"techniques from [FlashAttention](https://github.com/Dao-AILab/flash-\"\"attention), achieving impressive performance."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:14
 msgid "Benchmark Results"
-msgstr ""
+msgstr "基准测试结果"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:16
 msgid ""
 "We benchmarked the performance of FlashMLA, TileLang, Torch, Triton, and "
 "FlashInfer under batch sizes of 64 and 128, with float16 data type, as shown "
 "in the figures below."
-msgstr ""
+msgstr "我们在批大小为 64 和 128 的情况下，使用 float16 数据类型，对 FlashMLA、TileLang、Torch、Triton 和 FlashInfer 的性能进行了基准测试，结果如下图所示。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:18
 #: ../../../deeplearning_operators/deepseek_mla.md:26
 #: ../../../deeplearning_operators/deepseek_mla.md:74
 #: ../../../deeplearning_operators/deepseek_mla.md:82
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:23
 msgid "Figure 1: Performance under batch size=64"
-msgstr ""
+msgstr "图 1：批大小为 64 时的性能表现"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:31
 msgid "Figure 2: Performance under batch size=128"
-msgstr ""
+msgstr "图 2：批大小为 128 时的性能表现"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:34
 msgid ""
@@ -91,16 +93,16 @@ msgid ""
 "Triton. Notably, **TileLang accomplishes this with just around 80 lines of "
 "Python code**, demonstrating its exceptional ease of use and efficiency. "
 "Let's dive in and see how TileLang achieves this."
-msgstr ""
+msgstr "从结果可以看出，TileLang 在多数情况下实现了与 FlashMLA 可比的性能，显著优于 FlashInfer 和 Triton。值得注意的是，**TileLang 仅用约 80 行 Python 代码就实现了这一点**，展示了其极佳的易用性和效率。让我们深入探讨 TileLang 是如何做到这一点的。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:37
 msgid "Implementation"
-msgstr ""
+msgstr "实现"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:39
 msgid ""
 "First, let's review the core computation logic of traditional FlashAttention:"
-msgstr ""
+msgstr "首先，让我们回顾一下传统 FlashAttention 的核心计算逻辑："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:41
 msgid ""
@@ -119,6 +121,7 @@ msgid ""
 "    acc_o = acc_s @ V[i]\n"
 "    ...\n"
 msgstr ""
+"# acc_s: [block_M, block_N]\\n\"\"# scores_max: [block_M]\\n\"\"# scores_scale: [block_M]\\n\"\"# acc_o: [block_M, dim]\\n\"\"\\n\"\"for i in range(loop_range):\\n\"\"    acc_s = Q @ K[i]\\n\"\"    scores_max_prev = scores_max\\n\"\"    scores_max = max(acc_s, dim=1)\\n\"\"    scores_scale = exp(scores_max_prev - scores_max)\\n\"\"    acc_o *= scores_scale\\n\"\"    acc_s = exp(acc_s - scores_max)\\n\"\"    acc_o = acc_s @ V[i]\\n\"\"    ...\\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:58
 msgid ""
@@ -127,6 +130,7 @@ msgid ""
 "iteration's output with dimensions `[block_M, dim]`. Both `acc_s` and "
 "`acc_o` need to be stored in registers to reduce latency."
 msgstr ""
+"Here, `acc_s` represents the `Q @ K` result in each iteration with \"\"dimensions `[block_M, block_N]`, while `acc_o` represents the current \"\"iteration's output with dimensions `[block_M, dim]`. Both `acc_s` and \"\"`acc_o` need to be stored in registers to reduce latency."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:60
 msgid ""
@@ -137,7 +141,7 @@ msgid ""
 "significant issue: `acc_o` becomes too large, and with insufficient threads "
 "(e.g., 128 threads), register spilling occurs, severely impacting "
 "performance."
-msgstr ""
+msgstr "与传统的注意力运算符（如 MHA 或 GQA）相比，优化 MLA 的一个主要挑战是其大的头维度——`query` 和 `key` 的头维度为 576（512 + 64），而 `value` 的头维度为 512。这引发了一个重要问题：`acc_o` 变得过大，而线程不足（例如 128 个线程）时会导致寄存器溢出，严重影响性能。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:62
 msgid ""
@@ -151,6 +155,7 @@ msgid ""
 "warpgroup's minimum M dimension can only be reduced to 64, but a tile size "
 "of 64*512 is too large for a single warpgroup, leading to register spilling."
 msgstr ""
+"This raises the question of how to partition the matrix multiplication \"\"operation. On the Hopper architecture, most computation kernels use [`wgmma.\"\"mma_async`](https://docs.nvidia.com/cuda/parallel-thread-execution/\"\"#asynchronous-warpgroup-level-matrix-instructions) instructions for optimal \"\"performance. The `wgmma.mma_async` instruction organizes 4 warps (128 \"\"threads) into a warpgroup for collective MMA operations. However, `wgmma.\"\"mma_async` instructions require a minimum M dimension of 64. This means each \"\"warpgroup's minimum M dimension can only be reduced to 64, but a tile size \"\"of 64*512 is too large for a single warpgroup, leading to register spilling."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:64
 msgid ""
@@ -159,6 +164,7 @@ msgid ""
 "respectively. However, this introduces another challenge: both warpgroups "
 "require the complete `acc_s` result as input."
 msgstr ""
+"Therefore, our only option is to partition `acc_o` along the `dim` \"\"dimension, with two warpgroups computing the left and right part of `acc_o` \"\"respectively. However, this introduces another challenge: both warpgroups \"\"require the complete `acc_s` result as input."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:66
 msgid ""
@@ -166,16 +172,18 @@ msgid ""
 "K` computation, then obtain the other half computed by the other warpgroup "
 "through shared memory."
 msgstr ""
+"Our solution is to have each warpgroup compute half of `acc_s` during `Q @ \"\"K` computation, then obtain the other half computed by the other warpgroup \"\"through shared memory."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:68
 msgid "Layout Inference"
-msgstr ""
+msgstr "布局推断"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:70
 msgid ""
 "While the above process may seem complex, but don't worry - TileLang will "
 "handle all these intricacies for you."
 msgstr ""
+"While the above process may seem complex, but don't worry - TileLang will \"\"handle all these intricacies for you."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:72
 msgid ""
@@ -186,14 +194,15 @@ msgid ""
 "column (e.g., split the result matrix in vertical dimension). `T.copy` "
 "represents buffer-to-buffer copying operations."
 msgstr ""
+"Figure 3 and Figure 4 illustrate the frontend TileLang script and its \"\"corresponding execution plan for MLA. Here, `T.gemm` represents matrix \"\"multiplication operations, `transpose_B=True` indicates transposition of \"\"matrix B, and `policy=FullCol` specifies that each warpgroup computes one \"\"column (e.g., split the result matrix in vertical dimension). `T.copy` \"\"represents buffer-to-buffer copying operations."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:79
 msgid "Figure 3: Buffer shapes in Q @ K"
-msgstr ""
+msgstr "图 3：Q @ K 中的缓冲区形状"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:87
 msgid "Figure 4: Buffer shapes in acc_s @ V"
-msgstr ""
+msgstr "图 4：acc_s @ V 中的缓冲区形状"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:90
 msgid ""
@@ -204,6 +213,7 @@ msgid ""
 "generates the corresponding code. Here, we demonstrate a concrete example of "
 "buffer shape inference in MLA."
 msgstr ""
+"The mapping from TileLang frontend code to execution plan is accomplished \"\"through Layout Inference. Layout inference is a core optimization technique \"\"in TileLang. It automatically deduces the required buffer shapes and optimal \"\"layouts based on Tile-Operators (like `T.gemm`, `T.copy`, etc.), then \"\"generates the corresponding code. Here, we demonstrate a concrete example of \"\"buffer shape inference in MLA."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:92
 msgid ""
@@ -216,6 +226,7 @@ msgid ""
 "inference process forward, determining that both `S_shared` and `acc_s` in "
 "`T.copy(S_shared, acc_s)` should have shapes of `[blockM, blockN]`."
 msgstr ""
+"For instance, when computing `Q @ K`, TileLang infers that each warpgroup's \"\"`acc_s_0` shape should be `[blockM, blockN / 2]` based on the \"\"`policy=FullCol` annotation in `T.gemm`. Since this is followed by an `acc_s \"\"@ V` operation with `policy=FullCol`, which requires each warpgroup to have \"\"the complete `acc_s` result, TileLang deduces that `acc_s`'s shape at this \"\"point should be `[blockM, blockN]`. Consequently, TileLang can continue the \"\"inference process forward, determining that both `S_shared` and `acc_s` in \"\"`T.copy(S_shared, acc_s)` should have shapes of `[blockM, blockN]`."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:94
 msgid ""
@@ -225,10 +236,11 @@ msgid ""
 "ours. Nevertheless, our scheduling approach still achieves comparable "
 "performance."
 msgstr ""
+"It's worth noting that our scheduling approach differs from FlashMLA's \"\"implementation strategy. In FlashMLA, `Q @ K` is assigned to a single \"\"warpgroup, while the `acc_o` partitioning scheme remains consistent with \"\"ours. Nevertheless, our scheduling approach still achieves comparable \"\"performance."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:96
 msgid "Threadblock Swizzling"
-msgstr ""
+msgstr "线程块 Swizzle"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:98
 msgid ""
@@ -244,28 +256,28 @@ msgid ""
 "mapping) to adjust the execution order of threadblocks, ensuring that "
 "consecutively scheduled threadblocks access adjacent or overlapping data "
 "regions."
-msgstr ""
+msgstr "线程块 Swizzle 是 GPU 内核优化中常见的性能优化技术。在 GPU 架构中，L2 缓存是多个 SM（流处理器）共享的高速缓存。线程块 Swizzle 通过重映射线程块的调度顺序来优化数据访问模式，从而提高 L2 缓存命中率。传统的调度通常按网格的自然顺序执行线程块，这可能导致相邻线程块之间的数据访问模式不连续，导致缓存数据利用不佳。Swizzle 技术采用数学映射方法（如对角线或交错映射）来调整线程块的执行顺序，确保连续调度的线程块访问相邻或重叠的数据区域。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:100
 msgid ""
 "In TileLang, threadblock swizzling optimization can be implemented with just "
 "a single line of Python code:"
-msgstr ""
+msgstr "在 TileLang 中，线程块 Swizzle 优化只需一行 Python 代码即可实现："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:102
 msgid "T.use_swizzle(panel_size: int, order: str = \"row\")\n"
-msgstr ""
+msgstr "T.use_swizzle(panel_size: int, order: str = \"row\")\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:106
 msgid ""
 "Here, `panel_size` specifies the width of the swizzled threadblock group, "
 "and `order` determines the swizzling pattern, which can be either \"row\" or "
 "\"col\"."
-msgstr ""
+msgstr "这里，`panel_size` 指定了 swizzle 线程块组的宽度，而 `order` 确定了 swizzle 模式，可以是 \"row\" 或 \"col\"。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:108
 msgid "Shared Memory Swizzling"
-msgstr ""
+msgstr "共享内存 Swizzle"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:110
 msgid ""
@@ -274,7 +286,7 @@ msgid ""
 "parallel. Bank conflicts occur when multiple threads simultaneously access "
 "different addresses mapped to the same bank, forcing these accesses to be "
 "serialized and degrading performance."
-msgstr ""
+msgstr "在 CUDA 编程中，共享内存被分为多个存储银行，每个银行每时钟周期可并行服务一个线程请求。当多个线程同时访问映射到同一银行的不同地址时，就会发生银行冲突，强制这些访问串行化，降低性能。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:112
 msgid ""
@@ -289,12 +301,13 @@ msgid ""
 "as it can significantly improve memory access parallelism and overall "
 "execution efficiency."
 msgstr ""
+"One common strategy to address bank conflicts is shared memory swizzling. \"\"This technique rearranges how data is stored in shared memory by remapping \"\"addresses that would originally fall into the same bank to different banks, \"\"thereby reducing conflicts. For example, XOR operations or other bit \"\"manipulations can be incorporated into address calculations to alter the \"\"data layout, resulting in more evenly distributed memory accesses across \"\"consecutive threads. This approach is particularly crucial for implementing \"\"high-performance computing tasks like matrix multiplication and convolution, \"\"as it can significantly improve memory access parallelism and overall \"\"execution efficiency."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:114
 msgid ""
 "Similarly, TileLang also supports shared memory swizzling. Users only need "
 "to add a single line of Python code:"
-msgstr ""
+msgstr "类似地，TileLang 也支持共享内存 swizzle。用户只需添加一行 Python 代码："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:116
 msgid ""
@@ -302,6 +315,7 @@ msgid ""
 "    S_shared: TileLang.layout.make_swizzled_layout(S_shared),\n"
 "})\n"
 msgstr ""
+"T.annotate_layout({\\n\"\"    S_shared: TileLang.layout.make_swizzled_layout(S_shared),\\n\"\"})\\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:122
 msgid ""
@@ -309,10 +323,11 @@ msgid ""
 "buffer. For convenience, TileLang provides the `make_swizzled_layout` "
 "primitive to automatically generate a swizzled layout."
 msgstr ""
+"Here, `T.annotate_layout` allows users to specify any desired layout for a \"\"buffer. For convenience, TileLang provides the `make_swizzled_layout` \"\"primitive to automatically generate a swizzled layout."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:124
 msgid "Warp-Specialization"
-msgstr ""
+msgstr "Warp 特化"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:126
 msgid ""
@@ -324,6 +339,7 @@ msgid ""
 "the execution logic for producers and consumers, including synchronization "
 "through the `mbarrier` objects."
 msgstr ""
+"The Hopper architecture commonly employs warp specialization for performance \"\"optimization. A typical approach is to designate one warpgroup as a producer \"\"that handles data movement using TMA (Tensor Memory Accelerator), while the \"\"remaining warpgroups serve as consumers performing computations. However, \"\"this programming pattern is complex, requiring developers to manually manage \"\"the execution logic for producers and consumers, including synchronization \"\"through the `mbarrier` objects."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:128
 msgid ""
@@ -331,11 +347,11 @@ msgid ""
 "details. The frontend script is automatically transformed into a warp-"
 "specialized form, where TileLang handles all producer-consumer "
 "synchronization automatically, enabling efficient computation."
-msgstr ""
+msgstr "在 TileLang 中，用户完全不需要担心这些实现细节。前端脚本会自动转化为 Warp 特化形式，TileLang 自动处理所有生产者-消费者同步，实现高效计算。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:130
 msgid "Pipeline"
-msgstr ""
+msgstr "流水线"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:132
 msgid ""
@@ -343,10 +359,11 @@ msgid ""
 "overlapping memory access and computation. In TileLang, pipeline can be "
 "implemented through the `T.pipelined` annotation:"
 msgstr ""
+"Pipeline is a technique used to improve memory access efficiency by \"\"overlapping memory access and computation. In TileLang, pipeline can be \"\"implemented through the `T.pipelined` annotation:"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:134
 msgid "T.pipelined(range: int, stage: int)\n"
-msgstr ""
+msgstr "T.pipelined(range: int, stage: int)\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:138
 msgid ""
@@ -357,10 +374,11 @@ msgid ""
 "consumes more shared memory resources, so the optimal configuration needs to "
 "be determined based on specific use cases."
 msgstr ""
+"Here, `range` specifies the range of the pipeline, and `stage` specifies the \"\"stage of the pipeline. Multi-stage pipelining enables overlapping of \"\"computation and memory access, which can significantly improve performance \"\"for memory-intensive operators. However, setting a higher number of stages \"\"consumes more shared memory resources, so the optimal configuration needs to \"\"be determined based on specific use cases."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:140
 msgid "Split-KV"
-msgstr ""
+msgstr "Split-KV"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:142
 msgid ""
@@ -370,16 +388,17 @@ msgid ""
 "parallelism. In such cases, we can split the kv_ctx dimension across "
 "multiple SMs for parallel computation and then merge the results."
 msgstr ""
+"We have also implemented Split-KV optimization similar to [FlashDecoding]\"\"(https://pytorch.org/blog/flash-decoding/). Specifically, when the batch \"\"size is small, parallel SM resources cannot be fully utilized due to low \"\"parallelism. In such cases, we can split the kv_ctx dimension across \"\"multiple SMs for parallel computation and then merge the results."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:144
 msgid ""
 "In our implementation, we have developed both split and combine kernels, "
 "allowing users to control the split size through a `num_split` parameter."
-msgstr ""
+msgstr "在我们的实现中，我们开发了拆分和合并内核，允许用户通过 `num_split` 参数控制拆分大小。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:146
 msgid "🚀 On AMD MI300X Accelerators"
-msgstr ""
+msgstr "🚀 在 AMD MI300X 加速器上"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:148
 msgid ""
@@ -390,16 +409,17 @@ msgid ""
 "architectural differences and corresponding optimization strategies between "
 "these platforms."
 msgstr ""
+"Following our previous demonstration of [high-performance FlashMLA \"\"implementation on NVIDIA Hopper architectures using TileLang](https://github.\"\"com/tile-ai/tilelang/blob/main/examples/deepseek_mla/README.md), this work \"\"presents an optimized implementation for AMD MI300X accelerators. We examine \"\"architectural differences and corresponding optimization strategies between \"\"these platforms."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:150
 msgid "Architectural Considerations and Optimization Strategies"
-msgstr ""
+msgstr "架构考量与优化策略"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:152
 msgid ""
 "Key implementation differences between Hopper and MI300X architectures "
 "include:"
-msgstr ""
+msgstr "Hopper 和 MI300X 架构之间的主要实现差异包括："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:154
 msgid ""
@@ -408,22 +428,23 @@ msgid ""
 "specialization, which are automatically handled by the compiler on Hopper "
 "architectures, resulting in identical source code manifestations."
 msgstr ""
+"**Instruction Set Variations**: The MI300X architecture eliminates the need \"\"for explicit Tensor Memory Access (TMA) instructions and warp \"\"specialization, which are automatically handled by the compiler on Hopper \"\"architectures, resulting in identical source code manifestations."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:156
 msgid ""
 "**Shared Memory Constraints**: With 64KB of shared memory compared to "
 "Hopper's 228KB, MI300X implementations require careful memory management. "
 "Our optimization strategy includes:"
-msgstr ""
+msgstr "**共享内存限制**：MI300X 拥有 64KB 的共享内存，而 Hopper 为 228KB，MI300X 的实现需要精心管理内存。我们的优化策略包括："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:157
 msgid "Reducing software pipeline stages"
-msgstr ""
+msgstr "减少软件流水线阶段数"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:158
 msgid ""
 "Register-based caching of Q matrices instead of shared memory utilization:"
-msgstr ""
+msgstr "使用寄存器基于的缓存代替共享内存来存储 Q 矩阵："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:159
 msgid ""
@@ -435,6 +456,7 @@ msgid ""
 "Q_local = T.alloc_fragment([block_H, dim], dtype)\n"
 "Q_pe_local = T.alloc_fragment([block_H, pe_dim], dtype)\n"
 msgstr ""
+"# Original shared memory allocation\\n\"\"Q_shared = T.alloc_shared([block_H, dim], dtype)\\n\"\"Q_pe_shared = T.alloc_shared([block_H, pe_dim], dtype)\\n\"\"\\n\"\"# Optimized register allocation\\n\"\"Q_local = T.alloc_fragment([block_H, dim], dtype)\\n\"\"Q_pe_local = T.alloc_fragment([block_H, pe_dim], dtype)\\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:169
 msgid ""
@@ -442,6 +464,7 @@ msgid ""
 "permits more flexible tile size selection, removing the requirement for "
 "block_m to be multiples of 64."
 msgstr ""
+"**Tile Size Flexibility**: The absence of WGMMA instructions on MI300X \"\"permits more flexible tile size selection, removing the requirement for \"\"block_m to be multiples of 64."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:171
 msgid ""
@@ -449,18 +472,18 @@ msgid ""
 "conflict rules compared to NVIDIA, so we need to use different swizzling "
 "strategies. This is also automatically handled by TileLang, resulting in no "
 "visible differences in the code."
-msgstr ""
+msgstr "**内存银行冲突与 Swizzle**：MI300X 的内存银行冲突规则与 NVIDIA 不同，因此我们需要使用不同的 swizzle 策略。这也由 TileLang 自动处理，导致代码中没有可见的差异。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:173
 msgid "Performance Evaluation"
-msgstr ""
+msgstr "性能评估"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:175
 msgid ""
 "We conducted comparative performance analysis across multiple frameworks "
 "using float16 precision with batch sizes 64 and 128. The experimental "
 "results demonstrate:"
-msgstr ""
+msgstr "我们使用 float16 精度，在批大小为 64 和 128 的情况下，跨多个框架进行了性能对比分析。实验结果表明："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:177
 msgid ""
@@ -473,7 +496,7 @@ msgid ""
 "throughput comparison across frameworks (Batch sizes 64 and 128)</"
 "figcaption>\n"
 "</figure>\n"
-msgstr ""
+msgstr "<figure style=\"text-align: center\">\n""  <a href=\"../figures/flashmla-amd.png\">\n""    <img src=\"../figures/flashmla-amd.png\" alt=\"AMD FlashMLA Performance ""Comparison\">\n""   </a>\n""  <figcaption style=\"text-align: center;\">Figure 1: Computational ""throughput comparison across frameworks (Batch sizes 64 and 128)</""figcaption>\n""</figure>\n"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:184
 msgid ""
@@ -482,11 +505,11 @@ msgid ""
 "both Triton (1.98×) and PyTorch (3.76×) implementations. This performance is "
 "achieved through a concise 80-line Python implementation, demonstrating "
 "TileLang's efficiency and programmability advantages."
-msgstr ""
+msgstr "值得注意的是，TileLang 在多数测试情况下实现了与手动优化汇编内核（aiter-asm）接近的性能，同时显著优于 Triton（1.98×）和 PyTorch（3.76×）的实现。这种性能是通过仅 80 行的 Python 代码实现的，充分展示了 TileLang 的效率和可编程性优势。"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:186
 msgid "Future Optimization Opportunities"
-msgstr ""
+msgstr "未来优化机遇"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:188
 msgid ""
@@ -495,22 +518,23 @@ msgid ""
 "optimization. Further investigation of swizzling techniques for alternative "
 "memory layouts remains an open research direction."
 msgstr ""
+"**Memory Bank Conflict Mitigation**: Current implementations primarily \"\"address bank conflicts in NT layouts through TileLang's automatic \"\"optimization. Further investigation of swizzling techniques for alternative \"\"memory layouts remains an open research direction."
 
 #: ../../../deeplearning_operators/deepseek_mla.md:190
 msgid ""
 "**Dimension Parallelization**: For large MLA dimensions (e.g., 576 "
 "elements), we propose investigating head dimension partitioning strategies "
 "to:"
-msgstr ""
+msgstr "**维度并行化**：对于大的 MLA 维度（例如 576 个元素），我们建议探究头维度划分策略以："
 
 #: ../../../deeplearning_operators/deepseek_mla.md:191
 msgid "Reduce shared memory pressure"
-msgstr ""
+msgstr "减少共享内存压力"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:192
 msgid "Improve compute-to-memory access ratios"
-msgstr ""
+msgstr "提高计算与内存访问比"
 
 #: ../../../deeplearning_operators/deepseek_mla.md:193
 msgid "Enhance parallelism through dimension-wise task distribution"
-msgstr ""
+msgstr "通过维度级任务分配增强并行性"

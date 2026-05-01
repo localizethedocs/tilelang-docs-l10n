@@ -19,94 +19,94 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:1
 msgid "Installation Guide"
-msgstr ""
+msgstr "安装指南"
 
 #: ../../../get_started/Installation.md:3
 msgid "Installing with pip"
-msgstr ""
+msgstr "使用 pip 安装"
 
 #: ../../../get_started/Installation.md:5
 msgid "**Prerequisites for installation via wheel or PyPI:**"
-msgstr ""
+msgstr "**通过 wheel 包或 PyPI 安装的前置条件：**"
 
 #: ../../../get_started/Installation.md:7
 msgid "**glibc**: 2.28 (Ubuntu 20.04 or later)"
-msgstr ""
+msgstr "**glibc**：2.28（Ubuntu 20.04 或更高版本）"
 
 #: ../../../get_started/Installation.md:8
 #: ../../../get_started/Installation.md:40
 msgid "**Python Version**: >= 3.9"
-msgstr ""
+msgstr "**Python 版本**：>= 3.9"
 
 #: ../../../get_started/Installation.md:9
 #: ../../../get_started/Installation.md:41
 msgid ""
 "**CUDA Version**: >= 10.0 (host installation), or pip-provided CUDA "
 "toolchain (>= 13.0)"
-msgstr ""
+msgstr "**CUDA 版本**：>= 10.0（宿主机安装），或 pip 提供的 CUDA 工具链（>= 13.0）"
 
 #: ../../../get_started/Installation.md:11
 msgid ""
 "The easiest way to install tilelang is directly from PyPI using pip. To "
 "install the latest version, run the following command in your terminal:"
-msgstr ""
+msgstr "安装 tilelang 最简单的方式是直接通过 pip 从 PyPI 安装。要安装最新版本，请在终端中运行以下命令："
 
 #: ../../../get_started/Installation.md:13
 msgid "pip install tilelang\n"
-msgstr ""
+msgstr "pip install tilelang\n"
 
 #: ../../../get_started/Installation.md:17
 msgid ""
 "Alternatively, you may choose to install tilelang using prebuilt packages "
 "available on the Release Page:"
-msgstr ""
+msgstr "或者，您也可以选择使用 Release 页面上的预编译包来安装 tilelang："
 
 #: ../../../get_started/Installation.md:19
 msgid "pip install tilelang-0.0.0.dev0+ubuntu.20.4.cu120-py3-none-any.whl\n"
-msgstr ""
+msgstr "pip install tilelang-0.0.0.dev0+ubuntu.20.4.cu120-py3-none-any.whl\n"
 
 #: ../../../get_started/Installation.md:23
 msgid ""
 "To install the latest version of tilelang from the GitHub repository, you "
 "can run the following command:"
-msgstr ""
+msgstr "要从 GitHub 仓库安装最新版本的 tilelang，可以运行以下命令："
 
 #: ../../../get_started/Installation.md:25
 msgid "pip install git+https://github.com/tile-ai/tilelang.git\n"
-msgstr ""
+msgstr "pip install git+https://github.com/tile-ai/tilelang.git\n"
 
 #: ../../../get_started/Installation.md:29
 msgid "After installing tilelang, you can verify the installation by running:"
-msgstr ""
+msgstr "安装 tilelang 后，可以通过运行以下命令验证安装："
 
 #: ../../../get_started/Installation.md:31
 msgid "python -c \"import tilelang; print(tilelang.__version__)\"\n"
-msgstr ""
+msgstr "python -c \"import tilelang; print(tilelang.__version__)\"\n"
 
 #: ../../../get_started/Installation.md:35
 msgid "Building from Source"
-msgstr ""
+msgstr "从源码构建"
 
 #: ../../../get_started/Installation.md:37
 msgid "**Prerequisites for building from source:**"
-msgstr ""
+msgstr "**从源码构建的前置条件：**"
 
 #: ../../../get_started/Installation.md:39
 msgid "**Operating System**: Linux"
-msgstr ""
+msgstr "**操作系统**：Linux"
 
 #: ../../../get_started/Installation.md:43
 msgid ""
 "If you prefer Docker, please skip to the [Install Using Docker](#install-"
 "using-docker) section. This section focuses on building from source on a "
 "native Linux environment."
-msgstr ""
+msgstr "如果您更倾向于使用 Docker，请跳至[使用 Docker 安装](#install-using-docker)部分。本节重点介绍在原生 Linux 环境中从源码构建。"
 
 #: ../../../get_started/Installation.md:45
 msgid ""
 "First, install the OS-level prerequisites on Ubuntu/Debian-based systems "
 "using the following commands:"
-msgstr ""
+msgstr "首先，使用以下命令在 Ubuntu/Debian 系统上安装操作系统级别的前置依赖："
 
 #: ../../../get_started/Installation.md:47
 msgid ""
@@ -114,12 +114,15 @@ msgid ""
 "apt-get install -y python3 python3-dev python3-setuptools gcc zlib1g-dev "
 "build-essential cmake libedit-dev\n"
 msgstr ""
+"apt-get update\n"
+"apt-get install -y python3 python3-dev python3-setuptools gcc zlib1g-dev "
+"build-essential cmake libedit-dev\n"
 
 #: ../../../get_started/Installation.md:52
 msgid ""
 "Then, clone the tilelang repository and install it using pip. The `-v` flag "
 "enables verbose output during the build process."
-msgstr ""
+msgstr "然后，克隆 tilelang 仓库并使用 pip 安装。`-v` 标志可在构建过程中启用详细输出。"
 
 #: ../../../get_started/Installation.md:54
 msgid ""
@@ -128,11 +131,11 @@ msgid ""
 "as a submodule. If you prefer [Building with Existing TVM Installation]"
 "(#using-existing-tvm), you can skip cloning the TVM submodule (but still "
 "need other dependencies)."
-msgstr ""
+msgstr "**注意**：请使用 `--recursive` 标志以包含必要的子模块。TileLang 目前依赖一个定制版本的 TVM，该版本作为子模块包含在内。如果您更倾向于[基于已有 TVM 安装构建](#using-existing-tvm)，可以跳过克隆 TVM 子模块（但仍需其他依赖项）。"
 
 #: ../../../get_started/Installation.md:56
 msgid "With host CUDA toolchain"
-msgstr ""
+msgstr "使用宿主机 CUDA 工具链"
 
 #: ../../../get_started/Installation.md:58
 msgid ""
@@ -140,22 +143,25 @@ msgid ""
 "cd tilelang\n"
 "pip install . -v\n"
 msgstr ""
+"git clone --recursive https://github.com/tile-ai/tilelang.git\n"
+"cd tilelang\n"
+"pip install . -v\n"
 
 #: ../../../get_started/Installation.md:64
 msgid "With pip-provided CUDA toolchain (no host CUDA required)"
-msgstr ""
+msgstr "使用 pip 提供的 CUDA 工具链（无需宿主机 CUDA）"
 
 #: ../../../get_started/Installation.md:66
 msgid ""
 "If you don't have CUDA installed on the host, you can use pip-provided CUDA "
 "packages instead."
-msgstr ""
+msgstr "如果宿主机上未安装 CUDA，您可以使用 pip 提供的 CUDA 包代替。"
 
 #: ../../../get_started/Installation.md:68
 msgid ""
 "**Option A** — pip toolchain in the current environment (use `--no-build-"
 "isolation`):"
-msgstr ""
+msgstr "**选项 A** — 在当前环境中使用 pip 工具链（使用 `--no-build-isolation`）："
 
 #: ../../../get_started/Installation.md:70
 msgid ""
@@ -166,10 +172,16 @@ msgid ""
 "nvrtc>=13\"\n"
 "pip install . -v --no-build-isolation\n"
 msgstr ""
+"git clone --recursive https://github.com/tile-ai/tilelang.git\n"
+"cd tilelang\n"
+"pip install -r requirements-dev.txt\n"
+"pip install \"nvidia-cuda-nvcc>=13\" \"nvidia-cuda-cccl>=13\" \"nvidia-cuda-"
+"nvrtc>=13\"\n"
+"pip install . -v --no-build-isolation\n"
 
 #: ../../../get_started/Installation.md:78
 msgid "**Option B** — pip toolchain in another virtualenv or path:"
-msgstr ""
+msgstr "**选项 B** — 在另一个 virtualenv 或路径中使用 pip 工具链："
 
 #: ../../../get_started/Installation.md:80
 msgid ""
@@ -178,17 +190,21 @@ msgid ""
 "nvidia/cu13\n"
 "pip install . -v\n"
 msgstr ""
+"# 指向另一个 venv 的 site-packages 中的 cu<ver> 目录\n"
+"export WITH_PIP_CUDA_TOOLCHAIN=/path/to/venv/lib/python3.x/site-packages/"
+"nvidia/cu13\n"
+"pip install . -v\n"
 
 #: ../../../get_started/Installation.md:86
 msgid ""
 "If you want to install tilelang in development mode, you can use the `-e` "
 "flag so that any changes to the Python files will be reflected immediately "
 "without reinstallation."
-msgstr ""
+msgstr "如果希望以开发模式安装 tilelang，可以使用 `-e` 标志，这样对 Python 文件的任何修改都会立即生效，无需重新安装。"
 
 #: ../../../get_started/Installation.md:88
 msgid "pip install -e . -v\n"
-msgstr ""
+msgstr "pip install -e . -v\n"
 
 #: ../../../get_started/Installation.md:92
 msgid ""
@@ -198,18 +214,18 @@ msgid ""
 "can also directly run `make` in the `build` directory to rebuild it as "
 "[Working from Source via PYTHONPATH](#working-from-source-via-pythonpath) "
 "suggested below."
-msgstr ""
+msgstr "**注意**：对 C++ 文件的修改需要重新编译 tilelang C++ 库。请参阅下方的[开发者快速重新编译](#faster-rebuild-for-developers)。使用 `pip install` 时会创建默认的 `build` 目录，因此也可以直接在 `build` 目录中运行 `make` 进行重新编译，如下方[通过 PYTHONPATH 从源码工作](#working-from-source-via-pythonpath)所建议的。"
 
 #: ../../../get_started/Installation.md:96
 msgid "Working from Source via `PYTHONPATH` (Recommended for Developers)"
-msgstr ""
+msgstr "通过 `PYTHONPATH` 从源码工作（推荐开发者使用）"
 
 #: ../../../get_started/Installation.md:98
 msgid ""
 "If you prefer to work directly from the source tree via `PYTHONPATH` instead "
 "of using pip, make sure the native extension (`libtilelang.so`) is built "
 "first:"
-msgstr ""
+msgstr "如果您更倾向于通过 `PYTHONPATH` 直接从源码树工作而不是使用 pip，请确保先构建原生扩展（`libtilelang.so`）："
 
 #: ../../../get_started/Installation.md:100
 msgid ""
@@ -218,74 +234,82 @@ msgid ""
 "cmake .. -DUSE_CUDA=ON\n"
 "make -j\n"
 msgstr ""
+"mkdir -p build\n"
+"cd build\n"
+"cmake .. -DUSE_CUDA=ON\n"
+"make -j\n"
 
 #: ../../../get_started/Installation.md:107
 msgid "We also recommend using `ninja` to speed up compilation:"
-msgstr ""
+msgstr "我们还推荐使用 `ninja` 来加速编译："
 
 #: ../../../get_started/Installation.md:109
 msgid ""
 "cmake .. -DUSE_CUDA=ON -G Ninja\n"
 "ninja\n"
 msgstr ""
+"cmake .. -DUSE_CUDA=ON -G Ninja\n"
+"ninja\n"
 
 #: ../../../get_started/Installation.md:114
 msgid ""
 "Then add the repository root to `PYTHONPATH` before importing `tilelang`, "
 "for example:"
-msgstr ""
+msgstr "然后在导入 `tilelang` 之前将仓库根目录添加到 `PYTHONPATH`，例如："
 
 #: ../../../get_started/Installation.md:116
 msgid ""
 "export PYTHONPATH=/path/to/tilelang:$PYTHONPATH\n"
 "python -c \"import tilelang; print(tilelang.__version__)\"\n"
 msgstr ""
+"export PYTHONPATH=/path/to/tilelang:$PYTHONPATH\n"
+"python -c \"import tilelang; print(tilelang.__version__)\"\n"
 
 #: ../../../get_started/Installation.md:121
 msgid "Some useful CMake options you can toggle while configuring:"
-msgstr ""
+msgstr "配置时可以切换的一些有用的 CMake 选项："
 
 #: ../../../get_started/Installation.md:122
 msgid ""
 "`-DUSE_CUDA=ON|OFF` builds against NVIDIA CUDA (default ON when CUDA headers "
 "are found)."
-msgstr ""
+msgstr "`-DUSE_CUDA=ON|OFF`：构建时是否启用 NVIDIA CUDA（检测到 CUDA 头文件时默认为 ON）。"
 
 #: ../../../get_started/Installation.md:123
 msgid "`-DUSE_ROCM=ON` selects ROCm support when building on AMD GPUs."
-msgstr ""
+msgstr "`-DUSE_ROCM=ON`：在 AMD GPU 上构建时启用 ROCm 支持。"
 
 #: ../../../get_started/Installation.md:124
 msgid ""
 "`-DNO_VERSION_LABEL=ON` disables the backend/git suffix in `tilelang."
 "__version__`."
-msgstr ""
+msgstr "`-DNO_VERSION_LABEL=ON`：禁用 `tilelang.__version__` 中的后端/git 后缀。"
 
 #: ../../../get_started/Installation.md:128
 msgid "Building with Customized TVM Path"
-msgstr ""
+msgstr "使用自定义 TVM 路径构建"
 
 #: ../../../get_started/Installation.md:130
 msgid ""
 "If you already have a TVM codebase, use the `TVM_ROOT` environment variable "
 "to specify the location of your existing TVM repository when building "
 "tilelang:"
-msgstr ""
+msgstr "如果您已有 TVM 代码库，可以使用 `TVM_ROOT` 环境变量在构建 tilelang 时指定现有 TVM 仓库的位置："
 
 #: ../../../get_started/Installation.md:132
 msgid "TVM_ROOT=<your-tvm-repo> pip install . -v\n"
-msgstr ""
+msgstr "TVM_ROOT=<your-tvm-repo> pip install . -v\n"
 
 #: ../../../get_started/Installation.md:136
 msgid ""
 "**Note**: This will still rebuild the TVM-related libraries (stored in "
 "`TL_LIBS`). And this method often leads to some path issues. Check `env.py` "
 "to see some environment variables which are not set properly."
-msgstr ""
+msgstr "**注意**：这仍然会重新编译 TVM 相关的库（存储在 `TL_LIBS` 中）。并且这种方法通常会导致一些路径问题。请检查 `env.py` 以查看哪些环境变量未正确设置。"
 
 #: ../../../get_started/Installation.md:140
 msgid "Install Using Docker"
-msgstr ""
+msgstr "使用 Docker 安装"
 
 #: ../../../get_started/Installation.md:142
 msgid ""
@@ -293,67 +317,71 @@ msgid ""
 "configured, tilelang provides Docker images for different CUDA versions. "
 "This method is particularly useful for ensuring consistent environments "
 "across different systems."
-msgstr ""
+msgstr "对于偏好使用预先配置好所有依赖的容器化环境的用户，tilelang 提供了适用于不同 CUDA 版本的 Docker 镜像。这种方法对于确保跨系统环境一致性尤其有用。"
 
 #: ../../../get_started/Installation.md:144
 msgid "**Prerequisites:**"
-msgstr ""
+msgstr "**前置条件：**"
 
 #: ../../../get_started/Installation.md:145
 msgid "Docker installed on your system"
-msgstr ""
+msgstr "系统已安装 Docker"
 
 #: ../../../get_started/Installation.md:146
 msgid ""
 "NVIDIA Docker runtime or GPU is not necessary for building tilelang, you can "
 "build on a host without GPU and use that built image on other machine."
-msgstr ""
+msgstr "NVIDIA Docker 运行时或 GPU 并非构建 tilelang 所必需，您可以在没有 GPU 的宿主机上构建，然后在其他机器上使用该构建好的镜像。"
 
 #: ../../../get_started/Installation.md:148
 msgid "**Clone the Repository**:"
-msgstr ""
+msgstr "**克隆仓库**："
 
 #: ../../../get_started/Installation.md:150
 msgid ""
 "git clone --recursive https://github.com/tile-ai/tilelang\n"
 "cd tilelang\n"
 msgstr ""
+"git clone --recursive https://github.com/tile-ai/tilelang\n"
+"cd tilelang\n"
 
 #: ../../../get_started/Installation.md:155
 msgid "**Build Docker Image**:"
-msgstr ""
+msgstr "**构建 Docker 镜像**："
 
 #: ../../../get_started/Installation.md:157
 msgid ""
 "Navigate to the docker directory and build the image for your desired CUDA "
 "version:"
-msgstr ""
+msgstr "进入 docker 目录，为所需的 CUDA 版本构建镜像："
 
 #: ../../../get_started/Installation.md:159
 msgid ""
 "cd docker\n"
 "docker build -f Dockerfile.cu120 -t tilelang-cu120 .\n"
 msgstr ""
+"cd docker\n"
+"docker build -f Dockerfile.cu120 -t tilelang-cu120 .\n"
 
 #: ../../../get_started/Installation.md:164
 msgid "Available Dockerfiles:"
-msgstr ""
+msgstr "可用的 Dockerfile："
 
 #: ../../../get_started/Installation.md:165
 msgid "`Dockerfile.cu120` - For CUDA 12.0"
-msgstr ""
+msgstr "`Dockerfile.cu120` — 适用于 CUDA 12.0"
 
 #: ../../../get_started/Installation.md:166
 msgid "Other CUDA versions may be available in the docker directory"
-msgstr ""
+msgstr "docker 目录中可能提供其他 CUDA 版本"
 
 #: ../../../get_started/Installation.md:168
 msgid "**Run Docker Container**:"
-msgstr ""
+msgstr "**运行 Docker 容器**："
 
 #: ../../../get_started/Installation.md:170
 msgid "Start the container with GPU access and volume mounting:"
-msgstr ""
+msgstr "启动容器并启用 GPU 访问和卷挂载："
 
 #: ../../../get_started/Installation.md:172
 msgid ""
@@ -365,37 +393,44 @@ msgid ""
 "  tilelang-cu120 \\\n"
 "  /bin/zsh\n"
 msgstr ""
+"docker run -itd \\\n"
+"  --shm-size 32g \\\n"
+"  --gpus all \\\n"
+"  -v /home/tilelang:/home/tilelang \\\n"
+"  --name tilelang_b200 \\\n"
+"  tilelang-cu120 \\\n"
+"  /bin/zsh\n"
 
 #: ../../../get_started/Installation.md:182
 msgid "**Command Parameters Explanation:**"
-msgstr ""
+msgstr "**命令参数说明：**"
 
 #: ../../../get_started/Installation.md:183
 msgid "`--shm-size 32g`: Increases shared memory size for better performance"
-msgstr ""
+msgstr "`--shm-size 32g`：增加共享内存大小以获得更好的性能"
 
 #: ../../../get_started/Installation.md:184
 msgid "`--gpus all`: Enables access to all available GPUs"
-msgstr ""
+msgstr "`--gpus all`：启用访问所有可用的 GPU"
 
 #: ../../../get_started/Installation.md:185
 msgid ""
 "`-v /home/tilelang:/home/tilelang`: Mounts host directory to container "
 "(adjust path as needed)"
-msgstr ""
+msgstr "`-v /home/tilelang:/home/tilelang`：将宿主机目录挂载到容器（可根据需要调整路径）"
 
 #: ../../../get_started/Installation.md:186
 msgid ""
 "`--name tilelang_b200`: Assigns a name to the container for easy management"
-msgstr ""
+msgstr "`--name tilelang_b200`：为容器分配名称以便管理"
 
 #: ../../../get_started/Installation.md:187
 msgid "`/bin/zsh`: Uses zsh as the default shell"
-msgstr ""
+msgstr "`/bin/zsh`：使用 zsh 作为默认 shell"
 
 #: ../../../get_started/Installation.md:189
 msgid "**Access the Container and Verify Installation**:"
-msgstr ""
+msgstr "**访问容器并验证安装**："
 
 #: ../../../get_started/Installation.md:191
 msgid ""
@@ -403,23 +438,26 @@ msgid ""
 "# Inside the container:\n"
 "python -c \"import tilelang; print(tilelang.__version__)\"\n"
 msgstr ""
+"docker exec -it tilelang_b200 /bin/zsh\n"
+"# 在容器内部：\n"
+"python -c \"import tilelang; print(tilelang.__version__)\"\n"
 
 #: ../../../get_started/Installation.md:197
 msgid "ROCm container build (gfx942/gfx950)"
-msgstr ""
+msgstr "ROCm 容器构建（gfx942/gfx950）"
 
 #: ../../../get_started/Installation.md:199
 msgid ""
 "If you want a ready-to-use ROCm image that builds TileLang from source, use "
 "`docker/Dockerfile.rocm`. This is the recommended path for a clean, "
 "reproducible environment."
-msgstr ""
+msgstr "如果想要一个可直接使用且从源码构建 TileLang 的 ROCm 镜像，请使用 `docker/Dockerfile.rocm`。这是获得干净、可复现环境的推荐方式。"
 
 #: ../../../get_started/Installation.md:203
 msgid ""
 "If you are already inside another ROCm container (for example, the `sglang` "
 "image) and just need to rebuild TileLang in-place, follow the steps below."
-msgstr ""
+msgstr "如果您已经在另一个 ROCm 容器中（例如 `sglang` 镜像），只需就地重新编译 TileLang，请按照以下步骤操作。"
 
 #: ../../../get_started/Installation.md:206
 msgid ""
@@ -427,7 +465,7 @@ msgid ""
 "it (for example on MI300 `gfx942` or MI355 `gfx950`), the build requires "
 "extra system libraries, Cython, and a valid `llvm-config`. The following "
 "steps match the build flow used in `sglang/docker/rocm.Dockerfile`:"
-msgstr ""
+msgstr "如果您使用的是 `sglang` ROCm 容器，并需要在其中构建 TileLang（例如在 MI300 `gfx942` 或 MI355 `gfx950` 上），构建过程需要额外的系统库、Cython 和有效的 `llvm-config`。以下步骤与 `sglang/docker/rocm.Dockerfile` 中使用的构建流程一致："
 
 #: ../../../get_started/Installation.md:208
 msgid ""
@@ -514,6 +552,85 @@ msgid ""
 "# Verify\n"
 "python -c \"import tilelang; print(tilelang.__version__)\"\n"
 msgstr ""
+"# 在容器内部（以 root 身份）\n"
+"apt-get update && apt-get install -y --no-install-recommends \\\n"
+"  build-essential git wget curl ca-certificates gnupg \\\n"
+"  libgtest-dev libgmock-dev \\\n"
+"  libprotobuf-dev protobuf-compiler libgflags-dev libsqlite3-dev \\\n"
+"  python3 python3-dev python3-setuptools python3-pip \\\n"
+"  gcc libtinfo-dev zlib1g-dev libedit-dev libxml2-dev \\\n"
+"  cmake ninja-build pkg-config libstdc++6 \\\n"
+"  && rm -rf /var/lib/apt/lists/*\n"
+"\n"
+"# 优先使用容器内的 venv（避免使用系统 pip）\n"
+"export PATH=\"/opt/venv/bin:${PATH}\"\n"
+"\n"
+"# 构建 GoogleTest 静态库（Ubuntu 软件包仅提供源码）\n"
+"cmake -S /usr/src/googletest -B /tmp/build-gtest -DBUILD_GTEST=ON -"
+"DBUILD_GMOCK=ON -DCMAKE_BUILD_TYPE=Release\n"
+"cmake --build /tmp/build-gtest -j\"$(nproc)\"\n"
+"cp -v /tmp/build-gtest/lib/*.a /usr/lib/x86_64-linux-gnu/\n"
+"rm -rf /tmp/build-gtest\n"
+"\n"
+"# 保持 setuptools < 80（与某些基础镜像兼容）\n"
+"pip install --upgrade \"setuptools>=77.0.3,<80\" wheel cmake ninja scikit-"
+"build-core\n"
+"\n"
+"# 定位 ROCm llvm-config（如果缺失则安装 LLVM 18）\n"
+"LLVM_CONFIG_PATH=\"\"\n"
+"for p in /opt/rocm/llvm/bin/llvm-config /opt/rocm/llvm-*/bin/llvm-config /"
+"opt/rocm-*/llvm*/bin/llvm-config; do\n"
+"  if [ -x \"$p\" ]; then LLVM_CONFIG_PATH=\"$p\"; break; fi\n"
+"done\n"
+"if [ -z \"$LLVM_CONFIG_PATH\" ]; then\n"
+"  echo \"ROCm llvm-config not found; installing LLVM 18...\"\n"
+"  curl -fsSL https://apt.llvm.org/llvm.sh -o /tmp/llvm.sh\n"
+"  chmod +x /tmp/llvm.sh\n"
+"  /tmp/llvm.sh 18\n"
+"  LLVM_CONFIG_PATH=\"$(command -v llvm-config-18)\"\n"
+"  if [ -z \"$LLVM_CONFIG_PATH\" ]; then\n"
+"    echo \"ERROR: llvm-config-18 not found after install\"\n"
+"    exit 1\n"
+"  fi\n"
+"fi\n"
+"export LLVM_CONFIG=\"$LLVM_CONFIG_PATH\"\n"
+"export PATH=\"$(dirname \"$LLVM_CONFIG\"):/usr/local/bin:${PATH}\"\n"
+"\n"
+"# 为需要 llvm-config-16 的工具提供可选适配层\n"
+"mkdir -p /usr/local/bin\n"
+"printf \"#!/usr/bin/env bash\\nexec \\\"%s\\\" \\\"\\$@\\\"\\n\" "
+"\"$LLVM_CONFIG_PATH\" > /usr/local/bin/llvm-config-16\n"
+"chmod +x /usr/local/bin/llvm-config-16\n"
+"\n"
+"# TVM Python 组件需要 Cython（用于构建过程使用的系统 Python）\n"
+"pip install --no-cache-dir \"cython>=0.29.36,<3.0\"\n"
+"\n"
+"# 克隆并构建 TileLang（ROCm）\n"
+"# 默认位置：/opt/tilelang（如需不同路径可自行调整）。\n"
+"git clone --recursive https://github.com/tile-ai/tilelang.git /opt/tilelang\n"
+"cd /opt/tilelang\n"
+"git submodule update --init --recursive\n"
+"export CMAKE_ARGS=\"-DUSE_CUDA=OFF -DUSE_ROCM=ON -DROCM_PATH=/opt/rocm -"
+"DLLVM_CONFIG=${LLVM_CONFIG}\"\n"
+"\n"
+"# 通过跳过依赖解析来避免拉取 CUDA wheel / 重新安装 torch。\n"
+"# 假设 torch 已在容器中安装。\n"
+"pip install -e . -v --no-build-isolation --no-deps\n"
+"\n"
+"# 使用 --no-deps 时手动安装所需的运行时依赖。\n"
+"# 注意：在 ROCm 上跳过 torch-c-dlpack-ext（其 wheel 需要 CUDA 库）。\n"
+"pip install \"apache-tvm-ffi>=0.1.6\" \"z3-solver>=4.13.0\"\n"
+"# 如果您已经安装了 torch-c-dlpack-ext 并遇到 `libtorch_cuda.so` 错误：\n"
+"# pip uninstall -y torch-c-dlpack-ext\n"
+"\n"
+"# 如果遇到 Cython 编译错误，如 `PyLong_SHIFT`/`digit` 未声明，\n"
+"# 对于可编辑构建可禁用 stable ABI (abi3)：\n"
+"# export CMAKE_ARGS=\"-DUSE_CUDA=OFF -DUSE_ROCM=ON -DROCM_PATH=/opt/rocm -"
+"DLLVM_CONFIG=${LLVM_CONFIG} -DSKBUILD_SABI_VERSION=\"\n"
+"# pip install -e . -v --no-build-isolation --no-deps\n"
+"\n"
+"# 验证\n"
+"python -c \"import tilelang; print(tilelang.__version__)\"\n"
 
 #: ../../../get_started/Installation.md:284
 msgid ""
@@ -522,17 +639,17 @@ msgid ""
 "CUDA wheels (e.g., `nvidia_cudnn`, `nvidia_nvshmem`) and reinstall `torch`. "
 "To avoid that in ROCm containers, keep `--no-deps` and ensure required "
 "packages are already installed."
-msgstr ""
+msgstr "如果您仍想在 ROCm 容器中使用不带 `--no-deps` 的 `pip install -e . -v --no-build-isolation`，pip 将尝试解析 TileLang 依赖，可能会下载 CUDA wheel 包（例如 `nvidia_cudnn`、`nvidia_nvshmem`）并重新安装 `torch`。为避免此问题，请保留 `--no-deps` 并确保所需包已安装。"
 
 #: ../../../get_started/Installation.md:286
 msgid "Install with Nightly Version"
-msgstr ""
+msgstr "安装每日构建版"
 
 #: ../../../get_started/Installation.md:288
 msgid ""
 "For users who want access to the latest features and improvements before "
 "official releases, we provide nightly builds of tilelang."
-msgstr ""
+msgstr "对于希望在正式发布之前获取最新功能和改进的用户，我们提供 tilelang 的每日构建版。"
 
 #: ../../../get_started/Installation.md:290
 msgid ""
@@ -540,43 +657,46 @@ msgid ""
 "# or pip install tilelang --find-links https://tile-ai.github.io/whl/"
 "nightly\n"
 msgstr ""
+"pip install tilelang -f https://tile-ai.github.io/whl/nightly\n"
+"# 或 pip install tilelang --find-links https://tile-ai.github.io/whl/"
+"nightly\n"
 
 #: ../../../get_started/Installation.md:295
 msgid ""
 "**Note:** Nightly builds contain the most recent code changes but may be "
 "less stable than official releases. They're ideal for testing new features "
 "or if you need a specific bugfix that hasn't been released yet."
-msgstr ""
+msgstr "**注意：** 每日构建版包含最新的代码改动，可能不如正式版本稳定。它们非常适合测试新功能，或在需要某个尚未发布的特定错误修复时使用。"
 
 #: ../../../get_started/Installation.md:297
 msgid "Install Configs"
-msgstr ""
+msgstr "安装配置"
 
 #: ../../../get_started/Installation.md:299
 msgid "Build-time environment variables"
-msgstr ""
+msgstr "构建时环境变量"
 
 #: ../../../get_started/Installation.md:300
 msgid ""
 "`USE_CUDA`: If to enable CUDA support, default: `ON` on Linux, set to `OFF` "
 "to build a CPU version. By default, we'll use `/usr/local/cuda` for building "
 "tilelang. Set `CUDAToolkit_ROOT` to use different cuda toolkit."
-msgstr ""
+msgstr "`USE_CUDA`：是否启用 CUDA 支持，默认值：Linux 上为 `ON`，设为 `OFF` 可构建 CPU 版本。默认情况下，将使用 `/usr/local/cuda` 来构建 tilelang。设置 `CUDAToolkit_ROOT` 可使用不同的 CUDA 工具包。"
 
 #: ../../../get_started/Installation.md:302
 msgid ""
 "`USE_ROCM`: If to enable ROCm support, default: `OFF`. If your ROCm SDK does "
 "not located in `/opt/rocm`, set `USE_ROCM=<rocm_sdk>` to enable build ROCm "
 "against custom sdk path."
-msgstr ""
+msgstr "`USE_ROCM`：是否启用 ROCm 支持，默认值：`OFF`。如果您的 ROCm SDK 不在 `/opt/rocm` 中，设置 `USE_ROCM=<rocm_sdk>` 可针对自定义 SDK 路径启用 ROCm 构建。"
 
 #: ../../../get_started/Installation.md:304
 msgid "`USE_METAL`: If to enable Metal support, default: `ON` on Darwin."
-msgstr ""
+msgstr "`USE_METAL`：是否启用 Metal 支持，默认值：在 Darwin 上为 `ON`。"
 
 #: ../../../get_started/Installation.md:306
 msgid "`TVM_ROOT`: TVM source root to use."
-msgstr ""
+msgstr "`TVM_ROOT`：要使用的 TVM 源码根目录。"
 
 #: ../../../get_started/Installation.md:308
 msgid ""
@@ -585,7 +705,7 @@ msgid ""
 "build system uses this directory instead of a host CUDA installation. If not "
 "set and no host CUDA is found, the build system will attempt to auto-detect "
 "pip-installed CUDA packages from the current Python environment."
-msgstr ""
+msgstr "`WITH_PIP_CUDA_TOOLCHAIN`：pip 安装的 CUDA 工具包目录路径（例如 `/path/to/venv/lib/python3.x/site-packages/nvidia/cu13`）。设置后，构建系统将使用此目录而不是宿主机 CUDA 安装。如果未设置且未找到宿主机 CUDA，构建系统将尝试从当前 Python 环境自动检测 pip 安装的 CUDA 包。"
 
 #: ../../../get_started/Installation.md:310
 msgid ""
@@ -593,7 +713,7 @@ msgid ""
 "try to embed SDK and version information into package version as below, "
 "where local version label could look like `<sdk>.git<git_hash>`. Set "
 "`NO_VERSION_LABEL=ON` to disable this behavior."
-msgstr ""
+msgstr "`NO_VERSION_LABEL` 和 `NO_TOOLCHAIN_VERSION`：构建 tilelang 时，我们会尝试将 SDK 和版本信息嵌入到包版本中，如下所示，其中本地版本标签可能类似于 `<sdk>.git<git_hash>`。设置 `NO_VERSION_LABEL=ON` 可禁用此行为。"
 
 #: ../../../get_started/Installation.md:313
 msgid ""
@@ -602,6 +722,10 @@ msgid ""
 "Successfully built tilelang-0.1.6.post1+cu116.git0d4a74be-cp38-abi3-"
 "linux_x86_64.whl\n"
 msgstr ""
+"$ python -mbuild -w\n"
+"...\n"
+"Successfully built tilelang-0.1.6.post1+cu116.git0d4a74be-cp38-abi3-"
+"linux_x86_64.whl\n"
 
 #: ../../../get_started/Installation.md:319
 msgid ""
@@ -609,25 +733,25 @@ msgid ""
 "`CUDA_VERSION` is provided via env, `<sdk>=cu<cuda_major><cuda_minor>`, "
 "similar with this part in pytorch. Set `NO_TOOLCHAIN_VERSION=ON` to disable "
 "this."
-msgstr ""
+msgstr "其中 `<sdk>={cuda,rocm,metal}`。具体来说，当 `<sdk>=cuda` 且通过环境变量提供了 `CUDA_VERSION` 时，`<sdk>=cu<cuda_major><cuda_minor>`，与 PyTorch 中的这部分类似。设置 `NO_TOOLCHAIN_VERSION=ON` 可禁用此行为。"
 
 #: ../../../get_started/Installation.md:323
 msgid "Run-time environment variables"
-msgstr ""
+msgstr "运行时环境变量"
 
 #: ../../../get_started/Installation.md:325
 msgid ""
 "Please refer to the `env.py` file for a full list of supported run-time "
 "environment variables."
-msgstr ""
+msgstr "请参阅 `env.py` 文件获取支持的运行时环境变量的完整列表。"
 
 #: ../../../get_started/Installation.md:327
 msgid "Other Tips"
-msgstr ""
+msgstr "其他提示"
 
 #: ../../../get_started/Installation.md:329
 msgid "IDE Configs"
-msgstr ""
+msgstr "IDE 配置"
 
 #: ../../../get_started/Installation.md:331
 msgid ""
@@ -635,41 +759,41 @@ msgid ""
 "json` file in `build` dir. VSCode with clangd and [clangd extension](https://"
 "marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-"
 "clangd) should be able to index that without extra configuration."
-msgstr ""
+msgstr "本地构建 tilelang 时会在 `build` 目录中自动生成 `compile_commands.json` 文件。使用 clangd 和 [clangd 扩展](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)的 VSCode 无需额外配置即可对其建立索引。"
 
 #: ../../../get_started/Installation.md:334
 msgid "Compile Cache"
-msgstr ""
+msgstr "编译缓存"
 
 #: ../../../get_started/Installation.md:336
 msgid ""
 "The default path of the compile cache is `~/.tilelang/cache`. `ccache` will "
 "be automatically used if found."
-msgstr ""
+msgstr "编译缓存的默认路径为 `~/.tilelang/cache`。如果检测到 `ccache`，将自动使用。"
 
 #: ../../../get_started/Installation.md:338
 msgid "Repairing Wheels"
-msgstr ""
+msgstr "修复 wheel 包"
 
 #: ../../../get_started/Installation.md:340
 msgid ""
 "If you plan to use your wheel in other environment, it's recommended to use "
 "auditwheel (on Linux) or delocate (on Darwin) to repair them."
-msgstr ""
+msgstr "如果您计划在其他环境中使用您的 wheel 包，建议使用 auditwheel（在 Linux 上）或 delocate（在 Darwin 上）来修复它们。"
 
 #: ../../../get_started/Installation.md:346
 msgid "Faster Rebuild for Developers"
-msgstr ""
+msgstr "开发者快速重新编译"
 
 #: ../../../get_started/Installation.md:348
 msgid ""
 "`pip install` introduces extra [un]packaging and takes ~30 sec to complete, "
 "even if no source change."
-msgstr ""
+msgstr "即使没有源码变更，`pip install` 仍会引入额外的打包/解包操作，大约需要 30 秒才能完成。"
 
 #: ../../../get_started/Installation.md:351
 msgid "Developers who needs to recompile frequently could use:"
-msgstr ""
+msgstr "需要频繁重新编译的开发者可以使用以下方式："
 
 #: ../../../get_started/Installation.md:353
 msgid ""
@@ -688,10 +812,23 @@ msgid ""
 "# Rebuild when you change the cpp code\n"
 "cd build; ninja\n"
 msgstr ""
+"pip install -r requirements-dev.txt\n"
+"\n"
+"# 首次编译\n"
+"pip install -e . -v --no-build-isolation\n"
+"\n"
+"# 或者使用 cmake/ninja 手动编译。请记得正确设置 PYTHONPATH。\n"
+"mkdir build\n"
+"cd build\n"
+"cmake .. -G Ninja\n"
+"ninja\n"
+"\n"
+"# 修改 cpp 代码后重新编译\n"
+"cd build; ninja\n"
 
 #: ../../../get_started/Installation.md:369
 msgid "When running in editable/developer mode, you'll see logs like below:"
-msgstr ""
+msgstr "以可编辑/开发模式运行时，您将看到如下日志："
 
 #: ../../../get_started/Installation.md:372
 msgid ""
@@ -699,3 +836,6 @@ msgid ""
 "2025-10-14 11:11:29  [TileLang:tilelang.env:WARNING]: Loading tilelang libs "
 "from dev root: /Users/yyc/repo/tilelang/build\n"
 msgstr ""
+"$ python -c 'import tilelang'\n"
+"2025-10-14 11:11:29  [TileLang:tilelang.env:WARNING]: Loading tilelang libs "
+"from dev root: /Users/yyc/repo/tilelang/build\n"

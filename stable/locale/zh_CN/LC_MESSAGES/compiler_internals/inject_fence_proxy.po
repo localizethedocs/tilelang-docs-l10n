@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025-2025, Tile Lang Contributors
-# This file is distributed under the same license as the Tile Language <br> package.
+# This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../compiler_internals/inject_fence_proxy.md:1
 msgid "InjectFenceProxy Pass"
-msgstr ""
+msgstr "InjectFenceProxy Pass"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:3
 msgid ""
@@ -27,11 +27,11 @@ msgid ""
 "state consistent on NVIDIA Hopper (SM90+) by inserting `fence.proxy.async` "
 "instructions when execution switches from **generic proxy** memory "
 "operations to **async proxy** operations."
-msgstr ""
+msgstr "`tl.InjectFenceProxy` 是一个 TIR 级别的变换，它通过在执行从**通用代理**内存操作切换到**异步代理**操作时插入 `fence.proxy.async` 指令，来保持 NVIDIA Hopper (SM90+) 上的 GPU 代理状态一致性。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:5
 msgid "Why Fences Are Needed"
-msgstr ""
+msgstr "为什么需要栅栏"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:7
 msgid ""
@@ -41,11 +41,11 @@ msgid ""
 "async`, or **shared-memory** buffer stores), the hardware requires a `fence."
 "proxy.async` to guarantee ordering. Missing fences can lead to race "
 "conditions or undefined behavior."
-msgstr ""
+msgstr "Hopper 将内存指令分为通用路径和异步代理路径。当异步指令（例如 `wgmma`、`tma.load` 或 `cp.async.bulk`）在通用流量（如 `ldmatrix`、`cp.async` 或**共享内存**缓冲区存储）之后发出时，硬件需要 `fence.proxy.async` 来保证顺序。缺少栅栏可能导致竞态条件或未定义行为。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:9
 msgid "What the Pass Does"
-msgstr ""
+msgstr "Pass 的功能"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:11
 msgid ""
@@ -53,18 +53,21 @@ msgid ""
 "proxy kind (**generic**, **async**, or **none/reset**). Control-flow joins "
 "(e.g. `if`) merge states conservatively."
 msgstr ""
+"按执行顺序遍历语句，同时跟踪最后代理类型的（may-）状态（**通用**、**异步**或**无/重置**）。控制流汇合点（例如 `if`）会保守地合并状态。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:12
 msgid ""
 "Normalizes `tma_store` by ensuring the required `tma_store_arrive` / "
 "`tma_store_wait` handshake exists immediately after the store."
 msgstr ""
+"通过确保在存储后立即存在所需的 `tma_store_arrive` / `tma_store_wait` 握手，来规范化 `tma_store`。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:13
 msgid ""
 "Injects `fence.proxy.async` right before an async-proxy instruction whenever "
 "the preceding state can be generic."
 msgstr ""
+"当先前的状态可能是通用时，在异步代理指令之前立即注入 `fence.proxy.async`。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:15
 msgid ""
@@ -73,10 +76,11 @@ msgid ""
 "`address_of`) are treated as generic proxy traffic so a later async-proxy op "
 "will still be fenced."
 msgstr ""
+"默认情况下，未知/外部调用**不**影响代理状态。可能写入**共享内存**的不透明调用（例如通过 `tvm_access_ptr` / `address_of`）被视为通用代理流量，因此后续的异步代理操作仍会被加上栅栏。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:17
 msgid "Timeline View"
-msgstr ""
+msgstr "时间线视图"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:19
 msgid ""
@@ -87,6 +91,11 @@ msgid ""
 "                             │        fence inserted here   ↑\n"
 "                             └──────────────────────────────┘\n"
 msgstr ""
+"通用共享存储（或 ldmatrix/stmatrix/cp.async）→ 异步操作（wgmma / tma / cp.async.bulk）\n"
+"                 │                                  │\n"
+"                 └─ 通用代理                         └─ 异步代理\n"
+"                             │        此处插入栅栏           ↑\n"
+"                             └──────────────────────────────┘\n"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:27
 msgid ""
@@ -95,10 +104,11 @@ msgid ""
 "store and the async op above), it synthesizes a `fence.proxy.async` to reset "
 "the hardware proxy state before the async path runs."
 msgstr ""
+"代理跟踪器有效地按执行顺序扫描程序。当它检测到从通用到异步的可能转换时（在上述存储和异步操作之间），它会在异步路径运行之前合成一个 `fence.proxy.async` 来重置硬件代理状态。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:29
 msgid "Coverage of Intrinsics"
-msgstr ""
+msgstr "内建函数覆盖范围"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:31
 msgid ""
@@ -109,16 +119,18 @@ msgid ""
 "control flow (loops, blocks, branches) is handled by propagating and "
 "conservatively merging proxy state."
 msgstr ""
+"跟踪器理解 TileLang 的 TMA 加载/存储内建函数、共享内存 MMA（`wgmma`）以及 TVM/PTX SM90 异步复制内建函数（`cp.async.bulk` 系列）。通用操作目前包括 `ldmatrix`、`stmatrix`、`cp.async` 和**共享内存** `BufferStore` 语句。结构化控制流（循环、块、分支）通过传播和保守合并代理状态来处理。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:33
 msgid "Usage"
-msgstr ""
+msgstr "用法"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:35
 msgid ""
 "The pass is part of the default TileLang lowering pipeline. To apply it "
 "manually:"
 msgstr ""
+"该 Pass 是默认 TileLang 降级流水线的一部分。要手动应用它："
 
 #: ../../../compiler_internals/inject_fence_proxy.md:37
 msgid ""
@@ -129,14 +141,20 @@ msgid ""
 "with tvm.transform.PassContext():\n"
 "    mod = tl.transform.InjectFenceProxy()(mod)\n"
 msgstr ""
+"from tilelang import tl\n"
+"from tvm import IRModule\n"
+"\n"
+"mod = IRModule({\"main\": prim_func})\n"
+"with tvm.transform.PassContext():\n"
+"    mod = tl.transform.InjectFenceProxy()(mod)\n"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:46
 msgid "End-to-End Example"
-msgstr ""
+msgstr "端到端示例"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:48
 msgid "Before the pass:"
-msgstr ""
+msgstr "在 Pass 之前："
 
 #: ../../../compiler_internals/inject_fence_proxy.md:50
 msgid ""
@@ -166,10 +184,35 @@ msgid ""
 "            1,\n"
 "        )\n"
 msgstr ""
+"@T.prim_func\n"
+"def kernel():\n"
+"    with T.Kernel(1):\n"
+"        desc = T.decl_buffer((1,), \"uint64\", scope=\"local.descriptor\")\n"
+"        smem = T.decl_buffer((128,), \"float16\", scope=\"shared\")\n"
+"        T.initialize_wgmma_descriptor(desc, T.uint64(0), 2, 1, 32)\n"
+"        smem[0] = T.float16(0)\n"
+"        T.ptx_wgmma_ss(\n"
+"            \"float16\",\n"
+"            \"m64n64k16\",\n"
+"            T.bool(True),\n"
+"            T.bool(True),\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            smem.data,\n"
+"            T.int32(0),\n"
+"            T.bool(True),\n"
+"            1,\n"
+"            1,\n"
+"        )\n"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:78
 msgid "After `tl.transform.InjectFenceProxy`:"
-msgstr ""
+msgstr "在 `tl.transform.InjectFenceProxy` 之后："
 
 #: ../../../compiler_internals/inject_fence_proxy.md:80
 msgid ""
@@ -200,6 +243,32 @@ msgid ""
 "            1,\n"
 "        )\n"
 msgstr ""
+"@T.prim_func\n"
+"def kernel():\n"
+"    with T.Kernel(1):\n"
+"        desc = T.decl_buffer((1,), \"uint64\", scope=\"local.descriptor\")\n"
+"        smem = T.decl_buffer((128,), \"float16\", scope=\"shared\")\n"
+"        T.initialize_wgmma_descriptor(desc, T.uint64(0), 2, 1, 32)\n"
+"        smem[0] = T.float16(0)\n"
+"        T.fence_proxy_async()\n"
+"        T.ptx_wgmma_ss(\n"
+"            \"float16\",\n"
+"            \"m64n64k16\",\n"
+"            T.bool(True),\n"
+"            T.bool(True),\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            \"fp16\",\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            desc.data,\n"
+"            T.int32(0),\n"
+"            smem.data,\n"
+"            T.int32(0),\n"
+"            T.bool(True),\n"
+"            1,\n"
+"            1,\n"
+"        )\n"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:109
 msgid ""
@@ -208,10 +277,11 @@ msgid ""
 "pass performs the same operation across nested blocks, loops, and "
 "conditional branches."
 msgstr ""
+"唯一的区别是在通用描述符设置/共享内存写入和异步 `wgmma` 之间插入了 `fence_proxy_async`。在更大的内核中，该 Pass 在嵌套块、循环和条件分支中执行相同的操作。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:111
 msgid "Extending the Pass"
-msgstr ""
+msgstr "扩展该 Pass"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:113
 msgid ""
@@ -219,6 +289,7 @@ msgid ""
 "`IsAsyncIntrinsic` in `src/transform/inject_fence_proxy.cc`. Likewise, "
 "extend `IsKnownGeneric` for additional generic operations."
 msgstr ""
+"如果你引入了行为类似异步代理的新内建函数，请将其添加到 `src/transform/inject_fence_proxy.cc` 中的 `IsAsyncIntrinsic`。同样，为额外的通用操作扩展 `IsKnownGeneric`。"
 
 #: ../../../compiler_internals/inject_fence_proxy.md:115
 msgid ""
@@ -229,3 +300,4 @@ msgid ""
 "into known intrinsics (or manually insert `fence_proxy_async`) if they "
 "participate in proxy switching."
 msgstr ""
+"大多数调用默认为 `\"none\"`（无代理状态影响）。`IsNonProxyIntrinsic` 用于已知的同步/调度辅助函数并记录意图，但如果某个操作既不是通用也不是异步的，则在正确性上并非必需。对于自定义/不透明操作，如果它们参与代理切换，则必须将它们降级为已知的内建函数（或手动插入 `fence_proxy_async`）。"

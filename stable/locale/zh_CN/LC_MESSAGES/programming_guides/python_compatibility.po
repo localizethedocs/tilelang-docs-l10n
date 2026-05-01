@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +18,7 @@ msgstr ""
 
 #: ../../../programming_guides/python_compatibility.md:1
 msgid "Python Compatibility"
-msgstr ""
+msgstr "Python 兼容性"
 
 #: ../../../programming_guides/python_compatibility.md:3
 msgid ""
@@ -30,10 +29,15 @@ msgid ""
 "host-side semantics when using eager-style JIT, please stay tuned for our "
 "upcoming documentation."
 msgstr ""
+"TileLang 是一种 Python 嵌入式 DSL，但并非所有 Python 语法都在 TileLang DSL "
+"内部受支持。本指南阐明了哪些语法可用、哪些不可用，以及如何将常见的 Python "
+"模式转换为 TileLang 等效形式。特别地，我们重点关注内核部分（即 `with T.Kernel` "
+"内部的脚本）的语义。关于使用 eager 风格 JIT 时的主机端语义，请关注我们即将"
+"发布的文档。"
 
 #: ../../../programming_guides/python_compatibility.md:9
 msgid "The following codes use the conventional aliases:"
-msgstr ""
+msgstr "以下代码使用约定的别名："
 
 #: ../../../programming_guides/python_compatibility.md:11
 msgid ""
@@ -41,138 +45,141 @@ msgid ""
 "import tilelang.language as T\n"
 "from tilelang import jit\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import jit\n"
 
 #: ../../../programming_guides/python_compatibility.md:17
 msgid "Control Flow & Loops"
-msgstr ""
+msgstr "控制流与循环"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Python Feature"
-msgstr ""
+msgstr "Python 特性"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Supported"
-msgstr ""
+msgstr "是否支持"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Notes / Alternative"
-msgstr ""
+msgstr "备注 / 替代方案"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`for i in range(n)`"
-msgstr ""
+msgstr "`for i in range(n)`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "✅"
-msgstr ""
+msgstr "✅"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Maps to `T.serial(n)`"
-msgstr ""
+msgstr "映射为 `T.serial(n)`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`for i in range(a,b,s)`"
-msgstr ""
+msgstr "`for i in range(a,b,s)`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Maps to `T.serial(a, b, s)`"
-msgstr ""
+msgstr "映射为 `T.serial(a, b, s)`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`for x in list`"
-msgstr ""
+msgstr "`for x in list`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "❌"
-msgstr ""
+msgstr "❌"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Use index-based loop"
-msgstr ""
+msgstr "请使用基于索引的循环"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`while condition`"
-msgstr ""
+msgstr "`while condition`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`if` / `elif` / `else`"
-msgstr ""
+msgstr "`if` / `elif` / `else`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`x if cond else y`"
-msgstr ""
+msgstr "`x if cond else y`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Ternary expression"
-msgstr ""
+msgstr "三元表达式"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`break` / `continue`"
-msgstr ""
+msgstr "`break` / `continue`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`enumerate()` / `zip()`"
-msgstr ""
+msgstr "`enumerate()` / `zip()`"
 
 #: ../../../programming_guides/python_compatibility.md:30
 msgid "Data Access"
-msgstr ""
+msgstr "数据访问"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`a[i]` indexing"
-msgstr ""
+msgstr "`a[i]` 索引"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Multi-dim indexing supported: `a[i, j, k]`"
-msgstr ""
+msgstr "支持多维索引：`a[i, j, k]`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`a[i:j]` slicing"
-msgstr ""
+msgstr "`a[i:j]` 切片"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Creates `BufferRegion`"
-msgstr ""
+msgstr "创建 `BufferRegion`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`a[-1]` negative index"
-msgstr ""
+msgstr "`a[-1]` 负索引"
 
 #: ../../../programming_guides/python_compatibility.md:38
 msgid "Assignment & Arithmetic Operations"
-msgstr ""
+msgstr "赋值与算术运算"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`x = expr`"
-msgstr ""
+msgstr "`x = expr`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`+`, `-`, `*`, `/`, `%`"
-msgstr ""
+msgstr "`+`、`-`、`*`、`/`、`%`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Maps to device-side arithmetic operations"
-msgstr ""
+msgstr "映射为设备端算术运算"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`+=`, `-=`, `*=`, etc."
-msgstr ""
+msgstr "`+=`、`-=`、`*=` 等"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Augmented assignment"
-msgstr ""
+msgstr "增强赋值"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`a = b = c`"
-msgstr ""
+msgstr "`a = b = c`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Use separate assignments"
-msgstr ""
+msgstr "请使用单独的赋值语句"
 
 #: ../../../programming_guides/python_compatibility.md:47
 msgid "Functions & Classes"
-msgstr ""
+msgstr "函数与类"
 
 #: ../../../programming_guides/python_compatibility.md:49
 msgid ""
@@ -180,47 +187,50 @@ msgid ""
 "You can use `@T.macro` to define reusable code blocks, which will be inlined "
 "at compile time like `__device__` function."
 msgstr ""
+"作为一种内核脚本语言，TileLang 不支持函数或类。"
+"你可以使用 `@T.macro` 来定义可重用的代码块，这些代码块将在编译时"
+"像 `__device__` 函数一样被内联。"
 
 #: ../../../programming_guides/python_compatibility.md:51
 msgid "Statements & Built-in Functions"
-msgstr ""
+msgstr "语句与内置函数"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`with`"
-msgstr ""
+msgstr "`with`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "⚠️"
-msgstr ""
+msgstr "⚠️"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Only `T.Kernel`, `T.ws`"
-msgstr ""
+msgstr "仅支持 `T.Kernel`、`T.ws`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`assert`"
-msgstr ""
+msgstr "`assert`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Use `T.device_assert` or `T.assert`"
-msgstr ""
+msgstr "请使用 `T.device_assert` 或 `T.assert`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`print()`"
-msgstr ""
+msgstr "`print()`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Use `T.print()`; `print` works for Python expressions"
-msgstr ""
+msgstr "请使用 `T.print()`；`print` 适用于 Python 表达式"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`len()`"
-msgstr ""
+msgstr "`len()`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "Use `buffer.shape[dim]`"
-msgstr ""
+msgstr "请使用 `buffer.shape[dim]`"
 
 #: ../../../programming_guides/python_compatibility.md:0
 msgid "`type()`, `isinstance()`"
-msgstr ""
+msgstr "`type()`、`isinstance()`"

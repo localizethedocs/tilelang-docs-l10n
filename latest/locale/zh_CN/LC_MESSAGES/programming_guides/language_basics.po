@@ -19,18 +19,20 @@ msgstr ""
 
 #: ../../../programming_guides/language_basics.md:1
 msgid "Language Basics"
-msgstr ""
+msgstr "语言基础"
 
 #: ../../../programming_guides/language_basics.md:3
 msgid ""
-"This page introduces the core TileLang (tile‑lang) DSL that you’ll use to "
+"This page introduces the core TileLang (tile‑lang) DSL that you'll use to "
 "write high‑performance kernels. It focuses on how to define a kernel, "
 "express iteration, move data across memory scopes, and run it with JIT."
 msgstr ""
+"本页面介绍 TileLang (tile-lang) 核心 DSL，用于编写高性能内核。重点涵盖如何定义内核、"
+"表达迭代、在不同内存作用域之间移动数据，以及使用 JIT 运行。"
 
 #: ../../../programming_guides/language_basics.md:7
 msgid "The examples use the conventional aliases:"
-msgstr ""
+msgstr "示例使用以下常用别名："
 
 #: ../../../programming_guides/language_basics.md:9
 msgid ""
@@ -38,10 +40,13 @@ msgid ""
 "import tilelang.language as T\n"
 "from tilelang import jit\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import jit\n"
 
 #: ../../../programming_guides/language_basics.md:15
 msgid "1. Defining a Kernel with `@T.prim_func`"
-msgstr ""
+msgstr "1. 使用 `@T.prim_func` 定义内核"
 
 #: ../../../programming_guides/language_basics.md:17
 msgid ""
@@ -49,10 +54,12 @@ msgid ""
 "decorator. Arguments are annotated with shapes and dtypes via `T.Tensor` or "
 "`T.Buffer`."
 msgstr ""
+"TileLang 内核是由 `@T.prim_func` 装饰器生成的 TIR（TVM IR）函数。参数通过 `T.Tensor` 或 "
+"`T.Buffer` 来标注形状和数据类型。"
 
 #: ../../../programming_guides/language_basics.md:21
 msgid "Note on dtypes"
-msgstr ""
+msgstr "关于数据类型的说明"
 
 #: ../../../programming_guides/language_basics.md:22
 msgid ""
@@ -60,6 +67,8 @@ msgid ""
 "`T.float32`), or a framework dtype (e.g., `torch.float32`). TileLang "
 "normalizes all of these. See Type System for details."
 msgstr ""
+"数据类型可以字符串形式（如 'float32'）、TileLang 数据类型（如 `T.float32`）或框架数据类型"
+"（如 `torch.float32`）传入。TileLang 会对所有这些进行归一化。详情参见类型系统。"
 
 #: ../../../programming_guides/language_basics.md:26
 msgid ""
@@ -72,6 +81,14 @@ msgid ""
 "):\n"
 "    ...  # kernel body\n"
 msgstr ""
+"@T.prim_func\n"
+"def add_kernel(\n"
+"    A: T.Tensor((N,), dtype),    # dtype 可以是 'float32' | T.float32 | "
+"torch.float32\n"
+"    B: T.Tensor((N,), dtype),\n"
+"    C: T.Tensor((N,), dtype),\n"
+"):\n"
+"    ...  # 内核函数体\n"
 
 #: ../../../programming_guides/language_basics.md:36
 msgid ""
@@ -79,6 +96,8 @@ msgid ""
 "Python ints through the outer `@jit` wrapper (shown below), or annotate with "
 "`T.dyn` when you want a named symbolic dimension."
 msgstr ""
+"形状可以是具体整数或符号形式。对于符号形式，可以通过外层的 `@jit` 包装器（见下文）传入 "
+"Python 整数，或者当需要命名符号维度时，使用 `T.dyn` 进行标注。"
 
 #: ../../../programming_guides/language_basics.md:40
 msgid ""
@@ -88,45 +107,54 @@ msgid ""
 "def uses_dyn(A: T.Tensor((K,), 'float32')):\n"
 "    ...\n"
 msgstr ""
+"# 命名符号维度（可选）\n"
+"K = T.dyn['K']\n"
+"@T.prim_func\n"
+"def uses_dyn(A: T.Tensor((K,), 'float32')):\n"
+"    ...\n"
 
 #: ../../../programming_guides/language_basics.md:48
 msgid "Dynamic symbolic dimensions: two ways"
-msgstr ""
+msgstr "动态符号维度：两种方式"
 
 #: ../../../programming_guides/language_basics.md:50
 msgid ""
 "TileLang supports two complementary ways to introduce symbolic (dynamic) "
 "dims:"
 msgstr ""
+"TileLang 支持两种互补的方式来引入符号（动态）维度："
 
 #: ../../../programming_guides/language_basics.md:52
 msgid ""
 "Type-level annotations via `T.dyn[...]` (recommended for function signatures)"
 msgstr ""
+"通过 `T.dyn[...]` 进行类型级标注（推荐用于函数签名）"
 
 #: ../../../programming_guides/language_basics.md:53
 msgid ""
 "Use in `T.Tensor((T.dyn['K'], ...), dtype)` or bind once then reuse (as "
 "above)."
 msgstr ""
+"在 `T.Tensor((T.dyn['K'], ...), dtype)` 中使用，或绑定一次后复用（如上所示）。"
 
 #: ../../../programming_guides/language_basics.md:54
 msgid ""
-"Inside the kernel body, prefer reading from the buffer’s shape, e.g. `M = A."
+"Inside the kernel body, prefer reading from the buffer's shape, e.g. `M = A."
 "shape[0]`."
 msgstr ""
+"在内核函数体内，建议从缓冲区的 shape 中读取，如 `M = A.shape[0]`。"
 
 #: ../../../programming_guides/language_basics.md:56
 msgid "Term-level variables via `T.dynamic(name, dtype)`"
-msgstr ""
+msgstr "通过 `T.dynamic(name, dtype)` 创建项级变量"
 
 #: ../../../programming_guides/language_basics.md:57
 msgid "Creates a TIR `tir.Var` you can use directly in expressions/loops."
-msgstr ""
+msgstr "创建一个 TIR `tir.Var`，可在表达式/循环中直接使用。"
 
 #: ../../../programming_guides/language_basics.md:58
 msgid "Handy when you need to reference the dimension symbol in the body."
-msgstr ""
+msgstr "当需要在函数体内引用维度符号时很方便。"
 
 #: ../../../programming_guides/language_basics.md:60
 msgid ""
@@ -145,77 +173,102 @@ msgid ""
 "    for i in T.serial(K):\n"
 "        ...\n"
 msgstr ""
+"# 1) 仅标注符号；通过 shape 读取绑定的大小\n"
+"K = T.dyn['K']  # dtype 默认为 int32\n"
+"@T.prim_func\n"
+"def foo(A: T.Tensor((K,), 'float32')):\n"
+"    N = A.shape[0]\n"
+"    for i in T.serial(N):\n"
+"        ...\n"
+"\n"
+"# 2) 显式的 Var 符号，可在函数体内使用\n"
+"K = T.dynamic('K', 'int32')   # 或 T.dynamic('K') 默认 int32\n"
+"@T.prim_func\n"
+"def bar(A: T.Tensor((K,), 'float32')):\n"
+"    for i in T.serial(K):\n"
+"        ...\n"
 
 #: ../../../programming_guides/language_basics.md:77
 #: ../../../programming_guides/language_basics.md:195
 msgid "Notes"
-msgstr ""
+msgstr "注意事项"
 
 #: ../../../programming_guides/language_basics.md:78
 msgid ""
 "`T.symbolic(name, dtype)` is a deprecated alias of `T.dynamic`; prefer `T."
 "dynamic`."
 msgstr ""
+"`T.symbolic(name, dtype)` 是 `T.dynamic` 的已弃用别名；推荐使用 `T.dynamic`。"
 
 #: ../../../programming_guides/language_basics.md:79
 msgid ""
 "Under `@jit`, concrete sizes come from the actual tensor arguments at the "
 "first call."
 msgstr ""
+"在 `@jit` 下，具体大小在首次调用时从实际张量参数中获取。"
 
 #: ../../../programming_guides/language_basics.md:80
 msgid ""
 "Symbols in annotations do not need to be separate kernel arguments; TileLang "
 "binds them from argument shapes."
 msgstr ""
+"标注中的符号不需要作为单独的内核参数；TileLang 会从参数形状中绑定它们。"
 
 #: ../../../programming_guides/language_basics.md:82
 msgid "2. Launching Work with `T.Kernel`"
-msgstr ""
+msgstr "2. 使用 `T.Kernel` 启动工作"
 
 #: ../../../programming_guides/language_basics.md:84
 msgid ""
 "`with T.Kernel(...)` declares a launch context and creates block/thread "
 "bindings. For GPU backends, specify a grid and threads per block."
 msgstr ""
+"`with T.Kernel(...)` 声明启动上下文并创建块/线程绑定。对于 GPU 后端，需要指定网格和"
+"每个块的线程数。"
 
 #: ../../../programming_guides/language_basics.md:87
 msgid ""
 "with T.Kernel(grid_x, grid_y, threads=128) as (bx, by):\n"
 "    ...  # bx/by are blockIdx.x/y\n"
 msgstr ""
+"with T.Kernel(grid_x, grid_y, threads=128) as (bx, by):\n"
+"    ...  # bx/by 代表 blockIdx.x/y\n"
 
 #: ../../../programming_guides/language_basics.md:92
 msgid ""
 "You rarely need raw thread indices; most kernels use structured loops (`T."
 "serial`, `T.unroll`, `T.Parallel`, `T.Pipelined`) inside a `T.Kernel`."
 msgstr ""
+"你很少需要原始线程索引；大多数内核在 `T.Kernel` 内部使用结构化循环（`T.serial`、"
+"`T.unroll`、`T.Parallel`、`T.Pipelined`）。"
 
 #: ../../../programming_guides/language_basics.md:95
 msgid "3. Loops and Control Flow"
-msgstr ""
+msgstr "3. 循环与控制流"
 
 #: ../../../programming_guides/language_basics.md:97
 msgid "Core loop constructs map to familiar hardware patterns:"
-msgstr ""
+msgstr "核心循环构造对应常见的硬件模式："
 
 #: ../../../programming_guides/language_basics.md:99
 msgid "`T.serial(start, stop[, step])`: plain for‑loop"
-msgstr ""
+msgstr "`T.serial(start, stop[, step])`：普通 for 循环"
 
 #: ../../../programming_guides/language_basics.md:100
 msgid "`T.unroll(start, stop[, step])`: unrolled loop"
-msgstr ""
+msgstr "`T.unroll(start, stop[, step])`：展开循环"
 
 #: ../../../programming_guides/language_basics.md:101
 msgid ""
 "`T.Parallel(ext0, ext1, ...)`: nested parallel loops (elementwise‑friendly)"
 msgstr ""
+"`T.Parallel(ext0, ext1, ...)`：嵌套并行循环（适合逐元素操作）"
 
 #: ../../../programming_guides/language_basics.md:102
 msgid ""
 "`T.Pipelined(iters, num_stages=N)`: software pipelining for producer/consumer"
 msgstr ""
+"`T.Pipelined(iters, num_stages=N)`：用于生产者/消费者的软件流水线"
 
 #: ../../../programming_guides/language_basics.md:104
 msgid ""
@@ -229,34 +282,47 @@ msgid ""
 "    # overlap copy/compute across stages\n"
 "    ...\n"
 msgstr ""
+"for i in T.serial(N):\n"
+"    ...\n"
+"\n"
+"for i, j in T.Parallel(M, N):\n"
+"    C[i, j] = A[i, j] + B[i, j]\n"
+"\n"
+"for k in T.Pipelined(T.ceildiv(K, BK), num_stages=3):\n"
+"    # 跨阶段重叠复制/计算\n"
+"    ...\n"
 
 #: ../../../programming_guides/language_basics.md:116
 msgid ""
 "Conditionals use standard Python `if`/`else`. Guard edges with predicates "
 "when tile sizes do not divide problem sizes evenly."
 msgstr ""
+"条件判断使用标准 Python `if`/`else`。当分块大小不能整除问题大小时，使用谓词"
+"保护边界。"
 
 #: ../../../programming_guides/language_basics.md:119
 msgid "4. Memory Scopes and Allocation"
-msgstr ""
+msgstr "4. 内存作用域与分配"
 
 #: ../../../programming_guides/language_basics.md:121
 msgid "TileLang exposes key software‑managed scopes:"
-msgstr ""
+msgstr "TileLang 暴露了关键的软件管理作用域："
 
 #: ../../../programming_guides/language_basics.md:123
 msgid "Global: device memory (default for `T.Tensor` arguments)"
-msgstr ""
+msgstr "Global：设备内存（`T.Tensor` 参数的默认值）"
 
 #: ../../../programming_guides/language_basics.md:124
 msgid "Shared: on‑chip, block‑visible (`T.alloc_shared(shape, dtype)`)"
-msgstr ""
+msgstr "Shared：片上、块可见的内存（`T.alloc_shared(shape, dtype)`）"
 
 #: ../../../programming_guides/language_basics.md:125
 msgid ""
 "Fragment and scalars: per‑thread fragments and scalar vars but in Shared "
 "View (`T.alloc_fragment`, `T.alloc_var`)"
 msgstr ""
+"片段和标量：每个线程的片段和标量变量，但在共享视图"
+"（`T.alloc_fragment`、`T.alloc_var`）中"
 
 #: ../../../programming_guides/language_basics.md:128
 msgid ""
@@ -265,16 +331,22 @@ msgid ""
 "C_local  = T.alloc_fragment((BM, BN), 'float32')\n"
 "T.clear(C_local)  # zero accumulators\n"
 msgstr ""
+"A_shared = T.alloc_shared((BM, BK), 'float16')\n"
+"B_shared = T.alloc_shared((BK, BN), 'float16')\n"
+"C_local  = T.alloc_fragment((BM, BN), 'float32')\n"
+"T.clear(C_local)  # 清零累加器\n"
 
 #: ../../../programming_guides/language_basics.md:135
 msgid "5. Moving Data: `T.copy`"
-msgstr ""
+msgstr "5. 移动数据：`T.copy`"
 
 #: ../../../programming_guides/language_basics.md:137
 msgid ""
 "Use `T.copy(src, dst)` to move tiles between scopes. It accepts buffers, "
 "buffer regions, or buffer loads; extents are inferred or can be broadcast."
 msgstr ""
+"使用 `T.copy(src, dst)` 在作用域之间移动分块。它接受缓冲区、缓冲区区域或缓冲区加载；"
+"范围会被推断或可以进行广播。"
 
 #: ../../../programming_guides/language_basics.md:140
 msgid ""
@@ -285,11 +357,18 @@ msgid ""
 "# Fragment -> Global (store back)\n"
 "T.copy(C_local, C[by * BM, bx * BN])\n"
 msgstr ""
+"# Global -> Shared（分块复制），范围从 dst 推断\n"
+"T.copy(A[by * BM, ko * BK], A_shared)\n"
+"T.copy(B[ko * BK, bx * BN], B_shared)\n"
+"\n"
+"# Fragment -> Global（存回）\n"
+"T.copy(C_local, C[by * BM, bx * BN])\n"
 
 #: ../../../programming_guides/language_basics.md:149
 msgid ""
 "`T.copy` performs coalescing and scope‑specific lowering during compilation."
 msgstr ""
+"`T.copy` 在编译期间执行合并和作用域特定的降级。"
 
 #: ../../../programming_guides/language_basics.md:151
 msgid ""
@@ -301,10 +380,15 @@ msgid ""
 "manually because `ThreadSync(\"shared\")` will insert the necessary `T."
 "tvm_storage_sync(\"shared\")` before the first read from `dst`."
 msgstr ""
+"如果需要用于手动流水线的显式异步 global->shared 预取，请使用 `T.async_copy(src, dst)`。"
+"与 `T.copy` 不同，它不会自动插入任何等待：你必须在消费 `dst` 之前显式插入 "
+"`T.ptx_wait_group(...)`。跨线程消费仍然需要共享内存屏障，但在大多数 TileLang "
+"程序中你无需手动编写，因为 `ThreadSync(\"shared\")` 会在首次读取 `dst` 之前插入必要的 "
+"`T.tvm_storage_sync(\"shared\")`。"
 
 #: ../../../programming_guides/language_basics.md:159
 msgid "6. A Minimal End‑to‑End Example (Vector Add)"
-msgstr ""
+msgstr "6. 一个最小的端到端示例（向量加法）"
 
 #: ../../../programming_guides/language_basics.md:161
 msgid ""
@@ -341,21 +425,55 @@ msgid ""
 "kernel(A, B, C)  # runs on GPU\n"
 "torch.testing.assert_close(C, A + B)\n"
 msgstr ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import jit\n"
+"\n"
+"@jit  # 首次调用时从张量推断目标\n"
+"def add(N: int, block: int = 256, dtype: str = 'float32'):\n"
+"\n"
+"    @T.prim_func\n"
+"    def add_kernel(\n"
+"        A: T.Tensor((N,), dtype),\n"
+"        B: T.Tensor((N,), dtype),\n"
+"        C: T.Tensor((N,), dtype),\n"
+"    ):\n"
+"        with T.Kernel(T.ceildiv(N, block), threads=block) as bx:\n"
+"            for i in T.Parallel(block):\n"
+"                gi = bx * block + i\n"
+"                # 可选 - 当访问可能越界时，LegalizeSafeMemoryAccess 会插入保护\n"
+"                C[gi] = A[gi] + B[gi]\n"
+"\n"
+"    return add_kernel\n"
+"\n"
+"# 主机端（以 PyTorch 为例；也支持 NumPy/DLPack）\n"
+"import torch\n"
+"N = 1 << 20\n"
+"A = torch.randn(N, device='cuda', dtype=torch.float32)\n"
+"B = torch.randn(N, device='cuda', dtype=torch.float32)\n"
+"C = torch.empty(N, device='cuda', dtype=torch.float32)\n"
+"\n"
+"kernel = add(N)\n"
+"kernel(A, B, C)  # 在 GPU 上运行\n"
+"torch.testing.assert_close(C, A + B)\n"
 
 #: ../../../programming_guides/language_basics.md:196
 msgid ""
 "The `@jit` wrapper returns a callable kernel after the first compilation."
 msgstr ""
+"`@jit` 包装器在首次编译后返回一个可调用的内核。"
 
 #: ../../../programming_guides/language_basics.md:197
 msgid ""
 "You can pass compile‑time tunables (tile sizes, dtypes) through the outer "
 "Python function and bake them into the generated TIR."
 msgstr ""
+"可以通过外层 Python 函数传入编译时可调参数（分块大小、数据类型），并将其固化到"
+"生成的 TIR 中。"
 
 #: ../../../programming_guides/language_basics.md:200
 msgid "7. Tiled GEMM Skeleton"
-msgstr ""
+msgstr "7. 分块 GEMM 骨架"
 
 #: ../../../programming_guides/language_basics.md:202
 msgid ""
@@ -363,6 +481,8 @@ msgid ""
 "a fragment accumulator. It mirrors the quickstart style found in the "
 "repository."
 msgstr ""
+"以下是一个使用共享内存暂存和片段累加器的分块 GEMM 最小模式。它反映了仓库中"
+"快速入门风格的代码。"
 
 #: ../../../programming_guides/language_basics.md:205
 msgid ""
@@ -387,16 +507,37 @@ msgid ""
 "\n"
 "        T.copy(C_f, C[by * BM, bx * BN])\n"
 msgstr ""
+"@T.prim_func\n"
+"def gemm(\n"
+"    A: T.Tensor((M, K), 'float16'),\n"
+"    B: T.Tensor((K, N), 'float16'),\n"
+"    C: T.Tensor((M, N), 'float16'),\n"
+"):\n"
+"    with T.Kernel(T.ceildiv(N, BN), T.ceildiv(M, BM), threads=128) as (bx, "
+"by):\n"
+"        A_s = T.alloc_shared((BM, BK), 'float16')\n"
+"        B_s = T.alloc_shared((BK, BN), 'float16')\n"
+"        C_f = T.alloc_fragment((BM, BN), 'float32')\n"
+"        T.clear(C_f)\n"
+"\n"
+"        for ko in T.Pipelined(T.ceildiv(K, BK), num_stages=3):\n"
+"            T.copy(A[by * BM, ko * BK], A_s)\n"
+"            T.copy(B[ko * BK, bx * BN], B_s)\n"
+"            T.gemm(A_s, B_s, C_f)  # 降级为 tensor-core/ISA 特定内核\n"
+"\n"
+"        T.copy(C_f, C[by * BM, bx * BN])\n"
 
 #: ../../../programming_guides/language_basics.md:226
 msgid "8. Debugging and Printing"
-msgstr ""
+msgstr "8. 调试与打印"
 
 #: ../../../programming_guides/language_basics.md:228
 msgid ""
 "Use `T.print` inside a kernel for quick introspection. TileLang emits "
 "printing from a single thread for shared/fragment scopes to avoid floods."
 msgstr ""
+"在内核内部使用 `T.print` 进行快速检查。对于 shared/fragment 作用域，"
+"TileLang 从单个线程发出打印，以避免输出泛滥。"
 
 #: ../../../programming_guides/language_basics.md:231
 msgid ""
@@ -404,25 +545,29 @@ msgid ""
 "T.print(A_s, msg='A tile:')\n"
 "T.print(C[0], msg='C[0] = ')\n"
 msgstr ""
+"T.print(C_f, msg='accumulator:')\n"
+"T.print(A_s, msg='A tile:')\n"
+"T.print(C[0], msg='C[0] = ')\n"
 
 #: ../../../programming_guides/language_basics.md:237
 msgid "9. Where to Go Next"
-msgstr ""
+msgstr "9. 下一步"
 
 #: ../../../programming_guides/language_basics.md:239
 msgid "Control flow details: see Programming Guides → Control Flow"
-msgstr ""
+msgstr "控制流详情：参见编程指南 → 控制流"
 
 #: ../../../programming_guides/language_basics.md:240
 msgid ""
 "Memory topics: see Programming Guides → (removed cache/layout); basics are "
 "covered inline"
 msgstr ""
+"内存主题：参见编程指南 →（已移除 cache/layout）；基础知识已在文中涵盖"
 
 #: ../../../programming_guides/language_basics.md:241
 msgid "Autotuning tile sizes and mappings: Programming Guides → Autotuning"
-msgstr ""
+msgstr "自动调优分块大小和映射：编程指南 → 自动调优"
 
 #: ../../../programming_guides/language_basics.md:242
 msgid "Operator examples (GEMM, GEMV, attention): see Deep Learning Operators"
-msgstr ""
+msgstr "算子示例（GEMM、GEMV、attention）：参见深度学习算子"

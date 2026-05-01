@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2025-2025, Tile Lang Contributors
-# This file is distributed under the same license as the Tile Language <br> package.
+# This file is distributed under the same license as the TileLang <br> package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: TileLang <br> stable\n"
+"Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../get_started/targets.md:1
 msgid "Understanding Targets"
-msgstr ""
+msgstr "理解编译目标"
 
 #: ../../../get_started/targets.md:3
 msgid ""
@@ -29,10 +29,12 @@ msgid ""
 "options such as GPU architecture flags. This page summarises how to pick and "
 "customise a target when compiling TileLang programs."
 msgstr ""
+"TileLang 构建于 TVM 之上，TVM 依赖**编译目标（target）**来描述您要编译的目标设备。编译目标决定使用哪个代码生成器"
+"（CUDA、HIP、Metal、LLVM 等），并允许您传递特定于设备的选项，例如 GPU 架构标志。本页面总结了在编译 TileLang 程序时如何选择和自定义编译目标。"
 
 #: ../../../get_started/targets.md:8
 msgid "Common target strings"
-msgstr ""
+msgstr "常用编译目标字符串"
 
 #: ../../../get_started/targets.md:10
 msgid ""
@@ -40,90 +42,95 @@ msgid ""
 "range of TVM options so you can fine-tune the generated code. The most "
 "frequent choices are listed below:"
 msgstr ""
+"TileLang 内置了一小组常用编译目标；每个都接受完整的 TVM 选项，以便您微调生成的代码。以下列出了最常用的选择："
 
 #: ../../../get_started/targets.md:0
 msgid "Base name"
-msgstr ""
+msgstr "基础名称"
 
 #: ../../../get_started/targets.md:0
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../get_started/targets.md:0
 msgid "`auto`"
-msgstr ""
+msgstr "`auto`"
 
 #: ../../../get_started/targets.md:0
 msgid ""
 "Detects CUDA → HIP → Metal in that order. Useful when running the same "
 "script across machines."
 msgstr ""
+"按 CUDA → HIP → Metal 的顺序依次检测。适用于跨机器运行同一脚本的场景。"
 
 #: ../../../get_started/targets.md:0
 msgid "`cuda`"
-msgstr ""
+msgstr "`cuda`"
 
 #: ../../../get_started/targets.md:0
 msgid ""
 "NVIDIA GPUs. Supports options such as `-arch=sm_80`, `-"
 "max_num_threads=1024`, etc."
 msgstr ""
+"NVIDIA GPU。支持 `-arch=sm_80`、`-max_num_threads=1024` 等选项。"
 
 #: ../../../get_started/targets.md:0
 msgid "`cutedsl`"
-msgstr ""
+msgstr "`cutedsl`"
 
 #: ../../../get_started/targets.md:0
 msgid ""
 "NVIDIA CUTLASS/CuTe DSL backend. Requires `nvidia-cutlass-dsl`. `cuda` "
 "options can also be applied to this target."
 msgstr ""
+"NVIDIA CUTLASS/CuTe DSL 后端。需要 `nvidia-cutlass-dsl`。`cuda` 的选项同样适用于该编译目标。"
 
 #: ../../../get_started/targets.md:0
 msgid "`hip`"
-msgstr ""
+msgstr "`hip`"
 
 #: ../../../get_started/targets.md:0
 msgid "AMD GPUs via ROCm. Options like `-mcpu=gfx90a` can be appended."
-msgstr ""
+msgstr "通过 ROCm 支持 AMD GPU。可追加 `-mcpu=gfx90a` 等选项。"
 
 #: ../../../get_started/targets.md:0
 msgid "`metal`"
-msgstr ""
+msgstr "`metal`"
 
 #: ../../../get_started/targets.md:0
 msgid "Apple Silicon GPUs (arm64 Macs)."
-msgstr ""
+msgstr "Apple Silicon GPU（arm64 Mac）。"
 
 #: ../../../get_started/targets.md:0
 msgid "`llvm`"
-msgstr ""
+msgstr "`llvm`"
 
 #: ../../../get_started/targets.md:0
 msgid "CPU execution; accepts the standard TVM LLVM switches."
-msgstr ""
+msgstr "CPU 执行；接受标准的 TVM LLVM 开关参数。"
 
 #: ../../../get_started/targets.md:0
 msgid "`webgpu`"
-msgstr ""
+msgstr "`webgpu`"
 
 #: ../../../get_started/targets.md:0
 msgid "Browser / WebGPU runtimes."
-msgstr ""
+msgstr "浏览器 / WebGPU 运行时。"
 
 #: ../../../get_started/targets.md:0
 msgid "`c`"
-msgstr ""
+msgstr "`c`"
 
 #: ../../../get_started/targets.md:0
 msgid "Emit plain C source for inspection or custom toolchains."
-msgstr ""
+msgstr "生成纯 C 源代码，供查看或用于自定义工具链。"
 
 #: ../../../get_started/targets.md:24
 msgid ""
 "To add options, append them after the base name, separated by spaces. For "
 "example:"
 msgstr ""
+"要添加选项，请在基础名称后以空格分隔追加。例如："
 
 #: ../../../get_started/targets.md:26
 msgid ""
@@ -135,220 +142,238 @@ msgid ""
 "def compiled_kernel(*args):\n"
 "    return func(*args)\n"
 msgstr ""
+"target = \"cuda -arch=sm_90\"\n"
+"kernel = tilelang.compile(func, target=target, "
+"execution_backend=\"cython\")\n"
+"# 或者\n"
+"@tilelang.jit(target=target)\n"
+"def compiled_kernel(*args):\n"
+"    return func(*args)\n"
 
 #: ../../../get_started/targets.md:35
 msgid ""
 "The same convention works for HIP or LLVM (e.g. `hip -mcpu=gfx940`, `llvm -"
 "mtriple=x86_64-linux-gnu`)."
 msgstr ""
+"同样的约定也适用于 HIP 或 LLVM（例如 `hip -mcpu=gfx940`、`llvm -mtriple=x86_64-linux-gnu`）。"
 
 #: ../../../get_started/targets.md:37
 msgid "Advanced: Specify Exact Hardware"
-msgstr ""
+msgstr "进阶：指定确切硬件"
 
 #: ../../../get_started/targets.md:39
 msgid ""
 "When you already know the precise GPU model, you can encode it in the target "
-"string—either via `-arch=sm_XX` or by using one of TVM’s pre-defined target "
+"string—either via `-arch=sm_XX` or by using one of TVM's pre-defined target "
 "tags such as `nvidia/nvidia-h100`.  Supplying this detail is optional for "
 "TileLang in general use, but it becomes valuable when the TVM cost model is "
 "enabled (e.g. during autotuning).  The cost model uses the extra attributes "
 "to make better scheduling predictions.  If you skip this step (or do not use "
 "the cost model), generic targets like `cuda` or `auto` are perfectly fine."
 msgstr ""
+"当您已经知道具体的 GPU 型号时，可以将其编码到编译目标字符串中——可通过 `-arch=sm_XX` 或使用 TVM 预定义的编译目标"
+"标签（如 `nvidia/nvidia-h100`）。在 TileLang 的一般使用中，提供这些细节是可选的，但当启用 TVM 成本模型时"
+"（例如在自动调优期间）则非常有价值。成本模型会利用这些额外属性做出更好的调度预测。如果您跳过这一步"
+"（或不使用成本模型），使用 `cuda` 或 `auto` 这样的通用编译目标完全没有问题。"
 
 #: ../../../get_started/targets.md:45
 msgid ""
-"All CUDA compute capabilities recognised by TVM’s target registry are listed "
+"All CUDA compute capabilities recognised by TVM's target registry are listed "
 "below.  Pick the one that matches your GPU and append it to the target "
 "string or use the corresponding target tag—for example `nvidia/nvidia-a100`."
 msgstr ""
+"以下列出了 TVM 编译目标注册表中已识别的所有 CUDA 计算能力。选择与您的 GPU 匹配的一项，将其追加到编译目标字符串中，"
+"或使用相应的编译目标标签——例如 `nvidia/nvidia-a100`。"
 
 #: ../../../get_started/targets.md:0
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #: ../../../get_started/targets.md:0
 msgid "GPUs (examples)"
-msgstr ""
+msgstr "GPU（示例）"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_20`"
-msgstr ""
+msgstr "`sm_20`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/tesla-c2050`, `nvidia/tesla-c2070`"
-msgstr ""
+msgstr "`nvidia/tesla-c2050`、`nvidia/tesla-c2070`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_21`"
-msgstr ""
+msgstr "`sm_21`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvs-5400m`, `nvidia/geforce-gt-520`"
-msgstr ""
+msgstr "`nvidia/nvs-5400m`、`nvidia/geforce-gt-520`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_30`"
-msgstr ""
+msgstr "`sm_30`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/quadro-k5000`, `nvidia/geforce-gtx-780m`"
-msgstr ""
+msgstr "`nvidia/quadro-k5000`、`nvidia/geforce-gtx-780m`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_35`"
-msgstr ""
+msgstr "`sm_35`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/tesla-k40`, `nvidia/quadro-k6000`"
-msgstr ""
+msgstr "`nvidia/tesla-k40`、`nvidia/quadro-k6000`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_37`"
-msgstr ""
+msgstr "`sm_37`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/tesla-k80`"
-msgstr ""
+msgstr "`nvidia/tesla-k80`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_50`"
-msgstr ""
+msgstr "`sm_50`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/quadro-k2200`, `nvidia/geforce-gtx-950m`"
-msgstr ""
+msgstr "`nvidia/quadro-k2200`、`nvidia/geforce-gtx-950m`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_52`"
-msgstr ""
+msgstr "`sm_52`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/tesla-m40`, `nvidia/geforce-gtx-980`"
-msgstr ""
+msgstr "`nvidia/tesla-m40`、`nvidia/geforce-gtx-980`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_53`"
-msgstr ""
+msgstr "`sm_53`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/jetson-tx1`, `nvidia/jetson-nano`"
-msgstr ""
+msgstr "`nvidia/jetson-tx1`、`nvidia/jetson-nano`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_60`"
-msgstr ""
+msgstr "`sm_60`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/tesla-p100`, `nvidia/quadro-gp100`"
-msgstr ""
+msgstr "`nvidia/tesla-p100`、`nvidia/quadro-gp100`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_61`"
-msgstr ""
+msgstr "`sm_61`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/tesla-p4`, `nvidia/quadro-p6000`, `nvidia/geforce-gtx-1080`"
-msgstr ""
+msgstr "`nvidia/tesla-p4`、`nvidia/quadro-p6000`、`nvidia/geforce-gtx-1080`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_62`"
-msgstr ""
+msgstr "`sm_62`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/jetson-tx2`"
-msgstr ""
+msgstr "`nvidia/jetson-tx2`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_70`"
-msgstr ""
+msgstr "`sm_70`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvidia-v100`, `nvidia/quadro-gv100`"
-msgstr ""
+msgstr "`nvidia/nvidia-v100`、`nvidia/quadro-gv100`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_72`"
-msgstr ""
+msgstr "`sm_72`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/jetson-agx-xavier`"
-msgstr ""
+msgstr "`nvidia/jetson-agx-xavier`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_75`"
-msgstr ""
+msgstr "`sm_75`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvidia-t4`, `nvidia/quadro-rtx-8000`, `nvidia/geforce-rtx-2080`"
-msgstr ""
+msgstr "`nvidia/nvidia-t4`、`nvidia/quadro-rtx-8000`、`nvidia/geforce-rtx-2080`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_80`"
-msgstr ""
+msgstr "`sm_80`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvidia-a100`, `nvidia/nvidia-a30`"
-msgstr ""
+msgstr "`nvidia/nvidia-a100`、`nvidia/nvidia-a30`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_86`"
-msgstr ""
+msgstr "`sm_86`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvidia-a40`, `nvidia/nvidia-a10`, `nvidia/geforce-rtx-3090`"
-msgstr ""
+msgstr "`nvidia/nvidia-a40`、`nvidia/nvidia-a10`、`nvidia/geforce-rtx-3090`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_87`"
-msgstr ""
+msgstr "`sm_87`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/jetson-agx-orin-32gb`, `nvidia/jetson-agx-orin-64gb`"
-msgstr ""
+msgstr "`nvidia/jetson-agx-orin-32gb`、`nvidia/jetson-agx-orin-64gb`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_89`"
-msgstr ""
+msgstr "`sm_89`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/geforce-rtx-4090`"
-msgstr ""
+msgstr "`nvidia/geforce-rtx-4090`"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_90a`"
-msgstr ""
+msgstr "`sm_90a`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvidia-h100` (DPX profile)"
-msgstr ""
+msgstr "`nvidia/nvidia-h100`（DPX 配置文件）"
 
 #: ../../../get_started/targets.md:0
 msgid "`sm_100a`"
-msgstr ""
+msgstr "`sm_100a`"
 
 #: ../../../get_started/targets.md:0
 msgid "`nvidia/nvidia-b100`"
-msgstr ""
+msgstr "`nvidia/nvidia-b100`"
 
 #: ../../../get_started/targets.md:71
 msgid ""
-"Refer to NVIDIA’s [CUDA GPUs](https://developer.nvidia.com/cuda-gpus) page "
+"Refer to NVIDIA's [CUDA GPUs](https://developer.nvidia.com/cuda-gpus) page "
 "or the TVM source (`3rdparty/tvm/src/target/tag.cc`) for the latest mapping "
 "between devices and compute capabilities."
 msgstr ""
+"请参阅 NVIDIA 的 [CUDA GPUs](https://developer.nvidia.com/cuda-gpus) 页面或 TVM 源码"
+"（`3rdparty/tvm/src/target/tag.cc`）以获取设备与计算能力之间的最新映射关系。"
 
 #: ../../../get_started/targets.md:74
 msgid "Creating targets programmatically"
-msgstr ""
+msgstr "以编程方式创建编译目标"
 
 #: ../../../get_started/targets.md:76
 msgid ""
-"If you prefer working with TVM’s `Target` objects, TileLang exposes the "
+"If you prefer working with TVM's `Target` objects, TileLang exposes the "
 "helper `tilelang.utils.target.determine_target` (returns a canonical target "
 "string by default, or the `Target` object when `return_object=True`):"
 msgstr ""
+"如果您更习惯使用 TVM 的 `Target` 对象，TileLang 提供了辅助函数 `tilelang.utils.target.determine_target`"
+"（默认返回规范的编译目标字符串，当设置 `return_object=True` 时返回 `Target` 对象）："
 
 #: ../../../get_started/targets.md:80
 msgid ""
@@ -357,10 +382,14 @@ msgid ""
 "tvm_target = determine_target(\"cuda -arch=sm_80\", return_object=True)\n"
 "kernel = tilelang.compile(func, target=tvm_target)\n"
 msgstr ""
+"from tilelang.utils.target import determine_target\n"
+"\n"
+"tvm_target = determine_target(\"cuda -arch=sm_80\", return_object=True)\n"
+"kernel = tilelang.compile(func, target=tvm_target)\n"
 
 #: ../../../get_started/targets.md:87
 msgid "You can also build targets directly through TVM:"
-msgstr ""
+msgstr "您也可以直接通过 TVM 构建编译目标："
 
 #: ../../../get_started/targets.md:89
 msgid ""
@@ -369,6 +398,10 @@ msgid ""
 "target = Target(\"cuda\", host=\"llvm\")\n"
 "target = target.with_host(Target(\"llvm -mcpu=skylake\"))\n"
 msgstr ""
+"from tvm.target import Target\n"
+"\n"
+"target = Target(\"cuda\", host=\"llvm\")\n"
+"target = target.with_host(Target(\"llvm -mcpu=skylake\"))\n"
 
 #: ../../../get_started/targets.md:96
 msgid ""
@@ -379,16 +412,20 @@ msgid ""
 "runs, whereas constructing fresh `Target` objects may lead to slightly "
 "higher hashing overhead or inconsistent identity semantics.**"
 msgstr ""
+"TileLang 接受 `str` 或 `Target` 输入；内部会使用规范的字符串表示对其进行标准化和缓存。"
+"**在用户代码中，我们强烈建议传递编译目标字符串，而不是 `tvm.target.Target` 实例——"
+"字符串可以保持缓存键在多次运行中紧凑且确定，而每次构建新的 `Target` 对象可能会导致稍高的哈希开销或标识语义不一致。**"
 
 #: ../../../get_started/targets.md:101
 msgid "Discovering supported targets in code"
-msgstr ""
+msgstr "在代码中查看支持的编译目标"
 
 #: ../../../get_started/targets.md:103
 msgid ""
 "Looking for a quick reminder of the built-in base names and their "
 "descriptions? Use:"
 msgstr ""
+"想快速查看内置基础名称及其描述？请使用："
 
 #: ../../../get_started/targets.md:105
 msgid ""
@@ -397,16 +434,21 @@ msgid ""
 "for name, doc in describe_supported_targets().items():\n"
 "    print(f\"{name:>6}: {doc}\")\n"
 msgstr ""
+"from tilelang.utils.target import describe_supported_targets\n"
+"\n"
+"for name, doc in describe_supported_targets().items():\n"
+"    print(f\"{name:>6}: {doc}\")\n"
 
 #: ../../../get_started/targets.md:112
 msgid ""
 "This helper mirrors the table above and is safe to call at runtime (for "
 "example when validating CLI arguments)."
 msgstr ""
+"此辅助函数对应上方的表格，可以在运行时安全调用（例如在验证命令行界面参数时）。"
 
 #: ../../../get_started/targets.md:114
 msgid "Troubleshooting tips"
-msgstr ""
+msgstr "故障排除提示"
 
 #: ../../../get_started/targets.md:116
 msgid ""
@@ -414,13 +456,17 @@ msgid ""
 "spellings and that the option is valid for TVM. Any invalid switch will "
 "surface as a target-construction error."
 msgstr ""
+"如果您看到 `Target cuda -arch=sm_80 is not supported`，请仔细检查拼写并确认该选项对 TVM 有效。"
+"任何无效的开关都会表现为编译目标构建错误。"
 
 #: ../../../get_started/targets.md:118
 msgid ""
-"Runtime errors such as “no kernel image is available” usually mean the `-"
+"Runtime errors such as "no kernel image is available" usually mean the `-"
 "arch` flag does not match the GPU you are running on. Try dropping the flag "
 "or switching to the correct compute capability."
 msgstr ""
+"运行时错误（如 "no kernel image is available"）通常意味着 `-arch` 标志与您正在运行的 GPU 不匹配。"
+"请尝试去掉该标志或切换到正确的计算能力。"
 
 #: ../../../get_started/targets.md:120
 msgid ""
@@ -428,3 +474,4 @@ msgid ""
 "override with an explicit string only when you need architecture-specific "
 "tuning."
 msgstr ""
+"当面向多种环境编译时，使用 `auto` 更为便捷；仅在需要进行架构特定调优时才用显式字符串进行覆盖。"
