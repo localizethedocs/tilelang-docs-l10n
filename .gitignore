@@ -2,3 +2,7 @@
 .crowdin
 .single
 *.mo
+.conda/
+cmake/
+l10n/
+out/

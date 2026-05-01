@@ -461,11 +461,11 @@ msgstr ""
 
 #: ../../../get_started/targets.md:118
 msgid ""
-"Runtime errors such as "no kernel image is available" usually mean the `-"
+"Runtime errors such as \"no kernel image is available\" usually mean the `-"
 "arch` flag does not match the GPU you are running on. Try dropping the flag "
 "or switching to the correct compute capability."
 msgstr ""
-"运行时错误（如 "no kernel image is available"）通常意味着 `-arch` 标志与您正在运行的 GPU 不匹配。"
+"运行时错误（如 \"no kernel image is available\"）通常意味着 `-arch` 标志与您正在运行的 GPU 不匹配。"
 "请尝试去掉该标志或切换到正确的计算能力。"
 
 #: ../../../get_started/targets.md:120

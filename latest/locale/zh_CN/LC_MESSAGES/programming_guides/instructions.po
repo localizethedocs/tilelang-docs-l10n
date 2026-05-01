@@ -23,10 +23,10 @@ msgstr "指令"
 
 #: ../../../programming_guides/instructions.md:3
 msgid ""
-"This page summarizes the core TileLang "instructions" available at the DSL "
+"This page summarizes the core TileLang \"instructions\" available at the DSL "
 "level, how they map to hardware concepts, and how to use them correctly."
 msgstr ""
-"本页面总结了 TileLang DSL 层面可用的核心"指令"，涵盖它们如何映射到硬件"
+"本页面总结了 TileLang DSL 层面可用的核心\"指令\"，涵盖它们如何映射到硬件"
 "概念，以及如何正确使用它们。"
 
 #: ../../../programming_guides/instructions.md:6
