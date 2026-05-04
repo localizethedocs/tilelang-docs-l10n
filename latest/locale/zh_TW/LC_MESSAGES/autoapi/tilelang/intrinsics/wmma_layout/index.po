@@ -536,4 +536,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"

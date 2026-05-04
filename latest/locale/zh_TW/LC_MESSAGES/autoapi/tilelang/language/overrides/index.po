@@ -33,4 +33,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/overrides/index.rst:16
 msgid "Submodules"
-msgstr ""
+msgstr "子模組"
