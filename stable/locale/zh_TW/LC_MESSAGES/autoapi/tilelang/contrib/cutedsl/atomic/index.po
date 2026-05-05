@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:15
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:30:<autosummary>:1
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/atomic/index.rst:46
 msgid ""

@@ -59,7 +59,7 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_tcgen05/index.rst:38
 msgid "Infer swizzled layouts for operands and accumulator."

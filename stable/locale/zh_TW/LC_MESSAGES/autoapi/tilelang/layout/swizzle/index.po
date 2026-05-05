@@ -140,7 +140,7 @@ msgstr "參數"
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:61
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:72
 msgid "BufferLikeType"
-msgstr ""
+msgstr "BufferLikeType"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:46
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:55
@@ -150,15 +150,15 @@ msgstr "範例"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:47
 msgid "make_full_bank_swizzled_layout(buffer)"
-msgstr ""
+msgstr "make_full_bank_swizzled_layout(buffer)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:56
 msgid "make_half_bank_swizzled_layout(buffer)"
-msgstr ""
+msgstr "make_half_bank_swizzled_layout(buffer)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:65
 msgid "make_quarter_bank_swizzled_layout(buffer)"
-msgstr ""
+msgstr "make_quarter_bank_swizzled_layout(buffer)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:0
 msgid "Returns"

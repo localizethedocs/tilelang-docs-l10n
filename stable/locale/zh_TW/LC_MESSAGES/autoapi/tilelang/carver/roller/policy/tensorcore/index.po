@@ -54,6 +54,3 @@ msgstr ""
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:0
 msgid "Parameters"
 msgstr "參數"
-
-#~ msgid "Return type"
-#~ msgstr "回傳值型別"
