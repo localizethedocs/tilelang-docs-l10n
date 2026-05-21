@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:2
+msgid "tilelang.language.cluster"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_arrive_relaxed <tilelang.language.cluster."
+"cluster_arrive_relaxed>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:30
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Issue barrier.cluster.arrive.relaxed.aligned."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_arrive <tilelang.language.cluster.cluster_arrive>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:35
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Issue barrier.cluster.arrive.aligned."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_wait <tilelang.language.cluster.cluster_wait>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:40
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Issue barrier.cluster.wait.aligned."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_sync <tilelang.language.cluster.cluster_sync>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:45
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Issue cluster barrier arrive + wait (full synchronization)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`block_rank_in_cluster <tilelang.language.cluster."
+"block_rank_in_cluster>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:50
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+"Return the 1-D rank of the calling CTA within its cluster (%"
+"%cluster_ctarank)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_try_cancel <tilelang.language.cluster.clc_try_cancel>`\\ "
+"\\(result\\, mbarrier\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:55
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Issue a single-CTA cluster launch control query."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_try_cancel_multicast <tilelang.language.cluster."
+"clc_try_cancel_multicast>`\\ \\(result\\, mbarrier\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:60
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Issue a cluster-wide multicast cluster launch control query."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_is_canceled <tilelang.language.cluster.clc_is_canceled>`\\ "
+"\\(result\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:65
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Return 1 when the CLC query successfully canceled a future launch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_get_first_ctaid_x <tilelang.language.cluster."
+"clc_get_first_ctaid_x>`\\ \\(result\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:70
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Return the x coordinate of the first CTA in a successful CLC response."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_get_first_ctaid_y <tilelang.language.cluster."
+"clc_get_first_ctaid_y>`\\ \\(result\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:75
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Return the y coordinate of the first CTA in a successful CLC response."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_get_first_ctaid_z <tilelang.language.cluster."
+"clc_get_first_ctaid_z>`\\ \\(result\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:80
+#: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
+msgid "Return the z coordinate of the first CTA in a successful CLC response."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/cluster/index.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:2
+msgid "tilelang.language.gemm_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:8
+msgid ""
+"GEMM (General Matrix Multiplication) operators exposed on the TileLang "
+"language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`gemm <tilelang.language.gemm_op.gemm>`\\ \\(A\\, B\\, C\\[\\, "
+"transpose\\_A\\, transpose\\_B\\, policy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:27
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid "TileLang GEMM operator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`wgmma_gemm <tilelang.language.gemm_op.wgmma_gemm>`\\ \\(A\\, B\\, "
+"C\\[\\, transpose\\_A\\, transpose\\_B\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:64
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid "Explicit Hopper WGMMA GEMM without an implicit wait."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_gemm <tilelang.language.gemm_op.tcgen05_gemm>`\\ \\(A\\, "
+"B\\, C\\[\\, transpose\\_A\\, transpose\\_B\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:77
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:21:<autosummary>:1
+msgid "Explicit Blackwell TCGEN05 GEMM without an implicit wait."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:29
+msgid ""
+"This is the default synchronous GEMM interface. On Hopper, if the compiler "
+"selects WGMMA lowering, TileLang inserts the corresponding wait implicitly. "
+"On Blackwell TCGEN5MMA, TileLang inserts the corresponding "
+"`mbarrier_wait_parity(...)` implicitly after issue."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:34
+msgid ""
+"For manual asynchronous scheduling, use `T.wgmma_gemm(...)` with `T."
+"wait_wgmma(...)` on Hopper, or `T.tcgen05_gemm(...)` with `T."
+"mbarrier_wait_parity(...)` on Blackwell."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:38
+msgid "Input buffer A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:40
+msgid "Input buffer B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:42
+msgid "Output buffer C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:44
+msgid "Whether to transpose A. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:46
+msgid "Whether to transpose B. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:48
+msgid "GEMM warp partition policy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:50
+msgid "Whether to clear the accumulator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:52
+msgid "Numbers of packed matrix cores, for ROCm only. Defaults to 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:54
+msgid ""
+"Mbarrier in Blackwell. Required when this GEMM lowers to TCGEN5MMA. Defaults "
+"to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:58
+msgid "A handle to the GEMM operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:66
+msgid ""
+"This is the explicit asynchronous Hopper WGMMA counterpart to the default "
+"synchronous `T.gemm(...)` interface, with two stricter guarantees: - it "
+"always requests the WGMMA lowering path - it never auto-emits an inlined "
+"`warpgroup_wait`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:71
+msgid ""
+"If the current target or operand pattern cannot use Hopper WGMMA, "
+"compilation fails instead of silently falling back to MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:79
+msgid ""
+"This is the explicit asynchronous Blackwell TCGEN5MMA counterpart to the "
+"default synchronous `T.gemm(...)` interface, with two stricter guarantees: - "
+"it always requests the TCGEN5MMA lowering path - it never auto-emits an "
+"inlined `mbarrier_wait_parity`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:84
+msgid ""
+"When ``use_2cta=True``, the instruction is lowered to the 2CTA variant which "
+"requires ``cluster_dims`` to be ``(2,1,1)`` or ``(1,2,1)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/gemm_op/index.rst:87
+msgid ""
+"If the current target or operand pattern cannot use Blackwell TCGEN5MMA, "
+"compilation fails instead of silently falling back to another GEMM path."
+msgstr ""
