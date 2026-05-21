@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../runtime_internals/stubs.md:1
+msgid "CUDA and ROCm Stub Libraries"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:3
+msgid ""
+"This document describes TileLang's stub mechanism for GPU driver/runtime "
+"libraries (CUDA and ROCm/HIP)."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:6
+msgid "Purpose"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:8
+msgid "CUDA:"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:10
+msgid ""
+"**CUDA Driver (`cuda_stub`)**: Allows TileLang to be imported on systems "
+"without a GPU (e.g., CI/compilation nodes) by lazy-loading `libcuda.so` only "
+"when needed."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:13
+msgid ""
+"**CUDA Runtime & Compiler (`cudart_stub`, `nvrtc_stub`)**: Resolves SONAME "
+"versioning mismatches (e.g. `libcudart.so.11` vs `libcudart.so.12`), "
+"enabling a single build to work across different CUDA versions. This is "
+"achieved by reusing CUDA libraries already loaded by frameworks like PyTorch "
+"when possible."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:19
+msgid "ROCm:"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:21
+msgid ""
+"**HIP Runtime/Module API (`hip_stub`)**: Allows TileLang to be imported on "
+"systems without ROCm installed by lazy-loading `libamdhip64.so` only when "
+"needed. The stub also prefers already-loaded symbols via `RTLD_DEFAULT` / "
+"`RTLD_NEXT` to interoperate with frameworks that have already loaded HIP."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:25
+msgid ""
+"**HIP Runtime Compiler (`hiprtc_stub`)**: Lazily loads `libhiprtc.so` and "
+"exposes the minimal HIPRTC API subset used by TileLang/TVM."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:28
+msgid "Implementation"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:30
+msgid "The stubs in `src/target/stubs/` implement a lazy-loading mechanism:"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:32
+msgid ""
+"**Lazy Loading**: Libraries are loaded via `dlopen` only upon the first API "
+"call."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:33
+msgid ""
+"**Global Symbol Reuse**: For `cudart` and `nvrtc`, the stubs first check the "
+"global namespace (`RTLD_DEFAULT`) to use any already loaded symbols (e.g., "
+"from PyTorch)."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:34
+msgid ""
+"**ROCm Notes**: `hip_stub` checks `RTLD_DEFAULT` / `RTLD_NEXT` first and "
+"then falls back to `dlopen(\"libamdhip64.so\")`. It additionally provides "
+"wrappers for `hsa_init` / `hsa_shut_down` so that ROCm-enabled wheels do not "
+"record a hard dependency on `libhsa-runtime64` at import time."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:38
+msgid ""
+"**Versioning Support**: Handles ABI differences between CUDA versions (e.g., "
+"`cudaGraphInstantiate` changes in CUDA 12)."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:40
+msgid "Build Option"
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:42
+msgid ""
+"`TILELANG_USE_CUDA_STUBS` (Default: `ON`) controls CUDA stubs. When enabled, "
+"TileLang links against these stubs instead of the system CUDA toolkit "
+"libraries."
+msgstr ""
+
+#: ../../../runtime_internals/stubs.md:45
+msgid ""
+"`TILELANG_USE_HIP_STUBS` (Default: `ON`) controls ROCm stubs. When enabled "
+"(and `USE_ROCM=ON`), TileLang/TVM link against `hip_stub` / `hiprtc_stub` "
+"instead of the system ROCm libraries."
+msgstr ""
