@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:1
 msgid "Installation Guide"
-msgstr ""
+msgstr "安裝指南"
 
 #: ../../../get_started/Installation.md:3
 msgid "Installing with pip"
-msgstr ""
+msgstr "使用 pip 安裝"
 
 #: ../../../get_started/Installation.md:5
 msgid "**Prerequisites for installation via wheel or PyPI:**"
@@ -81,11 +81,11 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:31
 msgid "python -c \"import tilelang; print(tilelang.__version__)\"\n"
-msgstr ""
+msgstr "python -c \"import tilelang; print(tilelang.__version__)\"\n"
 
 #: ../../../get_started/Installation.md:35
 msgid "Building from Source"
-msgstr ""
+msgstr "從來源碼建置"
 
 #: ../../../get_started/Installation.md:37
 msgid "**Prerequisites for building from source:**"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:39
 msgid "**Operating System**: Linux"
-msgstr ""
+msgstr "**作業系統**：Linux"
 
 #: ../../../get_started/Installation.md:43
 msgid ""
@@ -285,7 +285,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:140
 msgid "Install Using Docker"
-msgstr ""
+msgstr "使用 Docker 安裝"
 
 #: ../../../get_started/Installation.md:142
 msgid ""
@@ -334,6 +334,8 @@ msgid ""
 "cd docker\n"
 "docker build -f Dockerfile.cu120 -t tilelang-cu120 .\n"
 msgstr ""
+"cd docker\n"
+"docker build -f Dockerfile.cu120 -t tilelang-cu120 .\n"
 
 #: ../../../get_started/Installation.md:164
 msgid "Available Dockerfiles:"
@@ -526,7 +528,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:286
 msgid "Install with Nightly Version"
-msgstr ""
+msgstr "使用 Nightly 版本安裝"
 
 #: ../../../get_started/Installation.md:288
 msgid ""
@@ -554,7 +556,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:299
 msgid "Build-time environment variables"
-msgstr ""
+msgstr "建置時環境變數"
 
 #: ../../../get_started/Installation.md:300
 msgid ""
@@ -602,6 +604,10 @@ msgid ""
 "Successfully built tilelang-0.1.6.post1+cu116.git0d4a74be-cp38-abi3-"
 "linux_x86_64.whl\n"
 msgstr ""
+"$ python -mbuild -w\n"
+"...\n"
+"Successfully built tilelang-0.1.6.post1+cu116.git0d4a74be-cp38-abi3-"
+"linux_x86_64.whl\n"
 
 #: ../../../get_started/Installation.md:319
 msgid ""
@@ -613,7 +619,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:323
 msgid "Run-time environment variables"
-msgstr ""
+msgstr "執行時環境變數"
 
 #: ../../../get_started/Installation.md:325
 msgid ""
@@ -623,11 +629,11 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:327
 msgid "Other Tips"
-msgstr ""
+msgstr "其他提示"
 
 #: ../../../get_started/Installation.md:329
 msgid "IDE Configs"
-msgstr ""
+msgstr "IDE 組態"
 
 #: ../../../get_started/Installation.md:331
 msgid ""
@@ -639,7 +645,7 @@ msgstr ""
 
 #: ../../../get_started/Installation.md:334
 msgid "Compile Cache"
-msgstr ""
+msgstr "編譯快取"
 
 #: ../../../get_started/Installation.md:336
 msgid ""

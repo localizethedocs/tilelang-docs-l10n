@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:31
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
 msgid ":py:obj:`CompileArgs <tilelang.autotuner.param.CompileArgs>`\\"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:167
 msgid "Number of warmup iterations."
@@ -190,24 +190,24 @@ msgstr ""
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:207
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:227
 msgid "Callable = None"
-msgstr ""
+msgstr "Callable = None"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:211
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:215
 msgid "float = 1e-2"
-msgstr ""
+msgstr "float = 1e-2"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:219
 msgid "float = 0.01"
-msgstr ""
+msgstr "float = 0.01"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:223
 msgid "bool = False"
-msgstr ""
+msgstr "bool = False"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:231
 msgid "bool = True"
-msgstr ""
+msgstr "bool = True"
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:319
 msgid "Best achieved execution latency."
@@ -246,4 +246,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"

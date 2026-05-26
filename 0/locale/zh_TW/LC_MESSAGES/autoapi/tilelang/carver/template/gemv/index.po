@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:14:<autosummary>:1
 msgid ":py:obj:`GEMVTemplate <tilelang.carver.template.gemv.GEMVTemplate>`\\"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:20
 msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.carver.template.base.BaseTemplate`"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:25
 msgid ""
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:75
 msgid "The target hardware architecture."
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/gemv/index.rst:87
 msgid "Defines and initializes the GEMV computation function."

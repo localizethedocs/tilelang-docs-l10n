@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/matmul/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/template/matmul/index.rst:14:<autosummary>:1
 msgid ""
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/matmul/index.rst:141
 msgid "The target hardware architecture."
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/matmul/index.rst:153
 msgid "Defines and initializes the matrix multiplication computation."

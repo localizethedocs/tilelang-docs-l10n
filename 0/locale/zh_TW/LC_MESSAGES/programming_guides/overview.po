@@ -70,11 +70,11 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:17
 msgid "Language Basics"
-msgstr ""
+msgstr "語言基礎"
 
 #: ../../../programming_guides/overview.md:18
 msgid "Control Flow"
-msgstr ""
+msgstr "控制流程"
 
 #: ../../../programming_guides/overview.md:19
 msgid "Instructions"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:21
 msgid "Type System"
-msgstr ""
+msgstr "型別系統"
 
 #: ../../../programming_guides/overview.md:23
 msgid "Related Docs"

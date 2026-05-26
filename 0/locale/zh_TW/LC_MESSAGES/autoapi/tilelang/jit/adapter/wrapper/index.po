@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:27
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid ":py:obj:`BaseWrapper <tilelang.jit.adapter.wrapper.BaseWrapper>`\\"
@@ -413,7 +413,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:382
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:385
 msgid ""
@@ -422,11 +422,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:528
 msgid "Bases: :py:obj:`TLCUDASourceWrapper`"

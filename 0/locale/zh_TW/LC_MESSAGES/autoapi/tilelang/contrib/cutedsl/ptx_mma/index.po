@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:53
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:60:<autosummary>:1
 msgid ""
@@ -173,7 +173,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ptx_mma/index.rst:102
 msgid ""

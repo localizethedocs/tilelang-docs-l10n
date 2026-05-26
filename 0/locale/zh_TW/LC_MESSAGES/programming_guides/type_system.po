@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../programming_guides/type_system.md:1
 msgid "Type System"
-msgstr ""
+msgstr "型別系統"
 
 #: ../../../programming_guides/type_system.md:3
 msgid ""
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../programming_guides/type_system.md:28
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 #: ../../../programming_guides/type_system.md:29
 msgid "Integers: `int8x2`, `int8x4`, ..., `int32x2`, `int32x4`, ..."

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:2
 msgid "tilelang.language.kernel"
-msgstr ""
+msgstr "tilelang.language.kernel"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:8
 msgid "Kernel launching language interface in TileLang."
@@ -27,11 +27,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid ":py:obj:`FrameStack <tilelang.language.kernel.FrameStack>`\\"
-msgstr ""
+msgstr ":py:obj:`FrameStack <tilelang.language.kernel.FrameStack>`\\"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid "A simple stack-like wrapper around a deque that provides"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:22
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
@@ -90,6 +90,8 @@ msgid ""
 ":py:obj:`get_thread_bindings <tilelang.language.kernel."
 "get_thread_bindings>`\\ \\(\\)"
 msgstr ""
+":py:obj:`get_thread_bindings <tilelang.language.kernel."
+"get_thread_bindings>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:286
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -199,7 +201,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:88
 msgid "Bases: :py:obj:`tvm.script.ir_builder.tir.frame.TIRFrame`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tvm.script.ir_builder.tir.frame.TIRFrame`"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:91
 msgid ""
@@ -216,7 +218,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:105
 msgid ""
@@ -238,7 +240,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:128
 msgid "Returns the block extents for all three dimensions."
@@ -317,7 +319,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:222
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:223
 msgid "Create a 1-D CUDA kernel launch and unpack the single block index:"

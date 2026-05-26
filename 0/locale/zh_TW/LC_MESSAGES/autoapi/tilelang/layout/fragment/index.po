@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:19:<autosummary>:1
 msgid ":py:obj:`Fragment <tilelang.layout.fragment.Fragment>`\\"
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:52
 msgid "Number of times to repeat."
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/layout/fragment/index.rst:66
 msgid "Replicate the Fragment across a new thread dimension."

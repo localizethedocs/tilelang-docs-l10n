@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:14:<autosummary>:1
 msgid ":py:obj:`BaseTemplate <tilelang.carver.template.base.BaseTemplate>`\\"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:20
 msgid "Bases: :py:obj:`abc.ABC`"
-msgstr ""
+msgstr "基底類別：:py:obj:`abc.ABC`"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:23
 msgid ""
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:36
 msgid "The target architecture. Defaults to None."
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:48
 msgid "Sets the architecture for this template and returns itself."

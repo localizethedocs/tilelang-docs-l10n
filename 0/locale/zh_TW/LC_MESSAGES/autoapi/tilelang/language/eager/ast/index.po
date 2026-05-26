@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:17
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
 msgid ":py:obj:`QuoteVisitor <tilelang.language.eager.ast.QuoteVisitor>`\\"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:29
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
 msgid ""
@@ -150,17 +150,17 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:58
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:211
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:325
 msgid "Bases: :py:obj:`ast.NodeTransformer`"
-msgstr ""
+msgstr "基底類別：:py:obj:`ast.NodeTransformer`"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:61
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:214
@@ -231,7 +231,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:245
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:359
 msgid "node = YourTransformer().visit(node)"
-msgstr ""
+msgstr "node = YourTransformer().visit(node)"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:110
 msgid "Called if no explicit visitor function exists for a node."
@@ -314,7 +314,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:433
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/eager/ast/index.rst:441
 msgid ""

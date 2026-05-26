@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`BlockAnalyzer <tilelang.carver.roller.node.BlockAnalyzer>`\\"
@@ -45,18 +45,19 @@ msgstr ""
 msgid ""
 ":py:obj:`PlaceHolderNode <tilelang.carver.roller.node.PlaceHolderNode>`\\"
 msgstr ""
+":py:obj:`PlaceHolderNode <tilelang.carver.roller.node.PlaceHolderNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`PrimFuncNode <tilelang.carver.roller.node.PrimFuncNode>`\\"
-msgstr ""
+msgstr ":py:obj:`PrimFuncNode <tilelang.carver.roller.node.PrimFuncNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:24:<autosummary>:1
 msgid ":py:obj:`OutputNode <tilelang.carver.roller.node.OutputNode>`\\"
-msgstr ""
+msgstr ":py:obj:`OutputNode <tilelang.carver.roller.node.OutputNode>`\\"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:26
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:35:<autosummary>:1
 msgid ""
@@ -88,11 +89,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:164
 #: ../../../autoapi/tilelang/carver/roller/node/index.rst:175

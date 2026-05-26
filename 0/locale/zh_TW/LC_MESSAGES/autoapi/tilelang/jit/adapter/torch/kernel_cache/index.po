@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""

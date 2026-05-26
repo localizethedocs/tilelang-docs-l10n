@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:14:<autosummary>:1
 msgid ":py:obj:`GemmInst <tilelang.tileop.gemm.inst.GemmInst>`\\"
@@ -40,11 +40,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:20
 msgid "Bases: :py:obj:`enum.IntEnum`"
-msgstr ""
+msgstr "基底類別：:py:obj:`enum.IntEnum`"
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/tileop/gemm/inst/index.rst:76
 msgid "Return repr(self)."

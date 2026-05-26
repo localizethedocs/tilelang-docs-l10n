@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../tutorials/auto_tuning.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../tutorials/auto_tuning.md:9
 msgid "Auto-tuning a Tile Language program involves three main steps:"

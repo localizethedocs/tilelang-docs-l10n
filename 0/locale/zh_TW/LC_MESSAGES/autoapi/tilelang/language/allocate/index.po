@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:35
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:63
 #: ../../../autoapi/tilelang/language/allocate/index.rst:78
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:82
 msgid "The memory scope. Defaults to \"local\""
@@ -301,7 +301,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/allocate/index.rst:125
 #: ../../../autoapi/tilelang/language/allocate/index.rst:147
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:126
 msgid ""

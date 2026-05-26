@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:8
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:15:<autosummary>:1
 msgid ":py:obj:`CaptureStack <tilelang.autotuner.capture.CaptureStack>`\\"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:17
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:24:<autosummary>:1
 msgid ""
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:43
 msgid "The item to be pushed onto the stack."
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:78
 msgid "Return the number of items in the stack (len operator support)."

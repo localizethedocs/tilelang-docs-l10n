@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:13
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:19:<autosummary>:1
 msgid ":py:obj:`KernelCache <tilelang.cache.kernel_cache.KernelCache>`\\"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:76
 msgid "Function to be compiled or a prepared PrimFunc"
@@ -109,11 +109,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:88
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:89
 msgid "TILELANG_TARGET"

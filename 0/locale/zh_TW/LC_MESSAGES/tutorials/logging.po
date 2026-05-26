@@ -70,6 +70,9 @@ msgid ""
 "DLOG(INFO) << \"aaa\";\n"
 "VLOG(1) << \"aaa\";\n"
 msgstr ""
+"LOG(INFO) << \"aaa\";\n"
+"DLOG(INFO) << \"aaa\";\n"
+"VLOG(1) << \"aaa\";\n"
 
 #: ../../../tutorials/logging.md:26
 msgid ""
@@ -206,7 +209,7 @@ msgstr ""
 
 #: ../../../tutorials/logging.md:80
 msgid "TVM_LOG_DEBUG=1 python3 code.py\n"
-msgstr ""
+msgstr "TVM_LOG_DEBUG=1 python3 code.py\n"
 
 #: ../../../tutorials/logging.md:84
 msgid "which enables all DEBUG/INFO (level <= 1) logs for all files."
@@ -246,7 +249,7 @@ msgstr ""
 
 #: ../../../tutorials/logging.md:96
 msgid "Enabling Debug Mode"
-msgstr ""
+msgstr "啟用除錯模式"
 
 #: ../../../tutorials/logging.md:98
 msgid ""
@@ -255,7 +258,7 @@ msgstr ""
 
 #: ../../../tutorials/logging.md:100
 msgid "cmake .. -DCMAKE_BUILD_TYPE=Debug -DUSE_CUDA=ON\n"
-msgstr ""
+msgstr "cmake .. -DCMAKE_BUILD_TYPE=Debug -DUSE_CUDA=ON\n"
 
 #: ../../../tutorials/logging.md:104
 msgid ""
@@ -265,7 +268,7 @@ msgstr ""
 
 #: ../../../tutorials/logging.md:106
 msgid "target_compile_definitions(tilelang_objs PRIVATE \"TVM_LOG_DEBUG\")\n"
-msgstr ""
+msgstr "target_compile_definitions(tilelang_objs PRIVATE \"TVM_LOG_DEBUG\")\n"
 
 #: ../../../tutorials/logging.md:110
 msgid ""

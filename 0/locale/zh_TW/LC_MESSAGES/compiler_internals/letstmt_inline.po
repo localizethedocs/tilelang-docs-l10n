@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../compiler_internals/letstmt_inline.md:5
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../compiler_internals/letstmt_inline.md:7
 msgid ""

@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:28
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:34:<autosummary>:1
 msgid ""
@@ -77,11 +77,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:188
 msgid "Return (lane_id, warp_n, warp_m)."

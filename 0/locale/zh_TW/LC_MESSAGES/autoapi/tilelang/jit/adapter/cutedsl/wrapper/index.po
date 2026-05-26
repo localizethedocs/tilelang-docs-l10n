@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:42
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:48:<autosummary>:1
 msgid ""
@@ -859,7 +859,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:832
 msgid "Override parent's host_func to return generated Python code."
@@ -879,7 +879,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:845
 msgid "Create dispatch function - always use C++ launcher."

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:16
 msgid "Classes"
-msgstr ""
+msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:22:<autosummary>:1
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:30
 msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
-msgstr ""
+msgstr "基底類別：:py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:33
 msgid ""
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:107
 msgid "Get the CUDA kernel source code."
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:0
 msgid "Return type"
-msgstr ""
+msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:116
 msgid "Explicitly cleanup this adapter's CUDA resources."

@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:27
 msgid "Functions"
-msgstr ""
+msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
 msgid ""
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:66
 msgid "Pointer to packed INT4 data (4 bytes for 8 elements)"

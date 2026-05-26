@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:7
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:9
 msgid ""
@@ -488,7 +488,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:225
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
 msgid "Parameter"
@@ -550,7 +550,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:236
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:238
 msgid ""
