@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:2
+msgid "tilelang.jit.execution_backend"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`allowed_backends_for_target <tilelang.jit.execution_backend."
+"allowed_backends_for_target>`\\ \\(target\\, \\*\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:21
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:15:<autosummary>:1
+msgid "Return allowed execution backends for a given TVM target kind."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`resolve_execution_backend <tilelang.jit.execution_backend."
+"resolve_execution_backend>`\\ \\(requested\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:29
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:15:<autosummary>:1
+msgid "Resolve an execution backend string to a concrete backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:23
+msgid ""
+"include_unavailable: if False, this will filter out backends that are known "
+"to be unavailable at runtime (e.g., NVRTC without cuda-python installed)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:31
+msgid "Supports the alias \"dlpack\" -> \"tvm_ffi\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:32
+msgid ""
+"Supports the sentinel \"auto\" which selects a sensible default per target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/execution_backend/index.rst:33
+msgid ""
+"Validates the combination (target, backend) and raises with helpful "
+"alternatives when invalid."
+msgstr ""

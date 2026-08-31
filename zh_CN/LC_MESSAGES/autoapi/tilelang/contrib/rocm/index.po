@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:2
+msgid "tilelang.contrib.rocm"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:8
+msgid "Utility for ROCm backend"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`find_lld <tilelang.contrib.rocm.find_lld>`\\ \\(\\[required\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:32
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Find ld.lld in system."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`rocm_link <tilelang.contrib.rocm.rocm_link>`\\ \\(in\\_file\\, "
+"out\\_file\\[\\, lld\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:49
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Link relocatable ELF object to shared ELF object using lld"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`callback_rocm_link <tilelang.contrib.rocm.callback_rocm_link>`\\ "
+"\\(obj\\_bin\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:62
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Links object file generated from LLVM to HSA Code Object"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`callback_rocm_bitcode_path <tilelang.contrib.rocm."
+"callback_rocm_bitcode_path>`\\ \\(\\[rocdl\\_dir\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:73
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Utility function to find ROCm device library bitcodes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`parse_compute_version <tilelang.contrib.rocm."
+"parse_compute_version>`\\ \\(compute\\_version\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:82
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Parse compute capability string to divide major and minor version"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`have_matrixcore <tilelang.contrib.rocm.have_matrixcore>`\\ "
+"\\(\\[compute\\_version\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:93
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Either MatrixCore support is provided in the compute capability or not"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`get_rocm_arch <tilelang.contrib.rocm.get_rocm_arch>`\\ "
+"\\(\\[rocm\\_path\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:104
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Utility function to get the AMD GPU architecture"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`find_rocm_path <tilelang.contrib.rocm.find_rocm_path>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:115
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:26:<autosummary>:1
+msgid "Utility function to find ROCm path"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:28
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:34
+msgid ""
+"Whether it is required, runtime error will be raised if the compiler is "
+"required."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:38
+msgid "**valid_list** -- List of possible paths."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:43
+msgid ""
+"This function will first search ld.lld that matches the major llvm version "
+"that built with tvm"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:51
+msgid "Input file name (relocatable ELF object file)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:53
+msgid "Output file name (shared ELF object file)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:55
+msgid ""
+"The lld linker, if not specified, we will try to guess the matched clang "
+"version."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:64
+msgid "The object file"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:67
+msgid "**cobj_bin** -- The HSA Code Object"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:75
+msgid ""
+"The path to rocm library directory The default value is the standard location"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:84
+msgid "compute capability of a GPU (e.g. \"6.0\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:87
+msgid ""
+"* **major** (*int*) -- major version number * **minor** (*int*) -- minor "
+"version number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:87
+msgid "**major** (*int*) -- major version number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:88
+msgid "**minor** (*int*) -- minor version number"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:95
+msgid "compute capability of a GPU (e.g. \"7.0\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:98
+msgid ""
+"**have_matrixcore** -- True if MatrixCore support is provided, False "
+"otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:106
+msgid "The path to rocm installation directory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:109
+msgid "**gpu_arch** -- The AMD GPU architecture"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/rocm/index.rst:117
+msgid "**path** -- Path to ROCm root."
+msgstr ""

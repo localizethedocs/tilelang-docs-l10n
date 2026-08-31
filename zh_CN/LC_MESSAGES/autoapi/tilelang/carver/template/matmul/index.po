@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:2
+msgid "tilelang.carver.template.matmul"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`MatmulTemplate <tilelang.carver.template.matmul.MatmulTemplate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:23
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:14:<autosummary>:1
+msgid "A template for matrix multiplication (MatMul)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:20
+msgid "Bases: :py:obj:`tilelang.carver.template.base.BaseTemplate`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:25
+msgid ""
+"This class defines the computation for a matrix-matrix multiplication with "
+"configurable parameters such as transposition, data types, and bias addition."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:30
+msgid "Number of rows in matrix A and matrix C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
+msgid "type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:32
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:38
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:44
+msgid "int"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:36
+msgid "Number of columns in matrix B and matrix C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:42
+msgid "Number of columns in matrix A and rows in matrix B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:48
+msgid "Whether to transpose matrix A before multiplication."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:50
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:56
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:80
+msgid "bool"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:54
+msgid "Whether to transpose matrix B before multiplication."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:60
+msgid "Data type of input matrices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:62
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:68
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:74
+msgid "str"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:66
+msgid "Data type of output matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:72
+msgid "Data type used for accumulation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:78
+msgid "Whether to add a bias term."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:139
+msgid "Retrieves optimized hardware-aware configurations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:141
+msgid "The target hardware architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:143
+msgid "Number of top configurations to consider."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:146
+msgid "A list of optimization hints for hardware acceleration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:153
+msgid "Defines and initializes the matrix multiplication computation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:155
+msgid ""
+"This method sets up placeholders for input matrices, computes the matrix "
+"multiplication using TVM's compute API, and optionally applies bias and type "
+"casting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:159
+msgid "If M, N, or K are not positive integers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:165
+msgid "Returns the template parameters as a dictionary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:167
+msgid "Dictionary containing template parameter values."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:174
+msgid "Returns the class attributes in dictionary form."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:176
+msgid "Dictionary of class attributes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:182
+msgid "Returns a string representation of the class instance."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/matmul/index.rst:184
+msgid "A formatted string representation of the class."
+msgstr ""

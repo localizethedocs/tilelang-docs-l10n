@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-27 10:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:2
+msgid "tilelang.intrinsics.wmma_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:8
+msgid "WMMA intrinsic emitter for AMD RDNA architectures (gfx11 / gfx12)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:10
+msgid "Only supports the f16->f32, 16x16x16 variant with warp-size=32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:12
+msgid "Thread-data mapping (per AMDGPU ISA):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:13
+msgid "gfx11:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:14
+msgid ""
+"A/B: duplicated across the two half-waves, so each logical input fragment is "
+"distributed over an effective wave size of 16 lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:16
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:19
+msgid "C/D: distributed over the full wave32 output layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:17
+msgid "gfx12:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:18
+msgid "A/B: distributed over the full wave32 input layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:24
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:30:<autosummary>:1
+msgid ":py:obj:`lift <tilelang.intrinsics.wmma_macro_generator.lift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:32
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`WMMAIntrinEmitter <tilelang.intrinsics.wmma_macro_generator."
+"WMMAIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:46
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:38:<autosummary>:1
+msgid "Intrinsic emitter for AMD RDNA WMMA (16x16x16, warp-size=32)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:40
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:48
+msgid "Supports:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:49
+msgid ""
+"fp16 -> fp32  (f32_16x16x16_f16_w32, with `_gfx12` codegen suffix on gfx12)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:209
+msgid "Return (lane_id, warp_n, warp_m)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:215
+msgid "Return (forward, reverse) index maps for shared→local loading."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:217
+msgid ""
+"The actual layout functions are chosen during __init__ based on rdna_gen:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:218
+msgid "gfx11 uses half-wave duplicated A/B input layouts (32x16 naming)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:219
+msgid "gfx12 uses full wave32 A/B input layouts (32x8 naming)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:225
+msgid "Return the store index map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:227
+msgid ""
+"The forward map is (thread_id, local_id) -> (i, j), which is affine. The "
+"inverse map is (i, j) -> (thread_id, local_id)."
+msgstr ""
