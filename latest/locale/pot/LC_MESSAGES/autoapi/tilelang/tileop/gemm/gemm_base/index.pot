@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 10:09+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,58 +46,56 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:0
-msgid "Parameters"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:43
-msgid "Return True if both A and B are in shared memory (SS variant)."
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:49
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:51
+msgid "Return True if both A and B are in shared memory (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:57
 msgid ""
 "Return True if A is in shared memory and B is in registers (SR variant)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:55
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:63
 msgid ""
 "Return True if A is in registers and B is in shared memory (RS variant)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:61
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:69
 msgid ""
 "Return True if A is in tensor memory and B is in shared memory (TS variant)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:67
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:75
 msgid "Return True if both A and B are in registers (RR variant)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:100
-msgid "Input data type for the multiplication."
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:106
+msgid "A operand dtype."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:102
-msgid ""
-"For the TS variant, A resides in TMEM with the accumulator dtype, so the "
-"actual input dtype is derived from B."
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:111
+msgid "B operand dtype."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:221
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:224
 msgid ""
 "Get the base offset (start index) for each dimension from a BufferRegion."
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:223
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:226
 msgid ""
 "For example, if region is A_shared[ko % 2, 0:128, 0:64], this returns [ko % "
 "2, 0, 0]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:226
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:229
 msgid "BufferRegion object"
 msgstr ""
 
@@ -105,18 +103,18 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:228
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:231
 msgid "List of PrimExpr representing the base offset for each dimension"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:234
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:237
 msgid "Get base offsets for each dimension of A region"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:239
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:242
 msgid "Get base offsets for each dimension of B region"
 msgstr ""
 
-#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:244
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_base/index.rst:247
 msgid "Get base offsets for each dimension of C region"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,14 +31,14 @@ msgid ""
 msgstr ""
 
 #: ../../../get_started/targets.md:8
-msgid "Common target strings"
+msgid "Common targets"
 msgstr ""
 
 #: ../../../get_started/targets.md:10
 msgid ""
-"TileLang ships with a small set of common targets; each accepts the full "
-"range of TVM options so you can fine-tune the generated code. The most "
-"frequent choices are listed below:"
+"TileLang ships with a small set of common target kinds. Use a bare string "
+"for the kind, or a TVM target config dictionary when you need options such "
+"as GPU architecture or CPU model. The most frequent choices are listed below:"
 msgstr ""
 
 #: ../../../get_started/targets.md:0
@@ -65,8 +65,8 @@ msgstr ""
 
 #: ../../../get_started/targets.md:0
 msgid ""
-"NVIDIA GPUs. Supports options such as `-arch=sm_80`, `-"
-"max_num_threads=1024`, etc."
+"NVIDIA GPUs. Use a config dict for options such as `{\"kind\": \"cuda\", "
+"\"arch\": \"sm_80\"}`."
 msgstr ""
 
 #: ../../../get_started/targets.md:0
@@ -74,9 +74,7 @@ msgid "`cutedsl`"
 msgstr ""
 
 #: ../../../get_started/targets.md:0
-msgid ""
-"NVIDIA CUTLASS/CuTe DSL backend. Requires `nvidia-cutlass-dsl`. `cuda` "
-"options can also be applied to this target."
+msgid "NVIDIA CUTLASS/CuTe DSL backend. Requires `nvidia-cutlass-dsl`."
 msgstr ""
 
 #: ../../../get_started/targets.md:0
@@ -84,7 +82,9 @@ msgid "`hip`"
 msgstr ""
 
 #: ../../../get_started/targets.md:0
-msgid "AMD GPUs via ROCm. Options like `-mcpu=gfx90a` can be appended."
+msgid ""
+"AMD GPUs via ROCm. Use a config dict for options such as `{\"kind\": "
+"\"hip\", \"mcpu\": \"gfx90a\"}`."
 msgstr ""
 
 #: ../../../get_started/targets.md:0
@@ -100,7 +100,9 @@ msgid "`llvm`"
 msgstr ""
 
 #: ../../../get_started/targets.md:0
-msgid "CPU execution; accepts the standard TVM LLVM switches."
+msgid ""
+"CPU execution. Use a config dict for options such as `{\"kind\": \"llvm\", "
+"\"mtriple\": \"x86_64-linux-gnu\"}`."
 msgstr ""
 
 #: ../../../get_started/targets.md:0
@@ -120,14 +122,12 @@ msgid "Emit plain C source for inspection or custom toolchains."
 msgstr ""
 
 #: ../../../get_started/targets.md:24
-msgid ""
-"To add options, append them after the base name, separated by spaces. For "
-"example:"
+msgid "To add options, pass a target config dictionary. For example:"
 msgstr ""
 
 #: ../../../get_started/targets.md:26
 msgid ""
-"target = \"cuda -arch=sm_90\"\n"
+"target = {\"kind\": \"cuda\", \"arch\": \"sm_90\"}\n"
 "kernel = tilelang.compile(func, target=target, "
 "execution_backend=\"cython\")\n"
 "# or\n"
@@ -137,31 +137,155 @@ msgid ""
 msgstr ""
 
 #: ../../../get_started/targets.md:35
-msgid ""
-"The same convention works for HIP or LLVM (e.g. `hip -mcpu=gfx940`, `llvm -"
-"mtriple=x86_64-linux-gnu`)."
+msgid "Target input forms"
 msgstr ""
 
 #: ../../../get_started/targets.md:37
+msgid ""
+"Most TileLang APIs that accept a target, such as `tilelang.compile`, "
+"`tilelang.jit`, and the autotuner, accept the same input forms:"
+msgstr ""
+
+#: ../../../get_started/targets.md:40
+msgid ""
+"target = \"auto\"                                      # detect CUDA, HIP, "
+"or Metal\n"
+"target = \"cuda\"                                      # bare TVM target "
+"kind\n"
+"target = {\"kind\": \"cuda\", \"arch\": \"sm_90\"}           # target config "
+"dict\n"
+"target = tvm.target.Target({\"kind\": \"cuda\"})         # already-built TVM "
+"Target\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:47
+msgid ""
+"Use the bare string form for simple cases. Use a config dictionary when you "
+"need target attributes such as CUDA `arch`, CUDA `code`, HIP `mcpu`, or LLVM "
+"CPU options. Dictionary keys must be valid attributes for that target kind; "
+"invalid attributes are rejected when TVM constructs the target."
+msgstr ""
+
+#: ../../../get_started/targets.md:51
+msgid "Default target"
+msgstr ""
+
+#: ../../../get_started/targets.md:53
+msgid ""
+"If you do not pass `target=...`, TileLang reads `TILELANG_DEFAULT_TARGET`. "
+"When the environment variable is unset, the default is `auto`."
+msgstr ""
+
+#: ../../../get_started/targets.md:56
+msgid "export TILELANG_DEFAULT_TARGET=cuda\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:60
+msgid ""
+"For target options, use a JSON object string. This is useful in scripts that "
+"rely on the default target through `tilelang.compile(..., target=None)`, "
+"`@tilelang.jit`, or autotuning:"
+msgstr ""
+
+#: ../../../get_started/targets.md:63
+msgid ""
+"export TILELANG_DEFAULT_TARGET='{\"kind\": \"cuda\", \"arch\": \"sm_90\"}'\n"
+"export TILELANG_DEFAULT_TARGET='{\"kind\": \"cuda\", \"arch\": \"sm_100f\", "
+"\"code\": [\"sm_100a\", \"sm_103a\"]}'\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:68
+msgid "In Python code, prefer passing a real dictionary instead of a string:"
+msgstr ""
+
+#: ../../../get_started/targets.md:70
+msgid ""
+"target = {\"kind\": \"cuda\", \"arch\": \"sm_100f\", \"code\": [\"sm_100a\", "
+"\"sm_103a\"]}\n"
+"kernel = tilelang.compile(func, target=target)\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:75
+msgid "CUDA `arch` and `code`"
+msgstr ""
+
+#: ../../../get_started/targets.md:77
+msgid ""
+"For CUDA targets, `arch` selects the SM family TileLang/TVM should compile "
+"for. TileLang accepts `sm_...` architecture tokens for this field. In the "
+"common case, setting only `arch` is enough:"
+msgstr ""
+
+#: ../../../get_started/targets.md:80
+msgid "target = {\"kind\": \"cuda\", \"arch\": \"sm_90\"}\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:84
+msgid "TileLang passes this to NVCC as a single architecture target:"
+msgstr ""
+
+#: ../../../get_started/targets.md:86
+msgid "-arch=sm_90\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:90
+msgid ""
+"Use `code` only when you need explicit NVCC `-gencode` behavior, for example "
+"when compiling the virtual architecture derived from `arch` but emitting "
+"SASS for multiple GPU code instances:"
+msgstr ""
+
+#: ../../../get_started/targets.md:93
+msgid ""
+"target = {\n"
+"    \"kind\": \"cuda\",\n"
+"    \"arch\": \"sm_100f\",\n"
+"    \"code\": [\"sm_100a\", \"sm_103a\"],\n"
+"}\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:101
+msgid "This produces NVCC flags equivalent to:"
+msgstr ""
+
+#: ../../../get_started/targets.md:103
+msgid "-gencode arch=compute_100f,code=[sm_100a,sm_103a]\n"
+msgstr ""
+
+#: ../../../get_started/targets.md:107
+msgid ""
+"`code` must be a Python list of exact SM code tokens such as `sm_100a` or "
+"`sm_103a`. String forms such as `\"sm_100a,sm_103a\"` or `\"[sm_100a,"
+"sm_103a]\"` are intentionally not supported."
+msgstr ""
+
+#: ../../../get_started/targets.md:110
+msgid ""
+"When `code` contains more than one entry, TileLang emits a fat binary "
+"(`fatbin`) because NVCC does not allow `--cubin` output with multiple GPU "
+"code instances."
+msgstr ""
+
+#: ../../../get_started/targets.md:113
 msgid "Advanced: Specify Exact Hardware"
 msgstr ""
 
-#: ../../../get_started/targets.md:39
+#: ../../../get_started/targets.md:115
 msgid ""
 "When you already know the precise GPU model, you can encode it in the target "
-"string—either via `-arch=sm_XX` or by using one of TVM’s pre-defined target "
-"tags such as `nvidia/nvidia-h100`.  Supplying this detail is optional for "
-"TileLang in general use, but it becomes valuable when the TVM cost model is "
-"enabled (e.g. during autotuning).  The cost model uses the extra attributes "
-"to make better scheduling predictions.  If you skip this step (or do not use "
-"the cost model), generic targets like `cuda` or `auto` are perfectly fine."
+"config via `arch=\"sm_XX\"` or by using one of TVM’s pre-defined target tags "
+"such as `nvidia/nvidia-h100`. Supplying this detail is optional for TileLang "
+"in general use, but it becomes valuable when the TVM cost model is enabled "
+"(e.g. during autotuning).  The cost model uses the extra attributes to make "
+"better scheduling predictions.  If you skip this step (or do not use the "
+"cost model), generic targets like `cuda` or `auto` are perfectly fine."
 msgstr ""
 
-#: ../../../get_started/targets.md:45
+#: ../../../get_started/targets.md:121
 msgid ""
 "All CUDA compute capabilities recognised by TVM’s target registry are listed "
-"below.  Pick the one that matches your GPU and append it to the target "
-"string or use the corresponding target tag—for example `nvidia/nvidia-a100`."
+"below.  Pick the one that matches your GPU and set it in the target config "
+"or use the corresponding target tag—for example `nvidia/nvidia-a100`."
 msgstr ""
 
 #: ../../../get_started/targets.md:0
@@ -332,99 +456,84 @@ msgstr ""
 msgid "`nvidia/nvidia-b100`"
 msgstr ""
 
-#: ../../../get_started/targets.md:71
+#: ../../../get_started/targets.md:147
 msgid ""
 "Refer to NVIDIA’s [CUDA GPUs](https://developer.nvidia.com/cuda-gpus) page "
 "or the TVM source (`3rdparty/tvm/src/target/tag.cc`) for the latest mapping "
 "between devices and compute capabilities."
 msgstr ""
 
-#: ../../../get_started/targets.md:74
+#: ../../../get_started/targets.md:150
 msgid "Creating targets programmatically"
 msgstr ""
 
-#: ../../../get_started/targets.md:76
+#: ../../../get_started/targets.md:152
 msgid ""
-"If you prefer working with TVM’s `Target` objects, TileLang exposes the "
-"helper `tilelang.utils.target.determine_target` (returns a canonical target "
-"string by default, or the `Target` object when `return_object=True`):"
+"TileLang exposes the helper `tilelang.backend.target.determine_target` "
+"(returns a canonical target string or config by default, or the `Target` "
+"object when `return_object=True`):"
 msgstr ""
 
-#: ../../../get_started/targets.md:80
+#: ../../../get_started/targets.md:155
 msgid ""
-"from tilelang.utils.target import determine_target\n"
+"from tilelang.backend.target import determine_target\n"
 "\n"
-"tvm_target = determine_target(\"cuda -arch=sm_80\", return_object=True)\n"
+"tvm_target = determine_target(\n"
+"    {\"kind\": \"cuda\", \"arch\": \"sm_100f\", \"code\": [\"sm_100a\", "
+"\"sm_103a\"]},\n"
+"    return_object=True,\n"
+")\n"
 "kernel = tilelang.compile(func, target=tvm_target)\n"
 msgstr ""
 
-#: ../../../get_started/targets.md:87
+#: ../../../get_started/targets.md:165
 msgid "You can also build targets directly through TVM:"
 msgstr ""
 
-#: ../../../get_started/targets.md:89
+#: ../../../get_started/targets.md:167
 msgid ""
 "from tvm.target import Target\n"
 "\n"
 "target = Target(\"cuda\", host=\"llvm\")\n"
-"target = target.with_host(Target(\"llvm -mcpu=skylake\"))\n"
+"target = target.with_host(Target({\"kind\": \"llvm\", \"mcpu\": "
+"\"skylake\"}))\n"
 msgstr ""
 
-#: ../../../get_started/targets.md:96
+#: ../../../get_started/targets.md:174
 msgid ""
-"TileLang accepts either `str` or `Target` inputs; internally they are "
-"normalised and cached using the canonical string representation.  **In user "
-"code we strongly recommend passing target strings rather than `tvm.target."
-"Target` instances—strings keep cache keys compact and deterministic across "
-"runs, whereas constructing fresh `Target` objects may lead to slightly "
-"higher hashing overhead or inconsistent identity semantics.**"
+"TileLang accepts bare target strings, target config dictionaries, and "
+"`Target` inputs. For targets with options, prefer config dictionaries over "
+"CLI-style strings."
 msgstr ""
 
-#: ../../../get_started/targets.md:101
-msgid "Discovering supported targets in code"
-msgstr ""
-
-#: ../../../get_started/targets.md:103
-msgid ""
-"Looking for a quick reminder of the built-in base names and their "
-"descriptions? Use:"
-msgstr ""
-
-#: ../../../get_started/targets.md:105
-msgid ""
-"from tilelang.utils.target import describe_supported_targets\n"
-"\n"
-"for name, doc in describe_supported_targets().items():\n"
-"    print(f\"{name:>6}: {doc}\")\n"
-msgstr ""
-
-#: ../../../get_started/targets.md:112
-msgid ""
-"This helper mirrors the table above and is safe to call at runtime (for "
-"example when validating CLI arguments)."
-msgstr ""
-
-#: ../../../get_started/targets.md:114
+#: ../../../get_started/targets.md:177
 msgid "Troubleshooting tips"
 msgstr ""
 
-#: ../../../get_started/targets.md:116
+#: ../../../get_started/targets.md:179
 msgid ""
-"If you see `Target cuda -arch=sm_80 is not supported`, double-check the "
-"spellings and that the option is valid for TVM. Any invalid switch will "
-"surface as a target-construction error."
+"If you see `Target {'kind': 'cuda', 'arch': 'sm_80'} is not supported`, "
+"double-check the spellings and that the option is valid for the target kind. "
+"Any invalid option will surface as a target-construction error."
 msgstr ""
 
-#: ../../../get_started/targets.md:118
+#: ../../../get_started/targets.md:181
 msgid ""
-"Runtime errors such as “no kernel image is available” usually mean the `-"
-"arch` flag does not match the GPU you are running on. Try dropping the flag "
-"or switching to the correct compute capability."
+"If CUDA `code` fails validation, make sure it is a list of exact SM code "
+"tokens, for example `[\"sm_100a\", \"sm_103a\"]`, not a comma-separated "
+"string."
 msgstr ""
 
-#: ../../../get_started/targets.md:120
+#: ../../../get_started/targets.md:183
+msgid ""
+"Runtime errors such as “no kernel image is available” usually mean the "
+"`arch` value does not match the GPU you are running on. Try dropping the "
+"flag or switching to the correct compute capability."
+msgstr ""
+
+#: ../../../get_started/targets.md:185
 msgid ""
 "When targeting multiple environments, use `auto` for convenience and "
-"override with an explicit string only when you need architecture-specific "
+"override with an explicit config only when you need architecture-specific "
 "tuning."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,22 +26,30 @@ msgid "TUTORIALS"
 msgstr ""
 
 #: ../../../index.md:29
+msgid "TOOLS"
+msgstr ""
+
+#: ../../../index.md:43
 msgid "PROGRAMMING GUIDES"
 msgstr ""
 
-#: ../../../index.md:42
+#: ../../../index.md:57
 msgid "DEEP LEARNING OPERATORS"
 msgstr ""
 
-#: ../../../index.md:53
+#: ../../../index.md:68
 msgid "COMPILER INTERNALS"
 msgstr ""
 
-#: ../../../index.md:62
+#: ../../../index.md:78
+msgid "DEVELOPER GUIDE"
+msgstr ""
+
+#: ../../../index.md:85
 msgid "API Reference"
 msgstr ""
 
-#: ../../../index.md:69
+#: ../../../index.md:92
 msgid "Privacy"
 msgstr ""
 

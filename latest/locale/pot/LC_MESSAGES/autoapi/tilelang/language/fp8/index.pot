@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:2
+msgid "tilelang.language.fp8"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`determine_fp8_type <tilelang.language.fp8.determine_fp8_type>`\\ "
+"\\(\\[fp8\\_format\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:15:<autosummary>:1
+msgid "Select the correct FP8 dtype string for the current platform."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`determine_torch_fp8_type <tilelang.language.fp8."
+"determine_torch_fp8_type>`\\ \\(\\[fp8\\_format\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:21
+msgid ""
+"Select the correct FP8 dtype string for the current platform. - CUDA "
+"defaults to FP8 E4M3FN / E5M2. - ROCm uses FNUZ except gfx950 (OCP), which "
+"prefers non-FNUZ when available."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fp8/index.rst:0
+msgid "Return type"
+msgstr ""

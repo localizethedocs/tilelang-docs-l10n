@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,33 +30,17 @@ msgid "Classes"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:24:<autosummary>:1
-msgid ":py:obj:`GemmSPPy <tilelang.tileop.gemm_sp.GemmSPPy>`\\"
+msgid ":py:obj:`GemmSP <tilelang.tileop.gemm_sp.GemmSP>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:26
-msgid "Functions"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:33:<autosummary>:1
-msgid ""
-":py:obj:`gemm_sp_py_infer_layout <tilelang.tileop.gemm_sp."
-"gemm_sp_py_infer_layout>`\\ \\(gemm\\_sp\\_py\\, target\\, thread\\_bounds\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:33:<autosummary>:1
-msgid ""
-":py:obj:`gemm_sp_py_lower <tilelang.tileop.gemm_sp.gemm_sp_py_lower>`\\ "
-"\\(gemm\\_sp\\_py\\, target\\, thread\\_bounds\\, ...\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:35
 msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:30
+msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:0
 msgid "Parameters"
-msgstr ""
-
-#: ../../../autoapi/tilelang/tileop/gemm_sp/index.rst:43
-msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
 msgstr ""

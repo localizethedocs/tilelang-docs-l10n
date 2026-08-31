@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,159 +29,169 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`fast_rcp <tilelang.language.math_intrinsics.fast_rcp>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:40
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
+msgid "Approximate reciprocal using CUDA fast reciprocal."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_add <tilelang.language.math_intrinsics.ieee_add>`\\ \\(x\\, "
 "y\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:39
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:45
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant addition with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_sub <tilelang.language.math_intrinsics.ieee_sub>`\\ \\(x\\, "
 "y\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:56
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:62
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant subtraction with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_mul <tilelang.language.math_intrinsics.ieee_mul>`\\ \\(x\\, "
 "y\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:71
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:77
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant multiplication with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_fmaf <tilelang.language.math_intrinsics.ieee_fmaf>`\\ \\(x\\, "
 "y\\, z\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:86
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:92
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant fused multiply-add with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_frcp <tilelang.language.math_intrinsics.ieee_frcp>`\\ "
 "\\(x\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:103
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:109
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant reciprocal with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_fsqrt <tilelang.language.math_intrinsics.ieee_fsqrt>`\\ "
 "\\(x\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:116
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:122
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant square root with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_frsqrt <tilelang.language.math_intrinsics.ieee_frsqrt>`\\ "
 "\\(x\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:129
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:135
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant reciprocal square root (round to nearest only)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`ieee_fdiv <tilelang.language.math_intrinsics.ieee_fdiv>`\\ \\(x\\, "
 "y\\[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:140
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:146
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "IEEE-compliant division with specified rounding mode"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ":py:obj:`add2 <tilelang.language.math_intrinsics.add2>`\\ \\(x\\, y\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:155
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:161
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed element-wise add (x + y)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ":py:obj:`sub2 <tilelang.language.math_intrinsics.sub2>`\\ \\(x\\, y\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:160
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:166
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed element-wise subtract (x - y)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ":py:obj:`mul2 <tilelang.language.math_intrinsics.mul2>`\\ \\(x\\, y\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:165
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:171
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed element-wise multiply (x * y)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`fma2 <tilelang.language.math_intrinsics.fma2>`\\ \\(x\\, y\\, z\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:170
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:176
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed fused multiply-add (x * y + z)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ":py:obj:`max2 <tilelang.language.math_intrinsics.max2>`\\ \\(x\\, y\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:175
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:181
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed element-wise maximum."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ":py:obj:`min2 <tilelang.language.math_intrinsics.min2>`\\ \\(x\\, y\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:180
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:186
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed element-wise minimum."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid ":py:obj:`abs2 <tilelang.language.math_intrinsics.abs2>`\\ \\(x\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:185
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:191
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:34:<autosummary>:1
 msgid "Packed element-wise absolute value."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:35
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:36
 msgid "Module Contents"
 msgstr ""
 
@@ -189,21 +199,25 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:41
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:58
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:73
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:88
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:47
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:64
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:79
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:94
 msgid "First operand."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:43
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:60
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:75
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:90
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:49
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:66
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:81
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:96
 msgid "Second operand."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:45
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:51
 msgid ""
 "Rounding mode: 'rn' (round to nearest), 'rz' (round toward zero), "
 "'ru' (round toward positive infinity), 'rd' (round toward negative "
@@ -214,59 +228,55 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:50
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:65
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:80
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:56
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:71
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:86
 msgid "**result** -- The result."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0
-msgid "Return type"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:62
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:77
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:94
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:107
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:120
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:146
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:68
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:83
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:100
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:113
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:126
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:152
 msgid "Rounding mode: 'rn', 'rz', 'ru', 'rd'. Default is 'rn'."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:92
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:98
 msgid "Third operand (addend)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:97
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:103
 msgid "**result** -- The result of x * y + z."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:105
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:118
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:131
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:111
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:124
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:137
 msgid "Input operand."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:110
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:116
 msgid "**result** -- The result of 1/x."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:123
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:129
 msgid "**result** -- The result of sqrt(x)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:134
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:140
 msgid "**result** -- The result of 1/sqrt(x)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:142
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:148
 msgid "Dividend."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:144
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:150
 msgid "Divisor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:149
+#: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:155
 msgid "**result** -- The result of x/y."
 msgstr ""

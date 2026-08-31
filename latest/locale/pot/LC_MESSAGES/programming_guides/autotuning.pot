@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: ../../../programming_guides/autotuning.md:78
 #: ../../../programming_guides/autotuning.md:194
-#: ../../../programming_guides/autotuning.md:270
+#: ../../../programming_guides/autotuning.md:272
 msgid "Notes"
 msgstr ""
 
@@ -391,111 +391,110 @@ msgstr ""
 
 #: ../../../programming_guides/autotuning.md:195
 msgid ""
-"`timeout` uses POSIX signals; on non‑Unix systems, it may not take effect."
+"`timeout` is enforced portably by running each benchmark call in a daemon "
+"thread and waiting for at most the configured duration. A timed-out native "
+"or CUDA call cannot be forcibly stopped, so its daemon thread may continue "
+"until the underlying call returns."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:196
+#: ../../../programming_guides/autotuning.md:199
 msgid "Logs are written to `autotuner.log` in the working directory."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:198
+#: ../../../programming_guides/autotuning.md:201
 msgid "Caching"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:200
+#: ../../../programming_guides/autotuning.md:203
 msgid ""
 "The autotuner caches best artifacts both in‑memory (per process) and on disk "
 "under `$TILELANG_CACHE_DIR/autotuner`. The cache key includes:"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:202
+#: ../../../programming_guides/autotuning.md:205
 msgid "TileLang version, function source, closure free‑vars"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:203
+#: ../../../programming_guides/autotuning.md:206
 msgid "Config list, compile args, profile args"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:205
+#: ../../../programming_guides/autotuning.md:208
 msgid "Disk cache contents (per key)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:206
+#: ../../../programming_guides/autotuning.md:209
 msgid "Best config and latency: `best_config.json`, `latency.json`"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:207
+#: ../../../programming_guides/autotuning.md:210
 msgid ""
 "Kernel sources and library: `device_kernel.cu`, `host_kernel.cu`, "
 "`kernel_lib.so` (or `kernel.cubin`/`executable.so` depending on backend)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:208
+#: ../../../programming_guides/autotuning.md:211
 msgid "Function and params: `function.pkl`, `params.pkl`"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:210
+#: ../../../programming_guides/autotuning.md:213
 msgid "Control via env vars (tilelang.env)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:211
+#: ../../../programming_guides/autotuning.md:214
 msgid "`TILELANG_CACHE_DIR` (default `~/.tilelang/cache`)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:212
-msgid "`TILELANG_TMP_DIR` (default `$TILELANG_CACHE_DIR/tmp`)"
-msgstr ""
-
-#: ../../../programming_guides/autotuning.md:213
+#: ../../../programming_guides/autotuning.md:215
 msgid "Disable all kernel caches: `TILELANG_DISABLE_CACHE=1`"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:214
+#: ../../../programming_guides/autotuning.md:216
 msgid ""
 "Disable autotune disk cache only: `TILELANG_AUTO_TUNING_DISABLE_CACHE=1`"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:216
+#: ../../../programming_guides/autotuning.md:218
 msgid "CPU worker control"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:217
+#: ../../../programming_guides/autotuning.md:219
 msgid "`TILELANG_AUTO_TUNING_CPU_UTILITIES` (fraction, default 0.9)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:218
+#: ../../../programming_guides/autotuning.md:220
 msgid "`TILELANG_AUTO_TUNING_CPU_COUNTS` (int, `-1` auto)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:219
+#: ../../../programming_guides/autotuning.md:221
 msgid "`TILELANG_AUTO_TUNING_MAX_CPU_COUNT` (int, `-1` unlimited)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:221
+#: ../../../programming_guides/autotuning.md:223
 msgid "Backend notes"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:222
+#: ../../../programming_guides/autotuning.md:224
 msgid "NVRTC backend persists `.cubin` and a Python launcher."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:223
+#: ../../../programming_guides/autotuning.md:225
 msgid ""
-"Torch/DLPack backend may not save artifacts to disk; in this case, only "
-"in‑memory caching applies and a warning is logged."
-msgstr ""
-
-#: ../../../programming_guides/autotuning.md:226
-msgid "Alternative: Manual Sweeps with par_compile"
+"Torch backend may not save artifacts to disk; in this case, only in‑memory "
+"caching applies and a warning is logged."
 msgstr ""
 
 #: ../../../programming_guides/autotuning.md:228
+msgid "Alternative: Manual Sweeps with par_compile"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:230
 msgid ""
 "If you prefer manual control, use `JITImpl.par_compile` to compile a batch "
 "of configs and drive your own benchmarking:"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:231
+#: ../../../programming_guides/autotuning.md:233
 msgid ""
 "@tilelang.jit\n"
 "def factory(M, N, K, block_M=128, block_N=128, block_K=32):\n"
@@ -515,18 +514,18 @@ msgid ""
 "# Now benchmark kernels[i](A, B, C) yourself\n"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:250
+#: ../../../programming_guides/autotuning.md:252
 msgid "Recording and Reusing Best Configs"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:252
+#: ../../../programming_guides/autotuning.md:254
 msgid ""
 "The programmatic path returns an `AutotuneResult` that can be saved and "
 "later reloaded. This is useful for CI, multi‑host workflows, or shipping "
 "tuned configs."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:255
+#: ../../../programming_guides/autotuning.md:257
 msgid ""
 "artifact = tuner.run()  # AutotuneResult\n"
 "\n"
@@ -542,28 +541,28 @@ msgid ""
 "best(A, B, C)\n"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:271
+#: ../../../programming_guides/autotuning.md:273
 msgid ""
-"DLPack/Torch execution backend may not persist compiled binaries; in that "
-"case, re‑compilation is needed on load or use a different backend."
+"Torch execution backend may not persist compiled binaries; in that case, "
+"re‑compilation is needed on load or use a different backend."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:273
+#: ../../../programming_guides/autotuning.md:275
 msgid ""
 "The directory contains human‑readable JSONs (best config/latency) and "
 "sources."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:275
+#: ../../../programming_guides/autotuning.md:277
 msgid "Advanced: Config Space Callables"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:277
+#: ../../../programming_guides/autotuning.md:279
 msgid ""
 "Derive config spaces from problem sizes to keep searches targeted and legal:"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:279
+#: ../../../programming_guides/autotuning.md:281
 msgid ""
 "def matmul_configs(M, N, K):\n"
 "    large = min(M, N, K) >= 1024\n"
@@ -577,55 +576,55 @@ msgid ""
 "                                    num_stages=S, threads=TH)\n"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:292
+#: ../../../programming_guides/autotuning.md:294
 msgid "Device and Backend Selection"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:294
+#: ../../../programming_guides/autotuning.md:296
 msgid "Tune compile‑time options explicitly:"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:295
+#: ../../../programming_guides/autotuning.md:297
 msgid "`target='auto'|'cuda'|'hip'|'metal'` (normalized to a TVM Target)"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:296
+#: ../../../programming_guides/autotuning.md:298
 msgid "`execution_backend='auto'|'tvm_ffi'|'cython'|'nvrtc'|'torch'`"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:297
+#: ../../../programming_guides/autotuning.md:299
 msgid "`pass_configs={...}` to toggle TileLang/TVM passes for experiments"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:299
+#: ../../../programming_guides/autotuning.md:301
 msgid ""
 "On CUDA with multiple GPUs, the tuner sets the current device per worker "
 "thread to avoid context mixups."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:302
+#: ../../../programming_guides/autotuning.md:304
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:303
+#: ../../../programming_guides/autotuning.md:305
 msgid ""
 "“No configurations to tune”: Ensure `configs` is a non‑empty list or "
 "callable."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:304
+#: ../../../programming_guides/autotuning.md:306
 msgid ""
 "Timeouts: Increase `timeout`; ensure inputs fit device memory; verify that "
 "your reference check isn’t the bottleneck."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:306
+#: ../../../programming_guides/autotuning.md:308
 msgid ""
 "Dynamic shapes: Provide concrete inputs via `set_autotune_inputs` or a "
 "custom `supply_prog`."
 msgstr ""
 
-#: ../../../programming_guides/autotuning.md:308
+#: ../../../programming_guides/autotuning.md:310
 msgid ""
 "Disk cache disabled: Check `TILELANG_AUTO_TUNING_DISABLE_CACHE` and backend."
 msgstr ""

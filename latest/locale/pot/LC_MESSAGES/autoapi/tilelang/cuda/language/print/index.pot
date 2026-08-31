@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:2
+msgid "tilelang.cuda.language.print"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:8
+msgid ""
+"This module provides macros and utilities for debugging TileLang (tl) "
+"programs. It includes functionality to print variables, print values in "
+"buffers, conditionally execute debug prints and assert."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:14
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`print <tilelang.cuda.language.print.print>`\\ \\(\\[obj\\, msg\\, "
+"warp\\_group\\_id\\, warp\\_id\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:26
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:20:<autosummary>:1
+msgid ""
+"A generic print function that handles both TIR buffers and primitive "
+"expressions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:28
+msgid ""
+"If the input is a TIR buffer, it prints its values, but only on the first "
+"thread (tx=0, ty=0, tz=0)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:29
+msgid ""
+"If the input is a TIR primitive expression, it prints its value directly."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:31
+msgid ""
+"The object to print. It can be either a tirx.Buffer, tirx.PrimExpr, or None "
+"(for msg-only print)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:33
+msgid "An optional message to include in the print statement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:35
+msgid "The warp group id to print."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:37
+msgid "The warp id to print."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:41
+msgid "If the input object type is unsupported."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/print/index.rst:0
+msgid "Return type"
+msgstr ""

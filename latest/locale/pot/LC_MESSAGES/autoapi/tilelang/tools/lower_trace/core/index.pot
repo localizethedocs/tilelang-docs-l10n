@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:2
+msgid "tilelang.tools.lower_trace.core"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:8
+msgid "IR lower tracing implemented as a per-compilation instrumentation tool."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:10
+msgid ""
+"``enable()`` only registers configuration for future compilations.  Every "
+"compiler front door snapshots that configuration into a distinct "
+"``LowerTraceSession`` which owns its records, pass numbering, pipeline "
+"scopes, and report lifecycle.  No TVM global function or default "
+"``PassContext`` is patched."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:19
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_COMPLETED <tilelang.tools.lower_trace.core."
+"STATUS_COMPLETED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_FAILED <tilelang.tools.lower_trace.core.STATUS_FAILED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_SKIPPED <tilelang.tools.lower_trace.core.STATUS_SKIPPED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_CODEGEN <tilelang.tools.lower_trace.core.STATUS_CODEGEN>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:30
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:37:<autosummary>:1
+msgid ":py:obj:`LowerRecord <tilelang.tools.lower_trace.core.LowerRecord>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:72
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:37:<autosummary>:1
+msgid "Result of running a single compiler pass or codegen boundary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`LowerTraceSession <tilelang.tools.lower_trace.core."
+"LowerTraceSession>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:140
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:37:<autosummary>:1
+msgid "All mutable lower-trace state for one logical compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:39
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid ""
+":py:obj:`get_last_session <tilelang.tools.lower_trace.core."
+"get_last_session>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:261
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid "Return the most recent session in the current execution context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid ""
+":py:obj:`current_lower_trace_session <tilelang.tools.lower_trace.core."
+"current_lower_trace_session>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:266
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid "Return lower trace state for the current compile context, if present."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid ""
+":py:obj:`create_pass_instrument <tilelang.tools.lower_trace.core."
+"create_pass_instrument>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:271
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid "Create an instrument for the active session (standalone if necessary)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid ""
+":py:obj:`enable <tilelang.tools.lower_trace.core.enable>`\\ \\(\\*\\[\\, "
+"mode\\, trace\\_dir\\, codegen\\_output\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:276
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid "Enable lower tracing for future compile sessions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid ":py:obj:`disable <tilelang.tools.lower_trace.core.disable>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:285
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid "Stop adding lower trace to future compilations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid ":py:obj:`reset <tilelang.tools.lower_trace.core.reset>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:290
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:50:<autosummary>:1
+msgid "Reset only the compile session active in the current execution context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:52
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:137
+msgid "Bases: :py:obj:`tilelang.instrumentation.PassInstrumentationTool`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:216
+msgid "Persist snapshots without allowing tracing I/O to fail compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:228
+msgid "Create fresh callback state for one TVM PassContext."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:234
+msgid "Return the scope entered around one backend pass pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:243
+msgid "Observe or wrap codegen, delegating to ``next_call`` exactly once."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:249
+msgid "Finalize this tool after its owning compile session exits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:255
+msgid "Clear this session's records; primarily useful to unit tests."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:278
+msgid ""
+"An already-running compilation keeps the immutable configuration snapshot "
+"with which it started.  Calling ``enable`` or ``disable`` therefore never "
+"mutates another kernel's active instrumentation."
+msgstr ""

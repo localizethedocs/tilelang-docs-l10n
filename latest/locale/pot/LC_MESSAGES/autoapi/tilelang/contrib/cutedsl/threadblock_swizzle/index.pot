@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,41 +29,99 @@ msgstr ""
 msgid ":py:obj:`dim3 <tilelang.contrib.cutedsl.threadblock_swizzle.dim3>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:34
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:14:<autosummary>:1
+msgid "Three-dimensional CUDA index tuple."
+msgstr ""
+
 #: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:16
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`ThreadIdx <tilelang.contrib.cutedsl.threadblock_swizzle."
 "ThreadIdx>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:51
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid "Return the current CUDA thread index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`BlockIdx <tilelang.contrib.cutedsl.threadblock_swizzle.BlockIdx>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:56
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid "Return the current CUDA block index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`GridDim <tilelang.contrib.cutedsl.threadblock_swizzle.GridDim>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:61
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid "Return the CUDA grid dimensions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`rasterization2DRow <tilelang.contrib.cutedsl.threadblock_swizzle."
 "rasterization2DRow>`\\ \\(panel\\_width\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:66
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid "Map block indices to row-major swizzled rasterization coordinates."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`rasterization2DColumn <tilelang.contrib.cutedsl.threadblock_swizzle."
 "rasterization2DColumn>`\\ \\(panel\\_width\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:71
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid "Map block indices to column-major swizzled rasterization coordinates."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`rasterization2DRowWithCluster <tilelang.contrib.cutedsl."
+"threadblock_swizzle.rasterization2DRowWithCluster>`\\ \\(panel\\_width\\, "
+"cluster\\_dim\\_x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:76
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid ""
+"Row-major swizzle at cluster granularity while preserving intra-cluster x "
+"rank."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`rasterization2DColumnWithCluster <tilelang.contrib.cutedsl."
+"threadblock_swizzle.rasterization2DColumnWithCluster>`\\ "
+"\\(panel\\_width\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:81
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:28:<autosummary>:1
+msgid ""
+"Column-major swizzle at cluster granularity while preserving intra-cluster x "
+"rank."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/threadblock_swizzle/index.rst:30
 msgid "Module Contents"
 msgstr ""
 

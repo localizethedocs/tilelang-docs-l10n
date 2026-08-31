@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:2
+msgid "tilelang.layout.partial_fragment"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:8
+msgid "Wrapping the reducer partial-fragment layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`PartialFragment <tilelang.layout.partial_fragment."
+"PartialFragment>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:36
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:19:<autosummary>:1
+msgid "Layout of a reducer's per-thread partials."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`make_fully_replicated_partial_fragment <tilelang.layout."
+"partial_fragment.make_fully_replicated_partial_fragment>`\\ \\(shape\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:62
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:27:<autosummary>:1
+msgid "The wide plan: every participant holds one full-shape partial."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:33
+msgid "Bases: :py:obj:`tilelang.layout.fragment.Fragment`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:38
+msgid ""
+"Same algebra as Fragment, but the replication coordinate enumerates addends "
+"that still await the finalize collective (combine lanes), not equal copies "
+"of a finished value. Inferred by layout inference for ``local.reducer`` "
+"buffers, or supplied by the user via ``T.annotate_layout({acc: "
+"PartialFragment(...)})`` to pin the reducer's physical plan."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:50
+msgid "Reinterpret a solved Fragment as per-thread partials."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/partial_fragment/index.rst:56
+msgid "The same algebraic map read as a plain Fragment (post-finalize)."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,126 +25,135 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:15:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:17:<autosummary>:1
+msgid ":py:obj:`Span <tilelang.language.eager.ast.Span>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`QuoteReplacement <tilelang.language.eager.ast.QuoteReplacement>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:17:<autosummary>:1
 msgid ":py:obj:`Operator <tilelang.language.eager.ast.Operator>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:15:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:17:<autosummary>:1
 msgid ":py:obj:`BoolOp <tilelang.language.eager.ast.BoolOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:17
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:19
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid ":py:obj:`QuoteVisitor <tilelang.language.eager.ast.QuoteVisitor>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid "A :class:`NodeVisitor` subclass that walks the abstract syntax tree and"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid ":py:obj:`BaseBuilder <tilelang.language.eager.ast.BaseBuilder>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid ":py:obj:`DSLMutator <tilelang.language.eager.ast.DSLMutator>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid ":py:obj:`SpanAttacher <tilelang.language.eager.ast.SpanAttacher>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid ":py:obj:`IRGenerator <tilelang.language.eager.ast.IRGenerator>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:379
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:27:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:387
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29:<autosummary>:1
 msgid "Abstract base class for generic types."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:29
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:31
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`ast_has_span <tilelang.language.eager.ast.ast_has_span>`\\ \\(ast\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`ast_get_span <tilelang.language.eager.ast.ast_get_span>`\\ \\(ast\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`ast_set_span <tilelang.language.eager.ast.ast_set_span>`\\ "
 "\\(ast\\, span\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`quote <tilelang.language.eager.ast.quote>`\\ \\(expr\\, \\*\\[\\, "
 "passes\\, span\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`quote1 <tilelang.language.eager.ast.quote1>`\\ \\(expr\\, \\*\\[\\, "
 "passes\\, span\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`quote_expr <tilelang.language.eager.ast.quote_expr>`\\ \\(expr\\, "
 "\\*\\*kws\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`get_operator_name <tilelang.language.eager.ast."
 "get_operator_name>`\\ \\(operator\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`get_boolop_name <tilelang.language.eager.ast.get_boolop_name>`\\ "
 "\\(boolop\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`eval_op <tilelang.language.eager.ast.eval_op>`\\ \\(op\\, left\\, "
 "right\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`eval_aug_assign <tilelang.language.eager.ast.eval_aug_assign>`\\ "
 "\\(op\\, left\\, sl\\, right\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 ":py:obj:`has_internal_prim_func <tilelang.language.eager.ast."
 "has_internal_prim_func>`\\ \\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ":py:obj:`mutate <tilelang.language.eager.ast.mutate>`\\ \\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48:<autosummary>:1
 msgid ""
 "Transform a Python function into an IR (Intermediate Representation) "
 "generator."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:48
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:50
 msgid "Module Contents"
 msgstr ""
 
@@ -156,23 +165,23 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:58
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:211
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:325
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:68
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:219
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:333
 msgid "Bases: :py:obj:`ast.NodeTransformer`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:61
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:214
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:328
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:71
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:222
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:336
 msgid ""
 "A :class:`NodeVisitor` subclass that walks the abstract syntax tree and "
 "allows modification of nodes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:64
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:217
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:331
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:74
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:225
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:339
 msgid ""
 "The `NodeTransformer` will walk the AST and use the return value of the "
 "visitor methods to replace or remove the old node.  If the return value of "
@@ -181,17 +190,17 @@ msgid ""
 "original node in which case no replacement takes place."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:70
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:223
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:337
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:80
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:231
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:345
 msgid ""
 "Here is an example transformer that rewrites all occurrences of name lookups "
 "(``foo``) to ``data['foo']``::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:73
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:226
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:340
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:83
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:234
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:348
 msgid ""
 "class RewriteName(NodeTransformer):\n"
 "\n"
@@ -203,56 +212,56 @@ msgid ""
 "        )"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:82
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:235
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:349
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:92
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:243
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:357
 msgid ""
 "Keep in mind that if the node you're operating on has child nodes you must "
 "either transform the child nodes yourself or call the :meth:`generic_visit` "
 "method for the node first."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:86
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:239
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:353
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:96
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:247
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:361
 msgid ""
 "For nodes that were part of a collection of statements (that applies to all "
 "statement nodes), the visitor may also return a list of nodes rather than "
 "just a single node."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:90
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:243
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:357
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:100
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:251
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:365
 msgid "Usually you use the transformer like this::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:92
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:245
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:359
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:102
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:253
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:367
 msgid "node = YourTransformer().visit(node)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:110
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:118
 msgid "Called if no explicit visitor function exists for a node."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:370
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:378
 msgid "Visit a node."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:376
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:384
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:381
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:389
 msgid ""
 "A generic type is typically declared by inheriting from this class "
 "parameterized with one or more type variables. For example, a generic "
 "mapping type might be defined as::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:385
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:393
 msgid ""
 "class Mapping(Generic[KT, VT]):\n"
 "    def __getitem__(self, key: KT) -> VT:\n"
@@ -260,11 +269,11 @@ msgid ""
 "    # Etc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:390
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:398
 msgid "This class can then be used as follows::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:392
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:400
 msgid ""
 "def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:\n"
 "    try:\n"
@@ -273,7 +282,7 @@ msgid ""
 "        return default"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:415
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:423
 msgid ""
 "Transform a Python function into an IR (Intermediate Representation) "
 "generator. This function takes a regular Python function and performs AST "
@@ -282,7 +291,7 @@ msgid ""
 "transformed. This should be a"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:419
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:427
 msgid ""
 "callable that will be analyzed and mutated at the AST level. The function's "
 "signature is preserved through generic type parameters _P (parameters) and "
@@ -293,7 +302,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:424
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:432
 msgid ""
 "An IRGenerator instance wrapping the transformed function.     The generator "
 "contains:     - gen: The compiled and mutated version of the original "
@@ -301,32 +310,32 @@ msgid ""
 "string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:426
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:434
 msgid "An IRGenerator instance wrapping the transformed function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:427
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:435
 msgid ""
 "The generator contains: - gen: The compiled and mutated version of the "
 "original function - source: The unparsed source code of the transformed AST "
 "as a string"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:433
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:441
 msgid "Example"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:441
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:449
 msgid ""
 "The original function's closure variables and captured context are preserved"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:442
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:450
 msgid ""
 "The transformation is performed at compile-time through AST manipulation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/eager/ast/index.rst:443
+#: ../../../autoapi/tilelang/language/eager/ast/index.rst:451
 msgid ""
 "The returned IRGenerator maintains type information from the original "
 "function"

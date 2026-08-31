@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:2
+msgid "tilelang.contrib.msvc"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`get_env_path <tilelang.contrib.msvc.get_env_path>`\\ "
+"\\(compiler\\_env\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`get_windows_compiler <tilelang.contrib.msvc."
+"get_windows_compiler>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:26
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid "Resolve the preferred Windows host compiler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`get_msvc_subprocess_env <tilelang.contrib.msvc."
+"get_msvc_subprocess_env>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:35
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid "Return the resolved MSVC subprocess environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`get_msvc_environment_error <tilelang.contrib.msvc."
+"get_msvc_environment_error>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`create_shared <tilelang.contrib.msvc.create_shared>`\\ \\(output\\, "
+"objects\\[\\, options\\, cc\\, cwd\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:20
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:28
+msgid ""
+"Returns ``(path, kind)`` where ``kind`` is ``\"clang-cl\"`` or ``\"msvc\"``. "
+"Set the ``TILELANG_DISABLE_CLANG_CL`` env var to force the legacy ``cl.exe`` "
+"path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/msvc/index.rst:37
+msgid ""
+"Memoized via :func:`functools.cache` (matching ``contrib/cc.py`` and ``cache/"
+"kernel_cache.py``). Concurrent first callers may each spawn ``vswhere."
+"exe`` / ``VsDevCmd.bat`` once; ``functools.cache`` keeps only the winning "
+"result. Subsequent calls hit the cache directly with no locking."
+msgstr ""

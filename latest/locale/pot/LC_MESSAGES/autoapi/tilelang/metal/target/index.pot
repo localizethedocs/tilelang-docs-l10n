@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:2
+msgid "tilelang.metal.target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`check_metal_availability <tilelang.metal.target."
+"check_metal_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`check_metal4_availability <tilelang.metal.target."
+"check_metal4_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`normalize_metal_target <tilelang.metal.target."
+"normalize_metal_target>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`target_is_metal <tilelang.metal.target.target_is_metal>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:18:<autosummary>:1
+msgid ""
+":py:obj:`target_metal_supports_metal4 <tilelang.metal.target."
+"target_metal_supports_metal4>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:20
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/target/index.rst:0
+msgid "Parameters"
+msgstr ""

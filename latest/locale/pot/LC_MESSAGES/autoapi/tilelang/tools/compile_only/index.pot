@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:2
+msgid "tilelang.tools.compile_only"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:8
+msgid ""
+"Compile-only tool: emit inspectable ``lower()`` kernel source without a GPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:10
+msgid "Usage::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:12
+msgid ""
+"python3 -I -m tilelang.tools.compile_only --output_file out.s example.py"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:14
+msgid "The default target is ``c`` (CPU C). CUDA is optional::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:16
+msgid ""
+"python3 -I -m tilelang.tools.compile_only --target cuda --output_file out.s "
+"example.py"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:18
+msgid "Programmatic API::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:20
+msgid ""
+"from tilelang.tools.compile_only import compile_kernel_source\n"
+"\n"
+"source = compile_kernel_source(func)  # default target c"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:27
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:33:<autosummary>:1
+msgid ":py:obj:`DEFAULT_TARGET <tilelang.tools.compile_only.DEFAULT_TARGET>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:35
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`cuda_codegen_available <tilelang.tools.compile_only."
+"cuda_codegen_available>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:56
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+"Return whether this wheel can lower CUDA (``AnnotateDeviceBoundTmaCopies``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`resolve_target <tilelang.tools.compile_only.resolve_target>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:61
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid "Map a CLI/library target string to an explicit lower() target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`load_example <tilelang.tools.compile_only.load_example>`\\ "
+"\\(path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:73
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+"Load ``example.py`` as a module (D2). Do not treat it as a launch script."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`discover_prim_func <tilelang.tools.compile_only."
+"discover_prim_func>`\\ \\(module\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:78
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+"Return the first ``@tilelang.jit`` / PrimFunc in module order (D2, 古法: one "
+"piece)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`compile_kernel_source <tilelang.tools.compile_only."
+"compile_kernel_source>`\\ \\(func\\[\\, target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:83
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+"Lower ``func`` with ``enable_device_compile=False`` and return "
+"``kernel_source`` (D1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`cli_main <tilelang.tools.compile_only.cli_main>`\\ \\(\\[argv\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:96
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:46:<autosummary>:1
+msgid ""
+"CE-shaped CLI (D2): ``--output_file`` + example.py. Default target ``c`` "
+"(D3)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:48
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:63
+msgid ""
+"User-facing target. ``auto`` is rejected. ``cuda`` is pinned to sm_80. "
+"Option-bearing CUDA strings (``cuda -arch=sm_90`` or JSON) keep their arch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:67
+msgid "A TVM target string, or a CUDA target dict."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:85
+msgid "Kernel from ``JITImpl.get_tir()`` or a PrimFunc. No tensor args."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:87
+msgid ""
+"Explicit target. Strings go through :func:`resolve_target`. Default ``c``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/compile_only/index.rst:90
+msgid "Non-empty ``CompiledArtifact.kernel_source`` from existing ``lower()``."
+msgstr ""

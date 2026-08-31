@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:2
+msgid "tilelang.autotuner.grouped_compile"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:8
+msgid "Grouped compilation helpers for autotuner."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:10
+msgid ""
+"This module isolates backend-aware grouped compilation logic from AutoTuner."
+"run so tuner.py can stay focused on orchestration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:16
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`CompileUnitResult <tilelang.autotuner.grouped_compile."
+"CompileUnitResult>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`compile_grouped_unit_tvm_ffi <tilelang.autotuner.grouped_compile."
+"compile_grouped_unit_tvm_ffi>`\\ \\(unit\\_items\\, compile\\_args\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:38
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:30:<autosummary>:1
+msgid "Compile one grouped unit for CUDA+tvm_ffi backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:32
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:40
+msgid ""
+"Flow: 1. Elaborate each config into a PrimFunc. 2. Lower each PrimFunc and "
+"build its host module. 3. Merge all device IR and compile it once. 4. Import "
+"the shared device module into each host runtime module. 5. Construct per-"
+"config JITKernel objects that share the grouped device module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/grouped_compile/index.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:2
+msgid "tilelang.cuda.transform"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:8
+msgid "CUDA-specific transformation frontends."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`AnnotateDeviceBoundTmaCopies <tilelang.cuda.transform."
+"AnnotateDeviceBoundTmaCopies>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:39
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Mark tile copies whose TensorMap base is defined in the device body."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`ProducerConsumerWarpSpecialized <tilelang.cuda.transform."
+"ProducerConsumerWarpSpecialized>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:47
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Producer-consumer warp specialization at the tile-op level."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`LowerBlackwell2SM <tilelang.cuda.transform.LowerBlackwell2SM>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:59
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Lower 2SM TCGEN5MMA and related on Blackwell target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`LowerHopperIntrin <tilelang.cuda.transform.LowerHopperIntrin>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:70
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "LowerHopperIntrin"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`LowerL2Persistent <tilelang.cuda.transform.LowerL2Persistent>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:75
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "LowerL2Persistent"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`LowerSharedTmem <tilelang.cuda.transform.LowerSharedTmem>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:80
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "LowerSharedTmem"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`LowerSharedBarrier <tilelang.cuda.transform.LowerSharedBarrier>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:85
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "LowerSharedBarrier"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`FuseMBarrierArriveExpectTx <tilelang.cuda.transform."
+"FuseMBarrierArriveExpectTx>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:90
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+"Fuse simple expect_tx -> TMA issue -> arrive back into arrive_and_expect_tx."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ":py:obj:`LowerLDGSTG <tilelang.cuda.transform.LowerLDGSTG>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:95
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Lower Ramp-based global memory load/store to ldg/stg intrinsics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`MarkCudaSyncCalls <tilelang.cuda.transform.MarkCudaSyncCalls>`\\ "
+"\\(\\[have\\_pdl\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:114
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "MarkCudaSyncCalls"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`InjectFenceProxy <tilelang.cuda.transform.InjectFenceProxy>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:119
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "InjectFenceProxy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`InjectTcgen05Fence <tilelang.cuda.transform.InjectTcgen05Fence>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Inject tcgen05.fence::before_thread_sync / after_thread_sync at"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`AnnotateWarpGroupRegAlloc <tilelang.cuda.transform."
+"AnnotateWarpGroupRegAlloc>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:142
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Inject set_max_nreg calls into warp-specialized functions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`MaterializeWSSchedule <tilelang.cuda.transform."
+"MaterializeWSSchedule>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:154
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "Materialize a user-provided warp-specialization schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`PersistThreadblock <tilelang.cuda.transform.PersistThreadblock>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:167
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:33:<autosummary>:1
+msgid "PersistThreadblock"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:35
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:41
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:53
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:108
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:121
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:136
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:148
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:161
+msgid "**fpass** -- The result pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:49
+msgid ""
+"This pass runs before LayoutInference and LowerTileOp. It rewrites eligible "
+"pipelined tile-op loops into warp-specialized producer and consumer branches "
+"with explicit barrier synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:61
+msgid "tvm.transform.Pass     The result pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:63
+msgid "tvm.transform.Pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:64
+msgid "The result pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:97
+msgid ""
+"This pass transforms vectorized global memory loads and stores (using Ramp "
+"indices) into explicit ldg32/64/128/256 and stg32/64/128/256 intrinsics for "
+"better codegen."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:100
+msgid ""
+"Key behaviors: - Converts Ramp-based global BufferLoad to ldg intrinsics - "
+"Converts Ramp-based global BufferStore to stg intrinsics - Supports "
+"predicated loads (if_then_else with else=0) - Supports predicated stores (if "
+"in then case) - Skips loads in async scope (will be lowered to cp.async) - "
+"Only enabled for CUDA targets"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:127
+msgid ""
+"Inject tcgen05.fence::before_thread_sync / after_thread_sync at conservative "
+"TCGEN05/TMEM synchronization boundaries on Blackwell (SM100+) targets."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:131
+msgid ""
+"The current pass wraps CTA-wide shared-memory syncs and also inserts fences "
+"around linear mbarrier wait/use and use/arrive handoff patterns. It is "
+"intentionally conservative and does not try to infer arbitrary barrier "
+"protocols."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:144
+msgid ""
+"This pass analyzes the function to collect register hints from set_max_nreg "
+"and no_set_max_nreg calls, then injects appropriate set_max_nreg calls into "
+"producer and consumer branches of warp-specialized code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/transform/index.rst:156
+msgid ""
+"Consumes the ``ws_schedule`` block annotation attached by ``T."
+"annotate_ws_schedule`` and rewrites the kernel into explicit warp-"
+"specialized form (role branches, multi-versioned buffers, mbarrier "
+"synchronization, TMA copies, async tcgen05 MMA)."
+msgstr ""

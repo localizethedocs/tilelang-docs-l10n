@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:2
+msgid "tilelang.backend.module"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:8
+msgid "Backend module registration and per-compilation context resolution."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:20:<autosummary>:1
+msgid ":py:obj:`BackendCallback <tilelang.backend.module.BackendCallback>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:20:<autosummary>:1
+msgid ":py:obj:`TargetPredicate <tilelang.backend.module.TargetPredicate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:22
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:29:<autosummary>:1
+msgid ":py:obj:`BackendModule <tilelang.backend.module.BackendModule>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:50
+#: ../../../autoapi/tilelang/backend/module/index.rst:29:<autosummary>:1
+msgid "Complete Python registration manifest for one TileLang backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:29:<autosummary>:1
+msgid ":py:obj:`BackendContext <tilelang.backend.module.BackendContext>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:156
+#: ../../../autoapi/tilelang/backend/module/index.rst:29:<autosummary>:1
+msgid "Resolved backend state shared by every stage of one compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`register_backend <tilelang.backend.module.register_backend>`\\ "
+"\\(backend\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:211
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid "Validate and register every component declared by a backend manifest."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`get_backend <tilelang.backend.module.get_backend>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:216
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid "Return a registered backend module by name."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`list_backends <tilelang.backend.module.list_backends>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:221
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid "Return a copy of the registered backend modules."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`create_backend_context <tilelang.backend.module."
+"create_backend_context>`\\ \\(\\[target\\, target\\_host\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:226
+#: ../../../autoapi/tilelang/backend/module/index.rst:40:<autosummary>:1
+msgid "Resolve user inputs into the immutable context for one compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:42
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:96
+msgid "Return whether this backend module owns the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:102
+msgid "Return the lowering pipeline declared for the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:108
+msgid "Run this backend's lowering pipeline for the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:114
+msgid "Return the device codegen declared for the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:120
+msgid "Generate device code for the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:126
+msgid "Return the host codegen declared for the host target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:132
+msgid "Generate host code for the host target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:138
+msgid "Apply backend hooks before host code generation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:144
+msgid "Return execution backend names supported by the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:150
+msgid "Resolve an execution backend policy for the target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:182
+msgid "Return the selected backend module name."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:187
+msgid "Run the selected backend's lowering pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:193
+msgid "Generate device code using the selected execution policy by default."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:199
+msgid "Apply selected-backend hooks before host code generation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/module/index.rst:205
+msgid "Generate host code for the resolved host target."
+msgstr ""

@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:2
+msgid "tilelang.rocm.target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:14:<autosummary>:1
+msgid ":py:obj:`ROCM_MTRIPLE <tilelang.rocm.target.ROCM_MTRIPLE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`normalize_rocm_arch <tilelang.rocm.target.normalize_rocm_arch>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_get_mcpu <tilelang.rocm.target.target_get_mcpu>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`rocm_warp_size_for_arch <tilelang.rocm.target."
+"rocm_warp_size_for_arch>`\\ \\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`with_rocm_target_attrs <tilelang.rocm.target."
+"with_rocm_target_attrs>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`check_hip_availability <tilelang.rocm.target."
+"check_hip_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+"Check if HIP (ROCm) is available on the system by locating the ROCm path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`normalize_rocm_target <tilelang.rocm.target."
+"normalize_rocm_target>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_is_hip <tilelang.rocm.target.target_is_hip>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_is_cdna <tilelang.rocm.target.target_is_cdna>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_is_rdna <tilelang.rocm.target.target_is_rdna>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_is_gfx950 <tilelang.rocm.target.target_is_gfx950>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_get_warp_size <tilelang.rocm.target.target_get_warp_size>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`target_get_rdna_generation <tilelang.rocm.target."
+"target_get_rdna_generation>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/target/index.rst:51
+msgid ""
+"Check if HIP (ROCm) is available on the system by locating the ROCm path. :"
+"returns: True if HIP is available, False otherwise. :rtype: bool"
+msgstr ""

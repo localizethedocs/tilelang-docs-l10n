@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:2
+msgid "tilelang.language.ws_schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:8
+msgid "Typed warp-specialization schedule objects."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:10
+msgid ""
+"A :class:`WSSchedule` is the complete description of how to transform a "
+"straight-line kernel into a warp-specialized one. It is built inside the "
+"kernel (after buffer allocations, so pipelines can reference the buffers "
+"directly), attached with ``T.annotate_ws_schedule``, and consumed by the "
+"``MaterializeWSSchedule`` pass."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:19
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSSyncKind <tilelang.language.ws_schedule.WSSyncKind>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:41
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "Pipeline synchronization kind."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSRole <tilelang.language.ws_schedule.WSRole>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:69
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "A contiguous warp range with a single duty."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSPipeline <tilelang.language.ws_schedule.WSPipeline>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:86
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "A full/empty mbarrier pair protecting multi-versioned buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSInstr <tilelang.language.ws_schedule.WSInstr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:106
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "Base class of one step in a role's program."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSOpRef <tilelang.language.ws_schedule.WSOpRef>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:114
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "Reference to a tile op or child scope by its stable ``tl.ws_op_id``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSSync <tilelang.language.ws_schedule.WSSync>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:122
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "A pipeline synchronization point."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSScope <tilelang.language.ws_schedule.WSScope>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:173
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "A loop (or the root scope) with per-role instruction lists."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid ":py:obj:`WSSchedule <tilelang.language.ws_schedule.WSSchedule>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:195
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:32:<autosummary>:1
+msgid "The complete warp-specialization schedule of one kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:34
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:38
+msgid "Bases: :py:obj:`tvm_ffi.dataclasses.Enum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:43
+msgid ""
+"The producer waits for the empty barrier (ACQUIRE) and signals the full "
+"barrier (COMMIT); the consumer waits for the full barrier (WAIT) and signals "
+"the empty barrier (RELEASE)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:66
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:83
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:103
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:170
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:192
+msgid "Bases: :py:obj:`tvm.ir.Node`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:71
+msgid "Role name; keys the per-role bodies of every scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:73
+msgid "First warp of the role's range."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:75
+msgid "One past the last warp: the role covers warps lo..hi-1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:77
+msgid "setmaxnreg budget for the role's warps; 0 leaves registers untouched."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:88
+msgid ""
+"The producer waits for the empty barrier and signals the full barrier; the "
+"consumer waits for the full barrier and signals the empty barrier. ``depth`` "
+"is the number of buffer versions; multiple buffers can share one pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:93
+msgid "Pipeline name; referenced by :class:`WSSync` instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:95
+msgid "The on-chip buffers this pipeline protects (and multi-versions)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:97
+msgid "The number of versions of each buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:111
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:119
+msgid "Bases: :py:obj:`WSInstr`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:124
+msgid "Prefer the classmethod constructors::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:126
+msgid ""
+"WSSync.producer_acquire(\"smem\", stage=0)\n"
+"WSSync.producer_commit(\"smem\", stage=0)\n"
+"WSSync.consumer_wait(\"smem\", stage=num_stages - 1)\n"
+"WSSync.consumer_release(\"smem\", stage=num_stages - 1)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:131
+msgid ""
+"Within one role's scope body, acquire/commit (and wait/release) of a "
+"pipeline must pair up at the same stage; entries between them execute at "
+"that stage's iteration offset."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:140
+msgid "Wait for the empty barrier; binds the stage's buffer versions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:148
+msgid "Signal the full barrier; ends the producer's span."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:156
+msgid "Wait for the full barrier; binds the stage's buffer versions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:164
+msgid "Signal the empty barrier; ends the consumer's span."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:175
+msgid ""
+"The ``tl.ws_op_id`` of the loop this scope schedules, or :data:`WSScope."
+"ROOT` for the kernel's implicit root scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:178
+msgid ""
+"Role name -> instruction sequence. Plain strings are shorthand for :class:"
+"`WSOpRef`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:187
+msgid "The id of the kernel's implicit root scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/ws_schedule/index.rst:197
+msgid "Total warp count; overrides the kernel's thread extent."
+msgstr ""

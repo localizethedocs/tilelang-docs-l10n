@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,47 +34,47 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:27
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:28
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:34:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:35:<autosummary>:1
 msgid ""
 ":py:obj:`is_nvrtc_available <tilelang.jit.adapter.nvrtc."
 "is_nvrtc_available>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:36
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:37
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:43:<autosummary>:1
 msgid ""
 ":py:obj:`NVRTCKernelAdapter <tilelang.jit.adapter.nvrtc."
 "NVRTCKernelAdapter>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:71
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:42:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:72
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:43:<autosummary>:1
 msgid "Dummy NVRTCKernelAdapter that raises ImportError on instantiation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:44
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:45
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:50:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:51:<autosummary>:1
 msgid ""
 ":py:obj:`check_nvrtc_available <tilelang.jit.adapter.nvrtc."
 "check_nvrtc_available>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:64
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:50:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:65
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:51:<autosummary>:1
 msgid "Check if NVRTC backend is available."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:52
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:53
 msgid "Package Contents"
 msgstr ""
 
@@ -82,6 +82,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:66
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:67
 msgid "If cuda-python is not installed or cannot be imported"
 msgstr ""

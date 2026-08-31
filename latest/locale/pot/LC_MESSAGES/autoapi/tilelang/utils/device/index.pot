@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,12 +37,32 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:25:<autosummary>:1
 msgid ""
 ":py:obj:`get_current_device <tilelang.utils.device.get_current_device>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:26
+#: ../../../autoapi/tilelang/utils/device/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`get_available_cpu_count <tilelang.utils.device."
+"get_available_cpu_count>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:41
+#: ../../../autoapi/tilelang/utils/device/index.rst:25:<autosummary>:1
+msgid "CPU cores available to this process (cpuset affinity), at least 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:27
 msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:43
+msgid ""
+"Falls back to ``os.cpu_count`` where affinity is unavailable (macOS/Windows)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:0
+msgid "Return type"
 msgstr ""

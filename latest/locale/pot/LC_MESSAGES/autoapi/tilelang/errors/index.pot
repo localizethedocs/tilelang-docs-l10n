@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/errors/index.rst:2
+msgid "tilelang.errors"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:8
+msgid "Render source-location hints embedded in compiler error messages."
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:10
+msgid ""
+"C++ passes append a machine-readable location line to error messages when "
+"the relevant IR node carries a source span (see `src/span_utils.h`):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:14
+#: ../../../autoapi/tilelang/errors/index.rst:20
+msgid "--> /abs/path/to/kernel.py:21:1"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:16
+msgid ""
+"`enrich_error` rewrites the exception message in place (same exception type) "
+"to a clang/python-style snippet:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:19
+msgid "tvm.error.InternalError: The layout for fragment C_local ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:22
+msgid "21 |     C_local = T.alloc_fragment((block_M, block_N), accum_dtype)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:0
+msgid "^"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:34:<autosummary>:1
+msgid ":py:obj:`enrich_error <tilelang.errors.enrich_error>`\\ \\(exc\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:40
+#: ../../../autoapi/tilelang/errors/index.rst:34:<autosummary>:1
+msgid "Append a rendered source snippet to a compiler error, when available."
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:42
+msgid ""
+"The exception object is returned unchanged (type and traceback preserved); "
+"only its message args are rewritten. Rendering failures fall back to the "
+"original message silently."
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/errors/index.rst:0
+msgid "Return type"
+msgstr ""

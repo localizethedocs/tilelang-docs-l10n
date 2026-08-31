@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 10:09+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,11 +56,11 @@ msgid ""
 "pkl: The compiled kernel parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:71
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:81
 msgid "Caches and reuses compiled kernels to avoid redundant compilation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:73
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:83
 msgid ""
 "This is the ONLY place where environment variable processing, target "
 "normalization, and execution backend resolution should happen. All "
@@ -71,31 +71,38 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:76
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:86
 msgid "Function to be compiled or a prepared PrimFunc"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:77
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:87
 msgid "Indices specifying which outputs to return"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:78
-msgid "Compilation target platform (None = read from TILELANG_TARGET env var)"
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:88
+msgid ""
+"Compilation target platform (None = read from TILELANG_DEFAULT_TARGET env "
+"var). Use a dict for target attributes, for example {\"kind\": \"cuda\", "
+"\"arch\": \"sm_90\"}."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:79
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:90
 msgid "Host target platform"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:80
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:91
 msgid "Execution backend (None = read from TILELANG_EXECUTION_BACKEND)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:81
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:92
+msgid "Pre-resolved context supplied by compiler infrastructure."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:93
 msgid "Enable verbose output (None = read from TILELANG_VERBOSE)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:82
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:94
 msgid "Arguments passed to func"
 msgstr ""
 
@@ -103,7 +110,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:84
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:96
 msgid "The compiled kernel, either freshly compiled or from cache"
 msgstr ""
 
@@ -111,42 +118,53 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:88
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:100
 msgid "Environment Variables"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:89
-msgid "TILELANG_TARGET"
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:101
+msgid "TILELANG_DEFAULT_TARGET"
 msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:-1
 msgid "str"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:90
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:102
 msgid ""
-"Default compilation target (e.g., \"cuda\", \"llvm\"). Defaults to \"auto\"."
+"Default compilation target (e.g., \"cuda\", \"llvm\", or a JSON target "
+"config string). Defaults to \"auto\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:91
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:104
 msgid "TILELANG_EXECUTION_BACKEND"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:92
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:105
 msgid "Default execution backend. Defaults to \"auto\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:93
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:106
 msgid "TILELANG_VERBOSE"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:94
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:107
 msgid ""
 "Set to \"1\", \"true\", \"yes\", or \"on\" to enable verbose compilation by "
 "default."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:100
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:108
+msgid "TILELANG_LAYOUT_COST_MODEL"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:109
+msgid ""
+"Default value for the `tl.layout_cost_model` pass config when it is not set "
+"explicitly in `pass_configs`. Unset keeps the built-in default."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:116
 msgid ""
 "Clears the entire kernel cache, including both in-memory and disk cache."
 msgstr ""
