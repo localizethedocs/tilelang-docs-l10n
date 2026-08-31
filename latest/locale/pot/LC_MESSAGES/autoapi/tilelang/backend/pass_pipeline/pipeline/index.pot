@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:2
+msgid "tilelang.backend.pass_pipeline.pipeline"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`LowerFunc <tilelang.backend.pass_pipeline.pipeline.LowerFunc>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`PassPipeline <tilelang.backend.pass_pipeline.pipeline."
+"PassPipeline>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:30
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:22:<autosummary>:1
+msgid "Lowering pass pipeline for a specific backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:32
+msgid ""
+"Each :class:`BackendModule` declares the pipelines it owns so the compiler "
+"can select the correct pass sequence from the resolved backend context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:41
+msgid "Run the pipeline and render source snippets for located errors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline/index.rst:0
+msgid "Return type"
+msgstr ""

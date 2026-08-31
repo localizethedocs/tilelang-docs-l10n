@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:2
+msgid "tilelang.analysis.parallel_local_index_checker"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`ParallelLocalIndexChecker <tilelang.analysis."
+"parallel_local_index_checker.ParallelLocalIndexChecker>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:20
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:14:<autosummary>:1
+msgid ""
+"Reject indexing a thread-private local buffer with a T.Parallel loop "
+"variable."
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/analysis/parallel_local_index_checker/index.rst:22
+msgid ""
+"Local buffers have no cross-thread ownership layout. A local access may "
+"appear inside a parallel loop when its index is independent of the parallel "
+"loop variables, for example a replicated scalar ``scale_local[0]``. For an "
+"indexed per-thread loop, use ``T.serial``, ``T.vectorized``, or ``T."
+"unroll``; for distributed ownership, allocate a fragment instead."
+msgstr ""

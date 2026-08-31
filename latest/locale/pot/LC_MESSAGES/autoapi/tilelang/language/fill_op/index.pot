@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,9 @@ msgid "Functions"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
-msgid ":py:obj:`fill <tilelang.language.fill_op.fill>`\\ \\(buffer\\, value\\)"
+msgid ""
+":py:obj:`fill <tilelang.language.fill_op.fill>`\\ \\(buffer\\, value\\[\\, "
+"annotations\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/fill_op/index.rst:26
@@ -39,10 +41,12 @@ msgid "Fill a buffer or buffer region with a specified value."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
-msgid ":py:obj:`clear <tilelang.language.fill_op.clear>`\\ \\(buffer\\)"
+msgid ""
+":py:obj:`clear <tilelang.language.fill_op.clear>`\\ \\(buffer\\[\\, "
+"annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/fill_op/index.rst:36
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:37
 #: ../../../autoapi/tilelang/language/fill_op/index.rst:20:<autosummary>:1
 msgid "Clear a buffer by filling it with zeros."
 msgstr ""
@@ -63,11 +67,15 @@ msgstr ""
 msgid "The value to fill the buffer with"
 msgstr ""
 
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:30
+msgid "Optional annotations to attach to the fill call"
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/fill_op/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/fill_op/index.rst:31
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:32
 msgid "A TVM intrinsic call that performs the fill operation"
 msgstr ""
 
@@ -75,11 +83,15 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/fill_op/index.rst:38
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:39
 msgid "Either a TVM buffer or a variable that contains a buffer region"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/fill_op/index.rst:40
+msgid "Optional annotations forwarded to the underlying fill"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:42
 msgid "A fill operation that sets the buffer contents to zero"
 msgstr ""
 
@@ -87,6 +99,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/fill_op/index.rst:42
+#: ../../../autoapi/tilelang/language/fill_op/index.rst:44
 msgid "If the buffer variable contains an invalid buffer region"
 msgstr ""

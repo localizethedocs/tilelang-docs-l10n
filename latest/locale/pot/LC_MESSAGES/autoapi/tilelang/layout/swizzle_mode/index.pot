@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:2
+msgid "tilelang.layout.swizzle_mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:8
+msgid "Shared memory swizzle mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:19:<autosummary>:1
+msgid ":py:obj:`SwizzleMode <tilelang.layout.swizzle_mode.SwizzleMode>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:25
+msgid "Bases: :py:obj:`tvm_ffi.dataclasses.Enum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:58
+msgid ""
+"WGMMA descriptor ``layout_type_`` field (none->0, 32B->3, 64B->2, 128B->1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:64
+msgid "TCGEN05 descriptor swizzle field (none->0, 32B->6, 64B->4, 128B->2)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:70
+msgid "Swizzle size in bytes (none->1, else 32/64/128)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:76
+msgid "Swizzle size in 16-byte vectors (none->1, else 2/4/8)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:82
+msgid ""
+"Required shared-memory base alignment in bytes (none->128, else "
+"256/512/1024)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle_mode/index.rst:0
+msgid "Parameters"
+msgstr ""

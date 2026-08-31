@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:36+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:45
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:26:<autosummary>:1
-msgid "Construct row-major strides from shape."
+msgid "Construct contiguous row-major strides from ``shape``."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:28
@@ -77,6 +77,22 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:0
 msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/utils/index.rst:47
+msgid ""
+"This is the single source of truth for default (contiguous) strides in the "
+"Python frontend; ``T.Tensor``, ``T.out`` and ``retrieve_stride`` all route "
+"here so they cannot drift apart."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/eager/utils/index.rst:51
+msgid ""
+"The result always has the same rank as ``shape``. In particular a rank-0 "
+"(scalar) shape yields an empty stride tuple, matching the TIR convention "
+"that ``len(buffer.strides)`` is either ``0`` or ``len(buffer.shape)``. "
+"Entries may be ``int`` or ``PrimExpr`` depending on ``shape``; pass "
+"``allow_prim_expr=False`` to require fully static strides."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:0

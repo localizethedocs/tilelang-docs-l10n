@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,76 +26,103 @@ msgid "Annotation helpers exposed on the TileLang language surface."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:19:<autosummary>:1
+msgid ":py:obj:`WSID <tilelang.language.annotations.WSID>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:21
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`use_swizzle <tilelang.language.annotations.use_swizzle>`\\ "
 "\\(panel\\_size\\[\\, order\\, enable\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:30
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:44
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid "Annotate a kernel to use a specific threadblock swizzle pattern."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_layout <tilelang.language.annotations.annotate_layout>`\\ "
 "\\(layout\\_map\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:35
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:49
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid "Annotate the layout of the buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_safe_value <tilelang.language.annotations."
 "annotate_safe_value>`\\ \\(safe\\_value\\_map\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:40
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:54
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid "Annotate the safe value of the buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_l2_hit_ratio <tilelang.language.annotations."
 "annotate_l2_hit_ratio>`\\ \\(l2\\_hit\\_ratio\\_map\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:45
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:59
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid "Annotate the L2 hit ratio of the buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_min_blocks_per_sm <tilelang.language.annotations."
 "annotate_min_blocks_per_sm>`\\ \\(n\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:50
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:64
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid "Annotate the minimum number of thread blocks per SM (multiprocessor)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`annotate_restrict_buffers <tilelang.language.annotations."
 "annotate_restrict_buffers>`\\ \\(\\*buffers\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:70
-#: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/language/annotations/index.rst:84
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
 msgid "Mark the given buffer parameters as non-restrict."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:26
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`annotate_ws_schedule <tilelang.language.annotations."
+"annotate_ws_schedule>`\\ \\(schedule\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:102
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
+msgid "Attach a warp-specialization schedule to the kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
+msgid ":py:obj:`ws_op <tilelang.language.annotations.ws_op>`\\ \\(op\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:34:<autosummary>:1
+msgid "Manually annotate the enclosed statement(s) with a stable"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:36
 msgid "Module Contents"
 msgstr ""
 
@@ -103,7 +130,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:52
+#: ../../../autoapi/tilelang/language/annotations/index.rst:66
 msgid ""
 "When set, this value is passed as the second argument of "
 "``__launch_bounds__(maxThreadsPerBlock, minBlocksPerMultiprocessor)`` in the "
@@ -112,14 +139,49 @@ msgid ""
 "improve occupancy at the cost of potentially more register spilling."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:60
-#: ../../../autoapi/tilelang/language/annotations/index.rst:77
+#: ../../../autoapi/tilelang/language/annotations/index.rst:74
+#: ../../../autoapi/tilelang/language/annotations/index.rst:91
 msgid "Example"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/annotations/index.rst:72
+#: ../../../autoapi/tilelang/language/annotations/index.rst:86
 msgid ""
 "This annotation tells codegen to omit the `__restrict__` qualifier for the "
 "specified kernel buffer parameters. Use this when two (or more) buffers may "
 "alias, for example overlapping slices from the same base tensor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:104
+msgid ""
+"``schedule`` is a typed :class:`~tilelang.language.ws_schedule.WSSchedule` "
+"object describing how to transform the straight-line kernel into a warp-"
+"specialized one: warp roles, pipelines (full/empty barrier pairs protecting "
+"multi-versioned buffers), and per-role instruction sequences per loop scope. "
+"It is materialized by the ``MaterializeWSSchedule`` pass; see ``examples/aws/"
+"gemm.py`` for a complete example."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:114
+msgid ""
+"Manually annotate the enclosed statement(s) with a stable warp-"
+"specialization op or scope id."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:117
+msgid ""
+"Wraps the body in an ``AttrStmt`` with key :data:`WSID`. This is the "
+"annotation of last resort, for statement forms that cannot carry "
+"``annotations=`` themselves. The enclosed statements — a scalar Bind, or "
+"several statements such as an inlined scheduler method — become ONE opaque "
+"op:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:128
+msgid ""
+"With a scope id the wrapper encloses a ``while`` loop and opens that scope "
+"(serial scope loops carry the id in their own annotations):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/annotations/index.rst:135
+msgid "Tile ops and loops pass ``annotations={T.WSID: ...}`` directly instead."
 msgstr ""

@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:2
+msgid "tilelang.tools.lower_trace"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:8
+msgid ""
+"IR Lower Trace — zero-intrusion debug tool for visualizing compilation "
+"passes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:10
+msgid ""
+"Generates a self-contained HTML page and/or terminal diff showing all passes "
+"in the compilation pipeline with side-by-side IR diff for each pass."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:13
+msgid "Usage::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:15
+msgid ""
+"TL_LOWER_TRACE=1 python my_kernel.py        # HTML report\n"
+"TL_LOWER_TRACE=terminal python my_kernel.py  # terminal diff only\n"
+"TL_LOWER_TRACE=both python my_kernel.py      # both terminal and HTML"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:19
+msgid "Programmatic API::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:21
+msgid ""
+"from tilelang.tools.lower_trace import lower_trace\n"
+"\n"
+"lower_trace(func, my_pass, mode=\"terminal\")\n"
+"lower_trace(func, [pass_a, pass_b], mode=\"both\", html_path=\"diff.html\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:29
+msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:40
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`lower_trace <tilelang.tools.lower_trace.lower_trace>`\\ "
+"\\(func\\_or\\_mod\\, passes\\, \\*\\[\\, mode\\, context\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:52
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:46:<autosummary>:1
+msgid "Compare IR before and after each pass in a chain."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:48
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:54
+msgid "The starting IR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:56
+msgid "A single pass, a list of passes, or a list of (name, pass) pairs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:58
+msgid "Output mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:60
+msgid "Number of context lines in the unified diff (default 3)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:62
+msgid "Output path for HTML report (default ``lower_trace_report.html``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:65
+msgid ""
+"One entry per pass step, each containing: ``name``, ``before_script``, "
+"``after_script``, ``diff_lines``, ``insertions``, ``deletions``, ``changed``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/index.rst:0
+msgid "Return type"
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,19 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:31
+#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:32
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:38:<autosummary>:1
 msgid ":py:obj:`thread_idx <tilelang.contrib.cutedsl.thread_idx>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:43
-#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:44
+#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:38:<autosummary>:1
 msgid "Return linear thread index (threadIdx.x)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:39
+#: ../../../autoapi/tilelang/contrib/cutedsl/index.rst:40
 msgid "Package Contents"
 msgstr ""

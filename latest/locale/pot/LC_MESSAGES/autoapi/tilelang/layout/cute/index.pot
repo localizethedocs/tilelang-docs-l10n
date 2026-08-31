@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:2
+msgid "tilelang.layout.cute"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:8
+msgid "CuTe layout IR objects and layout-algebra Python API, in TileLang."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:21:<autosummary>:1
+msgid ":py:obj:`PyIntTuple <tilelang.layout.cute.PyIntTuple>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:21:<autosummary>:1
+msgid ":py:obj:`IntTupleLike <tilelang.layout.cute.IntTupleLike>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:21:<autosummary>:1
+msgid ":py:obj:`ModeLike <tilelang.layout.cute.ModeLike>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:23
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`Swizzle <tilelang.layout.cute.Swizzle>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`IntTuple <tilelang.layout.cute.IntTuple>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`IntTupleConst <tilelang.layout.cute.IntTupleConst>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`IntTuplePrimExpr <tilelang.layout.cute.IntTuplePrimExpr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`IntTupleScaledBasis <tilelang.layout.cute.IntTupleScaledBasis>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`IntTupleTuple <tilelang.layout.cute.IntTupleTuple>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`ScaledBasis <tilelang.layout.cute.ScaledBasis>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:188
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid "A ScaledBasis wrapper."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`Layout <tilelang.layout.cute.Layout>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:37:<autosummary>:1
+msgid ":py:obj:`ComposedLayout <tilelang.layout.cute.ComposedLayout>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:39
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`to_python <tilelang.layout.cute.to_python>`\\ \\(t\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:83
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+"Unpack an :class:`IntTuple` into Python: a branch becomes a nested "
+"``tuple``, and each leaf becomes a plain ``int`` (static), a PrimExpr "
+"(dynamic), or a :class:`ScaledBasis` (basis stride)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`from_python <tilelang.layout.cute.from_python>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:88
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+"Convert a Python value to an FFI :class:`IntTuple` (the inverse of :func:"
+"`to_python`): a nested tuple/list becomes an :class:`IntTupleTuple` branch; "
+"an int becomes :class:`IntTupleConst`; a PrimExpr becomes :class:"
+"`IntTuplePrimExpr`; a :class:`ScaledBasis` becomes :class:"
+"`IntTupleScaledBasis`; an already-built :class:`IntTuple` passes through."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`E <tilelang.layout.cute.E>`\\ \\(mode\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`product <tilelang.layout.cute.product>`\\ \\(shape\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`flatten_to_tuple <tilelang.layout.cute.flatten_to_tuple>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`rank <tilelang.layout.cute.rank>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`flatten <tilelang.layout.cute.flatten>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`size <tilelang.layout.cute.size>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`coalesce <tilelang.layout.cute.coalesce>`\\ \\(layout\\[\\, "
+"max\\_extent\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`right_inverse <tilelang.layout.cute.right_inverse>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`left_inverse <tilelang.layout.cute.left_inverse>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`composition <tilelang.layout.cute.composition>`\\ \\(lhs\\, rhs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`filter <tilelang.layout.cute.filter>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`congruent <tilelang.layout.cute.congruent>`\\ \\(a\\, b\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`compatible <tilelang.layout.cute.compatible>`\\ \\(a\\, b\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`coshape <tilelang.layout.cute.coshape>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ":py:obj:`cosize <tilelang.layout.cute.cosize>`\\ \\(layout\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`complement <tilelang.layout.cute.complement>`\\ \\(layout\\, "
+"cotarget\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`logical_divide <tilelang.layout.cute.logical_divide>`\\ "
+"\\(layout\\, tiler\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`logical_product <tilelang.layout.cute.logical_product>`\\ "
+"\\(block\\, tiler\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`tiled_product <tilelang.layout.cute.tiled_product>`\\ \\(block\\, "
+"tiler\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`blocked_product <tilelang.layout.cute.blocked_product>`\\ "
+"\\(block\\, tiler\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`make_layout <tilelang.layout.cute.make_layout>`\\ \\(shape\\[\\, "
+"stride\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`make_column_major_layout <tilelang.layout.cute."
+"make_column_major_layout>`\\ \\(shape\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`make_row_major_layout <tilelang.layout.cute."
+"make_row_major_layout>`\\ \\(shape\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`make_identity_layout <tilelang.layout.cute.make_identity_layout>`\\ "
+"\\(shape\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:71:<autosummary>:1
+msgid ""
+":py:obj:`restrict <tilelang.layout.cute.restrict>`\\ \\(layout\\, region\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:73
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:93
+#: ../../../autoapi/tilelang/layout/cute/index.rst:126
+#: ../../../autoapi/tilelang/layout/cute/index.rst:218
+#: ../../../autoapi/tilelang/layout/cute/index.rst:298
+msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/cute/index.rst:148
+#: ../../../autoapi/tilelang/layout/cute/index.rst:157
+#: ../../../autoapi/tilelang/layout/cute/index.rst:166
+#: ../../../autoapi/tilelang/layout/cute/index.rst:179
+msgid "Bases: :py:obj:`IntTuple`"
+msgstr ""

@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tools/index.md:1
+msgid "Tools"
+msgstr ""
+
+#: ../../../tools/index.md:3
+msgid ""
+"TileLang includes utilities for inspecting kernels, visualizing layouts, "
+"reducing failing programs, observing compiler transformations, and "
+"collecting GPU timeline events. These tools are separate from the kernel "
+"language: import or invoke only the tool needed for the current workflow."
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Task"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Tool"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Entry point"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Emit kernel source without a GPU"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[Compile-Only Tool](compile_only.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`python -m tilelang.tools.compile_only`"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Estimate compute and memory cost from TIR"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[Performance Analyzer](analyzer.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`tilelang.tools.Analyzer`"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Inspect thread and data mappings"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[Layout Visualization](layout_visualization.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`tilelang.tools.plot_layout`"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Reduce a failing program to a smaller reproducer"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[AutoDD](autodd.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`python -m tilelang.autodd`"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Track IR changes across the full lowering pipeline (recommended)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[IR Lower Trace](lower_trace.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`TL_LOWER_TRACE`"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Compare IR before and after compiler passes (legacy)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[Pass Diff](pass_diff.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`TILELANG_PASS_DIFF`"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "Record CUDA kernel markers, ranges, and payloads"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "[IKET](iket.md)"
+msgstr ""
+
+#: ../../../tools/index.md:0
+msgid "`tilelang.tools.cuda.iket`"
+msgstr ""
+
+#: ../../../tools/index.md:18
+msgid "Choosing a Tool"
+msgstr ""
+
+#: ../../../tools/index.md:20
+msgid ""
+"Use the **Compile-Only Tool** to inspect the kernel source `lower()` "
+"generates for an example file, on any machine and without launching "
+"anything. It is the entry point behind the Compiler Explorer integration."
+msgstr ""
+
+#: ../../../tools/index.md:23
+msgid ""
+"Use **Analyzer** before benchmarking when you need a rough roofline-style "
+"estimate from a `PrimFunc` or `IRModule`."
+msgstr ""
+
+#: ../../../tools/index.md:25
+msgid ""
+"Use **Layout Visualization** to inspect how logical indices map to threads "
+"and local indices."
+msgstr ""
+
+#: ../../../tools/index.md:27
+msgid ""
+"Use **AutoDD** after obtaining a stable failure signature and before filing "
+"a large reproducer."
+msgstr ""
+
+#: ../../../tools/index.md:29
+msgid ""
+"Use **IR Lower Trace** to observe every pass and the final codegen step of a "
+"full lowering pipeline. It supersedes **Pass Diff** and is the tool that "
+"receives future improvements."
+msgstr ""
+
+#: ../../../tools/index.md:32
+msgid ""
+"Use **Pass Diff** only when you need the legacy `TILELANG_PASS_DIFF` "
+"workflow."
+msgstr ""
+
+#: ../../../tools/index.md:33
+msgid ""
+"Use **IKET** for CUDA timeline instrumentation when the external IKET "
+"runtime is available."
+msgstr ""
+
+#: ../../../tools/index.md:36
+msgid ""
+"Kernel-level debugging primitives such as `T.print` remain part of the "
+"TileLang language. See {doc}`../tutorials/debug_tools_for_tilelang` for an "
+"end-to-end debugging workflow that combines language primitives with these "
+"tools."
+msgstr ""

@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:2
+msgid "tilelang.tools.lower_trace.diff"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:8
+msgid "Diff utilities for lower trace."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`unified_diff <tilelang.tools.lower_trace.diff.unified_diff>`\\ "
+"\\(before\\_text\\, after\\_text\\[\\, before\\_label\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:26
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:20:<autosummary>:1
+msgid "Generate a unified diff string, optionally with terminal ANSI colors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`print_diff <tilelang.tools.lower_trace.diff.print_diff>`\\ "
+"\\(before\\_text\\, after\\_text\\[\\, before\\_label\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:31
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:20:<autosummary>:1
+msgid "Print a unified diff to stdout. Returns True if there were differences."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/diff/index.rst:0
+msgid "Return type"
+msgstr ""

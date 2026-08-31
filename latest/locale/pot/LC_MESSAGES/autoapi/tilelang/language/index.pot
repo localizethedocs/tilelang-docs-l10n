@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,27 +22,17 @@ msgid "tilelang.language"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/index.rst:8
-msgid "The language interface for tl programs."
+msgid "Default TileLang language facade."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/index.rst:13
-msgid "Submodules"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/index.rst:49
-msgid "Functions"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/language/index.rst:10
 msgid ""
-":py:obj:`import_source <tilelang.language.import_source>`\\ "
-"\\(\\[source\\]\\)"
+"``tilelang.language`` re-exports the CUDA dialect so that ``import tilelang."
+"language as T`` yields the common surface plus CUDA extensions. Other "
+"backends are reached explicitly via ``tilelang.<backend>.language`` (which "
+"build on ``tilelang.language.common``)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/index.rst:57
-msgid "Package Contents"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/index.rst:0
-msgid "Parameters"
+#: ../../../autoapi/tilelang/language/index.rst:18
+msgid "Submodules"
 msgstr ""

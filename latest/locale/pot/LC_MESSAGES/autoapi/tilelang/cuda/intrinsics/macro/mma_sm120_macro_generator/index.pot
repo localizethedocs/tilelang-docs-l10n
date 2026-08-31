@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:2
+msgid "tilelang.cuda.intrinsics.macro.mma_sm120_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`lift <tilelang.cuda.intrinsics.macro.mma_sm120_macro_generator."
+"lift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`BlockScaleMmaConfig <tilelang.cuda.intrinsics.macro."
+"mma_sm120_macro_generator.BlockScaleMmaConfig>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:32
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:24:<autosummary>:1
+msgid "Static SM120 warp-level block-scale MMA configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`SM120BlockScaleTile <tilelang.cuda.intrinsics.macro."
+"mma_sm120_macro_generator.SM120BlockScaleTile>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:87
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:24:<autosummary>:1
+msgid "Validated tile geometry for the SM120 packed-scale register pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TensorCoreIntrinEmitterSM120 <tilelang.cuda.intrinsics.macro."
+"mma_sm120_macro_generator.TensorCoreIntrinEmitterSM120>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:220
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:24:<autosummary>:1
+msgid "Warp-level MMA emitter, with optional SM120 block-scale mode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:172
+msgid "Return SFA/SFB semantic rows loaded by the current compact TV package."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:191
+msgid "Return semantic SFA/SFB rows consumed by one compact-selector issue."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:197
+msgid "Return the current copy/gemm package lifecycle from the CUDA helper."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:199
+msgid ""
+"Each tuple is ``(op, register_package, kblock)``.  Scale and A/B packages "
+"share the same register package id in the current implementation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:206
+msgid "Return the current per-warp OMMA.SF issue schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:208
+msgid ""
+"Each tuple is ``(mma_i, mma_j, n8_half, sfa_word, sfb_word, "
+"scale_a_thread_id, scale_b_thread_id)``.  ``sfa_word`` and ``sfb_word`` are "
+"indices inside the current compact-selector scale package, not source-memory "
+"offsets."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:217
+msgid ""
+"Bases: :py:obj:`tilelang.cuda.intrinsics.macro.mma_macro_generator."
+"TensorCoreIntrinEmitter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:222
+msgid ""
+"The block-scale mode keeps scale-factor storage explicit, matching "
+"TileLang's TCGEN05 block-scaled style while targeting warp-level ``mma."
+"sync``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:246
+msgid "Load SM120 block-scale fragments into local registers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:248
+msgid ""
+"This is currently a thin wrapper over the existing scale-word load. The "
+"separate name gives the SM120 MMA lowering a stable hook for a CUTLASS-like "
+"scale-fragment copy path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:256
+msgid "Emit an SM120 full-tile block-scaled MMA register micro-pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_sm120_macro_generator/index.rst:262
+msgid "Issue one SM120 block-scaled MMA atom from a full B fragment tile."
+msgstr ""

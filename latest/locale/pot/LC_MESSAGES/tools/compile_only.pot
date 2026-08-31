@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tools/compile_only.md:1
+msgid "Compile-Only Tool"
+msgstr ""
+
+#: ../../../tools/compile_only.md:3
+msgid ""
+"`python -m tilelang.tools.compile_only` lowers a TileLang program to "
+"inspectable kernel source without running it. No GPU, CUDA driver, or device "
+"compilation is required: the tool stops after `tilelang.lower(..., "
+"enable_device_compile=False)` and writes the generated kernel source to a "
+"file. It backs the TileLang integration in [Compiler Explorer](https://"
+"godbolt.org) and is equally useful for inspecting locally what `lower()` "
+"produces for a kernel."
+msgstr ""
+
+#: ../../../tools/compile_only.md:11
+msgid "Requirements"
+msgstr ""
+
+#: ../../../tools/compile_only.md:13
+msgid ""
+"The tool ships with the standard TileLang installation and has no optional "
+"dependencies. The default `c` target works on any machine, including CPU-"
+"only hosts. `--target cuda` requires a wheel whose CUDA codegen FFI is "
+"compiled in: Linux wheels include it and can emit CUDA source without a GPU "
+"present, while macOS Metal wheels do not and fail with a clear `CUDA codegen "
+"FFI missing` message instead of an `AttributeError`."
+msgstr ""
+
+#: ../../../tools/compile_only.md:20
+msgid "Quick Start"
+msgstr ""
+
+#: ../../../tools/compile_only.md:22
+msgid ""
+"Write a self-contained example that defines a kernel but never launches it:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:24
+msgid ""
+"# example.py\n"
+"import tilelang\n"
+"import tilelang.language as T\n"
+"\n"
+"\n"
+"@tilelang.jit\n"
+"def add(A, B):\n"
+"    N = 64\n"
+"    A: T.Tensor((N,), T.float16)\n"
+"    B: T.Tensor((N,), T.float16)\n"
+"    C = T.empty((N,), T.float16)\n"
+"    with T.Kernel(1, threads=64):\n"
+"        for i in T.Parallel(N):\n"
+"            C[i] = A[i] + B[i]\n"
+"    return C\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:42
+msgid "Compile it to CPU C source:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:44
+msgid ""
+"python -I -m tilelang.tools.compile_only --output_file out.c example.py\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:48
+msgid "`out.c` then contains the generated kernel source:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:50
+msgid ""
+"// tilelang target: {\"kind\":\"c\",\"tag\":\"\",\"keys\":[\"cpu\"],\"host\":"
+"{\"kind\":\"c\",\"tag\":\"\",\"keys\":[\"cpu\"]}}\n"
+"#include <tl_templates/cpp/common.h>\n"
+"\n"
+"#ifdef __cplusplus\n"
+"extern \"C\"\n"
+"#endif\n"
+"int32_t add_kernel(half* A, half* B, half* C);\n"
+"#ifdef __cplusplus\n"
+"extern \"C\"\n"
+"#endif\n"
+"int32_t add_kernel(half* A, half* B, half* C) {\n"
+"  for (int32_t i = 0; i < 8; ++i) {\n"
+"    *(half8*)(C + (i * 8)) = (*(half8*)(A + (i * 8)) + *(half8*)(B + (i * "
+"8)));\n"
+"  }\n"
+"  return 0;\n"
+"}\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:69
+msgid ""
+"CUDA source generation works the same way and still needs no GPU; the "
+"architecture is pinned instead of detected:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:72
+msgid ""
+"python -I -m tilelang.tools.compile_only --target cuda --output_file out.cu "
+"example.py\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:76
+msgid ""
+"extern \"C\" __global__ void __launch_bounds__(64, 1) add_kernel(const "
+"half_t* __restrict__ A, const half_t* __restrict__ B, half_t* __restrict__ "
+"C) {\n"
+"  C[((int)threadIdx.x)] = (A[((int)threadIdx.x)] + B[((int)threadIdx.x)]);\n"
+"}\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:82
+msgid "How the Input Is Processed"
+msgstr ""
+
+#: ../../../tools/compile_only.md:84
+msgid ""
+"The input file is imported as a regular Python module, so its top-level code "
+"runs. Keep examples compile-only: define kernels, do not launch them or "
+"allocate tensors at import time. Running the CLI with `python -I` (isolated "
+"mode) is recommended, and is how Compiler Explorer invokes it."
+msgstr ""
+
+#: ../../../tools/compile_only.md:88
+msgid ""
+"The first `@tilelang.jit` function or `PrimFunc` in module order is "
+"selected. Objects are inspected in definition order, so a `PrimFunc` defined "
+"before a `@tilelang.jit` kernel wins."
+msgstr ""
+
+#: ../../../tools/compile_only.md:91
+msgid ""
+"The kernel is lowered but never device-compiled or executed, so no tensor "
+"arguments are needed and no GPU is touched."
+msgstr ""
+
+#: ../../../tools/compile_only.md:94
+msgid "CLI Reference"
+msgstr ""
+
+#: ../../../tools/compile_only.md:96
+msgid ""
+"python -I -m tilelang.tools.compile_only [--target TARGET] --output_file "
+"OUTPUT input_file\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "Argument"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "Meaning"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`input_file`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "Compile-only example file. Imported, never launched."
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`--output_file`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid ""
+"Required destination for the generated kernel source. Must not name the "
+"input file (symlinks to it are also rejected)."
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`--target`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "Explicit target. Defaults to `c`."
+msgstr ""
+
+#: ../../../tools/compile_only.md:106
+msgid ""
+"On success the CLI exits with `0` and writes the source to `--output_file`. "
+"On any failure it exits with `1`, prints a single `tilelang compile-only "
+"error: ...` line to stderr, and leaves no stale output behind: a previous "
+"artifact at `--output_file` is removed before compilation, so a failed rerun "
+"cannot leave an earlier run's source for a consumer such as Compiler "
+"Explorer to read."
+msgstr ""
+
+#: ../../../tools/compile_only.md:113
+msgid "Targets"
+msgstr ""
+
+#: ../../../tools/compile_only.md:115
+msgid ""
+"Targets must be explicit. `auto` performs device detection and is therefore "
+"rejected, as a plain string and in JSON form:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:118
+msgid ""
+"$ python -I -m tilelang.tools.compile_only --target auto --output_file out.c "
+"example.py\n"
+"tilelang compile-only error: target must be explicit; do not use auto\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`--target` value"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "Behavior"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`c` (default)"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "CPU C source. Works on every wheel, no GPU needed."
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`cuda`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "CUDA source pinned to `sm_80`, so no device detection happens."
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`cuda -arch=sm_90`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid ""
+"CUDA source for the given architecture. Options must look like `-key=value`."
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`{\"kind\": \"cuda\", \"arch\": \"sm_90\"}`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid ""
+"JSON target. A bare `{\"kind\": \"cuda\"}` is pinned to `sm_80`; `{\"kind\": "
+"\"auto\"}` is rejected."
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "`auto`"
+msgstr ""
+
+#: ../../../tools/compile_only.md:0
+msgid "Rejected: `target must be explicit; do not use auto`."
+msgstr ""
+
+#: ../../../tools/compile_only.md:131
+msgid ""
+"On wheels without the CUDA codegen FFI (for example macOS Metal wheels), "
+"every CUDA target form fails softly with `tilelang compile-only error: CUDA "
+"codegen FFI missing (e.g. macOS Metal wheel); use default --target c`."
+msgstr ""
+
+#: ../../../tools/compile_only.md:136
+msgid "Error Reporting"
+msgstr ""
+
+#: ../../../tools/compile_only.md:138
+msgid ""
+"Compile problems are reported as diagnostics on stderr with exit code `1`, "
+"not as tracebacks about missing GPUs or drivers:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:141
+msgid ""
+"$ python -I -m tilelang.tools.compile_only --output_file out.c broken.py\n"
+"tilelang compile-only error: no @tilelang.jit kernel or PrimFunc found\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:146
+msgid ""
+"Syntax errors in the input, missing input files, and empty kernels are "
+"reported the same way."
+msgstr ""
+
+#: ../../../tools/compile_only.md:149
+msgid "Line Directives"
+msgstr ""
+
+#: ../../../tools/compile_only.md:151
+msgid ""
+"When the installed build registers the `tl.emit_line_directives` pass config "
+"(`PassConfigKey.TL_EMIT_LINE_DIRECTIVES`), the tool enables it automatically "
+"and the generated source carries `#line <n> \"<input_file>\"` directives "
+"that map each statement back to the originating line of the example. "
+"Compiler Explorer uses these to link generated source to the input pane. "
+"Older wheels without the config key simply produce source without `#line` "
+"directives; no flag is needed either way."
+msgstr ""
+
+#: ../../../tools/compile_only.md:159
+msgid "Programmatic API"
+msgstr ""
+
+#: ../../../tools/compile_only.md:161
+msgid "The same functionality is available in Python:"
+msgstr ""
+
+#: ../../../tools/compile_only.md:163
+msgid ""
+"from tilelang.tools.compile_only import compile_kernel_source\n"
+"\n"
+"source = compile_kernel_source(add.get_tir())              # default target "
+"\"c\"\n"
+"cuda_source = compile_kernel_source(add.get_tir(), \"cuda\")  # pinned to "
+"sm_80\n"
+msgstr ""
+
+#: ../../../tools/compile_only.md:170
+msgid ""
+"`compile_kernel_source(func, target=\"c\")` lowers a `PrimFunc` (for example "
+"from `JITImpl.get_tir()`) and returns the non-empty kernel source string."
+msgstr ""
+
+#: ../../../tools/compile_only.md:172
+msgid ""
+"`resolve_target(target)` maps a CLI-style target string to the explicit "
+"target passed to `lower()`, applying the rules from the table above."
+msgstr ""
+
+#: ../../../tools/compile_only.md:174
+msgid ""
+"`cuda_codegen_available()` reports whether the installed wheel can lower "
+"CUDA targets."
+msgstr ""
+
+#: ../../../tools/compile_only.md:177
+msgid "Limitations"
+msgstr ""
+
+#: ../../../tools/compile_only.md:179
+msgid ""
+"Only the first `@tilelang.jit` kernel or `PrimFunc` in the module is "
+"compiled; additional kernels in the same file are ignored."
+msgstr ""
+
+#: ../../../tools/compile_only.md:181
+msgid ""
+"The output is lowered kernel source, not a compiled binary: nothing is "
+"passed to `nvcc`, and PTX/SASS is out of scope."
+msgstr ""
+
+#: ../../../tools/compile_only.md:183
+msgid ""
+"The input file is executed with the invoking Python interpreter. Treat it "
+"like any script you run: `python -I` isolates it from your environment but "
+"does not sandbox it."
+msgstr ""

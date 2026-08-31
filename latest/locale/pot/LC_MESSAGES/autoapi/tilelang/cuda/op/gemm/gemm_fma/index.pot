@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:2
+msgid "tilelang.cuda.op.gemm.gemm_fma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:8
+msgid "CUDA scalar FMA fallback GEMM."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:10
+msgid ""
+"Used when a tensor-core MMA path is unavailable for the requested dtype, "
+"layout, or shape combination (e.g. BF16 on SM70 Volta, or shapes that do not "
+"satisfy the SM70 MMA tile constraints). Each thread computes a strided "
+"subset of the output tile using ordinary CUDA-core fused multiply-add "
+"instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:18
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`GEMM_INST_FMA <tilelang.cuda.op.gemm.gemm_fma.GEMM_INST_FMA>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:26
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:32:<autosummary>:1
+msgid ":py:obj:`GemmFMA <tilelang.cuda.op.gemm.gemm_fma.GemmFMA>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:45
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:32:<autosummary>:1
+msgid "CUDA scalar FMA fallback for GEMM combinations without tensor-core MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:34
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:42
+msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:50
+msgid "Assign the linear fragment layout to any fragment operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:56
+msgid "Emit the FMA-fallback GEMM prim_func."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_fma/index.rst:58
+msgid ""
+"Each thread accumulates its assigned output elements with a scalar loop over "
+"``K``. Shared operands are read directly; fragment operands are staged into "
+"shared memory first so all threads can read the full tile. Casts widen "
+"operands to ``accum_dtype`` before multiplication so narrow input dtypes "
+"stay numerically sound (e.g. BF16 to FP32 accumulation on Volta). This path "
+"favors correctness and coverage over peak throughput."
+msgstr ""

@@ -1,0 +1,671 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tools/iket.md:1
+msgid "IKET Profiling"
+msgstr ""
+
+#: ../../../tools/iket.md:3
+msgid ""
+"IKET is an experimental instrumentation tool for profiling TileLang CUDA "
+"kernels. It adds named markers, warp-local ranges, and optional scalar "
+"payloads to generated CUDA code. The external IKET profiler collects those "
+"events and exports traces that can be inspected with Perfetto."
+msgstr ""
+
+#: ../../../tools/iket.md:8
+msgid "IKET is a CUDA tool, not part of the TileLang language namespace:"
+msgstr ""
+
+#: ../../../tools/iket.md:10
+msgid ""
+"import tilelang.language as T\n"
+"from tilelang.tools.cuda import iket\n"
+msgstr ""
+
+#: ../../../tools/iket.md:15
+msgid ""
+"The integration uses TileLang's regular `target=\"cuda\"` backend. It does "
+"not depend on TileScale or the CuTe DSL frontend."
+msgstr ""
+
+#: ../../../tools/iket.md:18
+msgid "Requirements"
+msgstr ""
+
+#: ../../../tools/iket.md:20
+msgid "The target environment must provide:"
+msgstr ""
+
+#: ../../../tools/iket.md:22
+msgid "TileLang with CUDA support"
+msgstr ""
+
+#: ../../../tools/iket.md:23
+msgid "A CUDA-capable GPU and driver"
+msgstr ""
+
+#: ../../../tools/iket.md:24
+msgid "PyTorch, when running the included examples"
+msgstr ""
+
+#: ../../../tools/iket.md:25
+msgid "The external IKET Python package and runtime"
+msgstr ""
+
+#: ../../../tools/iket.md:27
+msgid "Verify the active Python environment with:"
+msgstr ""
+
+#: ../../../tools/iket.md:29
+msgid "python -c \"import tilelang, iket, torch\"\n"
+msgstr ""
+
+#: ../../../tools/iket.md:33
+msgid ""
+"The TileLang code-generation path supports both pre-Hopper and Hopper "
+"targets. For SM90 and newer, generated instrumentation reads "
+"`%cluster_ctarank`. For pre-Hopper targets, or when the target architecture "
+"cannot be determined, it uses cluster rank `0` and does not emit the Hopper-"
+"only register."
+msgstr ""
+
+#: ../../../tools/iket.md:38
+msgid "Quick Start"
+msgstr ""
+
+#: ../../../tools/iket.md:40
+msgid ""
+"Construct and compile the instrumented kernel inside `iket.session(...)`:"
+msgstr ""
+
+#: ../../../tools/iket.md:42
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang.tools.cuda import iket\n"
+"\n"
+"\n"
+"def instrumented_add(n: int, threads: int = 128):\n"
+"    @T.prim_func\n"
+"    def main(\n"
+"        A: T.Tensor((n,), T.float32),\n"
+"        B: T.Tensor((n,), T.float32),\n"
+"        C: T.Tensor((n,), T.float32),\n"
+"    ):\n"
+"        with T.Kernel(T.ceildiv(n, threads), threads=threads) as bx:\n"
+"            with iket.range(\"block_total\"):\n"
+"                for tx in T.Parallel(threads):\n"
+"                    i = bx * threads + tx\n"
+"                    if i < n:\n"
+"                        iket.mark(\"before_store\")\n"
+"                        C[i] = A[i] + B[i]\n"
+"                        iket.mark(\"after_store\")\n"
+"\n"
+"    return main\n"
+"\n"
+"\n"
+"with iket.session(output_dir=\"/tmp/tilelang_iket\"):\n"
+"    program = instrumented_add(1024)\n"
+"    kernel = tilelang.compile(\n"
+"        program,\n"
+"        out_idx=-1,\n"
+"        target=\"cuda\",\n"
+"        execution_backend=\"cython\",\n"
+"    )\n"
+msgstr ""
+
+#: ../../../tools/iket.md:77
+msgid ""
+"The session must be active when `tilelang.compile(...)` generates CUDA "
+"source. Kernel construction inside the session is recommended because it "
+"gives the session a fresh event registry, but it is not required. Event "
+"metadata is embedded in TIR, so a `PrimFunc` constructed before entering the "
+"session still retains the information needed during compilation."
+msgstr ""
+
+#: ../../../tools/iket.md:83
+msgid ""
+"Running a program directly compiles and executes the instrumented kernel. To "
+"collect a trace, run the program through the external IKET profiler as "
+"described below."
+msgstr ""
+
+#: ../../../tools/iket.md:87
+msgid "Markers and Ranges"
+msgstr ""
+
+#: ../../../tools/iket.md:89
+msgid "Use `iket.mark(...)` for an instant event:"
+msgstr ""
+
+#: ../../../tools/iket.md:91
+msgid "iket.mark(\"load_inputs\")\n"
+msgstr ""
+
+#: ../../../tools/iket.md:95
+msgid ""
+"Use `iket.range(...)` as a Python context manager around a lexical region:"
+msgstr ""
+
+#: ../../../tools/iket.md:97
+msgid ""
+"with iket.range(\"compute\"):\n"
+"    # TileLang statements\n"
+"    ...\n"
+msgstr ""
+
+#: ../../../tools/iket.md:103
+msgid "The explicit range APIs are also available:"
+msgstr ""
+
+#: ../../../tools/iket.md:105
+msgid ""
+"iket.range_push(\"compute\")\n"
+"# TileLang statements\n"
+"iket.range_pop(\"compute\")\n"
+msgstr ""
+
+#: ../../../tools/iket.md:111
+msgid ""
+"`iket.range_start(...)` and `iket.range_end(...)` are aliases for "
+"`range_push(...)` and `range_pop(...)`. A range start can carry a payload, "
+"but the range-end event cannot."
+msgstr ""
+
+#: ../../../tools/iket.md:115
+msgid ""
+"IKET records ranges at warp granularity. A block containing four warps can "
+"therefore produce four trace ranges for one lexical `iket.range(...)` scope. "
+"Names are limited to 32 UTF-8 bytes. Reusing the same marker or range name "
+"with different payload dtypes in one frontend registry is rejected."
+msgstr ""
+
+#: ../../../tools/iket.md:120
+msgid "Runtime Payloads"
+msgstr ""
+
+#: ../../../tools/iket.md:122
+msgid ""
+"Markers and range starts can capture one 32-bit scalar value. TileLang "
+"currently supports these payload dtypes:"
+msgstr ""
+
+#: ../../../tools/iket.md:125
+msgid "`int32`"
+msgstr ""
+
+#: ../../../tools/iket.md:126
+msgid "`uint32`"
+msgstr ""
+
+#: ../../../tools/iket.md:127
+msgid "`float32`"
+msgstr ""
+
+#: ../../../tools/iket.md:129
+msgid "Use an explicit payload descriptor for TileLang expressions:"
+msgstr ""
+
+#: ../../../tools/iket.md:131
+msgid ""
+"iket.mark(\"store_index\", payload=iket.payload(i, dtype=\"int32\"))\n"
+"iket.mark(\"scale\", payload=iket.payload(value, dtype=\"float32\"))\n"
+msgstr ""
+
+#: ../../../tools/iket.md:136
+msgid ""
+"Simple Python scalars and expressions with a `dtype` attribute can be passed "
+"directly, but an explicit dtype makes the trace schema unambiguous."
+msgstr ""
+
+#: ../../../tools/iket.md:139
+msgid "Runtime capture is opt-in:"
+msgstr ""
+
+#: ../../../tools/iket.md:141
+msgid ""
+"with iket.session(runtime_payloads=True):\n"
+"    program = instrumented_add(1024)\n"
+"    kernel = tilelang.compile(program, target=\"cuda\")\n"
+msgstr ""
+
+#: ../../../tools/iket.md:147
+msgid ""
+"Without `runtime_payloads=True`, the payload schema remains encoded in the "
+"TIR metadata token, but the emitted IKET metadata declares `NoPayload` and "
+"the generated event writes no payload value. This keeps ordinary marker "
+"records at four bytes. With runtime payloads enabled, the event emits "
+"separate 32-bit timestamp and payload stores."
+msgstr ""
+
+#: ../../../tools/iket.md:153
+msgid ""
+"Payloads are observed through IKET's warp-level dump mechanism. A payload "
+"value usually represents the lane selected by that mechanism, not every "
+"thread in the warp."
+msgstr ""
+
+#: ../../../tools/iket.md:157
+msgid "Compilation Sessions and Cache Behavior"
+msgstr ""
+
+#: ../../../tools/iket.md:159
+msgid "The full session signature is:"
+msgstr ""
+
+#: ../../../tools/iket.md:161
+msgid ""
+"with iket.session(\n"
+"    reset_events=True,\n"
+"    override=True,\n"
+"    disable_on_exit=True,\n"
+"    output_dir=None,\n"
+"    runtime_payloads=None,\n"
+"    disable_cache=True,\n"
+"):\n"
+"    ...\n"
+msgstr ""
+
+#: ../../../tools/iket.md:173
+msgid "The parameters control the following state:"
+msgstr ""
+
+#: ../../../tools/iket.md:175
+msgid ""
+"`reset_events` clears frontend event allocation for kernels constructed "
+"afterward. Metadata already embedded in a `PrimFunc` is unaffected."
+msgstr ""
+
+#: ../../../tools/iket.md:177
+msgid ""
+"`override` permits IKET to replace an existing "
+"`tilelang_callback_cuda_postproc` callback while the outermost session is "
+"active."
+msgstr ""
+
+#: ../../../tools/iket.md:180
+msgid ""
+"`disable_on_exit` restores the previous callback by default. Leave this at "
+"its default for scoped use."
+msgstr ""
+
+#: ../../../tools/iket.md:182
+msgid ""
+"`output_dir` creates the directory, sets `TL_IKET_OUTPUT_DIR`, and "
+"configures TileLang's IKET path helpers for the duration of the session."
+msgstr ""
+
+#: ../../../tools/iket.md:184
+msgid ""
+"`runtime_payloads` temporarily selects whether payload values are emitted. "
+"`None` preserves the previous setting."
+msgstr ""
+
+#: ../../../tools/iket.md:186
+msgid ""
+"`disable_cache` bypasses TileLang's `KernelCache` by default and restores "
+"its previous state when the session exits."
+msgstr ""
+
+#: ../../../tools/iket.md:189
+msgid ""
+"Disabling the kernel cache is important even though event names and schemas "
+"are part of the TIR cache identity. Callback activation and runtime payload "
+"mode are host-side compilation state. Reusing a binary compiled without the "
+"callback, or under a different payload mode, can therefore produce missing "
+"or stale instrumentation. Set `disable_cache=False` only when the caller "
+"controls those conditions."
+msgstr ""
+
+#: ../../../tools/iket.md:196
+msgid ""
+"The CUDA callback is reference-counted. Nested IKET sessions keep the outer "
+"callback active, and leaving the outermost session restores the callback "
+"that was registered before IKET. Output-directory, payload-mode, and cache "
+"state are also restored after the session."
+msgstr ""
+
+#: ../../../tools/iket.md:201
+msgid "The lower-level lifecycle helpers are available for advanced use:"
+msgstr ""
+
+#: ../../../tools/iket.md:203
+msgid ""
+"iket.enable()\n"
+"iket.is_enabled()\n"
+"iket.disable()\n"
+"\n"
+"iket.enable_runtime_payloads()\n"
+"iket.runtime_payloads_enabled()\n"
+"iket.disable_runtime_payloads()\n"
+msgstr ""
+
+#: ../../../tools/iket.md:213
+msgid ""
+"Prefer `iket.session(...)` so cleanup also occurs when compilation raises an "
+"exception."
+msgstr ""
+
+#: ../../../tools/iket.md:216
+msgid "Collecting a Trace"
+msgstr ""
+
+#: ../../../tools/iket.md:218
+msgid "The external profiler is exposed through:"
+msgstr ""
+
+#: ../../../tools/iket.md:220
+msgid "python -m iket.cli.main\n"
+msgstr ""
+
+#: ../../../tools/iket.md:224
+msgid "For the comprehensive example, use:"
+msgstr ""
+
+#: ../../../tools/iket.md:226
+msgid ""
+"rm -rf /tmp/tilelang_iket_all_features_profile\n"
+"\n"
+"python -m iket.cli.main \\\n"
+"  --output-dir /tmp/tilelang_iket_all_features_profile \\\n"
+"  --clobber \\\n"
+"  profile \\\n"
+"  --postprocess all \\\n"
+"  -- \\\n"
+"  python examples/iket/all_features.py \\\n"
+"    --iket-output-dir /tmp/tilelang_iket_all_features_profile \\\n"
+"    --iket-runtime-payloads\n"
+msgstr ""
+
+#: ../../../tools/iket.md:240
+msgid ""
+"The profiler configures the external IKET runtime and launches the command "
+"after `--`. The output directory can contain:"
+msgstr ""
+
+#: ../../../tools/iket.md:243
+msgid ""
+"iket_pid_0x....pftrace\n"
+"iket_pid_0x....pftrace.gz\n"
+"iket_pid_0x....trace.json\n"
+"iket_pid_0x....html\n"
+msgstr ""
+
+#: ../../../tools/iket.md:250
+msgid "TileLang can construct the same shell command from Python:"
+msgstr ""
+
+#: ../../../tools/iket.md:252
+msgid ""
+"command = iket.profile_command(\n"
+"    [\"python\", \"examples/iket/all_features.py\", \"--iket-runtime-"
+"payloads\"],\n"
+"    directory=\"/tmp/tilelang_iket_all_features_profile\",\n"
+")\n"
+"print(command)\n"
+msgstr ""
+
+#: ../../../tools/iket.md:260
+msgid ""
+"`profile_command(...)` only returns a quoted command string. It does not "
+"launch the profiler."
+msgstr ""
+
+#: ../../../tools/iket.md:263
+msgid "Viewing and Inspecting Traces"
+msgstr ""
+
+#: ../../../tools/iket.md:265
+msgid ""
+"Serve the profiler output directory so the generated HTML can load its "
+"adjacent trace file:"
+msgstr ""
+
+#: ../../../tools/iket.md:268
+msgid ""
+"cd /tmp/tilelang_iket_all_features_profile\n"
+"python3 -m http.server 8080\n"
+msgstr ""
+
+#: ../../../tools/iket.md:273
+msgid "Then open the exact generated file, for example:"
+msgstr ""
+
+#: ../../../tools/iket.md:275
+msgid "http://localhost:8080/iket_pid_0x....html\n"
+msgstr ""
+
+#: ../../../tools/iket.md:279
+msgid "On a remote host, forward the port with:"
+msgstr ""
+
+#: ../../../tools/iket.md:281
+msgid "ssh -L 8080:localhost:8080 user@remote-host\n"
+msgstr ""
+
+#: ../../../tools/iket.md:285
+msgid ""
+"If the generated page shows only the Perfetto landing page, import the "
+"matching `.pftrace` file manually in the Perfetto UI."
+msgstr ""
+
+#: ../../../tools/iket.md:288
+msgid ""
+"The following image shows a trace produced by `examples/iket/all_features."
+"py`:"
+msgstr ""
+
+#: ../../../tools/iket.md:290
+msgid "IKET events from a TileLang CUDA kernel in the Perfetto timeline"
+msgstr ""
+
+#: ../../../tools/iket.md:294
+msgid "IKET ranges, markers, and runtime payload events in Perfetto."
+msgstr ""
+
+#: ../../../tools/iket.md:297
+msgid "The JSON export can be inspected programmatically:"
+msgstr ""
+
+#: ../../../tools/iket.md:299
+msgid ""
+"import json\n"
+"from pathlib import Path\n"
+"\n"
+"trace_path = max(\n"
+"    Path(\"/tmp/tilelang_iket_all_features_profile\").glob(\"*.trace."
+"json\"),\n"
+"    key=lambda path: path.stat().st_size,\n"
+")\n"
+"data = json.loads(trace_path.read_text())\n"
+"launch = data[\"launches\"][0]\n"
+"names = data[\"stringTable\"]\n"
+"\n"
+"store_indices = [\n"
+"    marker[\"payloadVal\"]\n"
+"    for marker in launch[\"markers\"]\n"
+"    if names[marker[\"markerNameIdx\"]] == \"store_index\"\n"
+"    and \"payloadVal\" in marker\n"
+"]\n"
+"print(store_indices[:8])\n"
+msgstr ""
+
+#: ../../../tools/iket.md:320
+msgid "Output Helpers"
+msgstr ""
+
+#: ../../../tools/iket.md:322
+msgid "The CUDA tool includes small host-side helpers:"
+msgstr ""
+
+#: ../../../tools/iket.md:324
+msgid ""
+"iket.set_output_dir(\"/tmp/tilelang_iket\")\n"
+"iket.output_dir()\n"
+"iket.output_path(\"kernel.cu\")\n"
+"iket.trace_files()\n"
+"iket.profile_command([...], directory=\"/tmp/tilelang_iket\")\n"
+msgstr ""
+
+#: ../../../tools/iket.md:332
+msgid ""
+"`trace_files(...)` returns `.trace.json` files ordered from largest to "
+"smallest. The helpers manage paths and command construction only; they do "
+"not collect a trace themselves."
+msgstr ""
+
+#: ../../../tools/iket.md:336
+msgid ""
+"`iket.event_table()` returns the events registered while constructing recent "
+"kernels. It is useful for inspection, but it is not the code-generation "
+"source of truth. Call `iket.reset()` to reset frontend event allocation "
+"explicitly."
+msgstr ""
+
+#: ../../../tools/iket.md:340
+msgid "How Instrumentation Survives Compilation"
+msgstr ""
+
+#: ../../../tools/iket.md:342
+msgid ""
+"Each frontend event call carries a canonical metadata token in TIR. The "
+"token contains the event name, kind, range identity, and payload schema. "
+"This has two important consequences:"
+msgstr ""
+
+#: ../../../tools/iket.md:346
+msgid ""
+"A prebuilt `PrimFunc` retains its event metadata across session entry and "
+"frontend registry resets."
+msgstr ""
+
+#: ../../../tools/iket.md:348
+msgid ""
+"Structurally similar kernels with different event names have different IR "
+"cache identities."
+msgstr ""
+
+#: ../../../tools/iket.md:351
+msgid ""
+"While the session is active, `tilelang_callback_cuda_postproc` recovers "
+"those tokens from generated CUDA, assigns module-wide event IDs, emits IKET "
+"metadata arrays, and defines the NativeDump event macros. Event names are "
+"not recovered from the process-local `event_table()` registry."
+msgstr ""
+
+#: ../../../tools/iket.md:356
+msgid ""
+"No-payload events write one 32-bit timestamp/event record. Payload events "
+"write the timestamp and payload with two separate 32-bit shared-memory "
+"stores. The payload store is volatile so ptxas does not combine the pair "
+"into `STS.64`, a record shape that the current external IKET patcher does "
+"not accept."
+msgstr ""
+
+#: ../../../tools/iket.md:361
+msgid "Limitations"
+msgstr ""
+
+#: ../../../tools/iket.md:363
+msgid "Only the TileLang CUDA backend is supported."
+msgstr ""
+
+#: ../../../tools/iket.md:364
+msgid "Runtime payloads are limited to `int32`, `uint32`, and `float32`."
+msgstr ""
+
+#: ../../../tools/iket.md:365
+msgid "Event and range names are limited to 32 UTF-8 bytes."
+msgstr ""
+
+#: ../../../tools/iket.md:366
+msgid ""
+"Source-code location tables are not generated. Trace `locIdx` values are "
+"IKET runtime location indices, not Python or TIR line numbers."
+msgstr ""
+
+#: ../../../tools/iket.md:368
+msgid "IKET records events at warp granularity."
+msgstr ""
+
+#: ../../../tools/iket.md:369
+msgid ""
+"The callback, payload mode, event registry, and kernel-cache switch are "
+"process-global. Concurrent compilation workflows must coordinate access."
+msgstr ""
+
+#: ../../../tools/iket.md:371
+msgid ""
+"The integration depends on private metadata and NativeDump conventions of "
+"the external IKET runtime and should be treated as experimental."
+msgstr ""
+
+#: ../../../tools/iket.md:374
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../tools/iket.md:376
+msgid "Payload schemas appear without `payloadVal`"
+msgstr ""
+
+#: ../../../tools/iket.md:378
+msgid "Compile the kernel under a session with runtime payloads enabled:"
+msgstr ""
+
+#: ../../../tools/iket.md:380
+msgid ""
+"with iket.session(runtime_payloads=True):\n"
+"    kernel = tilelang.compile(program, target=\"cuda\")\n"
+msgstr ""
+
+#: ../../../tools/iket.md:385
+msgid "Also verify that the marker has a supported payload descriptor."
+msgstr ""
+
+#: ../../../tools/iket.md:387
+msgid "The profiler fails while patching a payload kernel"
+msgstr ""
+
+#: ../../../tools/iket.md:389
+msgid ""
+"Payload instrumentation requires two separate 32-bit stores. Inspect the "
+"generated binary with:"
+msgstr ""
+
+#: ../../../tools/iket.md:392
+msgid "nvdisasm kernel.cubin | grep -E \"STS|PMTRIG\"\n"
+msgstr ""
+
+#: ../../../tools/iket.md:396
+msgid "The expected shape is:"
+msgstr ""
+
+#: ../../../tools/iket.md:398
+msgid ""
+"STS [addr], timestamp_with_event_id\n"
+"STS [addr+0x4], payload_value\n"
+"PMTRIG event_id\n"
+msgstr ""
+
+#: ../../../tools/iket.md:404
+msgid ""
+"An `STS.64` for the timestamp/payload pair indicates that the "
+"instrumentation sequence no longer matches IKET's NativeDump patching "
+"convention."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,9 +35,10 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:14
 msgid ""
-"The barrier: 1. __syncthreads() within each block 2. Thread 0 atomically "
-"increments global counter, spin-waits until all blocks arrive 3. Thread 0 "
-"resets counter 4. __syncthreads() within each block"
+"The barrier: 1. __syncthreads() within each block 2. All threads execute a "
+"device-scope fence for prior global writes 3. Thread 0 atomically increments "
+"global counter and spin-waits until release 4. All threads wait for thread 0 "
+"and execute a device-scope fence before return"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:23

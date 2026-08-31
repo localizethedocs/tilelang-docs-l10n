@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:2
+msgid "tilelang.instrumentation.session"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:8
+msgid "Compile-scoped orchestration for TileLang instrumentation tools."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`CodegenEvent <tilelang.instrumentation.session.CodegenEvent>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:43
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:21:<autosummary>:1
+msgid "One explicit backend code-generation call within a compile session."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`PassInstrumentationTool <tilelang.instrumentation.session."
+"PassInstrumentationTool>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:60
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:21:<autosummary>:1
+msgid "Per-compile extension point for pass and codegen developer tools."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`CompilePassInstrumentationSession <tilelang.instrumentation.session."
+"CompilePassInstrumentationSession>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:96
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:21:<autosummary>:1
+msgid "Concrete pass-tool state owned by one logical compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`register_pass_instrumentation_tool <tilelang.instrumentation."
+"session.register_pass_instrumentation_tool>`\\ \\(name\\, factory\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:139
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Register or replace a factory used by future compile sessions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`unregister_pass_instrumentation_tool <tilelang.instrumentation."
+"session.unregister_pass_instrumentation_tool>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:144
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Stop adding a tool to future compile sessions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`current_compile_pass_instrumentation <tilelang.instrumentation."
+"session.current_compile_pass_instrumentation>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:149
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Return the compile session active in this execution context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`current_pass_instrument_context <tilelang.instrumentation.session."
+"current_pass_instrument_context>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:154
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+"Return metadata for the PassContext whose instruments are being created."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`compile_pass_instrumentation <tilelang.instrumentation.session."
+"compile_pass_instrumentation>`\\ \\(\\[name\\, tools\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:159
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Own pass-tool state for one logical compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`create_pass_instruments <tilelang.instrumentation.session."
+"create_pass_instruments>`\\ \\(\\*\\[\\, context\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:169
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Create instruments for the active compile session, if any."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`instrument_current_pass_context <tilelang.instrumentation.session."
+"instrument_current_pass_context>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:178
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Temporarily add active-session instruments to TVM's current context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`run_codegen_with_instrumentation <tilelang.instrumentation.session."
+"run_codegen_with_instrumentation>`\\ \\(name\\, mod\\, target\\, call\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:188
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Run an explicit backend codegen call through the active session."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`pass_pipeline <tilelang.instrumentation.session.pass_pipeline>`\\ "
+"\\(name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:193
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:37:<autosummary>:1
+msgid "Run a backend pipeline under its phase and compile-session tools."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:67
+msgid "Ordering key for PassContext callbacks; lower values run first."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:72
+msgid "Create fresh callback state for one TVM PassContext."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:78
+msgid "Return the scope entered around one backend pass pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:84
+msgid "Observe or wrap codegen, delegating to ``next_call`` exactly once."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:90
+msgid "Finalize this tool after its owning compile session exits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:109
+msgid "Create independent, ordered instruments for one TVM PassContext."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:115
+msgid "Enter every tool scope for one backend pass pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:121
+msgid "Compose tool codegen middleware in registration order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:127
+msgid "Finalize tools in reverse registration order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:133
+msgid "Return the first tool matching ``tool_type``, if present."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:161
+msgid ""
+"Nested compiler helpers reuse the active session by default, so every "
+"PassContext involved in one compilation writes to the same tool state. "
+"Independent tools such as Pass Visualizer can request a fresh session by "
+"setting ``reuse_existing=False`` and ``include_default_tools=False``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:171
+msgid ""
+"``context`` is descriptive metadata for this particular TVM PassContext. "
+"Tools can snapshot it during callback creation without changing their "
+"``create_pass_instrument`` interface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/instrumentation/session/index.rst:180
+msgid ""
+"Compiler front doors use this only when they created the compile session "
+"themselves. Nested helpers normally run inside a caller-owned "
+"``PassContext`` whose instruments were created from the same session, so "
+"they must not attach a duplicate set."
+msgstr ""

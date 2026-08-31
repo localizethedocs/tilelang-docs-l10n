@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:2
+msgid "tilelang.tools.cuda.iket.metadata"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:8
+msgid "Self-contained IKET event metadata carried through TIR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`TOKEN_PREFIX <tilelang.tools.cuda.iket.metadata.TOKEN_PREFIX>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`MAX_EVENT_NAME_BYTES <tilelang.tools.cuda.iket.metadata."
+"MAX_EVENT_NAME_BYTES>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:22
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:28:<autosummary>:1
+msgid ":py:obj:`Event <tilelang.tools.cuda.iket.metadata.Event>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:51
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:28:<autosummary>:1
+msgid "Metadata for one IKET event emitted by a TileLang kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:30
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`encode_event <tilelang.tools.cuda.iket.metadata.encode_event>`\\ "
+"\\(event\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:86
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:37:<autosummary>:1
+msgid "Encode an event as a source-safe token stored in a TIR StringImm."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`decode_event <tilelang.tools.cuda.iket.metadata.decode_event>`\\ "
+"\\(token\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:91
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:37:<autosummary>:1
+msgid "Decode and validate an event token recovered from generated CUDA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/metadata/index.rst:0
+msgid "Return type"
+msgstr ""

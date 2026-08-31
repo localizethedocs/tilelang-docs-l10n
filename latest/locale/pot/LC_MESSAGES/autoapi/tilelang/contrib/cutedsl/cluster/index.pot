@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:2
+msgid "tilelang.contrib.cutedsl.cluster"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_arrive_relaxed <tilelang.contrib.cutedsl.cluster."
+"cluster_arrive_relaxed>`\\ \\(\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_arrive <tilelang.contrib.cutedsl.cluster.cluster_arrive>`\\ "
+"\\(\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_wait <tilelang.contrib.cutedsl.cluster.cluster_wait>`\\ "
+"\\(\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`cluster_sync <tilelang.contrib.cutedsl.cluster.cluster_sync>`\\ "
+"\\(\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`block_rank_in_cluster <tilelang.contrib.cutedsl.cluster."
+"block_rank_in_cluster>`\\ \\(\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_try_cancel <tilelang.contrib.cutedsl.cluster.clc_try_cancel>`\\ "
+"\\(result\\_ptr\\, mbar\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_try_cancel_multicast <tilelang.contrib.cutedsl.cluster."
+"clc_try_cancel_multicast>`\\ \\(result\\_ptr\\, mbar\\_ptr\\, \\*\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_is_canceled <tilelang.contrib.cutedsl.cluster."
+"clc_is_canceled>`\\ \\(result\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_get_first_ctaid_x <tilelang.contrib.cutedsl.cluster."
+"clc_get_first_ctaid_x>`\\ \\(result\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_get_first_ctaid_y <tilelang.contrib.cutedsl.cluster."
+"clc_get_first_ctaid_y>`\\ \\(result\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`clc_get_first_ctaid_z <tilelang.contrib.cutedsl.cluster."
+"clc_get_first_ctaid_z>`\\ \\(result\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cluster/index.rst:0
+msgid "Parameters"
+msgstr ""

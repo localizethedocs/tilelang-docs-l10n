@@ -1,0 +1,493 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:2
+msgid "tilelang.cuda.intrinsics.layout.mma_layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_32x4_layout_sr_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x8_to_mma_32x4_layout_sr_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_32x4_layout_sr_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x8_to_mma_32x4_layout_sr_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_32x4_layout_rs_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x8_to_mma_32x4_layout_rs_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_32x4_layout_rs_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x8_to_mma_32x4_layout_rs_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_32x8_layout_sr_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_32x8_layout_sr_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_32x8_layout_sr_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_32x8_layout_sr_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_32x8_layout_rs_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_32x8_layout_rs_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_32x8_layout_rs_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_32x8_layout_rs_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_32x16_layout_sr_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x32_to_mma_32x16_layout_sr_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_32x16_layout_sr_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x32_to_mma_32x16_layout_sr_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_32x16_layout_rs_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x32_to_mma_32x16_layout_rs_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_32x16_layout_rs_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x32_to_mma_32x16_layout_rs_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x64_to_mma_32x32_layout_sr_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x64_to_mma_32x32_layout_sr_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x64_to_mma_32x32_layout_rs_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x64_to_mma_32x32_layout_rs_a>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_8x64_to_mma_32x16_layout_sr_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_8x64_to_mma_32x16_layout_sr_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`shared_8x64_to_mma_32x16_layout_rs_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_8x64_to_mma_32x16_layout_rs_b>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x4_to_shared_16x8_layout_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x4_to_shared_16x8_layout_a>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x4_to_shared_16x8_layout_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x4_to_shared_16x8_layout_b>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x8_to_shared_16x16_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x8_to_shared_16x16_layout>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_trans_32x8_to_shared_16x16_layout <tilelang.cuda."
+"intrinsics.layout.mma_layout.ldmatrix_trans_32x8_to_shared_16x16_layout>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x16_to_shared_16x32_layout_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x16_to_shared_16x32_layout_a>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x16_to_shared_16x32_layout_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x16_to_shared_16x32_layout_b>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`metal_ct_store_32x16_to_16x32_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.metal_ct_store_32x16_to_16x32_layout>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`metal_ct_store_index_map <tilelang.cuda.intrinsics.layout."
+"mma_layout.metal_ct_store_index_map>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_store_32x8_to_shared_16x16_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_store_32x8_to_shared_16x16_layout>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_store_32x2_to_shared_8x8_layout_fp64 <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_store_32x2_to_shared_8x8_layout_fp64>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_a_32x4_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x8_to_mma_a_32x4_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_a_32x4_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x8_to_mma_a_32x4_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_b_32x4_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x8_to_mma_b_32x4_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x8_to_mma_b_32x4_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x8_to_mma_b_32x4_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_a_32x8_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x16_to_mma_a_32x8_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_a_32x8_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_a_32x8_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_b_32x8_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x16_to_mma_b_32x8_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_b_32x8_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_b_32x8_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_a_32x16_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x32_to_mma_a_32x16_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_32x16_to_mma_a_32x16_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_32x16_to_mma_a_32x16_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_b_32x16_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x32_to_mma_b_32x16_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_32x16_to_mma_b_32x16_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_32x16_to_mma_b_32x16_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_32x8_to_shared_16x16_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.mma_32x8_to_shared_16x16_layout>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_a_32x4_to_shared_16x8_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_a_32x4_to_shared_16x8_layout>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_b_32x4_to_shared_16x8_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_b_32x4_to_shared_16x8_layout>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_a_32x16_to_shared_16x32_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_a_32x16_to_shared_16x32_layout>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_a_32x8_to_shared_16x16_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_a_32x8_to_shared_16x16_layout>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "groupID           = %laneid >> 2"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_b_32x16_to_shared_16x32_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_b_32x16_to_shared_16x32_layout>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_b_32x8_to_shared_16x16_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_b_32x8_to_shared_16x16_layout>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x64_to_mma_a_32x32_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_16x64_to_mma_a_32x32_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:186
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "A fragment layout for m16n8k64 e2m1 row-major operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_64x16_to_mma_a_32x32_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_64x16_to_mma_a_32x32_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_8x64_to_mma_b_32x16_layout <tilelang.cuda.intrinsics.layout."
+"mma_layout.shared_8x64_to_mma_b_32x16_layout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:193
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "B fragment layout for m16n8k64 e2m1 col-major operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_64x8_to_mma_b_32x16_layout_trans <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_64x8_to_mma_b_32x16_layout_trans>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x32_to_shared_16x64_layout_a <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x32_to_shared_16x64_layout_a>`\\ "
+"\\(thread\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:208
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "Row-start addresses for ldmatrix.x4 loading A m16k64 e2m1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x32_to_shared_16x64_layout_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x32_to_shared_16x64_layout_b>`\\ "
+"\\(thread\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:213
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "Row-start addresses for ldmatrix.x4 loading B n16k64 e2m1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`ldmatrix_32x16_to_shared_8x64_layout_b <tilelang.cuda.intrinsics."
+"layout.mma_layout.ldmatrix_32x16_to_shared_8x64_layout_b>`\\ "
+"\\(thread\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:218
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "Row-start addresses for ldmatrix.x2 loading B n8k64 e2m1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_a_32x32_to_shared_16x64_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_a_32x32_to_shared_16x64_layout>`\\ "
+"\\(thread\\_id\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:223
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "Inverse: (thread_id, local_id) -> (m, k) for A m16k64 e2m1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`mma_load_b_32x16_to_shared_8x64_layout <tilelang.cuda.intrinsics."
+"layout.mma_layout.mma_load_b_32x16_to_shared_8x64_layout>`\\ "
+"\\(thread\\_id\\, local\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:232
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid "Inverse: (thread_id, local_id) -> (n, k) for B n8k64 e2m1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x16_to_mma_32x8_smoothlayout <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x16_to_mma_32x8_smoothlayout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_16x32_to_mma_32x16_smoothlayout <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_16x32_to_mma_32x16_smoothlayout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`shared_32x16_to_mma_32x16_smoothlayout <tilelang.cuda.intrinsics."
+"layout.mma_layout.shared_32x16_to_mma_32x16_smoothlayout>`\\ \\(i\\, j\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`get_swizzle_layout <tilelang.cuda.intrinsics.layout.mma_layout."
+"get_swizzle_layout>`\\ \\(row\\_idx\\, col\\_idx\\, row\\_size\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:79:<autosummary>:1
+msgid ""
+":py:obj:`make_mma_swizzle_layout <tilelang.cuda.intrinsics.layout.mma_layout."
+"make_mma_swizzle_layout>`\\ \\(shared\\_buf\\[\\, is\\_smooth\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:81
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:161
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:175
+msgid "groupID           = %laneid >> 2 threadID_in_group = %laneid % 4"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:164
+msgid "row =      groupID            for ai where  0 <= i < 2 || 4 <= i < 6"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:165
+msgid "groupID + 8         Otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:167
+msgid ""
+"col =  (threadID_in_group * 2) + (i & 0x1)          for ai where i <  4 "
+"(threadID_in_group * 2) + (i & 0x1) + 8      for ai where i >= 4"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:178
+msgid ""
+"row =  (threadID_in_group * 2) + (i & 0x1)           for bi where i <  2"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:179
+msgid "(threadID_in_group * 2) + (i & 0x1) + 8       for bi where i >= 2"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:181
+msgid "col = groupID"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:225
+msgid ""
+"Matches CUTLASS/CuTe SM120 ALayout: Layout<Shape<Shape<_4,_8>, Shape<_8,_2,"
+"_2>>,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:227
+msgid "Stride<Stride<_128,_1>, Stride<_16,_8,_512>>>."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_layout/index.rst:0
+msgid "Parameters"
+msgstr ""

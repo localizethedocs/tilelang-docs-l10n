@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:2
+msgid "tilelang.backend.target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:18:<autosummary>:1
+msgid ":py:obj:`TargetConfig <tilelang.backend.target.TargetConfig>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:18:<autosummary>:1
+msgid ":py:obj:`TargetInput <tilelang.backend.target.TargetInput>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:18:<autosummary>:1
+msgid ":py:obj:`TargetLike <tilelang.backend.target.TargetLike>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:18:<autosummary>:1
+msgid ":py:obj:`TargetDetector <tilelang.backend.target.TargetDetector>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:18:<autosummary>:1
+msgid ":py:obj:`TargetNormalizer <tilelang.backend.target.TargetNormalizer>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:20
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`TargetDetectorSpec <tilelang.backend.target.TargetDetectorSpec>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`TargetNormalizerSpec <tilelang.backend.target."
+"TargetNormalizerSpec>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:29
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`register_target_detector <tilelang.backend.target."
+"register_target_detector>`\\ \\(name\\, detect\\, \\*\\[\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`register_target_normalizer <tilelang.backend.target."
+"register_target_normalizer>`\\ \\(name\\, normalize\\, \\*\\[\\, "
+"override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`auto_detect_target <tilelang.backend.target.auto_detect_target>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`list_target_detectors <tilelang.backend.target."
+"list_target_detectors>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`determine_target <tilelang.backend.target.determine_target>`\\ "
+"\\(\\[target\\, return\\_object\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:83
+#: ../../../autoapi/tilelang/backend/target/index.rst:39:<autosummary>:1
+msgid "Determine and validate the target for compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:41
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/target/index.rst:85
+msgid ""
+"Target detection and normalization is provided by registered target modules."
+msgstr ""

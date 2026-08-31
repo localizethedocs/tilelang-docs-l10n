@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/metal/transform/metal_fragment_to_simdgroup/index.rst:2
+msgid "tilelang.metal.transform.metal_fragment_to_simdgroup"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/transform/metal_fragment_to_simdgroup/index.rst:8
+msgid ""
+"Rewrite local.fragment to metal.simdgroup for legacy Metal GEMM accumulators."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/transform/metal_fragment_to_simdgroup/index.rst:10
+msgid ""
+"M5 cooperative-tensor GEMM keeps fragment/local buffers in regular scopes "
+"until Metal codegen sees explicit tl.cooperative_tensor_* builtins.  Only "
+"legacy simdgroup GEMM requires changing the accumulator scope before layout "
+"inference."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/transform/metal_fragment_to_simdgroup/index.rst:17
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/transform/metal_fragment_to_simdgroup/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`MetalFragmentToSimdgroup <tilelang.metal.transform."
+"metal_fragment_to_simdgroup.MetalFragmentToSimdgroup>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/transform/metal_fragment_to_simdgroup/index.rst:25
+msgid "Module Contents"
+msgstr ""

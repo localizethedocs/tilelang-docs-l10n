@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,29 +29,18 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:19:<autosummary>:1
 msgid ""
 ":py:obj:`compile_hip <tilelang.contrib.hipcc.compile_hip>`\\ \\(code\\[\\, "
 "target\\_format\\, arch\\, options\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:26
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:25
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:19:<autosummary>:1
 msgid "Compile HIP code with hipcc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:20:<autosummary>:1
-msgid ""
-":py:obj:`tilelang_callback_hip_compile <tilelang.contrib.hipcc."
-"tilelang_callback_hip_compile>`\\ \\(code\\, target\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:45
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:20:<autosummary>:1
-msgid "use hipcc to generate fatbin code for better optimization"
-msgstr ""
-
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:22
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:21
 msgid "Module Contents"
 msgstr ""
 
@@ -59,23 +48,23 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:28
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:27
 msgid "The HIP code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:30
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:29
 msgid "The target format of hipcc compiler."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:32
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:31
 msgid "The AMD GPU architecture."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:34
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:33
 msgid "The additional options."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:36
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:35
 msgid "Output file."
 msgstr ""
 
@@ -83,7 +72,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:39
+#: ../../../autoapi/tilelang/contrib/hipcc/index.rst:38
 msgid "**hsaco** -- The bytearray of the hsaco"
 msgstr ""
 

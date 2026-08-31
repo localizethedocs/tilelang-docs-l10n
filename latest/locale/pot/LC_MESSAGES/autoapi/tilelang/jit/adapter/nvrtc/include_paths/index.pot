@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:2
+msgid "tilelang.jit.adapter.nvrtc.include_paths"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:8
+msgid "CUDA include-path discovery for NVRTC compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`discover_cuda_include_paths <tilelang.jit.adapter.nvrtc."
+"include_paths.discover_cuda_include_paths>`\\ \\(cuda\\_home\\[\\, "
+"machine\\, system\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:25
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:19:<autosummary>:1
+msgid ""
+"Return NVRTC include paths supported by the CUDA layout at ``cuda_home``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:27
+msgid ""
+"CUDA pip packages may install headers in a flat ``include`` tree, while "
+"system toolkits commonly use ``targets/<arch>-linux/include``. Include both "
+"layouts when present so split or overlaid installations continue to work."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/include_paths/index.rst:0
+msgid "Return type"
+msgstr ""

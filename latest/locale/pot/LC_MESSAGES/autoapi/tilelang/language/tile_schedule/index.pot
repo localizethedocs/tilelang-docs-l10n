@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 15:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:2
+msgid "tilelang.language.tile_schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:8
+msgid "Tile schedulers built on TileLang ``meta_class``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:10
+msgid ""
+"``@meta_class`` auto-inlines every method that emits a buffer store, so "
+"state methods can freely read scalar state via ``self._x[0]`` and write via "
+"``self._x[0] = ...`` (the latter lowers to a ``BufferStore``). Store-free "
+"methods (``valid``, ``coord``) and the read-only state properties "
+"(``m_idx``, ``n_idx``, ``current_iter``) stay plain Python and just return "
+"``PrimExpr`` values, so they work in conditions and can be reused "
+"statelessly. State lives in ``T.alloc_var`` buffers allocated in "
+"``__init__`` (only when ``stateful``). Works in both eager (``@tilelang."
+"jit``) and lazy (``@T.prim_func``) modes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:19
+msgid ""
+"Note on compile-time branching: the lazy TVMScript parser does not constant-"
+"fold a Python ``if`` on a compile-time value inside an inlined method (it "
+"would emit a dead TIR branch). So all compile-time decisions (traversal "
+"order, clustering) are made in ``__init__`` (plain Python); the inlined hot "
+"methods contain only uniform runtime arithmetic. The store-free ``coord`` "
+"may use a compile-time ``if`` because, being plain Python, it is evaluated "
+"(not traced) per call."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:29
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`BaseTileScheduler <tilelang.language.tile_schedule."
+"BaseTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:42
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:36:<autosummary>:1
+msgid "Common state and tile-traversal skeleton."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`PersistentTileScheduler <tilelang.language.tile_schedule."
+"PersistentTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:96
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:36:<autosummary>:1
+msgid "Persistent, grid-strided tile scheduler with L2 swizzle and clustering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:38
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:44
+msgid ""
+"State (single-element ``T.alloc_var`` buffers): ``m_idx`` / ``n_idx`` are "
+"the current tile coordinates; ``linear_idx`` is the worker's global linear "
+"cursor; ``current_iter`` is the 0-based iteration count (how many tiles this "
+"worker has advanced past = the \"wave\" index). Each is exposed as a read-"
+"only property returning the scalar ``PrimExpr`` (``sched.m_idx``, ``sched."
+"current_iter``); only scheduler methods mutate the underlying buffers "
+"(``self._m_idx[0] = ...``). ``current_iter`` is the single iteration clock "
+"the kernel can read for pipeline/double-buffer state (e.g. ``sched."
+"current_iter & 1``), removing the need for a separate ``for w`` loop "
+"counter. Subclasses implement ``update_current_idx`` to decode "
+"``linear_idx`` into ``(m_idx, n_idx)`` and set ``self._total_tiles`` (used "
+"by ``valid``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:59
+msgid "Current tile row as a scalar ``PrimExpr``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:64
+msgid "Current tile column as a scalar ``PrimExpr``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:69
+msgid "This worker's global linear tile cursor as a scalar ``PrimExpr``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:74
+msgid "0-based iteration count (wave index) as a scalar ``PrimExpr``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:93
+msgid "Bases: :py:obj:`BaseTileScheduler`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:98
+msgid ""
+"The 2D tile grid (``num_m_tiles`` x ``num_n_tiles``) is flattened into a "
+"linear order and distributed across ``num_workers`` persistent workers: "
+"worker ``w`` processes linear indices ``w, w + num_workers, ...`` until they "
+"run past the total. The linear-to-2D decode is controlled by three "
+"independent, interacting factors:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:104
+msgid ""
+"``column_major`` -- traversal order. With ``swizzle_size == 1`` this is pure "
+"column-major (``m`` varies fastest) when ``True``, or pure row-major (``n`` "
+"varies fastest) when ``False``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:107
+msgid ""
+"``swizzle_size`` -- L2-locality panel width. The \"fast\" axis is widened "
+"into panels of ``swizzle_size`` tiles along the \"slow\" axis: a full strip "
+"of the fast axis is swept for each group of ``swizzle_size`` slow-axis tiles "
+"before advancing. ``swizzle_size == 1`` disables swizzling. This is the "
+"CUTLASS-style threadblock swizzle used by the SM100 persistent GEMM "
+"examples. Non-divisible tail panels are handled (narrower last panel)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:113
+msgid ""
+"``cluster_size`` -- block clustering along M (x) only. The M tiles are "
+"grouped into clusters of ``cluster_size`` rows, and the scheduler runs at "
+"*cluster* granularity: it produces the cluster-row in ``m_idx`` over a grid "
+"of ``ceildiv(num_m_tiles, cluster_size)`` cluster-rows x ``num_n_tiles`` "
+"columns. The caller turns the cluster-row into a real block row by adding "
+"the in-cluster rank::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:120
+msgid "bx = sched.m_idx * cluster_size + cta_rank_in_cluster"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:122
+msgid "(For ``cluster_size == 1`` this reduces to ``bx = sched.m_idx``.)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:124
+msgid ""
+"Interaction: clustering reshapes the grid to ``M' x N'`` (with ``M' = "
+"ceildiv(num_m_tiles, cluster_size)``) *first*; the swizzle and traversal "
+"order then operate on that reshaped grid. ``num_workers`` is the number of "
+"resident workers (= clusters when ``cluster_size > 1``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:129
+msgid "Number of tiles along M (``ceildiv(M, block_M)``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:131
+msgid "Number of tiles along N (``ceildiv(N, block_N)``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:133
+msgid ""
+"Persistent stride = number of resident workers/clusters. Defaults to "
+"``driver.get_num_sms() // cluster_size`` (one block per SM, grouped into "
+"clusters)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:137
+msgid "L2 swizzle panel width (default ``1`` = no swizzle)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:139
+msgid "Traversal order (default ``True`` = column-major / M fastest)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:141
+msgid "Block-cluster size along M only (default ``1`` = no clustering)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:143
+msgid ""
+"If ``True`` (default), allocate the ``m_idx`` / ``n_idx`` / ``linear_idx`` / "
+"``current_iter`` state buffers and enable ``init`` / ``next_tile`` / "
+"``valid`` for a ``while`` persistent loop. If ``False``, allocate no state "
+"and expose only the pure ``coord(tile_id) -> (m, n)`` decode (for ``for w in "
+"range(waves)`` loops and auto warp-specialization, where the loop owns the "
+"iteration clock and the WS pass owns the pipeline phase)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:150
+msgid ""
+"Optional name prefix for the state buffers in the generated IR (``{name}"
+"_m_idx`` / ``{name}_n_idx`` / ...). Default ``None`` leaves the buffers with "
+"generic auto-generated names; pass a name to make the IR easier to read when "
+"a kernel holds several scheduler instances."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:157
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:158
+msgid "Plain persistent GEMM (one block per SM)::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:160
+msgid ""
+"m_blocks, n_blocks = T.ceildiv(M, block_M), T.ceildiv(N, block_N)\n"
+"with T.Kernel(driver.get_num_sms(), threads=threads) as (block_id,):\n"
+"    sched = T.PersistentTileScheduler(m_blocks, n_blocks)\n"
+"    sched.init(block_id)\n"
+"    while sched.valid():\n"
+"        bx, by = sched.m_idx, sched.n_idx\n"
+"        # ... compute tile (bx, by) ...\n"
+"        sched.next_tile()"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:169
+msgid "With L2 swizzle (panel width 8) and named state buffers in the IR::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:171
+msgid ""
+"sched = T.PersistentTileScheduler(\n"
+"    m_blocks, n_blocks, swizzle_size=8, name=\"sched\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:174
+msgid "With a 2-CTA cluster along M (e.g. SM100 2-SM MMA)::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:176
+msgid ""
+"sm_num = driver.get_num_sms()\n"
+"cluster_size = 2\n"
+"with T.ClusterKernel(sm_num, threads=256, cluster_dims=cluster_size) as "
+"(block_id):\n"
+"    cta_rank = T.block_rank_in_cluster()\n"
+"    sched = T.PersistentTileScheduler(\n"
+"        m_blocks, n_blocks,\n"
+"        swizzle_size=8, cluster_size=cluster_size)\n"
+"    sched.init(block_id // cluster_size)   # init with cluster id\n"
+"    while sched.valid():\n"
+"        bx = sched.m_idx * cluster_size + cta_rank\n"
+"        by = sched.n_idx\n"
+"        # ... compute tile (bx, by) ...\n"
+"        sched.next_tile()"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:190
+msgid ""
+"Stateless form (``stateful=False``) for ``for w`` loops / auto-WS, where the "
+"scheduler is only a tile-coordinate decoder::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:193
+msgid ""
+"sched = T.PersistentTileScheduler(\n"
+"    m_blocks, n_blocks, swizzle_size=8, stateful=False)\n"
+"for w in range(waves):\n"
+"    bx, by = sched.coord(num_workers * w + worker_id)\n"
+"    if bx * block_M < M and by * block_N < N:\n"
+"        # ... pipelined inner loop (T.Pipelined / T.copy / T.gemm) ...\n"
+"        pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:201
+msgid ""
+"Manual warp-specialized kernels use ``current_iter`` as the single iteration "
+"clock (no separate ``for w`` loop): each warp role runs its own ``while "
+"sched.valid()`` loop and reads ``sched.current_iter`` for pipeline/double-"
+"buffer state (``sched.current_iter & 1`` etc.) while reading ``sched."
+"m_idx`` / ``sched.n_idx`` for the tile::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:207
+msgid ""
+"sched.init(block_id)\n"
+"while sched.valid():\n"
+"    bx, by = sched.m_idx, sched.n_idx\n"
+"    # ... use sched.current_iter for barrier phase / double-buffering ...\n"
+"    sched.next_tile()"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:214
+msgid "Notes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:215
+msgid ""
+"State is held in single-element ``T.alloc_var`` buffers behind read-only "
+"properties: ``sched.m_idx`` / ``sched.current_iter`` etc. return the scalar "
+"``PrimExpr`` directly (no ``[0]``). Only scheduler methods mutate state, via "
+"``self._x[0] = ...`` on the underlying buffers; the ``[0]`` is required "
+"there for the write to lower to a ``BufferStore``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:239
+msgid "Decode a linear ``tile_id`` into ``(m_idx, n_idx)`` (pure PrimExpr)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/tile_schedule/index.rst:241
+msgid ""
+"Stateless: builds expressions only, touches no state buffer, so it is usable "
+"on a ``stateful=False`` instance and can be called independently from any "
+"loop / warp role. ``m_idx`` is the cluster row when ``cluster_size > 1`` "
+"(caller adds the in-cluster rank)."
+msgstr ""
