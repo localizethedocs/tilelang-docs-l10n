@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tutorials/auto_tuning.md:1
+msgid "Auto-Tuning Techniques for Performance Optimization"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:3
+msgid ""
+"<div style=\"text-align: left;\">\n"
+"<em>Author:</em> <a href=\"https://github.com/yyttt6\">yyttt6</a>\n"
+"</div>\n"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:7
+msgid "Overview"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:9
+msgid "Auto-tuning a Tile Language program involves three main steps:"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:11
+msgid ""
+"Implement the target program using Tile Language with reserved optimization "
+"parameters"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:12
+msgid ""
+"​Provide candidate configurations through manual search or [auto-generation "
+"using Carver](#using-carver-to-auto-generate-candidate-configurations)"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:13
+msgid ""
+"Parallel compile and benchmark candidate configurations to identify the best "
+"performance"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:15
+msgid "Matrix Multiplication Example"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:17
+msgid ""
+"The following example demonstrates auto-tuning matrix multiplication. Code "
+"has been simplified for readability - see `examples/gemm/example_gemm.py` "
+"for complete implementation."
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:19
+msgid "Step 1: Implement with Reserved Parameters"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:20
+msgid ""
+"Users can implement matrix multiplication in Tile Language while reserving "
+"parameters for optimization:"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:21
+msgid ""
+"# Reserved parameters for optimization\n"
+"def kernel(\n"
+"    block_M=None,\n"
+"    block_N=None,\n"
+"    block_K=None,\n"
+"    num_stages=None,\n"
+"    thread_num=None,\n"
+"    enable_rasteration=None,\n"
+"):\n"
+"    dtype = \"float16\"\n"
+"    accum_dtype = \"float\"\n"
+"\n"
+"    # Matrix multiplication implementation\n"
+"    @T.prim_func\n"
+"    def main(\n"
+"            A: T.Buffer((M, K), dtype),\n"
+"            B: T.Buffer((N, K), dtype),\n"
+"            C: T.Buffer((M, N), dtype),\n"
+"    ):\n"
+"        # ...existing code...\n"
+"\n"
+"    return main\n"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:45
+msgid "Step 2: Generate Candidate Configurations"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:46
+msgid "Manually define configurations or use combinatorial generation:"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:47
+msgid ""
+"configs = [\n"
+"    {\n"
+"        \"block_M\": 128,\n"
+"        \"block_N\": 128,\n"
+"        \"block_K\": 128,\n"
+"        \"num_stages\": 3,\n"
+"        \"thread_num\": 128,\n"
+"        \"enable_rasteration\": True\n"
+"    },\n"
+"        {\n"
+"        \"block_M\": 32,\n"
+"        \"block_N\": 32,\n"
+"        \"block_K\": 32,\n"
+"        \"num_stages\": 0,\n"
+"        \"thread_num\": 32,\n"
+"        \"enable_rasteration\": False\n"
+"    },\n"
+"    # ...additional configurations...\n"
+"]\n"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:68
+msgid "It can also be given by combinatorial traversal of different parameters"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:69
+msgid ""
+"import itertools\n"
+"\n"
+"block_M = [64, 128, 256]\n"
+"block_N = [64, 128, 256]\n"
+"block_K = [32, 64]\n"
+"num_stages = [0, 1, 2, 3]\n"
+"thread_num = [128, 256]\n"
+"enable_rasterization = [True, False]\n"
+"_configs = list(\n"
+"    itertools.product(\n"
+"        block_M,\n"
+"        block_N,\n"
+"        block_K,\n"
+"        num_stages,\n"
+"        thread_num,\n"
+"        enable_rasterization,\n"
+"    ))\n"
+"\n"
+"configs = [\n"
+"    {\n"
+"        \"block_M\": c[0],\n"
+"        \"block_N\": c[1],\n"
+"        \"block_K\": c[2],\n"
+"        \"num_stages\": c[3],\n"
+"        \"thread_num\": c[4],\n"
+"        \"enable_rasteration\": c[5]\n"
+"    } for c in _configs\n"
+"]\n"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:99
+msgid "Step 3: Compile and Benchmark"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:100
+msgid "Configure JIT compilation and benchmarking settings:"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:101
+msgid ""
+"autotuner = AutoTuner.from_kernel(\n"
+"    kernel=kernel, configs=get_configs(M, N, K, with_roller))."
+"set_compile_args(\n"
+"        out_idx=[-1],\n"
+"        supply_type=tl.TensorSupplyType.Integer,\n"
+"        ref_prog=ref_program,\n"
+"        skip_check=False,\n"
+"        target=\"auto\",\n"
+"    )\n"
+"result = autotuner.run(warmup=3, rep=20)\n"
+"out_c = result.kernel(a, b)\n"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:113
+msgid ""
+"The result object contains optimized kernel implementation which can be used "
+"by users directly"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:115
+msgid "Using Carver to Auto-Generate Candidate Configurations"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:117
+msgid ""
+"Carver is a lightweight framework for generating and ranking tile "
+"configurations (also known as tiling strategies, blocking schemes, or "
+"scheduling hints) for common GPU, CPU, and accelerator backends. It helps "
+"you explore efficient mappings of loops for operations such as matrix "
+"multiplication, elementwise transforms, and other reduction-oriented kernels."
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:119
+msgid ""
+"or common operators, Carver provides pre-built templates (e.g., "
+"`MatmulTemplate`):"
+msgstr ""
+
+#: ../../../tutorials/auto_tuning.md:121
+msgid ""
+"# Configure Matmul template\n"
+"arch = CUDA(\"cuda\")\n"
+"carve_template = MatmulTemplate(\n"
+"    M=M,\n"
+"    N=N,\n"
+"    K=K,\n"
+"    in_dtype=\"float16\",\n"
+"    out_dtype=\"float16\",\n"
+"    accum_dtype=\"float\",\n"
+").with_arch(arch)\n"
+"\n"
+"# Generate top-k optimization hints (topk=10 recommended)\n"
+"roller_hints = carve_template.recommend_hints(topk=10)\n"
+"\n"
+"# Configure candidate parameters\n"
+"for hint in roller_hints:\n"
+"\n"
+"    # ...existing code...\n"
+"\n"
+"    config[\"block_M\"] = block_m\n"
+"    config[\"block_N\"] = block_n\n"
+"    config[\"block_K\"] = hint.rstep[0]\n"
+"    config[\"num_stages\"] = hint.pipeline_stage\n"
+"    config[\"thread_num\"] = block_rows * block_cols * 32\n"
+"    config[\"enable_rasteration\"] = hint.rasterization_plan is not "
+"NoRasterization\n"
+"\n"
+msgstr ""

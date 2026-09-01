@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:2
+msgid "tilelang.tileop.gemm.gemm_wgmma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:14:<autosummary>:1
+msgid ":py:obj:`GemmWGMMA <tilelang.tileop.gemm.gemm_wgmma.GemmWGMMA>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:20
+msgid "Bases: :py:obj:`tilelang.tileop.gemm.gemm_base.GemmBase`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:25
+msgid "Infer the swizzle layout for shared memory based on continuity."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:27
+msgid ""
+"WGMMA can directly use shared memory as input, so the swizzle layout must "
+"match the tensor core's access pattern. The swizzle granularity is "
+"determined by the continuous dimension size:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:30
+msgid "128B swizzle (Full):    continuity % (vectorized_size * 8) == 0"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:31
+msgid "64B swizzle (Half):     continuity % (vectorized_size * 4) == 0"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:32
+msgid "32B swizzle (Quarter):  continuity % (vectorized_size * 2) == 0"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:33
+msgid "Linear (no swizzle):    otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:35
+msgid ""
+"See: https://docs.nvidia.com/cuda/cuda-driver-api/"
+"group__CUDA__TENSOR__MEMORY.html"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm/gemm_wgmma/index.rst:0
+msgid "Return type"
+msgstr ""
