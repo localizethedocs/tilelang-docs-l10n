@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -166,7 +167,7 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:73
 msgid ""
-"File \"/root/TileLang/src/target/codegen_cuda.cc\", line 1257\n"
+"File \"/root/TileLang/src/cuda/codegen/codegen_cuda.cc\", line 1257\n"
 "ValueError: Check failed: lanes <= 4 (8 vs. 4) : Ramp of more than 4 lanes "
 "is not allowed.\n"
 msgstr ""
@@ -215,7 +216,7 @@ msgstr ""
 msgid ""
 "After code generation (in the codegen pass), TileLang calls a callback "
 "function (if registered) to allow post-processing of the generated source "
-"code. In `src/target/rt_mod_cuda.cc`:"
+"code. In `src/cuda/codegen/rt_mod_cuda.cc`:"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:96
@@ -327,377 +328,335 @@ msgid "msg='hello world' BlockIdx=(0, 0, 0), ThreadIdx=(0, 0, 0): 0\n"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:172
-msgid "Visual Layout Inference For TileLang"
+msgid "Visualize Inferred Layouts"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:173
+#: ../../../tutorials/debug_tools_for_tilelang.md:174
 msgid ""
-"The **Visual Layout Inference** tool automatically generates visual diagrams "
-"that illustrate the mapping between logical indices, thread IDs, and "
-"register file locations."
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:175
-msgid ""
-"When TileLang performs layout inference, it determines how fragment buffers "
-"are distributed across threads. The visual layout tool captures this "
-"information and generates:"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:176
-msgid "**Textual output**: A human-readable description of the layout mapping"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:177
-msgid ""
-"**Visual diagrams**: Color-coded plots showing the thread-to-data mapping"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:179
-msgid ""
-"The visual layout inference tool is controlled through the "
-"`TL_LAYOUT_VISUALIZATION_ENABLE` and `TL_LAYOUT_VISUALIZATION_FORMATS` pass "
-"configuration. By default, `TL_LAYOUT_VISUALIZATION_ENABLE` is **disabled** "
-"to avoid performance overhead during compilation."
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:181
-msgid ""
-"When enabled, `TL_LAYOUT_VISUALIZATION_FORMATS` accepts string values to "
-"control output formats:"
+"Layout visualization prints the thread and local-index mappings inferred for "
+"fragment buffers. It can also write PNG, PDF, or SVG diagrams, which is "
+"useful when an incorrect result may come from an unexpected data mapping. "
+"Enable it through the layout visualization pass configuration on the kernel "
+"being debugged. The configuration keys, direct `plot_layout` API, supported "
+"output formats, and limitations are documented in {doc}`../tools/"
+"layout_visualization`."
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:182
-msgid "\"txt\": Text output only (same as default)"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:183
-msgid "\"all\": Generates all formats (TXT, PDF, PNG, SVG)"
+msgid "IR Lower Trace: Observing IR Changes Across Passes"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:184
-msgid "\"png\": Generate PNG format only"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:185
-msgid "\"pdf\": Generate PDF format only"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:186
-msgid "\"svg\": Generate SVG format only"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:187
 msgid ""
-"\"txt,svg\": Generate multiple formats (comma-separated) in addition to text "
-"output"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:189
-msgid "The output messages of \"txt\" will include something like:"
+"IR Lower Trace captures the TIR before and after every compiler pass — plus "
+"the final codegen step that produces C/CUDA/HIP source — and renders a "
+"terminal and/or HTML diff report. Use it when the IR looks correct at one "
+"lowering stage but is incorrect at a later stage. To trace the complete "
+"lowering pipeline without changing the program, set `TL_LOWER_TRACE` before "
+"starting Python:"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:190
 msgid ""
-"C_local inferenced layout:\n"
-"  Shape: [32, 32] -> [8]\n"
-"  Thread: _j // 16 * 64 + _i // 16 * 32 + _i % 8 * 4 + _j % 8 // 2\n"
-"  Index:  [_j % 16 // 8 * 4 + _i % 16 // 8 * 2 + _j % 2]\n"
+"TL_LOWER_TRACE=terminal python my_script.py\n"
+"TL_LOWER_TRACE=html python my_script.py\n"
+"TL_LOWER_TRACE=both python my_script.py\n"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:197
-msgid "AutoDD: Automatic Delta Debugging"
+#: ../../../tutorials/debug_tools_for_tilelang.md:196
+msgid "For a focused comparison, apply a selected pass directly:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:199
+#: ../../../tutorials/debug_tools_for_tilelang.md:198
 msgid ""
-"When dealing with complex TileLang programs that produce errors, manually "
-"isolating the bug can be tedious. **AutoDD** (Automatic Delta Debugging) is "
-"a built-in tool that automatically simplifies your program to the minimal "
-"code needed to reproduce a specific error."
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:201
-msgid "What is Delta Debugging?"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:203
-msgid "Delta Debugging is an automated debugging technique that:"
+"from tilelang.tools import lower_trace as lt\n"
+"\n"
+"results = lt.lower_trace(func, tilelang.transform.ThreadSync(\"shared\"))\n"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:204
-msgid "Takes a program that triggers a bug"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:205
-msgid "Systematically removes code fragments"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:206
-msgid "Checks if the simplified program still triggers the same bug"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:207
-msgid "Produces the minimal code that reproduces the bug"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:209
 msgid ""
-"AutoDD uses a Probability Distribution Driven Delta Debugging (PDD) "
-"algorithm for efficient minimization."
+"The HTML viewer, output directory layout, codegen capture, edit-and-"
+"recompile workflow, and the full Python API are documented in {doc}`../tools/"
+"lower_trace`."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:211
-msgid "Why Use AutoDD?"
+#: ../../../tutorials/debug_tools_for_tilelang.md:208
+msgid ""
+"IR Lower Trace supersedes the older **Pass Diff** tool "
+"(`TILELANG_PASS_DIFF`), which is retained only for backward compatibility. "
+"New users should use `TL_LOWER_TRACE` directly. See {doc}`../tools/"
+"pass_diff` for the legacy tool."
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:213
-msgid ""
-"**Large codebases**: Real projects often have hundreds of lines of "
-"configuration, helper functions, and logging"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:214
-msgid ""
-"**Hard-to-locate errors**: Error messages may point to TVM/CUDA internals "
-"rather than your TileLang code"
+msgid "Pass Visualizer: Structure-Tree View Across Passes"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:215
 msgid ""
-"**Time-saving**: Manually deleting code to isolate bugs is very time-"
-"consuming"
+"The **Pass Visualizer** is a complement to Pass Diff. Where Pass Diff shows "
+"a line-level diff of the **TVMScript text**, the Pass Visualizer renders the "
+"IR as a **structure tree** (the `SBlock` nesting, with `reads` / `writes` / "
+"`alloc_buffers` / `annotations` fields) and expands every tile op by field "
+"name. It produces a single self-contained, interactive HTML file that steps "
+"through each CUDA lowering pass."
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:217
 msgid ""
-"AutoDD can reduce a 200+ line program to just 30 lines, directly exposing "
-"the root cause."
+"This view is most useful when debugging **structural** passes — layout "
+"inference, warp specialization, pipelining — where you care about how the "
+"IR's block structure and operator semantics change, not just which text "
+"lines moved."
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:219
-msgid "Basic Usage"
+msgid "How It Differs From Pass Diff"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:221
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Aspect"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Pass Diff"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Pass Visualizer"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Compared object"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "TVMScript text lines"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "`SBlock` structure tree"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Operator display"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Raw one-liner, positional args"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Expanded **by field name** (`M=64`, `K=32`, `policy=0`)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Highlighting"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Generic `+` / `-`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Per-class: tile op / sync primitive / lowered hardware intrinsic"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Trigger"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Environment-variable hook, captures the real full pipeline"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Explicit CLI, runs the focused lowering prologue"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:228
+msgid "Quick Start (CLI)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:230
 msgid ""
-"python -m tilelang.autodd <source_file> --err-msg \"<error_message>\" -o "
-"<output_file>\n"
+"Run the visualizer on a kernel file that defines a `@tilelang.jit` kernel:"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:225
-msgid "Parameters"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Parameter"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Description"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "`source`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Path to the input Python source file"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "`--err-msg`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Error message to match (searched in stdout or stderr)"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "`-o, --output`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Path to the minimized output file"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "`--backend`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
+#: ../../../tutorials/debug_tools_for_tilelang.md:232
 msgid ""
-"Execution backend: `runner` (faster) or `subproc` (more stable), default "
-"`runner`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "`--timeout`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Timeout for each task in seconds, default 60"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "`-j, --jobs`"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:54
-msgid "Number of parallel jobs, default 1"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:236
-msgid "Example"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:238
-msgid ""
-"Suppose you have a complex TileLang program with a GEMM shape mismatch bug:"
+"python -m tilelang.tools.pass_visualizer.viewer \\\n"
+"    tilelang/tools/pass_visualizer/examples/gemm_relu.py \\\n"
+"    --set M=1024 --set N=1024 --set K=1024 \\\n"
+"    --set block_M=128 --set block_N=128 --set block_K=32 \\\n"
+"    --out gemm_relu_passes.html\n"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:240
 msgid ""
-"# buggy_matmul.py (200+ lines)\n"
-"@tilelang.jit\n"
-"def buggy_matmul(M, N, K, block_M, block_N, block_K, ...):\n"
-"    @T.prim_func\n"
-"    def matmul_kernel(...):\n"
-"        with T.Kernel(...) as (bx, by):\n"
-"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
-"            B_shared = T.alloc_shared((block_M, block_N), dtype)  # Bug: "
-"should be (block_K, block_N)\n"
-"            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
-"            # ... lots of other code ...\n"
-"            T.gemm(A_shared, B_shared, C_local)  # Error here\n"
-"    return matmul_kernel\n"
+"This writes `gemm_relu_passes.html` (the interactive browser) and a sibling "
+"`gemm_relu_passes.txt` (a greppable text dump of the same per-pass trees)."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:255
-msgid "Run AutoDD to minimize:"
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Argument"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:257
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Description"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "`path`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Python file containing a `@tilelang.jit` kernel (positional)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "`--factory`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Name of the kernel to analyze (default: first discovered)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "`--target`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Compilation target (default: `auto`)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "`--set K=V`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Argument forwarded to the kernel factory (repeatable)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "`--out`"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:207
+msgid "Output HTML path (default: `<kernel>_passes.html` next to the source)"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:250
+msgid "HTML Report Features"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:252
 msgid ""
-"python -m tilelang.autodd buggy_matmul.py --err-msg \"Dimension mismatch\" -"
-"o minimized.py -j 4\n"
+"**Left pane**: the ordered pass list, each tagged `changed` / `no-op` with "
+"an added/removed line count. Click a pass — or use the <kbd>↑</kbd>/<kbd>↓</"
+"kbd> keys — to step through the pipeline."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:261
-msgid "AutoDD will produce a minimal reproduction:"
+#: ../../../tutorials/debug_tools_for_tilelang.md:252
+msgid "<kbd>"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:263
+#: ../../../tutorials/debug_tools_for_tilelang.md:252
+msgid "</kbd>"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:253
 msgid ""
-"# minimized.py (~30 lines)\n"
-"import tilelang.language as T\n"
+"**Right pane**: the structure tree for the selected pass, with lines "
+"**added** by that pass highlighted green and lines it **removed** shown "
+"ghosted red."
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:254
+msgid ""
+"**Operator highlighting**: tile ops (e.g. `T.gemm`, `T.copy`), "
+"synchronization primitives, and lowered hardware intrinsics (`ptx_mma`, "
+"`tma_load`, …) are each colored distinctly, so you can follow a `T.copy` as "
+"it lowers into TMA/PTX intrinsics."
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:256
+msgid "Programmatic API"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:258
+msgid "The core helpers can also be used directly:"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:260
+msgid ""
+"from tilelang.tools.pass_visualizer.viewer import build_pass_data, "
+"emit_html\n"
 "\n"
-"def buggy_matmul(M, N, K, block_M, block_N, block_K, dtype=T.float16, "
-"accum_dtype=T.float32, *args, **kwargs):\n"
-"    @T.prim_func\n"
-"    def matmul_kernel():\n"
-"        with T.Kernel():\n"
-"            A_shared = T.alloc_shared((block_M, block_K), dtype)\n"
-"            B_shared = T.alloc_shared((block_M, block_N), dtype)  # Bug "
-"exposed!\n"
-"            C_local = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
-"            T.gemm(A_shared, B_shared, C_local)\n"
+"name, stages = build_pass_data(\n"
+"    \"path/to/kernel.py\", factory=None, target=\"auto\",\n"
+"    kwargs={\"M\": 1024, \"N\": 1024, \"K\": 1024,\n"
+"            \"block_M\": 128, \"block_N\": 128, \"block_K\": 32},\n"
+"    source=open(\"path/to/kernel.py\").read(),\n"
+")\n"
+"html = emit_html(name, stages)\n"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:272
+msgid "AutoDD: Automatic Delta Debugging"
+msgstr ""
+
+#: ../../../tutorials/debug_tools_for_tilelang.md:274
+msgid ""
+"After identifying a stable failure, AutoDD can reduce the Python program "
+"while preserving a case-sensitive substring from its stdout or stderr:"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:277
-msgid "How AutoDD Works"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:279
 msgid ""
-"AutoDD uses AST (Abstract Syntax Tree) analysis with multiple rewrite rules:"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:281
-msgid "**Fast Reducers**: Remove statements, simplify if/for constructs"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:282
-msgid ""
-"**Canonicalizers**: Expand with statements, add `*args, **kwargs` for "
-"compatibility"
+"python -m tilelang.autodd examples/autodd/tilelang_buggy.py \\\n"
+"  --err-msg \"T.gemm K shape check failed\" \\\n"
+"  -o minimized.py\n"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:283
 msgid ""
-"**Simplifiers**: Replace expressions with constants, simplify function calls"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:284
-msgid ""
-"**Slow Reducers**: Remove arbitrary expressions, reduce integer constants"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:286
-msgid "Tips"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:288
-msgid ""
-"**Error message matching**: Use a unique substring from the error output"
+"Each candidate is executed and retained only when the substring still "
+"appears. Use AutoDD after making the failure deterministic, then execute "
+"`minimized.py` to verify the result. Backend selection, parallel execution, "
+"timeouts, and annotations for freezing required code are documented in {doc}"
+"`../tools/autodd`."
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:289
-msgid ""
-"**Timeout**: Increase `--timeout` for programs with long compilation times"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:290
-msgid "**Parallel jobs**: Use `-j 4` or higher to speed up minimization"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:291
-msgid "**Backend**: Try `--backend subproc` if `runner` is unstable"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:293
-msgid "Complete Example"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:295
-msgid "A complete example is available in `examples/autodd/`:"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:296
-msgid "`tilelang_buggy.py`: A complex program with a bug (~200 lines)"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:297
-msgid ""
-"`tilelang_minimized_expected.py`: Expected output after AutoDD (~30 lines)"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:298
-msgid "`README.md`: Detailed documentation"
-msgstr ""
-
-#: ../../../tutorials/debug_tools_for_tilelang.md:300
 msgid "Conclusion"
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:302
+#: ../../../tutorials/debug_tools_for_tilelang.md:291
 msgid ""
 "By carefully examining intermediate representations (IR) before final code "
-"generation—and by leveraging runtime printing through `T.print`—one can "
+"generation and leveraging runtime printing through `T.print`, one can "
 "quickly diagnose where index calculations, copy logic, or other kernel "
-"operations deviate from the intended behavior. This two-pronged approach "
-"(inspecting IR transformations and using runtime prints) is often sufficient "
-"for resolving generation and correctness issues in TileLang programs."
+"operations deviate from the intended behavior. The **IR Lower Trace** tool "
+"(`TL_LOWER_TRACE`) complements this by providing automatic, pass-by-pass "
+"visibility into every IR transformation — including the final codegen step — "
+"making it easy to pinpoint exactly which pass introduces an unexpected "
+"change. (The older **Pass Diff** tool is retained for backward compatibility "
+"but is superseded by IR Lower Trace.) This three-pronged approach "
+"(inspecting IR transformations, observing pass-level diffs, and using "
+"runtime prints) is often sufficient for resolving generation and correctness "
+"issues in TileLang programs."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:304
+#: ../../../tutorials/debug_tools_for_tilelang.md:293
 msgid ""
 "For complex programs where manual debugging is tedious, **AutoDD** provides "
 "automated delta debugging to quickly isolate the minimal code that "
 "reproduces a bug."
 msgstr ""
 
-#: ../../../tutorials/debug_tools_for_tilelang.md:306
+#: ../../../tutorials/debug_tools_for_tilelang.md:295
 msgid ""
 "For advanced performance tuning (e.g., analyzing memory bandwidth or "
 "occupancy), more specialized profiling tools such as **Nsight Compute**, "

@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:2
+msgid "tilelang.cuda.intrinsics.macro.wgmma_sp_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`WGSparseTensorCoreIntrinEmitter <tilelang.cuda.intrinsics.macro."
+"wgmma_sp_macro_generator.WGSparseTensorCoreIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:20
+msgid ""
+"Bases: :py:obj:`tilelang.cuda.intrinsics.macro.mma_sp_macro_generator."
+"SparseTensorCoreIntrinEmitter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:49
+msgid ""
+"Compute A descriptor parameters from the A shared buffer region (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:51
+msgid ""
+"A is sparse: its physical (compressed) K extent is ``micro_size_k // "
+"SPARSE_FACTOR``, passed as ``micro_size_k`` for the K-atom accounting. Pure-"
+"Python helper (no TIR emitted); the returned ``WGMMADescriptorParams`` is "
+"consumed by ``wgmma_ss()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:60
+msgid "Compute B descriptor parameters from the B shared buffer region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:62
+msgid ""
+"Pure-Python helper (no TIR emitted); the returned ``WGMMADescriptorParams`` "
+"is consumed by ``wgmma_ss()`` and ``wgmma_rs()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:81
+msgid ""
+"Create a layout function for storing MMA results into a fragment buffer. "
+"This layout is used in conjunction with `inverse_mma_store_layout` to map "
+"fragment indices to threads and local indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:85
+msgid "The local buffer representing a fragment of a matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:88
+msgid ""
+"A fragment object that describes how threads and indices in `local_buf` are "
+"laid out."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_sp_macro_generator/index.rst:92
+msgid "If `local_buf` is not detected to be a fragment buffer."
+msgstr ""

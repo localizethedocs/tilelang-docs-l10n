@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -63,7 +64,7 @@ msgid "The target architecture. Defaults to None."
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:38
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:142
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:151
 msgid "Number of top configurations to return. Defaults to 10."
 msgstr ""
 
@@ -124,14 +125,22 @@ msgid "True if the architecture is CDNA, False otherwise."
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:96
-msgid "Returns the function associated with this template."
+msgid "Checks if the current architecture is an RDNA architecture."
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:98
-msgid "The stored function."
+msgid "True if the architecture is RDNA, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:105
+msgid "Returns the function associated with this template."
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/base/index.rst:107
+msgid "The stored function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:116
 msgid ""
 "Placeholder method that should be implemented by subclasses. This method is "
 "responsible for initializing the function."
@@ -141,59 +150,59 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:110
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:119
 msgid "If not implemented in the subclass."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:116
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:125
 msgid "Sets the function for this template and returns itself."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:118
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:127
 msgid "The function to associate with this template."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:121
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:130
 msgid "The instance with the updated function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:128
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:137
 msgid "Sets the output nodes for this template and returns itself."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:130
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:139
 msgid "The output nodes to associate with this template."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:133
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:142
 msgid "The instance with the updated output nodes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:140
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:149
 msgid "Provides a list of recommended hardware-aware configurations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:145
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:154
 msgid "A list of recommended configurations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:154
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:163
 msgid "Returns the current architecture."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:156
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:165
 msgid "The architecture of this template."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:164
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:173
 msgid "Returns the output nodes associated with this template."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:166
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:175
 msgid "The output nodes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/template/base/index.rst:172
+#: ../../../autoapi/tilelang/carver/template/base/index.rst:181
 msgid ""
 "Post-initialization method that is called after the data class is created. "
 "Ensures that the function is initialized."

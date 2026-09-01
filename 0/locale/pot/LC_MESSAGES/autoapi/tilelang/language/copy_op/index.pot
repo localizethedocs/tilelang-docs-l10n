@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,61 +29,115 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`copy <tilelang.language.copy_op.copy>`\\ \\(src\\, dst\\, \\*\\[\\, "
 "coalesced\\_width\\, disable\\_tma\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:29
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:34
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid "Copy data between memory regions."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`copy_cluster <tilelang.language.copy_op.copy_cluster>`\\ \\(src\\, "
+"dst\\, \\*\\[\\, dst\\_block\\, cluster\\_mask\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:88
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid "Cluster-aware copy for TMA multicast or SM-to-SM shared-memory copy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`async_copy <tilelang.language.copy_op.async_copy>`\\ \\(src\\, "
 "dst\\, \\*\\[\\, coalesced\\_width\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:76
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:112
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid "Asynchronous copy primitive lowered through cp.async."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`tma_copy <tilelang.language.copy_op.tma_copy>`\\ \\(src\\, dst\\, "
-"\\*\\[\\, barrier\\, eviction\\_policy\\, ...\\]\\)"
+"\\*\\[\\, barrier\\, leader\\_scope\\_threads\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:100
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:136
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid "TMA copy with user-managed synchronization."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`tma_gather4 <tilelang.language.copy_op.tma_gather4>`\\ \\(src\\, "
+"dst\\, col\\, rows\\, \\*\\, barrier\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:170
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid "Issue a TMA tile::gather4 load (sm_100a, Blackwell)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`tma_gather4_bytes <tilelang.language.copy_op.tma_gather4_bytes>`\\ "
+"\\(K\\_box\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid "Transaction byte count for a 4-row gather4 of width ``K_box``. Pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`tma_scatter4 <tilelang.language.copy_op.tma_scatter4>`\\ \\(src\\, "
+"dst\\, col\\, rows\\, \\*\\[\\, swizzle\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:192
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid "Issue a TMA tile::scatter4 store (sm_100a, Blackwell)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`transpose <tilelang.language.copy_op.transpose>`\\ \\(src\\, dst\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:129
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:202
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid "Transpose a 2D buffer in shared memory: dst[j, i] = src[i, j]."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`im2col <tilelang.language.copy_op.im2col>`\\ \\(img\\, col\\, "
+"nhw\\_step\\, c\\_step\\, kernel\\, stride\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:216
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid "Perform im2col transformation for 2D convolution."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`c2d_im2col <tilelang.language.copy_op.c2d_im2col>`\\ \\(img\\, "
 "col\\, nhw\\_step\\, c\\_step\\, kernel\\, stride\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:143
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:23:<autosummary>:1
-msgid "Perform im2col transformation for 2D convolution."
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:241
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:28:<autosummary>:1
+msgid "Deprecated alias for :func:`im2col`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:25
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:30
 msgid "Module Contents"
 msgstr ""
 
@@ -90,38 +145,47 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:31
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:83
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:36
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:119
 msgid "Source memory region"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:33
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:85
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:38
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:121
 msgid "Destination memory region"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:35
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:87
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:40
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:123
 msgid "Width for coalesced memory access. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:37
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:42
 msgid "Whether to disable TMA acceleration. Defaults to False."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:39
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:119
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:44
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:160
 msgid "Cache eviction policy. Defaults to None."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:41
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:46
 msgid ""
-"Additional annotations dict. If provided, coalesced_width, disable_tma, and "
-"eviction_policy can also be specified here. Values in annotations take "
-"precedence over individual arguments."
+"Backend-specific preferred lowering instruction category. For CUDA, "
+"recognized values include \"tma\", \"cp_async\", and \"sync\". For \"tma\", "
+"T.copy keeps synchronous copy semantics; global -> shared copies lower "
+"through TMA with an automatically allocated barrier and wait when "
+"constraints are satisfied."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:45
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:52
+msgid ""
+"Additional annotations dict. If provided, coalesced_width, disable_tma, "
+"eviction_policy, and prefer_instruction can also be specified here. Values "
+"in annotations take precedence over individual arguments."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:57
 msgid ""
 "A parallel loop layout hint for the SIMT copy (only valid for normal SIMT "
 "copy; incompatible with TMA/LDSM/STSM/TMem). When provided, it is attached "
@@ -132,7 +196,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:50
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:62
 msgid "If copy extents cannot be deduced from arguments"
 msgstr ""
 
@@ -140,7 +204,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:52
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:64
 msgid "A handle to the copy operation"
 msgstr ""
 
@@ -148,19 +212,19 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:55
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:67
 msgid ""
 "Range handling notes: - Accepts `Buffer`/`BufferRegion`/`BufferLoad` on "
 "either side. Extents are"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:57
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:69
 msgid ""
 "derived as follows: `Buffer -> shape`, `BufferRegion -> [r.extent]`, "
 "`BufferLoad -> extents from its inferred/encoded region`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:59
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:71
 msgid ""
 "Normally, we require the extents of both sides to be the same. If they "
 "differ, the copy instruction follows an internal rule to select one side as "
@@ -168,13 +232,13 @@ msgid ""
 "code. And if some dimensions are 1, unexpected errors may happen."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:63
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:75
 msgid ""
 "Small Optimization: If both `src` and `dst` are scalar `BufferLoad` without "
 "region extents, lowers to a direct store: `dst[...] = src[...]`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:65
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:77
 msgid ""
 "Syntactic Sugar: TileLang supports passing the head address of a buffer to "
 "represent the whole buffer if there are no ambiguity. For example, T.copy(A, "
@@ -182,41 +246,87 @@ msgid ""
 "remember currently we don't support something like \"broadcast\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:69
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:81
 msgid ""
 "The finalized extents are encoded with `tl.region` via `to_buffer_region` "
 "and passed through to the backend; low-level loop construction and any scope-"
 "specific decisions happen during lowering."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:78
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:90
+msgid "Source memory region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:91
+msgid "Destination memory region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:92
+msgid "Destination CTA rank in the cluster for SM-to-SM copy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:93
+msgid "Bitmask of CTAs that participate in TMA multicast."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:94
+msgid ""
+"Shared-memory mbarrier for asynchronous SM-to-SM copy completion "
+"signalling.  The destination CTA should wait on its local copy of this "
+"barrier."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:97
+msgid ""
+"Cache eviction hint passed to the TMA instruction. Only relevant for the TMA "
+"multicast path (``cluster_mask`` set)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:99
+msgid ""
+"Vectorization width (in elements) for the SIMT loop used on the SM-to-SM "
+"fallback path (``dst_block`` set, no fast bulk-async route available)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:102
+msgid ""
+"Parallel loop layout hint (Fragment) for the SIMT loop on the SM-to-SM "
+"fallback path. Incompatible with the TMA multicast path (``cluster_mask`` "
+"set)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:106
+msgid "A handle to the copy operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:114
 msgid ""
 "This operator is intended for explicitly asynchronous global->shared copy. "
 "The backend enforces cp.async constraints and emits:"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:80
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:116
 msgid "`ptx_cp_async(...)` + `ptx_commit_group()`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:81
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:117
 msgid ""
 "No wait is auto-inserted for `T.async_copy`; synchronization is explicit."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:89
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:125
 msgid "Additional annotations dict."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:91
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:127
 msgid "A parallel loop layout hint for the SIMT copy loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:94
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:130
 msgid "A handle to the async copy operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:102
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:138
 msgid ""
 "For **loads** (global -> shared): issues expect_tx + tma_load (no wait). "
 "Unlike T.copy() which emits a full synchronous TMA sequence (arrive + load + "
@@ -225,24 +335,26 @@ msgid ""
 "mbarrier_wait_parity(). ``barrier`` is required for loads."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:108
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:144
 msgid ""
 "For **stores** (shared -> global): issues tma_store + tma_store_arrive (no "
 "wait). Unlike T.copy() which emits tma_store + tma_store_arrive + "
 "tma_store_wait, T.tma_copy() omits the wait so the user can batch multiple "
 "stores before calling T.tma_store_wait() explicitly. ``barrier`` is not "
-"needed for stores."
+"needed for stores. FP4 unpacked shared-memory storage is load-only for TMA: "
+"packed global ``float4_e2m1fn`` may be loaded into unpacked shared "
+"``float4_e2m1_unpacked``, but the reverse TMA store is not supported."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:113
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:152
 msgid "Source memory region (global or shared)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:114
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:153
 msgid "Destination memory region (shared or global)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:115
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:154
 msgid ""
 "Mbarrier (from T.alloc_barrier()) for TMA load synchronization. Required for "
 "loads (global -> shared). Not needed for stores. The TMA load will arrive at "
@@ -250,66 +362,116 @@ msgid ""
 "barrier via T.mbarrier_wait_parity()."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:120
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:158
+msgid ""
+"Number of threads in each TMA leader-election scope (e.g., 32 for per-warp). "
+"Defaults to the thread extend in the current context if not specified."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:161
 msgid ""
 "Additional annotations dict. Values in annotations take precedence over "
 "individual arguments."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:123
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:164
 msgid "A handle to the tma_copy operation"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:131
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:172
+msgid ""
+"Loads four arbitrary rows of a 2D global tensor ``src`` into a 2D shared "
+"tile ``dst`` of shape ``(4, K_box)``. The CUtensorMap descriptor (dtype + "
+"swizzle) is built by the compiler from buffer + layout info."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:176
+msgid ""
+"Caller must wrap this with ``T.shuffle_elect`` and pair it with ``T."
+"mbarrier_expect_tx`` (use :func:`tma_gather4_bytes`) before, and "
+"``barrier_arrive`` / ``mbarrier_wait_parity`` after."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:180
+msgid ""
+"The ``swizzle`` kwarg is deprecated; mark the shared tile via ``T."
+"annotate_layout`` for non-default swizzle."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:186
+msgid ""
+"Transaction byte count for a 4-row gather4 of width ``K_box``. Pass to ``T."
+"mbarrier_expect_tx`` immediately before ``T.tma_gather4``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:194
+msgid ""
+"Stores a 2D shared tile of shape ``(4, K_box)`` to four arbitrary rows of a "
+"2D global tensor ``dst``. Caller is responsible for ``tma_store_arrive`` / "
+"``tma_store_wait`` and the ``T.shuffle_elect`` guard. See :func:"
+"`tma_gather4` for descriptor / swizzle inference details."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:204
 msgid ""
 "Both src and dst should be shared memory buffers. If src has shape (M, N), "
 "dst should have shape (N, M)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:134
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:207
 msgid "Source buffer or region of shape (..., M, N)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:135
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:208
 msgid "Destination buffer or region of shape (..., N, M)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:137
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:210
 msgid "A handle to the transpose operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:145
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:218
 msgid "Input image buffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:147
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:220
 msgid "Output column buffer"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:149
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:222
 msgid "Step size for batch and spatial dimensions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:151
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:224
 msgid "Step size for channel dimension"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:153
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:226
 msgid "Kernel size"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:155
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:228
 msgid "Stride of the convolution"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:157
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:230
 msgid "Dilation rate"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:159
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:232
 msgid "Padding size"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/copy_op/index.rst:162
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:235
 msgid "A handle to the im2col operation"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:243
+msgid "Deprecated:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/copy_op/index.rst:244
+msgid ""
+"Use :func:`im2col` instead. This alias is scheduled for removal in TileLang "
+"0.14.0."
 msgstr ""

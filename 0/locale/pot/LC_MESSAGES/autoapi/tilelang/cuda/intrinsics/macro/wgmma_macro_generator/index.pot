@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:2
+msgid "tilelang.cuda.intrinsics.macro.wgmma_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`lift <tilelang.cuda.intrinsics.macro.wgmma_macro_generator.lift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`WGMMADescriptorParams <tilelang.cuda.intrinsics.macro."
+"wgmma_macro_generator.WGMMADescriptorParams>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:23:<autosummary>:1
+msgid "Pre-computed WGMMA descriptor parameters, produced by"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`TensorCoreIntrinEmitter <tilelang.cuda.intrinsics.macro."
+"wgmma_macro_generator.TensorCoreIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:124
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:23:<autosummary>:1
+msgid "To eliminate Python syntax within TIR Macro."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:25
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`compute_gmma_descriptor <tilelang.cuda.intrinsics.macro."
+"wgmma_macro_generator.compute_gmma_descriptor>`\\ \\(tl\\_layout\\, "
+"buffer\\, transposed\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:101
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:31:<autosummary>:1
+msgid "Port of CuTe ``make_gmma_desc``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:33
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:39
+msgid ""
+"Pre-computed WGMMA descriptor parameters, produced by :func:"
+"`compute_gmma_descriptor` (a port of CuTe ``make_gmma_desc``) and consumed "
+"by ``init_wgmma_*_desc()`` and ``wgmma_*_atom()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:47
+msgid ""
+"Canonical swizzle mode; project to the descriptor field via "
+"``wgmma_layout_type()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:53
+msgid "LBO >> 4, ready to pass to ``T.initialize_wgmma_descriptor``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:59
+msgid "SBO >> 4, ready to pass to ``T.initialize_wgmma_descriptor``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:65
+msgid "Number of elements per swizzle atom along the non-K dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:71
+msgid "``max(swizzle_atom_elems // micro_size_k, 1)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:77
+msgid "``DataType(dtype).bits // 8``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:0
+msgid "type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:79
+msgid "Byte width of a single element"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:85
+msgid ""
+"Whether the matrix is stored in K-major order (affects offset formula "
+"branching)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:93
+msgid ""
+"Physical byte offset (raw bytes) of the operand slice origin within its "
+"buffer; passed to ``T.increase_descriptor_offset`` after building the "
+"descriptor from the buffer base. ``0`` for a whole-buffer / base-origin "
+"operand. Computed by :func:`compute_gmma_descriptor` from the CuTe layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:103
+msgid ""
+"Decode an arbitrary shared-memory ``tl_layout`` for ``buffer`` and compute "
+"the WGMMA descriptor parameters, accepting *any* WGMMA-canonical layout -- "
+"not just the four \"maker\" layouts. A non-GMMA-canonical layout is a "
+"programming error, so the canonicity checks assert (mirroring CuTe's "
+"``static_assert``s)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:108
+msgid ""
+"``transposed`` selects which logical axis is MN vs K (shape only): default "
+"``[MN, K]``, transposed ``[K, MN]``. The operand is required to be row-"
+"major, i.e. K-major iff ``not transposed``; the contiguity detected from the "
+"layout (the GMMA mode owning the stride-1 sub-mode) is asserted to agree."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:113
+msgid ""
+"``region`` is the operand's per-axis ranges (one :class:`tvm.ir.Range` per "
+"logical buffer mode), used to restrict the decoded layout to a sliced "
+"operand (e.g. ``B[:, j*64:...]``). It may be ``None`` for a full-buffer "
+"operand or the atom-level API."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:121
+msgid ""
+"Bases: :py:obj:`tilelang.cuda.intrinsics.macro.mma_macro_generator."
+"TensorCoreIntrinEmitter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:161
+msgid "Number of WGMMA instruction atoms along the M dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:168
+msgid "Number of WGMMA instruction atoms along the N dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:175
+msgid "Number of K-dimension micro-steps (``chunk // micro_size_k``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:182
+msgid "Number of 32-bit registers occupied by the A fragment (RS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:189
+msgid "Number of 32-bit registers occupied by the accumulator fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:194
+msgid "Compute B descriptor parameters from the B shared buffer region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:196
+msgid ""
+"Pure-Python helper (no TIR emitted); the returned ``WGMMADescriptorParams`` "
+"is consumed by ``init_wgmma_b_desc()`` and ``wgmma_*_atom()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:203
+msgid ""
+"Compute A descriptor parameters from the A shared buffer region (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:205
+msgid ""
+"Pure-Python helper (no TIR emitted); the returned ``WGMMADescriptorParams`` "
+"is consumed by ``init_wgmma_a_desc()`` and ``wgmma_ss_atom()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:212
+msgid "Emit TIR to initialize a pre-allocated WGMMA B descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:214
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:227
+msgid "A descriptor buffer allocated via ``T.alloc_wgmma_desc()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:216
+msgid "The B operand shared memory region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:218
+msgid "Pre-computed parameters from ``compute_wgmma_b_desc_params()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:225
+msgid "Emit TIR to initialize a pre-allocated WGMMA A descriptor (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:229
+msgid "The A operand shared memory region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:231
+msgid "Pre-computed parameters from ``compute_wgmma_a_desc_params()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:238
+msgid "Emit ``warpgroup_fence_operand`` for the A fragment buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:244
+msgid "Emit ``warpgroup_fence_operand`` for the accumulator buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:250
+msgid "Emit ``warpgroup_arrive()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:256
+msgid "Emit ``warpgroup_commit_batch()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:262
+msgid "Emit ``warpgroup_wait(n)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:268
+msgid ""
+"Emit a single WGMMA RS instruction for atom ``(inst_m_idx, inst_n_idx, ki)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:270
+msgid ""
+"Must be called between a ``wgmma_fence_a``/``wgmma_fence_c``/"
+"``wgmma_arrive`` sequence and a ``wgmma_commit``/``wgmma_wait`` sequence."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:273
+msgid ""
+"Calling this for every ``(j, i, ki)`` in ``T.grid(wgmma_num_inst_n, "
+"wgmma_num_inst_m, wgmma_num_k_atoms)`` produces identical TIR to "
+"``wgmma_rs()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:277
+msgid "Fragment buffer for operand A (in registers)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:279
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:304
+msgid "Initialized B descriptor (from ``init_wgmma_b_desc``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:281
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:306
+msgid "Accumulator fragment buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:283
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:308
+msgid "M-dimension atom index (0 .. wgmma_num_inst_m - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:285
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:310
+msgid "N-dimension atom index (0 .. wgmma_num_inst_n - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:287
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:312
+msgid "K-dimension atom index (0 .. wgmma_num_k_atoms - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:289
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:316
+msgid "Pre-computed B descriptor parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:291
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:318
+msgid "Whether to zero the accumulator on the first K atom."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:298
+msgid ""
+"Emit a single WGMMA SS instruction for atom ``(inst_m_idx, inst_n_idx, ki)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:300
+msgid "Must be called between fence/arrive and commit/wait sequences."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:302
+msgid "Initialized A descriptor (from ``init_wgmma_a_desc``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:314
+msgid "Pre-computed A descriptor parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:325
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:342
+msgid ""
+"Create a layout function for storing MMA results into a fragment buffer. "
+"This layout is used in conjunction with `inverse_mma_store_layout` to map "
+"fragment indices to threads and local indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:329
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:346
+msgid "The local buffer representing a fragment of a matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:332
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:349
+msgid ""
+"A fragment object that describes how threads and indices in `local_buf` are "
+"laid out."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:336
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/wgmma_macro_generator/index.rst:353
+msgid "If `local_buf` is not detected to be a fragment buffer."
+msgstr ""

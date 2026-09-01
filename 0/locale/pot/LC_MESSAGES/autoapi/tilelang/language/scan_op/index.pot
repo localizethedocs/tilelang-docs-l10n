@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:2
+msgid "tilelang.language.scan_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:8
+msgid "Scan operations exposed on the TileLang language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`cumsum_fragment <tilelang.language.scan_op.cumsum_fragment>`\\ "
+"\\(src\\, dst\\, dim\\, reverse\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:28
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+"Compute cumulative sum for fragment buffers by copying to shared memory "
+"first."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`cumsum <tilelang.language.scan_op.cumsum>`\\ \\(src\\[\\, dst\\, "
+"dim\\, reverse\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:41
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+"Compute the cumulative sum of `src` along `dim`, writing results to `dst`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`cummax_fragment <tilelang.language.scan_op.cummax_fragment>`\\ "
+"\\(src\\, dst\\, dim\\, reverse\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:86
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+"Compute cumulative maximum for fragment buffers by staging through shared "
+"memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`cummax <tilelang.language.scan_op.cummax>`\\ \\(src\\[\\, dst\\, "
+"dim\\, reverse\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:96
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:22:<autosummary>:1
+msgid ""
+"Compute the cumulative maximum of `src` along `dim`, writing results to "
+"`dst`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:30
+msgid ""
+"This macro handles cumulative sum operations on fragment buffers by first "
+"copying the data to shared memory, performing the cumsum operation, and then "
+"copying back."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:33
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:88
+msgid ""
+"Source buffer (Buffer, BufferRegion, or BufferLoad) containing input data."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:34
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:89
+msgid ""
+"Destination buffer (Buffer, BufferRegion, or BufferLoad) for output data."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:35
+msgid "Dimension along which to compute cumulative sum."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:36
+msgid "If True, compute cumulative sum in reverse order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:43
+msgid ""
+"Negative `dim` indices are normalized (Python-style). If `dst` is None, the "
+"operation is performed in-place into `src`. Raises ValueError when `dim` is "
+"out of bounds for `src.shape`. When `src.scope() == \"local.fragment\"`, "
+"this delegates to `cumsum_fragment`; otherwise it emits the `tl.cumsum` "
+"intrinsic."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:45
+msgid ""
+"Supports Buffer, BufferRegion, and BufferLoad inputs, allowing operations on "
+"buffer slices/regions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:48
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:49
+msgid ""
+"A 1D inclusive scan that writes the result into a separate shared-memory "
+"buffer:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:60
+msgid "A 2D prefix sum along the last dimension with reverse accumulation:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:71
+msgid "Operating on a buffer region (slice):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:80
+msgid "A handle to the emitted cumulative-sum operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:90
+msgid "Dimension along which to compute cumulative maximum."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:91
+msgid "If True, compute cumulative maximum in reverse order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/scan_op/index.rst:98
+msgid ""
+"Negative `dim` indices are normalized (Python-style). If `dst` is None, the "
+"operation is performed in-place into `src`. When `src.scope()` is \"local."
+"fragment\", this delegates to `cummax_fragment`; otherwise it emits the `tl."
+"cummax` intrinsic."
+msgstr ""

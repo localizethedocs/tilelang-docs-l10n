@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:2
+msgid "tilelang.utils.pass_diff_hook"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:8
+msgid "Framework-level pass diff hook."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:10
+msgid ""
+"When the ``TILELANG_PASS_DIFF`` environment variable is enabled, this module "
+"monkey-patches ``tvm.ir.transform.Pass.__call__`` to automatically capture "
+"IR before/after every pass and generate diff reports."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:14
+msgid "Usage (no code changes needed)::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:16
+msgid ""
+"TILELANG_PASS_DIFF=terminal python3 my_script.py   # colored terminal diff\n"
+"TILELANG_PASS_DIFF=html python3 my_script.py       # HTML report\n"
+"TILELANG_PASS_DIFF=both python3 my_script.py       # both\n"
+"python3 my_script.py                               # off (zero overhead)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`install_pass_diff_hook <tilelang.utils.pass_diff_hook."
+"install_pass_diff_hook>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:37
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:31:<autosummary>:1
+msgid "Install the pass diff hook if TILELANG_PASS_DIFF is enabled."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`uninstall_pass_diff_hook <tilelang.utils.pass_diff_hook."
+"uninstall_pass_diff_hook>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:45
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:31:<autosummary>:1
+msgid "Remove the pass diff hook and restore original Pass.__call__."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:33
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:39
+msgid ""
+"Called automatically from ``tilelang/__init__.py``. Safe to call multiple "
+"times — only the first call has effect."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff_hook/index.rst:0
+msgid "Return type"
+msgstr ""

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -102,111 +103,124 @@ msgstr ""
 msgid "a_frag[vec] = T.cast(cast_buf[vec], \"float32\")        # compute"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:49
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:46
+msgid ""
+"The staging cast buffers together with the transformed loops are wrapped in "
+"an opaque block annotated with `lexical_alloc_scope`, so their allocations "
+"stay lexically scoped to the use site (see LowerOpaqueBlock / "
+"StorageRewrite) instead of being hoisted to the kernel entry."
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:54
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:55:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:61:<autosummary>:1
+msgid ":py:obj:`BindEnv <tilelang.transform.decouple_type_cast.BindEnv>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:61:<autosummary>:1
 msgid ":py:obj:`CastEntry <tilelang.transform.decouple_type_cast.CastEntry>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:57
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:63
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:71:<autosummary>:1
 msgid ""
 ":py:obj:`MemoryAccessCollector <tilelang.transform.decouple_type_cast."
 "MemoryAccessCollector>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:96
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:102
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:71:<autosummary>:1
 msgid "Collect shared/global BufferStore and BufferLoad nodes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:71:<autosummary>:1
 msgid ""
 ":py:obj:`DecoupleTypeCastMutator <tilelang.transform.decouple_type_cast."
 "DecoupleTypeCastMutator>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:156
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:160
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:71:<autosummary>:1
 msgid "Mutator that decouples type cast vectorization constraints."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:71:<autosummary>:1
 msgid ""
 ":py:obj:`AccessReplacer <tilelang.transform.decouple_type_cast."
 "AccessReplacer>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:174
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:178
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:71:<autosummary>:1
 msgid ""
 "Mutator to replace memory BufferStores/BufferLoads with cast buffer accesses."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:67
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:73
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid ""
 ":py:obj:`is_local_buffer <tilelang.transform.decouple_type_cast."
 "is_local_buffer>`\\ \\(buffer\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
-msgid "Check if a buffer is local (register-level), including local.var."
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:89
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
+msgid "Check if a buffer is local/register-level."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid ""
 ":py:obj:`is_global_or_shared_buffer <tilelang.transform.decouple_type_cast."
 "is_global_or_shared_buffer>`\\ \\(buffer\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:88
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:94
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid "Check if a buffer is a global or shared buffer."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid ""
-":py:obj:`inline_let_stmts <tilelang.transform.decouple_type_cast."
-"inline_let_stmts>`\\ \\(stmt\\)"
+":py:obj:`normalize_flat_binds <tilelang.transform.decouple_type_cast."
+"normalize_flat_binds>`\\ \\(stmt\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
-msgid "Inline all LetStmt bindings in *stmt* so that downstream visitors can"
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:143
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
+msgid "Return ``stmt`` with dominating flat Bind values substituted into uses."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid ""
 ":py:obj:`extract_if_condition <tilelang.transform.decouple_type_cast."
 "extract_if_condition>`\\ \\(stmt\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:144
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:148
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid "Extract IfThenElse condition from statement if present."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid ""
 ":py:obj:`DecoupleTypeCast <tilelang.transform.decouple_type_cast."
 "DecoupleTypeCast>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:197
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:201
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83:<autosummary>:1
 msgid "Create a TVM pass that decouples type cast vectorization constraints."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:79
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:85
 msgid "Module Contents"
 msgstr ""
 
@@ -218,89 +232,77 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:93
-msgid "Bases: :py:obj:`tvm.tir.PyStmtExprVisitor`"
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:99
+msgid "Bases: :py:obj:`tvm.tirx.PyStmtExprVisitor`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:98
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:104
 msgid ""
 "Skips indices traversal so that index expressions (which may contain "
 "BufferLoads to index buffers) do not pollute the result."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:101
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:107
 msgid ""
 "BufferLoads in if_then_else conditions are skipped because conditions don't "
 "participate in the type-cast compute path."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:104
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:110
 msgid ""
 "BufferLoads whose indices do not depend on ``loop_var`` are skipped because "
 "they are scalar accesses (e.g. ``b[0]``) that should remain in the compute "
 "loop as broadcasts."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:135
-msgid ""
-"Inline all LetStmt bindings in *stmt* so that downstream visitors can see "
-"the original BufferLoad nodes that were hidden behind Var references."
-msgstr ""
-
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:138
-msgid ""
-"Used before collecting memory accesses so that BufferLoads inside LetStmt "
-"values are visible to ``MemoryAccessCollector``."
-msgstr ""
-
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:146
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:150
 msgid ""
 "A tuple of (condition, inner_body). If no IfThenElse, returns (None, stmt)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:153
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:171
-msgid "Bases: :py:obj:`tvm.tir.PyStmtExprMutator`"
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:157
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:175
+msgid "Bases: :py:obj:`tvm.tirx.PyStmtExprMutator`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:158
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:162
 msgid ""
 "This mutator transforms vectorized loops that have mixed-precision "
 "operations (detected by the presence of Cast nodes) by inserting local cache "
 "buffers as intermediate stages."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:165
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:169
 msgid "Visit For nodes, transforming vectorized loops with mixed-type stores."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:176
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:180
 msgid ""
 "Matches by both buffer and indices (structural equality) so that accesses "
 "like a[i] and a[i+32] from the same buffer map to different cast buffers."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:199
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:203
 msgid ""
 "This pass inserts a local buffer as an intermediate stage for vectorized "
 "loops where the body contains Cast nodes (mixed-precision operations)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:202
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:206
 msgid ""
 "This allows optimal vectorization for both computation and memory access."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:206
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:210
 msgid ""
 "This pass must be applied before VectorizeLoop and StorageRewrite passes, "
 "while the IR still uses BufferLoad/BufferStore (not tvm_access_ptr)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:209
+#: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:213
 msgid "A TVM PrimFunc pass."
 msgstr ""

@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/gemm_relu/index.rst:2
+msgid "gemm_relu"
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:8
+msgid "Demo kernel for the pass visualizer: fused GEMM + bias + ReLU."
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:10
+msgid "C = relu(A @ B + bias)"
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:12
+msgid ""
+"`bias` is a per-output-column vector of shape (N,), broadcast across rows. "
+"Both the bias add and the ReLU are fused into the GEMM epilogue: they run on "
+"the accumulator fragment `C_local` (still in registers) right before writing "
+"back to global memory. No extra kernel launch, no extra global round-trip."
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:17
+msgid ""
+"Used as input to ``tilelang.tools.pass_visualizer.viewer``; see the package "
+"README for the exact command."
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`gemm_relu <gemm_relu.gemm_relu>`\\ \\(M\\, N\\, K\\, block\\_M\\, "
+"block\\_N\\, block\\_K\\[\\, dtype\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/gemm_relu/index.rst:31
+msgid "Module Contents"
+msgstr ""

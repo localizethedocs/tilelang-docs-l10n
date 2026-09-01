@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tools/analyzer.md:1
+msgid "Performance Analyzer"
+msgstr ""
+
+#: ../../../tools/analyzer.md:3
+msgid ""
+"`tilelang.tools.Analyzer` inspects TileLang TIR and estimates its floating-"
+"point work, global-memory traffic, and roofline execution time. It is useful "
+"for checking a kernel's expected arithmetic cost before compiling and "
+"benchmarking it. The result is a static estimate, not a measurement from the "
+"GPU."
+msgstr ""
+
+#: ../../../tools/analyzer.md:8
+msgid "Requirements"
+msgstr ""
+
+#: ../../../tools/analyzer.md:10
+msgid ""
+"The analyzer and its NumPy dependency are included in the standard TileLang "
+"installation. No optional package is required."
+msgstr ""
+
+#: ../../../tools/analyzer.md:13
+msgid ""
+"The device model passed to the analyzer supplies architecture and bandwidth "
+"information. For example, constructing `CUDA(\"cuda\")` queries CUDA device "
+"0, so that workflow requires a working CUDA runtime and a visible GPU even "
+"though the analyzer does not execute the kernel."
+msgstr ""
+
+#: ../../../tools/analyzer.md:18
+msgid "Quick Start"
+msgstr ""
+
+#: ../../../tools/analyzer.md:20
+msgid ""
+"Create specialized TIR with `get_tir()`, then analyze the resulting "
+"`PrimFunc`:"
+msgstr ""
+
+#: ../../../tools/analyzer.md:22
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang.carver.arch import CUDA\n"
+"from tilelang.tools import Analyzer\n"
+"\n"
+"M = N = K = 1024\n"
+"\n"
+"\n"
+"@tilelang.jit\n"
+"def matmul(A, B, block_M, block_N, block_K):\n"
+"    A: T.Tensor((M, K), T.float16)\n"
+"    B: T.Tensor((N, K), T.float16)\n"
+"    C = T.empty((M, N), T.float16)\n"
+"\n"
+"    with T.Kernel(\n"
+"        T.ceildiv(N, block_N),\n"
+"        T.ceildiv(M, block_M),\n"
+"        threads=128,\n"
+"    ) as (bx, by):\n"
+"        A_shared = T.alloc_shared((block_M, block_K), T.float16)\n"
+"        B_shared = T.alloc_shared((block_N, block_K), T.float16)\n"
+"        C_local = T.alloc_fragment((block_M, block_N), T.float32)\n"
+"\n"
+"        T.clear(C_local)\n"
+"        for k in T.serial(T.ceildiv(K, block_K)):\n"
+"            T.copy(A[by * block_M, k * block_K], A_shared)\n"
+"            T.copy(B[bx * block_N, k * block_K], B_shared)\n"
+"            T.gemm(A_shared, B_shared, C_local, transpose_B=True)\n"
+"        T.copy(C_local, C[by * block_M, bx * block_N])\n"
+"\n"
+"    return C\n"
+"\n"
+"\n"
+"tir = matmul.get_tir(block_M=128, block_N=128, block_K=32)\n"
+"device = CUDA(\"cuda\")\n"
+"result = Analyzer.analysis(tir, device)\n"
+"\n"
+"print(f\"FLOPs: {result.total_flops}\")\n"
+"print(f\"Global bytes: {result.total_global_bytes}\")\n"
+"print(f\"Estimated seconds: {result.estimated_time}\")\n"
+"print(f\"Model peak TFLOPS: {result.expected_tflops}\")\n"
+"print(f\"Model bandwidth (GB/s): {result.expected_bandwidth_GBps}\")\n"
+msgstr ""
+
+#: ../../../tools/analyzer.md:67
+msgid ""
+"For this tiled GEMM, `total_flops` should equal `2 * M * N * K`. Memory "
+"traffic is derived from the `T.copy` regions that cross the global-buffer "
+"boundary."
+msgstr ""
+
+#: ../../../tools/analyzer.md:70
+msgid "API and Result"
+msgstr ""
+
+#: ../../../tools/analyzer.md:72
+msgid "The main entry point is:"
+msgstr ""
+
+#: ../../../tools/analyzer.md:74
+msgid "result = Analyzer.analysis(fn, device)\n"
+msgstr ""
+
+#: ../../../tools/analyzer.md:78
+msgid ""
+"`fn` is a `tvm.IRModule` or `tvm.tirx.PrimFunc` containing TileLang TIR."
+msgstr ""
+
+#: ../../../tools/analyzer.md:79
+msgid ""
+"`device` is a TileLang device description such as `tilelang.carver.arch."
+"CUDA(\"cuda\")`."
+msgstr ""
+
+#: ../../../tools/analyzer.md:81
+msgid "The method returns an immutable `AnalysisResult`."
+msgstr ""
+
+#: ../../../tools/analyzer.md:83
+msgid "`AnalysisResult` exposes these fields:"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "Field"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "Meaning"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "`total_flops`"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "FLOPs attributed to recognized `T.gemm` calls."
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "`total_global_bytes`"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid ""
+"Bytes attributed to recognized `T.copy` calls with a global source or "
+"destination."
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "`estimated_time`"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid ""
+"Maximum of modeled compute time and memory time when a compute model is "
+"available; otherwise memory time."
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "`expected_tflops`"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid ""
+"The theoretical peak selected by the built-in compute-capability table, or "
+"`None` for an unsupported capability."
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid "`expected_bandwidth_GBps`"
+msgstr ""
+
+#: ../../../tools/analyzer.md:0
+msgid ""
+"The bandwidth value obtained from the device model and converted to GB/s."
+msgstr ""
+
+#: ../../../tools/analyzer.md:93
+msgid ""
+"The analyzer multiplies each recognized operation by its enclosing non-"
+"thread- bound TIR loop extents and the `blockIdx.x` and `blockIdx.y` grid "
+"extents. Its compute-time model currently has entries for NVIDIA compute "
+"capabilities 8.0, 8.6, and 8.9."
+msgstr ""
+
+#: ../../../tools/analyzer.md:98
+msgid "Limitations"
+msgstr ""
+
+#: ../../../tools/analyzer.md:100
+msgid ""
+"This is a simple roofline estimate. It does not measure latency, occupancy, "
+"instruction issue, cache behavior, memory coalescing, bank conflicts, or "
+"pipeline overlap."
+msgstr ""
+
+#: ../../../tools/analyzer.md:103
+msgid ""
+"FLOP counting recognizes `T.gemm` calls only. Elementwise arithmetic and "
+"other intrinsics are not included."
+msgstr ""
+
+#: ../../../tools/analyzer.md:105
+msgid ""
+"Memory counting recognizes `T.copy` regions that touch a function parameter "
+"buffer. Direct buffer loads and stores and other memory intrinsics are not "
+"included."
+msgstr ""
+
+#: ../../../tools/analyzer.md:108
+msgid ""
+"Grid scaling tracks `blockIdx.x` and `blockIdx.y`; a `blockIdx.z` extent is "
+"not part of the current calculation."
+msgstr ""
+
+#: ../../../tools/analyzer.md:110
+msgid ""
+"The built-in peak-TFLOPS table uses fixed architecture values. Treat "
+"`expected_tflops` and `estimated_time` as comparison aids, not device-"
+"specific benchmark results."
+msgstr ""
+
+#: ../../../tools/analyzer.md:114
+msgid "Examples"
+msgstr ""
+
+#: ../../../tools/analyzer.md:116
+msgid ""
+"[GEMM analysis](https://github.com/tile-ai/tilelang/blob/main/examples/"
+"analyze/example_gemm_analyze.py)"
+msgstr ""
+
+#: ../../../tools/analyzer.md:117
+msgid ""
+"[Convolution expressed through tiled GEMM](https://github.com/tile-ai/"
+"tilelang/blob/main/examples/analyze/example_conv_analyze.py)"
+msgstr ""

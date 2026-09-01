@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,78 +25,177 @@ msgstr ""
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`Fill <tilelang.ir.Fill>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`AtomicAdd <tilelang.ir.AtomicAdd>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`Copy <tilelang.ir.Copy>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
-msgid ":py:obj:`Conv2DIm2ColOp <tilelang.ir.Conv2DIm2ColOp>`\\"
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
+msgid ":py:obj:`Im2ColOp <tilelang.ir.Im2ColOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`GemmWarpPolicy <tilelang.ir.GemmWarpPolicy>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`GemmSPWarpPolicy <tilelang.ir.GemmSPWarpPolicy>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
-msgid ":py:obj:`GemmSP <tilelang.ir.GemmSP>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`FinalizeReducerOp <tilelang.ir.FinalizeReducerOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`ParallelOp <tilelang.ir.ParallelOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`ReduceOp <tilelang.ir.ReduceOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`CumSumOp <tilelang.ir.CumSumOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
+msgid ":py:obj:`CumMaxOp <tilelang.ir.CumMaxOp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`RegionOp <tilelang.ir.RegionOp>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:26:<autosummary>:1
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
 msgid ":py:obj:`ReduceType <tilelang.ir.ReduceType>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:28
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
+msgid ":py:obj:`Tcgen05Meta <tilelang.ir.Tcgen05Meta>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
+msgid "One tcgen05.ld/st data-movement shape: the per-warp single-issue"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
+msgid ":py:obj:`Tcgen05CopyPlan <tilelang.ir.Tcgen05CopyPlan>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:198
+#: ../../../autoapi/tilelang/ir/index.rst:28:<autosummary>:1
+msgid "The tiled copy of one TMEM tile built by tl.ExpandTcgen05Layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:30
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ":py:obj:`make_span <tilelang.ir.make_span>`\\ \\(file\\, line\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:145
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid "Create a span covering a whole source line."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`set_stmt_span <tilelang.ir.set_stmt_span>`\\ \\(stmt\\, span\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ":py:obj:`get_stmt_span <tilelang.ir.get_stmt_span>`\\ \\(stmt\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`set_buffer_span <tilelang.ir.set_buffer_span>`\\ \\(buffer\\, "
+"span\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ":py:obj:`get_buffer_span <tilelang.ir.get_buffer_span>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`set_prim_func_span <tilelang.ir.set_prim_func_span>`\\ \\(func\\, "
+"span\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`get_prim_func_span <tilelang.ir.get_prim_func_span>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ":py:obj:`span_to_location <tilelang.ir.span_to_location>`\\ \\(span\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:162
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid "Convert a span to a (file, line) tuple, or None when undefined."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid ":py:obj:`span_coverage <tilelang.ir.span_coverage>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:167
+#: ../../../autoapi/tilelang/ir/index.rst:44:<autosummary>:1
+msgid "Statistics on span injection coverage for a PrimFunc."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:46
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/ir/index.rst:32
-#: ../../../autoapi/tilelang/ir/index.rst:37
-#: ../../../autoapi/tilelang/ir/index.rst:42
-#: ../../../autoapi/tilelang/ir/index.rst:47
-#: ../../../autoapi/tilelang/ir/index.rst:52
-#: ../../../autoapi/tilelang/ir/index.rst:72
-#: ../../../autoapi/tilelang/ir/index.rst:92
-#: ../../../autoapi/tilelang/ir/index.rst:97
-#: ../../../autoapi/tilelang/ir/index.rst:102
-#: ../../../autoapi/tilelang/ir/index.rst:107
-#: ../../../autoapi/tilelang/ir/index.rst:112
-#: ../../../autoapi/tilelang/ir/index.rst:117
-#: ../../../autoapi/tilelang/ir/index.rst:122
+#: ../../../autoapi/tilelang/ir/index.rst:50
+#: ../../../autoapi/tilelang/ir/index.rst:55
+#: ../../../autoapi/tilelang/ir/index.rst:60
+#: ../../../autoapi/tilelang/ir/index.rst:65
+#: ../../../autoapi/tilelang/ir/index.rst:70
+#: ../../../autoapi/tilelang/ir/index.rst:90
+#: ../../../autoapi/tilelang/ir/index.rst:110
+#: ../../../autoapi/tilelang/ir/index.rst:115
+#: ../../../autoapi/tilelang/ir/index.rst:120
+#: ../../../autoapi/tilelang/ir/index.rst:125
+#: ../../../autoapi/tilelang/ir/index.rst:130
+#: ../../../autoapi/tilelang/ir/index.rst:135
+#: ../../../autoapi/tilelang/ir/index.rst:140
+#: ../../../autoapi/tilelang/ir/index.rst:178
+#: ../../../autoapi/tilelang/ir/index.rst:195
 msgid "Bases: :py:obj:`tvm.ir.base.Node`, :py:obj:`tvm.runtime.Scriptable`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/ir/index.rst:0
 msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:169
+msgid ""
+"Returns {\"stmts\": [with_span, total], \"buffers\": [with_span, total]}, "
+"where buffers cover both function parameters (buffer_map) and block- "
+"allocated buffers (SBlock.alloc_buffers, i.e. T.alloc_* sites). New nodes "
+"synthesized by passes legitimately have no span; this metric is meant for "
+"the freshly parsed IR (span injection validation)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ir/index.rst:181
+msgid ""
+"One tcgen05.ld/st data-movement shape: the per-warp single-issue CUTLASS TV "
+"atom plus the wrapper's chaining limit."
 msgstr ""

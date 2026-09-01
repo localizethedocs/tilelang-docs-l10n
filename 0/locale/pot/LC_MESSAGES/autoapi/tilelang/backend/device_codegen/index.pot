@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:2
+msgid "tilelang.backend.device_codegen"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:8
+msgid "Device codegen registry shared by backend packages."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`DeviceCodegenFunc <tilelang.backend.device_codegen."
+"DeviceCodegenFunc>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`TargetPredicate <tilelang.backend.device_codegen.TargetPredicate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:22
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`DeviceCodegen <tilelang.backend.device_codegen.DeviceCodegen>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:55
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:28:<autosummary>:1
+msgid "Device codegen entry points for one backend target variant."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:30
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`global_func_device_codegen <tilelang.backend.device_codegen."
+"global_func_device_codegen>`\\ \\(global\\_func\\_name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:50
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid "Create a device codegen callback backed by a TVM global function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`register_device_codegen <tilelang.backend.device_codegen."
+"register_device_codegen>`\\ \\(target\\_kind\\, codegen\\, \\*\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:88
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid "Register a device codegen entry for a target kind."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`register_lazy_device_codegen <tilelang.backend.device_codegen."
+"register_lazy_device_codegen>`\\ \\(target\\_kind\\, import\\_path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:93
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid "Register a backend module to import when its target kind is first used."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`allowed_device_codegens_for_target <tilelang.backend.device_codegen."
+"allowed_device_codegens_for_target>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:98
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid "Return matching device codegen names for a target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`resolve_device_codegen <tilelang.backend.device_codegen."
+"resolve_device_codegen>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:103
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:40:<autosummary>:1
+msgid "Resolve a device codegen entry from a TVM target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:42
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/device_codegen/index.rst:0
+msgid "Return type"
+msgstr ""

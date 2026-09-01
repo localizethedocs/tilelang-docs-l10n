@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,4 +23,35 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/tools/index.rst:8
 msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/index.rst:27:<autosummary>:1
+msgid ":py:obj:`__getattr__ <tilelang.tools.__getattr__>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/index.rst:33
+#: ../../../autoapi/tilelang/tools/index.rst:27:<autosummary>:1
+msgid "Lazily import heavy tool submodules on first attribute access."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/index.rst:29
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/index.rst:35
+msgid ""
+"``tilelang.tools.lower_trace`` is a large debug-only module, so it is "
+"imported lazily (only when accessed) to keep ``import tilelang`` cheap when "
+"the feature is off. Other attributes raise ``AttributeError`` as usual."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/index.rst:39
+msgid ""
+"``importlib.import_module`` is used rather than ``from . import "
+"lower_trace``: the latter re-enters this ``__getattr__`` while resolving the "
+"fromlist and recurses infinitely."
 msgstr ""

@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:2
+msgid "tilelang.tools.cuda.iket.cli"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:8
+msgid "Host-side output and IKET CLI helpers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`set_output_dir <tilelang.tools.cuda.iket.cli.set_output_dir>`\\ "
+"\\(path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:29
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid "Set the process-local IKET export directory used by helper APIs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`output_dir <tilelang.tools.cuda.iket.cli.output_dir>`\\ "
+"\\(\\[default\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:34
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid "Return the configured IKET export directory, if any."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`output_path <tilelang.tools.cuda.iket.cli.output_path>`\\ "
+"\\(name\\, \\*\\[\\, directory\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:39
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid "Return a path under the configured IKET export directory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`trace_files <tilelang.tools.cuda.iket.cli.trace_files>`\\ "
+"\\(\\*\\[\\, directory\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:44
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid "Return generated IKET JSON traces in size-descending order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`profile_command <tilelang.tools.cuda.iket.cli.profile_command>`\\ "
+"\\(command\\, \\*\\, directory\\[\\, postprocess\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:49
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:23:<autosummary>:1
+msgid "Build an IKET CLI command that exports traces to ``directory``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:25
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/cli/index.rst:0
+msgid "Return type"
+msgstr ""

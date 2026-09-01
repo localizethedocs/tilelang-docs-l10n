@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:2
+msgid "tilelang.contrib.hip_resource_info"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:8
+msgid ""
+"Parse AMD GPU per-kernel resource usage out of clang's ``-Rpass-"
+"analysis=kernel-resource-usage`` remarks and expose them on JITKernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:12
+msgid "clang emits a block like::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:13
+msgid ""
+"remark: src.cc:9:0: Function Name: main_kernel [-Rpass-analysis=kernel-"
+"resource-usage] remark: src.cc:9:0:     TotalSGPRs: 16 [-Rpass-"
+"analysis=kernel-resource-usage] remark: src.cc:9:0:     VGPRs: 5 [-Rpass-"
+"analysis=kernel-resource-usage] remark: src.cc:9:0:     ScratchSize [bytes/"
+"lane]: 0 [-Rpass-analysis=kernel-resource-usage] remark: src.cc:9:0:     "
+"SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage] remark: src."
+"cc:9:0:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage] ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:21
+msgid ""
+"right alongside any real warnings/errors. We *parse and strip* those lines "
+"before printing or raising, so autotune logs don't drown in hundreds of "
+"remark blocks while real diagnostics still surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:28
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`KernelResourceUsage <tilelang.contrib.hip_resource_info."
+"KernelResourceUsage>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:53
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:34:<autosummary>:1
+msgid "Resource counts as reported by clang's kernel-resource-usage pass."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:36
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`hipcc_remark_flag <tilelang.contrib.hip_resource_info."
+"hipcc_remark_flag>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid "The clang flag callers should pass to hipcc to enable the remark"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`reset_recorder <tilelang.contrib.hip_resource_info."
+"reset_recorder>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:95
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid "Begin a fresh recording window on this thread."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`pop_recorded <tilelang.contrib.hip_resource_info.pop_recorded>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid "Return everything recorded since the last ``reset_recorder`` and"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`filter_and_record <tilelang.contrib.hip_resource_info."
+"filter_and_record>`\\ \\(output\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid "Strip kernel-resource-usage remarks from ``output``, parse them,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`dump_to_file <tilelang.contrib.hip_resource_info.dump_to_file>`\\ "
+"\\(usage\\, path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:113
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid "Persist parsed resource usage so it survives kernel-cache hits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid ""
+":py:obj:`load_from_file <tilelang.contrib.hip_resource_info."
+"load_from_file>`\\ \\(path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:47:<autosummary>:1
+msgid "Inverse of ``dump_to_file``. Tolerant of missing / unknown fields"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:49
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:55
+msgid ""
+"Field names mirror the remark labels (lower-cased, normalized) so we can "
+"extend without breaking callers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:89
+msgid ""
+"The clang flag callers should pass to hipcc to enable the remark output we "
+"parse here."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:100
+msgid ""
+"Return everything recorded since the last ``reset_recorder`` and clear the "
+"buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:106
+msgid ""
+"Strip kernel-resource-usage remarks from ``output``, parse them, and append "
+"the parsed entries to the active recorder (if any). Returns the filtered "
+"output with the remark lines removed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/hip_resource_info/index.rst:118
+msgid ""
+"Inverse of ``dump_to_file``. Tolerant of missing / unknown fields so older "
+"cache entries keep working when the dataclass evolves."
+msgstr ""

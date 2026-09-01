@@ -1,0 +1,602 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:2
+msgid "tilelang.cuda.intrinsics.macro.tcgen05_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`lift <tilelang.cuda.intrinsics.macro.tcgen05_macro_generator."
+"lift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TCGEN05DescriptorParams <tilelang.cuda.intrinsics.macro."
+"tcgen05_macro_generator.TCGEN05DescriptorParams>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:40
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+"Pre-computed parameters for TCGEN05 descriptor initialization and atom "
+"offset computation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TCGEN05TensorMemoryParams <tilelang.cuda.intrinsics.macro."
+"tcgen05_macro_generator.TCGEN05TensorMemoryParams>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:101
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:24:<autosummary>:1
+msgid "Pre-computed TMEM addressing for one operand Region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TensorCoreIntrinEmitter <tilelang.cuda.intrinsics.macro."
+"tcgen05_macro_generator.TensorCoreIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:187
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:24:<autosummary>:1
+msgid "Intrinsic emitter for Blackwell (SM100) TCGEN5MMA instructions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:26
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:32:<autosummary>:1
+msgid ""
+":py:obj:`compute_umma_descriptor <tilelang.cuda.intrinsics.macro."
+"tcgen05_macro_generator.compute_umma_descriptor>`\\ \\(tl\\_layout\\, "
+"buffer\\, transposed\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:157
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:32:<autosummary>:1
+msgid "Port of CuTe ``make_umma_desc`` (mma_traits_sm100.hpp)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:34
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:42
+msgid ""
+"Returned by ``compute_tcgen05_*_desc_params()`` and consumed by "
+"``init_tcgen05_*_desc()`` and ``tcgen05_*_atom()`` methods."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:49
+msgid ""
+"Canonical swizzle mode; project to the descriptor field via "
+"``tcgen05_layout_type()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:55
+msgid "LBO >> 4, ready to pass to ``T.initialize_tcgen05_descriptor``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:61
+msgid "SBO >> 4, ready to pass to ``T.initialize_tcgen05_descriptor``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:67
+msgid "Number of elements per swizzle atom along the non-K dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:73
+msgid "``max(swizzle_atom_elems // micro_size_k, 1)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:79
+msgid "Bit width of a single logical element."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:85
+msgid ""
+"Whether the matrix is stored in K-major order (affects offset formula "
+"branching)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:93
+msgid ""
+"Physical byte offset (raw bytes) of the operand slice origin within its "
+"buffer; passed to ``T.increase_descriptor_offset`` after building the "
+"descriptor from the buffer base. ``0`` for a whole-buffer / base-origin "
+"operand. Computed by :func:`compute_umma_descriptor` from the CuTe layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:103
+msgid ""
+"The TMEM analog of :class:`TCGEN05DescriptorParams`: built by "
+"``compute_tcgen05_{a,c}_tmem_params()`` from the operand's CuTe fragment and "
+"Region, and consumed by ``tcgen05_*_atom()`` to form each MMA atom's raw "
+"TMEM address."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:112
+msgid "The TMEM buffer's data Var, carrying the base address."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:118
+msgid "Physical ``(datapath, value-column)`` of the Region origin."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:124
+msgid "Region-local matrix coordinates to physical coordinate steps."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:130
+msgid "Bit width of one value; converts value columns to raw b32 columns."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:137
+msgid "Restrict a TMEM fragment to one operand Region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:139
+msgid ""
+"``cute.restrict`` applies the Region exactly like the shared-memory "
+"descriptor path: it yields the Region origin's physical ``(datapath, "
+"column)`` plus the sliced sublayout, and each atom origin is then one "
+"evaluation of that sublayout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:148
+msgid "Raw TMEM address of the atom at a Region-local matrix origin."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:150
+msgid ""
+"The column coordinate counts values of the buffer's dtype; scaling it to raw "
+"b32 columns here is the same conversion TMEM allocation uses."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:159
+msgid ""
+"The Blackwell analog of :func:`compute_gmma_descriptor`: decode an arbitrary "
+"shared-memory ``tl_layout`` for ``buffer`` and compute the UMMA descriptor "
+"parameters, accepting any UMMA-canonical layout. A non-canonical layout is a "
+"programming error, so the canonicity checks assert (mirroring CuTe's "
+"``static_assert``s)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:165
+msgid ""
+"SBO/LBO are read in uint128 units from the canonical layout (dtype-agnostic, "
+"exactly like ``make_umma_desc``); ``elem_bits`` is carried for the atom-"
+"offset math. The ``SWIZZLE_128B_BASE32B`` UMMA mode is not produced by "
+"tilelang's shared-layout makers, so only the standard {NONE,32B,64B,128B} "
+"atoms appear. Unlike ``make_umma_desc`` (which sees one atom), the decoded "
+"layout here is the whole operand tile; 2SM/block-scaled atom splitting is "
+"handled by the caller."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:172
+msgid ""
+"``transposed`` selects which logical axis is MN vs K (shape only): default "
+"``[MN, K]``, transposed ``[K, MN]``. The operand is required to be row-"
+"major, i.e. K-major iff ``not transposed``; the contiguity detected from the "
+"layout is asserted to agree."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:177
+msgid ""
+"``region`` is the operand's per-axis ranges (one :class:`tvm.ir.Range` per "
+"logical buffer mode), used to restrict the decoded layout to a sliced "
+"operand. It may be ``None`` for a full-buffer operand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:184
+msgid ""
+"Bases: :py:obj:`tilelang.cuda.intrinsics.macro.mma_macro_generator."
+"TensorCoreIntrinEmitter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:189
+msgid ""
+"Generates TIR macros that lower to ``tcgen05.mma`` PTX instructions for both "
+"the SS (Shared-Shared) and TS (TensorMemory-Shared) GEMM variants. Also "
+"provides layout helpers for tensor-memory (TMEM) buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:230
+msgid "Enforce the TCGEN5MMA operand contract at the emitter boundary."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:232
+msgid ""
+"Every operand is a complete BufferRegion whose leading modes are pinned to "
+"one element and whose two trailing matrix modes are an exact union of "
+"instruction atoms, atom-aligned in origin.  CUTLASS forms sliced views only "
+"after partitioning into atoms; enforcing the same contract here — once, "
+"before any address math — prevents descriptor-aligned but atom-misaligned "
+"windows (for example BF16 K16 at K=8) from silently producing incorrect "
+"results, and lets the rest of the lowering assume well-formed Regions "
+"without re-checking."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:245
+msgid "Compute accumulator TMEM addressing for one operand Region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:247
+msgid ""
+"The TMEM analog of ``compute_tcgen05_*_desc_params``: shared by the SS, TS, "
+"and block-scaled emitters so the accumulator addressing convention lives in "
+"exactly one place."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:255
+msgid "Compute TS A TMEM addressing for one operand Region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:261
+msgid ""
+"Emit a TCGEN5MMA operation, dispatching to SS or TS variant based on A's "
+"memory scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:263
+msgid ""
+"If *A_region* resides in tensor memory (``shared.tmem``), the TS variant is "
+"emitted; otherwise the SS variant is used (both A and B from shared memory)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:267
+msgid "Operand A — either in shared memory (SS) or tensor memory (TS)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:269
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:288
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:310
+msgid "Operand B in shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:271
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:290
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:312
+msgid "Accumulator Region in tensor memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:273
+msgid "Memory barrier used for MMA completion signalling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:275
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:295
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:317
+msgid "Whether to zero the accumulator before the first MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:282
+msgid "Emit the SS (Shared-Shared) variant of TCGEN5MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:284
+msgid "Reads operand A and B from shared memory via a descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:286
+msgid "Operand A in shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:292
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:314
+msgid ""
+"Memory barrier for MMA completion signalling. ``None`` keeps the MMA ordered "
+"in the issue stream without publishing an event."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:302
+msgid "Emit the TS (TensorMemory-Shared) variant of TCGEN5MMA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:304
+msgid ""
+"Reads operand A directly from tensor memory (TMEM) and operand B from shared "
+"memory via a descriptor.  Every A and C atom origin is mapped through its "
+"CuTe TMEM fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:308
+msgid "Operand A residing in tensor memory (``shared.tmem``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:324
+msgid "Emit a block-scaled TCGEN5MMA (SS variant with TMEM scale factors)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:326
+msgid ""
+"Uses ``tcgen05.mma.cta_group::1|2.kind::mxf8f6f4.block_scale`` PTX "
+"instruction. Scale factors must already reside in tensor memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:333
+msgid "Build the block-scaled instruction descriptor via FFI."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:341
+msgid ""
+"Create a layout function for storing MMA results into a fragment buffer. "
+"This layout is used in conjunction with `inverse_mma_store_layout` to map "
+"fragment indices to threads and local indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:345
+msgid "The local buffer representing a fragment of a matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:348
+msgid ""
+"A fragment object that describes how threads and indices in `local_buf` are "
+"laid out."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:352
+msgid "If `local_buf` is not detected to be a fragment buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:358
+msgid "Create the TMEM layout of one TCGEN5MMA operand for the layout map."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:360
+msgid ""
+"Requires ``self.meta`` initialized via ``get_tcgen5_mma_meta()``; the "
+"selected instruction atom decides the fragment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:363
+msgid ""
+"``operand=\"A\"`` builds the dense TS ``FrgTypeA`` (CuTe ``tmem_frg_{1,2}"
+"sm<A, A, ...>``): 16-bit A remains expressed in value columns here; two such "
+"columns are packed into one raw b32 TMEM column only when an MMA atom "
+"address is formed.  ``operand=\"C\"`` builds the accumulator ``FrgTypeC``; "
+"``is_ts`` selects the TS traits' allocation mode when the GEMM's A operand "
+"also lives in TMEM."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:374
+msgid ""
+"Query the FFI for TCGEN5MMA atom metadata (atom_m, atom_n, atom_k, "
+"enable_ws, enable_2cta), and record them in `self.meta`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:380
+msgid "Build the 64-bit instruction descriptor for a ``tcgen05.mma`` PTX call."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:388
+msgid "The selected instruction atom, as named fields."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:390
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:465
+msgid "Requires ``self.meta`` to have been set via ``get_tcgen5_mma_meta()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:397
+msgid "Number of TCGEN05MMA instruction atoms along M (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:404
+msgid "Number of TCGEN05MMA instruction atoms along N."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:411
+msgid "Number of K-dimension micro-steps (``chunk // micro_size_k``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:416
+msgid ""
+"Compute B descriptor parameters from the B shared buffer via the CuTe "
+"``make_umma_desc`` port. The returned ``TCGEN05DescriptorParams`` is passed "
+"to ``init_tcgen05_b_desc()`` and ``tcgen05_*_atom()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:420
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:441
+msgid "The B operand in shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:427
+msgid ""
+"Compute A descriptor parameters from the A shared buffer (SS variant) via "
+"the CuTe ``make_umma_desc`` port."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:430
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:454
+msgid "The A operand in shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:437
+msgid "Emit TIR to initialize a pre-allocated TCGEN05 B descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:439
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:452
+msgid "A descriptor buffer allocated via ``T.alloc_tcgen05_smem_desc()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:443
+msgid "Pre-computed parameters from ``compute_tcgen05_b_desc_params()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:450
+msgid ""
+"Emit TIR to initialize a pre-allocated TCGEN05 A descriptor (SS variant)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:456
+msgid "Pre-computed parameters from ``compute_tcgen05_a_desc_params()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:463
+msgid "Compute the 64-bit instruction descriptor using current meta."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:471
+msgid "Emit ``tcgen05_mma_arrive(mbar)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:477
+msgid ""
+"Emit a single TCGEN05MMA SS instruction for atom ``(inst_m_idx, inst_n_idx, "
+"ki)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:479
+msgid ""
+"Must be called after descriptor initialization and before "
+"``tcgen05_atom_arrive()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:481
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:483
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:538
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:540
+msgid "Initialized A and B descriptors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:485
+msgid "M-dimension atom index (0 .. tcgen05_num_inst_m - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:487
+msgid "N-dimension atom index (0 .. tcgen05_num_inst_n - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:489
+msgid "K-dimension atom index (0 .. tcgen05_num_k_atoms - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:491
+msgid "Pre-computed A descriptor parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:493
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:522
+msgid "Pre-computed B descriptor parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:495
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:524
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:556
+msgid ""
+"Pre-computed accumulator TMEM parameters from "
+"``compute_tcgen05_c_tmem_params()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:498
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:527
+msgid "Instruction descriptor from ``compute_tcgen05_instr_desc()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:500
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:529
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:561
+msgid "Whether to zero the accumulator on the first K atom."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:507
+msgid ""
+"Emit a single TCGEN05MMA TS instruction for atom ``(inst_m_idx, inst_n_idx, "
+"ki)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:509
+msgid "A resides in tensor memory; B in shared memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:511
+msgid "Initialized B descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:513
+msgid "M-dimension atom index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:515
+msgid "N-dimension atom index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:517
+msgid "K-dimension atom index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:519
+msgid ""
+"Pre-computed A TMEM parameters from ``compute_tcgen05_a_tmem_params()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:536
+msgid "Emit a single TCGEN05MMA block-scaled SS instruction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:542
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:544
+msgid "Scale factor data pointers in tensor memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:546
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:548
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:550
+msgid "Atom indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:552
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:554
+msgid "Pre-computed descriptor parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/tcgen05_macro_generator/index.rst:559
+msgid "Block-scaled instruction descriptor (with SF IDs already encoded)."
+msgstr ""
