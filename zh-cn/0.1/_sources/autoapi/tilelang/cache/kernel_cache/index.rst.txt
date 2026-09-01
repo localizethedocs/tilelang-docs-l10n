@@ -1,0 +1,93 @@
+tilelang.cache.kernel_cache
+===========================
+
+.. py:module:: tilelang.cache.kernel_cache
+
+.. autoapi-nested-parse::
+
+   The cache utils with class and database persistence - KernelCache Class
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.cache.kernel_cache.KernelCache
+
+
+Module Contents
+---------------
+
+.. py:class:: KernelCache
+
+   Caches compiled kernels using a class and database persistence to avoid redundant compilation.
+   Cache files:
+       kernel.cu: The compiled kernel source code
+       wrapped_kernel.cu: The compiled wrapped kernel source code
+       kernel_lib.so: The compiled kernel library
+       params.pkl: The compiled kernel parameters
+
+
+   .. py:attribute:: execution_backend
+      :type:  Literal['tvm_ffi', 'cython', 'nvrtc', 'torch', 'cutedsl']
+      :value: 'tvm_ffi'
+
+
+
+   .. py:attribute:: device_kernel_path
+      :value: 'device_kernel.cu'
+
+
+
+   .. py:attribute:: host_kernel_path
+      :value: 'host_kernel.cu'
+
+
+
+   .. py:attribute:: kernel_lib_path
+      :value: 'kernel_lib.so'
+
+
+
+   .. py:attribute:: params_path
+      :value: 'params.pkl'
+
+
+
+   .. py:method:: cached(func = None, out_idx = None, *args, target, target_host = None, execution_backend = 'tvm_ffi', verbose, pass_configs = None, compile_flags = None)
+
+      Caches and reuses compiled kernels to avoid redundant compilation.
+
+      This is the ONLY place where environment variable processing, target normalization,
+      and execution backend resolution should happen. All compilation paths go through here.
+
+      :param func: Function to be compiled or a prepared PrimFunc
+      :param out_idx: Indices specifying which outputs to return
+      :param target: Compilation target platform (None = read from TILELANG_TARGET env var)
+      :param target_host: Host target platform
+      :param execution_backend: Execution backend (None = read from TILELANG_EXECUTION_BACKEND)
+      :param verbose: Enable verbose output (None = read from TILELANG_VERBOSE)
+      :param \*args: Arguments passed to func
+
+      :returns: The compiled kernel, either freshly compiled or from cache
+      :rtype: JITKernel
+
+      Environment Variables
+      ---------------------
+      TILELANG_TARGET : str
+          Default compilation target (e.g., "cuda", "llvm"). Defaults to "auto".
+      TILELANG_EXECUTION_BACKEND : str
+          Default execution backend. Defaults to "auto".
+      TILELANG_VERBOSE : str
+          Set to "1", "true", "yes", or "on" to enable verbose compilation by default.
+
+
+
+   .. py:method:: clear_cache()
+
+      Clears the entire kernel cache, including both in-memory and disk cache.
+
+
+
