@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:2
+msgid "tilelang.backend.execution_backend"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`TargetPredicate <tilelang.backend.execution_backend."
+"TargetPredicate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`AvailabilityCheck <tilelang.backend.execution_backend."
+"AvailabilityCheck>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:17
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`ExecutionBackendSpec <tilelang.backend.execution_backend."
+"ExecutionBackendSpec>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:25
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`canonicalize_execution_backend <tilelang.backend.execution_backend."
+"canonicalize_execution_backend>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`register_execution_backend <tilelang.backend.execution_backend."
+"register_execution_backend>`\\ \\(target\\_kind\\, spec\\, \\*\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`register_lazy_execution_backends <tilelang.backend."
+"execution_backend.register_lazy_execution_backends>`\\ \\(target\\_kind\\, "
+"import\\_path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`allowed_backends_for_target <tilelang.backend.execution_backend."
+"allowed_backends_for_target>`\\ \\(target\\, \\*\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`resolve_execution_backend <tilelang.backend.execution_backend."
+"resolve_execution_backend>`\\ \\(requested\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`resolve_execution_backend_spec <tilelang.backend.execution_backend."
+"resolve_execution_backend_spec>`\\ \\(requested\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:38
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/execution_backend/index.rst:0
+msgid "Return type"
+msgstr ""

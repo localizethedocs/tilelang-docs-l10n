@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:2
+msgid "tilelang.language.experimental.gemm_sp_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:8
+msgid "Sparse GEMM operators exposed on the TileLang language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`gemm_sp <tilelang.language.experimental.gemm_sp_op.gemm_sp>`\\ "
+"\\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, transpose\\_E\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:27
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:21:<autosummary>:1
+msgid "TileLang sparse GEMM operator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`wgmma_gemm_sp <tilelang.language.experimental.gemm_sp_op."
+"wgmma_gemm_sp>`\\ \\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:54
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:21:<autosummary>:1
+msgid "Explicit Hopper WGMMA sparse GEMM without an implicit wait."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_gemm_sp <tilelang.language.experimental.gemm_sp_op."
+"tcgen05_gemm_sp>`\\ \\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:80
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:21:<autosummary>:1
+msgid "Explicit Blackwell TCGEN05 sparse GEMM without an implicit wait."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:29
+msgid ""
+"This is the default synchronous sparse GEMM interface. On Hopper, if the "
+"compiler selects WGMMA SP lowering, TileLang inserts the corresponding wait "
+"implicitly."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:33
+msgid ""
+"For manual asynchronous scheduling, use ``T.wgmma_gemm_sp(...)`` with ``T."
+"wait_wgmma(...)`` on Hopper, or ``T.tcgen05_gemm_sp(...)`` on Blackwell."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:36
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:64
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:92
+msgid "Compressed sparse matrix containing only non-zero elements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:37
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:65
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:93
+msgid "Metadata tensor encoding the sparsity pattern of A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:38
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:66
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:94
+msgid "Dense input matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:39
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:67
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:95
+msgid "Output accumulator matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:40
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:68
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:96
+msgid "Whether to transpose A. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:41
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:69
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:97
+msgid "Whether to transpose E. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:42
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:70
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:98
+msgid "Whether to transpose B. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:43
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:71
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:99
+msgid "Warp partition policy. Defaults to GemmSPWarpPolicy.Square."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:44
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:72
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:100
+msgid "Whether to zero the accumulator before computation. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:45
+msgid "Number of K dimensions packed per warp. Defaults to 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:46
+msgid "Warp group wait count. Defaults to 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:48
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:74
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:102
+msgid "A handle to the sparse GEMM operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:56
+msgid ""
+"This is the explicit asynchronous Hopper WGMMA counterpart to the default "
+"synchronous ``T.gemm_sp(...)`` interface, with two stricter guarantees: - it "
+"always requests the WGMMA SP lowering path - it never auto-emits an inlined "
+"``warpgroup_wait``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:61
+msgid ""
+"If the current target or operand pattern cannot use Hopper WGMMA SP, "
+"compilation fails instead of silently falling back to MMA SP."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:82
+msgid ""
+"This is the explicit asynchronous Blackwell TCGEN05 counterpart to the "
+"default synchronous ``T.gemm_sp(...)`` interface, with two stricter "
+"guarantees: - it always requests the TCGEN05 SP lowering path - it never "
+"auto-emits an inlined ``mbarrier_wait_parity``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/experimental/gemm_sp_op/index.rst:88
+msgid ""
+"If the current target or operand pattern cannot use Blackwell TCGEN05 SP, "
+"compilation fails instead of silently falling back to another sparse GEMM "
+"path."
+msgstr ""

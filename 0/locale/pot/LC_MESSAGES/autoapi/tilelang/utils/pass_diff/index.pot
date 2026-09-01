@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:2
+msgid "tilelang.utils.pass_diff"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:8
+msgid "IR pass diff tool — compare TIR before/after each pass in a chain."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:11
+msgid "Usage"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:14
+msgid ""
+"from tilelang.utils.pass_diff import pass_diff\n"
+"\n"
+"# Single pass, terminal colored diff\n"
+"pass_diff(func, tilelang.transform.ThreadSync(\"shared\"))\n"
+"\n"
+"# Pass chain with named steps\n"
+"pass_diff(func, [\n"
+"    (\"AnnotateDeviceRegions\", tvm.tirx.transform."
+"AnnotateDeviceRegions()),\n"
+"    (\"SplitHostDevice\",       tvm.tirx.transform.SplitHostDevice()),\n"
+"    (\"ThreadSync\",            tilelang.transform.ThreadSync(\"shared\")),\n"
+"])\n"
+"\n"
+"# Generate HTML report\n"
+"pass_diff(func, passes, mode=\"html\")\n"
+"\n"
+"# Both terminal + HTML\n"
+"pass_diff(func, passes, mode=\"both\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:35
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`pass_diff <tilelang.utils.pass_diff.pass_diff>`\\ "
+"\\(func\\_or\\_mod\\, passes\\, \\*\\[\\, mode\\, context\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:47
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:41:<autosummary>:1
+msgid "Compare IR before and after each pass in a chain."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:43
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:49
+msgid "The starting IR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:51
+msgid ""
+"A single pass, a list of passes, or a list of (name, pass) pairs. If passes "
+"are not named, a default name is derived from the pass object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:54
+msgid ""
+"Output mode. ``\"terminal\"`` prints colored diff to stdout. ``\"html\"`` "
+"generates an HTML file. ``\"both\"`` does both."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:57
+msgid "Number of context lines in the unified diff (default 3)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:59
+msgid "Output path for HTML report (default ``pass_diff_report.html``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:62
+msgid ""
+"One entry per pass step, each containing: ``name``, ``before_script``, "
+"``after_script``, ``diff_lines``, ``insertions``, ``deletions``, ``changed``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_diff/index.rst:0
+msgid "Return type"
+msgstr ""

@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tools/layout_visualization.md:1
+msgid "Layout Visualization"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:3
+msgid "TileLang provides two related ways to inspect data layouts:"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:5
+msgid ""
+"`tilelang.tools.plot_layout` plots a `T.Layout` or `T.Fragment` that you "
+"already have."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:7
+msgid ""
+"Layout inference visualization prints fragment layouts discovered by the "
+"compiler and can save a plot for each inferred two-dimensional fragment."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:10
+msgid ""
+"Use the first workflow while designing a mapping and the second when "
+"checking the mapping selected for buffers in a compiled kernel."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:13
+msgid "Installation"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:15
+msgid ""
+"PNG, PDF, and SVG output requires Matplotlib. Install TileLang's "
+"visualization extra:"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:18
+msgid "pip install \"tilelang[vis]\"\n"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:22
+msgid "Text-only compiler output does not create a Matplotlib figure."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:24
+msgid "Plot a Layout Directly"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:26
+msgid "This example plots a 4 by 4 transpose mapping:"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:28
+msgid ""
+"import tilelang.language as T\n"
+"from tilelang.tools import plot_layout\n"
+"\n"
+"transpose = T.Layout([4, 4], lambda i, j: (j, i))\n"
+"\n"
+"plot_layout(\n"
+"    transpose,\n"
+"    save_directory=\"./tmp\",\n"
+"    name=\"transpose_4x4\",\n"
+"    formats=\"png\",\n"
+")\n"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:42
+msgid ""
+"The call writes `./tmp/transpose_4x4.png` and prints the saved path. In the "
+"default input view, each grid cell represents an input position and its "
+"label is the flattened output position. Set `view=\"output\"` to put output "
+"positions on the grid and label them with their source coordinates."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:47
+msgid ""
+"For a `T.Fragment`, cells are colored by thread and labeled with both the "
+"thread ID (`T`) and thread-local register index (`L`):"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:50
+msgid "plot_layout(fragment, name=\"mma_load\", formats=\"pdf\")\n"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:54
+msgid "`plot_layout` API"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:56
+msgid ""
+"plot_layout(\n"
+"    layout,\n"
+"    save_directory=\"./tmp\",\n"
+"    name=\"layout\",\n"
+"    colormap=None,\n"
+"    verbose=False,\n"
+"    formats=\"pdf\",\n"
+"    view=\"input\",\n"
+"    grid_shape=None,\n"
+")\n"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "Parameter"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "Meaning"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`layout`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "A `T.Layout` or `T.Fragment`. Other objects raise `TypeError`."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`save_directory`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "Directory created for output files. Defaults to `./tmp`."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`name`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "Base filename without an extension."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`colormap`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid ""
+"Matplotlib colormap name. The defaults are `Spectral` for `T.Layout` and "
+"`RdPu` for `T.Fragment`."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`verbose`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "Print each mapping while building the plot."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`formats`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid ""
+"A string: `pdf`, `png`, `svg`, `all`, or a comma-separated combination such "
+"as `png,svg`."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`view`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid ""
+"For `T.Layout`, use `input` or `output`. It is not used for `T.Fragment`."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid "`grid_shape`"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:0
+msgid ""
+"For the input view of a `T.Layout`, override the display grid with `(rows, "
+"columns)`. Its product must equal the number of input elements."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:80
+msgid ""
+"`plot_layout` returns `None`. With `formats=\"all\"`, it writes PDF, PNG, "
+"and SVG files. A higher-dimensional `T.Layout` is flattened to a two-"
+"dimensional grid: all dimensions except the last form the row coordinate, "
+"and the last dimension forms the column coordinate."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:85
+msgid "Visualize Inferred Layouts"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:87
+msgid "Enable the compiler pass through `pass_configs` on a JIT kernel:"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:89
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"\n"
+"\n"
+"@tilelang.jit(\n"
+"    pass_configs={\n"
+"        tilelang.PassConfigKey.TL_LAYOUT_VISUALIZATION_ENABLE: True,\n"
+"        tilelang.PassConfigKey.TL_LAYOUT_VISUALIZATION_FORMATS: \"txt,"
+"svg\",\n"
+"    }\n"
+")\n"
+"def kernel(A, block_M, block_N):\n"
+"    M, N = T.const(\"M, N\")\n"
+"    A: T.Tensor((M, N), T.float16)\n"
+"    B = T.empty((M, N), T.float16)\n"
+"\n"
+"    with T.Kernel(T.ceildiv(N, block_N), T.ceildiv(M, block_M), threads=128) "
+"as (bx, by):\n"
+"        fragment = T.alloc_fragment((block_M, block_N), T.float16)\n"
+"        T.copy(A[by * block_M, bx * block_N], fragment)\n"
+"        T.copy(fragment, B[by * block_M, bx * block_N])\n"
+"\n"
+"    return B\n"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:113
+msgid ""
+"Compile or invoke the kernel normally. For each inferred `T.Fragment` found "
+"in a block's `layout_map` annotation, the pass prints output like:"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:116
+msgid ""
+"C_local inferred layout:\n"
+"  Shape: [32, 32] -> [8]\n"
+"  Thread: <thread-index expression>\n"
+"  Index:  [<local-index expression>]\n"
+"  Replicate:  1\n"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:124
+msgid ""
+"Image files are written under `./tmp` with names derived from the buffer, "
+"such as `C_local_layout.svg`."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:127
+msgid ""
+"`TL_LAYOUT_VISUALIZATION_ENABLE` defaults to `False`. When it is enabled, "
+"`TL_LAYOUT_VISUALIZATION_FORMATS` accepts `txt`, `png`, `pdf`, `svg`, `all`, "
+"or a comma-separated combination. Omitting the formats setting selects text-"
+"only output. The compiler prints the textual mapping whenever visualization "
+"is enabled; `txt` does not add an image format."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:133
+msgid "Limitations"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:135
+msgid ""
+"Direct `T.Fragment` plotting requires a two-dimensional input shape and "
+"single-valued thread and local-index mappings."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:137
+msgid ""
+"Compiler-generated images are limited to inferred fragments with two-"
+"dimensional input shapes. Other inferred fragment shapes are still printed, "
+"but image generation is skipped with a warning."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:140
+msgid ""
+"Plots enumerate layout elements in Python. Large shapes can produce large "
+"figures and take substantial time and memory."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:142
+msgid ""
+"The output-space view infers its shape from mapped coordinates. Mappings "
+"that are non-bijective or sparse may overwrite a cell or leave empty cells, "
+"so the plot should be treated as a diagnostic view rather than layout "
+"validation."
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:146
+msgid "Examples"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:148
+msgid ""
+"[Layout transforms and swizzles](https://github.com/tile-ai/tilelang/tree/"
+"main/examples/plot_layout)"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:149
+msgid ""
+"[CUDA MMA fragment layouts](https://github.com/tile-ai/tilelang/blob/main/"
+"examples/plot_layout/fragment_mma_load_a.py)"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:150
+msgid ""
+"[AMD MFMA fragment layouts](https://github.com/tile-ai/tilelang/blob/main/"
+"examples/plot_layout/fragment_mfma_load_a.py)"
+msgstr ""
+
+#: ../../../tools/layout_visualization.md:151
+msgid ""
+"[Compiler layout inference visualization](https://github.com/tile-ai/"
+"tilelang/blob/main/examples/visual_layout_inference/visual_layout_inference."
+"py)"
+msgstr ""

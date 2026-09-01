@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:2
+msgid "tilelang.cuda.intrinsics.macro.mma_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`lift <tilelang.cuda.intrinsics.macro.mma_macro_generator.lift>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TransformKind <tilelang.cuda.intrinsics.macro.mma_macro_generator."
+"TransformKind>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:35
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:24:<autosummary>:1
+msgid "Enum where members are also (and must be) ints"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TensorCoreIntrinEmitter <tilelang.cuda.intrinsics.macro."
+"mma_macro_generator.TensorCoreIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:60
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:24:<autosummary>:1
+msgid "To eliminate Python syntax within TIR Macro."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`TensorCoreIntrinEmitterWithLadderTransform <tilelang.cuda."
+"intrinsics.macro.mma_macro_generator."
+"TensorCoreIntrinEmitterWithLadderTransform>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:32
+msgid "Bases: :py:obj:`enum.IntEnum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:177
+msgid ""
+"is_m_first: True if the thread binding is in the form of (tx, warp_n, "
+"warp_m) which represents [warp_size, block_row_warps (split n), "
+"block_col_warps (split m)] Otherwise, it is in the form of [warp_size, "
+"block_col_warps (split m), block_row_warps (split n)]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:196
+msgid "Number of MMA instruction atoms along the M dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:203
+msgid "Number of MMA instruction atoms along the N dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:208
+msgid "Emit a single MMA atom for tile (inst_m_idx, inst_n_idx)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:210
+msgid ""
+"This is the atomic building block of ``mma()``.  Calling this method for "
+"every ``(i, j)`` in ``T.grid(mma_num_inst_m, mma_num_inst_n)`` produces "
+"identical TIR to a single ``mma()`` call."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:214
+msgid "Fragment buffer for operand A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:216
+msgid "Fragment buffer for operand B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:218
+msgid "Accumulator fragment buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:220
+msgid "M-dimension atom index (0 .. mma_num_inst_m - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:222
+msgid "N-dimension atom index (0 .. mma_num_inst_n - 1)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:224
+msgid "K-inner step index used to offset A/B fragments."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:234
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:251
+msgid ""
+"Create a layout function for storing MMA results into a fragment buffer. "
+"This layout is used in conjunction with `inverse_mma_store_layout` to map "
+"fragment indices to threads and local indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:238
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:255
+msgid "The local buffer representing a fragment of a matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:241
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:258
+msgid ""
+"A fragment object that describes how threads and indices in `local_buf` are "
+"laid out."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:245
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:262
+msgid "If `local_buf` is not detected to be a fragment buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:268
+msgid "Bases: :py:obj:`TensorCoreIntrinEmitter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/macro/mma_macro_generator/index.rst:271
+msgid ""
+"To eliminate Python syntax within TIR Macro. With Ladder Transform Plugin."
+msgstr ""

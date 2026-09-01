@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,7 +71,7 @@ msgid ""
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:70
-#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:113
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:125
 msgid "The TileDict object containing the tile configuration."
 msgstr ""
 
@@ -130,25 +131,40 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:109
 msgid ""
-"Computes the stride map for a given node based on the TileDict configuration."
+"Scores a block size based on its efficiency and fit relative to the "
+"architecture's warp size and SM partition."
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:111
+msgid "The block size to score."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:114
+msgid ""
+"A tuple containing two scores representing efficiency and fit, respectively."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:121
+msgid ""
+"Computes the stride map for a given node based on the TileDict configuration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:123
 msgid "The node for which to compute the stride map."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:116
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:128
 msgid ""
 "A tuple of dictionaries containing the output strides and tensor strides."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:123
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:135
 msgid ""
 "Plans the rasterization for the given TileDict. This function is not "
 "implemented yet."
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:125
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:137
 msgid "The TileDict object to plan rasterization for."
 msgstr ""
 
@@ -156,6 +172,6 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:128
+#: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:140
 msgid "This function is not implemented yet."
 msgstr ""

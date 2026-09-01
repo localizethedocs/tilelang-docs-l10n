@@ -1,0 +1,759 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../programming_guides/cluster_tma.md:1
+msgid "Cluster TMA: Multicast and SM-to-SM Copy"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:3
+msgid ""
+"This page describes two advanced data-movement features that are available "
+"on NVIDIA Hopper (SM90) and later: **TMA multicast** and **SM-to-SM cluster "
+"copy**. Both features are exposed through extensions to the existing `T."
+"copy` operator and require a kernel launched with `T.ClusterKernel`, i.e., "
+"with `cluster_dims != (1, 1, 1)`."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:8
+msgid "Requirements:"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:9
+msgid "CUDA Compute Capability ≥ 9.0 (Hopper / Blackwell / RTX 5090)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:13
+msgid "Background: Thread Block Clusters"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:15
+msgid ""
+"A *thread block cluster* is a group of CTAs that share a common virtual "
+"address space for their shared-memory regions and can communicate without "
+"going through global memory. Within a cluster, each CTA has a *block rank* "
+"(0-indexed position inside the cluster), and all CTAs can observe each "
+"other's shared memory via the `shared::cluster` address space."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:21
+msgid ""
+"with T.ClusterKernel(grid_x, grid_y, threads=128, cluster_dims=(4, 1, 1)) as "
+"(bx, by):\n"
+"    rank  = T.block_rank_in_cluster()   # 0..3 within this cluster\n"
+"    T.cluster_sync()                     # barrier across all CTAs in "
+"cluster\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:29
+msgid "Feature 1 — TMA Multicast (`cluster_mask`)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:31
+#: ../../../programming_guides/cluster_tma.md:114
+msgid "What it does"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:33
+msgid ""
+"Normally each CTA issues its own TMA load, fetching a tile from global "
+"memory into its private shared memory. With multicast, **a single TMA "
+"transaction broadcasts one global tile to every participating CTA "
+"simultaneously**, saving repeated DRAM traffic when multiple CTAs in a "
+"cluster need the same data (e.g., the same K-panel in a split-K GEMM)."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:39
+msgid ""
+"Global memory ──TMA multicast──▶ shared memory (rank 0)\n"
+"                              └─▶ shared memory (rank 1)   (same tile, no "
+"extra DRAM read)\n"
+"                  TMA load    ──▶ shared memory (rank 2)   (independent "
+"tile)\n"
+"                  TMA load    ──▶ shared memory (rank 3)   (independent "
+"tile)\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:46
+msgid "API"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:48
+msgid "T.copy_cluster(src_global, dst_shared, cluster_mask=<int>)\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:52
+msgid ""
+"`cluster_mask` is a bitmask where each set bit identifies a CTA rank that "
+"participates in the multicast. The CTA whose rank equals the lowest set bit "
+"in the mask issues `cp.async.bulk.tensor … multicast::cluster`; every other "
+"CTA in the mask receives the data passively (no instruction issued). CTAs "
+"outside the mask perform a regular TMA load for their own tile."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:58
+msgid "Example"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:60
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"\n"
+"def make_tma_multicast_kernel(M, N, block_M, block_N, cluster_mask):\n"
+"    @T.prim_func\n"
+"    def kernel(\n"
+"        A: T.Tensor((M, N), \"float16\"),\n"
+"        B: T.Tensor((M, N), \"float16\"),\n"
+"    ):\n"
+"        # 4 CTAs per cluster; ranks 0 and 1 share the same tile via "
+"multicast.\n"
+"        with T.ClusterKernel(\n"
+"            T.ceildiv(N, block_N),\n"
+"            T.ceildiv(M, block_M),\n"
+"            threads=128,\n"
+"            cluster_dims=(4, 1, 1)\n"
+"        ) as (bx, by):\n"
+"            A_shared = T.alloc_shared((block_M, block_N), \"float16\")\n"
+"\n"
+"            # cluster_mask=0b0011: ranks 0 and 1 participate.\n"
+"            # Rank 0 issues tma_load_multicast; rank 1 receives passively.\n"
+"            # Ranks 2 and 3 each issue a regular tma_load.\n"
+"            T.copy_cluster(A[by * block_M, bx * block_N], A_shared,\n"
+"                           cluster_mask=cluster_mask)\n"
+"\n"
+"            T.copy(A_shared, B[by * block_M, bx * block_N])\n"
+"\n"
+"    return kernel\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:90
+msgid "Running the kernel above with `cluster_mask = 0b0011`:"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Rank"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Action"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`B` slice receives"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "0"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "issues multicast load"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "A tile at rank-0 address"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "1"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "passively receives"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "**same** A tile as rank 0"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "2"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "regular TMA load"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "A tile at rank-2 address"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "3"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "A tile at rank-3 address"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:99
+#: ../../../programming_guides/cluster_tma.md:266
+msgid "Notes"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:101
+msgid ""
+"The compiler lowers `cluster_mask != 0` to `cp.async.bulk.tensor.Nd.shared::"
+"cluster.global.mbarrier::complete_tx::bytes.multicast::cluster`   for the "
+"issuing CTA; CTAs in the mask but not elected as issuer receive   passively, "
+"and only CTAs outside the mask issue a standard   `cp.async.bulk.tensor`."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:106
+msgid ""
+"Software-pipelining (`T.Pipelined`) is fully supported; the warp-specialized "
+"rewriter recognises `tma_load_multicast` as a producer operation."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:108
+msgid ""
+"`cluster_mask` is a compile-time constant; dynamic masks are not supported."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:112
+msgid "Feature 2 — SM-to-SM Cluster Copy (`dst_block`)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:116
+msgid ""
+"SM-to-SM copy lets one CTA **push data directly from its own shared memory "
+"into another CTA's shared memory** within the same cluster, without a round "
+"trip through global memory. This is useful for patterns such as:"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:120
+msgid ""
+"Partial result exchange (e.g., split-K partial sums across SM boundaries)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:121
+msgid ""
+"Producer–consumer pipelines where the producer fills a neighbor's buffer"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:122
+msgid "All-to-all collective communication within a cluster"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:124
+msgid "Lowering paths"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:126
+msgid ""
+"The compiler selects one of three paths depending on whether "
+"`remote_barrier` is provided and whether the copy region is contiguous:"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Path"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Condition"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Hardware instruction"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Arrive count"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "**TMA fast path**"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`remote_barrier` set + region is contiguous"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "one `tl::tma_store_cluster`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "**Multi-TMA path**"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`remote_barrier` set + ND region is non-contiguous"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "one `tl::tma_store_cluster` per contiguous row"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "number of rows"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "**SIMT fallback**"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "no `remote_barrier`, or non-decomposable region"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`map_shared_rank` scalar stores by all threads"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "auto-injected arrive if `remote_barrier` is set"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:135
+msgid ""
+"A copy region is *contiguous* when its innermost dimension spans the full "
+"buffer width (i.e. the copy region `[..., 0:N_tile]` satisfies `N_tile == "
+"buffer_shape[-1]`). If the innermost extent is shorter, the region is non-"
+"contiguous and the TMA fast path is unavailable."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:140
+msgid "TMA fast path — bulk async copy with mbarrier"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:142
+msgid ""
+"T.copy_cluster(src_shared, dst_shared, dst_block=<rank>, "
+"remote_barrier=<mbarrier>)\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:146
+msgid ""
+"A single elected thread issues one `cp.async.bulk.shared::cluster` "
+"instruction. The hardware DMA engine transfers the entire tile "
+"asynchronously and signals the destination CTA's mbarrier on completion. The "
+"destination CTA waits with `T.mbarrier_wait_parity`."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:151
+msgid "Steps:"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:152
+msgid ""
+"Both CTAs allocate the **same** shared memory layout so their mbarriers live "
+"at the same offset."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:154
+msgid ""
+"Every CTA initialises its own barrier for 1 arrival via `T."
+"alloc_cluster_barrier([1])`."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:155
+msgid ""
+"The source CTA (`pid == 0` below) calls `T.copy_cluster(... dst_block=1, "
+"remote_barrier=...)`."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:156
+msgid "The destination CTA (`pid == 1`) waits on its local barrier copy."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:158
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"\n"
+"@tilelang.jit(execution_backend=\"cython\")\n"
+"def make_cluster_copy_kernel(N: int):\n"
+"    @T.prim_func\n"
+"    def kernel(\n"
+"        A: T.Tensor((N,), \"float32\"),\n"
+"        B: T.Tensor((N,), \"float32\"),\n"
+"    ):\n"
+"        with T.ClusterKernel(2, threads=128, cluster_dims=(2, 1, 1)) as "
+"pid:\n"
+"            s_src     = T.alloc_shared((N,), \"float32\")\n"
+"            s_dst     = T.alloc_shared((N,), \"float32\")\n"
+"            s_barrier = T.alloc_cluster_barrier([1])\n"
+"\n"
+"            T.fill(s_src, 0.0)\n"
+"            T.fill(s_dst, 0.0)\n"
+"\n"
+"            T.cluster_sync()\n"
+"\n"
+"            if pid == 0:\n"
+"                # Load A into local shared memory.\n"
+"                for i in T.Parallel(N):\n"
+"                    s_src[i] = A[i]\n"
+"\n"
+"                # Async-push s_src → s_dst in CTA 1, signal CTA 1's "
+"barrier.\n"
+"                T.copy_cluster(s_src, s_dst, dst_block=1,\n"
+"                               remote_barrier=s_barrier[0])\n"
+"\n"
+"            if pid == 1:\n"
+"                # Wait until CTA 0 finishes writing.\n"
+"                T.mbarrier_wait_parity(s_barrier[0], 0)\n"
+"\n"
+"                for i in T.Parallel(N):\n"
+"                    B[i] = s_dst[i]\n"
+"\n"
+"    return kernel\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:198
+msgid "Generated producer code (single-thread guard, one PTX instruction):"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:200
+msgid ""
+"if (((int)threadIdx.x) == 0) {\n"
+"    tl::tma_store_cluster(&s_dst[0], &s_src[0], 1,\n"
+"                          (uint32_t)(N * 4), s_barrier[0]);\n"
+"}\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:207
+msgid "Multi-TMA path — non-contiguous ND regions"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:209
+msgid ""
+"When `remote_barrier` is provided but the copy region is not fully "
+"contiguous (e.g. copying a 2-D slice `[0:M, 0:N_tile]` from a buffer of "
+"shape `[M, N_full]` where `N_tile < N_full`), the compiler automatically "
+"**decomposes the ND region into individual contiguous rows**, emitting one "
+"`tl::tma_store_cluster` call per row. The mbarrier `arrive_count` is updated "
+"to the total number of rows so the destination CTA's `mbarrier_wait_parity` "
+"completes only after all rows are transferred."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:217
+msgid ""
+"# 2-D non-contiguous copy: N_tile < N_full → compiler emits M TMA calls\n"
+"s_src = T.alloc_shared((M, N_full), \"float32\")\n"
+"s_dst = T.alloc_shared((M, N_full), \"float32\")\n"
+"s_barrier = T.alloc_cluster_barrier([1])   # arrive_count updated to M at "
+"compile time\n"
+"\n"
+"T.copy_cluster(\n"
+"    s_src[0:M, 0:N_tile],\n"
+"    s_dst[0:M, 0:N_tile],\n"
+"    dst_block=1,\n"
+"    remote_barrier=s_barrier[0],\n"
+")\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:231
+msgid ""
+"The decomposition is recursive: a 3-D region `[0:D, 0:M, 0:N_tile]` (with "
+"`N_tile < N_full`) produces `D × M` TMA calls and sets `arrive_count = D * "
+"M`. Static extents are unrolled at compile time; symbolic extents emit TIR "
+"`For` loops."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:236
+msgid ""
+"The API is identical to the fast path — no change is required in user code."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:238
+msgid "SIMT fallback — element-by-element stores"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:240
+msgid "Omit `remote_barrier` to always use the SIMT fallback:"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:242
+msgid "T.copy_cluster(s_src, s_dst, dst_block=1)\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:246
+msgid ""
+"This lowers to a SIMT parallel loop where every thread writes one (or a few) "
+"elements into the remote CTA's shared memory via `cooperative_groups::"
+"map_shared_rank`. Because `map_shared_rank` returns a scalar pointer, "
+"vectorised writes are not possible. Use this path only when an mbarrier is "
+"unavailable or when the tile is too small to justify barrier overhead."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:253
+msgid ""
+"When `remote_barrier` is provided but the region is neither contiguous nor "
+"decomposable into TMA rows, the compiler falls back to SIMT stores and "
+"**auto-injects a barrier arrive** (`__syncthreads()` + single-thread "
+"`s_barrier.arrive(1u)`) so the destination CTA can still wait on the same "
+"mbarrier without any API change."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:259
+msgid "Synchronisation contract"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "TMA fast path"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Multi-TMA path"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "SIMT fallback"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Source CTA"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "no wait needed; copy is async"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "no wait needed"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "effectively sync after the loop"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Destination CTA"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.mbarrier_wait_parity(barrier, parity)`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid ""
+"`T.cluster_sync()` (no barrier), or `T.mbarrier_wait_parity` if auto-arrived"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:268
+msgid ""
+"All paths require `src` and `dst` to be in `shared` or `shared.dyn` scope."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:269
+msgid ""
+"The mbarrier must be allocated with `T."
+"alloc_cluster_barrier([arrive_count])`. The compiler updates `arrive_count` "
+"automatically for the multi-TMA path."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:271
+msgid ""
+"`T.cluster_sync()` after allocation but before the copy is required to "
+"ensure all CTAs have reached the barrier-init point before any data is "
+"pushed."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:273
+msgid "`dst_block` may be a compile-time integer or a runtime `tir.PrimExpr`."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:274
+msgid ""
+"`cluster_mask` and `dst_block` are mutually exclusive in a single `T."
+"copy_cluster` call."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:279
+msgid "Cluster Helper Builtins"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Builtin"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Return"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Description"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.block_rank_in_cluster()`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`int32`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Block rank (0-indexed) within the cluster"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.cluster_sync()`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "—"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Barrier synchronisation across all cluster CTAs (arrive + wait)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.cluster_arrive()`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Signal cluster barrier arrival (aligned)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.cluster_arrive_relaxed()`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Signal cluster barrier arrival (relaxed)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.cluster_wait()`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Wait for all cluster CTAs to arrive"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.alloc_cluster_barrier([count])`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`Buffer`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Allocate and initialise an mbarrier for `count` arrivals"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.mbarrier_arrive(bar)`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Signal one arrival on an mbarrier"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "`T.mbarrier_wait_parity(bar, parity)`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:0
+msgid "Wait until `bar` flips to `parity`"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:294
+msgid "Putting It Together: Split-K Sketch"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:296
+msgid ""
+"A common pattern combining both features: multicast the shared K-panel to "
+"all cluster CTAs (saving DRAM bandwidth), then reduce partial sums with SM-"
+"to-SM copy (saving global-memory round trips)."
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:300
+msgid ""
+"@T.prim_func\n"
+"def split_k_gemm(A, B, C):\n"
+"    with T.ClusterKernel(grid_x, grid_y, threads=256, cluster_dims=(4, 1, "
+"1)) as (bx, by):\n"
+"        rank    = T.block_rank_in_cluster()\n"
+"        A_s     = T.alloc_shared((BM, BK), \"float16\")\n"
+"        B_s     = T.alloc_shared((BK, BN), \"float16\")\n"
+"        C_f     = T.alloc_fragment((BM, BN), \"float32\")\n"
+"        C_s     = T.alloc_shared((BM, BN), \"float32\")\n"
+"        barrier = T.alloc_cluster_barrier([3])\n"
+"        T.clear(C_f)\n"
+"\n"
+"        # Phase 1: each CTA loads its K-slice; A is multicast to rank 0 and "
+"1.\n"
+"        for ko in T.Pipelined(T.ceildiv(K, BK * 4), num_stages=3):\n"
+"            k_off = (rank + ko * 4) * BK\n"
+"            T.copy_cluster(A[by * BM, k_off], A_s, cluster_mask=0b0011)\n"
+"            T.copy(B[k_off, bx * BN], B_s)\n"
+"            T.gemm(A_s, B_s, C_f)\n"
+"\n"
+"        # Phase 2: push each rank's partial sums to rank 0 for "
+"accumulation.\n"
+"        #\n"
+"        # Use a per-rank staging slot so every non-zero rank writes to a\n"
+"        # distinct destination region — avoiding both a destination race "
+"and\n"
+"        # an arrival-count mismatch.  Each CTA stores its own partial into\n"
+"        # C_parts[rank]; non-zero ranks then push that slot to the matching\n"
+"        # slot in rank 0's shared memory.\n"
+"        #\n"
+"        # Arrival count must equal the number of producers: cluster_size - "
+"1.\n"
+"        C_parts = T.alloc_shared((4, BM, BN), \"float32\")  # one slot per "
+"rank\n"
+"        T.copy(C_f, C_parts[rank])\n"
+"\n"
+"        T.cluster_sync()\n"
+"\n"
+"        if rank != 0:\n"
+"            # Push this rank's slot to the *same* slot index in rank 0's\n"
+"            # C_parts — different offsets, so no destination race.\n"
+"            T.copy_cluster(C_parts[rank], C_parts[rank],\n"
+"                           dst_block=0, remote_barrier=barrier[0])\n"
+"\n"
+"        if rank == 0:\n"
+"            T.mbarrier_wait_parity(barrier[0], 0)  # wakes after all 3 "
+"arrivals\n"
+"            # C_parts[0..3] in rank 0's smem now hold all four partial "
+"sums.\n"
+"            # accumulate and store ...\n"
+"            T.copy(C_parts[0], C[by * BM, bx * BN])\n"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:348
+msgid "See Also"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:350
+msgid "`testing/python/cuda/test_tma_multicast_demo.py` — multicast validation"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:351
+msgid ""
+"`testing/python/cuda/test_tma_dsmem.py` — SM-to-SM copy validation (fast "
+"path, multi-TMA, and SIMT fallback)"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:352
+msgid ""
+"Programming Guides → Instructions — complete `T.copy` parameter reference"
+msgstr ""
+
+#: ../../../programming_guides/cluster_tma.md:353
+msgid ""
+"Programming Guides → Control Flow — `T.Pipelined` and warp-specialized "
+"pipelines"
+msgstr ""

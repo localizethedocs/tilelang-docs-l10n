@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:2
+msgid "tilelang.cuda.pipeline"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:14:<autosummary>:1
+msgid ":py:obj:`cuda_pipeline <tilelang.cuda.pipeline.cuda_pipeline>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`allow_warp_specialized <tilelang.cuda.pipeline."
+"allow_warp_specialized>`\\ \\(\\[pass\\_ctx\\, target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`module_has_tma <tilelang.cuda.pipeline.module_has_tma>`\\ \\(mod\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:33
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:25:<autosummary>:1
+msgid "Check if any function in the module was lowered with TMA operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`CUDAPassPipelineBodyPrologue <tilelang.cuda.pipeline."
+"CUDAPassPipelineBodyPrologue>`\\ \\(mod\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`CUDAPassPipelineBody <tilelang.cuda.pipeline."
+"CUDAPassPipelineBody>`\\ \\(mod\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/pipeline/index.rst:35
+msgid ""
+"This reads the ``tl.has_tma`` attribute set by ``LowerTileOp`` during "
+"``LowerAndLegalize``, which is the source of truth for whether TMA copies "
+"were actually generated."
+msgstr ""

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,147 +30,153 @@ msgstr ""
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`SumOp <tilelang.contrib.cutedsl.reduce.SumOp>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:58
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "Sum reduction operator"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`MaxOp <tilelang.contrib.cutedsl.reduce.MaxOp>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:68
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "Max reduction operator"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`MinOp <tilelang.contrib.cutedsl.reduce.MinOp>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:78
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "Min reduction operator"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`BitAndOp <tilelang.contrib.cutedsl.reduce.BitAndOp>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:88
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "Bitwise AND reduction operator"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`BitOrOp <tilelang.contrib.cutedsl.reduce.BitOrOp>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:98
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "Bitwise OR reduction operator"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`BitXorOp <tilelang.contrib.cutedsl.reduce.BitXorOp>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:108
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "Bitwise XOR reduction operator"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`CumSum1D <tilelang.contrib.cutedsl.reduce.CumSum1D>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "1D cumulative sum operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`CumSum2D <tilelang.contrib.cutedsl.reduce.CumSum2D>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid "2D cumulative sum operation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
+msgid ":py:obj:`CumMax1D <tilelang.contrib.cutedsl.reduce.CumMax1D>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
+msgid "1D cumulative maximum operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
+msgid ":py:obj:`CumMax2D <tilelang.contrib.cutedsl.reduce.CumMax2D>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
+msgid "2D cumulative maximum operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ":py:obj:`NamedBarrier <tilelang.contrib.cutedsl.reduce.NamedBarrier>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:28:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30:<autosummary>:1
 msgid ""
 "Named barrier policy for AllReduce, uses bar.sync instead of __syncthreads."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:30
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:32
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
 msgid ""
 ":py:obj:`min <tilelang.contrib.cutedsl.reduce.min>`\\ \\(a\\, b\\[\\, c\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
-msgid "Type-aware min: uses arith.minsi for integers, nvvm.fmin for floats."
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:48
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
+msgid "Type-preserving min for scalar CuTeDSL values."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
 msgid ""
 ":py:obj:`max <tilelang.contrib.cutedsl.reduce.max>`\\ \\(a\\, b\\[\\, c\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
-msgid "Type-aware max: uses arith.maxsi for integers, nvvm.fmax for floats."
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:53
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
+msgid "Type-preserving max for scalar CuTeDSL values."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
 msgid ""
 ":py:obj:`bar_sync <tilelang.contrib.cutedsl.reduce.bar_sync>`\\ "
 "\\(barrier\\_id\\, number\\_of\\_threads\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
 msgid ""
 ":py:obj:`bar_sync_ptx <tilelang.contrib.cutedsl.reduce.bar_sync_ptx>`\\ "
 "\\(barrier\\_id\\, number\\_of\\_threads\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
 msgid ""
 ":py:obj:`AllReduce <tilelang.contrib.cutedsl.reduce.AllReduce>`\\ "
 "\\(reducer\\, threads\\, scale\\, thread\\_offset\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42:<autosummary>:1
 msgid "AllReduce operation implementing warp/block-level reduction."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:42
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:44
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:46
-msgid ""
-"Type-aware min: uses arith.minsi for integers, nvvm.fmin for floats. Falls "
-"back to integer path if float conversion fails (signless int types)."
-msgstr ""
-
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:52
-msgid ""
-"Type-aware max: uses arith.maxsi for integers, nvvm.fmax for floats. Falls "
-"back to integer path if float conversion fails (signless int types)."
-msgstr ""
-
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:122
-msgid "1D cumulative sum operation. Based on tl::CumSum1D from reduce.h"
+msgid "1D cumulative sum operation. Based on tl::CumSum1D from scan.h"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:125
@@ -204,7 +211,7 @@ msgid "Number of elements (must be compile-time constant or small)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:153
-msgid "2D cumulative sum operation. Based on tl::CumSum2D from reduce.h"
+msgid "2D cumulative sum operation. Based on tl::CumSum2D from scan.h"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:157
@@ -226,41 +233,57 @@ msgid "Number of columns (should be <= 32 for single-segment case)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:192
+msgid "1D cumulative maximum operation. Based on tl::CumMax1D from scan.h"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:212
+msgid "2D cumulative maximum operation. Based on tl::CumMax2D from scan.h"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:235
 msgid ""
 "Named barrier policy for AllReduce, uses bar.sync instead of __syncthreads. "
 "Based on tl::NamedBarrier<all_threads> from reduce.h"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:201
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:244
 msgid ""
 "AllReduce operation implementing warp/block-level reduction. Based on tl::"
 "AllReduce from reduce.h"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:204
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:247
 msgid "Reducer operator class (SumOp, MaxOp, etc.)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:205
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:248
 msgid "Number of threads participating in reduction"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:206
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:249
 msgid "Reduction scale factor"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:207
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:250
 msgid "Thread ID offset"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:208
-msgid "Total number of threads in block"
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:251
+msgid "Total number of threads in block (or NamedBarrier instance)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:252
+msgid "Number of elements per thread to reduce in parallel (default 1)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:253
+msgid "Stride between batch channels in shared memory (default 0)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:210
+#: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:255
 msgid "A callable object with run() and run_hopper() methods"
 msgstr ""

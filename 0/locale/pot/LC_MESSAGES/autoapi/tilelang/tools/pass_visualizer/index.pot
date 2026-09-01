@@ -1,0 +1,39 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/index.rst:2
+msgid "tilelang.tools.pass_visualizer"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/index.rst:8
+msgid ""
+"Interactive pass-by-pass IR structure-tree visualizer for TileLang kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/index.rst:10
+msgid ""
+"See ``viewer.py`` for the CLI entry point and ``README.md`` for usage. This "
+"is a debugging complement to ``tilelang.utils.pass_diff``: where pass_diff "
+"shows a text-level diff of the TVMScript, this tool renders the SBlock "
+"structure tree and expands tile ops by field name, with per-class operator "
+"highlighting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/index.rst:18
+msgid "Submodules"
+msgstr ""

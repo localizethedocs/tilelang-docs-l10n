@@ -1,0 +1,1899 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../compiler_internals/metal_tilelang_development.md:1
+msgid "TileLang Metal Backend Internals"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:3
+msgid ""
+"This document explains how the TileLang Metal backend lowers a TileLang "
+"kernel to Metal shader source, how the current GEMM fast path is "
+"implemented, which backend work does not map one-to-one to CUDA, and where "
+"the next optimization work should land."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:8
+msgid ""
+"This is not an Apple GPU architecture overview or a TileLang frontend "
+"tutorial. Metal and Apple GPU background is introduced only where it affects "
+"lowering, codegen, runtime behavior, or performance policy. Reference "
+"material is grouped in Section 5."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:13
+msgid "How to read this document:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:15
+msgid "To understand the current fast path, read Section 0 and Section 1."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:16
+msgid ""
+"To work on the Metal backend or codegen, read Sections 1, 2, and 3, then use "
+"Section 5 as reference."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:18
+msgid "To write TileLang kernels for Metal, read Section 0 and Section 4."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:19
+msgid ""
+"To find performance data, implementation files, or test commands, go to "
+"Section 5."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:22
+msgid "0. TL;DR"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:24
+msgid ""
+"The current default fast path is **direct-global cooperative tensor**: A/B "
+"are loaded from `device` memory without `threadgroup` staging, C accumulates "
+"in a cooperative tensor destination, and the result is stored back to global "
+"C."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:27
+msgid ""
+"Default benchmark configuration: `ct_global`, `block_M=64`, `block_N=128`, "
+"`threads=128` (4 simdgroups), fp16 input, fp16 output, fp32 accumulation."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:29
+msgid ""
+"On the current full-tile fp16 GEMM snapshot, TileLang is at or slightly "
+"above MLX and about 5-6% behind PyTorch MPS. See Section 5.6."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:31
+msgid ""
+"The most important mental model: **Metal is not CUDA**. On Apple unified "
+"memory, `gmem -> smem` is not a performance hint. Shared staging should be "
+"preserved when it carries real semantics such as layout, padding, or reuse."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:34
+msgid ""
+"The other paths, shared cooperative tensor and simdgroup, still exist for "
+"compatibility and semantic coverage. They are not the current performance "
+"mainline. See Section 3."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:38
+msgid "1. The Fast Path, End to End"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:40
+msgid ""
+"This section traces one concrete direct-global cooperative tensor kernel "
+"from TileLang source to generated MSL and then to the performance snapshot. "
+"Later sections explain the mechanisms behind this path."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:44
+msgid "1.1 The Kernel"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:46
+msgid ""
+"with T.Kernel(T.ceildiv(N, block_N), T.ceildiv(M, block_M), threads=128) as "
+"(bx, by):\n"
+"    T.gemm(\n"
+"        A[by * block_M:(by + 1) * block_M, 0:K],\n"
+"        B[0:K, bx * block_N:(bx + 1) * block_N],\n"
+"        C[by * block_M:(by + 1) * block_M, bx * block_N:(bx + 1) * "
+"block_N],\n"
+"        clear_accum=True,\n"
+"    )\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:56
+msgid ""
+"A, B, and C are all tile views over `global` tensors. There is no "
+"`alloc_shared`, no `T.copy` staging, and no handwritten K-loop. For full-"
+"tile GEMM, the backend expands the K reduction during lowering. This is the "
+"intended frontend shape: express operand regions and dtypes, and let the "
+"backend own lane mapping, operand construction, and accumulation."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:62
+msgid "1.2 Path Selection"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:64
+msgid ""
+"When the backend sees this `T.gemm`, the instruction selection and Metal "
+"GEMM lowering logic pick the direct-global cooperative tensor path. The "
+"detailed selection rules are in Section 2.1. For this kernel, A/B are "
+"`global`, C is not shared, and the tile shape and thread count allow "
+"cooperative tensor lowering."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:69
+msgid "For `M=128, N=256, K=128, block_M=64, block_N=128, threads=128`:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:71
+msgid "`threads=128` means 4 simdgroups."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:72
+msgid "The 4 simdgroups cover a `64 x 128` C tile as a `2 x 2` partition."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:73
+msgid "Each simdgroup owns a `32 x 64` C sub-tile."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:74
+msgid ""
+"Each `32 x 64` sub-tile is covered by `(32 / 16) x (64 / 32) = 4` op-level "
+"fragments, corresponding to 4 destination cooperative tensors."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:77
+msgid "1.3 The MPP op: `matmul2d(M, N, K)`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:79
+msgid "The core operation is an MPP tensor op. The generated MSL contains:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:81
+msgid ""
+"constexpr auto __pct_desc = mpp::tensor_ops::matmul2d_descriptor(\n"
+"    16, 32, 16, /*trans_a=*/false, /*trans_b=*/false, /*accumulate=*/true,\n"
+"    mpp::tensor_ops::matmul2d_descriptor::mode::multiply_accumulate);\n"
+"mpp::tensor_ops::matmul2d<__pct_desc, metal::execution_simdgroup> __pct_op;\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:88
+msgid ""
+"In this document, `matmul2d(M, N, K)` refers to the first three shape "
+"parameters of the descriptor, in M / N / K order. A single MPP op produces "
+"an `M x N` destination fragment and reduces along K. These parameters are "
+"not TileLang `block_M` / `block_N`, and they are not the whole threadgroup "
+"tile shape. The current fast path specializes to `matmul2d(16, 32, 16)`. "
+"Larger simdgroup and threadgroup tiles are covered by multiple op-level "
+"fragments, such as the 4 destination cooperative tensors above."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:96
+msgid "1.4 The Generated MSL"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:98
+msgid ""
+"The following is a representative snippet for the shape above. Repeated "
+"fragments are omitted for readability. It is generated with `accum_dtype=T."
+"float16`, so C is `device half*` and the final store contains a `half4(...)` "
+"cast. Existing codegen tests use `accum_dtype=T.float32` by default, which "
+"generates `device float* C` and no fp32-to-fp16 store cast. To reproduce "
+"this fp16-output source exactly, pass `accum_dtype=T.float16`; see Section "
+"5.8."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:105
+msgid "Kernel signature and execution attributes:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:107
+msgid ""
+"[[kernel, max_total_threads_per_threadgroup(128)]] void main_kernel(\n"
+"    const device half* __restrict A [[ buffer(0) ]],\n"
+"    const device half* __restrict B [[ buffer(1) ]],\n"
+"    device half* __restrict C [[ buffer(2) ]],\n"
+"    uint3 blockIdx [[threadgroup_position_in_grid]],\n"
+"    uint3 __gridDim [[threadgroups_per_grid]],\n"
+"    uint3 threadIdx [[thread_position_in_threadgroup]],\n"
+"    uint __simd_group_id [[simdgroup_index_in_threadgroup]]) {\n"
+"  const ushort __lane = __metal_get_thread_index_in_simdgroup(ushort());\n"
+"  ...\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:120
+msgid ""
+"Destination cooperative tensors are created and zeroed before the K-loop. C "
+"storage is elided: C does not round-trip through a `thread` array and "
+"instead persists in cooperative tensor destination objects."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:124
+msgid ""
+"auto __pct_c0 = __pct_op.get_destination_cooperative_tensor<...>();\n"
+"// __pct_c1 / __pct_c2 / __pct_c3 are created the same way.\n"
+"TILELANG_PRAGMA_UNROLL for (ushort __i = 0; __i < 16; __i++) __pct_c0[__i] = "
+"0.0f;\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:130
+msgid ""
+"Inside the K-loop, A/B are loaded from `device` memory into thread-private "
+"temporary storage and then moved into MPP cooperative tensor operands. There "
+"is no `threadgroup` allocation and no barrier."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:134
+msgid ""
+"for (int k_outer = 0; k_outer < 8; ++k_outer) {\n"
+"  const device half* __src =\n"
+"      (const device half*)(&(A[((blockIdx.y * 8192) +\n"
+"                                ((__simd_group_id & 1) * 4096)) +\n"
+"                               (k_outer * 16)]));\n"
+"  // half4 vector loads into A_local ...\n"
+"  // B loads follow the same pattern ...\n"
+"  auto __ct_a = __pct_op.get_left_input_cooperative_tensor<half, half, "
+"float>();\n"
+"  auto __ct_b = __pct_op.get_right_input_cooperative_tensor<half, half, "
+"float>();\n"
+"  // A_local / B_local -> __ct_a / __ct_b\n"
+"  __pct_op.run(__ct_a, __ct_b, __pct_c0);  // fp32 accumulation\n"
+"}\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:149
+msgid ""
+"After the K-loop, C is stored. For fp16 output, the fp32 destination values "
+"are cast on store:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:152
+msgid ""
+"device half* __dst = (device half*)(&(C[...]));\n"
+"*(device half4*)(&__dst[__r0 * 256 + __c0]) =\n"
+"    half4(*(thread float4*)(&__pct_c0[0]));\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:158
+msgid "Important source-shape properties:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:160
+msgid ""
+"A/B are `const device half* __restrict`; C is `device half* __restrict`. "
+"This preserves read-only and noalias information for the Metal compiler."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:162
+msgid ""
+"simdgroup id and lane id come from Metal execution attributes "
+"(`__simd_group_id`, `__metal_get_thread_index_in_simdgroup`) instead of "
+"being repeatedly derived from `threadIdx`."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:165
+msgid ""
+"Addresses have the shape `base + tile offset + simdgroup offset + K-loop "
+"induction`."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:167
+msgid ""
+"`mpp::...matmul2d` destinations accumulate in fp32; fp16 output is handled "
+"at store."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:169
+msgid "There is no `threadgroup half` declaration and no barrier."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:171
+msgid "1.5 Why This Is Not a CUDA Translation"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:173
+msgid ""
+"This path is not a step-by-step translation of the common CUDA `global -> "
+"shared -> ldmatrix -> mma` pipeline:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:176
+msgid ""
+"CUDA:  device A/B -> shared -> ldmatrix -> mma -> shared/reg -> device C\n"
+"Metal: device A/B ------------> MPP operand -> matmul2d -> destination CT -> "
+"device C\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:181
+msgid ""
+"The Metal backend chooses a source shape that matches MPP directly. On Apple "
+"unified memory, moving A/B through `threadgroup` before feeding the tensor "
+"op is usually an extra copy and barrier when it carries no semantic value. "
+"This is why the shared path in Section 3 is correct but slower for the "
+"current full-tile GEMM snapshot."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:187
+msgid "2. How the Backend Gets There"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:189
+msgid ""
+"This section explains how the backend gets from `T.gemm` to the MSL shown in "
+"Section 1. It only covers mechanisms needed for that mainline path."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:192
+msgid "2.1 Path Selection"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:194
+msgid "Path selection has two stages."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:196
+msgid ""
+"**Stage 1: instruction kind (`SelectInst`, `src/metal/op/gemm.cc`).** This "
+"stage only chooses between `metal.cooperative_tensor` and `metal.simdgroup`. "
+"It looks at the lowering target capability, C scope, tile shape, warp "
+"policy, and warp count. It does not look at whether A/B are global or shared."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Condition"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Instruction kind"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "C is in `local.fragment` or `metal.simdgroup`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`metal.simdgroup`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid ""
+"Target has the `metal4` key and `CanUseCooperativeTensor(policy, M, N, K, "
+"warps)` is true"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`metal.cooperative_tensor`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Otherwise"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`metal.simdgroup` as a safe lowering fallback"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:207
+msgid ""
+"`CanUseCooperativeTensor` is a pure shape and policy check: `M % 16 == 0`, "
+"`N % 32 == 0`, `K % 16 == 0`, and the warp policy must be able to split "
+"`num_warps` into a legal `m_warp x n_warp` partition. `threads` must be a "
+"multiple of 32 because each simdgroup has 32 lanes."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:212
+msgid ""
+"`target=\"metal\"` is normalized to include the `metal4` key only when the "
+"local macOS version, SDK, and Apple GPU generation are known to support "
+"Metal 4. Source-only tests or cross-builds can pass an explicit target with "
+"`keys=[\"metal\", \"gpu\", \"metal4\"]` when they intentionally want MPP "
+"source."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:217
+msgid ""
+"**Stage 2: cooperative tensor dataflow (`GemmMetal.lower`, `tilelang/metal/"
+"op/gemm/gemm_metal.py`).** After Stage 1 selects `metal.cooperative_tensor`, "
+"the Python lowering chooses the concrete dataflow from A/B scope:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "A/B scope"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Dataflow"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Notes"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "A/B are `global` (`is_gemm_gg`)"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "direct-global cooperative tensor"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Current fast path, Section 1"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "A/B are `shared` (`is_gemm_ss`)"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "shared cooperative tensor"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Preserves shared semantics, Section 3.1"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:227
+msgid ""
+"C in cooperative tensor or fragment form uses destination storage elision. C "
+"in shared scope uses writeback. Warp partitioning prefers a balanced grid of "
+"16x32 op-level fragments per simdgroup."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:231
+msgid ""
+"One current capability boundary is important: all of the above choices "
+"happen at **lowering time** based on shape, scope, and policy. They are not "
+"runtime or hardware capability checks. The runtime guard in Section 5.1 is "
+"separate: it only chooses which MSL language version to request when "
+"compiling the generated source. It cannot rewrite already generated MPP "
+"source back to simdgroup. If `SelectInst` chose cooperative tensor, the "
+"generated source is MPP source. Instruction-level runtime capability "
+"fallback still needs a separate design."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:239
+msgid "2.2 Surrounding Lowering"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:241
+msgid ""
+"The launch, allocation, loop, copy, and swizzle lowering around GEMM "
+"determine what source shape the intrinsic sequence sits in. For the direct-"
+"global path:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:244
+msgid ""
+"**Launch**: `T.Kernel(..., threads=N)` lowers to a Metal threadgroup launch, "
+"emitting `max_total_threads_per_threadgroup(N)`, `blockIdx` / `threadIdx` "
+"style indices, simdgroup id, and lane id. Matrix work is still partitioned "
+"by 32-lane simdgroups; there is no CUDA WGMMA-style 128-thread warpgroup."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:248
+msgid ""
+"**Allocation**: the direct-global path does not allocate `threadgroup` "
+"buffers. A/B use `thread` temporary arrays. C persists in `metal."
+"cooperative_tensor` destination objects when storage elision applies. The "
+"full scope-to-object mapping is in Section 5.2."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:252
+msgid ""
+"**Loop**: the K-loop generates affine addresses of the form `base + tile "
+"offset + simdgroup offset + K-loop induction`. It does not rely on CUDA-"
+"style software pipelining or make shared staging the inner-loop policy. "
+"Pointer induction and address hoisting remain optimization targets (Section "
+"5.5)."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:257
+msgid ""
+"**Copy / sync**: the direct-global path is device load/store plus MPP "
+"operand construction. With no shared dataflow, it avoids threadgroup copy "
+"and barrier operations."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:260
+msgid ""
+"**Swizzle**: block-level swizzle is supported. `T.use_swizzle(panel_size, "
+"order=\"mlx\")` maps to `rasterization2DMLX`, canonicalizing physical block "
+"index to logical tile index and avoiding repeated physical-index arithmetic "
+"in generated MSL. This is block/grid-level swizzle, not CUDA-style thread-"
+"level or per-thread swizzle."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:266
+msgid "2.3 Metal-Specific Work (No CUDA Counterpart)"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:268
+msgid ""
+"The direct-global path includes backend work that does not have a direct "
+"CUDA counterpart:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:271
+msgid ""
+"**Direct-global cooperative tensor lowering**: A/B become MPP operands from "
+"`device` memory without explicit shared staging."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:273
+msgid ""
+"**Cooperative tensor destination management**: C accumulates in MPP "
+"destination objects; small C cooperative tensor storage can elide a thread-"
+"local array (Section 1.4)."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:276
+msgid ""
+"**fp16 output / fp32 accumulation split**: MPP destinations use fp32, and "
+"the store to fp16 C performs the cast."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:278
+msgid ""
+"**MLX-style block rasterization**: physical block indices are canonicalized "
+"to logical tile indices."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:280
+msgid ""
+"**simdgroup id / lane id lowering**: Metal execution attributes are used "
+"instead of re-deriving them from thread id."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:282
+msgid ""
+"**Metal 4 target capability gate**: cooperative tensor lowering requires the "
+"`metal4` target key."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:284
+msgid ""
+"**Metal 4 runtime language-version guard**: MSL 4.0 is requested only when "
+"the SDK, runtime OS, and device family support it."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:287
+msgid ""
+"This work is closer to Metal backend canonicalization and source-shape "
+"construction than to mechanical CUDA op lowering."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:290
+msgid "3. The Other Paths"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:292
+msgid ""
+"Besides the fast path, the backend keeps two additional paths. They are "
+"correct and tested, but they are not the current performance mainline."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:295
+msgid "3.1 Shared Cooperative Tensor"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:297
+msgid ""
+"If the frontend IR already contains shared staging, the backend lowers it as "
+"a shared cooperative tensor path:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:300
+msgid ""
+"global A/B -> threadgroup A/B -> cooperative tensor operand -> MPP -> C\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:304
+msgid ""
+"This preserves the shape of CUDA-style kernels and is appropriate when "
+"shared memory carries real semantics: layout transforms, padding or edge "
+"zero-fill, multi-consumer reuse, threadgroup communication, or address "
+"patterns that the direct-global path cannot currently express."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:309
+msgid ""
+"If shared memory is only staging, it is an extra copy plus barrier on Metal. "
+"In the current measurements, it is slower than the direct-global path."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:312
+msgid "3.2 Simdgroup Fallback"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:314
+msgid "The simdgroup path lowers GEMM to simdgroup matrix intrinsics:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:316
+msgid ""
+"threadgroup A/B -> simdgroup_load -> simdgroup_multiply_accumulate -> "
+"simdgroup_store\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:320
+msgid ""
+"It is a compatibility path used when C is in `local.fragment` or `metal."
+"simdgroup`, or when lowering-time cooperative tensor conditions are not met. "
+"Compared with cooperative tensor, it behaves more like an explicit fragment "
+"backend: the backend manages fragment layout, load/store, and accumulation/"
+"store policy. It is therefore not the M5 / Metal 4 optimization mainline."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:327
+msgid "3.3 Why These Paths Are Kept"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:329
+msgid "Existing TileLang kernels may already use CUDA-style staging."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:330
+msgid ""
+"Shared staging may carry layout transform, padding, edge zero-fill, or multi-"
+"consumer reuse semantics."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:332
+msgid ""
+"Some non-contiguous or edge-heavy workloads cannot yet be expressed by the "
+"direct-global path."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:334
+msgid ""
+"Older Apple GPUs and non-Metal-4 runtimes need a complete simdgroup fallback "
+"story, although instruction-level runtime fallback is not implemented yet."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:337
+msgid ""
+"The key requirement is conservatism: a shared buffer can be treated as pure "
+"staging, or bypassed by a future pass, only when the compiler can prove it "
+"has no extra semantics. If that proof fails, the shared path must be "
+"preserved."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:341
+msgid "4. Contracts and Guidance"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:343
+msgid "4.1 Frontend Contract"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:345
+msgid ""
+"For the Metal backend, the frontend should express stable program semantics:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:347
+msgid "memory scope;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:348
+msgid "GEMM operand region;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:349
+msgid "block-level swizzle;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:350
+msgid "dtype and output dtype;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:351
+msgid "required boundary conditions."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:353
+msgid ""
+"These fields should describe the program, not prescribe the final MSL source "
+"shape. Lane mapping, operand construction, register tile shape, and "
+"instruction selection belong to the backend and codegen. The current Metal "
+"control surface is summarized in the concept map in Section 5.1."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:358
+msgid "4.2 Bad CUDA Assumptions"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:360
+msgid "Do not carry CUDA GEMM assumptions directly into Metal:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:362
+msgid ""
+"Do not treat `gmem -> smem` as a performance hint. Its semantics and bypass "
+"conditions are described in Section 3."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:364
+msgid "Do not add shared staging just to mimic a CUDA tensor-core pipeline."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:365
+msgid ""
+"Do not treat `local` / rmem staging as free. It can compete with threadgroup "
+"memory for the same class of on-chip storage budget and can increase "
+"register pressure or spilling (Section 5.2)."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:368
+msgid ""
+"Do not expose CUDA warpgroup, thread-level layout, or per-thread swizzle as "
+"Metal frontend semantics."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:371
+msgid "4.3 Lowering and Codegen Rules"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:373
+msgid "Metal lowering should keep path boundaries clear:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:375
+msgid "maintain the direct-global cooperative tensor fast path;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:376
+msgid "preserve shared path semantics;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:377
+msgid "do not mix simdgroup and cooperative tensor policy into one path;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:378
+msgid "report unsupported shapes clearly or use a safe fallback."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:380
+msgid "Metal codegen should focus on MSL source shape:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:382
+msgid "emit simple affine addresses;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:383
+msgid "use explicit simdgroup id and lane id;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:384
+msgid ""
+"preserve `const` for read-only buffers and `__restrict` for noalias buffers;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:385
+msgid "avoid repeated physical swizzle arithmetic;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:386
+msgid "preserve the fp32 accumulation to fp16 output store-cast path."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:388
+msgid "5. Reference"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:390
+msgid "5.1 CUDA / Metal Concept Map and Capability"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "CUDA / NVIDIA concept"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal concept"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TileLang Metal mapping"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Grid"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Grid of threadgroups"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`T.Kernel` grid dims"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Mostly direct mapping"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "CTA / thread block"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Threadgroup"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`T.Kernel(..., threads=N)`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Matrix execution is still split by simdgroup"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Thread"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "thread index lowering"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Warp"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Simdgroup"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup id / lane id"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Current backend assumes 32 lanes"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Warpgroup (128-thread WGMMA)"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "No direct exposed equivalent"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Not exposed"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Cooperative tensor is organized around simdgroup execution context"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Shared memory"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Threadgroup memory"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`shared` scope"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Semantic scope; performance policy is discussed in Section 3"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Register / fragment"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "thread storage / simdgroup matrix / cooperative tensor destination"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`local` / `metal.simdgroup` / `metal.cooperative_tensor`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Do not reuse CUDA fragment assumptions directly"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Tensor Core MMA"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup matrix or MPP tensor op"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`metal.simdgroup` / `metal.cooperative_tensor`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "M5+ prefers cooperative tensor"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`ldmatrix` / shared-to-MMA"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "cooperative tensor load / MPP operand"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "codegen intrinsic emission"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Direct-global can bypass explicit shared staging"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Thread-level layout / per-thread swizzle"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "No exposed equivalent"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Not user-controlled"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid ""
+"No CUDA-style per-thread data layout or register swizzle control surface"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Block swizzle"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Rasterization"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`T.use_swizzle(..., order=\"mlx\")`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Block-level swizzle"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:406
+msgid ""
+"The key difference is that the Metal backend currently does not expose CUDA-"
+"style thread-level layout or per-thread swizzle. It exposes block/grid-level "
+"rasterization swizzle; lane mapping is decided by the backend and the Metal "
+"compiler, not by stable frontend semantics."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:411
+msgid ""
+"The runtime guard in `metal_module.mm` has one job: avoid requesting MSL 4.0 "
+"unconditionally. It selects `MTLLanguageVersion4_0` only when the SDK, "
+"runtime OS, and device family support Metal 4; otherwise it compiles with "
+"`MTLLanguageVersion2_3`. This is not an instruction-level fallback. It "
+"cannot rewrite generated MPP source into simdgroup source. Cooperative "
+"tensor vs. simdgroup is a lowering-time target/shape/scope/policy decision "
+"(Section 2.1), separate from runtime language-version selection. A complete "
+"runtime fallback still needs a separate multi-version or retry design."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:420
+msgid "5.2 Memory Scopes and Unified Memory"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TileLang scope"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal address space / object"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Purpose"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`global`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`device`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Input and output tensors"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`shared`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`threadgroup`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid ""
+"Threadgroup scratchpad / staging; barrier required for cross-thread "
+"visibility"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`local`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`thread` private array"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Per-thread temporary array; may occupy registers or spill"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`local.var`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`thread` scalar"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Scalar index or loop state"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`simdgroup_*8x8` object"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup matrix fragment"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "MPP operand / destination object"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid ""
+"Cooperative tensor path; shape comes from the descriptor and is not fixed 8x8"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:431
+msgid ""
+"Apple platforms use unified memory, but that does not erase MSL address "
+"spaces or make CUDA memory policy carry over unchanged. One migration "
+"assumption to avoid is physical rmem / smem separation. `thread` storage and "
+"`threadgroup` memory are distinct logical address spaces, but physical "
+"placement and spilling are managed by the Metal compiler and Apple GPU "
+"runtime. For TileLang Metal lowering, treat `local` private arrays and "
+"`shared` threadgroup staging as competing for the same class of on-chip "
+"storage budget, rather than assuming a CUDA-like model where the register "
+"file is free and shared memory is budgeted separately."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:441
+msgid "5.3 Execution Model and Simdgroup Builtins"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:443
+msgid ""
+"Execution hierarchy: grid (threadgroup grid), threadgroup (closest to a CUDA "
+"CTA), thread, and simdgroup (32-lane SIMD execution unit). Threadgroup size "
+"and matrix execution group are distinct: TileLang Metal can launch 128 or "
+"256 threads, while cooperative tensor and simdgroup matrix execution are "
+"organized around 32-lane simdgroups. There is no exposed 128-thread "
+"warpgroup equivalent."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:449
+msgid ""
+"Supported simdgroup matrix builtins include `metal.simdgroup` scope, "
+"`make_filled_simdgroup_matrix`, `simdgroup_load`, "
+"`simdgroup_multiply_accumulate`, and `simdgroup_store`. `simdgroup_*8x8` is "
+"the simdgroup matrix object shape; it is distinct from the cooperative "
+"tensor MPP descriptor shape described in Section 1.3."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:455
+msgid "5.4 Implemented Features"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Feature"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Status"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal 4 target capability gate"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Implemented"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Cooperative tensor lowering requires the `metal4` target key"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal 4 runtime guard"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Requests MSL 4.0 only when SDK, OS, and device family support it"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Cooperative tensor GEMM lowering"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "M5+ mainline"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Direct-global A/B cooperative tensor"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Implemented / default"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Current recommended performance path, Section 1"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Shared A/B cooperative tensor"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Compatible with CUDA-style staging, Section 3.1"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "fp16 output handling"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "fp32 accumulation plus store cast, Section 1.4"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "C cooperative tensor storage elision"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Reduces thread-local C round-trip"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "MLX-style block swizzle"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Block-level rasterization"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup GEMM"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Compatibility path, Section 3.2"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup id / lane id lowering"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Also used by cooperative tensor kernels"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`const` / `__restrict` parameter emission"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Improves MSL alias information"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:471
+msgid "5.5 Known Limitations and Roadmap"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:473
+msgid "Current limitations:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:475
+msgid "The direct-global path mainly covers full-tile GEMM."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:476
+msgid "Edge masking and partial tile support are not complete."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:477
+msgid "The `gmem -> smem` bypass pass is not implemented."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:478
+msgid "MLX-style 8-simdgroup lowering is not implemented."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:479
+msgid "Pointer induction and address hoisting still have room for improvement."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:480
+msgid ""
+"CUDA-style thread-level layout and per-thread swizzle control are not "
+"exposed (Section 5.1)."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:482
+msgid "The simdgroup path is not yet a complete old-device strategy."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:483
+msgid ""
+"The primary validated path is fp16 input, fp16 output, fp32 accumulation."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:484
+msgid ""
+"There is no multi-version runtime fallback. Path selection is a lowering-"
+"time target/shape/scope/policy decision, and the runtime guard only selects "
+"the MSL language version (Sections 2.1 and 5.1)."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:488
+msgid "Planned work:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:490
+msgid ""
+"**Shared-staging bypass pass**: detect pure staging of the form `global A/B -"
+"> shared A/B -> T.gemm`, and rewrite it to the direct-global path when "
+"semantics are provably unchanged. Mathematically, this is conditional "
+"substitution:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:495
+msgid ""
+"S[s] = G[phi(s)]\n"
+"T.gemm(... S[psi(t)] ...)  =>  T.gemm(... G[phi(psi(t))] ...)\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:500
+msgid ""
+"The proof must rule out layout transforms, padding, edge fill, multi-"
+"consumer reuse, and threadgroup communication semantics. If the proof fails, "
+"the shared path must be preserved."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:503
+msgid ""
+"**MLX-style 8-simdgroup cooperative tensor lowering**: `BM=64`, `BN=128`, 8 "
+"simdgroups / 256 threads, each simdgroup owning a `32 x 32` C tile covered "
+"by multiple `matmul2d(16, 32, 16)` op-level fragments."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:506
+msgid ""
+"**Pointer induction and address hoisting**: hoist A/B/C tile base pointers, "
+"simdgroup offsets, and K-loop pointer increments to reduce repeated affine "
+"expressions in the hot path."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:509
+msgid ""
+"**Edge masking and partial tile support**: predicated A/B load or zero-fill, "
+"predicated C store, out-of-bounds return for padded physical grids after "
+"swizzle, and branch-free fast paths for aligned cases."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:512
+msgid ""
+"**Metal-specific policy and tuner**: distinguish at least four policy "
+"classes: 4-simdgroup conservative direct-global, 8-simdgroup MLX-style, "
+"shared path for layout / fusion / edge-heavy workloads, and simdgroup "
+"fallback."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:517
+msgid "5.6 Current Performance Snapshot"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:519
+msgid ""
+"These numbers are a snapshot of the current development environment and "
+"current commit. They should not be generalized to all Apple GPUs, OS "
+"versions, SDKs, or library versions. Reproduction commands are in Section "
+"5.8."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Item"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Value"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Date"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "2026-06-20"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Machine"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "MacBook Air, Mac17,3"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Chip"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Apple M5"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "GPU"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Apple M5, 10-core GPU"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal support"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal 4"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "macOS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "26.5.1"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Xcode"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "26.4.1"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Python"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "3.12.13"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "PyTorch"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "2.12.1, MPS enabled"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "MLX"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "0.31.2"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TileLang branch"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`metal-gemm-perf`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TileLang measurement commit"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`6f952ed9`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TVM measurement submodule"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`11c1968acf`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:539
+msgid ""
+"Benchmark conditions: fp16 input, fp16 output, internal fp32 accumulation, "
+"full-tile shapes, default path `ct_global`, `block_M=64`, `block_N=128`, "
+"`threads=128`. Aggregation method: after warmup, timed runs are executed "
+"consecutively, and TFLOPS is computed from the average latency over "
+"`repeats=100`. This is not median or best-of-N."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Shape"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "PyTorch MPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TileLang"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TileLang / MLX"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "4096 x 4096 x 4096"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "13.6 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "12.7 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "12.9 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "101%"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "2048 x 2048 x 2048"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "11.5 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "12.8 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "112%"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "4096 x 2048 x 4096"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "12.5 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "102%"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "2048 x 4096 x 4096"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "13.4 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "12.4 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "12.6 TFLOPS"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:552
+msgid ""
+"Conclusion: on these full-tile shapes, TileLang is at or slightly above MLX "
+"and about 5-6% behind PyTorch MPS. The shared staging path is correct but "
+"slower. MLX-style swizzle is correct but is not currently the fastest "
+"default strategy."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:556
+msgid "5.7 Implementation Map"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Area"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "File"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Responsibility"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Language API"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/language/gemm_op.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal GEMM operand and offset handling"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Annotation"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/language/annotations.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`T.use_swizzle(..., order=\"mlx\")` mapping"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Builtins"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/language/builtin.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "cooperative tensor and simdgroup builtin wrappers"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "GEMM lowering"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/metal/op/gemm/gemm_metal.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "direct-global/shared dataflow split, warp partition, dtype policy"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Intrinsic helper"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/metal/intrinsics/metal_macro_generator.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup and cooperative tensor intrinsic emission"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal pipeline"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/metal/pipeline.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal-specific pipeline transform placement"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Fragment rewrite"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`tilelang/metal/transform/metal_fragment_to_simdgroup.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "legacy fragment accumulator to `metal.simdgroup`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Core GEMM op"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`src/op/gemm.h`, `src/op/gemm.cc`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "GEMM op metadata"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal op lowering"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`src/metal/op/gemm.cc`, `src/metal/op/utils.h`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`SelectInst`, validation, scope utilities"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal codegen"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`src/metal/codegen/codegen_metal.cc`, `.h`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "MSL emission"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "TVM runtime"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`3rdparty/tvm/src/runtime/metal/metal_module.mm`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "guarded `MTLLanguageVersion4_0` selection"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Runtime tests"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`testing/python/metal/test_metal_gemm_v2.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Metal correctness"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Codegen tests"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`testing/python/metal/test_metal_gemm_v2_linux.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "source-level Metal codegen"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Simdgroup tests"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`testing/python/metal/test_metal_simdgroup_store.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "simdgroup direct store"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "Benchmark"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "`benchmark/matmul_metal/benchmark_matmul_metal.py`"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:0
+msgid "PyTorch / MLX / TileLang comparison"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:576
+msgid "5.8 Developer Checklist"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:578
+msgid "When changing lowering, check:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:580
+msgid ""
+"whether `global/shared/local/metal.simdgroup/metal.cooperative_tensor` scope "
+"semantics changed;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:582
+msgid ""
+"whether CUDA shared staging assumptions leaked into the Metal default path;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:583
+msgid "whether the direct-global cooperative tensor fast path is preserved;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:584
+msgid "whether unsupported shapes produce a clear error or a safe fallback."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:586
+msgid "When changing codegen, check:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:588
+msgid ""
+"whether read-only buffers keep `const` and noalias buffers keep `__restrict`;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:589
+msgid "whether simdgroup id and lane id are still explicit;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:590
+msgid "whether generated MSL avoids repeated physical swizzle arithmetic;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:591
+msgid ""
+"whether the fp32 accumulation to fp16 output store-cast path still works."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:593
+msgid "When changing TVM / Metal runtime code, check:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:595
+msgid ""
+"whether MSL 4.0 is requested only when SDK, runtime OS, and hardware support "
+"Metal 4;"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:597
+msgid ""
+"whether the MSL 2.3 fallback is preserved and non-Metal-4 devices are not "
+"regressed."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:599
+msgid ""
+"whether `target=\"metal\"` adds the `metal4` key only on supported local "
+"hardware, and source-only tests use an explicit `metal4` target when needed."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:602
+msgid ""
+"To reproduce the fp16-output MSL snippet in Section 1.4 from the repository "
+"root (codegen-only, no Metal runtime required):"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:605
+msgid ""
+"TILELANG_DISABLE_CACHE=1 python - <<'PY'\n"
+"import tilelang\n"
+"import tilelang.language as T\n"
+"from tilelang import tvm\n"
+"from testing.python.metal.test_metal_gemm_v2_linux import "
+"matmul_gemm_v2_global_c\n"
+"\n"
+"func = matmul_gemm_v2_global_c(\n"
+"    128, 256, 128, 64, 128,\n"
+"    dtype=T.float16,\n"
+"    accum_dtype=T.float16,\n"
+"    threads=128,\n"
+")\n"
+"\n"
+"metal4_target = tvm.target.Target({\"kind\": \"metal\", \"keys\": "
+"[\"metal\", \"gpu\", \"metal4\"]})\n"
+"with tvm.transform.PassContext(), metal4_target:\n"
+"    print(tilelang.lower(func, target=metal4_target).kernel_source)\n"
+"PY\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:625
+msgid ""
+"The important detail is the output buffer dtype: `C` is `T.float16`, so the "
+"generated source uses `device half* C` and emits the fp32-to-fp16 store cast "
+"shown in Section 1.4."
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:629
+msgid "Recommended tests:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:631
+msgid ""
+"TILELANG_DISABLE_CACHE=1 python -m pytest testing/python/metal/"
+"test_metal_gemm_v2.py -q -x\n"
+"TILELANG_DISABLE_CACHE=1 python -m pytest testing/python/metal/"
+"test_metal_gemm_v2_linux.py -q -x\n"
+"TILELANG_DISABLE_CACHE=1 python -m pytest testing/python/metal/"
+"test_metal_simdgroup_store.py -q -x\n"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:637
+msgid "Default benchmark:"
+msgstr ""
+
+#: ../../../compiler_internals/metal_tilelang_development.md:639
+msgid ""
+"TILELANG_DISABLE_CACHE=1 python benchmark/matmul_metal/"
+"benchmark_matmul_metal.py \\\n"
+"  --m 4096 --n 4096 --k 4096 --warmup 10 --repeats 100\n"
+msgstr ""

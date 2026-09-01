@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-01 12:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,8 +49,8 @@ msgstr ""
 msgid ":py:obj:`dtype <tilelang.language.dtypes.dtype>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:47
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:109
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:55
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:179
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:26:<autosummary>:1
 msgid "Abstract base class for generic types."
 msgstr ""
@@ -62,64 +63,152 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_call__ <tilelang.language.dtypes.__dtype_call__>`\\ "
 "\\(self\\, \\*args\\[\\, is\\_size\\_var\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_as_torch__ <tilelang.language.dtypes.__dtype_as_torch__>`\\ "
 "\\(self\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:92
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:109
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid "Convert TileLang dtype to PyTorch dtype."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_new__ <tilelang.language.dtypes.__dtype_new__>`\\ \\(cls\\, "
 "value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`__dtype_bytes__ <tilelang.language.dtypes.__dtype_bytes__>`\\ "
 "\\(self\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:99
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:116
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid "Return the number of bytes for this dtype."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_is_float4_e2m1fn__ <tilelang.language.dtypes."
+"__dtype_is_float4_e2m1fn__>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:121
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid "Packed 4-bit FP4 E2M1 (CUTLASS float_e2m1_t)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_is_float4_e2m1_unpacked__ <tilelang.language.dtypes."
+"__dtype_is_float4_e2m1_unpacked__>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:130
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid "8-bit FP4 E2M1 unpacked shared-memory storage."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`__dtype_is_float4__ <tilelang.language.dtypes."
+"__dtype_is_float4__>`\\ \\(self\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:141
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+"Whether this is any FP4 E2M1 logical variant (packed or unpacked storage)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`is_float4_e2m1fn <tilelang.language.dtypes.is_float4_e2m1fn>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:146
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid "Whether *value* is the packed 4-bit FP4 E2M1 variant."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`is_float4_e2m1_unpacked <tilelang.language.dtypes."
+"is_float4_e2m1_unpacked>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:151
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid "Whether *value* is the 8-bit FP4 E2M1 unpacked shared-memory variant."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ":py:obj:`is_float4 <tilelang.language.dtypes.is_float4>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:156
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid "Whether *value* is any FP4 E2M1 logical variant (packed or unpacked)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`is_f8f6f4_family <tilelang.language.dtypes.is_f8f6f4_family>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:161
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+"Whether *value* is a tcgen05 ``kind::f8f6f4`` / ``mxf8f6f4`` operand dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid ""
+":py:obj:`validate_gemm_ab_dtypes <tilelang.language.dtypes."
+"validate_gemm_ab_dtypes>`\\ \\(a\\_dtype\\, b\\_dtype\\, \\*\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:166
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
+msgid "Validate mixed A/B dtypes for GEMM tile ops."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:46:<autosummary>:1
 msgid ""
 ":py:obj:`get_tvm_dtype <tilelang.language.dtypes.get_tvm_dtype>`\\ "
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:40
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:48
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:44
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:52
 msgid "Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_T`\\ ]"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:49
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:111
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:57
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:181
 msgid ""
 "A generic type is typically declared by inheriting from this class "
 "parameterized with one or more type variables. For example, a generic "
 "mapping type might be defined as::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:53
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:115
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:61
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:185
 msgid ""
 "class Mapping(Generic[KT, VT]):\n"
 "    def __getitem__(self, key: KT) -> VT:\n"
@@ -127,13 +216,13 @@ msgid ""
 "    # Etc."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:58
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:120
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:66
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:190
 msgid "This class can then be used as follows::"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:60
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:122
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:68
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:192
 msgid ""
 "def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:\n"
 "    try:\n"
@@ -150,6 +239,27 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/dtypes/index.rst:106
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:123
+msgid ""
+"Use for pure FP4 workloads on tcgen05 mxf4 / mxf4nvf4 (packed SMEM, half the "
+"footprint). Global tensors and packed SMEM roundtrips use this dtype. TMA: "
+"``CU_TENSOR_MAP_DATA_TYPE_16U4_ALIGN8B``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:132
+msgid ""
+"Only for tcgen05 ``kind::f8f6f4`` and block-scaled ``kind::mxf8f6f4`` mixed-"
+"precision paths. It models the SMEM-side unpacked layout, one FP4 value per "
+"byte slot, and pairs with TMA ``CU_TENSOR_MAP_DATA_TYPE_16U4_ALIGN16B``. Not "
+"for mxf4 / mxf4nvf4 packed FP4 kernels or general SIMT copy/cast paths."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:168
+msgid ""
+"TS variants (A in TMEM) skip validation because A/B dtypes may legitimately "
+"differ. Only TCGEN05 f8f6f4-family paths should opt in to mixed A/B dtypes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/dtypes/index.rst:176
 msgid "Bases: :py:obj:`dtype`"
 msgstr ""
