@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../programming_guides/software_pipeline.md:1
+msgid "Software Pipeline Annotations"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:3
+msgid ""
+"TileLang can infer common producer/consumer pipelines from `T.Pipelined(..., "
+"num_stages=...)`. For regular GEMM-like kernels, this is the preferred entry "
+"point:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:7
+msgid ""
+"for ko in T.Pipelined(T.ceildiv(K, BK), num_stages=3):\n"
+"    T.copy(A[by * BM, ko * BK], A_shared)\n"
+"    T.copy(B[ko * BK, bx * BN], B_shared)\n"
+"    T.gemm(A_shared, B_shared, C_local)\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:14
+msgid ""
+"For kernels whose loop body has unusual ordering, extra post-processing, or "
+"manual async-copy grouping, you can provide explicit pipeline annotations. "
+"This guide explains how to write those annotations and why replayable scalar "
+"`Bind` statements are not part of the user-visible schedule."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:19
+msgid "The User Model"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:21
+msgid ""
+"Pipeline annotations describe executable pipeline statements, not every IR "
+"node inside the loop body."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:24
+msgid "Annotate the statements that do work:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:26
+msgid "copies, including global-to-shared and TMA copies"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:27
+msgid "fills"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:28
+msgid "GEMM or other tile operations"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:29
+msgid "reductions"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:30
+msgid "stores and atomics"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:31
+msgid ""
+"explicit waits, commits, or synchronization statements when they are part of "
+"the manual pipeline"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:34
+msgid "Do not annotate replayable scalar aliases:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:36
+msgid ""
+"base: T.int32 = ko * BK\n"
+"offset: T.int32 = base + tx\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:41
+msgid ""
+"These `Bind` statements are value definitions, not materialized storage. The "
+"compiler places them automatically at each use."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:44
+msgid "Stage and Order"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:46
+msgid "Each scheduled statement has two numbers:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:48
+msgid "`stage`: the logical pipeline stage."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:49
+msgid "`order`: the order used when emitting scheduled statements."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:51
+msgid ""
+"Lower stages run earlier in the pipeline. A typical copy/compute pipeline "
+"has copy statements in stage 0 and compute statements in stage 1:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:54
+msgid ""
+"for ko in T.Pipelined(\n"
+"    T.ceildiv(K, BK),\n"
+"    stage=[0, 0, 1],\n"
+"    order=[0, 1, 2],\n"
+"):\n"
+"    T.copy(A[ko * BK], A_shared)\n"
+"    T.copy(B[ko * BK], B_shared)\n"
+"    T.gemm(A_shared, B_shared, C_local)\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:65
+msgid ""
+"The two arrays are aligned to the scheduled statements in source order. In "
+"the example above:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:68
+msgid ""
+"statement 0: copy A  -> stage 0, order 0\n"
+"statement 1: copy B  -> stage 0, order 1\n"
+"statement 2: gemm    -> stage 1, order 2\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:74
+msgid ""
+"The compiler checks buffer dependencies after applying the annotations. If "
+"one scheduled statement produces data for another, the producer must not be "
+"placed after the consumer. In practice:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:78
+msgid ""
+"If producer and consumer are in the same stage, producer order must be "
+"smaller than consumer order."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:80
+msgid ""
+"If they are in different stages, producer stage must be less than or equal "
+"to consumer stage."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:83
+msgid ""
+"When `stage` and `order` are provided manually, do not also set `num_stages` "
+"in normal code. The pipeline depth is inferred from the stage list as "
+"`max(stage) + 1`. Use `num_stages` by itself for compiler-inferred "
+"pipelines, and use `stage` / `order` by themselves for manually scheduled "
+"pipelines."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:88
+msgid "Annotating a Reordered Pipeline"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:90
+msgid ""
+"The `order` array is useful when the pipeline should issue a future-"
+"iteration producer before a current-iteration consumer."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:93
+msgid ""
+"for ko in T.Pipelined(\n"
+"    num_tiles,\n"
+"    stage=[0, 1],\n"
+"    order=[1, 0],\n"
+"):\n"
+"    T.copy(A[ko * BK], A_shared)\n"
+"    T.gemm(A_shared, B_shared, C_local)\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:103
+msgid "This says there are two scheduled statements:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:105
+msgid ""
+"copy -> stage 0, order 1\n"
+"gemm -> stage 1, order 0\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:110
+msgid ""
+"During pipeline rewriting, the compiler emits prologue, steady-state body, "
+"and epilogue pieces with the proper logical iteration for each stage. The "
+"source order still determines which annotation entry belongs to which "
+"scheduled statement; `order` controls the emission order after the "
+"statements have been classified."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:116
+msgid "Replayable Scalar Bind Statements"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:118
+msgid "A replayable scalar `Bind` may appear as a statement in the loop body:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:120
+msgid ""
+"for ko in T.Pipelined(\n"
+"    num_tiles,\n"
+"    stage=[0, 1],\n"
+"    order=[1, 0],\n"
+"):\n"
+"    base: T.int32 = ko * BK\n"
+"    T.copy(A[base + tx], A_shared[tx])\n"
+"    T.gemm(A_shared, B_shared, C_local)\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:131
+msgid ""
+"The `stage` and `order` arrays contain two entries, not three. They annotate "
+"the copy and the GEMM. The `base` definition is intentionally omitted."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:134
+msgid ""
+"This rule matters because a replayable `Bind` does not have a unique "
+"pipeline position. It is closer to an SSA value or a local alias than to an "
+"executable operation. If the same scalar is used by statements in different "
+"stages, each consumer may need the value under a different logical pipeline "
+"iteration."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:139
+msgid "For example:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:141
+msgid ""
+"for ko in T.Pipelined(\n"
+"    num_tiles,\n"
+"    stage=[0, 1],\n"
+"    order=[1, 0],\n"
+"):\n"
+"    base: T.int32 = ko * BK\n"
+"    T.copy(A[base + tx], A_shared[tx])\n"
+"    B[base + tx] = A_shared[tx]\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:152
+msgid ""
+"After pipeline rewriting, the copy may need `base` for a future producer "
+"iteration while the store needs `base` for the current consumer iteration. A "
+"single user-selected stage/order for `base` would either be out of scope or "
+"would describe the wrong logical iteration for one of the uses."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:157
+msgid "TileLang therefore treats replayable scalar `Bind` as non-schedulable:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:159
+msgid ""
+"stage/order annotate only scheduled, effectful statements\n"
+"replayable Bind definitions are replayed at each consumer\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:164
+msgid ""
+"The replay is use-driven. If a consumer statement references a scalar bound "
+"in the pipeline body, the compiler recreates the needed `Bind` immediately "
+"before that consumer and substitutes the consumer's logical access index."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:168
+msgid ""
+"A replayable scalar `Bind` may contain a read from a buffer that is not "
+"written inside the pipeline body:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:171
+msgid ""
+"idx: T.int32 = Ids[ko]\n"
+"T.copy(A[idx], A_shared)\n"
+"B[idx] = A_shared[0]\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:177
+msgid ""
+"Here `idx` is still a value alias. If both scheduled statements use it, "
+"TileLang replays `idx = Ids[logical_ko]` for each consumer. This may "
+"duplicate the load from `Ids`, but it preserves the alias semantics of "
+"`Bind`: the value is computed at the consumer's logical pipeline iteration."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:182
+msgid "This is different from a materialized producer:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:184
+msgid ""
+"idx_shared[tx] = Ids[ko]\n"
+"T.copy(A[idx_shared[tx]], A_shared)\n"
+"B[idx_shared[tx]] = A_shared[0]\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:190
+msgid ""
+"The store to `idx_shared` creates storage and a real producer/consumer "
+"dependency. It should be counted as a scheduled statement and, when needed, "
+"versioned like other pipeline buffers."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:194
+msgid ""
+"If a `Bind` reads a buffer that is written inside the same pipeline body, it "
+"is not treated as replayable:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:197
+msgid ""
+"T.copy(A[ko * BK], A_shared)\n"
+"value: T.float32 = A_shared[tx]\n"
+"C[ko * BK + tx] = value\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:203
+msgid ""
+"The load from `A_shared` depends on a pipeline producer. TileLang keeps this "
+"`Bind` in the scheduled statement list, so it needs a `stage` and `order` "
+"entry. Because a scalar `Bind` has no storage versioning, a scheduled `Bind` "
+"must be in the same stage as every consumer that uses its value. If the "
+"intended semantics are \"load once and share across later stages\", "
+"materialize the value explicitly with a buffer/register write instead of "
+"relying on `Bind` replay."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:210
+msgid "Bind Dependencies"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:212
+msgid "Replayable binds can depend on earlier replayable binds:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:214
+msgid ""
+"base: T.int32 = ko * BK\n"
+"offset: T.int32 = base + tx\n"
+"T.copy(A[offset], A_shared[tx])\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:220
+msgid "The compiler replays dependencies before their users:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:222
+msgid ""
+"base\n"
+"offset\n"
+"consumer statement\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:228
+msgid ""
+"This keeps manual annotations focused on actual pipeline operations while "
+"still preserving the lexical scalar dependencies from the original loop body."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:231
+msgid "Legacy Annotation Form"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:233
+msgid ""
+"Older code may include replayable scalar `Bind` statements in the annotation "
+"arrays:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:236
+msgid ""
+"for ko in T.Pipelined(\n"
+"    num_tiles,\n"
+"    stage=[3, 0, 1],\n"
+"    order=[1, 2, 0],\n"
+"):\n"
+"    base: T.int32 = ko * BK\n"
+"    T.copy(A[base + tx], A_shared[tx])\n"
+"    B[base + tx] = A_shared[tx]\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:247
+msgid ""
+"This form is accepted for compatibility. The scalar `Bind` entry is ignored, "
+"and the remaining entries are applied to the scheduled statements:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:250
+msgid ""
+"base Bind -> ignored\n"
+"copy      -> stage 0, order 2\n"
+"store     -> stage 1, order 0\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:256
+msgid ""
+"When a legacy replayable scalar `Bind` annotation is used by multiple "
+"scheduled statements, TileLang may warn that the scalar annotation is "
+"ignored and the bind is replayed at each use. New code should prefer the "
+"shorter annotation arrays that omit replayable scalar binds entirely."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:261
+msgid "Manual `T.serial` Annotations"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:263
+msgid ""
+"Most user code should use `T.Pipelined`. Lower-level tests or transform-"
+"level code may use the raw loop annotations directly:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:266
+msgid ""
+"for ko in T.serial(\n"
+"    0,\n"
+"    num_tiles,\n"
+"    annotations={\n"
+"        \"software_pipeline_stage\": [0, 1],\n"
+"        \"software_pipeline_order\": [1, 0],\n"
+"        \"software_pipeline_async_stages\": [0],\n"
+"    },\n"
+"):\n"
+"    base: T.int32 = ko * BK\n"
+"    T.copy(A[base + tx], A_shared[tx])\n"
+"    B[base + tx] = A_shared[tx]\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:281
+msgid ""
+"The same rule applies: `software_pipeline_stage` and "
+"`software_pipeline_order` describe only scheduled statements. Replayable "
+"scalar `Bind` statements do not need entries."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:285
+msgid "Design Rationale"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:287
+msgid "The pipeline pass separates the loop body into two concepts:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:289
+msgid ""
+"scheduled statements: executable operations controlled by stage/order\n"
+"replayable scalar bindings: local value aliases placed by use-def analysis\n"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:294
+msgid ""
+"This split keeps the API stable for users and avoids ambiguous schedules. A "
+"real pipeline operation has a clear execution point, can read or write "
+"buffers, and may require async-copy bookkeeping or synchronization. It is "
+"appropriate for the user to assign a stage and order to that operation."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:299
+msgid "A replayable scalar `Bind` has none of those properties:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:301
+msgid "It has no side effect."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:302
+msgid "It owns no buffer storage."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:303
+msgid "It can be used by multiple scheduled statements."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:304
+msgid ""
+"Its correct value may depend on the consumer's logical pipeline iteration."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:306
+msgid ""
+"Forcing users to annotate such a statement would require them to choose one "
+"stage/order even when there is no single correct answer. Replaying scalar "
+"binds at each consumer makes the alias semantics explicit in the generated "
+"IR and keeps the user-facing schedule focused on real pipeline work."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:311
+msgid "Checklist"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:313
+msgid "When writing manual pipeline annotations:"
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:315
+msgid "Count only scheduled statements when building `stage` and `order`."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:316
+msgid ""
+"Omit replayable scalar aliases such as `base = ko * BK` or `idx = Ids[ko]` "
+"when `Ids` is not written in the pipeline."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:318
+msgid ""
+"Count a `Bind` as a scheduled statement if it reads a buffer written inside "
+"the pipeline body."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:320
+msgid "Keep each scheduled statement's `order` unique."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:321
+msgid ""
+"Keep producers before consumers according to stage/order dependency rules."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:322
+msgid ""
+"Use `software_pipeline_async_producers` and "
+"`software_pipeline_async_producer_groups` with the same length as the "
+"scheduled statement list."
+msgstr ""
+
+#: ../../../programming_guides/software_pipeline.md:325
+msgid ""
+"Prefer the bind-free form for replayable aliases in new code; rely on legacy "
+"bind slots only when maintaining old kernels."
+msgstr ""

@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:2
+msgid "tilelang.rocm.language.intrinsics"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:8
+msgid "ROCm/HIP-specific language operators and intrinsic helpers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:22:<autosummary>:1
+msgid ":py:obj:`mfma <tilelang.rocm.language.intrinsics.mfma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:22:<autosummary>:1
+msgid ":py:obj:`mfma_store <tilelang.rocm.language.intrinsics.mfma_store>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:22:<autosummary>:1
+msgid ":py:obj:`rdna_wmma <tilelang.rocm.language.intrinsics.rdna_wmma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`rdna_wmma_store <tilelang.rocm.language.intrinsics."
+"rdna_wmma_store>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/rocm/language/intrinsics/index.rst:24
+msgid "Module Contents"
+msgstr ""

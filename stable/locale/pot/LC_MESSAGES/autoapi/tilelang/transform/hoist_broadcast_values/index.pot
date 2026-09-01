@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Module Contents"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:28
-msgid "Bases: :py:obj:`tvm.tir.PyStmtExprMutator`"
+msgid "Bases: :py:obj:`tvm.tirx.PyStmtExprMutator`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:0
@@ -62,8 +62,8 @@ msgstr ""
 msgid ""
 "This pass scans the TIR for Broadcast operations involving immediate "
 "constants (IntImm, FloatImm). It extracts these constants into variables "
-"defined via LetStmt immediately surrounding the statement where the "
-"broadcast occurs."
+"defined via Bind immediately preceding the statement where the broadcast "
+"occurs."
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/hoist_broadcast_values/index.rst:59

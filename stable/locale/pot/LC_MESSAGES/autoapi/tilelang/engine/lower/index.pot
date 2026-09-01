@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,112 +29,123 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`is_cpu_device_backend <tilelang.engine.lower."
 "is_cpu_device_backend>`\\ \\(target\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`has_device_kernel_launch <tilelang.engine.lower."
 "has_device_kernel_launch>`\\ \\(attrs\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:41
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:42
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid "Check if the attributes indicate a device kernel launch."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`is_device_call_c_device <tilelang.engine.lower."
 "is_device_call_c_device>`\\ \\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`is_device_call <tilelang.engine.lower.is_device_call>`\\ \\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`get_device_call <tilelang.engine.lower.get_device_call>`\\ "
 "\\(\\[is\\_device\\_c\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`get_host_call <tilelang.engine.lower.get_host_call>`\\ "
 "\\(\\[is\\_device\\_c\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`tilelang_callback_cuda_validate <tilelang.engine.lower."
 "tilelang_callback_cuda_validate>`\\ \\(device\\_mod\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`tilelang_callback_cuda_compile <tilelang.engine.lower."
 "tilelang_callback_cuda_compile>`\\ \\(code\\, target\\[\\, "
 "pass\\_config\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`tilelang_callback_hip_compile <tilelang.engine.lower."
 "tilelang_callback_hip_compile>`\\ \\(code\\, target\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`extrac_params <tilelang.engine.lower.extrac_params>`\\ \\(func\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`canon_target_host <tilelang.engine.lower.canon_target_host>`\\ "
 "\\(target\\, target\\_host\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`host_codegen <tilelang.engine.lower.host_codegen>`\\ "
 "\\(host\\_mod\\, target\\_host\\[\\, target\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:64
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:65
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid "Generate host-side code from the lowered IR module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`device_codegen <tilelang.engine.lower.device_codegen>`\\ "
 "\\(device\\_mod\\, target\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`device_codegen_without_compile <tilelang.engine.lower."
 "device_codegen_without_compile>`\\ \\(device\\_mod\\, target\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`lower_to_host_device_ir <tilelang.engine.lower."
+"lower_to_host_device_ir>`\\ \\(func\\_or\\_mod\\[\\, target\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:83
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
+msgid "Lower input TIR to split host/device IRModules without backend codegen."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`lower <tilelang.engine.lower.lower>`\\ \\(func\\_or\\_mod\\[\\, "
 "target\\, target\\_host\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:33:<autosummary>:1
+#: ../../../autoapi/tilelang/engine/lower/index.rst:34:<autosummary>:1
 msgid ""
 "enable_host_codegen: whether to enable host codegen, default is False, as we "
 "have our"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:35
+#: ../../../autoapi/tilelang/engine/lower/index.rst:36
 msgid "Module Contents"
 msgstr ""
 
@@ -146,22 +157,22 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:66
+#: ../../../autoapi/tilelang/engine/lower/index.rst:67
 msgid "The host-side IR module to compile."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:68
+#: ../../../autoapi/tilelang/engine/lower/index.rst:69
 msgid "The host compilation target (e.g. \"llvm\" or \"c\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:70
+#: ../../../autoapi/tilelang/engine/lower/index.rst:71
 msgid ""
 "The device target.  When the device target is Metal, the pass "
 "MarkHostMetalContext is applied so that the generated host code contains the "
 "Metal/MPS synchronisation logic."
 msgstr ""
 
-#: ../../../autoapi/tilelang/engine/lower/index.rst:82
+#: ../../../autoapi/tilelang/engine/lower/index.rst:88
 msgid ""
 "enable_host_codegen: whether to enable host codegen, default is False, as we "
 "have our own host codegen implementation in jit. enable_device_compile: "

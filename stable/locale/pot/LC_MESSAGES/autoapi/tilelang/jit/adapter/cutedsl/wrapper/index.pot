@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,118 +43,126 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_TMA_DESC_INIT_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CPP_TMA_DESC_INIT_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_TMA_IM2COL_DESC_INIT_TEMPLATE <tilelang.jit.adapter.cutedsl."
 "wrapper.CPP_TMA_IM2COL_DESC_INIT_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_TMA_INIT_FUNC_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CPP_TMA_INIT_FUNC_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_KERNEL_INIT_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CPP_KERNEL_INIT_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_TMA_LAUNCH_INIT_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CPP_TMA_LAUNCH_INIT_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_KERNEL_LAUNCH_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CPP_KERNEL_LAUNCH_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`CPP_PDL_KERNEL_LAUNCH_TEMPLATE <tilelang.jit.adapter.cutedsl."
+"wrapper.CPP_PDL_KERNEL_LAUNCH_TEMPLATE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_COOPERATIVE_KERNEL_LAUNCH_TEMPLATE <tilelang.jit.adapter."
 "cutedsl.wrapper.CPP_COOPERATIVE_KERNEL_LAUNCH_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CPP_LAUNCHER_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CPP_LAUNCHER_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CUBIN_TMA_ATOM_INIT_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CUBIN_TMA_ATOM_INIT_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CUBIN_KERNEL_LAUNCH_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CUBIN_KERNEL_LAUNCH_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CUBIN_FAKE_TENSOR_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CUBIN_FAKE_TENSOR_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`CUBIN_GEN_CODE_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "CUBIN_GEN_CODE_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:40:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`PYTHON_HOST_FUNC_TEMPLATE <tilelang.jit.adapter.cutedsl.wrapper."
 "PYTHON_HOST_FUNC_TEMPLATE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:42
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:43
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:48:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:49:<autosummary>:1
 msgid ""
 ":py:obj:`TLCuTeDSLSourceWrapper <tilelang.jit.adapter.cutedsl.wrapper."
 "TLCuTeDSLSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:821
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:48:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:895
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:49:<autosummary>:1
 msgid "Wrapper class for TileLang CuTe DSL backend with C++ launcher."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:50
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:51
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:55
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:99
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:147
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:173
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:206
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:235
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:277
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:318
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:636
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:662
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:709
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:56
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:100
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:148
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:174
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:207
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:236
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:278
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:328
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:369
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:687
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:710
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:732
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:779
 msgid "<details><summary>Show Value</summary>"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:59
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:60
 msgid ""
 "\"\"\"  // Descriptor {desc_idx}: {desc_name} (tensor: {tensor_name})\n"
 "  {{\n"
@@ -187,21 +195,23 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:90
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:138
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:164
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:197
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:226
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:268
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:309
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:623
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:649
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:700
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:810
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:91
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:139
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:165
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:198
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:227
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:269
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:319
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:360
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:674
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:701
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:723
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:770
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:884
 msgid "</details>"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:103
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:104
 msgid ""
 "\"\"\"  // Descriptor {desc_idx}: {desc_name} (tensor: {tensor_name}) "
 "[im2col]\n"
@@ -239,7 +249,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:151
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:152
 msgid ""
 "\"\"\"CUresult tma_init(CUtensorMap* tma_descs, {func_args}) {{\n"
 "  // Initialize {num_descs} TMA descriptor(s) in caller-provided host array\n"
@@ -254,7 +264,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:177
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:178
 msgid ""
 "\"\"\"  // Find and configure kernel {kernel_idx}: {kernel_name}\n"
 "  result = find_kernel_by_pattern(module, \"{kernel_name}\", "
@@ -278,7 +288,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:210
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:211
 msgid ""
 "\"\"\"  // Declare stack-local TMA descriptor array (eliminates concurrency "
 "race)\n"
@@ -300,7 +310,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:239
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:240
 msgid ""
 "\"\"\"  // Launch kernel {kernel_idx}: {kernel_name}\n"
 "  {{\n"
@@ -332,7 +342,48 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:281
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:282
+msgid ""
+"\"\"\"  // Launch kernel {kernel_idx}: {kernel_name} (PDL)\n"
+"  {{\n"
+"    // Get the kernel for current device\n"
+"    auto kernels_it = g_device_kernels.find(device_id);\n"
+"    if (kernels_it == g_device_kernels.end()) {{\n"
+"      std::cerr << \"Kernels not initialized for device \" << device_id << "
+"\"\\n\";\n"
+"      return CUDA_ERROR_NOT_INITIALIZED;\n"
+"    }}\n"
+"    const std::vector<CUfunction>& kernels = kernels_it->second;\n"
+"\n"
+"    void* args[] = {{{kernel_args}}};\n"
+"    CUlaunchAttribute attrs[1];\n"
+"    attrs[0].id = CU_LAUNCH_ATTRIBUTE_PROGRAMMATIC_STREAM_SERIALIZATION;\n"
+"    attrs[0].value.programmaticStreamSerializationAllowed = 1;\n"
+"\n"
+"    CUlaunchConfig config = {{}};\n"
+"    config.gridDimX = {grid_x};\n"
+"    config.gridDimY = {grid_y};\n"
+"    config.gridDimZ = {grid_z};\n"
+"    config.blockDimX = {block_x};\n"
+"    config.blockDimY = {block_y};\n"
+"    config.blockDimZ = {block_z};\n"
+"    config.sharedMemBytes = {smem_size};\n"
+"    config.hStream = stream;\n"
+"    config.attrs = attrs;\n"
+"    config.numAttrs = 1;\n"
+"\n"
+"    result = cuLaunchKernelEx(&config, kernels[{kernel_idx}], args, "
+"nullptr);\n"
+"    if (result != CUDA_SUCCESS) {{\n"
+"      std::cerr << \"Failed to launch PDL kernel {kernel_name} on device \" "
+"<< device_id << \": \" << result << \"\\n\";\n"
+"      return result;\n"
+"    }}\n"
+"  }}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:332
 msgid ""
 "\"\"\"  // Launch kernel {kernel_idx}: {kernel_name} (cooperative)\n"
 "  {{\n"
@@ -363,7 +414,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:322
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:373
 msgid ""
 "\"\"\"#include <cuda.h>\n"
 "#include <cstdint>\n"
@@ -687,17 +738,28 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:640
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:691
 msgid ""
 "\"\"\"    {function_name}({call_args}).launch(\n"
 "      grid=[{grid_x}, {grid_y}, {grid_z}],\n"
 "      block=[{block_x}, {block_y}, {block_z}],\n"
 "      smem={smem_size},\n"
 "      stream=stream,\n"
+"      use_pdl={use_pdl},\n"
 "    )\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:666
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:714
+msgid ""
+"\"\"\"  __fake_{arg_name}__ = make_fake_compact_tensor(\n"
+"      {dtype_expr},\n"
+"      _positive_fake_shape({arg_name}.shape),\n"
+"      stride_order={arg_name}.dim_order()[::-1],\n"
+"      assumed_align=16,\n"
+"  )\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:736
 msgid ""
 "\"\"\"{lib_code}\n"
 "\n"
@@ -719,8 +781,8 @@ msgid ""
 "    _kernel_wrapper = cute.compile(\n"
 "        kernel_wrapper,\n"
 "        {compile_args},\n"
-"        options=f\"--enable-tvm-ffi --keep-cubin --dump-dir={{_staging_dir."
-"as_posix()}}\",\n"
+"        options=f\"--enable-tvm-ffi --keep-cubin --gpu-arch={target_arch} --"
+"dump-dir={{_staging_dir.as_posix()}}\",\n"
 "    )\n"
 "\n"
 "    # CuTeDSL generates a long, mangled cubin filename that includes "
@@ -739,7 +801,7 @@ msgid ""
 "    shutil.rmtree(_staging_dir, ignore_errors=True)\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:713
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:783
 msgid ""
 "\"\"\"import os\n"
 "from pathlib import Path\n"
@@ -788,6 +850,7 @@ msgid ""
 "      \"torch.float8_e4m3fnuz\": cutlass.Float8E4M3FN,\n"
 "      \"torch.float8_e4m3fn\": cutlass.Float8E4M3FN,\n"
 "      \"torch.float8_e5m2\": cutlass.Float8E5M2,\n"
+"      \"torch.float4_e2m1fn_x2\": cutlass.Float4E2M1FN,\n"
 "      \"torch.float64\": cutlass.Float64,\n"
 "      \"torch.int64\": cutlass.Int64,\n"
 "      \"torch.int32\": cutlass.Int32,\n"
@@ -799,6 +862,9 @@ msgid ""
 "      \"torch.int16\": cutlass.Int16,\n"
 "      \"torch.uint16\": cutlass.Uint16,\n"
 "      \"torch.uchar\": cutlass.Uint8}}\n"
+"\n"
+"  def _positive_fake_shape(shape):\n"
+"    return tuple(max(int(dim), 1) for dim in tuple(shape))\n"
 "\n"
 "{cubin_gen_code}\n"
 "\n"
@@ -845,11 +911,11 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:818
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:892
 msgid "Bases: :py:obj:`tilelang.jit.adapter.wrapper.TLCUDASourceWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:823
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:897
 msgid ""
 "Generates optimized C++ launcher code that: - Loads cubin via CUDA Driver "
 "API - Passes TMA descriptors by value (host-side, no device copy) - Launches "
@@ -861,11 +927,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:832
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:906
 msgid "Override parent's host_func to return generated Python code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:837
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:911
 msgid "Generate TMA descriptor information for C++ code generation."
 msgstr ""
 
@@ -873,7 +939,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:839
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:913
 msgid "List of descriptor variable names in the order they were processed."
 msgstr ""
 
@@ -881,18 +947,18 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:845
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:919
 msgid "Create dispatch function - always use C++ launcher."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:851
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:925
 msgid "Create dispatch function using C++ launcher."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:857
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:931
 msgid "Get the generated C++ launcher code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:863
+#: ../../../autoapi/tilelang/jit/adapter/cutedsl/wrapper/index.rst:937
 msgid "Update the library code with the given code string."
 msgstr ""

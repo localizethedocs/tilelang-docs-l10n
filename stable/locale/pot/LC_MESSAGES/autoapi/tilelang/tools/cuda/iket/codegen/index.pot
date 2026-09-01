@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:2
+msgid "tilelang.tools.cuda.iket.codegen"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:8
+msgid "CUDA source instrumentation for IKET events."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`inject_iket_cuda <tilelang.tools.cuda.iket.codegen."
+"inject_iket_cuda>`\\ \\(code\\, target\\, \\*\\, runtime\\_payloads\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:25
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:19:<autosummary>:1
+msgid "Inject IKET declarations and event macros into generated CUDA source."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/codegen/index.rst:0
+msgid "Return type"
+msgstr ""

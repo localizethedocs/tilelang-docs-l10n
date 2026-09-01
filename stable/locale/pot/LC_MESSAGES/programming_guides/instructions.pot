@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,14 +33,15 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:7
 msgid ""
-"Data movement: `T.copy`, `T.async_copy`, `T.c2d_im2col`, staging Global ↔ "
-"Shared ↔ Fragment"
+"Data movement: `T.copy`, `T.async_copy`, `T.tma_copy`, `T.c2d_im2col`, "
+"staging Global ↔ Shared ↔ Fragment"
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:8
 msgid ""
 "Compute primitives: `T.gemm`/`T.gemm_sp`, elementwise math (`T.exp`, `T."
-"max`), reductions (`T.reduce_sum`, `T.cumsum`, warp reducers)"
+"max`), reductions and scans (`T.reduce_sum`, `T.cumsum`, `T.cummax`, warp "
+"reducers)"
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:10
@@ -100,7 +101,7 @@ msgid ""
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:36
-msgid "`T.copy` vs `T.async_copy`"
+msgid "Lowering `T.copy` to variants of copy mechanisms"
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:38
@@ -117,51 +118,52 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:42
 msgid ""
-"The compiler is free to lower it to different mechanisms (SIMT copy, "
-"`ldmatrix`, TMA, `cp.async`, etc.) depending on target/hints, but the "
-"observable semantics are *synchronous*: after the statement, it is safe to "
-"use `dst`."
+"The compiler is free to lower it to different mechanisms (synchronous SIMT "
+"copy `ld.global`, warp-level copy     `ldmatrix`, async copy via TMA `cp."
+"async.bulk`, old async copy `cp.async`, etc.) depending on target/hints, but "
+"the   observable semantics are *synchronous*: after the statement, it is "
+"safe to use `dst`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:45
+#: ../../../programming_guides/instructions.md:44
 msgid ""
 "If `T.copy` lowers to `cp.async`, TileLang will still preserve synchronous "
 "semantics by emitting the required `commit`/`wait` (and any required "
 "synchronization) so that consuming `dst` is correct."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:49
+#: ../../../programming_guides/instructions.md:48
 msgid "`T.async_copy(src, dst, ...)` (explicit async semantics)"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:50
+#: ../../../programming_guides/instructions.md:49
 msgid ""
 "Intended for writing manual pipelines or warp-specialized code where you "
 "want to overlap global->shared copies with compute."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:52
+#: ../../../programming_guides/instructions.md:51
 msgid "Lowers through `cp.async` and emits:"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:53
+#: ../../../programming_guides/instructions.md:52
 msgid "`ptx_cp_async(...)`"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:54
+#: ../../../programming_guides/instructions.md:53
 msgid "`ptx_commit_group()`"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:55
+#: ../../../programming_guides/instructions.md:54
 msgid "No `ptx_wait_group(...)` is auto-inserted."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:56
+#: ../../../programming_guides/instructions.md:55
 msgid ""
 "You must explicitly insert `T.ptx_wait_group(...)` before consuming `dst`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:57
+#: ../../../programming_guides/instructions.md:56
 msgid ""
 "A barrier is still required when `dst` is produced cooperatively and "
 "consumed across threads. In most TileLang programs you do not need to write "
@@ -172,18 +174,18 @@ msgid ""
 "for warp-local consumption)."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:64
+#: ../../../programming_guides/instructions.md:63
 msgid ""
 "This op is intentionally strict: if the copy cannot be lowered to `cp.async` "
 "(e.g., wrong scopes, unsupported vector width), compilation fails instead of "
 "silently falling back to a synchronous copy."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:68
+#: ../../../programming_guides/instructions.md:67
 msgid "Example (manual async prefetch)"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:69
+#: ../../../programming_guides/instructions.md:68
 msgid ""
 "# Prefetch into shared asynchronously (emits cp.async + commit).\n"
 "T.async_copy(A[by * BM, ko * BK], A_s)\n"
@@ -199,99 +201,99 @@ msgid ""
 "T.gemm(A_s, B_s, C_f)\n"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:82
+#: ../../../programming_guides/instructions.md:81
 msgid "Other helpers"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:83
+#: ../../../programming_guides/instructions.md:82
 msgid "`T.c2d_im2col(img, col, ...)`: convenience for conv‑style transforms."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:85
+#: ../../../programming_guides/instructions.md:84
 msgid "Compute Primitives"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:87
+#: ../../../programming_guides/instructions.md:86
 msgid "GEMM and sparse GEMM"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:88
+#: ../../../programming_guides/instructions.md:87
 msgid ""
 "`T.gemm(A_shared, B_shared, C_fragment)`: computes a tile GEMM using shared "
 "inputs and a fragment accumulator; lowered to target‑specific tensor cores."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:90
+#: ../../../programming_guides/instructions.md:89
 msgid ""
 "`T.gemm_sp(...)`: 2:4 sparse tensor core variant (see examples and README)."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:92
+#: ../../../programming_guides/instructions.md:91
 msgid "Reductions and scans"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:93
+#: ../../../programming_guides/instructions.md:92
 msgid ""
-"`T.reduce_sum`, `T.reduce_max`, `T.reduce_min`, `T.cumsum`, plus warp "
-"reducers (`T.warp_reduce_sum`, etc.)."
+"`T.reduce_sum`, `T.reduce_max`, `T.reduce_min`, `T.cumsum`, `T.cummax`, plus "
+"warp reducers (`T.warp_reduce_sum`, etc.)."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:95
+#: ../../../programming_guides/instructions.md:94
 msgid ""
 "Allocate and initialize accumulators via `T.alloc_fragment` + `T.clear` or "
 "`T.fill`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:98
+#: ../../../programming_guides/instructions.md:97
 msgid "Elementwise math"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:99
+#: ../../../programming_guides/instructions.md:98
 msgid ""
 "Most math ops mirror TVM TIR: `T.exp`, `T.log`, `T.max`, `T.min`, `T.rsqrt`, "
 "`T.sigmoid`, etc. Compose freely inside loops."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:102
+#: ../../../programming_guides/instructions.md:101
 msgid "Reshape/view (no copy)"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:103
+#: ../../../programming_guides/instructions.md:102
 msgid ""
 "`T.reshape(buf, new_shape)` and `T.view(buf, shape=None, dtype=None)` create "
 "new views that share storage, with shape/dtype checks enforced."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:106
+#: ../../../programming_guides/instructions.md:105
 msgid "Synchronization (HL usage)"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:108
+#: ../../../programming_guides/instructions.md:107
 msgid ""
 "In HL pipelines, you usually don’t need to write explicit barriers. Passes "
 "such as PipelinePlanning/InjectSoftwarePipeline/InjectTmaBarrier orchestrate "
 "producer/consumer ordering and thread synchronization behind the scenes."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:112
+#: ../../../programming_guides/instructions.md:111
 msgid "If you need debugging or explicit checks:"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:113
+#: ../../../programming_guides/instructions.md:112
 msgid ""
 "`T.device_assert(cond, msg='')` emits device‑side asserts on CUDA targets."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:114
+#: ../../../programming_guides/instructions.md:113
 msgid ""
 "`T.print(obj, msg='...')` prints scalars or buffers safely from one thread."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:116
+#: ../../../programming_guides/instructions.md:115
 msgid "Putting It Together: GEMM Tile"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:118
+#: ../../../programming_guides/instructions.md:117
 msgid ""
 "@T.prim_func\n"
 "def gemm(\n"
@@ -314,29 +316,35 @@ msgid ""
 "        T.copy(C_f, C[by * BM, bx * BN])      # store back\n"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:139
+#: ../../../programming_guides/instructions.md:138
 msgid "Instruction Reference (Concise)"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:141
+#: ../../../programming_guides/instructions.md:140
 msgid ""
 "Below is a concise list of TileLang instructions grouped by category. For "
 "full signatures, behaviors, constraints, and examples, refer to API "
 "Reference (`autoapi/tilelang/index`)."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:145
+#: ../../../programming_guides/instructions.md:144
 msgid "Data movement"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:146
+#: ../../../programming_guides/instructions.md:145
 msgid "`T.copy(src, dst, ...)`: Move tiles between Global/Shared/Fragment."
+msgstr ""
+
+#: ../../../programming_guides/instructions.md:146
+msgid ""
+"`T.async_copy(src, dst, ...)`: Explicit async global→shared copy via `cp."
+"async`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:147
 msgid ""
-"`T.async_copy(src, dst, ...)`: Explicit async global→shared copy via `cp."
-"async`."
+"`T.tma_copy(src, dst, ...)`: Explicit async global→shared copy via `cp.async."
+"bulk`"
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:148
@@ -375,7 +383,7 @@ msgid ""
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:156
-msgid "`T.alloc_tmem(shape, dtype)`: Tensor memory (TMEM) buffer (Hopper+)."
+msgid "`T.alloc_tmem(shape, dtype)`: Tensor memory (TMEM) buffer (Blackwell+)."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:157
@@ -426,7 +434,7 @@ msgid "Reductions: `T.reduce_sum/max/min/abssum/absmax`, bitwise `and/or/xor`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:169
-msgid "Scans: `T.cumsum`, finalize: `T.finalize_reducer`."
+msgid "Scans: `T.cumsum`, `T.cummax`, finalize: `T.finalize_reducer`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:170
@@ -708,77 +716,79 @@ msgstr ""
 #: ../../../programming_guides/instructions.md:237
 msgid ""
 "TMA: `T.create_tma_descriptor(...)`, `T.tma_load(...)`, `T."
-"tma_store_arrive(...)`, `T.tma_store_wait(...)`."
+"tma_store_arrive(...)`, `T.tma_store_wait(count=0, read=True)`. `read=True` "
+"emits `cp.async.bulk.wait_group.read`; use `read=False` for `cp.async.bulk."
+"wait_group` when the wait must include destination writes becoming visible."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:239
+#: ../../../programming_guides/instructions.md:242
 msgid ""
 "Proxy/fences: `T.fence_proxy_async(...)`, `T.warpgroup_fence_operand(...)`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:240
+#: ../../../programming_guides/instructions.md:243
 msgid ""
 "Warp‑group: `T.warpgroup_arrive()`, `T.warpgroup_commit_batch()`, `T."
 "warpgroup_wait(num_mma)`, `T.wait_wgmma(id)`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:243
+#: ../../../programming_guides/instructions.md:246
 msgid "Lane/warp index"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:244
+#: ../../../programming_guides/instructions.md:247
 msgid "`T.get_lane_idx(warp_size=None)`: Lane id in warp."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:245
+#: ../../../programming_guides/instructions.md:248
 msgid "`T.get_warp_idx_sync(warp_size=None)`: Canonical warp id (sync)."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:246
+#: ../../../programming_guides/instructions.md:249
 msgid "`T.get_warp_idx(warp_size=None)`: Canonical warp id (no sync)."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:247
+#: ../../../programming_guides/instructions.md:250
 msgid "`T.get_warp_group_idx(warp_size=None, warps_per_group=None)`: Group id."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:249
+#: ../../../programming_guides/instructions.md:252
 msgid "Register control"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:250
+#: ../../../programming_guides/instructions.md:253
 msgid ""
 "`T.set_max_nreg(reg_count, is_inc)`, `T.inc_max_nreg(n)`, `T."
 "dec_max_nreg(n)`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:251
+#: ../../../programming_guides/instructions.md:254
 msgid ""
 "`T.annotate_producer_reg_dealloc(n=24)`, `T."
 "annotate_consumer_reg_alloc(n=240)`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:252
+#: ../../../programming_guides/instructions.md:255
 msgid "`T.no_set_max_nreg()`, `T.disable_warp_group_reg_alloc()`."
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:254
+#: ../../../programming_guides/instructions.md:257
 msgid "Notes on Dtypes"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:256
+#: ../../../programming_guides/instructions.md:259
 msgid "Dtypes accept three equivalent forms:"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:257
+#: ../../../programming_guides/instructions.md:260
 msgid "String: `'float32'`"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:258
+#: ../../../programming_guides/instructions.md:261
 msgid "TileLang dtype: `T.float32`"
 msgstr ""
 
-#: ../../../programming_guides/instructions.md:259
+#: ../../../programming_guides/instructions.md:262
 msgid ""
 "Framework dtype: `torch.float32` All are normalized internally. See Type "
 "System for details."

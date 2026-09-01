@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,219 +29,239 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ""
 ":py:obj:`BEST_CONFIG_PATH <tilelang.autotuner.param.BEST_CONFIG_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`FUNCTION_PATH <tilelang.autotuner.param.FUNCTION_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`OUT_IDX_PATH <tilelang.autotuner.param.OUT_IDX_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`LATENCY_PATH <tilelang.autotuner.param.LATENCY_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ""
 ":py:obj:`DEVICE_KERNEL_PATH <tilelang.autotuner.param.DEVICE_KERNEL_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ""
 ":py:obj:`HOST_KERNEL_PATH <tilelang.autotuner.param.HOST_KERNEL_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`EXECUTABLE_PATH <tilelang.autotuner.param.EXECUTABLE_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`KERNEL_LIB_PATH <tilelang.autotuner.param.KERNEL_LIB_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ""
 ":py:obj:`KERNEL_CUBIN_PATH <tilelang.autotuner.param.KERNEL_CUBIN_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`KERNEL_PY_PATH <tilelang.autotuner.param.KERNEL_PY_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
 msgid ":py:obj:`PARAMS_PATH <tilelang.autotuner.param.PARAMS_PATH>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:31
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:30:<autosummary>:1
+msgid ":py:obj:`TargetLike <tilelang.autotuner.param.TargetLike>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:32
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:40:<autosummary>:1
 msgid ":py:obj:`CompileArgs <tilelang.autotuner.param.CompileArgs>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:40:<autosummary>:1
 msgid ""
 "Compile arguments for the auto-tuner. Detailed description can be found in "
 "`tilelang.jit.compile`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:40:<autosummary>:1
 msgid ":py:obj:`ProfileArgs <tilelang.autotuner.param.ProfileArgs>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:163
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:172
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:40:<autosummary>:1
 msgid "Profile arguments for the auto-tuner."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:40:<autosummary>:1
 msgid ":py:obj:`AutotuneResult <tilelang.autotuner.param.AutotuneResult>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:315
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:327
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:40:<autosummary>:1
 msgid "Results from auto-tuning process."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:41
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:42
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:89
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:92
 msgid ""
 "Compile arguments for the auto-tuner. Detailed description can be found in "
 "`tilelang.jit.compile`. .. attribute:: out_idx"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:92
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:95
 msgid "List of output tensor indices."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:96
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:99
 msgid "Execution backend to use for kernel execution (default: \"auto\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:100
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:103
 msgid ""
-"Compilation target, either as a string or a TVM Target object (default: "
-"\"auto\")."
+"Compilation target, either as a string, config dict, or a TVM Target object "
+"(default: \"auto\")."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:104
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:107
 msgid "Target host for cross-compilation (default: None)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:108
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:111
 msgid "Whether to enable verbose output (default: False)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:112
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:115
 msgid "Additional keyword arguments to pass to the Compiler PassContext."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:160
+msgid "Compile one candidate program using this compile configuration."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:167
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:166
+msgid "Return a stable hash for cache key construction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:176
 msgid "Number of warmup iterations."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:171
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:180
 msgid "Number of repetitions for timing."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:175
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:184
 msgid "Maximum time per configuration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:179
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:188
 msgid ""
 "Profiler backend - \"event\" (CUDA events), \"cupti\", or \"cudagraph\"."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:183
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:192
 msgid "Type of tensor supply mechanism."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:187
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:196
 msgid "Reference program for correctness validation."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:191
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:200
 msgid "Supply program for input tensors."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:195
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:204
 msgid "Union[List[int], int] = -1"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:199
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:208
 msgid "tilelang.TensorSupplyType = tilelang.TensorSupplyType.Auto"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:203
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:207
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:227
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:212
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:216
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:236
 msgid "Callable = None"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:211
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:215
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:220
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:224
 msgid "float = 1e-2"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:219
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:228
 msgid "float = 0.01"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:223
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:232
 msgid "bool = False"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:231
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:240
 msgid "bool = True"
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:319
-msgid "Best achieved execution latency."
-msgstr ""
-
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:323
-msgid "Configuration that produced the best result."
-msgstr ""
-
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:327
-msgid "Reference implementation latency."
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:321
+msgid "Return a stable hash for profiling configuration reuse."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:331
-msgid "Generated library code."
+msgid "Best achieved execution latency."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:335
-msgid "Optimized function."
+msgid "Configuration that produced the best result."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:339
+msgid "Reference implementation latency."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:343
+msgid "Generated library code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:347
+msgid "Optimized function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:351
 msgid "Compiled kernel function."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:380
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:392
 msgid "Persist autotune result to disk using atomic directory rename."
 msgstr ""
 
-#: ../../../autoapi/tilelang/autotuner/param/index.rst:382
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:394
 msgid ""
 "All files are written into a temporary staging directory under the shared "
 "namespace staging root. Once complete, the staging directory is atomically "
 "renamed to *path* so that concurrent readers never see a half-written result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/param/index.rst:405
+msgid "Load a complete autotune result and its compiled kernel from disk."
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/param/index.rst:0

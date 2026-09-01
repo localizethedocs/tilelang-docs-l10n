@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:2
+msgid "tilelang.backend.pass_pipeline.pipeline_utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`allow_vectorize <tilelang.backend.pass_pipeline.pipeline_utils."
+"allow_vectorize>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`allow_global_thread_synchronization <tilelang.backend.pass_pipeline."
+"pipeline_utils.allow_global_thread_synchronization>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`should_enable_aggressive_merge <tilelang.backend.pass_pipeline."
+"pipeline_utils.should_enable_aggressive_merge>`\\ \\(\\[pass\\_ctx\\, "
+"target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`should_force_let_inline <tilelang.backend.pass_pipeline."
+"pipeline_utils.should_force_let_inline>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`should_enable_layout_visual <tilelang.backend.pass_pipeline."
+"pipeline_utils.should_enable_layout_visual>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`should_enable_race_check <tilelang.backend.pass_pipeline."
+"pipeline_utils.should_enable_race_check>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`should_disable_shared_memory_reuse <tilelang.backend.pass_pipeline."
+"pipeline_utils.should_disable_shared_memory_reuse>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`get_layout_visual_formats <tilelang.backend.pass_pipeline."
+"pipeline_utils.get_layout_visual_formats>`\\ \\(\\[pass\\_ctx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`LayoutVisual <tilelang.backend.pass_pipeline.pipeline_utils."
+"LayoutVisual>`\\ \\(mod\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:44
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:22:<autosummary>:1
+msgid "Apply layout visualization pass if enabled."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/pass_pipeline/pipeline_utils/index.rst:0
+msgid "Return type"
+msgstr ""

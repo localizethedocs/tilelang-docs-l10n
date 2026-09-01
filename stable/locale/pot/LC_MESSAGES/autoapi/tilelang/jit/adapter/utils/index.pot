@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid ""
 "TMADescriptorParams>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:122
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:124
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:14:<autosummary>:1
 msgid "Parsed TMA descriptor parameters."
 msgstr ""
@@ -114,7 +114,7 @@ msgstr ""
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
 ":py:obj:`pythonic_expr <tilelang.jit.adapter.utils.pythonic_expr>`\\ "
-"\\(expr\\[\\, dtype\\_map\\, ignore\\_cast\\, floor\\_div\\_op\\]\\)"
+"\\(expr\\[\\, dtype\\_map\\, ignore\\_cast\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:81
@@ -130,7 +130,7 @@ msgid ""
 "\\(name\\, matches\\, i\\[\\, desc\\_name\\_map\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:96
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:98
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid "Check if a parameter name corresponds to a TMA descriptor."
 msgstr ""
@@ -141,7 +141,7 @@ msgid ""
 "parse_function_call_args>`\\ \\(declaration\\, function\\_args\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:108
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:110
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid "Parse function call arguments from a kernel declaration."
 msgstr ""
@@ -152,7 +152,7 @@ msgid ""
 "parse_tma_descriptor_args>`\\ \\(tma\\_descriptor\\_args\\, ...\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:216
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:218
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid "Parse TMA descriptor arguments into structured parameters."
 msgstr ""
@@ -221,79 +221,85 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:86
 msgid ""
-"Operator to use for tvm.tir.FloorDiv. Default '/' preserves prior behavior "
+"Operator to use for tvm.tirx.FloorDiv. Default '/' preserves prior behavior "
 "(suitable for generating C/C++ expressions). For generating Python code "
 "where integer division is required (e.g. grid/block), pass '//' explicitly."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:91
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:90
+msgid ""
+"Optional mapping for rendered helper function names, e.g. {\"max\": \"std::"
+"max\"} when generating C++."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:93
 msgid "A string representation of the expression."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:98
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:100
 msgid "The parameter name to check."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:99
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:101
 msgid "List of all matched parameter names."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:100
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:102
 msgid "Index of the current match."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:101
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:103
 msgid "Optional mapping to store descriptor name relationships."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:103
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:105
 msgid "True if the parameter is a TMA descriptor."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:110
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:112
 msgid "The kernel function declaration string."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:111
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:113
 msgid "List of function argument specifications."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:112
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:114
 msgid "List of function parameters from TVM IR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:113
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:115
 msgid "Optional mapping for descriptor names."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:114
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:116
 msgid "Optional mapping from descriptor names to TVM variables."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:115
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:117
 msgid "Optional function to transform each argument (name, type) -> result."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:117
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:119
 msgid "List of parsed call arguments."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:218
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:220
 msgid "Dictionary mapping TMA descriptor variables to their arguments."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:219
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:221
 msgid "Mapping from descriptor handles to parameter names."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:220
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:222
 msgid "Mapping from descriptor handles to TVM variables."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:221
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:223
 msgid "Function to convert TVM expressions to strings."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:223
+#: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:225
 msgid "List of parsed TMA descriptor parameters."
 msgstr ""

@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:2
+msgid "tilelang.cuda.language.intrinsics"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:8
+msgid "CUDA-specific language operators and intrinsic helpers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:21:<autosummary>:1
+msgid ":py:obj:`tcgen05_mma <tilelang.cuda.language.intrinsics.tcgen05_mma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`tcgen05_mma_blockscaled <tilelang.cuda.language.intrinsics."
+"tcgen05_mma_blockscaled>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:21:<autosummary>:1
+msgid ":py:obj:`wgmma_mma <tilelang.cuda.language.intrinsics.wgmma_mma>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/intrinsics/index.rst:23
+msgid "Module Contents"
+msgstr ""

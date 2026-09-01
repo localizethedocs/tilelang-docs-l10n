@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,58 +37,88 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
+msgid ":py:obj:`requires_cdna <tilelang.testing.requires_cdna>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:49
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
+msgid "Skip the test unless the ROCm device is a CDNA GPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`requires_cuda_or_cdna <tilelang.testing.requires_cuda_or_cdna>`\\ "
+"\\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:54
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
+msgid "Skip the test unless the device is CUDA or CDNA ROCm."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`requires_gfx950 <tilelang.testing.requires_gfx950>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:59
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
+msgid "Skip the test unless the ROCm device is gfx950 (CDNA4 / MI350)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ":py:obj:`main <tilelang.testing.main>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`set_random_seed <tilelang.testing.set_random_seed>`\\ "
 "\\(\\[seed\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version <tilelang.testing."
 "requires_cuda_compute_version>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:50
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:68
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid "Mark a test as requiring at least a compute architecture"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_ge <tilelang.testing."
 "requires_cuda_compute_version_ge>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_gt <tilelang.testing."
 "requires_cuda_compute_version_gt>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_eq <tilelang.testing."
 "requires_cuda_compute_version_eq>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_lt <tilelang.testing."
 "requires_cuda_compute_version_lt>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
+#: ../../../autoapi/tilelang/testing/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`requires_cuda_compute_version_le <tilelang.testing."
 "requires_cuda_compute_version_le>`\\ \\(major\\_version\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:40
+#: ../../../autoapi/tilelang/testing/index.rst:43
 msgid "Package Contents"
 msgstr ""
 
@@ -100,25 +130,25 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:52
+#: ../../../autoapi/tilelang/testing/index.rst:70
 msgid ""
 "Unit test marked with this decorator will run only if the CUDA compute "
 "architecture of the GPU is at least `(major_version, minor_version)`."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:56
+#: ../../../autoapi/tilelang/testing/index.rst:74
 msgid "This also marks the test as requiring a cuda support."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:58
+#: ../../../autoapi/tilelang/testing/index.rst:76
 msgid "The major version of the (major,minor) version tuple."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:60
+#: ../../../autoapi/tilelang/testing/index.rst:78
 msgid "The minor version of the (major,minor) version tuple."
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/index.rst:62
+#: ../../../autoapi/tilelang/testing/index.rst:80
 msgid ""
 "The mode of the comparison. - \"ge\": greater than or equal to - \"gt\": "
 "greater than - \"le\": less than or equal to - \"lt\": less than"

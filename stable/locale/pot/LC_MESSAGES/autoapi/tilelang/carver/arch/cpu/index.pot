@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,13 +27,6 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cpu/index.rst:14:<autosummary>:1
 msgid ":py:obj:`CPU <tilelang.carver.arch.cpu.CPU>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/carver/arch/cpu/index.rst:33
-#: ../../../autoapi/tilelang/carver/arch/cpu/index.rst:14:<autosummary>:1
-msgid ""
-"Represents the architecture of a computing device, capturing various "
-"hardware specifications."
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cpu/index.rst:16

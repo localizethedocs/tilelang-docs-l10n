@@ -1,0 +1,288 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:2
+msgid "tilelang.cuda.intrinsics.layout.mma_sm100_layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:8
+msgid "CuTe TMEM fragment layouts for dense SM100 MMA (``tmem_frg`` family)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:10
+msgid ""
+"A TMEM fragment is a :class:`cute.Layout` with :class:`cute.ScaledBasis` "
+"strides, mapping logical buffer coordinates to hierarchical ``(datapath, "
+"column)`` TMEM coordinates, with the column measured in the buffer's value "
+"type.  Exactly as in CUTLASS ``mma_traits_sm100.hpp``, an atom in virtual "
+"TMEM addressing (datapath stride one, column stride 128) is repeated over "
+"the tile counts, then composed with ``tmem_restride`` into physical "
+"coordinates. Both TMEM allocation and MMA address formation consume the same "
+"layout, and a sliced operand is handled by ``cute.restrict`` like any other "
+"CuTe layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:19
+msgid ""
+"The atoms are the PTX \"TMEM data path layout organization\" variants "
+"(https://docs.nvidia.com/cuda/parallel-thread-execution/#tcgen05-data-path-"
+"layout-organization):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:23
+msgid "PTX"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:23
+msgid "CUTLASS atom"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:23
+msgid "shape:stride (virtual addressing)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:25
+msgid "Layout A"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:25
+msgid "2SM M256 (M128/CTA)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:25
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:28
+msgid "``(128, N):(1, 128)``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:26
+msgid "Layout B"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:26
+msgid "2SM M128 (M64/CTA, \"2x2\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:26
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:29
+msgid "``(64, (N/2, 2)):(1, (128, 64))``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:27
+msgid "Layout C"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:27
+msgid "2SM M64  (M32/CTA, \"1x4\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:27
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:31
+msgid "``(32, (N/4, 4)):(1, (128, 32))``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:28
+msgid "Layout D"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:28
+msgid "1SM M128"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:29
+msgid "Layout E"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:29
+msgid "1SM M64  ``.ws`` C/D"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:30
+msgid "Layout F"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:30
+msgid "1SM M64  half-datapath"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:30
+msgid "``((16, 4), N):((1, 32), 128)``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:31
+msgid "Layout G"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:31
+msgid "1SM M32  ``.ws`` C/D"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:34
+msgid ""
+"Only the compiler's MMA lowering (this module and "
+"``tcgen05_macro_generator``) sees CuTe layouts; everywhere else — the layout "
+"map, TMEM allocation, and copy lowering — a fragment travels as its TileLang "
+"``lambda *indices: [datapath, column]`` form via :meth:`cute.Layout."
+"to_tilelang`, and :meth:`cute.Layout.from_tilelang_hierarchical` recovers "
+"the hierarchical CuTe layout losslessly."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:42
+msgid ""
+"As everywhere else in the MMA lowering, the last two modes of a buffer are "
+"the matrix modes; any leading modes are batch dimensions (for example a "
+"software-pipeline stage) and repeat the fragment along TMEM columns."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:49
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:56:<autosummary>:1
+msgid ""
+":py:obj:`TCGEN05TmemAllocMode <tilelang.cuda.intrinsics.layout."
+"mma_sm100_layout.TCGEN05TmemAllocMode>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:78
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:56:<autosummary>:1
+msgid "Dense TMEM allocation modes from CUTLASS ``UMMA::TmemAllocMode``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:56:<autosummary>:1
+msgid ""
+":py:obj:`TCGEN05Meta <tilelang.cuda.intrinsics.layout.mma_sm100_layout."
+"TCGEN05Meta>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:98
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:56:<autosummary>:1
+msgid "The TCGEN5MMA instruction atom selected by ``get_tcgen5_mma_meta``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:58
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`make_tmem_frg_atom <tilelang.cuda.intrinsics.layout."
+"mma_sm100_layout.make_tmem_frg_atom>`\\ \\(num\\_sms\\, alloc\\_mode\\, "
+"atom\\_m\\, atom\\_n\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:145
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid "Return CUTLASS ``tmem_frg``'s ``(tmem_atom, outer_tile_stride)`` pair."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`make_tmem_frg_ws_atom <tilelang.cuda.intrinsics.layout."
+"mma_sm100_layout.make_tmem_frg_ws_atom>`\\ \\(atom\\_m\\, atom\\_n\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:154
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid "Return CUTLASS ``tmem_frg_ws``'s dense 1SM weight-stationary C/D atom."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`make_tmem_frg <tilelang.cuda.intrinsics.layout.mma_sm100_layout."
+"make_tmem_frg>`\\ \\(buffer\\, num\\_sms\\, alloc\\_mode\\, atom\\_m\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:163
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid "Tile a legal ordinary CUTLASS atom over the buffer's matrix modes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`make_tmem_frg_a <tilelang.cuda.intrinsics.layout.mma_sm100_layout."
+"make_tmem_frg_a>`\\ \\(buffer\\, meta\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:168
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid "Build the exact dense TS ``FrgTypeA`` selected by CUTLASS."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`make_tmem_frg_c <tilelang.cuda.intrinsics.layout.mma_sm100_layout."
+"make_tmem_frg_c>`\\ \\(buffer\\, meta\\, \\*\\, is\\_ts\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:173
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid "Build the dense ``FrgTypeC`` paired with the selected instruction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid ""
+":py:obj:`validate_tcgen05_ts_instruction <tilelang.cuda.intrinsics.layout."
+"mma_sm100_layout.validate_tcgen05_ts_instruction>`\\ \\(meta\\, a\\_dtype\\, "
+"transposed\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:182
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:69:<autosummary>:1
+msgid "Validate a dense TS instruction atom against CUTLASS SM100 wrappers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:71
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:75
+msgid "Bases: :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:140
+msgid "Each 2SM instruction reads an N/2 shard of B from each CTA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:147
+msgid ""
+"``atom_m`` is the per-CTA M extent.  The 1SM M64 atom is PTX Layout F (half "
+"datapaths, 32-datapath halves interleaved); the 2SM atoms fold the peer "
+"CTA's N shard into the upper datapaths (PTX Layouts A/B/C)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:156
+msgid ""
+"``.ws`` instructions with M below 128 fold N shards into the upper datapaths "
+"instead of leaving them idle: PTX Layout E for M64 and Layout G for M32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/intrinsics/layout/mma_sm100_layout/index.rst:175
+msgid ""
+"Ordinary SS accumulators use the interleaved allocation; dense TS traits pin "
+"CUTLASS's NonInterleaved (1SM) / Interleaved (2SM) modes; ``.ws`` SS "
+"instructions use the weight-stationary fragment (PTX Layouts E/G)."
+msgstr ""

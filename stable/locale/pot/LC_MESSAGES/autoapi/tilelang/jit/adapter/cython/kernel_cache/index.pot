@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,29 @@ msgid ""
 "CythonKernelCache>`\\"
 msgstr ""
 
+#: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:14:<autosummary>:1
+msgid ""
+"Caches compiled kernels using a class and database persistence to avoid "
+"redundant compilation."
+msgstr ""
+
 #: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:16
 msgid "Module Contents"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:20
 msgid "Bases: :py:obj:`tilelang.cache.kernel_cache.KernelCache`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:23
+msgid ""
+"Caches compiled kernels using a class and database persistence to avoid "
+"redundant compilation. Cache files:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:25
+msgid ""
+"kernel.cu: The compiled kernel source code wrapped_kernel.cu: The compiled "
+"wrapped kernel source code kernel_lib.so: The compiled kernel library params."
+"pkl: The compiled kernel parameters"
 msgstr ""

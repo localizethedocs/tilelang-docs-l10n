@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgid ""
 "\\(func\\[\\, name\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:39
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:45
 #: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
 msgid "Execute a single perf function and record its latency."
 msgstr ""
@@ -50,7 +50,7 @@ msgid ""
 "\\(\\[prefixes\\, verbose\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:47
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:53
 #: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
 msgid "Run entrypoints in the caller module and print a markdown table."
 msgstr ""
@@ -59,7 +59,7 @@ msgstr ""
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:41
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:47
 msgid ""
 "`func` is expected to return a positive latency scalar (seconds or ms; we "
 "treat it as an opaque number, only ratios matter for regression)."
@@ -73,6 +73,6 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:49
+#: ../../../autoapi/tilelang/testing/perf_regression/index.rst:55
 msgid "This is invoked by many example scripts."
 msgstr ""

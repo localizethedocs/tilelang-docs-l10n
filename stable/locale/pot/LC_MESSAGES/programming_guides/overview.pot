@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,67 +40,76 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:8
 msgid ""
-"Scope: Language basics, control flow, instructions, autotuning, and type "
-"system"
-msgstr ""
-
-#: ../../../programming_guides/overview.md:10
-msgid "What You’ll Learn"
+"Scope: Language basics, control flow, instructions, software pipelining, "
+"autotuning, and type system"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:11
-msgid "How to structure kernels with TileLang’s core DSL constructs"
+msgid "What You’ll Learn"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:12
-msgid "How to move data across global/shared/fragment and pipeline compute"
+msgid "How to structure kernels with TileLang’s core DSL constructs"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:13
-msgid "How to apply autotuning to tile sizes and schedules"
+msgid "How to move data across global/shared/fragment and pipeline compute"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:14
-msgid "How to specify and work with dtypes in kernels"
+msgid ""
+"How to use manual software-pipeline annotations when inference is not enough"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:15
+msgid "How to apply autotuning to tile sizes and schedules"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:16
-msgid "Suggested Reading Order"
-msgstr ""
-
-#: ../../../programming_guides/overview.md:17
-msgid "Language Basics"
+msgid "How to specify and work with dtypes in kernels"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:18
-msgid "Control Flow"
+msgid "Suggested Reading Order"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:19
-msgid "Instructions"
+msgid "Language Basics"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:20
-msgid "Autotuning"
+msgid "Control Flow"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:21
-msgid "Type System"
+msgid "Software Pipeline Annotations"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:22
+msgid "Instructions"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:23
-msgid "Related Docs"
+msgid "Autotuning"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:24
-msgid "Tutorials: see existing guides in `tutorials/`"
+msgid "Type System"
 msgstr ""
 
-#: ../../../programming_guides/overview.md:25
-msgid "Operators: examples in `deeplearning_operators/`"
+#: ../../../programming_guides/overview.md:26
+msgid "Related Docs"
 msgstr ""
 
 #: ../../../programming_guides/overview.md:27
+msgid "Tutorials: see existing guides in `tutorials/`"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:28
+msgid "Operators: examples in `deeplearning_operators/`"
+msgstr ""
+
+#: ../../../programming_guides/overview.md:30
 msgid ""
 "NOTE: This is a draft scaffold. Fill in code snippets and benchmarks as APIs "
 "evolve."

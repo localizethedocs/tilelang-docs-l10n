@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,4 +23,29 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/fastmath/index.rst:8
 msgid "Fast math operations exposed on the TileLang language surface."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:19:<autosummary>:1
+msgid ":py:obj:`fast_rcp <tilelang.language.fastmath.fast_rcp>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:25
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:19:<autosummary>:1
+msgid "Approximate reciprocal using CUDA fast reciprocal."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/fastmath/index.rst:0
+msgid "Return type"
 msgstr ""

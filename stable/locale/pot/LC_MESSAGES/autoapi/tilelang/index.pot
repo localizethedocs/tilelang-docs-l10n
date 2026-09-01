@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,32 +25,36 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:39
+#: ../../../autoapi/tilelang/index.rst:43
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:51:<autosummary>:1
 msgid ":py:obj:`__version__ <tilelang.__version__>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:46:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:51:<autosummary>:1
 msgid ":py:obj:`logger <tilelang.logger>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:48
+#: ../../../autoapi/tilelang/index.rst:51:<autosummary>:1
+msgid ":py:obj:`runtime_dll_dirs <tilelang.runtime_dll_dirs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/index.rst:53
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:54:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:59:<autosummary>:1
 msgid ":py:obj:`set_log_level <tilelang.set_log_level>`\\ \\(level\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:64
-#: ../../../autoapi/tilelang/index.rst:54:<autosummary>:1
+#: ../../../autoapi/tilelang/index.rst:69
+#: ../../../autoapi/tilelang/index.rst:59:<autosummary>:1
 msgid "Set the logging level for the module's logger."
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:56
+#: ../../../autoapi/tilelang/index.rst:61
 msgid "Package Contents"
 msgstr ""
 
@@ -58,12 +62,12 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:66
+#: ../../../autoapi/tilelang/index.rst:71
 msgid ""
 "Can be the string name of the level (e.g., 'INFO') or the actual level (e."
 "g., logging.INFO)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/index.rst:68
+#: ../../../autoapi/tilelang/index.rst:73
 msgid "'DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'"
 msgstr ""

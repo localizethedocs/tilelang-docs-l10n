@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:2
+msgid "tilelang.tileop.gemm_sp.registry"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:14:<autosummary>:1
+msgid ""
+":py:obj:`GemmSPTargetPredicate <tilelang.tileop.gemm_sp.registry."
+"GemmSPTargetPredicate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:16
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`GemmSPImplEntry <tilelang.tileop.gemm_sp.registry."
+"GemmSPImplEntry>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`register_gemm_sp_impl <tilelang.tileop.gemm_sp.registry."
+"register_gemm_sp_impl>`\\ \\(name\\, inst\\_name\\, predicate\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:57
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:31:<autosummary>:1
+msgid "Register a backend-specific GEMM_SP Python implementation class."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:31:<autosummary>:1
+msgid ""
+":py:obj:`resolve_gemm_sp_impl <tilelang.tileop.gemm_sp.registry."
+"resolve_gemm_sp_impl>`\\ \\(gemm\\_inst\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:62
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:31:<autosummary>:1
+msgid "Resolve the registered GEMM_SP implementation class for a target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:33
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_sp/registry/index.rst:0
+msgid "Return type"
+msgstr ""

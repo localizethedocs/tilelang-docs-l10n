@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgid ""
 "cp_async_shared_global>`\\ \\(dst\\, src\\, cp\\_size\\, modifier\\, \\*\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:100
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:102
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid "Asynchronously copy data from global memory to shared memory."
 msgstr ""
@@ -133,7 +133,7 @@ msgid ""
 "\\(mbar\\_ptr\\, phase\\[\\, timeout\\_ns\\, loc\\, ip\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:122
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:124
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid "Waits on a mbarrier with a specified phase (blocking loop)."
 msgstr ""
@@ -185,7 +185,7 @@ msgid "Mbarrier pointer in shared memory"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:50
-#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:102
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:104
 msgid "Destination pointer in shared memory"
 msgstr ""
 
@@ -215,36 +215,40 @@ msgstr ""
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:91
 msgid ""
 "Wait for TMA_STORE operations to complete. Corresponds to PTX instruction: "
-"cp.async.bulk.wait_group.read <count>;"
+"cp.async.bulk.wait_group{.read} <count>;"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:94
 msgid "The number of outstanding bulk async groups to wait for"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:104
-msgid "Source pointer in global memory"
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:96
+msgid "Whether to use the PTX .read modifier"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:106
-msgid "Size of the copy in bytes"
+msgid "Source pointer in global memory"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:108
-msgid "Cache modifier"
+msgid "Size of the copy in bytes"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:110
+msgid "Cache modifier"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:112
 msgid "Optional copy size override"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:116
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:118
 msgid ""
 "Prefetch a TMA descriptor. Corresponds to PTX instruction: prefetch."
 "tensormap;"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:124
+#: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:126
 msgid ""
 "Uses inline PTX to loop until the try_wait succeeds. The CUDA backend does: "
 "while (!mbar.try_wait(parity)) {}"

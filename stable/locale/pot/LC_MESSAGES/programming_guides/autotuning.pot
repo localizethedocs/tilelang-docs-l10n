@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -481,8 +481,8 @@ msgstr ""
 
 #: ../../../programming_guides/autotuning.md:223
 msgid ""
-"Torch/DLPack backend may not save artifacts to disk; in this case, only "
-"in‑memory caching applies and a warning is logged."
+"Torch backend may not save artifacts to disk; in this case, only in‑memory "
+"caching applies and a warning is logged."
 msgstr ""
 
 #: ../../../programming_guides/autotuning.md:226
@@ -544,8 +544,8 @@ msgstr ""
 
 #: ../../../programming_guides/autotuning.md:271
 msgid ""
-"DLPack/Torch execution backend may not persist compiled binaries; in that "
-"case, re‑compilation is needed on load or use a different backend."
+"Torch execution backend may not persist compiled binaries; in that case, "
+"re‑compilation is needed on load or use a different backend."
 msgstr ""
 
 #: ../../../programming_guides/autotuning.md:273

@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:2
+msgid "tilelang.backend.host_codegen"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:8
+msgid "Host codegen registry shared by backend packages."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`HostCodegenFunc <tilelang.backend.host_codegen.HostCodegenFunc>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`HostCodegenHookFunc <tilelang.backend.host_codegen."
+"HostCodegenHookFunc>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`TargetPredicate <tilelang.backend.host_codegen.TargetPredicate>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:23
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:30:<autosummary>:1
+msgid ":py:obj:`HostCodegen <tilelang.backend.host_codegen.HostCodegen>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:62
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:30:<autosummary>:1
+msgid "Host codegen entry point for one host target variant."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`HostCodegenHook <tilelang.backend.host_codegen.HostCodegenHook>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:87
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:30:<autosummary>:1
+msgid "Device-backend hook applied before host codegen build."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:32
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`global_func_host_codegen <tilelang.backend.host_codegen."
+"global_func_host_codegen>`\\ \\(global\\_func\\_name\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:57
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Create a host codegen callback backed by a TVM global function."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`register_host_codegen <tilelang.backend.host_codegen."
+"register_host_codegen>`\\ \\(target\\_host\\_kind\\, codegen\\, \\*\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:112
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Register a host codegen entry for a host target kind."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`register_lazy_host_codegen <tilelang.backend.host_codegen."
+"register_lazy_host_codegen>`\\ \\(target\\_host\\_kind\\, import\\_path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:117
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+"Register a backend module to import when a host target kind is first used."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`register_host_codegen_hook <tilelang.backend.host_codegen."
+"register_host_codegen_hook>`\\ \\(target\\_kind\\, hook\\, \\*\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:122
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Register a device-backend hook for host codegen preparation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`register_lazy_host_codegen_hooks <tilelang.backend.host_codegen."
+"register_lazy_host_codegen_hooks>`\\ \\(target\\_kind\\, import\\_path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:127
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Register a backend module to import before applying host codegen hooks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`allowed_host_codegens_for_target <tilelang.backend.host_codegen."
+"allowed_host_codegens_for_target>`\\ \\(target\\_host\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:132
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Return matching host codegen names for a host target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`apply_host_codegen_hooks <tilelang.backend.host_codegen."
+"apply_host_codegen_hooks>`\\ \\(mod\\, target\\_host\\, target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:137
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Apply device-backend host codegen hooks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid ""
+":py:obj:`resolve_host_codegen <tilelang.backend.host_codegen."
+"resolve_host_codegen>`\\ \\(target\\_host\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:142
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:45:<autosummary>:1
+msgid "Resolve a host codegen entry from a TVM host target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:47
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/backend/host_codegen/index.rst:0
+msgid "Return type"
+msgstr ""
