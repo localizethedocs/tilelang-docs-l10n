@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,7 +127,7 @@ msgid ""
 "\n"
 "mod = IRModule({\"main\": prim_func})\n"
 "with tvm.transform.PassContext():\n"
-"    mod = tl.transform.InjectFenceProxy()(mod)\n"
+"    mod = tl.cuda.transform.InjectFenceProxy()(mod)\n"
 msgstr ""
 
 #: ../../../compiler_internals/inject_fence_proxy.md:46
@@ -168,7 +168,7 @@ msgid ""
 msgstr ""
 
 #: ../../../compiler_internals/inject_fence_proxy.md:78
-msgid "After `tl.transform.InjectFenceProxy`:"
+msgid "After `tl.cuda.transform.InjectFenceProxy`:"
 msgstr ""
 
 #: ../../../compiler_internals/inject_fence_proxy.md:80
@@ -216,7 +216,7 @@ msgstr ""
 #: ../../../compiler_internals/inject_fence_proxy.md:113
 msgid ""
 "If you introduce a new intrinsic that behaves like an async proxy, add it to "
-"`IsAsyncIntrinsic` in `src/transform/inject_fence_proxy.cc`. Likewise, "
+"`IsAsyncIntrinsic` in `src/cuda/transform/inject_fence_proxy.cc`. Likewise, "
 "extend `IsKnownGeneric` for additional generic operations."
 msgstr ""
 

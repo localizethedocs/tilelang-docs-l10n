@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -54,55 +55,79 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`bitcast <tilelang.contrib.cutedsl.utils.bitcast>`\\ \\(value\\, "
 "target\\_dtype\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid "Reinterpret the bits of a value as a different type."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid ""
-":py:obj:`make_filled_tensor <tilelang.contrib.cutedsl.utils."
-"make_filled_tensor>`\\ \\(shape\\, value\\)"
+":py:obj:`cast_tensor <tilelang.contrib.cutedsl.utils.cast_tensor>`\\ "
+"\\(value\\, dtype\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`as_tensor_ssa <tilelang.contrib.cutedsl.utils.as_tensor_ssa>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`as_rmem_tensor <tilelang.contrib.cutedsl.utils.as_rmem_tensor>`\\ "
+"\\(value\\, shape\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`make_filled_tensor <tilelang.contrib.cutedsl.utils."
+"make_filled_tensor>`\\ \\(shape\\, value\\[\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`make_tensor_at_offset <tilelang.contrib.cutedsl.utils."
 "make_tensor_at_offset>`\\ \\(ptr\\, offset\\, shape\\[\\, div\\_by\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`handle_add_byte_offset <tilelang.contrib.cutedsl.utils."
+"handle_add_byte_offset>`\\ \\(handle\\, byte\\_offset\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`shuffle_elect <tilelang.contrib.cutedsl.utils.shuffle_elect>`\\ "
 "\\(thread\\_extent\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`sync_thread_partial <tilelang.contrib.cutedsl.utils."
 "sync_thread_partial>`\\ \\(\\[barrier\\_id\\, thread\\_count\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid ""
 ":py:obj:`pack_half2 <tilelang.contrib.cutedsl.utils.pack_half2>`\\ \\(x\\, "
 "y\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:41:<autosummary>:1
 msgid "Pack two half-precision (fp16) values into a single 32-bit value."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:39
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:43
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:53
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:57
 msgid ""
 "Reinterpret the bits of a value as a different type. Equivalent to C's "
 "(*(target_type *)(&value))."
@@ -112,11 +137,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:56
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:60
 msgid "Source value (Numeric type from CuTeDSL)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:57
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:61
 msgid "Target type (CuTeDSL type like Int8, Float16, etc.)"
 msgstr ""
 
@@ -124,17 +149,17 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:59
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:63
 msgid "Value reinterpreted as target type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:72
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:84
 msgid ""
 "Pack two half-precision (fp16) values into a single 32-bit value. "
 "Corresponds to CUDA's __pack_half2 intrinsic."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:75
+#: ../../../autoapi/tilelang/contrib/cutedsl/utils/index.rst:87
 msgid ""
 "This packs two fp16 values into a single int32 by treating the fp16 bits as "
 "raw data and concatenating them."

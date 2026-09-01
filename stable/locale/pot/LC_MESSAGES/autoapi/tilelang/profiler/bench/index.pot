@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,15 +30,15 @@ msgid "Attributes"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.profiler.bench.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
 msgid ":py:obj:`IS_CUDA <tilelang.profiler.bench.IS_CUDA>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
 msgid ":py:obj:`device <tilelang.profiler.bench.device>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
-msgid ":py:obj:`Event <tilelang.profiler.bench.Event>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:23
@@ -51,7 +51,7 @@ msgid ""
 "suppress_stdout_stderr>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:43
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:45
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:29:<autosummary>:1
 msgid "Context manager to suppress stdout and stderr output."
 msgstr ""
@@ -75,7 +75,7 @@ msgstr ""
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:45
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:47
 msgid ""
 "Source: https://github.com/deepseek-ai/DeepGEMM/blob/main/deep_gemm/testing/"
 "bench.py"
@@ -132,11 +132,21 @@ msgstr ""
 msgid "Result aggregation method - \"mean\", \"median\", \"min\", or \"max\""
 msgstr ""
 
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:81
+msgid ""
+"Optional CUDA device to benchmark on. When provided, CUDA events, streams, "
+"cache buffers, and synchronizations are scoped to that device."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:84
+msgid "L2 cache flush buffer size in MB (default: 256)"
+msgstr ""
+
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:82
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:86
 msgid ""
 "Runtime in milliseconds (float) or list of quantile values if quantiles "
 "specified"

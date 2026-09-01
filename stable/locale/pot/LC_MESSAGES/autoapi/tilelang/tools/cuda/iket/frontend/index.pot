@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:2
+msgid "tilelang.tools.cuda.iket.frontend"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:8
+msgid "Kernel-side IKET event helpers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:19:<autosummary>:1
+msgid ":py:obj:`PayloadSpec <tilelang.tools.cuda.iket.frontend.PayloadSpec>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:41
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:19:<autosummary>:1
+msgid "IKET payload value descriptor for a TileLang CUDA event."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ":py:obj:`reset <tilelang.tools.cuda.iket.frontend.reset>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:58
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Reset frontend event-id allocation for kernels built afterward."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`event_table <tilelang.tools.cuda.iket.frontend.event_table>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:63
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Return events registered while constructing recent kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`payload <tilelang.tools.cuda.iket.frontend.payload>`\\ "
+"\\(expr\\[\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:68
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Attach a supported scalar payload value to an IKET event."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`mark <tilelang.tools.cuda.iket.frontend.mark>`\\ \\(name\\[\\, "
+"payload\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:73
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Emit an IKET instant marker at the current program point."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`range_push <tilelang.tools.cuda.iket.frontend.range_push>`\\ "
+"\\(name\\[\\, payload\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:78
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Emit an IKET range-start event at the current program point."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`range_pop <tilelang.tools.cuda.iket.frontend.range_pop>`\\ "
+"\\(\\[name\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:83
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Emit an IKET range-end event for the current warp-local range."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`range_start <tilelang.tools.cuda.iket.frontend.range_start>`\\ "
+"\\(name\\[\\, payload\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:88
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Alias for :func:`range_push`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`range_end <tilelang.tools.cuda.iket.frontend.range_end>`\\ "
+"\\(\\[name\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:93
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Alias for :func:`range_pop`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`range <tilelang.tools.cuda.iket.frontend.range>`\\ \\(name\\[\\, "
+"payload\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:98
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:35:<autosummary>:1
+msgid "Return a scope that emits IKET range-start and range-end events."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:37
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/frontend/index.rst:0
+msgid "Parameters"
+msgstr ""

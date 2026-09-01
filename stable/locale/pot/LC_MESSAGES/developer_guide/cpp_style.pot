@@ -1,0 +1,695 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer_guide/cpp_style.md:1
+msgid "C++ Style Guide"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:3
+msgid ""
+"TileLang C++ code should be easy to read for contributors who already know "
+"TVM. Use TVM's C++ conventions as the baseline, with small TileLang-specific "
+"rules where the compiler, runtime, or generated kernel templates need them."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:7
+msgid ""
+"This guide applies to C++ source under `src/` and TileLang-owned headers. Do "
+"not apply broad style-only churn to vendored code under `3rdparty/` or "
+"generated runtime templates unless a local change already needs to touch "
+"that code."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:11
+msgid "Formatting"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:13
+msgid "Run the repository formatter before sending a pull request:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:15
+msgid "bash format.sh --files <changed-file>...\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:19
+msgid "For all changed files relative to the merge base:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:21
+msgid "bash format.sh\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:25
+msgid ""
+"Formatting is mechanical. Keep style changes separate from behavior changes "
+"when the diff would otherwise become noisy."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:28
+msgid ""
+"TileLang aims to stay close to TVM's Google-based C++ formatting. If the "
+"repository `.clang-format` is changed, do it in a focused pull request and "
+"avoid mixing that change with semantic edits."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:32
+msgid "Naming"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:34
+msgid "Use the following names in new C++ code."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Entity"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Style"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Example"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "File names"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`lower_snake_case`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`lower_tile_op.cc`, `layout_reducer.h`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Namespaces"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`tvm`, `tl`, `tirx`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Types, classes, structs"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`PascalCase`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`LayoutNode`, `TileOperator`, `LowerArgs`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Object nodes"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`PascalCaseNode`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`GemmNode`, `FragmentNode`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Object refs"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`Gemm`, `Fragment`, `Layout`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Functions and methods"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`MakeLinearLayout`, `InferLayout`, `GetAccessRegions`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Boolean functions"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`Is`/`Has`/`Can` + `PascalCase`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`IsFragmentBuffer`, `HasTmaBarrier`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Parameters and locals"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`layout_map`, `thread_bounds`, `buffer_remap`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Private/protected members"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`lower_snake_case_`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`layout_remap_`, `analyzer_`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Constants and enum values"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`kPascalCase`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`kWarpSize`, `kAccessRead`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "Macros"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`UPPER_SNAKE_CASE`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:0
+msgid "`TVM_REGISTER_GLOBAL`, `TIR_REGISTER_TL_TILE_OP`"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:50
+#: ../../../developer_guide/cpp_style.md:183
+msgid "Prefer:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:52
+msgid ""
+"Layout MakeLinearLayout(Array<PrimExpr> shape);\n"
+"bool IsSharedBuffer(const Buffer& buffer);\n"
+"\n"
+"Stmt Lower(const LowerArgs& args, arith::Analyzer* analyzer) const;\n"
+"LayoutMap InferLayout(const LayoutInferArgs& args, InferLevel level) const;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:60
+msgid "Avoid adding new names like:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:62
+msgid ""
+"Layout makeLinearLayout(Array<PrimExpr> shape);\n"
+"bool isSharedBuffer(const Buffer& buffer);\n"
+"Stmt Lower(const LowerArgs& T, arith::Analyzer* analyzer) const;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:68
+msgid ""
+"Existing lowerCamelCase names can be migrated when related code is touched. "
+"Do not rename large areas solely to satisfy this guide unless the change is "
+"scoped and easy to review."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:72
+msgid "TVM Object And FFI Types"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:74
+msgid ""
+"TileLang C++ code uses TVM object handles heavily. Treat `Stmt`, `PrimExpr`, "
+"`Buffer`, `Var`, `SBlock`, `Layout`, and similar types as `ObjectRef` "
+"handles. Treat `StmtNode`, `BufferNode`, `VarNode`, and other `*Node` types "
+"as raw node views used mainly for visitor callbacks and local inspection."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:79
+msgid "Use handle types across function boundaries:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:81
+msgid ""
+"Optional<For> FindPipelineLoop(const Stmt& stmt);\n"
+"Map<Buffer, Layout> InferBufferLayouts(const SBlock& block);\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:86
+msgid ""
+"Keep raw node pointers local to visitor callbacks, pattern checks, and "
+"`CopyOnWrite()` mutation sites:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:89
+msgid ""
+"Stmt VisitStmt_(const ForNode* op) final {\n"
+"  For loop = GetRef<For>(op);\n"
+"  Optional<For> pipeline_loop = FindPipelineLoop(loop->body);\n"
+"  if (pipeline_loop.defined() && pipeline_loop.value().same_as(loop)) {\n"
+"    ...\n"
+"  }\n"
+"  return StmtMutator::VisitStmt_(op);\n"
+"}\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:100
+msgid ""
+"For identity comparisons between handles, use `.same_as(other)`. For "
+"structural comparisons, use TVM structural equality utilities such as "
+"`StructuralEqual`. Do not use `handle.get() == other.get()` outside narrow "
+"adapter code."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:104
+msgid ""
+"For unordered identity maps or sets keyed by TVM handles, use TVM pointer "
+"hash and equality helpers:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:107
+msgid ""
+"using BufferSet = std::unordered_set<Buffer, ObjectPtrHash, "
+"ObjectPtrEqual>;\n"
+"using VarMap = std::unordered_map<Var, PrimExpr, ObjectPtrHash, "
+"ObjectPtrEqual>;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:112
+msgid ""
+"Use `Optional<T>` for nullable TVM handle values. Avoid storing `const "
+"*Node` pointers as nullable state."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:115
+msgid "ObjectNode Fields"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:117
+msgid ""
+"For TVM-style `ObjectNode` classes, public reflected fields should use "
+"`lower_snake_case` without a trailing underscore:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:120
+msgid ""
+"class CopyNode : public TileOperatorNode {\n"
+" public:\n"
+"  Buffer src;\n"
+"  Buffer dst;\n"
+"  Array<Range> ranges;\n"
+"\n"
+"  static void RegisterReflection() {\n"
+"    namespace refl = reflection;\n"
+"    refl::ObjectDef<CopyNode>()\n"
+"        .def_ro(\"src\", &CopyNode::src)\n"
+"        .def_ro(\"dst\", &CopyNode::dst)\n"
+"        .def_ro(\"ranges\", &CopyNode::ranges);\n"
+"  }\n"
+"};\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:137
+msgid "Use trailing underscores for private or protected implementation state:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:139
+msgid ""
+"class LayoutRemapRewriter : public arith::IRMutatorWithAnalyzer {\n"
+" private:\n"
+"  Map<Buffer, Layout> layout_remap_;\n"
+"};\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:146
+msgid ""
+"Be careful when renaming reflected fields. FFI-visible field names are part "
+"of the Python/debugging surface, so compatibility should be considered "
+"before changing them."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:150
+msgid "Function Parameters"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:152
+msgid "Use descriptive parameter names:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:154
+msgid ""
+"Stmt Lower(const LowerArgs& args, arith::Analyzer* analyzer) const;\n"
+"LayoutMap InferLayout(const LayoutInferArgs& args, InferLevel level) const;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:159
+msgid ""
+"Avoid `T` as a parameter name for lowering context. In TileLang code, `T` is "
+"already associated with the Python DSL namespace, and in C++ it is commonly "
+"used as a template type parameter."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:163
+msgid ""
+"Pass non-trivial inputs by `const&` unless the function intentionally "
+"consumes the value. Take a value when the function will store it and move "
+"from it:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:166
+msgid ""
+"explicit DeviceRegionAnnotator(Target device_target)\n"
+"    : device_target_(std::move(device_target)) {}\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:171
+msgid "Headers"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:173
+msgid "Keep headers narrow and predictable."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:175
+msgid ""
+"Avoid `using namespace` in installed public headers or headers that are "
+"widely included across TileLang subsystems."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:177
+msgid ""
+"Prefer explicit qualifications or narrow aliases in the smallest namespace "
+"where they are needed."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:179
+msgid "Include the headers that define the types used by the file."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:180
+msgid ""
+"Keep implementation-only helpers in `.cc` files or anonymous namespaces."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:181
+msgid "Keep public macros rare and name them with a TileLang or TVM prefix."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:185
+msgid ""
+"namespace tvm {\n"
+"namespace tl {\n"
+"\n"
+"using LayoutMap = ffi::Map<tirx::Buffer, Layout>;\n"
+"\n"
+"}  // namespace tl\n"
+"}  // namespace tvm\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:195
+msgid "Avoid:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:197
+msgid ""
+"using namespace tirx;\n"
+"using namespace ffi;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:202
+msgid "Namespace Usage"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:204
+msgid ""
+"Namespace rules should make public APIs predictable without making "
+"implementation files noisy. TVM itself is not mechanically uniform across "
+"the whole repository, so TileLang uses the following policy as a review "
+"guideline rather than as a blanket rewrite rule."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:209
+msgid ""
+"TileLang currently does not maintain a separate installed C++ header tree "
+"like TVM's `include/tvm/`. The strictest rule applies to any future "
+"installed public headers and to TileLang-owned headers that behave like "
+"shared interfaces inside the repository: headers that define cross-module "
+"APIs, ObjectRef/ObjectNode types, FFI-visible fields, or interfaces included "
+"across multiple subsystems. Do not add namespace-wide imports there. Use "
+"qualified names for ordinary types:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:216
+msgid ""
+"class LayoutNode : public ffi::Object {\n"
+" public:\n"
+"  ffi::Array<tirx::PrimExpr> input_shape;\n"
+"  ffi::Optional<tirx::Buffer> buffer;\n"
+"};\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:224
+msgid ""
+"Use a narrow alias in a header only when the alias is part of the API or "
+"removes real repetition:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:227
+msgid "using LayoutMap = ffi::Map<tirx::Buffer, Layout>;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:231
+msgid ""
+"Implementation files may use file-local namespace imports when the file is "
+"dense with IR or DSL expressions:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:234
+msgid ""
+"namespace tvm {\n"
+"namespace tl {\n"
+"\n"
+"using namespace tirx;\n"
+"\n"
+"}  // namespace tl\n"
+"}  // namespace tvm\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:244
+msgid ""
+"Narrowly included implementation headers under `src/` may follow the same "
+"rule as `.cc` files. This mirrors TVM's internal schedule and transform "
+"headers, where `tirx` imports are sometimes used to keep IR visitor code "
+"readable. If an internal helper header grows into a cross-module interface, "
+"revisit its namespace imports."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:250
+msgid ""
+"For `ffi`, prefer explicit names such as `ffi::Any`, `ffi::Array`, `ffi::"
+"Map`, and `ffi::make_object` in core-style code. A `.cc` file may use `using "
+"namespace ffi;` when FFI helpers are pervasive and the shorter names make "
+"the implementation materially easier to read. Keep the choice consistent "
+"within the file."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:256
+msgid ""
+"Do not run mechanical namespace rewrites across unrelated code. When "
+"touching a file for functional work, avoid making its namespace style less "
+"clear, but keep large style-only cleanups isolated in focused pull requests."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:260
+msgid "Comments And Documentation"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:262
+msgid ""
+"Use Doxygen comments for public APIs, public classes, and non-obvious "
+"fields. Use short line comments for local implementation notes only when "
+"they explain why the code exists or why a constraint matters."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:266
+msgid "Good comments describe invariants:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:268
+msgid ""
+"// The barrier buffer is allocated lazily because only TMA paths require "
+"it.\n"
+"Optional<Buffer> mbarrier_buffer;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:273
+msgid "Avoid comments that restate the code:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:275
+msgid ""
+"// Set the target.\n"
+"args.target = target;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:280
+msgid "Error Handling"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:282
+msgid "Use TVM-style checks and fatal errors for compiler invariants:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:284
+msgid ""
+"ICHECK(layout.defined()) << \"Expected layout for buffer \" << buffer;\n"
+"LOG(FATAL) << \"Unsupported copy instruction: \" << instruction;\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:289
+msgid ""
+"Make error messages actionable. Include the operation, relevant buffer or "
+"layout, and the unsupported condition where possible."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:292
+msgid ""
+"Use user-facing validation errors where the problem can be caused by a "
+"TileLang program rather than an internal invariant. Keep internal invariant "
+"failures distinguishable from frontend validation failures."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:296
+msgid "Includes"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:298
+msgid "Group includes consistently:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:300
+msgid "The paired header for a `.cc` file, when one exists."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:301
+msgid "C and C++ standard library headers."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:302
+msgid "TVM and other third-party headers."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:303
+msgid "TileLang local headers."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:305
+msgid ""
+"Keep include order stable within each group and let the formatter handle "
+"spacing. Avoid adding transitive includes just because another header "
+"currently pulls in the type."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:309
+msgid "Audit Tool"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:311
+msgid ""
+"Use the C++ API style audit script to find cleanup candidates before "
+"starting a focused naming or header-boundary cleanup:"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:314
+msgid "python3 maint/scripts/audit_cpp_api_style.py\n"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:318
+msgid ""
+"The script is intentionally advisory. It reports candidates such as non-"
+"Pascal API names, ambiguous `T` parameters, public ObjectNode fields that "
+"need compatibility review, and broad namespace imports in headers. Review "
+"each finding before changing code, because FFI-visible names, overrides, "
+"generated interfaces, and backend/runtime shims may need exceptions. By "
+"default the audit excludes generated templates and runtime shim directories; "
+"use the script flags to include those areas when a cleanup explicitly "
+"targets them."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:326
+msgid ""
+"CI runs the audit in warning-only mode so new findings are visible on pull "
+"requests without blocking unrelated work. Use local review to decide whether "
+"a warning should be fixed, suppressed with a narrow `NOLINT`, or left for a "
+"focused cleanup."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:331
+msgid "Exceptions"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:333
+msgid ""
+"Generated kernel templates, CUDA/HIP runtime shims, and external API "
+"adapters may need to match the naming of CUDA, HIP, Metal, C APIs, or "
+"generated source. In those files, prefer consistency with the external "
+"interface over forced renaming."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:338
+msgid ""
+"Do not reformat or rename vendored files under `3rdparty/` as part of "
+"TileLang style cleanup."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:341
+msgid "Migration Policy"
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:343
+msgid "Style convergence should be incremental."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:345
+msgid "New C++ code should follow this guide."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:346
+msgid ""
+"Code touched for functional work should avoid adding new inconsistencies."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:347
+msgid "Mechanical renames should be small, focused, and easy to review."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:348
+msgid "Avoid combining broad formatting changes with behavior changes."
+msgstr ""
+
+#: ../../../developer_guide/cpp_style.md:349
+msgid "Preserve FFI-visible names unless a compatibility plan is documented."
+msgstr ""

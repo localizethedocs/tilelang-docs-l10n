@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:2
+msgid "tilelang.utils.pass_timing"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:8
+msgid "Per-pass timing instrumentation for tilelang compilation pipelines."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:10
+msgid ""
+"Records inclusive and self wall-clock duration for each pass using ``time."
+"monotonic()``. Data persists after PassContext exit for post-compilation "
+"reporting."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:14
+msgid ""
+"Enabled via TILELANG_PASS_PROFILE=1 env var or PassConfigKey.TL_PASS_PROFILE "
+"pass config."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:20
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:26:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.utils.pass_timing.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:28
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`PassTimingRecord <tilelang.utils.pass_timing.PassTimingRecord>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:52
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:35:<autosummary>:1
+msgid "Single completed pass execution record."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:35:<autosummary>:1
+msgid ""
+":py:obj:`TileLangPassTimingInstrument <tilelang.utils.pass_timing."
+"TileLangPassTimingInstrument>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:81
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:35:<autosummary>:1
+msgid "Per-pass timing instrument for tilelang compilation pipelines."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:37
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`build_pass_instruments <tilelang.utils.pass_timing."
+"build_pass_instruments>`\\ \\(base\\_instruments\\, threshold\\_ms\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:121
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:44:<autosummary>:1
+msgid ""
+"Build instruments with timing first so later after-pass callbacks are "
+"excluded."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`report_pass_timing_on_exit <tilelang.utils.pass_timing."
+"report_pass_timing_on_exit>`\\ \\(timing\\_instrument\\, context\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:126
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:44:<autosummary>:1
+msgid "Emit a timing report after PassContext exits, including on failure."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:46
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:83
+msgid ""
+"This is a plain-Python wrapper that creates a TVM ``PassInstrument`` "
+"internally. Callback state is kept separate so the native instrument does "
+"not retain this wrapper."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:87
+msgid ""
+"Only show passes whose inclusive duration meets this threshold (ms). 0.0 "
+"means show all passes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:94
+msgid "The underlying TVM PassInstrument to add to ``PassContext``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:109
+msgid "Generate a formatted timing report string."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/pass_timing/index.rst:115
+msgid "Print the timing report to the logger."
+msgstr ""

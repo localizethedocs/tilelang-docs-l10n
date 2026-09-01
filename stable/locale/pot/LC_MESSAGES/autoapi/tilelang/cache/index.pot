@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,31 +29,30 @@ msgstr ""
 msgid "Submodules"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/index.rst:22
-msgid "Functions"
+#: ../../../autoapi/tilelang/cache/index.rst:23
+msgid "Attributes"
 msgstr ""
 
 #: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
+msgid ":py:obj:`TargetLike <tilelang.cache.TargetLike>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/index.rst:37:<autosummary>:1
 msgid ""
 ":py:obj:`cached <tilelang.cache.cached>`\\ \\(\\[func\\, out\\_idx\\, "
 "target\\, target\\_host\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/index.rst:35
-#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/cache/index.rst:45
+#: ../../../autoapi/tilelang/cache/index.rst:37:<autosummary>:1
 msgid "Caches and reuses compiled kernels (using KernelCache class)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
-msgid ":py:obj:`clear_cache <tilelang.cache.clear_cache>`\\ \\(\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/cache/index.rst:40
-#: ../../../autoapi/tilelang/cache/index.rst:29:<autosummary>:1
-msgid "Disabled helper that previously removed the entire kernel cache."
-msgstr ""
-
-#: ../../../autoapi/tilelang/cache/index.rst:31
+#: ../../../autoapi/tilelang/cache/index.rst:39
 msgid "Package Contents"
 msgstr ""
 
@@ -63,12 +62,4 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/cache/index.rst:0
 msgid "Return type"
-msgstr ""
-
-#: ../../../autoapi/tilelang/cache/index.rst:0
-msgid "Raises"
-msgstr ""
-
-#: ../../../autoapi/tilelang/cache/index.rst:42
-msgid "Always raised to warn users to clear the cache manually."
 msgstr ""

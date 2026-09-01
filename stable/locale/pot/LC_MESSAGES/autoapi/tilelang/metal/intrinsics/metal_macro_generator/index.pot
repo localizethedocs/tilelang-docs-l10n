@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:2
+msgid "tilelang.metal.intrinsics.metal_macro_generator"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:8
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`OPERAND_LEFT <tilelang.metal.intrinsics.metal_macro_generator."
+"OPERAND_LEFT>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`OPERAND_RIGHT <tilelang.metal.intrinsics.metal_macro_generator."
+"OPERAND_RIGHT>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`OPERAND_DEST <tilelang.metal.intrinsics.metal_macro_generator."
+"OPERAND_DEST>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:18
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+":py:obj:`MPSIntrinEmitter <tilelang.metal.intrinsics.metal_macro_generator."
+"MPSIntrinEmitter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:42
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:24:<autosummary>:1
+msgid ""
+"Metal simdgroup/cooperative tensor intrinsic emitter for GEMM operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:26
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:137
+msgid "Return the thread index expression for the current kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:143
+msgid ""
+"Load matrix A tiles from memory into simdgroup/cooperative tensor buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:149
+msgid ""
+"Load matrix B tiles from memory into simdgroup/cooperative tensor buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:155
+msgid "Perform matrix multiply-accumulate: C += A * B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:161
+msgid "Copy between register-backed Metal matrix buffers and memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:170
+msgid "Store simdgroup/cooperative tensor local buffer to memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/metal/intrinsics/metal_macro_generator/index.rst:176
+msgid "Load memory into simdgroup/cooperative tensor local buffer."
+msgstr ""

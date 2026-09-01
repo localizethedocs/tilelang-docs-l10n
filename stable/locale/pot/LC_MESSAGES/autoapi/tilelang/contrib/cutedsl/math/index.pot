@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,36 +25,119 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`exp <tilelang.contrib.cutedsl.math.exp>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`exp2 <tilelang.contrib.cutedsl.math.exp2>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`log <tilelang.contrib.cutedsl.math.log>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`log1p <tilelang.contrib.cutedsl.math.log1p>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`log2 <tilelang.contrib.cutedsl.math.log2>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`log10 <tilelang.contrib.cutedsl.math.log10>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`tan <tilelang.contrib.cutedsl.math.tan>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`cos <tilelang.contrib.cutedsl.math.cos>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`sin <tilelang.contrib.cutedsl.math.sin>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`sqrt <tilelang.contrib.cutedsl.math.sqrt>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`rsqrt <tilelang.contrib.cutedsl.math.rsqrt>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
 msgid ""
 ":py:obj:`exp10 <tilelang.contrib.cutedsl.math.exp10>`\\ \\(x\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:23
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:61
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
 msgid "Compute 10^x using exp2(x * log2(10))."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
 msgid ""
 ":py:obj:`fabsf <tilelang.contrib.cutedsl.math.fabsf>`\\ \\(x\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ":py:obj:`abs2 <tilelang.contrib.cutedsl.math.abs2>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ":py:obj:`max2 <tilelang.contrib.cutedsl.math.max2>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ":py:obj:`min2 <tilelang.contrib.cutedsl.math.min2>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`copysignf <tilelang.contrib.cutedsl.math.copysignf>`\\ \\(x\\, "
+"y\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
+msgid ":py:obj:`isfinite <tilelang.contrib.cutedsl.math.isfinite>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
 msgid ""
 ":py:obj:`divf <tilelang.contrib.cutedsl.math.divf>`\\ \\(x\\, y\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:33:<autosummary>:1
 msgid ""
 ":py:obj:`tanh <tilelang.contrib.cutedsl.math.tanh>`\\ \\(x\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:19
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:35
 msgid "Module Contents"
 msgstr ""
 

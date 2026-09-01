@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:2
+msgid "tilelang.tools.lower_trace.core"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:8
+msgid ""
+"IR lower trace — zero-intrusion debug tool for visualizing compilation "
+"passes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:10
+msgid ""
+"Monkey-patches ``tvm.ir.transform.Pass.__call__`` and ``PassPipeline.lower`` "
+"to automatically capture IR before/after every pass and generate diff "
+"reports."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:13
+msgid ""
+"This module reads its configuration (``TL_LOWER_TRACE`` / "
+"``TL_LOWER_TRACE_DIR``) through the centralized ``tilelang.env`` "
+"environment, or via values passed programmatically to ``enable()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:17
+msgid ""
+"Supports two architectures: - New: ``PassPipeline.lower`` (each backend "
+"registers a pipeline object) - Old: phase-based functions called from "
+"``tilelang.engine.lower``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:21
+msgid "Usage::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:23
+msgid ""
+"TL_LOWER_TRACE=1 python my_kernel.py        # HTML report\n"
+"TL_LOWER_TRACE=terminal python my_kernel.py  # terminal diff only\n"
+"TL_LOWER_TRACE=both python my_kernel.py      # both terminal and HTML"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:30
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_COMPLETED <tilelang.tools.lower_trace.core."
+"STATUS_COMPLETED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_FAILED <tilelang.tools.lower_trace.core.STATUS_FAILED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_SKIPPED <tilelang.tools.lower_trace.core.STATUS_SKIPPED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:39:<autosummary>:1
+msgid ""
+":py:obj:`STATUS_CODEGEN <tilelang.tools.lower_trace.core.STATUS_CODEGEN>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:41
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:47:<autosummary>:1
+msgid ":py:obj:`LowerRecord <tilelang.tools.lower_trace.core.LowerRecord>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:79
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:47:<autosummary>:1
+msgid "Result of running a single pass."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:49
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`enable <tilelang.tools.lower_trace.core.enable>`\\ \\(\\*\\[\\, "
+"mode\\, trace\\_dir\\, codegen\\_output\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:132
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:57:<autosummary>:1
+msgid "Enable IR pass tracing via monkey-patching."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:57:<autosummary>:1
+msgid ":py:obj:`disable <tilelang.tools.lower_trace.core.disable>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:154
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:57:<autosummary>:1
+msgid "Remove the pass tracing hook and restore original behavior."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:57:<autosummary>:1
+msgid ":py:obj:`reset <tilelang.tools.lower_trace.core.reset>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:159
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:57:<autosummary>:1
+msgid "Clear collected records and section cache."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:59
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:134
+msgid ""
+"Force a trace mode (``'terminal'``, ``'html'``, ``'both'``, or ``None`` to "
+"disable).  When omitted, the mode is read from the ``TL_LOWER_TRACE`` env "
+"var (via ``tilelang.env``) or a prior ``enable`` override."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:139
+msgid ""
+"Force the trace output base directory.  When omitted, falls back to the "
+"``TL_LOWER_TRACE_DIR`` env var, then ``./tmp/lower_trace_dir``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:143
+msgid ""
+"Path to save the codegen-generated C++/CUDA/etc. source code.  When omitted, "
+"defaults to ``<script_dir>/codegen.cpp`` (inside the per-script output "
+"directory, beside ``.run_records/``).  Pass ``None`` explicitly to suppress "
+"all extra saves.  See ``_wrap_codegen_ffi`` for the three-file (``<path>`` / "
+"``<path>.original`` / ``<path>.latest``) patch-and-recompile workflow."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/lower_trace/core/index.rst:161
+msgid ""
+"``_script_dir`` is preserved (stable across runs, holds codegen files + html "
+"symlink).  ``_run_dir`` is also preserved: clearing it here would split a "
+"single run into two directories, because pre-pipeline passes (which lazily "
+"create it via ``_ensure_run_dir``) run before ``PassPipeline.lower``/"
+"``_wrap_phase`` invokes ``reset`` on its first run. A fresh ``_run_dir`` for "
+"each subsequent run is instead established directly in "
+"``_traced_pipeline_lower`` / ``_wrap_phase`` (when ``_run_counter > 1``), "
+"without calling ``reset`` so that records keep accumulating across runs."
+msgstr ""

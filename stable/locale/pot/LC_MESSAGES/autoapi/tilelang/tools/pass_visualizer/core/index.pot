@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:2
+msgid "tilelang.tools.pass_visualizer.core"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:8
+msgid ""
+"Core helpers for the pass visualizer: load a user TileLang kernel, build the "
+"CUDA lowering pass pipeline, and render a PrimFunc's SBlock structure tree."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:11
+msgid ""
+"This mirrors ``CUDAPassPipelineBodyPrologue`` in ``tilelang/cuda/pipeline."
+"py``, running each prologue pass (through LayoutInference and the post-"
+"LayoutInference lowering passes) so the structure tree can be captured "
+"before/after every stage."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:15
+msgid ""
+"The kernel file is taken as input; any ``@tilelang.jit`` kernel in the file "
+"is auto-discovered. These helpers are consumed by ``viewer.py`` to emit an "
+"interactive HTML pass browser."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:22
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`load_user_module <tilelang.tools.pass_visualizer.core."
+"load_user_module>`\\ \\(path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:39
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid "Import an arbitrary user TileLang source file as a module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`discover_jit_kernels <tilelang.tools.pass_visualizer.core."
+"discover_jit_kernels>`\\ \\(module\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:44
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+"Find every `@tilelang.jit` object (JITImpl) defined at module top level."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`kernel_to_tir <tilelang.tools.pass_visualizer.core."
+"kernel_to_tir>`\\ \\(kernel\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:49
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid "Elaborate a kernel into its un-lowered PrimFunc (TIR)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`build_module <tilelang.tools.pass_visualizer.core.build_module>`\\ "
+"\\(func\\[\\, target\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:59
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+"Wrap a PrimFunc into an IRModule and resolve the (target, target_host) pair."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`build_pass_stages <tilelang.tools.pass_visualizer.core."
+"build_pass_stages>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:64
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid "Build the ordered CUDA prologue pass list, through the full Prologue."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`inspect_structure <tilelang.tools.pass_visualizer.core."
+"inspect_structure>`\\ \\(mod\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:75
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:33:<autosummary>:1
+msgid ""
+"Print each PrimFunc top-down: params → buffer_map → attrs → body (SBlock "
+"tree)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:51
+msgid "Accepts three forms:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:52
+msgid "JITImpl  (@tilelang.jit)        -> .get_tir(**kwargs)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:53
+msgid ""
+"a factory callable (@T.prim_func wrapper returning a PrimFunc) -> call it"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:54
+msgid "a PrimFunc already                -> returned as-is"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:66
+msgid ""
+"Each stage is a ``(name, transform)`` pair where ``transform`` is a TVM pass "
+"object callable as ``transform(mod) -> mod``. Conditional passes are "
+"resolved here so the returned list reflects what actually runs for this "
+"target/config."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/pass_visualizer/core/index.rst:70
+msgid ""
+"Matches CUDAPassPipelineBodyPrologue (tilelang/cuda/pipeline.py:68-137)."
+msgstr ""

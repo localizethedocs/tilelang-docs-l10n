@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgid ""
 "step\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:114
+#: ../../../autoapi/tilelang/language/loop/index.rst:156
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "The serial For statement."
 msgstr ""
@@ -79,7 +79,7 @@ msgid ""
 "step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:131
+#: ../../../autoapi/tilelang/language/loop/index.rst:173
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "The unrolled For statement."
 msgstr ""
@@ -90,7 +90,7 @@ msgid ""
 "step\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:152
+#: ../../../autoapi/tilelang/language/loop/index.rst:194
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Alias of T.serial."
 msgstr ""
@@ -101,7 +101,7 @@ msgid ""
 "step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:157
+#: ../../../autoapi/tilelang/language/loop/index.rst:199
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Alias of T.unroll."
 msgstr ""
@@ -112,7 +112,7 @@ msgid ""
 "stop\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:162
+#: ../../../autoapi/tilelang/language/loop/index.rst:204
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "The vectorized For statement."
 msgstr ""
@@ -123,7 +123,7 @@ msgid ""
 "stop\\, annotations\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:177
+#: ../../../autoapi/tilelang/language/loop/index.rst:219
 #: ../../../autoapi/tilelang/language/loop/index.rst:27:<autosummary>:1
 msgid "Alias of T.vectorized."
 msgstr ""
@@ -194,10 +194,10 @@ msgid "Returns"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:78
-#: ../../../autoapi/tilelang/language/loop/index.rst:108
-#: ../../../autoapi/tilelang/language/loop/index.rst:125
-#: ../../../autoapi/tilelang/language/loop/index.rst:146
-#: ../../../autoapi/tilelang/language/loop/index.rst:171
+#: ../../../autoapi/tilelang/language/loop/index.rst:150
+#: ../../../autoapi/tilelang/language/loop/index.rst:167
+#: ../../../autoapi/tilelang/language/loop/index.rst:188
+#: ../../../autoapi/tilelang/language/loop/index.rst:213
 msgid "**res** -- The ForFrame."
 msgstr ""
 
@@ -222,40 +222,103 @@ msgid "The group size."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:100
-#: ../../../autoapi/tilelang/language/loop/index.rst:116
-#: ../../../autoapi/tilelang/language/loop/index.rst:133
-#: ../../../autoapi/tilelang/language/loop/index.rst:164
+#: ../../../autoapi/tilelang/language/loop/index.rst:158
+#: ../../../autoapi/tilelang/language/loop/index.rst:175
+#: ../../../autoapi/tilelang/language/loop/index.rst:206
 msgid "The minimum value of iteration."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:102
-#: ../../../autoapi/tilelang/language/loop/index.rst:118
-#: ../../../autoapi/tilelang/language/loop/index.rst:135
-#: ../../../autoapi/tilelang/language/loop/index.rst:166
+#: ../../../autoapi/tilelang/language/loop/index.rst:160
+#: ../../../autoapi/tilelang/language/loop/index.rst:177
+#: ../../../autoapi/tilelang/language/loop/index.rst:208
 msgid "The maximum value of iteration."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:104
 msgid ""
-"The max number of buffer used between pipeline producers and consumers. if "
-"num_stages is 0, pipeline will not be enabled."
+"The max number of buffer used between pipeline producers and consumers. For "
+"compiler-inferred pipelines, if ``num_stages`` is 0, pipeline will not be "
+"enabled. For manually scheduled pipelines, prefer specifying ``order`` and "
+"``stage`` without ``num_stages``; the pipeline depth is inferred as "
+"``max(stage) + 1``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:110
+msgid ""
+"Optional manual emission order for scheduled statements in the loop body. "
+"This list should describe executable pipeline statements such as copies, "
+"fills, GEMMs, reductions, stores, waits, or commits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:114
+msgid ""
+"Optional manual pipeline stage for each scheduled statement in the loop "
+"body. The list is aligned with ``order`` and follows the same statement "
+"counting rule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:118
+msgid "Optional synchronization metadata for manual pipeline lowering."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:120
+msgid "Optional producer grouping metadata for manual pipeline lowering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:124
+msgid "Notes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:125
+msgid ""
+"Replayable scalar ``Bind`` statements created by local aliases are not "
+"scheduled pipeline operations and should not consume entries in ``order`` or "
+"``stage``. For example, in the body below only the copy and store need "
+"annotation entries; ``base`` is replayed automatically at each use:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:130
+msgid ""
+"for i in T.Pipelined(n, order=[1, 0], stage=[0, 1]):\n"
+"    base: T.int32 = i * block\n"
+"    T.copy(A[base], shared)\n"
+"    T.copy(shared, B[base])"
+msgstr ""
+
 #: ../../../autoapi/tilelang/language/loop/index.rst:137
+msgid ""
+"A replayable ``Bind`` may also read a buffer that is not written by the "
+"pipeline body, such as ``idx = Ids[i]``. If a ``Bind`` reads a buffer that "
+"is written inside the same pipeline body, it is kept as a scheduled "
+"statement because the load has a pipeline dependency and cannot be freely "
+"replayed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:143
+msgid ""
+"Older code that included replayable scalar ``Bind`` entries in ``order``/"
+"``stage`` is accepted for compatibility, but those entries are ignored by "
+"the pipeline passes. New code should annotate only the scheduled statements. "
+"Avoid setting ``num_stages`` together with manual ``order``/``stage`` unless "
+"you intentionally need an explicit depth override."
+msgstr ""
+
+#: ../../../autoapi/tilelang/language/loop/index.rst:162
+#: ../../../autoapi/tilelang/language/loop/index.rst:179
 msgid "The step size of the iteration."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:122
-#: ../../../autoapi/tilelang/language/loop/index.rst:143
-#: ../../../autoapi/tilelang/language/loop/index.rst:168
+#: ../../../autoapi/tilelang/language/loop/index.rst:164
+#: ../../../autoapi/tilelang/language/loop/index.rst:185
+#: ../../../autoapi/tilelang/language/loop/index.rst:210
 msgid "The optional annotations of the For statement."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:139
+#: ../../../autoapi/tilelang/language/loop/index.rst:181
 msgid "Whether to explicitly unroll the loop."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/loop/index.rst:141
+#: ../../../autoapi/tilelang/language/loop/index.rst:183
 msgid "The unroll factor of the loop."
 msgstr ""

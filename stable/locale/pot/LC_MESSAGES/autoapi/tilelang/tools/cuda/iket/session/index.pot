@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:2
+msgid "tilelang.tools.cuda.iket.session"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:8
+msgid "IKET compilation-session and CUDA callback lifecycle."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`enable_runtime_payloads <tilelang.tools.cuda.iket.session."
+"enable_runtime_payloads>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:31
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid "Enable runtime payload metadata and records for subsequent compiles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`disable_runtime_payloads <tilelang.tools.cuda.iket.session."
+"disable_runtime_payloads>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:36
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid "Disable payload records while keeping event instrumentation enabled."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`runtime_payloads_enabled <tilelang.tools.cuda.iket.session."
+"runtime_payloads_enabled>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:41
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid "Return whether runtime payload records are enabled."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`enable <tilelang.tools.cuda.iket.session.enable>`\\ \\(\\*\\[\\, "
+"override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:46
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid "Enable IKET CUDA source post-processing for subsequent compiles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`disable <tilelang.tools.cuda.iket.session.disable>`\\ \\(\\*\\[\\, "
+"restore\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:51
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+"Release one IKET enable scope and restore the prior callback at depth zero."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`is_enabled <tilelang.tools.cuda.iket.session.is_enabled>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:56
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid "Return whether an IKET callback scope is active."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`session <tilelang.tools.cuda.iket.session.session>`\\ \\(\\*\\[\\, "
+"reset\\_events\\, override\\, disable\\_on\\_exit\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:61
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:25:<autosummary>:1
+msgid "Configure IKET around kernel construction and compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tools/cuda/iket/session/index.rst:0
+msgid "Parameters"
+msgstr ""

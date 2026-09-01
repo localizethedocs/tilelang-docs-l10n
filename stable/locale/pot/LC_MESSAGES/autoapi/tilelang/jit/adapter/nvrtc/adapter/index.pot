@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-09-01 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,6 +76,10 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:110
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:108
+msgid "Get the cached host-side source code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:116
 msgid "Returns the primary TIR function from the IR module."
 msgstr ""
