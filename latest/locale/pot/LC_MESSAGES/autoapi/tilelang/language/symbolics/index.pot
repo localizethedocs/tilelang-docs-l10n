@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-09-07 13:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,29 +29,18 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:19:<autosummary>:1
 msgid ""
 ":py:obj:`dynamic <tilelang.language.symbolics.dynamic>`\\ \\(name\\[\\, "
 "dtype\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:26
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:20:<autosummary>:1
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:25
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:19:<autosummary>:1
 msgid "Create a TIR dynamic symbolic variable."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:20:<autosummary>:1
-msgid ""
-":py:obj:`symbolic <tilelang.language.symbolics.symbolic>`\\ \\(name\\[\\, "
-"dtype\\]\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:39
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:20:<autosummary>:1
-msgid "Deprecated alias for `T.dynamic`."
-msgstr ""
-
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:22
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:21
 msgid "Module Contents"
 msgstr ""
 
@@ -59,11 +48,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:28
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:27
 msgid "Identifier for the variable in generated TIR."
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:30
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:29
 msgid ""
 "Data type string for the variable (e.g., \"int32\"). Defaults to \"int32\"."
 msgstr ""
@@ -72,7 +61,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/language/symbolics/index.rst:33
+#: ../../../autoapi/tilelang/language/symbolics/index.rst:32
 msgid ""
 "A TIR variable with the given name and dtype for use in TIR/TensorIR kernels."
 msgstr ""
