@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-09-07 16:03:30 +0800",
+      "hash" : "62bba8d20ddb232e29050770472cb2649dd3e718",
+      "title" : "[Transform] Add snapshot mode to FreshenMutableReads (#3174)"
     }
   },
   "type" : "branch",

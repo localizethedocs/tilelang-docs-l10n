@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-09-07 13:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,77 +147,71 @@ msgid ""
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:77
-#: ../../../programming_guides/language_basics.md:195
+#: ../../../programming_guides/language_basics.md:194
 msgid "Notes"
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:78
 msgid ""
-"`T.symbolic(name, dtype)` is a deprecated alias of `T.dynamic`; prefer `T."
-"dynamic`."
-msgstr ""
-
-#: ../../../programming_guides/language_basics.md:79
-msgid ""
 "Under `@jit`, concrete sizes come from the actual tensor arguments at the "
 "first call."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:80
+#: ../../../programming_guides/language_basics.md:79
 msgid ""
 "Symbols in annotations do not need to be separate kernel arguments; TileLang "
 "binds them from argument shapes."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:82
+#: ../../../programming_guides/language_basics.md:81
 msgid "2. Launching Work with `T.Kernel`"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:84
+#: ../../../programming_guides/language_basics.md:83
 msgid ""
 "`with T.Kernel(...)` declares a launch context and creates block/thread "
 "bindings. For GPU backends, specify a grid and threads per block."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:87
+#: ../../../programming_guides/language_basics.md:86
 msgid ""
 "with T.Kernel(grid_x, grid_y, threads=128) as (bx, by):\n"
 "    ...  # bx/by are blockIdx.x/y\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:92
+#: ../../../programming_guides/language_basics.md:91
 msgid ""
 "You rarely need raw thread indices; most kernels use structured loops (`T."
 "serial`, `T.unroll`, `T.Parallel`, `T.Pipelined`) inside a `T.Kernel`."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:95
+#: ../../../programming_guides/language_basics.md:94
 msgid "3. Loops and Control Flow"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:97
+#: ../../../programming_guides/language_basics.md:96
 msgid "Core loop constructs map to familiar hardware patterns:"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:99
+#: ../../../programming_guides/language_basics.md:98
 msgid "`T.serial(start, stop[, step])`: plain for‑loop"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:100
+#: ../../../programming_guides/language_basics.md:99
 msgid "`T.unroll(start, stop[, step])`: unrolled loop"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:101
+#: ../../../programming_guides/language_basics.md:100
 msgid ""
 "`T.Parallel(ext0, ext1, ...)`: nested parallel loops (elementwise‑friendly)"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:102
+#: ../../../programming_guides/language_basics.md:101
 msgid ""
 "`T.Pipelined(iters, num_stages=N)`: software pipelining for producer/consumer"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:104
+#: ../../../programming_guides/language_basics.md:103
 msgid ""
 "for i in T.serial(N):\n"
 "    ...\n"
@@ -230,35 +224,35 @@ msgid ""
 "    ...\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:116
+#: ../../../programming_guides/language_basics.md:115
 msgid ""
 "Conditionals use standard Python `if`/`else`. Guard edges with predicates "
 "when tile sizes do not divide problem sizes evenly."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:119
+#: ../../../programming_guides/language_basics.md:118
 msgid "4. Memory Scopes and Allocation"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:121
+#: ../../../programming_guides/language_basics.md:120
 msgid "TileLang exposes key software‑managed scopes:"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:123
+#: ../../../programming_guides/language_basics.md:122
 msgid "Global: device memory (default for `T.Tensor` arguments)"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:124
+#: ../../../programming_guides/language_basics.md:123
 msgid "Shared: on‑chip, block‑visible (`T.alloc_shared(shape, dtype)`)"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:125
+#: ../../../programming_guides/language_basics.md:124
 msgid ""
 "Fragment and scalars: per‑thread fragments and scalar vars but in Shared "
 "View (`T.alloc_fragment`, `T.alloc_var`)"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:128
+#: ../../../programming_guides/language_basics.md:127
 msgid ""
 "A_shared = T.alloc_shared((BM, BK), 'float16')\n"
 "B_shared = T.alloc_shared((BK, BN), 'float16')\n"
@@ -266,17 +260,17 @@ msgid ""
 "T.clear(C_local)  # zero accumulators\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:135
+#: ../../../programming_guides/language_basics.md:134
 msgid "5. Moving Data: `T.copy`"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:137
+#: ../../../programming_guides/language_basics.md:136
 msgid ""
 "Use `T.copy(src, dst)` to move tiles between scopes. It accepts buffers, "
 "buffer regions, or buffer loads; extents are inferred or can be broadcast."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:140
+#: ../../../programming_guides/language_basics.md:139
 msgid ""
 "# Global -> Shared (tile copy), extents inferred from dst\n"
 "T.copy(A[by * BM, ko * BK], A_shared)\n"
@@ -286,12 +280,12 @@ msgid ""
 "T.copy(C_local, C[by * BM, bx * BN])\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:149
+#: ../../../programming_guides/language_basics.md:148
 msgid ""
 "`T.copy` performs coalescing and scope‑specific lowering during compilation."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:151
+#: ../../../programming_guides/language_basics.md:150
 msgid ""
 "If you need explicitly asynchronous global->shared prefetch for manual "
 "pipelining, use `T.async_copy(src, dst)`. Unlike `T.copy`, it does not auto-"
@@ -302,11 +296,11 @@ msgid ""
 "tvm_storage_sync(\"shared\")` before the first read from `dst`."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:159
+#: ../../../programming_guides/language_basics.md:158
 msgid "6. A Minimal End‑to‑End Example (Vector Add)"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:161
+#: ../../../programming_guides/language_basics.md:160
 msgid ""
 "import tilelang\n"
 "import tilelang.language as T\n"
@@ -342,29 +336,29 @@ msgid ""
 "torch.testing.assert_close(C, A + B)\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:196
+#: ../../../programming_guides/language_basics.md:195
 msgid ""
 "The `@jit` wrapper returns a callable kernel after the first compilation."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:197
+#: ../../../programming_guides/language_basics.md:196
 msgid ""
 "You can pass compile‑time tunables (tile sizes, dtypes) through the outer "
 "Python function and bake them into the generated TIR."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:200
+#: ../../../programming_guides/language_basics.md:199
 msgid "7. Tiled GEMM Skeleton"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:202
+#: ../../../programming_guides/language_basics.md:201
 msgid ""
 "Below is a minimal pattern for a tiled GEMM using shared memory staging and "
 "a fragment accumulator. It mirrors the quickstart style found in the "
 "repository."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:205
+#: ../../../programming_guides/language_basics.md:204
 msgid ""
 "@T.prim_func\n"
 "def gemm(\n"
@@ -388,41 +382,41 @@ msgid ""
 "        T.copy(C_f, C[by * BM, bx * BN])\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:226
+#: ../../../programming_guides/language_basics.md:225
 msgid "8. Debugging and Printing"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:228
+#: ../../../programming_guides/language_basics.md:227
 msgid ""
 "Use `T.print` inside a kernel for quick introspection. TileLang emits "
 "printing from a single thread for shared/fragment scopes to avoid floods."
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:231
+#: ../../../programming_guides/language_basics.md:230
 msgid ""
 "T.print(C_f, msg='accumulator:')\n"
 "T.print(A_s, msg='A tile:')\n"
 "T.print(C[0], msg='C[0] = ')\n"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:237
+#: ../../../programming_guides/language_basics.md:236
 msgid "9. Where to Go Next"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:239
+#: ../../../programming_guides/language_basics.md:238
 msgid "Control flow details: see Programming Guides → Control Flow"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:240
+#: ../../../programming_guides/language_basics.md:239
 msgid ""
 "Memory topics: see Programming Guides → (removed cache/layout); basics are "
 "covered inline"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:241
+#: ../../../programming_guides/language_basics.md:240
 msgid "Autotuning tile sizes and mappings: Programming Guides → Autotuning"
 msgstr ""
 
-#: ../../../programming_guides/language_basics.md:242
+#: ../../../programming_guides/language_basics.md:241
 msgid "Operator examples (GEMM, GEMV, attention): see Deep Learning Operators"
 msgstr ""

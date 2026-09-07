@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-07 13:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:2
+msgid "tilelang.cuda.language.math"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:8
+msgid "CUDA-specific floating-point arithmetic intrinsics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:20:<autosummary>:1
+msgid ":py:obj:`fmul <tilelang.cuda.language.math.fmul>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:26
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:20:<autosummary>:1
+msgid "Multiply with CUDA round-to-nearest semantics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:20:<autosummary>:1
+msgid ":py:obj:`fma <tilelang.cuda.language.math.fma>`\\ \\(x\\, y\\, z\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:35
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:20:<autosummary>:1
+msgid "Compute ``x * y + z`` as one CUDA fused multiply-add operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:28
+msgid ""
+"Unlike the ``*`` operator, this intrinsic preserves an explicit multiply "
+"boundary during CUDA lowering. Vectorized loops may lower it to packed "
+"multiply instructions when the target supports them."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/math/index.rst:37
+msgid ""
+"The result uses round-to-nearest semantics. Vectorized loops may lower the "
+"operation to packed FMA instructions when the target supports them."
+msgstr ""
