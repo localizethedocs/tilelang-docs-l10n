@@ -1,0 +1,170 @@
+tilelang.language.loop
+======================
+
+.. py:module:: tilelang.language.loop
+
+.. autoapi-nested-parse::
+
+   Loop related language interfaces in TileLang.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.language.loop.Parallel
+   tilelang.language.loop.Persistent
+   tilelang.language.loop.Pipelined
+   tilelang.language.loop.serial
+   tilelang.language.loop.unroll
+   tilelang.language.loop.Serial
+   tilelang.language.loop.Unroll
+   tilelang.language.loop.vectorized
+   tilelang.language.loop.Vectorized
+
+
+Module Contents
+---------------
+
+.. py:function:: Parallel(*extents, coalesced_width = None, loop_layout = None)
+
+   Tools to construct nested parallel for loop.
+      This can be used to create element-wise tensor expression.
+
+   :param extents: The extents of the iteration.
+   :type extents: PrimExpr
+   :param coalesced_width: The coalesced width of the parallel loop.
+   :type coalesced_width: Optional[int]
+   :param loop_layout: A layout annotation for the parallel loop nest, expressed as a
+                       ``T.Fragment``. When provided, it is attached as the
+                       ``"parallel_loop_layout"`` annotation on the outermost parallel loop.
+                       For a k-dimensional ``T.Parallel(...)`` nest, the fragment's
+                       ``InputDim`` must equal ``k``.
+   :type loop_layout: Optional[Fragment]
+   :param Notes on layout constraints:
+   :param ---------------------------:
+   :param TileLang validates parallel loop layout annotations during:
+   :param ``tl.transform.LayoutInference`` with ``ParallelLoopLayoutValidator``.:
+   :param The key constraints are:
+   :param - Every parallel loop must be covered by a layout annotation after: layout inference. For a nested parallel nest, this annotation must live
+                                                                              on the outermost loop; inner parallel loops must not carry the layout
+                                                                              annotation themselves.
+   :param - For a nest depth of ``k``: ``InputDim == k``.
+   :param the layout must satisfy: ``InputDim == k``.
+   :param - Violations (missing annotation on the outermost loop: inner loops, or mismatched ``InputDim``) cause a compilation error.
+   :param annotations on: inner loops, or mismatched ``InputDim``) cause a compilation error.
+   :param Rationale:
+   :type Rationale: inner loops cannot control/annotate their outer loops, while the
+   :param outermost loop can manage its inner nest. Therefore the layout is placed on:
+   :param the outermost loop so lowering passes can rewrite the entire region.:
+   :param To make this easy:
+   :param ``T.Parallel`` attaches any provided ``loop_layout``:
+   :param to the outermost generated loop only. If you omit ``loop_layout``:
+   :param the:
+   :param compiler will try to infer a valid layout and attach it during the:
+   :param LayoutInference pass.:
+
+   :returns: **res** -- The ForFrame.
+   :rtype: frame.ForFrame
+
+
+.. py:function:: Persistent(domain, wave_size, index, group_size = 8)
+
+   Tools to construct persistent for loop.
+
+   :param domain: The list of dominators.
+   :type domain: List[tir.PrimExpr]
+   :param wave_size: The wave size.
+   :type wave_size: int
+   :param index: The tile index in one wave.
+   :type index: int
+   :param group_size: The group size.
+   :type group_size: tir.PrimExpr
+
+
+.. py:function:: Pipelined(start, stop = None, num_stages = 0, order = None, stage = None, sync = None, group = None)
+
+   Tools to construct pipelined for loop.
+
+   :param start: The minimum value of iteration.
+   :type start: PrimExpr
+   :param stop: The maximum value of iteration.
+   :type stop: PrimExpr
+   :param num_stages: The max number of buffer used between pipeline producers and consumers.
+                      if num_stages is 0, pipeline will not be enabled.
+   :type num_stages: int
+
+   :returns: **res** -- The ForFrame.
+   :rtype: frame.ForFrame
+
+
+.. py:function:: serial(start, stop = None, step = None, *, annotations = None)
+
+   The serial For statement.
+
+   :param start: The minimum value of iteration.
+   :type start: PrimExpr
+   :param stop: The maximum value of iteration.
+   :type stop: PrimExpr
+   :param step: The step size of the iteration.
+   :type step: PrimExpr
+   :param annotations: The optional annotations of the For statement.
+   :type annotations: Dict[str, Any]
+
+   :returns: **res** -- The ForFrame.
+   :rtype: frame.ForFrame
+
+
+.. py:function:: unroll(start, stop = None, step = None, *, explicit = False, unroll_factor = None, annotations = None)
+
+   The unrolled For statement.
+
+   :param start: The minimum value of iteration.
+   :type start: PrimExpr
+   :param stop: The maximum value of iteration.
+   :type stop: PrimExpr
+   :param step: The step size of the iteration.
+   :type step: PrimExpr
+   :param explicit: Whether to explicitly unroll the loop.
+   :type explicit: bool
+   :param unroll_factor: The unroll factor of the loop.
+   :type unroll_factor: int
+   :param annotations: The optional annotations of the For statement.
+   :type annotations: Dict[str, Any]
+
+   :returns: **res** -- The ForFrame.
+   :rtype: frame.ForFrame
+
+
+.. py:function:: Serial(start, stop = None, step = None, *, annotations = None)
+
+   Alias of T.serial.
+
+
+.. py:function:: Unroll(start, stop = None, step = None, *, explicit = False, unroll_factor = None, annotations = None)
+
+   Alias of T.unroll.
+
+
+.. py:function:: vectorized(start, stop = None, *, annotations = None)
+
+   The vectorized For statement.
+
+   :param start: The minimum value of iteration.
+   :type start: PrimExpr
+   :param stop: The maximum value of iteration.
+   :type stop: PrimExpr
+   :param annotations: The optional annotations of the For statement.
+   :type annotations: Dict[str, Any]
+
+   :returns: **res** -- The ForFrame.
+   :rtype: frame.ForFrame
+
+
+.. py:function:: Vectorized(start, stop = None, *, annotations = None)
+
+   Alias of T.vectorized.
+
+

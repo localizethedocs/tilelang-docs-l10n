@@ -1,0 +1,76 @@
+tilelang.carver.roller.policy.tensorcore
+========================================
+
+.. py:module:: tilelang.carver.roller.policy.tensorcore
+
+.. autoapi-nested-parse::
+
+   Policy for tensorcore schedule
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   tilelang.carver.roller.policy.tensorcore.logger
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.carver.roller.policy.tensorcore.TensorCorePolicy
+
+
+Module Contents
+---------------
+
+.. py:data:: logger
+
+.. py:class:: TensorCorePolicy
+
+   Bases: :py:obj:`tilelang.carver.roller.policy.default.DefaultPolicy`
+
+
+   .. py:attribute:: wmma_k
+      :type:  int
+      :value: 16
+
+
+
+   .. py:attribute:: pipeline_stage
+      :type:  int
+      :value: 1
+
+
+
+   .. py:attribute:: use_async_copy
+      :type:  bool
+      :value: False
+
+
+
+   .. py:attribute:: block_reduction_depth
+      :type:  int | None
+      :value: None
+
+
+
+   .. py:method:: infer_node_smem_usage(td, node)
+
+
+   .. py:method:: get_node_reduce_step_candidates(node)
+
+
+   .. py:method:: check_tile_shape_isvalid(td)
+
+
+   .. py:method:: compute_node_stride_map(node, td)
+
+
+   .. py:method:: plan_rasterization(td)
+
+

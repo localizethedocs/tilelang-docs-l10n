@@ -1,0 +1,162 @@
+tilelang.layout.layout
+======================
+
+.. py:module:: tilelang.layout.layout
+
+.. autoapi-nested-parse::
+
+   Wrapping Layouts.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.layout.layout.Layout
+
+
+Module Contents
+---------------
+
+.. py:class:: Layout(shape, forward_fn)
+
+   Bases: :py:obj:`tvm.ir.Node`
+
+
+   .. py:property:: index
+
+      Property to retrieve the forward index of the layout.
+
+      :returns: The computed forward index expression(s).
+      :rtype: PrimExpr or List[PrimExpr]
+
+
+   .. py:method:: get_input_shape()
+
+      Get the input shape of the layout.
+
+      :returns: The shape of the input layout.
+      :rtype: List[int]
+
+
+
+   .. py:method:: get_output_shape()
+
+      Get the output shape of the layout.
+
+      :returns: The shape of the output layout.
+      :rtype: List[int]
+
+
+
+   .. py:method:: get_forward_vars()
+
+      Retrieve the iteration variables associated with the layout.
+
+      :returns: A list of iteration variables that define the layout transformation.
+      :rtype: List[IterVar]
+
+
+
+   .. py:method:: get_forward_index()
+
+
+   .. py:method:: map_forward_index(indices)
+
+      Compute the forward index mapping for a given set of input indices.
+
+      :param indices: The input indices to be mapped to their corresponding output indices.
+      :type indices: list of PrimExpr
+
+      :returns: The mapped index expression for the provided input indices.
+      :rtype: PrimExpr
+
+
+
+   .. py:method:: repeat(dim, factor)
+
+      Repeat a layout along a single input dimension.
+
+      This is useful for building a larger layout by tiling an "atom" layout.
+      Conceptually, repeating on dimension ``dim`` with ``factor`` constructs a
+      new layout ``L'`` such that::
+
+          L'(*idx) = [idx[dim] // extent_dim] + L(idx with idx[dim] % extent_dim)
+
+      where ``extent_dim`` is the original extent of the repeated dimension.
+
+      :param dim: The input dimension to repeat (0-based, supports negative indexing).
+      :type dim: int
+      :param factor: The repeat factor. Must be a positive integer.
+      :type factor: int
+
+      :returns: A new Layout with the repeated input shape and an extra leading
+                output dimension representing the repeat-group index.
+      :rtype: Layout
+
+
+
+   .. py:method:: expand(leading_shape)
+
+      Expand (lift) this layout by prepending new leading input dimensions.
+
+      The new leading dimensions are forwarded unchanged to the output, and
+      the original layout is applied to the remaining trailing dimensions.
+
+      .. rubric:: Example
+
+      Given a 2D layout ``L`` over ``[J, K]``, you can lift it to a 3D layout
+      over ``[I, J, K]`` by::
+
+          L3 = L.expand([I])
+          # [i, j, k] -> [i, *L(j, k)]
+
+      :param leading_shape: The shape of the new leading dimensions to prepend. Use an empty
+                            list/tuple for a no-op.
+      :type leading_shape: int or Sequence[int or PrimExpr]
+
+      :returns: A new Layout with input shape ``leading_shape + input_shape`` and
+                output indices ``[leading_dims] + old_forward_index``.
+      :rtype: Layout
+
+
+
+   .. py:method:: inverse()
+
+      Compute the inverse of the current layout transformation.
+
+      :returns: A new Layout object representing the inverse transformation.
+      :rtype: Layout
+
+
+
+   .. py:method:: reshape(shape, rescale_num=1, rescale_den=1)
+
+      Reshape the input shape of the layout.
+
+      :param shape: The new input shape.
+      :type shape: list[PrimExpr] or list[int]
+      :param rescale_num: Rescale numerator for element size changes.
+      :type rescale_num: int
+      :param rescale_den: Rescale denominator for element size changes.
+      :type rescale_den: int
+
+
+
+   .. py:method:: is_equal(other)
+
+      Check if the current layout is equal to another layout.
+
+      :param other: The layout to compare with.
+      :type other: Layout
+
+
+
+   .. py:method:: __call__(*args)
+
+
+   .. py:method:: __repr__()
+
+
