@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:2
+msgid "tilelang.jit.adapter.nvrtc.libgen"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:8
+msgid "NVRTC Library Generator for TileLang."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:10
+msgid ""
+"Compiles CUDA kernels at runtime using NVRTC and manages resulting binaries."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:12
+msgid ""
+"Why NVRTC instead of nvcc: - No offline compilation step, enables true JIT "
+"workflows - Works without CUDA toolkit installed (only requires driver) - "
+"Allows kernel specialization based on runtime parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:17
+msgid ""
+"Key responsibilities: - Compile CUDA source to cubin using NVRTC API - "
+"Generate accompanying Python launcher code - Load compiled cubin and extract "
+"kernel handles - Manage library lifecycle (load/unload)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:26
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:32:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.jit.adapter.nvrtc.libgen.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:34
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`NVRTCLibraryGenerator <tilelang.jit.adapter.nvrtc.libgen."
+"NVRTCLibraryGenerator>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:51
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:40:<autosummary>:1
+msgid "Runtime compiler and loader for NVRTC-compiled CUDA kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:42
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:48
+msgid "Bases: :py:obj:`tilelang.jit.adapter.libgen.LibraryGenerator`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:53
+msgid "Lifecycle:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:54
+msgid "compile_lib(): CUDA source → cubin + Python launcher"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:55
+msgid "load_lib(): cubin → loaded library + kernel handles"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:56
+msgid "pymodule.call(): Execute kernels via Python launcher"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:57
+msgid "__del__: Cleanup (unload library)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:59
+msgid "Why three files (cu, cubin, py):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:60
+msgid ".cu: Source for debugging, kept in temp directory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:61
+msgid ".cubin: Compiled binary, loaded by CUDA driver"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:62
+msgid ".py: Launch code, imported as Python module"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:66
+msgid "Generated Python launch code (from wrapper)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:70
+msgid "CUDA library handle (CUlibrary)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:74
+msgid "Imported Python module containing call() function"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:105
+msgid "Dynamically import Python module from file path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:107
+msgid ""
+"Standard importlib pattern for loading modules outside sys.path. Used to "
+"import generated .py launcher code from temp directory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:110
+msgid "Name to assign to imported module"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:111
+msgid "Absolute path to .py file"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:113
+msgid "Imported module object"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:119
+msgid "Store generated Python launch code for later file write."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:121
+msgid ""
+"Called by adapter after wrapper generates the launch code. This is the "
+"bridge between code generation and file output."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:124
+msgid "Python source code containing call() function"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:130
+msgid "Load compiled cubin and Python launcher into memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:132
+msgid "Why two loads:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:133
+msgid "Import Python module for launch logic"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:134
+msgid "Load cubin via CUDA Driver API for kernel handles"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:136
+msgid ""
+"Context synchronization: CUDA context must be current before loading. If "
+"not, use torch.cuda.synchronize() to establish context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:139
+msgid "Path to .cubin file (optional, uses self.libpath if None)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:141
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:166
+msgid "Side effects:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:142
+msgid "Sets self.pymodule to imported Python module"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:143
+msgid "Sets self.culib to CUDA library handle"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:149
+msgid "Compile CUDA source to cubin using NVRTC and write output files."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:151
+msgid "Output artifacts (all in temp directory):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:152
+msgid ".cu: Source code (for debugging)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:153
+msgid ".cubin: Compiled binary (for execution)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:154
+msgid ".py: Python launcher (for calling kernels)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:156
+msgid "Include paths setup:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:157
+msgid "TileLang templates: kernel primitives and utilities"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:158
+msgid "CUTLASS: optimized GEMM/tensor ops"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:159
+msgid "CUDA headers: driver/runtime APIs"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:161
+msgid "Why architecture detection:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:162
+msgid "ARM64 servers (SBSA) have different header paths than x86_64."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:164
+msgid ""
+"Compilation timeout in seconds (currently unsupported by NVRTC compiler)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:167
+msgid "Writes .cu, .cubin, .py files to temp directory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:168
+msgid "Sets self.srcpath, self.libpath, self.pypath"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:174
+msgid "Cleanup: unload CUDA library when object is destroyed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:176
+msgid ""
+"Critical for resource management - CUDA libraries consume GPU memory. "
+"Failure to unload is logged but not raised (destructor can't fail)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:179
+msgid "Why explicit unload:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:180
+msgid "Python GC doesn't know about GPU resources, must release manually."
+msgstr ""
