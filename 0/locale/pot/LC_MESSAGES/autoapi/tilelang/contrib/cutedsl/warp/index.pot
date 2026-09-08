@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-09-08 12:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,8 +23,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:8
 msgid ""
-"Warp-level primitives for CuTeDSL backend. Re-exports from cutlass.cute.arch "
-"with TileLang naming conventions."
+"Warp-level primitives for CuTeDSL backend. TileLang-compatible wrappers over "
+"CUTLASS primitives."
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:14
