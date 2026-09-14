@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:2
+msgid "tilelang.contrib.cutedsl.ldsm"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:8
+msgid ""
+"LDMATRIX and STMATRIX operations for CuTeDSL backend. Based on tl_templates/"
+"cuda/ldsm.h"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:11
+msgid ""
+"These functions provide wrappers around PTX ldmatrix/stmatrix instructions "
+"for loading/storing 8x8 matrix fragments between shared memory and registers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:17
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix_x1 <tilelang.contrib.cutedsl.ldsm.ptx_ldmatrix_x1>`\\ "
+"\\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:40
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Load 1 matrix (8x8) from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix_x2 <tilelang.contrib.cutedsl.ldsm.ptx_ldmatrix_x2>`\\ "
+"\\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:45
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Load 2 matrices (8x8 each) from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix_x4 <tilelang.contrib.cutedsl.ldsm.ptx_ldmatrix_x4>`\\ "
+"\\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:50
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Load 4 matrices (8x8 each) from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix_x1_trans <tilelang.contrib.cutedsl.ldsm."
+"ptx_ldmatrix_x1_trans>`\\ \\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, "
+"ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:55
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Load 1 matrix (8x8) with transpose from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix_x2_trans <tilelang.contrib.cutedsl.ldsm."
+"ptx_ldmatrix_x2_trans>`\\ \\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, "
+"ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:60
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Load 2 matrices (8x8 each) with transpose from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_ldmatrix_x4_trans <tilelang.contrib.cutedsl.ldsm."
+"ptx_ldmatrix_x4_trans>`\\ \\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, "
+"ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:65
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Load 4 matrices (8x8 each) with transpose from shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_stmatrix_x1 <tilelang.contrib.cutedsl.ldsm.ptx_stmatrix_x1>`\\ "
+"\\(smem\\_ptr\\, value0\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:70
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Store 1 matrix (8x8) to shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_stmatrix_x2 <tilelang.contrib.cutedsl.ldsm.ptx_stmatrix_x2>`\\ "
+"\\(smem\\_ptr\\, value0\\, value1\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:75
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Store 2 matrices (8x8 each) to shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_stmatrix_x4 <tilelang.contrib.cutedsl.ldsm.ptx_stmatrix_x4>`\\ "
+"\\(smem\\_ptr\\, value0\\, value1\\, value2\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:80
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Store 4 matrices (8x8 each) to shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_stmatrix_x1_trans <tilelang.contrib.cutedsl.ldsm."
+"ptx_stmatrix_x1_trans>`\\ \\(smem\\_ptr\\, value0\\, \\*\\[\\, loc\\, "
+"ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:85
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Store 1 matrix (8x8) with transpose to shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_stmatrix_x2_trans <tilelang.contrib.cutedsl.ldsm."
+"ptx_stmatrix_x2_trans>`\\ \\(smem\\_ptr\\, value0\\, value1\\, \\*\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:90
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Store 2 matrices (8x8 each) with transpose to shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`ptx_stmatrix_x4_trans <tilelang.contrib.cutedsl.ldsm."
+"ptx_stmatrix_x4_trans>`\\ \\(smem\\_ptr\\, value0\\, value1\\, ...\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:95
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
+msgid "Store 4 matrices (8x8 each) with transpose to shared memory"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:0
+msgid "Return type"
+msgstr ""
