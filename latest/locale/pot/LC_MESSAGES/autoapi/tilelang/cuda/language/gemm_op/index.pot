@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 14:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:2
+msgid "tilelang.cuda.language.gemm_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:8
+msgid "CUDA dialect of ``T.gemm``: the common GEMM plus CUDA-specific knobs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`gemm <tilelang.cuda.language.gemm_op.gemm>`\\ \\(A\\, B\\, C\\[\\, "
+"transpose\\_A\\, transpose\\_B\\, policy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:26
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:20:<autosummary>:1
+msgid "TileLang GEMM operator for CUDA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`gemm_sp <tilelang.cuda.language.gemm_op.gemm_sp>`\\ "
+"\\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, transpose\\_E\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:64
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:20:<autosummary>:1
+msgid "Sparse GEMM (2:4 structured sparsity) for CUDA."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:28
+msgid ""
+"Same semantics as the common :func:`tilelang.language.gemm_op.gemm`: the "
+"default synchronous GEMM. On Hopper, if the compiler selects WGMMA lowering, "
+"TileLang inserts the corresponding wait implicitly. On Blackwell TCGEN5MMA, "
+"TileLang inserts the corresponding ``mbarrier_wait_parity(...)`` implicitly "
+"after issue."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:34
+msgid ""
+"For manual asynchronous scheduling, use ``T.wgmma_gemm(...)`` with ``T."
+"wait_wgmma(...)`` on Hopper, or ``T.tcgen05_gemm(...)`` with ``T."
+"mbarrier_wait_parity(...)`` on Blackwell."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:38
+msgid "Input buffer A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:40
+msgid "Input buffer B."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:42
+msgid "Output buffer C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:44
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:75
+msgid "Whether to transpose A. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:46
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:77
+msgid "Whether to transpose B. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:48
+msgid "GEMM warp partition policy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:50
+msgid "Whether to clear the accumulator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:52
+msgid ""
+"Mbarrier in Blackwell. Required when this GEMM lowers to TCGEN5MMA. Defaults "
+"to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:55
+msgid "Additional annotations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:58
+msgid "A handle to the GEMM operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:66
+msgid ""
+"Same semantics as the common :func:`tilelang.language.experimental."
+"gemm_sp_op.gemm_sp`. ``wg_wait`` is the Hopper warpgroup wait count consumed "
+"when the WGMMA SP lowering is selected (``-1`` defers the wait to an "
+"explicit ``T.wait_wgmma``); it rides in the tile-op annotations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:71
+msgid "Compressed sparse matrix containing only non-zero elements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:72
+msgid "Metadata tensor encoding the sparsity pattern of A."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:73
+msgid "Dense input matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:74
+msgid "Output accumulator matrix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:76
+msgid "Whether to transpose E. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:78
+msgid "Warp partition policy. Defaults to GemmWarpPolicy.Square."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:79
+msgid "Whether to zero the accumulator before computation. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:80
+msgid "Warp group wait count. Defaults to 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:81
+msgid "Additional annotations; values in it take precedence."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/gemm_op/index.rst:83
+msgid "A handle to the sparse GEMM operation."
+msgstr ""

@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 14:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:2
+msgid "tilelang.cuda.language.loop"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:8
+msgid "CUDA dialect of the loop constructs: the common loops plus CUDA hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`Parallel <tilelang.cuda.language.loop.Parallel>`\\ "
+"\\(\\*extents\\[\\, coalesced\\_width\\, loop\\_layout\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:27
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:21:<autosummary>:1
+msgid "Construct a nested parallel loop, with CUDA lowering hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`unroll <tilelang.cuda.language.loop.unroll>`\\ \\(start\\[\\, "
+"stop\\, step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:49
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:21:<autosummary>:1
+msgid "The unrolled For statement, with the CUDA unroll-factor pragma."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:21:<autosummary>:1
+msgid ""
+":py:obj:`Unroll <tilelang.cuda.language.loop.Unroll>`\\ \\(start\\[\\, "
+"stop\\, step\\, explicit\\, unroll\\_factor\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:72
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:21:<autosummary>:1
+msgid "Alias of the CUDA dialect's :func:`unroll`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:23
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:29
+msgid ""
+"Same semantics as the common :func:`tilelang.language.loop.Parallel`. "
+"``prefer_async`` requests the PTX cp.async rewrite for copies in this loop "
+"subtree even outside pipelined loops; it is a performance hint ignored by "
+"targets without async copy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:34
+msgid "Extents of the parallel loop nest."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:36
+msgid "Width for coalesced memory access."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:38
+msgid "Layout annotation for the parallel loop nest."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:40
+msgid ""
+"When True, requests cp.async injection for this subtree; when False, forbids "
+"it. Lowered as the ``\"parallel_prefer_async\"`` annotation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:43
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:66
+msgid "Additional loop annotations; values in it take precedence."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:51
+msgid ""
+"Same semantics as the common :func:`tilelang.language.loop.unroll`. "
+"``unroll_factor`` emits ``#pragma unroll N``, which only the CUDA codegen "
+"honors; it is mutually exclusive with ``explicit``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:55
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:57
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:59
+msgid "Iteration range."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:61
+msgid "Whether to explicitly unroll the loop at compile time."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/loop/index.rst:63
+msgid ""
+"Partial unroll factor, lowered as the ``\"pragma_unroll_factor\"`` "
+"annotation."
+msgstr ""
