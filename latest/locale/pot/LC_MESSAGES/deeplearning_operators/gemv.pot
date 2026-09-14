@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-09-14 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,8 +69,11 @@ msgstr ""
 msgid ""
 "@triton.jit\n"
 "def _gemv_naive(\n"
-"    x_ptr, A_ptr, y_ptr,\n"
-"    N, K,\n"
+"    x_ptr,\n"
+"    A_ptr,\n"
+"    y_ptr,\n"
+"    N,\n"
+"    K,\n"
 "    BLOCK_SIZE_K: tl.constexpr,\n"
 "):\n"
 "    n = tl.program_id(0)\n"
@@ -83,7 +86,7 @@ msgid ""
 "    tl.store(y_ptr + n, dot)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:40
+#: ../../../deeplearning_operators/gemv.md:43
 msgid ""
 "`Triton` is straightforward to use, as it operates at the block level. "
 "However, this approach may not allow for fine-grained thread-level "
@@ -91,18 +94,18 @@ msgid ""
 "optimized GEMV kernel in `TileLang` that exposes more low-level control."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:42
+#: ../../../deeplearning_operators/gemv.md:45
 msgid "Naive Implementation in TileLang"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:43
+#: ../../../deeplearning_operators/gemv.md:46
 msgid ""
 "If you have a basic understanding of CUDA C, it is natural to start with a "
 "naive GEMV kernel by adapting a GEMM tiling strategy. You can think of GEMV "
 "as a `(1, k) * (k, n)` GEMM. Below is a simple example:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:45
+#: ../../../deeplearning_operators/gemv.md:48
 msgid ""
 "def naive_gemv(\n"
 "    N: int,\n"
@@ -115,9 +118,9 @@ msgid ""
 "\n"
 "    @T.prim_func\n"
 "    def main(\n"
-"            A: T.Buffer((K,), dtype),\n"
-"            B: T.Buffer((N, K), dtype),\n"
-"            C: T.Buffer((N,), dtype),\n"
+"        A: T.Buffer((K,), dtype),\n"
+"        B: T.Buffer((N, K), dtype),\n"
+"        C: T.Buffer((N,), dtype),\n"
 "    ):\n"
 "        with T.Kernel(T.ceildiv(N, BLOCK_N)) as bn:\n"
 "            tn = T.get_thread_binding(0)  # tn = threadIdx.x\n"
@@ -132,21 +135,19 @@ msgid ""
 "tk]\n"
 "                for tk in T.serial(BLOCK_K):\n"
 "                    C_reg[0] += A_shared[tk].astype(accum_dtype) * "
-"B_shared[tn,\n"
-"                                                                            tk]."
-"astype(accum_dtype)\n"
+"B_shared[tn, tk].astype(accum_dtype)\n"
 "            C[bn * BLOCK_N + tn] = C_reg[0]\n"
 "\n"
 "    return main\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:79
+#: ../../../deeplearning_operators/gemv.md:81
 msgid ""
 "And your kernel will be compiled into CUDA by `TileLang` (in `~/.tilelang/"
 "cache`):"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:81
+#: ../../../deeplearning_operators/gemv.md:83
 msgid ""
 "extern \"C\" __global__ void __launch_bounds__(256, 1) main_kernel(half_t* "
 "__restrict__ A, half_t* __restrict__ B, half_t* __restrict__ C) {\n"
@@ -191,24 +192,24 @@ msgid ""
 "}\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:119
+#: ../../../deeplearning_operators/gemv.md:121
 msgid ""
 "In this design, the first 128 threads act as the data producer and the last "
 "128 threads as the consumer within a block (assuming a 1D block)."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:121
+#: ../../../deeplearning_operators/gemv.md:123
 msgid ""
 "At this level, we only gain very little computation power from our GPU with "
 "around **~0.17 ms** compared to torch/cuBLAS's **~0.008 ms**, which is "
 "around 20x slower."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:123
+#: ../../../deeplearning_operators/gemv.md:125
 msgid "More Concurrency"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:125
+#: ../../../deeplearning_operators/gemv.md:127
 msgid ""
 "To further increase the concurrency of our kernel, we can exploit finer "
 "thread-level parallelism. Instead of assigning each thread to compute a "
@@ -218,11 +219,11 @@ msgid ""
 "CUDA."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:127
+#: ../../../deeplearning_operators/gemv.md:129
 msgid "Here’s a simplified version:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:128
+#: ../../../deeplearning_operators/gemv.md:130
 msgid ""
 "def naive_splitk_gemv(\n"
 "    N: int,\n"
@@ -235,9 +236,9 @@ msgid ""
 "\n"
 "    @T.prim_func\n"
 "    def main(\n"
-"            A: T.Buffer((K,), dtype),\n"
-"            B: T.Buffer((N, K), dtype),\n"
-"            C: T.Buffer((N,), dtype),\n"
+"        A: T.Buffer((K,), dtype),\n"
+"        B: T.Buffer((N, K), dtype),\n"
+"        C: T.Buffer((N,), dtype),\n"
 "    ):\n"
 "        with T.Kernel(T.ceildiv(N, BLOCK_N), threads=(BLOCK_N, BLOCK_K)) as "
 "bn:\n"
@@ -261,24 +262,24 @@ msgid ""
 "    return main\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:164
+#: ../../../deeplearning_operators/gemv.md:166
 msgid ""
 "By introducing parallelism along K dimension, our kernel now achieves "
 "**~0.024 ms**, an improvement, but still not on par with torch/cuBLAS."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:166
+#: ../../../deeplearning_operators/gemv.md:168
 msgid "Customizing Parallelism in K Dimension"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:167
+#: ../../../deeplearning_operators/gemv.md:169
 msgid ""
 "If your K dimension is large, you can further customize how many elements "
 "each thread processes by introducing a `reduce_threads` parameter. This way, "
 "each thread handles multiple elements per iteration:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:169
+#: ../../../deeplearning_operators/gemv.md:171
 msgid ""
 "def splitk_gemv(\n"
 "    N: int,\n"
@@ -293,9 +294,9 @@ msgid ""
 "\n"
 "    @T.prim_func\n"
 "    def main(\n"
-"            A: T.Buffer((K,), dtype),\n"
-"            B: T.Buffer((N, K), dtype),\n"
-"            C: T.Buffer((N,), dtype),\n"
+"        A: T.Buffer((K,), dtype),\n"
+"        B: T.Buffer((N, K), dtype),\n"
+"        C: T.Buffer((N,), dtype),\n"
 "    ):\n"
 "        with T.Kernel(T.ceildiv(N, BLOCK_N), threads=(BLOCK_N, "
 "reduce_threads)) as bn:\n"
@@ -322,11 +323,11 @@ msgid ""
 "    return main\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:209
+#: ../../../deeplearning_operators/gemv.md:211
 msgid "Vectorized Reads"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:211
+#: ../../../deeplearning_operators/gemv.md:213
 msgid ""
 "GEMV is less computation intensive than GEMM as the computation intensity "
 "and memory throughput will be the optimization bottleneck. One effective "
@@ -335,7 +336,7 @@ msgid ""
 "vectorized`:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:213
+#: ../../../deeplearning_operators/gemv.md:215
 msgid ""
 "def splitk_gemv_vectorized(\n"
 "    N: int,\n"
@@ -351,9 +352,9 @@ msgid ""
 "\n"
 "    @T.prim_func\n"
 "    def main(\n"
-"            A: T.Buffer((K,), dtype),\n"
-"            B: T.Buffer((N, K), dtype),\n"
-"            C: T.Buffer((N,), dtype),\n"
+"        A: T.Buffer((K,), dtype),\n"
+"        B: T.Buffer((N, K), dtype),\n"
+"        C: T.Buffer((N,), dtype),\n"
 "    ):\n"
 "        with T.Kernel(T.ceildiv(N, BLOCK_N), threads=(BLOCK_N, "
 "reduce_threads)) as bn:\n"
@@ -380,17 +381,17 @@ msgid ""
 "    return main\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:254
+#: ../../../deeplearning_operators/gemv.md:256
 msgid ""
 "With vectorized read, now the kernel finishes in **~0.0084 ms**, which is "
 "getting close to cuBLAS performance."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:256
+#: ../../../deeplearning_operators/gemv.md:258
 msgid "`tvm_thread_allreduce` Instead of `atomicAdd`"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:258
+#: ../../../deeplearning_operators/gemv.md:260
 msgid ""
 "[`tvm_thread_allreduce`](https://tvm.apache.org/docs/reference/api/python/"
 "tir/tir.html#tvm.tir.tvm_thread_allreduce) has implemented optimization when "
@@ -398,7 +399,7 @@ msgid ""
 "plain smem + `atomidAdd`:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:260
+#: ../../../deeplearning_operators/gemv.md:262
 msgid ""
 "def splitk_gemv_vectorized_tvm(\n"
 "    N: int,\n"
@@ -414,9 +415,9 @@ msgid ""
 "\n"
 "    @T.prim_func\n"
 "    def main(\n"
-"            A: T.Buffer((K,), dtype),\n"
-"            B: T.Buffer((N, K), dtype),\n"
-"            C: T.Buffer((N,), dtype),\n"
+"        A: T.Buffer((K,), dtype),\n"
+"        B: T.Buffer((N, K), dtype),\n"
+"        C: T.Buffer((N,), dtype),\n"
 "    ):\n"
 "        with T.Kernel(T.ceildiv(N, BLOCK_N), threads=(BLOCK_N, "
 "reduce_threads)) as bn:\n"
@@ -437,10 +438,10 @@ msgid ""
 "B_local[k].astype(accum_dtype)\n"
 "            C_reduced = T.alloc_local((1,), accum_dtype)\n"
 "            with T.attr(\n"
-"                    T.comm_reducer(lambda x, y: x + y, [T.cast(0, "
+"                T.comm_reducer(lambda x, y: x + y, [T.cast(0, "
 "accum_dtype)]),\n"
-"                    \"reduce_scope\",\n"
-"                    T.reinterpret(T.uint64(0), dtype=\"handle\"),\n"
+"                \"reduce_scope\",\n"
+"                T.reinterpret(T.uint64(0), dtype=\"handle\"),\n"
 "            ):\n"
 "                T.evaluate(\n"
 "                    T.tvm_thread_allreduce(\n"
@@ -450,45 +451,51 @@ msgid ""
 "                        C_reduced[0],\n"
 "                        tk,\n"
 "                        dtype=\"handle\",\n"
-"                    ))\n"
+"                    )\n"
+"                )\n"
 "\n"
 "            C[bn * BLOCK_N + tn] = C_reduced[0]\n"
 "\n"
 "    return main\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:314
+#: ../../../deeplearning_operators/gemv.md:317
 msgid ""
 "With this optimization, the kernel latency now reduces from **~0.0084 ms** "
 "to **~0.0069 ms**, which is faster than torch/cuBLAS!"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:316
+#: ../../../deeplearning_operators/gemv.md:319
 msgid "Autotune"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:318
+#: ../../../deeplearning_operators/gemv.md:321
 msgid ""
 "`BLOCK_N`, `BLOCK_K`, `reduce_threads` are hyperparameters in our kernel, "
 "which can be tuned to improve performance. We can use the `tilelang."
 "autotune` feature to automatically search for optimal configurations:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:320
+#: ../../../deeplearning_operators/gemv.md:323
 msgid ""
 "def get_best_config(N, K):\n"
 "\n"
 "    def get_configs():\n"
 "        BLOCK_N = [2, 4, 8, 32, 64, 128]\n"
 "        reduce_threads = [4, 8, 32]\n"
-"        _configs = list(itertools.product(\n"
-"            BLOCK_N,\n"
-"            reduce_threads,\n"
-"        ))\n"
-"        configs = [{\n"
-"            \"BLOCK_N\": c[0],\n"
-"            \"reduce_threads\": c[1],\n"
-"        } for c in _configs]\n"
+"        _configs = list(\n"
+"            itertools.product(\n"
+"                BLOCK_N,\n"
+"                reduce_threads,\n"
+"            )\n"
+"        )\n"
+"        configs = [\n"
+"            {\n"
+"                \"BLOCK_N\": c[0],\n"
+"                \"reduce_threads\": c[1],\n"
+"            }\n"
+"            for c in _configs\n"
+"        ]\n"
 "        return configs\n"
 "\n"
 "    @autotune(\n"
@@ -515,9 +522,9 @@ msgid ""
 "\n"
 "        @T.prim_func\n"
 "        def main(\n"
-"                A: T.Buffer((K,), dtype),\n"
-"                B: T.Buffer((N, K), dtype),\n"
-"                C: T.Buffer((N,), dtype),\n"
+"            A: T.Buffer((K,), dtype),\n"
+"            B: T.Buffer((N, K), dtype),\n"
+"            C: T.Buffer((N,), dtype),\n"
 "        ):\n"
 "            with T.Kernel(T.ceildiv(N, BLOCK_N), threads=(BLOCK_N, "
 "reduce_threads)) as bn:\n"
@@ -538,10 +545,10 @@ msgid ""
 "B_local[k].astype(accum_dtype)\n"
 "                C_reduced = T.alloc_local((1,), accum_dtype)\n"
 "                with T.attr(\n"
-"                        T.comm_reducer(lambda x, y: x + y, [T.cast(0, "
+"                    T.comm_reducer(lambda x, y: x + y, [T.cast(0, "
 "accum_dtype)]),\n"
-"                        \"reduce_scope\",\n"
-"                        T.reinterpret(T.uint64(0), dtype=\"handle\"),\n"
+"                    \"reduce_scope\",\n"
+"                    T.reinterpret(T.uint64(0), dtype=\"handle\"),\n"
 "                ):\n"
 "                    T.evaluate(\n"
 "                        T.tvm_thread_allreduce(\n"
@@ -551,7 +558,8 @@ msgid ""
 "                            C_reduced[0],\n"
 "                            tk,\n"
 "                            dtype=\"handle\",\n"
-"                        ))\n"
+"                        )\n"
+"                    )\n"
 "\n"
 "                C[bn * BLOCK_N + tn] = C_reduced[0]\n"
 "\n"
@@ -560,13 +568,13 @@ msgid ""
 "    return kernel()\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:401
+#: ../../../deeplearning_operators/gemv.md:410
 msgid ""
 "After autotuning, now our kernel gets **~0.0067 ms**, the final generated "
 "CUDA kernel might like this:"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:403
+#: ../../../deeplearning_operators/gemv.md:412
 msgid ""
 "extern \"C\" __global__ void __launch_bounds__(64, 1) main_kernel(half_t* "
 "__restrict__ A, half_t* __restrict__ B, half_t* __restrict__ C) {\n"
@@ -624,17 +632,17 @@ msgid ""
 "}\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:445
+#: ../../../deeplearning_operators/gemv.md:454
 msgid ""
 "This corresponds closely to our `TileLang` program, with necessary "
 "synchronization and low-level optimizations inserted automatically."
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:447
+#: ../../../deeplearning_operators/gemv.md:456
 msgid "Conclusion"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:449
+#: ../../../deeplearning_operators/gemv.md:458
 msgid "Benchmark Table on Hopper GPU"
 msgstr ""
 
@@ -694,7 +702,7 @@ msgstr ""
 msgid "0.00675 ms"
 msgstr ""
 
-#: ../../../deeplearning_operators/gemv.md:460
+#: ../../../deeplearning_operators/gemv.md:469
 msgid ""
 "Triton Time: 0.0077344514429569244 In this tutorial, we implemented a simple "
 "GEMV kernel and learn that `TileLang` exposes low level control to user such "

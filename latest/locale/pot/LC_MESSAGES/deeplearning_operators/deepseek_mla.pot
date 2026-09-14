@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"POT-Creation-Date: 2026-09-14 14:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,23 +298,25 @@ msgstr ""
 
 #: ../../../deeplearning_operators/deepseek_mla.md:116
 msgid ""
-"T.annotate_layout({\n"
-"    S_shared: TileLang.layout.make_swizzled_layout(S_shared),\n"
-"})\n"
+"T.annotate_layout(\n"
+"    {\n"
+"        S_shared: TileLang.layout.make_swizzled_layout(S_shared),\n"
+"    }\n"
+")\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:122
+#: ../../../deeplearning_operators/deepseek_mla.md:124
 msgid ""
 "Here, `T.annotate_layout` allows users to specify any desired layout for a "
 "buffer. For convenience, TileLang provides the `make_swizzled_layout` "
 "primitive to automatically generate a swizzled layout."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:124
+#: ../../../deeplearning_operators/deepseek_mla.md:126
 msgid "Warp-Specialization"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:126
+#: ../../../deeplearning_operators/deepseek_mla.md:128
 msgid ""
 "The Hopper architecture commonly employs warp specialization for performance "
 "optimization. A typical approach is to designate one warpgroup as a producer "
@@ -325,7 +327,7 @@ msgid ""
 "through the `mbarrier` objects."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:128
+#: ../../../deeplearning_operators/deepseek_mla.md:130
 msgid ""
 "In TileLang, users are completely shielded from these implementation "
 "details. The frontend script is automatically transformed into a warp-"
@@ -333,22 +335,22 @@ msgid ""
 "synchronization automatically, enabling efficient computation."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:130
+#: ../../../deeplearning_operators/deepseek_mla.md:132
 msgid "Pipeline"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:132
+#: ../../../deeplearning_operators/deepseek_mla.md:134
 msgid ""
 "Pipeline is a technique used to improve memory access efficiency by "
 "overlapping memory access and computation. In TileLang, pipeline can be "
 "implemented through the `T.pipelined` annotation:"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:134
+#: ../../../deeplearning_operators/deepseek_mla.md:136
 msgid "T.pipelined(range: int, stage: int)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:138
+#: ../../../deeplearning_operators/deepseek_mla.md:140
 msgid ""
 "Here, `range` specifies the range of the pipeline, and `stage` specifies the "
 "stage of the pipeline. Multi-stage pipelining enables overlapping of "
@@ -358,11 +360,11 @@ msgid ""
 "be determined based on specific use cases."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:140
+#: ../../../deeplearning_operators/deepseek_mla.md:142
 msgid "Split-KV"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:142
+#: ../../../deeplearning_operators/deepseek_mla.md:144
 msgid ""
 "We have also implemented Split-KV optimization similar to [FlashDecoding]"
 "(https://pytorch.org/blog/flash-decoding/). Specifically, when the batch "
@@ -371,17 +373,17 @@ msgid ""
 "multiple SMs for parallel computation and then merge the results."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:144
+#: ../../../deeplearning_operators/deepseek_mla.md:146
 msgid ""
 "In our implementation, we have developed both split and combine kernels, "
 "allowing users to control the split size through a `num_split` parameter."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:146
+#: ../../../deeplearning_operators/deepseek_mla.md:148
 msgid "🚀 On AMD MI300X Accelerators"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:148
+#: ../../../deeplearning_operators/deepseek_mla.md:150
 msgid ""
 "Following our previous demonstration of [high-performance FlashMLA "
 "implementation on NVIDIA Hopper architectures using TileLang](https://github."
@@ -391,17 +393,17 @@ msgid ""
 "these platforms."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:150
+#: ../../../deeplearning_operators/deepseek_mla.md:152
 msgid "Architectural Considerations and Optimization Strategies"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:152
+#: ../../../deeplearning_operators/deepseek_mla.md:154
 msgid ""
 "Key implementation differences between Hopper and MI300X architectures "
 "include:"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:154
+#: ../../../deeplearning_operators/deepseek_mla.md:156
 msgid ""
 "**Instruction Set Variations**: The MI300X architecture eliminates the need "
 "for explicit Tensor Memory Access (TMA) instructions and warp "
@@ -409,23 +411,23 @@ msgid ""
 "architectures, resulting in identical source code manifestations."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:156
+#: ../../../deeplearning_operators/deepseek_mla.md:158
 msgid ""
 "**Shared Memory Constraints**: With 64KB of shared memory compared to "
 "Hopper's 228KB, MI300X implementations require careful memory management. "
 "Our optimization strategy includes:"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:157
+#: ../../../deeplearning_operators/deepseek_mla.md:159
 msgid "Reducing software pipeline stages"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:158
+#: ../../../deeplearning_operators/deepseek_mla.md:160
 msgid ""
 "Register-based caching of Q matrices instead of shared memory utilization:"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:159
+#: ../../../deeplearning_operators/deepseek_mla.md:161
 msgid ""
 "# Original shared memory allocation\n"
 "Q_shared = T.alloc_shared([block_H, dim], dtype)\n"
@@ -436,14 +438,14 @@ msgid ""
 "Q_pe_local = T.alloc_fragment([block_H, pe_dim], dtype)\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:169
+#: ../../../deeplearning_operators/deepseek_mla.md:171
 msgid ""
 "**Tile Size Flexibility**: The absence of WGMMA instructions on MI300X "
 "permits more flexible tile size selection, removing the requirement for "
 "block_m to be multiples of 64."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:171
+#: ../../../deeplearning_operators/deepseek_mla.md:173
 msgid ""
 "**Memory Bank Conflict Swizzling**: MI300x has different memory bank "
 "conflict rules compared to NVIDIA, so we need to use different swizzling "
@@ -451,18 +453,18 @@ msgid ""
 "visible differences in the code."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:173
+#: ../../../deeplearning_operators/deepseek_mla.md:175
 msgid "Performance Evaluation"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:175
+#: ../../../deeplearning_operators/deepseek_mla.md:177
 msgid ""
 "We conducted comparative performance analysis across multiple frameworks "
 "using float16 precision with batch sizes 64 and 128. The experimental "
 "results demonstrate:"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:177
+#: ../../../deeplearning_operators/deepseek_mla.md:179
 msgid ""
 "<figure style=\"text-align: center\">\n"
 "  <a href=\"../figures/flashmla-amd.png\">\n"
@@ -475,7 +477,7 @@ msgid ""
 "</figure>\n"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:184
+#: ../../../deeplearning_operators/deepseek_mla.md:186
 msgid ""
 "Notably, TileLang achieves performance parity with hand-optimized assembly "
 "kernels (aiter-asm) in most test cases, while significantly outperforming "
@@ -484,11 +486,11 @@ msgid ""
 "TileLang's efficiency and programmability advantages."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:186
+#: ../../../deeplearning_operators/deepseek_mla.md:188
 msgid "Future Optimization Opportunities"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:188
+#: ../../../deeplearning_operators/deepseek_mla.md:190
 msgid ""
 "**Memory Bank Conflict Mitigation**: Current implementations primarily "
 "address bank conflicts in NT layouts through TileLang's automatic "
@@ -496,21 +498,21 @@ msgid ""
 "memory layouts remains an open research direction."
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:190
+#: ../../../deeplearning_operators/deepseek_mla.md:192
 msgid ""
 "**Dimension Parallelization**: For large MLA dimensions (e.g., 576 "
 "elements), we propose investigating head dimension partitioning strategies "
 "to:"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:191
+#: ../../../deeplearning_operators/deepseek_mla.md:193
 msgid "Reduce shared memory pressure"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:192
+#: ../../../deeplearning_operators/deepseek_mla.md:194
 msgid "Improve compute-to-memory access ratios"
 msgstr ""
 
-#: ../../../deeplearning_operators/deepseek_mla.md:193
+#: ../../../deeplearning_operators/deepseek_mla.md:195
 msgid "Enhance parallelism through dimension-wise task distribution"
 msgstr ""
