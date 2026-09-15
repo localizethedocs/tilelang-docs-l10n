@@ -1,0 +1,130 @@
+tilelang.language.dtypes
+========================
+
+.. py:module:: tilelang.language.dtypes
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   tilelang.language.dtypes.AnyDType
+   tilelang.language.dtypes.dtype_name
+   tilelang.language.dtypes.int_
+   tilelang.language.dtypes.__all__
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.language.dtypes.dtype
+   tilelang.language.dtypes.bool
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.language.dtypes.__dtype_call__
+   tilelang.language.dtypes.__dtype_as_torch__
+   tilelang.language.dtypes.__dtype_new__
+   tilelang.language.dtypes.__dtype_bytes__
+   tilelang.language.dtypes.get_tvm_dtype
+
+
+Module Contents
+---------------
+
+.. py:class:: dtype
+
+   Bases: :py:obj:`Generic`\ [\ :py:obj:`_T`\ ]
+
+
+   Abstract base class for generic types.
+
+   A generic type is typically declared by inheriting from
+   this class parameterized with one or more type variables.
+   For example, a generic mapping type might be defined as::
+
+     class Mapping(Generic[KT, VT]):
+         def __getitem__(self, key: KT) -> VT:
+             ...
+         # Etc.
+
+   This class can then be used as follows::
+
+     def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:
+         try:
+             return mapping[key]
+         except KeyError:
+             return default
+
+
+   .. py:property:: bits
+      :type: int
+
+
+
+   .. py:property:: bytes
+      :type: int
+
+
+
+   .. py:method:: as_torch()
+
+
+.. py:data:: AnyDType
+
+.. py:data:: dtype_name
+   :value: 'uint16'
+
+
+.. py:data:: int_
+
+.. py:function:: __dtype_call__(self, *args, is_size_var = False)
+
+.. py:function:: __dtype_as_torch__(self)
+
+   Convert TileLang dtype to PyTorch dtype.
+
+
+.. py:function:: __dtype_new__(cls, value)
+
+.. py:function:: __dtype_bytes__(self)
+
+   Return the number of bytes for this dtype.
+
+
+.. py:function:: get_tvm_dtype(value)
+
+.. py:class:: bool
+
+   Bases: :py:obj:`dtype`
+
+
+   Abstract base class for generic types.
+
+   A generic type is typically declared by inheriting from
+   this class parameterized with one or more type variables.
+   For example, a generic mapping type might be defined as::
+
+     class Mapping(Generic[KT, VT]):
+         def __getitem__(self, key: KT) -> VT:
+             ...
+         # Etc.
+
+   This class can then be used as follows::
+
+     def lookup_name(mapping: Mapping[KT, VT], key: KT, default: VT) -> VT:
+         try:
+             return mapping[key]
+         except KeyError:
+             return default
+
+
+.. py:data:: __all__
+

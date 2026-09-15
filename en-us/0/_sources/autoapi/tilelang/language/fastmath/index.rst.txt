@@ -1,0 +1,11 @@
+tilelang.language.fastmath
+==========================
+
+.. py:module:: tilelang.language.fastmath
+
+.. autoapi-nested-parse::
+
+   Fast math operations exposed on the TileLang language surface.
+
+
+
