@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -290,13 +290,12 @@ msgid ""
 "from tilelang import transform\n"
 "from tilelang.engine.phase import LowerAndLegalize\n"
 "\n"
-"with transform.PassContext(\n"
-"    config={transform.PassConfigKey.TL_FORCE_LET_INLINE: True}\n"
-"):\n"
+"with transform.PassContext(config={transform.PassConfigKey."
+"TL_FORCE_LET_INLINE: True}):\n"
 "    lowered_mod = LowerAndLegalize(input_mod, target)\n"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:142
+#: ../../../compiler_internals/letstmt_inline.md:140
 msgid ""
 "If the flag is left unset (the default), the eager pass is only applied when "
 "downstream transforms opt in (for example, by calling `_Simplify(..., "
@@ -305,71 +304,71 @@ msgid ""
 "requests it."
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:144
+#: ../../../compiler_internals/letstmt_inline.md:142
 msgid "Summary"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:146
+#: ../../../compiler_internals/letstmt_inline.md:144
 msgid "The LetStmt inlining mechanism is a **conservative optimization** that:"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:147
+#: ../../../compiler_internals/letstmt_inline.md:145
 msgid ""
 "Aggressively inlines simple, pure integer expressions to simplify the IR"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:148
+#: ../../../compiler_internals/letstmt_inline.md:146
 msgid ""
 "Protects variables used in buffer definitions to avoid breaking buffer access"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:149
+#: ../../../compiler_internals/letstmt_inline.md:147
 msgid "Helps reduce IR complexity and improve code generation"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:150
+#: ../../../compiler_internals/letstmt_inline.md:148
 msgid ""
 "Can be forced through `TL_FORCE_LET_INLINE` when deterministic eager "
 "inlining is required"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:152
+#: ../../../compiler_internals/letstmt_inline.md:150
 msgid "Understanding when inlining happens is crucial for:"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:153
+#: ../../../compiler_internals/letstmt_inline.md:151
 msgid "Debugging compilation issues"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:154
+#: ../../../compiler_internals/letstmt_inline.md:152
 msgid "Understanding generated code"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:155
+#: ../../../compiler_internals/letstmt_inline.md:153
 msgid "Writing efficient TileLang programs"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:156
+#: ../../../compiler_internals/letstmt_inline.md:154
 msgid "Identifying potential optimization opportunities or bugs"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:158
+#: ../../../compiler_internals/letstmt_inline.md:156
 msgid "Related Files"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:160
+#: ../../../compiler_internals/letstmt_inline.md:158
 msgid "`src/transform/simplify.cc`: Main Simplify implementation"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:161
+#: ../../../compiler_internals/letstmt_inline.md:159
 msgid "`src/transform/frontend_legalize.cc`: Standalone LetInline pass"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:162
+#: ../../../compiler_internals/letstmt_inline.md:160
 msgid "`tilelang/engine/phase.py`: Pipeline integration for eager LetInlining"
 msgstr ""
 
-#: ../../../compiler_internals/letstmt_inline.md:163
+#: ../../../compiler_internals/letstmt_inline.md:161
 msgid ""
 "`testing/python/transform/test_tilelang_transform_let_inline.py`: Regression "
 "coverage for the pass"

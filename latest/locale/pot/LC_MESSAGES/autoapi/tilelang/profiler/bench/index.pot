@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:39+0000\n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,121 +22,118 @@ msgid "tilelang.profiler.bench"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:8
-msgid "Profiler and benchmarking utilities for PyTorch functions."
+msgid "Common entry point for GPU and wall-clock benchmarking."
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:13
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
-msgid ":py:obj:`IS_CUDA <tilelang.profiler.bench.IS_CUDA>`\\"
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:20:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.profiler.bench.logger>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:20:<autosummary>:1
 msgid ":py:obj:`device <tilelang.profiler.bench.device>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:21:<autosummary>:1
-msgid ":py:obj:`Event <tilelang.profiler.bench.Event>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:23
-msgid "Classes"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:29:<autosummary>:1
-msgid ""
-":py:obj:`suppress_stdout_stderr <tilelang.profiler.bench."
-"suppress_stdout_stderr>`\\"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:43
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:29:<autosummary>:1
-msgid "Context manager to suppress stdout and stderr output."
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:31
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:22
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:37:<autosummary>:1
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`do_bench <tilelang.profiler.bench.do_bench>`\\ \\(fn\\[\\, "
 "warmup\\, rep\\, \\_n\\_warmup\\, \\_n\\_repeat\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:64
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:37:<autosummary>:1
-msgid "Benchmark the runtime of a PyTorch function with L2 cache management."
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:40
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:28:<autosummary>:1
+msgid "Benchmark a callable with GPU timing or host wall-clock timing."
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:39
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:30
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:45
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:42
 msgid ""
-"Source: https://github.com/deepseek-ai/DeepGEMM/blob/main/deep_gemm/testing/"
-"bench.py"
+"The existing GPU timing methods provide accurate kernel timing by: - "
+"Clearing L2 cache between runs for consistent measurements - Auto-"
+"calculating warmup and repeat counts based on kernel runtime - Supporting "
+"multiple profiling backends (CUDA/MPS events, CUPTI, or CUDA graph replay) - "
+"Offering flexible result aggregation (mean/median/min/max/quantiles)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:66
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:48
 msgid ""
-"This function provides accurate GPU kernel timing by: - Clearing L2 cache "
-"between runs for consistent measurements - Auto-calculating warmup and "
-"repeat counts based on kernel runtime - Supporting multiple profiling "
-"backends (CUDA events, CUPTI, or CUDA graph replay) - Offering flexible "
-"result aggregation (mean/median/min/max/quantiles)"
+"Wall timing measures host elapsed time without cache flushing. With no "
+"device or a CPU device, the callable is assumed to be synchronous. An "
+"explicit CUDA/HIP or MPS device enables synchronization before and after "
+"each wall-clock sample, including launch and synchronization overhead."
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:72
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:53
 msgid "Function to benchmark"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:73
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:54
 msgid "Target warmup time in milliseconds (default: 25)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:74
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:55
 msgid "Target total benchmark time in milliseconds (default: 100)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:75
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:56
 msgid "Manual override for warmup iterations (default: 0 = auto)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:76
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:57
 msgid "Manual override for benchmark iterations (default: 0 = auto)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:77
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:58
 msgid "Performance percentiles to compute (e.g., [0.5, 0.95])"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:78
-msgid "Use faster L2 cache flush with int32 vs int8 (default: True)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:79
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:59
 msgid ""
-"Profiler backend - \"event\" (CUDA events), \"cupti\", or "
-"\"cudagraph\" (default: \"event\")"
+"Use faster GPU L2 cache flush with int32 vs int8 (default: True); ignored by "
+"\"wall\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:80
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:60
+msgid ""
+"Timing method - \"event\", \"cupti\", \"cudagraph\", or \"wall\" (default: "
+"\"event\")"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:61
 msgid "Result aggregation method - \"mean\", \"median\", \"min\", or \"max\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:62
+msgid ""
+"Optional device to benchmark on. CUDA/HIP events, streams, cache buffers, "
+"and synchronization are scoped to that device. Event timing also accepts "
+"MPS; wall timing accepts CPU and MPS."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:65
+msgid ""
+"GPU L2 cache flush buffer size in MB (default: 256); ignored by \"wall\""
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/profiler/bench/index.rst:82
+#: ../../../autoapi/tilelang/profiler/bench/index.rst:67
 msgid ""
 "Runtime in milliseconds (float) or list of quantile values if quantiles "
 "specified"

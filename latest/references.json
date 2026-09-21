@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-09-21 21:18:16 +0800",
+      "hash" : "1b908fc0ebac6649912afc02521f8c955f92a317",
+      "title" : "[BugFix] Reject non-power-of-two AllReduce thread strides (#3266)"
     }
   },
   "type" : "branch",

@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:2
+msgid "tilelang.profiler.wall"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:8
+msgid "Wall-clock benchmarking with optional explicit device synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`bench_with_wall <tilelang.profiler.wall.bench_with_wall>`\\ "
+"\\(fn\\, n\\_repeat\\[\\, quantiles\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:25
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:19:<autosummary>:1
+msgid "Time each call in milliseconds, including optional synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:27
+msgid ""
+"Synchronize before starting each sample to exclude preceding device work, "
+"then wait for the timed call to complete before stopping the clock. "
+"Quantiles use linear interpolation; median returns the lower middle sample, "
+"matching the GPU benchmark's aggregation conventions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/wall/index.rst:0
+msgid "Return type"
+msgstr ""

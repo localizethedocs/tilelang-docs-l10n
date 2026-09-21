@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,24 +25,63 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:17:<autosummary>:1
 msgid ":py:obj:`IS_CUDA <tilelang.utils.device.IS_CUDA>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:17:<autosummary>:1
 msgid ":py:obj:`IS_MPS <tilelang.utils.device.IS_MPS>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:18
+#: ../../../autoapi/tilelang/utils/device/index.rst:17:<autosummary>:1
+msgid ":py:obj:`Event <tilelang.utils.device.Event>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:19
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:27:<autosummary>:1
 msgid ""
 ":py:obj:`get_current_device <tilelang.utils.device.get_current_device>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:26
+#: ../../../autoapi/tilelang/utils/device/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`device_synchronize <tilelang.utils.device.device_synchronize>`\\ "
+"\\(\\[device\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:45
+#: ../../../autoapi/tilelang/utils/device/index.rst:27:<autosummary>:1
+msgid "Synchronize CUDA/HIP or MPS, preferring CUDA when no device is given."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`get_available_cpu_count <tilelang.utils.device."
+"get_available_cpu_count>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:50
+#: ../../../autoapi/tilelang/utils/device/index.rst:27:<autosummary>:1
+msgid "CPU cores available to this process (cpuset affinity), at least 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:29
 msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:52
+msgid ""
+"Falls back to ``os.cpu_count`` where affinity is unavailable (macOS/Windows)."
 msgstr ""
