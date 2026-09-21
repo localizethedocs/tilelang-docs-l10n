@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:2
+msgid "tilelang.cuda.language.atomic"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:8
+msgid "CUDA dialect of the atomic operators: the common ops plus CUDA knobs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`atomic_add <tilelang.cuda.language.atomic.atomic_add>`\\ \\(dst\\, "
+"value\\[\\, memory\\_order\\, return\\_prev\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:25
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:19:<autosummary>:1
+msgid "Atomically add ``value`` into ``dst``, with CUDA lowering knobs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:27
+msgid ""
+"Same semantics as the common :func:`tilelang.language.atomic.atomic_add`. "
+"``use_tma`` selects the sm90+ TMA ``cp.reduce`` lowering for the tile-region "
+"path; targets without TMA reject it at compile time."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:31
+msgid "Destination buffer/address to apply the atomic add."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:33
+msgid "Value to add atomically."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:35
+msgid ""
+"Memory-order name controlling the atomic operation's ordering (\"relaxed\", "
+"\"consume\", \"acquire\", \"release\", \"acq_rel\", \"seq_cst\")."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:39
+msgid "Return the previous value (scalar path only)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:41
+msgid ""
+"If True, lower the tile-region atomic add through TMA ``cp.reduce``. "
+"Available on sm90+ only (default False)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:44
+msgid ""
+"Extra annotations for the tile-region path; values in it take precedence "
+"over the individual keywords."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:48
+msgid "A handle to the atomic operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/atomic/index.rst:0
+msgid "Return type"
+msgstr ""

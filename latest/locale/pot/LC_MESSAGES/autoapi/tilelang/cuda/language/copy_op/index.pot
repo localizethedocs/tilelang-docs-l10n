@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:2
+msgid "tilelang.cuda.language.copy_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:8
+msgid ""
+"CUDA dialect of the copy operators: the common ops plus CUDA copy hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`copy <tilelang.cuda.language.copy_op.copy>`\\ \\(src\\, dst\\, "
+"\\*\\[\\, coalesced\\_width\\, disable\\_tma\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:26
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:20:<autosummary>:1
+msgid "Copy data between memory regions, with CUDA lowering hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`im2col <tilelang.cuda.language.copy_op.im2col>`\\ \\(img\\, col\\, "
+"nhw\\_step\\, c\\_step\\, kernel\\, stride\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:64
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:20:<autosummary>:1
+msgid "Perform im2col transformation for 2D convolution, with CUDA hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:28
+msgid ""
+"Same semantics as the common :func:`tilelang.language.copy_op.copy`; the "
+"extra keywords steer how the CUDA backend lowers the copy. They are "
+"performance hints recorded on the tile op: compiling the same kernel for a "
+"target that has no use for them leaves the result unchanged."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:33
+msgid "Source memory region (Buffer, BufferLoad or BufferRegion)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:34
+msgid "Destination memory region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:35
+msgid "Width for coalesced memory access. Defaults to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:38
+msgid ""
+"Never lower this copy through TMA even when the shape and scopes qualify. "
+"Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:41
+msgid ""
+"L2 cache eviction priority for the generated load/store or TMA instruction, "
+"one of ``\"evict_normal\"``, ``\"evict_first\"``, ``\"evict_last\"``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:45
+msgid ""
+"Preferred lowering instruction category: ``\"tma\"``, ``\"cp_async\"`` or "
+"``\"sync\"``. For ``\"tma\"``, T.copy keeps synchronous copy semantics; "
+"global -> shared copies lower through TMA with an automatically allocated "
+"barrier and wait when constraints are satisfied."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:51
+msgid ""
+"Additional annotations dict; values in it take precedence over the "
+"individual keywords."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:54
+msgid "Parallel loop layout hint for the SIMT copy path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:58
+msgid "A handle to the copy operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/copy_op/index.rst:66
+msgid ""
+"Same semantics as the common :func:`tilelang.language.copy_op.im2col`; "
+"``eviction_policy`` is the L2 cache hint consumed by the CUDA TMA im2col "
+"lowering (ignored by the generic SIMT fallback other targets use)."
+msgstr ""

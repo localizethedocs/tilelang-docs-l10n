@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:2
+msgid "tilelang.profiler.torch_bench"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:8
+msgid "PyTorch GPU timing implementations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`suppress_stdout_stderr <tilelang.profiler.torch_bench."
+"suppress_stdout_stderr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:35
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:19:<autosummary>:1
+msgid "Context manager to suppress stdout and stderr output."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`bench_with_cuda_events <tilelang.profiler.torch_bench."
+"bench_with_cuda_events>`\\ \\(fn\\, cache\\, n\\_repeat\\, quantiles\\, ..."
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:48
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:29:<autosummary>:1
+msgid "Benchmark using CUDA/HIP or MPS events for timing."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`bench_with_cupti <tilelang.profiler.torch_bench."
+"bench_with_cupti>`\\ \\(fn\\, cache\\, n\\_repeat\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:53
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:29:<autosummary>:1
+msgid "Benchmark using CUPTI profiler for detailed kernel timing."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`bench_with_cudagraph <tilelang.profiler.torch_bench."
+"bench_with_cudagraph>`\\ \\(fn\\, cache\\, n\\_repeat\\, quantiles\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:58
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:29:<autosummary>:1
+msgid "Benchmark using CUDA graph for minimal launch overhead."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:31
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:37
+msgid ""
+"Source: https://github.com/deepseek-ai/DeepGEMM/blob/main/deep_gemm/testing/"
+"bench.py"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:60
+msgid ""
+"This implementation follows triton.testing.do_bench_cudagraph. It captures "
+"the kernel execution in a CUDA graph and replays it multiple times to "
+"minimize host overhead and provide accurate timing measurements."
+msgstr ""
+
+#: ../../../autoapi/tilelang/profiler/torch_bench/index.rst:64
+msgid ""
+"Note: Cache flushing is done before graph replay, not within the graph, "
+"since CUDA graphs require fixed execution patterns."
+msgstr ""

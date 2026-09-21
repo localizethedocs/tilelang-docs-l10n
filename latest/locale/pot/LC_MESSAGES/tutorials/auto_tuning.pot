@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,31 +112,19 @@ msgstr ""
 #: ../../../tutorials/auto_tuning.md:47
 msgid ""
 "configs = [\n"
-"    {\n"
-"        \"block_M\": 128,\n"
-"        \"block_N\": 128,\n"
-"        \"block_K\": 128,\n"
-"        \"num_stages\": 3,\n"
-"        \"thread_num\": 128,\n"
-"        \"enable_rasteration\": True\n"
-"    },\n"
-"        {\n"
-"        \"block_M\": 32,\n"
-"        \"block_N\": 32,\n"
-"        \"block_K\": 32,\n"
-"        \"num_stages\": 0,\n"
-"        \"thread_num\": 32,\n"
-"        \"enable_rasteration\": False\n"
-"    },\n"
+"    {\"block_M\": 128, \"block_N\": 128, \"block_K\": 128, \"num_stages\": "
+"3, \"thread_num\": 128, \"enable_rasteration\": True},\n"
+"    {\"block_M\": 32, \"block_N\": 32, \"block_K\": 32, \"num_stages\": 0, "
+"\"thread_num\": 32, \"enable_rasteration\": False},\n"
 "    # ...additional configurations...\n"
 "]\n"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:68
+#: ../../../tutorials/auto_tuning.md:54
 msgid "It can also be given by combinatorial traversal of different parameters"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:69
+#: ../../../tutorials/auto_tuning.md:55
 msgid ""
 "import itertools\n"
 "\n"
@@ -154,54 +142,49 @@ msgid ""
 "        num_stages,\n"
 "        thread_num,\n"
 "        enable_rasterization,\n"
-"    ))\n"
+"    )\n"
+")\n"
 "\n"
 "configs = [\n"
-"    {\n"
-"        \"block_M\": c[0],\n"
-"        \"block_N\": c[1],\n"
-"        \"block_K\": c[2],\n"
-"        \"num_stages\": c[3],\n"
-"        \"thread_num\": c[4],\n"
-"        \"enable_rasteration\": c[5]\n"
-"    } for c in _configs\n"
+"    {\"block_M\": c[0], \"block_N\": c[1], \"block_K\": c[2], "
+"\"num_stages\": c[3], \"thread_num\": c[4], \"enable_rasteration\": c[5]}\n"
+"    for c in _configs\n"
 "]\n"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:99
+#: ../../../tutorials/auto_tuning.md:80
 msgid "Step 3: Compile and Benchmark"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:100
+#: ../../../tutorials/auto_tuning.md:81
 msgid "Configure JIT compilation and benchmarking settings:"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:101
+#: ../../../tutorials/auto_tuning.md:82
 msgid ""
-"autotuner = AutoTuner.from_kernel(\n"
-"    kernel=kernel, configs=get_configs(M, N, K, with_roller))."
-"set_compile_args(\n"
-"        out_idx=[-1],\n"
-"        supply_type=tl.TensorSupplyType.Integer,\n"
-"        ref_prog=ref_program,\n"
-"        skip_check=False,\n"
-"        target=\"auto\",\n"
-"    )\n"
+"autotuner = AutoTuner.from_kernel(kernel=kernel, configs=get_configs(M, N, "
+"K, with_roller)).set_compile_args(\n"
+"    out_idx=[-1],\n"
+"    supply_type=tl.TensorSupplyType.Integer,\n"
+"    ref_prog=ref_program,\n"
+"    skip_check=False,\n"
+"    target=\"auto\",\n"
+")\n"
 "result = autotuner.run(warmup=3, rep=20)\n"
 "out_c = result.kernel(a, b)\n"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:113
+#: ../../../tutorials/auto_tuning.md:93
 msgid ""
 "The result object contains optimized kernel implementation which can be used "
 "by users directly"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:115
+#: ../../../tutorials/auto_tuning.md:95
 msgid "Using Carver to Auto-Generate Candidate Configurations"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:117
+#: ../../../tutorials/auto_tuning.md:97
 msgid ""
 "Carver is a lightweight framework for generating and ranking tile "
 "configurations (also known as tiling strategies, blocking schemes, or "
@@ -210,13 +193,13 @@ msgid ""
 "multiplication, elementwise transforms, and other reduction-oriented kernels."
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:119
+#: ../../../tutorials/auto_tuning.md:99
 msgid ""
 "or common operators, Carver provides pre-built templates (e.g., "
 "`MatmulTemplate`):"
 msgstr ""
 
-#: ../../../tutorials/auto_tuning.md:121
+#: ../../../tutorials/auto_tuning.md:101
 msgid ""
 "# Configure Matmul template\n"
 "arch = CUDA(\"cuda\")\n"
@@ -234,7 +217,6 @@ msgid ""
 "\n"
 "# Configure candidate parameters\n"
 "for hint in roller_hints:\n"
-"\n"
 "    # ...existing code...\n"
 "\n"
 "    config[\"block_M\"] = block_m\n"
@@ -244,5 +226,4 @@ msgid ""
 "    config[\"thread_num\"] = block_rows * block_cols * 32\n"
 "    config[\"enable_rasteration\"] = hint.rasterization_plan is not "
 "NoRasterization\n"
-"\n"
 msgstr ""

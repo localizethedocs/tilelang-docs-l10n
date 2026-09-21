@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:2
+msgid "tilelang.tileop.gemm_blockscaled.gemm_blockscaled_base"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:8
+msgid "Shared accessors for block-scaled GEMM backend implementations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`GemmBlockScaledMixin <tilelang.tileop.gemm_blockscaled."
+"gemm_blockscaled_base.GemmBlockScaledMixin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:25
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:19:<autosummary>:1
+msgid "Scale-factor operands and knobs of a block-scaled GEMM implementation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:27
+msgid ""
+"Mixed into a dense backend implementation class (``GemmTCGEN5``, "
+"``GemmMMA``, ...) whose ``gemm_node`` is a ``GemmBlockScaled``. It owns "
+"everything the dense classes must not know about: the SFA/SFB regions, the "
+"logical K-axis start and the ``sf_*`` annotations. Which scale layouts a "
+"backend supports stays with that backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/gemm_blockscaled/gemm_blockscaled_base/index.rst:67
+msgid ""
+"Scale-factor layout name from the annotations; ``\"rowmajor\"`` by default."
+msgstr ""

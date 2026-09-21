@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 14:49+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:2
+msgid "tilelang.cuda.op.gemm.gemm_tcgen05_blockscaled"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:8
+msgid "Blackwell TCGEN5MMA block-scaled GEMM lowering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`GEMM_INST_TCGEN05_BLOCK_SCALED <tilelang.cuda.op.gemm."
+"gemm_tcgen05_blockscaled.GEMM_INST_TCGEN05_BLOCK_SCALED>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:21
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`GemmTCGEN5BlockScaled <tilelang.cuda.op.gemm."
+"gemm_tcgen05_blockscaled.GemmTCGEN5BlockScaled>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:27:<autosummary>:1
+msgid "``kind::mxf8f6f4.block_scale`` TCGEN5MMA with A/B in shared memory,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:37
+msgid ""
+"Bases: :py:obj:`tilelang.tileop.gemm_blockscaled.gemm_blockscaled_base."
+"GemmBlockScaledMixin`, :py:obj:`tilelang.cuda.op.gemm.gemm_tcgen05."
+"GemmTCGEN5`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:40
+msgid ""
+"``kind::mxf8f6f4.block_scale`` TCGEN5MMA with A/B in shared memory, the "
+"accumulator in tensor memory and SFA/SFB already resident in tensor memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:44
+msgid ""
+"Shares the shared-operand swizzle inference and emitter plumbing with the "
+"dense ``GemmTCGEN5``; differs in the fixed 1x1 warp partition (kept even "
+"under ``cta_group::2``), the dense-only (no ``.ws``) instruction shapes and "
+"the block-scaled MMA issue."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:60
+msgid "Lower to TIR containing block-scaled TCGEN5MMA calls."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/op/gemm/gemm_tcgen05_blockscaled/index.rst:62
+msgid ""
+"Follows the same completion protocol as the dense TCGEN05 lowering: the "
+"synchronous `T.gemm_blockscaled` posts completion to `mbar` and waits on it "
+"right after issue, while the explicit `is_tcgen05` op never waits and may "
+"omit `mbar` when the caller or WS schedule emits a later completion arrival."
+msgstr ""
