@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:2
+msgid "tilelang.carver.arch.metal"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:14:<autosummary>:1
+msgid ":py:obj:`METAL <tilelang.carver.arch.metal.METAL>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:33
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:14:<autosummary>:1
+msgid ""
+"Represents the architecture of a computing device, capturing various "
+"hardware specifications."
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`is_metal_arch <tilelang.carver.arch.metal.is_metal_arch>`\\ "
+"\\(arch\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/carver/arch/metal/index.rst:30
+msgid "Bases: :py:obj:`tilelang.carver.arch.arch_base.TileDevice`"
+msgstr ""
