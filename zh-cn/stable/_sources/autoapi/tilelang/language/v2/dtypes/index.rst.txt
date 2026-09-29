@@ -1,0 +1,63 @@
+tilelang.language.v2.dtypes
+===========================
+
+.. py:module:: tilelang.language.v2.dtypes
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   tilelang.language.v2.dtypes.AnyDType
+   tilelang.language.v2.dtypes.int_
+   tilelang.language.v2.dtypes.__all__
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   tilelang.language.v2.dtypes.dtype
+   tilelang.language.v2.dtypes.bool
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.language.v2.dtypes.__dtype_call__
+   tilelang.language.v2.dtypes.__dtype_new__
+   tilelang.language.v2.dtypes.get_tvm_dtype
+
+
+Module Contents
+---------------
+
+.. py:class:: dtype
+
+   Bases: :py:obj:`Generic`\ [\ :py:obj:`_T`\ ]
+
+
+   .. py:method:: torch()
+
+
+.. py:data:: AnyDType
+
+.. py:data:: int_
+
+.. py:function:: __dtype_call__(self, expr=None, is_size_var = False)
+
+.. py:function:: __dtype_new__(cls, value)
+
+.. py:function:: get_tvm_dtype(value)
+
+.. py:class:: bool
+
+   Bases: :py:obj:`dtype`
+
+
+.. py:data:: __all__
+
