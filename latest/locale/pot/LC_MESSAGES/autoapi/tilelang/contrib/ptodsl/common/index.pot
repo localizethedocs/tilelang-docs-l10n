@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:2
+msgid "tilelang.contrib.ptodsl.common"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:8
+msgid "Common PTODSL compatibility helpers used by generated TileLang kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`coerce_i1 <tilelang.contrib.ptodsl.common.coerce_i1>`\\ \\(value\\, "
+"\\*\\, context\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:36
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Coerce a scalar value to the PTODSL i1 representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`coerce_i8 <tilelang.contrib.ptodsl.common.coerce_i8>`\\ \\(value\\, "
+"\\*\\, context\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:41
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Coerce a scalar value to the PTODSL i8 representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`coerce_i16 <tilelang.contrib.ptodsl.common.coerce_i16>`\\ "
+"\\(value\\, \\*\\, context\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:46
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Coerce a scalar value to the PTODSL i16 representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`coerce_i32 <tilelang.contrib.ptodsl.common.coerce_i32>`\\ "
+"\\(value\\, \\*\\, context\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:51
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Coerce a scalar value to the PTODSL i32 representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`coerce_i64 <tilelang.contrib.ptodsl.common.coerce_i64>`\\ "
+"\\(value\\, \\*\\, context\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:56
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Coerce a scalar value to the PTODSL i64 representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`coerce_runtime_integer_value <tilelang.contrib.ptodsl.common."
+"coerce_runtime_integer_value>`\\ \\(value\\, target\\_type\\, \\*\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:61
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Coerce a runtime integer to the requested PTODSL scalar type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`unwrap_surface_value <tilelang.contrib.ptodsl.common."
+"unwrap_surface_value>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:66
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Return the underlying IR value for a PTODSL surface value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`wrap_surface_value <tilelang.contrib.ptodsl.common."
+"wrap_surface_value>`\\ \\(value\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:71
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Wrap an IR value in PTODSL's public surface representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`as_logical_bool <tilelang.contrib.ptodsl.common.as_logical_bool>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:76
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Normalize a scalar predicate to i1, including byte-backed i8 bools."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`wrap_const <tilelang.contrib.ptodsl.common.wrap_const>`\\ "
+"\\(value\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:81
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+"Wrap a Python literal as a traced constant of *dtype*; traced values pass "
+"through."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`logical_not <tilelang.contrib.ptodsl.common.logical_not>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:86
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+"Negate a scalar i1 or byte-backed i8 predicate without Python truthiness."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid ""
+":py:obj:`if_then_else <tilelang.contrib.ptodsl.common.if_then_else>`\\ "
+"\\(condition\\, true\\_fn\\, false\\_fn\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:91
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:30:<autosummary>:1
+msgid "Trace a PTODSL conditional expression with lazily evaluated branches."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/common/index.rst:32
+msgid "Module Contents"
+msgstr ""

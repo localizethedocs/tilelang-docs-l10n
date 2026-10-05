@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:2
+msgid "tilelang.ascend.torch_exchange"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:8
+msgid "Runtime-only Torch NPU stream integration for TVM-FFI execution."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`install_torch_npu_stream_exchange <tilelang.ascend.torch_exchange."
+"install_torch_npu_stream_exchange>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:28
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid "Make TVM-FFI submit Ascend kernels to Torch's current NPU stream."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`is_torch_npu_stream_exchange_installed <tilelang.ascend."
+"torch_exchange.is_torch_npu_stream_exchange_installed>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:33
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid "Return whether TileLang owns Torch's current Exchange API table."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`npu_current_device <tilelang.ascend.torch_exchange."
+"npu_current_device>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:38
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid "Torch device for the current NPU, for kernel output allocation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`npu_current_raw_stream <tilelang.ascend.torch_exchange."
+"npu_current_raw_stream>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:43
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:22:<autosummary>:1
+msgid "Raw stream of Torch's current NPU stream."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/torch_exchange/index.rst:45
+msgid ""
+"Uses the low-level accessor when available: torch.npu.current_stream() goes "
+"through a Python wrapper that internally probes torch.cuda.is_available(), "
+"which costs ~150us per call on a CUDA-less NPU host; the _C accessor returns "
+"the raw stream in <1us."
+msgstr ""

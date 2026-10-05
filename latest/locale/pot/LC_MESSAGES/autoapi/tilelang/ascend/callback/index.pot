@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:2
+msgid "tilelang.ascend.callback"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:8
+msgid "Ascend dialect code-generation callbacks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:10
+msgid ""
+"The Ascend runtime-module build (src/ascend/codegen/rt_mod_ascend.cc) looks "
+"up the ``tilelang_callback_ascend_postproc`` global before emitting the "
+"final AscendC source; registering a function here lets users rewrite the "
+"generated code the same way the CUDA/HIP postproc callbacks do for their "
+"backends."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:18
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`register_ascend_postproc <tilelang.ascend.callback."
+"register_ascend_postproc>`\\ \\(func\\[\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:31
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:25:<autosummary>:1
+msgid "Register a post-processing function for Ascend-family code generation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`register_ascend_postproc_callback <tilelang.ascend.callback."
+"register_ascend_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:42
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:25:<autosummary>:1
+msgid "Decorator for registering an Ascend-family post-processing callback."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:33
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:44
+msgid ""
+"The callback receives the generated AscendC source for an Ascend target."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:35
+msgid ""
+"A callable that takes generated code (str) and target (Target) as input, and "
+"returns the processed code (str)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:37
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:57
+msgid "Whether to override existing registered function. Defaults to True."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:46
+msgid "Can be used with or without parentheses:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:47
+msgid "@register_ascend_postproc_callback def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:50
+msgid "@register_ascend_postproc_callback() def func(code, target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:53
+msgid ""
+"@register_ascend_postproc_callback(override=False) def func(code, "
+"target): ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/callback/index.rst:56
+msgid "The function to be decorated or a boolean override flag"
+msgstr ""

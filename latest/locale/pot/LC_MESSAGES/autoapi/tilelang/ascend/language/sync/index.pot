@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:2
+msgid "tilelang.ascend.language.sync"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:8
+msgid ""
+"Ascend pipeline, cross-core, and pipe-buffer synchronization primitives."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_pipe_barrier <tilelang.ascend.language.sync."
+"ascend_pipe_barrier>`\\ \\(pipe\\_t\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:34
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Insert an AscendC pipeline barrier."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_set_flag <tilelang.ascend.language.sync.ascend_set_flag>`\\ "
+"\\(hard\\_event\\, event\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:49
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Insert an AscendC SetFlag for pipeline synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_wait_flag <tilelang.ascend.language.sync."
+"ascend_wait_flag>`\\ \\(hard\\_event\\, event\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:65
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Insert an AscendC WaitFlag for pipeline synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_sync_inter_arrive <tilelang.ascend.language.sync."
+"ascend_sync_inter_arrive>`\\ \\(pipe\\, flag\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:81
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Signal an Ascend inter-core synchronization event."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_sync_inter_wait <tilelang.ascend.language.sync."
+"ascend_sync_inter_wait>`\\ \\(pipe\\, flag\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:97
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Wait for an Ascend inter-core synchronization event."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_threadfence <tilelang.ascend.language.sync."
+"ascend_threadfence>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:113
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Insert an AscendC thread fence."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_cross_core_set_flag <tilelang.ascend.language.sync."
+"ascend_cross_core_set_flag>`\\ \\(mode\\_id\\, pipe\\, flag\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:124
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Insert an AscendC CrossCoreSetFlag for cross-core synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_cross_core_wait_flag <tilelang.ascend.language.sync."
+"ascend_cross_core_wait_flag>`\\ \\(mode\\_id\\, pipe\\, flag\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:142
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Insert an AscendC CrossCoreWaitFlag for cross-core synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_get_buf <tilelang.ascend.language.sync.ascend_get_buf>`\\ "
+"\\(pipe\\, buf\\_id\\[\\, mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:160
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Acquire a pipe buffer for double-buffer management."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`ascend_rls_buf <tilelang.ascend.language.sync.ascend_rls_buf>`\\ "
+"\\(pipe\\, buf\\_id\\[\\, mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:178
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:28:<autosummary>:1
+msgid "Release a pipe buffer for double-buffer management."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:30
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:36
+msgid "Generates: AscendC::PipeBarrier<pipe_t::XXX>();"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:38
+msgid ""
+"Pipeline type string, e.g., \"PIPE_ALL\", \"PIPE_V\", \"PIPE_M\", "
+"\"PIPE_MTE1\", \"PIPE_MTE2\", \"PIPE_MTE3\", \"PIPE_S\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:43
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:59
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:75
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:91
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:107
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:118
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:136
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:154
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:172
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:190
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:51
+msgid "Generates: AscendC::SetFlag<AscendC::HardEvent::XXX>(eventID);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:53
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:69
+msgid "HardEvent enum name, e.g., \"MTE2_MTE1\", \"S_MTE3\", \"V_MTE2\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:55
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:71
+msgid "Event ID for synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:67
+msgid "Generates: AscendC::WaitFlag<AscendC::HardEvent::XXX>(eventID);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:83
+msgid "Generates: AscendC::CrossCoreSetFlag<0, pipe>(flag_id);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:85
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:101
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:130
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:148
+msgid "Pipeline type, e.g., \"PIPE_MTE3\", \"PIPE_FIX\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:87
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:103
+msgid "Inter-core synchronization flag ID."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:99
+msgid "Generates: AscendC::CrossCoreWaitFlag<0, pipe>(flag_id);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:115
+msgid "Generates: asc_threadfence();"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:126
+msgid "Generates: AscendC::CrossCoreSetFlag<modeId, pipe>(flagId);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:128
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:146
+msgid "Cross-core sync mode: 0, 1, 2, or 4."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:132
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:150
+msgid "Cross-core synchronization flag ID."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:144
+msgid "Generates: AscendC::CrossCoreWaitFlag<modeId, pipe>(flagId);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:162
+msgid "Generates: asc_lock(pipe, buf_id, mode);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:164
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:182
+msgid "Pipeline type, e.g., \"PIPE_MTE1\", \"PIPE_M\"."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:166
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:184
+msgid "Buffer slot index, typically (sk & 1) for double-buffering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:168
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:186
+msgid "Optional mode flag (default False)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/sync/index.rst:180
+msgid "Generates: asc_unlock(pipe, buf_id, mode);"
+msgstr ""

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:2
+msgid "tilelang.jit.adapter.pto.adapter"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:8
+msgid "Compile and execute PTODSL kernels using the PTO launch wrapper."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`PTOKernelAdapter <tilelang.jit.adapter.pto.adapter."
+"PTOKernelAdapter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:42
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:19:<autosummary>:1
+msgid ""
+"Own PTO compilation and cached-library loading with a Cython launch ABI."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`is_symbolic_expr <tilelang.jit.adapter.pto.adapter."
+"is_symbolic_expr>`\\ \\(expr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:27:<autosummary>:1
+msgid "Check if the expression is a symbolic expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:33
+msgid ""
+"Check if the expression is a symbolic expression. A symbolic expression can "
+"be a simple tvm.Var, or an tvm.PrimExpr containing tvm.Var."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:39
+msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:65
+msgid "Load the compiled PTO library without regenerating device or host code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:73
+msgid "Returns the primary TIR function from the IR module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:78
+msgid "Returns the source path of the compiled library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:83
+msgid "Returns the path to the compiled library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:88
+msgid "Returns the code of the compiled library."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:93
+msgid "Indicates whether the kernel handles dynamic shapes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:98
+msgid "Returns the source code of the compiled kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/pto/adapter/index.rst:104
+msgid "Returns the source code of the host function."
+msgstr ""

@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:2
+msgid "tilelang.contrib.ptodsl.sync"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:8
+msgid ""
+"PTO synchronization compatibility helpers for generated TileLang kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`ascend_cross_core_set_flag <tilelang.contrib.ptodsl.sync."
+"ascend_cross_core_set_flag>`\\ \\(mode\\_id\\, pipe\\, flag\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:26
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:20:<autosummary>:1
+msgid "Lower TileLang's cross-core set flag for modes 0, 1, 2, and 4."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`ascend_cross_core_wait_flag <tilelang.contrib.ptodsl.sync."
+"ascend_cross_core_wait_flag>`\\ \\(mode\\_id\\, pipe\\, flag\\_id\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:31
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:20:<autosummary>:1
+msgid "Lower TileLang's cross-core wait flag for modes 0, 1, 2, and 4."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/sync/index.rst:22
+msgid "Module Contents"
+msgstr ""

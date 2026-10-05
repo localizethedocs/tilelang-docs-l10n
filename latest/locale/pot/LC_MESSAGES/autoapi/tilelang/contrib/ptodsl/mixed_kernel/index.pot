@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:2
+msgid "tilelang.contrib.ptodsl.mixed_kernel"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:8
+msgid "PTODSL compatibility helpers for mixed Cube/Vector kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`MixedKernelRole <tilelang.contrib.ptodsl.mixed_kernel."
+"MixedKernelRole>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`mixed_kernel_section <tilelang.contrib.ptodsl.mixed_kernel."
+"mixed_kernel_section>`\\ \\(role\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:36
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:28:<autosummary>:1
+msgid "Emit one PTO physical section in the active kernel entry."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`finalize_mixed_kernel <tilelang.contrib.ptodsl.mixed_kernel."
+"finalize_mixed_kernel>`\\ \\(kernel\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:46
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:28:<autosummary>:1
+msgid "Select PTODSL's flat module layout before the first specialization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:30
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:38
+msgid ""
+"The public context records the physical core while tracing.  Helpers such as "
+"``pto.init_core()`` use that context to specialize their Cube and Vector "
+"implementations, while the emitted section remains a direct child of the "
+"entry function for ``vpto-split-cv-module``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/mixed_kernel/index.rst:0
+msgid "Return type"
+msgstr ""
