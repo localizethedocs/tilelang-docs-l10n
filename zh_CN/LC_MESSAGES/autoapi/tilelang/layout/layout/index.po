@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:2
+msgid "tilelang.layout.layout"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:8
+msgid "Wrapping Layouts."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:19:<autosummary>:1
+msgid ":py:obj:`Layout <tilelang.layout.layout.Layout>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:25
+msgid "Bases: :py:obj:`tvm.ir.Node`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:30
+msgid "Property to retrieve the forward index of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:32
+msgid "The computed forward index expression(s)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:38
+msgid "Get the input shape of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:40
+msgid "The shape of the input layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:47
+msgid "Get the output shape of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:49
+msgid "The shape of the output layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:56
+msgid "Retrieve the iteration variables associated with the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:58
+msgid "A list of iteration variables that define the layout transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:68
+msgid "Compute the forward index mapping for a given set of input indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:70
+msgid "The input indices to be mapped to their corresponding output indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:73
+msgid "The mapped index expression for the provided input indices."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:80
+msgid "Repeat a layout along a single input dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:82
+msgid ""
+"This is useful for building a larger layout by tiling an \"atom\" layout. "
+"Conceptually, repeating on dimension ``dim`` with ``factor`` constructs a "
+"new layout ``L'`` such that::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:86
+msgid "L'(*idx) = [idx[dim] // extent_dim] + L(idx with idx[dim] % extent_dim)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:88
+msgid "where ``extent_dim`` is the original extent of the repeated dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:90
+msgid "The input dimension to repeat (0-based, supports negative indexing)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:92
+msgid "The repeat factor. Must be a positive integer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:95
+msgid ""
+"A new Layout with the repeated input shape and an extra leading output "
+"dimension representing the repeat-group index."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:103
+msgid "Expand (lift) this layout by prepending new leading input dimensions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:105
+msgid ""
+"The new leading dimensions are forwarded unchanged to the output, and the "
+"original layout is applied to the remaining trailing dimensions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:109
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:110
+msgid ""
+"Given a 2D layout ``L`` over ``[J, K]``, you can lift it to a 3D layout over "
+"``[I, J, K]`` by::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:113
+msgid ""
+"L3 = L.expand([I])\n"
+"# [i, j, k] -> [i, *L(j, k)]"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:116
+msgid ""
+"The shape of the new leading dimensions to prepend. Use an empty list/tuple "
+"for a no-op."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:120
+msgid ""
+"A new Layout with input shape ``leading_shape + input_shape`` and output "
+"indices ``[leading_dims] + old_forward_index``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:128
+msgid "Compute the inverse of the current layout transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:130
+msgid "A new Layout object representing the inverse transformation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:137
+msgid "Reshape the input shape of the layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:139
+msgid "The new input shape."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:141
+msgid "Rescale numerator for element size changes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:143
+msgid "Rescale denominator for element size changes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:150
+msgid "Check if the current layout is equal to another layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/layout/index.rst:152
+msgid "The layout to compare with."
+msgstr ""
