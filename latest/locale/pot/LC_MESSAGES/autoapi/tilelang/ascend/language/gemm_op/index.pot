@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:2
+msgid "tilelang.ascend.language.gemm_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:8
+msgid "Ascend dialect of the GEMM operators: the common ops plus Ascend hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`gemm_blockscaled <tilelang.ascend.language.gemm_op."
+"gemm_blockscaled>`\\ \\(A\\, B\\, C\\, SFA\\, SFB\\[\\, transpose\\_A\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:26
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:20:<autosummary>:1
+msgid ""
+"Ascend block-scaled MXFP8 GEMM, shadowing the common ``T.gemm_blockscaled``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`gemm <tilelang.ascend.language.gemm_op.gemm>`\\ \\(A\\, B\\, "
+"C\\[\\, transpose\\_A\\, transpose\\_B\\, policy\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:47
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:20:<autosummary>:1
+msgid "TileLang GEMM operator, with the Ascend unit-flag hint."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:28
+msgid ""
+"``SFA``/``SFB`` are required. For L1 A/B inputs they are the L1 scale-factor "
+"buffers, consumed directly by the fused L1 lowering. For L0 A/B inputs they "
+"are the MX scale-factor handles of the operand tiles (:func:`tilelang.ascend."
+"language.alloc_l0a_sf` / :func:`~tilelang.ascend.language.alloc_l0b_sf`), "
+"loaded by a preceding ``T.copy(sf_l1, handle)``. Each handle must be "
+"allocated for the corresponding data buffer, select the same leading "
+"indices, and describe its compact trailing tile (zero origin and matching "
+"K). The MAD reads the slots implied by its A/B data addresses, so the "
+"operands here carry the read-region truth and select the block-scaled "
+"lowering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:40
+msgid ""
+"Unlike the common surface, ``k_start`` and the ``sf_*_granularity_k`` knobs "
+"are implicit: the Ascend lowering derives the scale K offset from the SFA "
+"region slice, and MX scales cover 32 K elements per factor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:49
+msgid ""
+"Same semantics as the common :func:`tilelang.language.gemm_op.gemm`. "
+"``unit_flag_ctrl`` records the Cube unit-flag control on the tile op, which "
+"the Ascend lowering pairs with the following accumulator drain; ``None`` "
+"omits the annotation and lowers as 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:54
+msgid ""
+"On Ascend, L0 operand regions specify the effective MAD M/N/K. Their "
+"trailing matrix dimensions must start at zero and describe a compact tile. "
+"L0 allocations and producer copies may be padded for hardware alignment; for "
+"example, a transposed FP32 load can copy K32 while GEMM consumes "
+"``A[:, :24]`` and ``B[:, :24]``. Copy regions must cover the physical "
+"transfer. Allocation padding remains part of the storage budget."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:61
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:63
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:65
+msgid "Input A, input B and output C."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:67
+msgid "Whether to transpose A. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:69
+msgid "Whether to transpose B. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:71
+msgid "GEMM warp partition policy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:73
+msgid "Whether to clear the accumulator."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:75
+msgid ""
+"Unit flag control for the instruction. ``None`` omits the annotation and "
+"lowers as 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:78
+msgid ""
+"Additional annotations; values in it take precedence over the individual "
+"keywords."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/gemm_op/index.rst:82
+msgid "A handle to the GEMM operation."
+msgstr ""

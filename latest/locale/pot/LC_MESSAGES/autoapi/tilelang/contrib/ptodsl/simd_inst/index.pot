@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:2
+msgid "tilelang.contrib.ptodsl.simd_inst"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`vdiv_precise_f32 <tilelang.contrib.ptodsl.simd_inst."
+"vdiv_precise_f32>`\\ \\(src0\\, src1\\, mask\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:23
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid "Emit precise f32 vector division matching Ascend ``vdiv_precise``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`vexp_1ulp_ftz_false <tilelang.contrib.ptodsl.simd_inst."
+"vexp_1ulp_ftz_false>`\\ \\(src\\, mask\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:28
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+"Emit subnormal-preserving f32 vexp matching Ascend ``vexp_1ulp_ftz_false``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`vln_1ulp_ftz_false <tilelang.contrib.ptodsl.simd_inst."
+"vln_1ulp_ftz_false>`\\ \\(src\\, mask\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:38
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+"Emit subnormal-preserving f32 vln matching Ascend ``vln_1ulp_ftz_false``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`vsqrt_0ulp_ftz_false <tilelang.contrib.ptodsl.simd_inst."
+"vsqrt_0ulp_ftz_false>`\\ \\(src\\, mask\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:48
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:17:<autosummary>:1
+msgid ""
+"Emit subnormal-preserving f32 vsqrt matching Ascend ``vsqrt_0ulp_ftz_false``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:19
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:30
+msgid ""
+"Normal outputs pass through; outputs that would land in the subnormal range "
+"are computed as ``(e^(x/2))^2`` so the SFU input stays normal. Self-"
+"consistent at x < -174.7: ``e^(x/2)`` itself is flushed to 0, squaring "
+"yields 0, and the true ``e^x < 2^-252`` correctly rounds to 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:40
+msgid ""
+"Positive subnormal inputs are scaled by ``2^23`` before VLN and compensated "
+"by ``-ln(2^23)`` (the scaled value is exact: the subnormal mantissa shifts "
+"into the normal range). Other inputs keep hardware semantics (0 -> -inf, "
+"negative -> NaN)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simd_inst/index.rst:50
+msgid ""
+"Replica of CANN ``SqrtFastInverseImpl`` (``PRECISION_0ULP_FTZ_FALSE`` / "
+"``FAST_INVERSE``), chosen over the 1ULP scale/unscale variant because the "
+"latter mis-rounds ``0x007fffff`` to +0. Inputs < 1 are scaled by ``2^24`` so "
+"the chain stays in the normal range, then unscaled by ``2^-12``; a 1/sqrt "
+"initial value plus a Newton step and a second residual correction gives "
+"correct rounding; +-0 and +inf pass through."
+msgstr ""

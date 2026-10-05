@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:2
+msgid "tilelang.ascend.language.annotations"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:8
+msgid ""
+"Ascend auto-schedule annotations: multi-buffer version control and memory "
+"capacity overrides consumed by the Z3 scheduler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:14
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`annotate_buffer_versions <tilelang.ascend.language.annotations."
+"annotate_buffer_versions>`\\ \\(buffer\\_versions\\_map\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:28
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:22:<autosummary>:1
+msgid "Control automatic multi-buffer version counts and indexing modes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`annotate_manual_multi_buffer <tilelang.ascend.language.annotations."
+"annotate_manual_multi_buffer>`\\ \\(\\*items\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:77
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:22:<autosummary>:1
+msgid "Declare buffers that the user has *manually* multi-buffered."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`annotate_unlimit_memory <tilelang.ascend.language.annotations."
+"annotate_unlimit_memory>`\\ \\(\\*scopes\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:113
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:22:<autosummary>:1
+msgid ""
+"Remove the memory capacity limit for the given scopes during auto-scheduling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:30
+msgid ""
+"When using T.Persistent with num_stages > 1, the Z3 auto-scheduler computes "
+"optimal buffer version counts for each on-chip buffer. Each mapping value "
+"may be one of:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:34
+msgid ""
+"``1``: opt out of multi-buffer eligibility, including explicit owner claims;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:35
+msgid "``num_versions >= 2``: use a fixed version count and automatic mode;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:36
+msgid "``(num_versions, mode)``: use a fixed count and explicit mode;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:37
+msgid ""
+"``mode``: select a mode while leaving the version count to the scheduler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:39
+msgid ""
+"``mode`` is ``\"auto\"``, ``\"iteration\"``, or ``\"counter\"``. "
+"``\"iteration\"`` uses the affine flattened-loop index. ``\"counter\"`` uses "
+"a monotonic local counter that advances after a completed active buffer "
+"epoch. ``\"auto\"`` keeps the affine fast path when safe and selects a "
+"counter for conditionally executed or non-affine epochs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:45
+msgid ""
+"A fixed count is useful when you want to guarantee double-buffering for a "
+"critical buffer regardless of the Z3 solver's choice."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:48
+msgid ""
+"``{buf: 1}`` removes the storage (including aliases) from multi-buffer "
+"eligibility, overriding inferred or explicit owner claims and preserving "
+"ordinary dependencies instead of owner-exclusion dependencies. Overriding "
+"explicit ``multi_buffer_eligible`` claims emits a warning once per storage. "
+"Use this when the eligibility heuristic misses reads of previous data. To "
+"keep eligibility with one version, explicitly specify a mode: ``{buf: (1, "
+"\"auto\")}``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:55
+msgid ""
+"AutoSchedule consumes this map and replaces it with the selected version "
+"counts, including versions chosen automatically by the solver."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:59
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:100
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:122
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:79
+msgid ""
+"Unlike :func:`annotate_buffer_versions` (which asks the Z3 auto-scheduler to "
+"version a buffer for you), this annotation tells AutoSchedule that the "
+"buffer is *already* multi-buffered by hand: the user writes the version "
+"index into every access themselves (e.g. ``buf[l % 2]`` / ``buf[(l + 1) % "
+"2]`` ping-pong), and the pass only needs to analyze dependencies and emit "
+"the ``set_flag`` / ``wait_flag`` synchronization."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:86
+msgid ""
+"The per-buffer version count ``N`` is used as the ring size / the upper "
+"bound on the cross-iteration distance the analysis searches for — it does "
+"NOT reshape or reallocate the buffer and does NOT assume the version index "
+"lives in dimension 0. Each positional argument is either:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:91
+msgid ""
+"a bare buffer: ``N`` defaults to its leading dimension ``buffer.shape[0]`` "
+"(which must then be a compile-time constant) — the common ``T."
+"alloc_shared((N, ...))`` ping-pong case; or"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:94
+msgid ""
+"a ``{buffer: N}`` dict: gives ``N`` explicitly, decoupled from the shape. "
+"Use this when the buffer has no dedicated leading version dim — e.g. a "
+"flattened buffer multi-buffered by disjoint sub-ranges — or when you want a "
+"version count that differs from ``shape[0]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:115
+msgid ""
+"When unlimit'd, a scope's capacity is effectively unbounded so Z3 will not "
+"constrain multi-buffer versions based on that memory pool. Use this when you "
+"know a particular scope has spare headroom."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/annotations/index.rst:119
+msgid ""
+"Valid scopes: ``\"shared\"``, ``\"shared.l1\"``, ``\"shared.l0c\"``, "
+"``\"shared.l0a\"``, ``\"shared.l0b\"``."
+msgstr ""

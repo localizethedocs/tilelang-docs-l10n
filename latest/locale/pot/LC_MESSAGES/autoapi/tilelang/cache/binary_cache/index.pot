@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:2
+msgid "tilelang.cache.binary_cache"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:8
+msgid ""
+"Cross-host cache for compiled device binaries, shared by backend caches."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:19:<autosummary>:1
+msgid ":py:obj:`BinaryCache <tilelang.cache.binary_cache.BinaryCache>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:25
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:19:<autosummary>:1
+msgid "Immutable, verified cache of raw device binaries keyed by content hash."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:27
+msgid ""
+"Each key is an immutable directory containing metadata.json (format tag, "
+"payload size, sha256) and a raw kernel binary. Entries are staged privately "
+"and published with a single directory rename, so concurrent writers cannot "
+"observe partial entries and the first publication wins. Published entries "
+"are never modified or deleted: on 3FS, unlinking a binary can invalidate "
+"another reader's open fd, so corruption is handled as a plain cache miss."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:34
+msgid ""
+"Subclasses set ``cache_root_dir`` (directory under the version namespace), "
+"``cache_format`` (metadata format tag) and ``binary_kind`` (backend name "
+"used in error messages), and provide their own ``make_key`` built on :meth:"
+"`_finalize_key`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cache/binary_cache/index.rst:0
+msgid "Return type"
+msgstr ""

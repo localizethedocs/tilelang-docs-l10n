@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:2
+msgid "tilelang.ascend.language.frame"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:8
+msgid "Execution-region frames for Ascend NPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid ":py:obj:`CubeFrame <tilelang.ascend.language.frame.CubeFrame>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:43
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid "Frame for Cube (AIC) execution region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid ":py:obj:`VectorFrame <tilelang.ascend.language.frame.VectorFrame>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:56
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid "Frame for Vector (AIV) execution region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid ":py:obj:`SimtVFFrame <tilelang.ascend.language.frame.SimtVFFrame>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:84
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid "Frame for SimtVF (SIMT Vector Fixed) region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid ":py:obj:`SimdVFFrame <tilelang.ascend.language.frame.SimdVFFrame>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:115
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:22:<autosummary>:1
+msgid "Frame for SimdVF (SIMD Vector Fragment) region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid ":py:obj:`Cube <tilelang.ascend.language.frame.Cube>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:48
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid "Construct a Cube (AIC) execution region frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`Vector <tilelang.ascend.language.frame.Vector>`\\ \\(\\[vector\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:70
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid "Construct a Vector (AIV) execution region frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`SimtVF <tilelang.ascend.language.frame.SimtVF>`\\ \\(\\[threads\\, "
+"latency\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:98
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid "Construct a dedicated SIMT vector-fragment region frame."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`inside_simdvf <tilelang.ascend.language.frame.inside_simdvf>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:129
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid "Return whether the current builder is inside a SimdVF region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`SimdVF <tilelang.ascend.language.frame.SimdVF>`\\ "
+"\\(\\[latency\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:134
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:34:<autosummary>:1
+msgid "Construct a SimdVF region for Ascend NPU MicroAPI operations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:40
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:53
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:81
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:112
+msgid "Bases: :py:obj:`tvm.tirx.script.builder.frame.TIRFrame`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:58
+msgid "In Mix mode, provides a subblock ID variable via ``as`` binding::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:60
+msgid ""
+"with T.Vector(vector=2) as sid:\n"
+"    # sid = asc_get_sub_block_id()\n"
+"    ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:72
+msgid "Number of AIV cores (1 or 2). Default 2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:75
+msgid "**res** -- The VectorFrame used to denote an AIV execution region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:86
+msgid ""
+"The C++ frame generates the ``SIMT_VF`` block and its thread-extent "
+"bindings. The Python frame additionally maintains the active SIMT context."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:100
+msgid ""
+"Thread count for the SimtVF frame. A sequence may contain up to three "
+"dimensions; omitted dimensions default to one."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:103
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:136
+msgid "Measured latency in cycles. Zero uses the scheduler's latency model."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:106
+msgid ""
+"**res** -- The SimtVFFrame used to denote a SIMT vector-fragment region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:117
+msgid ""
+"This is a register-level SIMD region without thread dimensions. The C++ "
+"frame generates the ``SIMD_VF`` block and its scope marker."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/frame/index.rst:139
+msgid "**res** -- The SimdVFFrame used to denote a register-level SIMD region."
+msgstr ""

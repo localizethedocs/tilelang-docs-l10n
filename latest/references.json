@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-10-06 00:26:37 +0800",
+      "hash" : "0e687c17bb3bd8a92bfeaa2bc8a5bdb37f6b3ca4",
+      "title" : "[BugFix][Transform] Preserve explicit casts during index promotion (#3429)"
     }
   },
   "type" : "branch",

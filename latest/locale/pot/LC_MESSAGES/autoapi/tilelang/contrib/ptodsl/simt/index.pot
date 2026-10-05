@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:2
+msgid "tilelang.contrib.ptodsl.simt"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:8
+msgid "PTODSL tracing helpers for TileLang PTO SIMT codegen."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`shuffle_vec <tilelang.contrib.ptodsl.simt.shuffle_vec>`\\ "
+"\\(dtype\\, values\\, indices\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:39
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Pick lanes by constant index from concatenated scalar/vector inputs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`vector_from_list <tilelang.contrib.ptodsl.simt.vector_from_list>`\\ "
+"\\(dtype\\, values\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:44
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Build a PTODSL builtin vector from scalar values in a Python sequence."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`vector_to_list <tilelang.contrib.ptodsl.simt.vector_to_list>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:49
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Extract all lanes of a PTODSL builtin vector into a Python list."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`store_vector_to_list <tilelang.contrib.ptodsl.simt."
+"store_vector_to_list>`\\ \\(dst\\, offset\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:54
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Store all lanes of a PTODSL vector into a Python-list local buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`vectorize_unary_f32x2 <tilelang.contrib.ptodsl.simt."
+"vectorize_unary_f32x2>`\\ \\(op\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`vectorize_binary_f32x2 <tilelang.contrib.ptodsl.simt."
+"vectorize_binary_f32x2>`\\ \\(op\\, lhs\\, rhs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`vectorize_binary_fp8 <tilelang.contrib.ptodsl.simt."
+"vectorize_binary_fp8>`\\ \\(op\\, lhs\\, rhs\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:63
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Compute FP8 vectors through the supported packed two-lane conversions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`fp8_byte_load <tilelang.contrib.ptodsl.simt.fp8_byte_load>`\\ "
+"\\(buffer\\, index\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:68
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+"Load one FP8 storage byte without materializing an unsupported scalar FP8."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`fp8_byte_store <tilelang.contrib.ptodsl.simt.fp8_byte_store>`\\ "
+"\\(value\\, buffer\\, index\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:73
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Store one FP8 storage byte through its integer representation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`scalar_binary_fp8 <tilelang.contrib.ptodsl.simt."
+"scalar_binary_fp8>`\\ \\(op\\, lhs\\, rhs\\, dtype\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:78
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid "Use the packed FP8 conversion primitive for one logical element."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`scalar_div <tilelang.contrib.ptodsl.simt.scalar_div>`\\ \\(lhs\\, "
+"rhs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`scalar_rsqrt <tilelang.contrib.ptodsl.simt.scalar_rsqrt>`\\ "
+"\\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`simt_allreduce_sum <tilelang.contrib.ptodsl.simt."
+"simt_allreduce_sum>`\\ \\(value\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`simt_allreduce_max <tilelang.contrib.ptodsl.simt."
+"simt_allreduce_max>`\\ \\(value\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`simt_allreduce_min <tilelang.contrib.ptodsl.simt."
+"simt_allreduce_min>`\\ \\(value\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/simt/index.rst:0
+msgid "Return type"
+msgstr ""

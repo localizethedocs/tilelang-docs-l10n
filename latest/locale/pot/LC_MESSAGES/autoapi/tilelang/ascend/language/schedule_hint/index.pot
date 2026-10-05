@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:2
+msgid "tilelang.ascend.language.schedule_hint"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:8
+msgid "Auto-schedule semantic hints, including buffer conflict declarations."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`PerCoreTask <tilelang.ascend.language.schedule_hint.PerCoreTask>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:29
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid "Represent one logical per-core task with guarded candidate sites."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`Task <tilelang.ascend.language.schedule_hint.Task>`\\ "
+"\\(\\[latency\\, ii\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:80
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid "Group one or more serial statements into one scheduler task."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`Stage <tilelang.ascend.language.schedule_hint.Stage>`\\ \\(stage\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:120
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid "Assign a manual software-pipeline stage to enclosed scheduler tasks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`assume_no_conflict <tilelang.ascend.language.schedule_hint."
+"assume_no_conflict>`\\ \\(a\\[\\, b\\, level\\, cross\\, group\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid "Assert that two buffer regions do not conflict, suppressing a false"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid ""
+":py:obj:`assume_conflict <tilelang.ascend.language.schedule_hint."
+"assume_conflict>`\\ \\(a\\[\\, b\\, level\\, cross\\, group\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:209
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:23:<autosummary>:1
+msgid "Assert that two buffer regions conflict for dependency analysis."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:25
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:31
+msgid ""
+"AutoSchedule treats the enclosed control flow as one logical task when it "
+"analyzes dependencies, estimates cost, and allocates flags. When "
+"synchronization is emitted, the same logical wait/set pair is placed next to "
+"every candidate access under its original control-flow guard."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:36
+msgid ""
+"The compiler preserves explicit ``T.Task()`` candidates and infers markers "
+"for the remaining supported dependency-bearing candidate boundaries. "
+"Explicit and inferred candidates may therefore be mixed in one region. Every "
+"candidate must use the same single hardware pipe and represent the same "
+"logical read/write role. For every dynamic invocation and every "
+"participating block index, the candidate guards must be mutually exclusive "
+"and collectively exhaustive: exactly one candidate must execute on each "
+"core. Conditions inside this scope may dispatch by block/core ID, but must "
+"not make the operation data-dependent, optional, or executable more than "
+"once on one core. This exact-once property is a user control-flow contract."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:47
+msgid ""
+"Keep the complete block-index dispatch inside one ``T.PerCoreTask()``. Do "
+"not put separate ``T.PerCoreTask()`` regions in sibling conditional "
+"branches: the scheduler would treat those as unrelated logical tasks rather "
+"than alternative sites of one operation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:52
+msgid ""
+"Scalar bindings may remain outside candidate markers when they do not access "
+"buffers and therefore cannot form buffer dependencies with statements "
+"outside the PerCoreTask. External synchronization is emitted only at ``T."
+"Task`` candidate sites, so put any buffer access in a supported single-pipe "
+"candidate rather than an unmarked scalar binding."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:58
+msgid ""
+"Explicit candidates also define the latency model. Statements inside one ``T."
+"Task`` are serial, candidates before the same inter-core wait form one "
+"parallel phase whose cost is their maximum, and phases separated by waits "
+"are serial. The compiler wraps each unmarked inferred dependency-bearing "
+"leaf in an equivalent internal marker before applying the same latency and "
+"synchronization model."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:66
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:107
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:150
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:191
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:234
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:82
+msgid ""
+"AutoSchedule creates exactly one TaskNode for the complete marker body. "
+"Statements issue in source order without internal synchronization, so each "
+"preceding statement contributes its II and only the final statement exposes "
+"its latency. All statements must use one Ascend hardware pipe and one AIC/"
+"AIV core affinity; split cross-pipe or cross-core sequences into separate "
+"tasks. The marker does not select or launch a core by itself."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:89
+msgid ""
+"``latency`` is the number of cycles from task issue until its outputs are "
+"ready. ``ii`` is the minimum interval before the same hardware pipe may "
+"issue another instance. Task costs require ``latency >= ii``. Either value "
+"may be omitted, in which case the ``EstimateLatency`` pass supplies it and "
+"validates the final pair. Provided values are trusted exact overrides for "
+"the complete task body, not hints for the enclosing loop II. These are the "
+"only public task parameters. The compiler derives execution resources from "
+"the task body and determines core placement."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:98
+msgid ""
+"Inside ``T.PerCoreTask()``, the same marker also denotes one concrete per-"
+"core candidate. Put the control flow that selects a core outside this scope "
+"so automatic synchronization remains under the same guard. Explicit markers "
+"may be mixed with unmarked candidates; the compiler infers markers for the "
+"remaining supported candidate boundaries. Do not nest ``T.PerCoreTask()`` "
+"inside this scope; put this ``T.Task()`` inside ``T.PerCoreTask()`` instead."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:122
+msgid ""
+"If any direct child task or loop in a scheduled child list has a ``T.Stage`` "
+"annotation, AutoSchedule treats that child list as manual. One scope may "
+"contain several consecutive statements; every scheduler task materialized "
+"from those statements receives the same stage. Unannotated siblings default "
+"to stage 0. Within each hardware pipe, source order is the manual issue "
+"order; tasks on different pipes remain freely reorderable, so no separate "
+"order annotation is required. Nested child lists select automatic or manual "
+"scheduling independently."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:131
+msgid ""
+"``T.Stage`` must wrap complete scheduler tasks. It must not appear inside "
+"``T.Task``, ``T.SimtVF``, ``T.SimdVF``, an SBlock, or a parallel loop. In "
+"Python's multi-context form, put ``T.Stage`` first so it is the outer scope:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:135
+msgid ""
+"# Correct\n"
+"with T.Stage(1), T.SimtVF(threads=128):\n"
+"    ...\n"
+"\n"
+"# Invalid: T.Stage is nested inside the SimtVF task boundary\n"
+"with T.SimtVF(threads=128), T.Stage(1):\n"
+"    ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:145
+msgid ""
+"Non-zero stages require an enclosing loop with ``enable_offset=True``. ``T."
+"Pipelined(..., num_stages=...)`` controls the automatic buffer-version "
+"search bound; it does not limit the values accepted by ``T.Stage``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:160
+msgid ""
+"Assert that two buffer regions do not conflict, suppressing a false "
+"dependency the auto-scheduler would otherwise conservatively insert."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:163
+msgid ""
+"The auto-scheduler's dependency analysis cannot prove that dynamically "
+"indexed accesses (e.g. a permutation ``state_cache[perm[idx], ...]``) are "
+"disjoint across loop iterations, so it inserts redundant synchronization. "
+"This hint lets the user declare that the regions do not overlap. It is "
+"consumed by the ``NormalizeConflictHints`` pass before auto-scheduling; at "
+"runtime it is a no-op."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:170
+msgid ""
+"first region -- ``buffer[indices...]`` or a bare ``buffer`` (the whole "
+"buffer). A region must exactly match the footprint of the access it refers "
+"to: use slices for the accessed extents (e.g. ``buf[i, 0:M, 0:N]``), since a "
+"fully scalar-indexed ``buf[i, 0, 0]`` denotes only a 1-element region and "
+"will not match a wider copy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:175
+msgid "second region; defaults to ``a`` (a self-dependency)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:176
+msgid ""
+"where the non-overlap is asserted. ``None`` applies it to the outermost "
+"sequence represented by ``tilelang_root`` and independently to every loop "
+"enclosing both operands. ``-1`` applies it only to the outermost sequence. "
+"Non-negative values select one common enclosing loop, counted from the "
+"outermost (``0`` = outermost, ``1`` = next inner, ...)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:182
+msgid ""
+"``None`` = both same- and cross-iteration are conflict-free (default); "
+"``True`` = only cross-iteration; ``False`` = only same-iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:185
+msgid ""
+"string tag pairing two separately-written half-declarations whose regions "
+"live in different scopes (so they cannot be written in one call). Must "
+"appear exactly twice; the combined hint is attached to the loops enclosing "
+"both. Rarely needed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:211
+msgid ""
+"This is the conservative counterpart of :func:`assume_no_conflict`.  It "
+"makes the auto-scheduler treat matching accesses as if they used the same "
+"storage, even when the buffers are distinct or their regions are provably "
+"disjoint.  The usual RAW, WAR, and WAW rules still apply: two read-only "
+"accesses do not form a dependency.  The marker is consumed before auto-"
+"scheduling and is a runtime no-op."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:218
+msgid ""
+"first region -- ``buffer[indices...]`` or a bare ``buffer`` (the whole "
+"buffer). A concrete region must exactly match the footprint of the access it "
+"refers to."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:221
+msgid "second region; defaults to ``a`` (a forced self-conflict)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:222
+msgid ""
+"where the conflict is asserted. ``None`` applies it to the outermost "
+"sequence represented by ``tilelang_root`` and independently to every loop "
+"enclosing both operands. ``-1`` applies it only to the outermost sequence. "
+"Non-negative values select one common enclosing loop, counted from the "
+"outermost."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:227
+msgid ""
+"``None`` = both same- and cross-iteration conflicts (default); ``True`` = "
+"only cross-iteration; ``False`` = only same-iteration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/schedule_hint/index.rst:229
+msgid ""
+"string tag pairing two declarations in different scopes. It must appear "
+"exactly twice. With ``level=None``, declarations with no common serial loop "
+"are still related at the root sequence."
+msgstr ""

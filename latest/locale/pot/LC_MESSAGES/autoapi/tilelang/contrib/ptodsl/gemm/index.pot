@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-05 16:45+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:2
+msgid "tilelang.contrib.ptodsl.gemm"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`PTOGemmL1Template <tilelang.contrib.ptodsl.gemm."
+"PTOGemmL1Template>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:21
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:15:<autosummary>:1
+msgid "PTODSL helper for the dav-3510 Ascend L1 cube GEMM pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:15:<autosummary>:1
+msgid ""
+":py:obj:`PTOBlockscaledGemmL1Template <tilelang.contrib.ptodsl.gemm."
+"PTOBlockscaledGemmL1Template>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:79
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:15:<autosummary>:1
+msgid "PTODSL helper for an E4M3 or E2M1 blockscaled L1 cube GEMM tile."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:17
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:23
+msgid ""
+"The constructor arguments are the static template parameters. Calling "
+"``run_l1_tile`` emits the L1->L0 sub-K pipeline for one already-loaded L1 "
+"tile."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:27
+msgid ""
+"dav-3510 requires the TRANS_B=true path. The right operand must be staged in "
+"L1 as logical W[N, K]. If you write NN matmul with W[K, N], then during GM-"
+">L1 you must use DN2NZ to transpose B into this layout before calling the "
+"helper."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:70
+msgid "Emit GEMM for one L1 A/B tile into ``acc``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:76
+msgid "Bases: :py:obj:`PTOGemmL1Template`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:81
+msgid ""
+"Matrix data uses the regular L1-to-L0 loads inherited from :class:"
+"`PTOGemmL1Template`. Pair-packed ``uint16`` scale storage is viewed as E8M0 "
+"only at the MX load boundary, where the caller supplies an ``pto.ptr(pto."
+"f8e8m0, \"mat\")`` pointer to the same L1 allocation. FP4 uses "
+"``input_pack_factor=2`` so data-load start columns and L0 stage offsets "
+"remain in packed-storage units."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/gemm/index.rst:97
+msgid "Emit one blockscaled L1 tile with E8M0 scale staging."
+msgstr ""
