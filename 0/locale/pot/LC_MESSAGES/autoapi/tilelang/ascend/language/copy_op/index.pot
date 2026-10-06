@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:2
+msgid "tilelang.ascend.language.copy_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:8
+msgid ""
+"Ascend dialect of the copy operators: the common ops plus Ascend copy hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`dual_copy <tilelang.ascend.language.copy_op.dual_copy>`\\ \\(src\\, "
+"dst\\, \\*\\[\\, unit\\_flag\\_ctrl\\, l2\\_cache\\_ctrl\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:26
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:20:<autosummary>:1
+msgid "Copy a region using an M- or N-split across the two AIVs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`copy <tilelang.ascend.language.copy_op.copy>`\\ \\(src\\, dst\\, "
+"\\*\\[\\, coalesced\\_width\\, transpose\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:75
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:20:<autosummary>:1
+msgid "Copy data between memory regions, with Ascend DMA lowering hints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:28
+msgid ""
+"``dual_copy`` is a mixed-kernel operation: the user must also provide the "
+"Cube-side work in the enclosing kernel. It is not supported as a way to turn "
+"an otherwise pure Vector kernel into a two-AIV launch; the compiler assumes "
+"this contract and does not synthesize Cube-side work."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:33
+msgid ""
+"With auto-scheduling disabled, write a manual mixed kernel as ``T.Kernel`` "
+"containing explicit ``T.Cube()`` and ``T.Vector()`` blocks, and place each "
+"software dual copy inside the ``T.Vector()`` block. The rewrite pass reuses "
+"that block's ``cthread`` sid and rejects unscoped software dual copies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:38
+msgid ""
+"Software dual copies also accept one-dimensional regions whose sole extent "
+"has a 2:1 ratio. For regions with rank at least two, exactly one trailing "
+"dimension must have a 2:1 extent ratio between source and destination. The "
+"supported memory paths are:"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:43
+msgid "L0C→UB: lowered as a hardware dual-destination copy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:44
+msgid ""
+"GM→UB, UB→GM, and UB→L1: lowered as an ordinary per-AIV copy indexed by the "
+"``cthread`` sid."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:47
+msgid "For UB→L1, the InsertNd2Nz pass also handles ND→NZ format conversion."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:49
+msgid "``[M, N]`` ↔ ``[M/2, N]``: M-split (``dual_dst_ctl=0b01``)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:50
+msgid "``[M, N]`` ↔ ``[M, N/2]``: N-split (``dual_dst_ctl=0b10``)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:52
+msgid ""
+"Hardware L0C→UB requires rank at least two. Its N-split additionally "
+"requires the full N extent to be a multiple of 32."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:55
+msgid ""
+"The larger region is the full logical tile. Each AIV processes the "
+"corresponding half of that tile along the inferred split dimension. A "
+"statically known full extent must therefore be even; odd extents are "
+"rejected rather than rounded into unequal partitions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:60
+msgid "Source region in GM, L0C, or UB, according to the supported paths."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:61
+msgid "Destination region in UB, GM, or L1, according to the supported paths."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:62
+msgid ""
+"Unit flag control (0=manual sync, 3=pipelined with mad). ``None`` omits the "
+"annotation and lowers as 0."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:64
+msgid ""
+"Ascend L2 cache control policy for the UB→GM store path. Accepts an integer "
+"or case-insensitive string name (e.g. ``\"notalloc_clean\"``). Defaults to 0 "
+"(``\"normal_fv\"``). Ascend only; ignored on other backends."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:70
+msgid "If the split direction cannot be inferred from shapes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:77
+msgid ""
+"Uses the common region handling with Ascend-specific whole-buffer checks. "
+"Whole buffers must have equal element counts, but their shapes may differ "
+"for Ascend format conversion and transpose paths (for example, copying ``[K, "
+"M]`` into ``[M, K]``). The extra keywords steer how the Ascend backend "
+"lowers the copy (GM↔L1 L2 cache control, ND/NZ transpose, MTE pad handling, "
+"Cube unit-flag control for the following MAD, sub-block routing)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:84
+msgid ""
+"A UB-to-UB copy from a dense source into a destination annotated with "
+"``make_ascend_compact_nz_layout`` lowers to the ND-to-NZ scatter. The "
+"destination allocation must reserve one padding row, and the copied region "
+"must exclude that row (for example, ``T.copy(src, dst[:rows, :])``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:89
+msgid ""
+"A copy whose destination is an MX scale-factor handle (:func:`tilelang."
+"ascend.language.alloc_l0a_sf` / :func:`~tilelang.ascend.language."
+"alloc_l0b_sf`) loads the per-block scales into the L0 tile's MX slot shadow "
+"instead of moving data."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:94
+msgid "Source memory region (Buffer, BufferLoad or BufferRegion)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:95
+msgid "Destination memory region."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:96
+msgid "Width for coalesced memory access. Defaults to None."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:99
+msgid ""
+"Ascend GM→L1 only. Emit dn2nz (which transposes the N/D mapping) instead of "
+"nd2nz. Defaults to False."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:102
+msgid ""
+"L2 cache control for the GM↔L1 and UB↔GM DMA paths. Accepts the raw integer "
+"or a cache-policy name (case-insensitive, suffix-matched), e.g. "
+"``\"NOTALLOC_KEEP\"``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:107
+msgid ""
+"Unit flag control for the Cube instruction; ``None`` omits the annotation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:110
+msgid "Sub-block id that routes the copy to one of the AIV sub-blocks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:113
+msgid ""
+"Ascend GM→UB only. Round the row width up to the next 32B boundary and fill "
+"the pad lanes with this value. Emits a leading ``T."
+"ascend_set_copy_pad_value(value)`` so AutoSchedule syncs the pad-register "
+"write before the copy. Mutually exclusive with ``data_select``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:120
+msgid ""
+"Ascend GM→UB only. Same right-pad behavior as ``pad_value``, but reuses "
+"whatever the hardware pad register currently holds, which the caller must "
+"have set via ``T.ascend_set_copy_pad_value(...)`` beforehand."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:125
+msgid ""
+"Additional annotations dict; values in it take precedence over the "
+"individual keywords."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:128
+msgid "Parallel loop layout hint for the SIMT copy path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/copy_op/index.rst:132
+msgid "A handle to the copy operation."
+msgstr ""

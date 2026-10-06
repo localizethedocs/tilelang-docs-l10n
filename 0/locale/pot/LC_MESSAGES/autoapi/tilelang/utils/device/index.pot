@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,24 +25,68 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:19:<autosummary>:1
 msgid ":py:obj:`IS_CUDA <tilelang.utils.device.IS_CUDA>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:16:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:19:<autosummary>:1
+msgid ":py:obj:`IS_NPU <tilelang.utils.device.IS_NPU>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:19:<autosummary>:1
 msgid ":py:obj:`IS_MPS <tilelang.utils.device.IS_MPS>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:18
+#: ../../../autoapi/tilelang/utils/device/index.rst:19:<autosummary>:1
+msgid ":py:obj:`Event <tilelang.utils.device.Event>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:21
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/utils/device/index.rst:29:<autosummary>:1
 msgid ""
 ":py:obj:`get_current_device <tilelang.utils.device.get_current_device>`\\ "
 "\\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/utils/device/index.rst:26
+#: ../../../autoapi/tilelang/utils/device/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`device_synchronize <tilelang.utils.device.device_synchronize>`\\ "
+"\\(\\[device\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:53
+#: ../../../autoapi/tilelang/utils/device/index.rst:29:<autosummary>:1
+msgid ""
+"Synchronize CUDA/HIP, MPS, or NPU, preferring CUDA when no device is given."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`get_available_cpu_count <tilelang.utils.device."
+"get_available_cpu_count>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:58
+#: ../../../autoapi/tilelang/utils/device/index.rst:29:<autosummary>:1
+msgid "CPU cores available to this process (cpuset affinity), at least 1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:31
 msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/utils/device/index.rst:60
+msgid ""
+"Falls back to ``os.cpu_count`` where affinity is unavailable (macOS/Windows)."
 msgstr ""

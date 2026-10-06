@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:2
+msgid "tilelang.layout.ascend"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:8
+msgid "Ascend fractal/NZ layout wrappers (moved out of swizzle.py)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`FractalLayoutInfo <tilelang.layout.ascend.FractalLayoutInfo>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:126
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:19:<autosummary>:1
+msgid "Semantic view of a canonical Ascend fractal layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_ascend_nz_layout <tilelang.layout.ascend."
+"make_ascend_nz_layout>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:40
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Create an Ascend NZ (zN fractal) layout for a Cube operand buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_ascend_compact_nz_layout <tilelang.layout.ascend."
+"make_ascend_compact_nz_layout>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:55
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Create a compact staged-NZ layout for a pre-packed UB buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_ascend_major_k_layout <tilelang.layout.ascend."
+"make_ascend_major_k_layout>`\\ \\(buffer\\[\\, k\\_align\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:74
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Create an Ascend fractal layout for logical ``[.., MN, K]`` tiles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_ascend_major_mn_layout <tilelang.layout.ascend."
+"make_ascend_major_mn_layout>`\\ \\(buffer\\[\\, k\\_align\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:82
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Create an Ascend fractal layout for logical ``[.., K, MN]`` tiles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_ascend_l0c_layout <tilelang.layout.ascend."
+"make_ascend_l0c_layout>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Create the fixed Ascend L0C accumulator fractal layout for logical"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_ascend_sf_layout <tilelang.layout.ascend."
+"make_ascend_sf_layout>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:99
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Create an Ascend SF layout for MX scale-factor L1 buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`make_strided_slice <tilelang.layout.ascend.make_strided_slice>`\\ "
+"\\(phys\\_buf\\, layout\\, logical\\_region\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Compute a 0-origin strided buffer view for a logical sub-region on a"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`try_extract_fractal_layout <tilelang.layout.ascend."
+"try_extract_fractal_layout>`\\ \\(layout\\, buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:206
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:34:<autosummary>:1
+msgid "Get semantic information from a canonical Ascend fractal layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:42
+msgid ""
+"A logical ``[.., rows, cols]`` tile maps to physical ``[.., rows / 16, "
+"cols / C0, 16, C0]`` -- a grid of 16xC0 fractals -- where ``C0 = 32 bytes / "
+"element_size`` is the Cube unit's fractal width and the forward map is "
+"``(.., r, c) -> [.., r / 16, c / C0, r % 16, c % C0]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:47
+msgid "BufferLikeType (rank >= 2, constant last-2 dims)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:49
+msgid "The NZ fractal layout for the buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:57
+msgid ""
+"Unlike :func:`make_ascend_nz_layout`, this layout does not round the row "
+"extent of every leading stage up to 16.  A logical ``[..., rows, cols]`` "
+"buffer is stored as consecutive ``[C0-group, rows, C0]`` blocks, with all "
+"leading dimensions flattened into the C0-group axis.  Consequently, a padded "
+"``rows = tile_rows + 1`` stage has exactly the source pitch expected by "
+"``ascend_nd2nz_post_copy``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:65
+msgid ""
+"This layout is intended for UB data that is produced directly in NZ order "
+"(for example with ``vsstb`` or a layout-driven ``T.copy``) and then copied "
+"to L1. It is not an L1 Cube operand layout. For an ND-to-NZ ``T.copy``, the "
+"allocation's row extent must include one trailing padding row while the "
+"copied destination region excludes it."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:76
+msgid ""
+"The contiguous reduce-K axis is grouped by C0 and is the outer physical "
+"major: ``(.., mn, k) -> [.., k / C0, mn / 16, mn % 16, k % C0]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:84
+msgid ""
+"The contiguous output M/N axis is grouped by C0 and is the outer physical "
+"major: ``(.., k, mn) -> [.., mn / C0, k / 16, k % 16, mn % C0]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:90
+msgid ""
+"Create the fixed Ascend L0C accumulator fractal layout for logical ``[.., M, "
+"N]`` tiles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:93
+msgid ""
+"The physical shape is ``[.., N / 16, M / 16, 16, 16]`` and the forward map "
+"is ``(.., m, n) -> [.., n / 16, m / 16, m % 16, n % 16]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:101
+msgid ""
+"A logical ``[..., MN, K]`` scale tile maps to physical ``[..., MN/16, K / "
+"(16 / dtype.bits), 16, 16 / dtype.bits]``. For uint8/int8 SF this is ``[..., "
+"MN/16, K/2, 16, 2]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:108
+msgid ""
+"Compute a 0-origin strided buffer view for a logical sub-region on a layout-"
+"annotated physical buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:111
+msgid ""
+"The result is a plain strided Buffer sharing ``phys_buf``'s data pointer, "
+"with explicit shape (extents) and strides pointing at the sub-region's base "
+"element. No layout knowledge is needed by the consumer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:115
+msgid ""
+"The physical (remapped) buffer, e.g. with NZ shape ``[M/16, K/C0, 16, C0]``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:117
+msgid "The Layout whose forward map describes the physical layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:118
+msgid "One ``Range`` per layout input dim, ``[min, min+extent)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:120
+msgid "A strided buffer view into ``phys_buf``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:128
+msgid ""
+"This is a Python wrapper around the C++ ``TryExtractAscendFractalLayout`` "
+"utility. The layout kind is recorded by the canonical constructor; the "
+"remaining fields are derived from that tag and the buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:134
+msgid "0 = MajorK, 1 = L0C (fixed 16×16), 2 = SF, 3 = MajorMN"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:138
+msgid "C0 value (or 16 for L0C, pack for SF)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:142
+msgid "always 16"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:146
+msgid "logical rows (dim -2)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:150
+msgid "logical cols (dim -1)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:154
+msgid ""
+"full physical extent of C0-axis outer for matrix data or row16-axis outer "
+"for SF"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:158
+msgid ""
+"full physical extent of row16-axis outer for matrix data or C0-axis outer "
+"for SF"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:162
+msgid "0 = row, 1 = col (pack axis for SF)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:166
+msgid "0 = row, 1 = col"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:208
+msgid "FractalLayoutInfo, or None when the input is undefined/invalid."
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/ascend/index.rst:210
+msgid ""
+"If ``layout`` was not made by a canonical Ascend layout constructor or a "
+"transform dropped its semantic tag."
+msgstr ""

@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:2
+msgid "tilelang.ascend.target"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`target_is_ascend <tilelang.ascend.target.target_is_ascend>`\\ "
+"\\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:23
+#: ../../../autoapi/tilelang/ascend/target/index.rst:17:<autosummary>:1
+msgid "Return whether *target* uses the Ascend architecture."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`check_ascend_availability <tilelang.ascend.target."
+"check_ascend_availability>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`normalize_ascend_target <tilelang.ascend.target."
+"normalize_ascend_target>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:17:<autosummary>:1
+msgid ""
+":py:obj:`normalize_asc_target <tilelang.ascend.target."
+"normalize_asc_target>`\\ \\(target\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:32
+#: ../../../autoapi/tilelang/ascend/target/index.rst:17:<autosummary>:1
+msgid "Accept ``asc`` as the concise name for the AscendC backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:19
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/target/index.rst:0
+msgid "Return type"
+msgstr ""
