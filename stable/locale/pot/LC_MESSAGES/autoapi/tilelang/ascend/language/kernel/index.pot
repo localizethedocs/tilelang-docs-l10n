@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:2
+msgid "tilelang.ascend.language.kernel"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:8
+msgid "Ascend NPU dialect of ``T.Kernel``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:10
+msgid ""
+"Ascend owns its launch surface. The NPU launch is a 1-D grid of AI cores "
+"with no SIMT thread domain at kernel scope, so this dialect's ``Kernel`` "
+"declares ``prelude`` and nothing else: passing ``threads=`` or "
+"``cluster_dims=`` is rejected by Python itself rather than by a runtime "
+"probe inside the shared launch path. Thread domains are declared explicitly "
+"*inside* the kernel body by ``T.SimtVF(threads=...)`` (real threadIdx "
+"scopes) or ``T.SimdVF()`` (register level, no threads); both emit their own "
+"thread scopes below the launch nest, so the kernel-level ``tx/ty/tz`` "
+"placeholders are dropped by the Ascend pipeline."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:22
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`SimtVFContext <tilelang.ascend.language.kernel.SimtVFContext>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:49
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:28:<autosummary>:1
+msgid "Thread vars and extents of the innermost nested thread scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:30
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`push_simtvf_context <tilelang.ascend.language.kernel."
+"push_simtvf_context>`\\ \\(ctx\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:65
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Enter a nested thread scope, making its thread vars the current ones."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`pop_simtvf_context <tilelang.ascend.language.kernel."
+"pop_simtvf_context>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:70
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Leave the innermost nested thread scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`get_thread_binding <tilelang.ascend.language.kernel."
+"get_thread_binding>`\\ \\(\\[dim\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:75
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Returns the thread binding for the given dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`get_thread_bindings <tilelang.ascend.language.kernel."
+"get_thread_bindings>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:80
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Returns all three thread bindings."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`get_thread_extent <tilelang.ascend.language.kernel."
+"get_thread_extent>`\\ \\(\\[dim\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:85
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Returns the thread extent for the given dimension."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`get_thread_extents <tilelang.ascend.language.kernel."
+"get_thread_extents>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:90
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Returns all three thread extents."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`Kernel <tilelang.ascend.language.kernel.Kernel>`\\ "
+"\\(\\*blocks\\[\\, prelude\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:95
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid "Construct a kernel launch frame for Ascend: a 1-D grid of AI cores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`MixedKernel <tilelang.ascend.language.kernel.MixedKernel>`\\ "
+"\\(\\*blocks\\[\\, sids\\, prelude\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:123
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:43:<autosummary>:1
+msgid ""
+"Construct an Ascend NPU Mixed-kernel launch frame with sub-kernel ID binding."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:45
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:97
+msgid ""
+"The grid becomes the NPU core index (``blockIdx.x``). There is no SIMT "
+"thread domain at this scope, so this dialect has no ``threads`` parameter: "
+"``with T.Kernel(N) as bx`` yields one program index, and ``bx`` is iterable "
+"as ``(bx,)``. Use ``T.SimtVF(threads=...)`` inside the body to run thread-"
+"parallel code, or ``T.MixedKernel`` for an AIC+AIV mixed kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:103
+msgid ""
+"Extent of the 1-D core grid. Exactly one dimension is allowed; a multi-"
+"dimensional launch is rejected here rather than silently flattened "
+"downstream."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:107
+msgid ""
+"AscendC source injected before the generated kernel, e.g. ``#include`` lines "
+"or helper functions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:112
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:139
+msgid "Examples"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:113
+msgid ""
+"with T.Kernel(NUM_CORES) as bx:\n"
+"    with T.SimtVF(threads=128):\n"
+"        for i in T.Parallel(128):\n"
+"            out[bx * 128 + i] = x[bx * 128 + i] * 2.0"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:125
+msgid "Number of blocks in the 1-D grid (blockIdx.x extent)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:127
+msgid ""
+"Number of active AIV sub-cores (1 or 2). Default is 2. On dav-3510, mixed "
+"kernels always launch the physical ``__mix__(1, 2)`` group; ``sids=1`` "
+"restricts the vector body to sub-core 0. Binds as ``sid`` via "
+"``asc_get_sub_block_id()`` in generated code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:132
+msgid "Import C code injected before the generated kernel."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:135
+msgid ""
+"**res** -- The resulting frame providing ``(bx, sid)`` variable bindings."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/kernel/index.rst:140
+msgid ""
+"with T.MixedKernel(NUM_BLOCKS, sids=2) as (bx, sid):\n"
+"    with T.Cube():\n"
+"        # AIC code using bx\n"
+"        ...\n"
+"    with T.Vector():\n"
+"        # AIV code using both bx and sid\n"
+"        ..."
+msgstr ""
