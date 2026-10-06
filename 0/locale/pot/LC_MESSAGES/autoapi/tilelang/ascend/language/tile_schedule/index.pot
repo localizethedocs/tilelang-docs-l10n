@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:2
+msgid "tilelang.ascend.language.tile_schedule"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:8
+msgid "Ascend persistent GEMM block schedulers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:10
+msgid ""
+"Built on the shared ``BaseTileScheduler`` skeleton in ``tilelang.language."
+"tile_schedule``; see that module's docstring for how ``@meta_class`` "
+"inlining and the ``T.alloc_var`` state protocol work."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:14
+msgid ""
+"Next to the raw state accessors, a scheduler hands out the tile scalars a "
+"kernel slices with: ``tile()``, plus ``batch()`` / ``group()`` on the "
+"variants.  Each call binds its values, assumes their range contract, and "
+"returns the bound variables::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:19
+msgid ""
+"scheduler.init(block_idx)\n"
+"while scheduler.valid():\n"
+"    m_idx, n_idx, actual_m, actual_n = scheduler.tile()\n"
+"    ..."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:24
+msgid ""
+"Those assumptions are what lets the pre-schedule passes prove per-tile GM "
+"regions and L1/L0 extents in bounds."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:30
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`AscendBaseTileScheduler <tilelang.ascend.language.tile_schedule."
+"AscendBaseTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:49
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+"Base for persistent GEMM block schedulers (GROUP_M swizzle + N-first snake)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`AscendTileScheduler <tilelang.ascend.language.tile_schedule."
+"AscendTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid "Single flat M x N grid, GROUP_M swizzle + N-first snake; the last"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`AscendBatchedTileScheduler <tilelang.ascend.language.tile_schedule."
+"AscendBatchedTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+"Standard batched matmul: the Normal grid replicated ``num_groups`` (= batch)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`AscendMGroupedTileScheduler <tilelang.ascend.language.tile_schedule."
+"AscendMGroupedTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+"MoE m-grouped \"contiguous\" layout. ``grouped_layout`` is the prefix-sum-of-"
+"rows"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid ""
+":py:obj:`AscendKGroupedTileScheduler <tilelang.ascend.language.tile_schedule."
+"AscendKGroupedTileScheduler>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:40:<autosummary>:1
+msgid "MoE k-grouped. All groups share one M x N grid but differ in K length;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:42
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:46
+msgid "Bases: :py:obj:`tilelang.language.tile_schedule.BaseTileScheduler`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:51
+msgid ""
+"Holds everything shared across GEMM variants: the grid geometry, the "
+"stateless ``_swizzle`` / ``coord`` decode, the persistent-block-index "
+"advance, and the ``init`` / ``valid`` / ``next_block`` loop protocol. "
+"Concrete variants subclass this and implement ``_step`` (advance one block + "
+"set ``m_idx`` / ``n_idx`` / ``valid_flag``); grouped variants add their own "
+"state and ``_init_state``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:57
+msgid ""
+"Each persistent core independently walks the global ``(m_block, n_block)`` "
+"grid. The block index handed out on iteration ``current_iter`` is "
+"``current_iter * num_cores + core_id``, mapped to a tile by ``_swizzle``. "
+"Usage::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:61
+msgid ""
+"sched = T.AscendTileScheduler(block_m=BM, block_n=BN,\n"
+"                        num_cores=NUM_CORES, shape_m=M, shape_n=N)\n"
+"sched.init(bx)\n"
+"while sched.valid():\n"
+"    m_tile, n_tile = sched.m_idx[0], sched.n_idx[0]\n"
+"    # ... compute tile (m_tile, n_tile) ...\n"
+"    sched.next_block()"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:69
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:71
+msgid "Tile sizes along M and N."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:73
+msgid "Persistent stride = number of resident cores (grid dim)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:75
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:77
+msgid "Problem M and N."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:79
+msgid "Swizzle panel height along M (4 or 8)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:81
+msgid "XOR the in-panel n-index with the m-index (default True)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:83
+msgid "Reverse the N-group order on odd superrows (default True)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:85
+msgid ""
+"If True (default) allocate state and enable ``init`` / ``valid`` / "
+"``next_block``. If False expose only the store-free ``coord`` decode."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:88
+msgid ""
+"Optional state-buffer name prefix. The default ``None`` uses generic auto-"
+"generated names."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:93
+msgid "Notes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:94
+msgid ""
+"State lives in single-element ``T.alloc_var`` buffers -- read with ``sched."
+"m_idx[0]`` and (inside methods) write with ``self.x[0] = ...``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:106
+msgid ""
+"Bind the current tile's M/N offsets and extents, and assume their ranges."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:108
+msgid ""
+"Returns ``(m_idx, n_idx, actual_m, actual_n)``: the tile's element offsets "
+"along M/N and the in-bounds extents of its M/N tail.  ``actual_m`` / "
+"``actual_n`` follow ``get_actual_m`` / ``get_actual_n``, and every tile "
+"``_step`` hands out is a grid tile with a non-empty remainder, so the "
+"emitted facts hold for every iteration of the ``while sched.valid()`` loop "
+"they dominate.  Call it once at the top of that loop body and slice with the "
+"returned values."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:120
+msgid ""
+"Decode a linear ``block_idx`` into ``(m_block, n_block)`` (Normal grid)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:144
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:154
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:177
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:208
+msgid "Bases: :py:obj:`AscendBaseTileScheduler`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:147
+msgid ""
+"Single flat M x N grid, GROUP_M swizzle + N-first snake; the last ``< "
+"group_m`` M-rows fall back to row-major. This is the plain (non-grouped, non-"
+"batched) GEMM scheduler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:157
+msgid ""
+"Standard batched matmul: the Normal grid replicated ``num_groups`` (= batch) "
+"times. ``get_batch_idx()`` exposes the batch of the current block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:160
+msgid ""
+"Extra parameter ``num_groups`` (= batch count) beyond the base scheduler."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:168
+msgid "Bind the current batch index and assume its range."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:170
+msgid ""
+"Returns the same bound variable the fact is stated over; use it (instead of "
+"the raw ``get_batch_idx()`` read) to slice per-batch GM regions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:180
+msgid ""
+"MoE m-grouped \"contiguous\" layout. ``grouped_layout`` is the prefix-sum-of-"
+"rows array (length ``num_groups``); group ``g``'s valid rows are "
+"``[align(psum[g-1], alignment), psum[g])`` in the global M space (group 0 "
+"starts at 0). ``get_group_idx()`` exposes the current group for per-group B/"
+"SF offsets. A/D must allocate all aligned rows, and physical M must be a "
+"multiple of alignment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:186
+msgid ""
+"Extra parameters beyond the base: ``grouped_layout`` (GM ``int32`` prefix-"
+"sum buffer), ``num_groups``, ``alignment`` (group-start row alignment, "
+"default 256)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:198
+msgid "Bind the current group index and assume its range."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:200
+msgid ""
+"``valid`` gates the loop body on ``group_idx < num_groups``; the m cursor is "
+"``last_psum_m // block_m + <group-local tile>``, so it stays non-negative "
+"and every full tile fits the padded row space."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:211
+msgid ""
+"MoE k-grouped. All groups share one M x N grid but differ in K length; "
+"``grouped_layout[i]`` is the cumulative end-K of group ``i``. "
+"``get_group_idx()``, ``get_k_idx_base()`` / ``get_sf_idx_base()`` give the "
+"group and its A/B and SF K offsets; ``get_shape_k()`` is the current group's "
+"K length."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:216
+msgid ""
+"Extra parameters beyond the base: ``grouped_layout`` (GM ``int32`` prefix-"
+"sum buffer), ``num_groups``, ``shape_k`` (physical K allocation, including "
+"trailing padding; only the K-range contract uses it), ``alignment`` (group-"
+"start K alignment, default 256)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:236
+msgid "Bind the current group's K window and assume its ranges."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/tile_schedule/index.rst:238
+msgid ""
+"Returns ``(group_idx, k_base, group_k, sf_base)``: the group index, the "
+"group's K origin, its K length, and the origin of its packed scale-factor "
+"rows.  A valid tile belongs to a non-empty group, so the K span ``[k_base, "
+"k_base + group_k)`` stays inside the total K and its SF rows stay inside the "
+"packed SF buffer: a group starts on an ``alignment`` boundary, which is a "
+"multiple of the SF divisor."
+msgstr ""

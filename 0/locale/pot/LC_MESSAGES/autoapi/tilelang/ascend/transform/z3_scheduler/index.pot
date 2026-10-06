@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:2
+msgid "tilelang.ascend.transform.z3_scheduler"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:8
+msgid "Z3-based scheduler for auto-scheduling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:10
+msgid ""
+"This module provides a Python implementation of the Z3 scheduler that can be "
+"called from C++ via TVM FFI."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:16
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`Z3_AVAILABLE <tilelang.ascend.transform.z3_scheduler."
+"Z3_AVAILABLE>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`z3_schedule_python <tilelang.ascend.transform.z3_scheduler."
+"z3_schedule_python>`\\ \\(latencies\\, iis\\, resource\\_flags\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:43
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid "Schedule a straight-line task list."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`z3_schedule_ffi <tilelang.ascend.transform.z3_scheduler."
+"z3_schedule_ffi>`\\ \\(latencies\\, iis\\, resource\\_flags\\, ...\\[\\, ..."
+"\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:73
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid "FFI wrapper for z3_schedule_python."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`z3_schedule_loop_python <tilelang.ascend.transform.z3_scheduler."
+"z3_schedule_loop_python>`\\ \\(num\\_stages\\, latencies\\, iis\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:80
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid "Schedule a loop body with modulo, stage, and storage constraints."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid ""
+":py:obj:`z3_schedule_loop_ffi <tilelang.ascend.transform.z3_scheduler."
+"z3_schedule_loop_ffi>`\\ \\(num\\_stages\\, latencies\\, iis\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:142
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:33:<autosummary>:1
+msgid "FFI wrapper for z3_schedule_loop_python."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:35
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:45
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:89
+msgid "Execution latency of each task in cycles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:47
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:91
+msgid "Initiation interval of each task in cycles."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:49
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:93
+msgid ""
+"Resource pipe mask for each task (bitmask of ResourcePipe values): MTE1=1, "
+"MTE2=2, MTE3=4, Cube=8, Vector=16, Fixpipe=32, Scalar=64."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:52
+msgid ""
+"Directed ``(i, j, latency)`` constraints requiring task ``j`` to start at "
+"least ``latency`` cycles after task ``i``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:55
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:99
+msgid "Unordered task pairs that cannot issue concurrently on one resource."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:57
+msgid ""
+"Undirected shared-storage owner conflicts ``(i, j, latency_i_j, "
+"latency_j_i)``. Either owner may run first, but their conflicting storage "
+"lifetimes cannot overlap."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:61
+msgid "Source-ordered task pairs that share a hardware pipe."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:63
+msgid "Print solver inputs and the selected schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:66
+msgid ""
+"start_times: Start time for each task sorted_indices: Task indices sorted by "
+"start time"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:75
+msgid "This function accepts TVM containers and converts them to Python lists."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:82
+msgid ""
+"Each start time is represented as ``k * II + r``. Directed dependencies "
+"constrain absolute start times, while resource and owner exclusions choose a "
+"non-overlapping modulo order. The solver finds the minimum feasible II by "
+"binary search."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:87
+msgid "Maximum number of physical versions available to automatic buffers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:96
+msgid ""
+"Directed ``(i, j, distance, latency)`` constraints. Negative distances "
+"encode automatic buffer-version variables."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:101
+msgid ""
+"Undirected shared-storage owner conflicts ``(i, j, latency_i_j, "
+"latency_j_i)``. The chosen modulo order also constrains the reverse "
+"wraparound hand-off."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:105
+msgid "Source-ordered task pairs sharing a hardware pipe."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:107
+msgid "Bytes occupied by one version of each automatic buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:109
+msgid "Capacity followed by member buffer indices for each memory scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:111
+msgid ""
+"Stage-order constraints (u, w) requiring k_u <= k_w (same or earlier "
+"iteration-stage)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:114
+msgid "Recompute the minimum version counts from the selected schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:116
+msgid ""
+"When False, constrain each resource so that, among the tasks using that "
+"resource (pipe bit in resource_flags), max(start_time) - min(start_time) < "
+"II. This keeps all tasks on a resource within a single II window (no "
+"offsetting a resource's tasks across pipeline stages). When True, no such "
+"constraint is added. Defaults to False (constraint applied)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:122
+msgid ""
+"Frontend stages for tasks in source order. Used only when "
+"``manual_schedule`` is True; omitted entries are not allowed."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:125
+msgid ""
+"Preserve source issue order independently on every hardware pipe and "
+"constrain every task's Z3 stage to the corresponding ``manual_stages`` entry."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:129
+msgid "Z3 random seed; ``None`` leaves the solver default unchanged."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:131
+msgid "Print solver inputs, search progress, and the selected schedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:134
+msgid ""
+"start_times: Start time for each task buffer_versions: Number of versions "
+"for each buffer minimal_II: The minimal initiation interval found"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/z3_scheduler/index.rst:144
+msgid ""
+"This function accepts TVM containers and converts them to Python lists. "
+"Dependency arrays are ordered as directed data dependencies, resource "
+"exclusions, shared-storage owner exclusions, and source pipe ordering. "
+"``memory_groups`` contains ``[capacity, idx0, idx1, ...]`` entries; "
+"``stage_order_deps`` contains ``(u, w)`` constraints requiring ``k_u <= "
+"k_w``. The remaining arguments carry the loop's offset and manual-stage "
+"policy from C++."
+msgstr ""

@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> 0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:2
+msgid "tilelang.ascend.language.random"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:8
+msgid "Ascend dialect RNG ops."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:10
+msgid ""
+"Same tl.rng_* emission as the common implementation, but rng_init's default "
+"sequence id derives from the thread context — and on Ascend the thread "
+"domain lives in the enclosing T.SimtVF scope, so the derivation must go "
+"through this dialect's thread accessors rather than the launch-frame ones "
+"the CUDA module consults."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:19
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`rng_init <tilelang.ascend.language.random.rng_init>`\\ "
+"\\(seed\\[\\, seq\\, off\\, generator\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:31
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:25:<autosummary>:1
+msgid "Initialize the random number generator state."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:33
+msgid ""
+"See :func:`tilelang.cuda.language.random.rng_init`; the only difference is "
+"that the default ``seq`` (one stream per lane) is derived from the Ascend "
+"thread scope: the SimtVF lane id plus the AI-core index times the lane count."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/random/index.rst:0
+msgid "Return type"
+msgstr ""
