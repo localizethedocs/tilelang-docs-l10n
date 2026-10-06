@@ -1,0 +1,43 @@
+tilelang.language.gemm
+======================
+
+.. py:module:: tilelang.language.gemm
+
+.. autoapi-nested-parse::
+
+   The language interface for tl programs.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   tilelang.language.gemm.gemm
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   tilelang.language.gemm.gemm_v1
+   tilelang.language.gemm.gemm_v2
+
+
+Module Contents
+---------------
+
+.. py:function:: gemm_v1(A, B, C, transpose_A = False, transpose_B = False, policy = GemmWarpPolicy.Square, clear_accum = False, k_pack = 1, wg_wait = 0, mbar = None)
+
+   GEMM v1: use op tl.gemm.
+
+
+.. py:function:: gemm_v2(A, B, C, transpose_A = False, transpose_B = False, policy = GemmWarpPolicy.Square, clear_accum = False, k_pack = 1, wg_wait = 0, mbar = None)
+
+   GEMM v2: use op tl.gemm_py.
+
+
+.. py:data:: gemm
+
