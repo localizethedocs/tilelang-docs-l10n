@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:2
+msgid "tilelang.ascend.language.reduce_op"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:8
+msgid "Ascend dialect of the reduce operators."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:10
+msgid ""
+"Same surface as :mod:`tilelang.language.reduce_op`, plus the SimdVF direct "
+"path: a SimdVF region has no thread domain, so the common implementation's "
+"fragment round-trip (alloc_fragment + copy in + reduce + copy out) for "
+"shared-to-shared reductions cannot lower there. Inside SimdVF the reduce is "
+"emitted directly on the UB regions and AscendSimdVFLowerParallel lowers it "
+"to the SIMD reduction intrinsics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:17
+msgid ""
+"The thin ``reduce_*`` wrappers are redeclared because the common ones call "
+"the common ``reduce`` by module-level binding and would bypass this "
+"dialect's dispatch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce <tilelang.ascend.language.reduce_op.reduce>`\\ \\(buffer\\, "
+"out\\, reduce\\_type\\, dim\\, clear\\[\\, batch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:44
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "Common :func:`tilelang.language.reduce_op.reduce` plus the SimdVF path."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_max <tilelang.ascend.language.reduce_op.reduce_max>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:49
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_max`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_min <tilelang.ascend.language.reduce_op.reduce_min>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:54
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_min`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_sum <tilelang.ascend.language.reduce_op.reduce_sum>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:59
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_sum`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_abssum <tilelang.ascend.language.reduce_op.reduce_abssum>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, batch\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:64
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_abssum`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_absmax <tilelang.ascend.language.reduce_op.reduce_absmax>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:69
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_absmax`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_bitand <tilelang.ascend.language.reduce_op.reduce_bitand>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:74
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_bitand`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_bitor <tilelang.ascend.language.reduce_op.reduce_bitor>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, annotations\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:79
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_bitor`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid ""
+":py:obj:`reduce_bitxor <tilelang.ascend.language.reduce_op.reduce_bitxor>`\\ "
+"\\(buffer\\, out\\[\\, dim\\, clear\\, batch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:84
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:38:<autosummary>:1
+msgid "See :func:`tilelang.language.reduce_op.reduce_bitxor`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:40
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/reduce_op/index.rst:0
+msgid "Return type"
+msgstr ""

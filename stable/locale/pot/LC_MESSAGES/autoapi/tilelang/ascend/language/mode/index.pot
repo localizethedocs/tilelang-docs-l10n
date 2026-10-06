@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:2
+msgid "tilelang.ascend.language.mode"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:8
+msgid "Ascend stateful hardware mode controls for Cube and GM stores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`set_mmad_direction <tilelang.ascend.language.mode."
+"set_mmad_direction>`\\ \\(direction\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:28
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid "Select whether Cube generates results along M or N first."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`set_hf32_mode <tilelang.ascend.language.mode.set_hf32_mode>`\\ "
+"\\(\\[mode\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:37
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid "Set HF32 mode for Ascend Cube fp32 matmul."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`set_atomic <tilelang.ascend.language.mode.set_atomic>`\\ "
+"\\(\\[op\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:60
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid "Arm an Ascend hardware store-mode atomic op."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid ""
+":py:obj:`set_atomic_none <tilelang.ascend.language.mode.set_atomic_none>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:84
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:22:<autosummary>:1
+msgid ""
+"Clear the Ascend store-mode atomic flag, restoring plain (overwrite) stores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:24
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:30
+msgid ""
+"``direction`` is ``\"m\"`` or ``\"n\"``. The setting applies to subsequent "
+"GEMMs on the AIC, including block-scaled GEMMs. It changes the traversal "
+"within a MAD, independently of the kernel's outer tile-loop order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:39
+msgid ""
+"Controls whether fp32 inputs to the Cube unit are truncated to HF32 (19-bit "
+"mantissa) before multiplication, trading precision for throughput (~2x).  "
+"Ignored for non-fp32 input types."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:43
+msgid "Generates: AscendC::SetHF32Mode(HF32Mode::DISABLE/ENABLE) and"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:44
+msgid "AscendC::SetHF32TransMode(HF32TransMode::NEAREST_ZERO/NEAREST_EVEN)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:46
+msgid ""
+"- None (default): disable HF32, full fp32 precision. - \"nearest_zero\": "
+"enable HF32, round toward zero. - \"nearest_even\": enable HF32, round to "
+"nearest even."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:47
+msgid "None (default): disable HF32, full fp32 precision."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:48
+msgid "\"nearest_zero\": enable HF32, round toward zero."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:49
+msgid "\"nearest_even\": enable HF32, round to nearest even."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:53
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:76
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:62
+msgid ""
+"Call once before the stores it should affect. With the flag armed, an "
+"ordinary L0C->GM (``T.copy``) or UB->GM (``T.dual_copy``) store reduces into "
+"GM (``D op= tile``) in hardware instead of overwriting — no vector loop. "
+"Clear with :func:`set_atomic_none` to restore plain stores."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:67
+msgid "Generates ``AscendC::SetAtomic{Add,Max,Min}<T>()``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:69
+msgid "The store-mode reduction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:71
+msgid ""
+"Accumulate type of the GM destination. One of float32/float16/bfloat16/ int8/"
+"int16/int32 (the dav_3510-supported set)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/mode/index.rst:86
+msgid "Call once to undo :func:`set_atomic`."
+msgstr ""

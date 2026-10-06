@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,87 +22,78 @@ msgid "tilelang.jit.adapter.tvm_ffi"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:8
-msgid "Utilities to adapt TVM FFI kernels to Torch tensors."
+msgid "Utilities to adapt TVM-FFI kernels to Torch tensors."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:10
 msgid ""
-"This adapter intentionally captures PyTorch's current CUDA stream and device "
-"via light-weight callables so that, when the wrapped function is invoked, "
-"the execution observes the same stream context as the active Torch code. On "
-"non-CUDA builds, the stream/device fall back to 0/CPU semantics."
+"TVM-FFI obtains the active work stream through Torch's DLPack Exchange API. "
+"The Ascend adapter installs TileLang's Torch NPU callback before the first "
+"tensor reaches an executable."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:18
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:17
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:23:<autosummary>:1
 msgid ":py:obj:`COMPILE_ARGS <tilelang.jit.adapter.tvm_ffi.COMPILE_ARGS>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:26
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:25
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:31:<autosummary>:1
 msgid ""
 ":py:obj:`TVMFFIKernelAdapter <tilelang.jit.adapter.tvm_ffi."
 "TVMFFIKernelAdapter>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:43
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:32:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:42
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:31:<autosummary>:1
 msgid "Adapter that runs a TVM runtime.Executable with Torch tensors."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:34
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:33
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:40
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:39
 msgid "Bases: :py:obj:`tilelang.jit.adapter.base.BaseKernelAdapter`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:45
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:44
 msgid ""
-"Notes - We capture the \"current\" PyTorch CUDA stream/device as thunks "
-"(callables)"
+"Notes - Torch tensors use TVM-FFI's zero-copy DLPack Exchange API "
+"conversion. - Ascend execution installs a Cython callback that reads Torch's "
+"current"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:47
-msgid ""
-"rather than materializing them at construction time. This ensures the actual "
-"stream/device is read just-in-time when the function runs, matching the "
-"user's current Torch context (e.g., after a stream guard/switch)."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:50
-msgid ""
-"The stream pointer returned is a raw CUDA stream handle compatible with "
-"TVM's device API; on CPU or when CUDA is unavailable, we return 0."
+msgid "NPU stream for every invocation."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:142
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:141
 msgid "Returns the source code of the host module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:148
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:147
 msgid "Returns the source code of the device module."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:154
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:153
 msgid "Returns the source code of the compiled kernel."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:162
+#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:161
 msgid "Returns the primary TIR function from the IR module."
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:0
-msgid "Return type"
 msgstr ""

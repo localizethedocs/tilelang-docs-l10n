@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:2
+msgid "tilelang.ascend.language.print"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:8
+msgid "Ascend dialect T.print."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:10
+msgid ""
+"Same debug externs as the common implementation (`debug_print_var`, "
+"`debug_print_buffer_value`, emitted by the Ascend codegen via src/"
+"tl_templates/ascend/debug.h), but with the NPU's execution model: a kernel "
+"body runs once per AI core and UB/L1 buffers are core-local, so buffer "
+"prints need no CUDA-style single-thread gating. Keeping the policy here "
+"(rather than probing hardware inside the CUDA dialect module) keeps each "
+"dialect self-contained."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`print <tilelang.ascend.language.print.print>`\\ \\(\\[obj\\, "
+"msg\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:33
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:27:<autosummary>:1
+msgid "Print a buffer, a primitive expression, or a plain message."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:35
+msgid ""
+"A ``tirx.Buffer`` (``local``, ``shared``, ``shared.dyn`` or ``global`` "
+"scope), a ``tirx.PrimExpr``, or ``None`` for a message-only print."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:38
+msgid "Optional message prefix."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/print/index.rst:0
+msgid "Return type"
+msgstr ""

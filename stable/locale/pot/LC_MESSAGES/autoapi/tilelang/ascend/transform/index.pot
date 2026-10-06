@@ -1,0 +1,470 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:2
+msgid "tilelang.ascend.transform"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:8
+msgid "Ascend-only TIR transform passes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:13
+msgid "Submodules"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:22
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ":py:obj:`InsertNd2Nz <tilelang.ascend.transform.InsertNd2Nz>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:63
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Rewrite layout-driven UB ND->UB NZ and UB->L1 ND->NZ copies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`NormalizeControlFlowForSchedule <tilelang.ascend.transform."
+"NormalizeControlFlowForSchedule>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:68
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Normalize control flow ahead of AutoSchedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`RestoreWhileLoops <tilelang.ascend.transform.RestoreWhileLoops>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:79
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Rewrite ``synthetic_while``-tagged for loops back into ``while(true)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AnnotateMultiBufferEligible <tilelang.ascend.transform."
+"AnnotateMultiBufferEligible>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:84
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Annotate scheduled For loops with buffers that can be multi-buffered."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`NormalizeConflictHints <tilelang.ascend.transform."
+"NormalizeConflictHints>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:94
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Normalize ``T.assume_no_conflict`` and ``T.assume_conflict`` markers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`EstimateLatency <tilelang.ascend.transform.EstimateLatency>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:99
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Annotate every Ascend AutoSchedule task with latency and II."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AscendRemoveNoOp <tilelang.ascend.transform.AscendRemoveNoOp>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:104
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Remove no-op statements using equality-safe store analysis."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`LegalizeSimdMerging <tilelang.ascend.transform."
+"LegalizeSimdMerging>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:109
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Lower MODE_MERGING SIMD assignments to explicit read-write calls."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`UnrollLoopSkipVF <tilelang.ascend.transform.UnrollLoopSkipVF>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:114
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Expand explicit unroll loops outside SIMD_VF / SIMT_VF blocks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AutoSchedule <tilelang.ascend.transform.AutoSchedule>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:123
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Schedule materialized internal schedule units for downstream lowering."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ":py:obj:`AssignCore <tilelang.ascend.transform.AssignCore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:128
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Annotate each scheduled task with its widest legal AIV/AIC mask."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`PrepareMultiBuffer <tilelang.ascend.transform."
+"PrepareMultiBuffer>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:133
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Choose multi-buffer clocks and add counter init/advance tasks."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ":py:obj:`ResolveCore <tilelang.ascend.transform.ResolveCore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:138
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Narrow core candidates from actual scalar and counter consumers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ":py:obj:`InsertSync <tilelang.ascend.transform.InsertSync>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:143
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Insert synchronization into scheduled Ascend TIR."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`MaterializeMultiBuffer <tilelang.ascend.transform."
+"MaterializeMultiBuffer>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:148
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Lower logical multi-buffer accesses to physical buffer versions."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`LowerScheduledTIR <tilelang.ascend.transform.LowerScheduledTIR>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:153
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Lower scheduled TIR into final AIV/AIC core bodies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`RewriteDualCopy <tilelang.ascend.transform.RewriteDualCopy>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:158
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Lower dual-copy operations using the enclosing vector-core sid."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`NormalizeBufferVersion <tilelang.ascend.transform."
+"NormalizeBufferVersion>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:163
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Lower staged manual/automatic versions to scoped internal attributes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`RewriteAscendBufferVersionLayout <tilelang.ascend.transform."
+"RewriteAscendBufferVersionLayout>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:168
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+"Align each physical version of a multi-buffered UB allocation to 32 bytes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`NormalizeAscendFractalStorage <tilelang.ascend.transform."
+"NormalizeAscendFractalStorage>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:173
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Normalize Cube storage and aliases before OOB padding and scheduling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AscendSimdVFLowerParallel <tilelang.ascend.transform."
+"AscendSimdVFLowerParallel>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:178
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+"Lower T.Parallel inside SIMD_VF blocks to MicroAPI register-level vector ops."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AscendThreadSync <tilelang.ascend.transform.AscendThreadSync>`\\ "
+"\\(storage\\_scope\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:183
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+"Insert thread-storage synchronization independently within each SIMT_VF."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AscendLayoutInference <tilelang.ascend.transform."
+"AscendLayoutInference>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Ascend fork of LayoutInference: VF regions are opaque to the worklist"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AscendLowerTileOp <tilelang.ascend.transform.AscendLowerTileOp>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Ascend fork of LowerTileOp: VF region scopes, buffer-version key remap,"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`AscendInsertOOBPadding <tilelang.ascend.transform."
+"AscendInsertOOBPadding>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:200
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+"Clamp DMA copy OOB tails and emit GM->L1 padding fills before AutoSchedule."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`InferBufferAliases <tilelang.ascend.transform."
+"InferBufferAliases>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:212
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+"Infer which on-chip buffers in a manually scheduled kernel may reuse storage."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`MergeUBAllocations <tilelang.ascend.transform."
+"MergeUBAllocations>`\\ \\(\\[align\\_bytes\\, disable\\_reuse\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:220
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Merge Ascend on-chip allocations from a pairwise reuse contract."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`MarkScalarDcacheBypass <tilelang.ascend.transform."
+"MarkScalarDcacheBypass>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Rewrite scalar global buffer accesses to use dcache bypass intrinsics"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`RewriteFp4ToFp4x2 <tilelang.ascend.transform.RewriteFp4ToFp4x2>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid "Retype genuine fp4 (float4_e2m1fn, lanes=1) storage into the 1-byte"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+":py:obj:`RewriteFlagToBuf <tilelang.ascend.transform.RewriteFlagToBuf>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:57:<autosummary>:1
+msgid ""
+"Normalize each hard_event's synchronization into its 8-slot flag namespace."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:59
+msgid "Package Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:70
+msgid ""
+"Rewrites each ``while cond: BODY`` into a bounded serial ``for`` loop "
+"(tagged ``synthetic_while``) so AutoSchedule can pipeline the body, then "
+"extracts complex ``if`` conditions and buffer-dependent serial/unrolled loop "
+"bounds into temporary ``Bind`` variables. :func:`RestoreWhileLoops` undoes "
+"the while-rewrite after scheduling."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:86
+msgid ""
+"Requires :func:`NormalizeControlFlowForSchedule` followed by :func:"
+"`MaterializeScheduleUnits`, so buffer-dependent control expressions are "
+"schedulable tasks and manual stages and flattened scheduling guards are "
+"available through the shared IRStructure codec."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:116
+msgid ""
+"This pre-AutoSchedule pass only materializes ``T.unroll(..., "
+"explicit=True)`` loops. Non-explicit unroll hints, serial loops, and all VF "
+"block interiors are preserved for their later lowering stages."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:188
+msgid ""
+"Ascend fork of LayoutInference: VF regions are opaque to the worklist and "
+"SIMT_VF bodies infer against the region's own lane scope."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:194
+msgid ""
+"Ascend fork of LowerTileOp: VF region scopes, buffer-version key remap, and "
+"no CUDA async-copy post-processing."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:202
+msgid ""
+"For every supported DMA copy this rewrites the copy to its in-bounds ranges; "
+"for a padded GM->L1 copy it also appends semantic T.fill operations with "
+"exact destination regions. Runs after InsertNd2Nz and before AutoSchedule so "
+"each fill is scheduled as its own MTE2 task and ordered against L1->L0 "
+"consumers. LowerTileOp later converts the fills to ascend_fill_l1, which "
+"codegen emits as asc_fill_l1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:214
+msgid ""
+"The resulting pairwise compatibility contract is consumed by :func:"
+"`MergeUBAllocations`."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:222
+msgid ""
+"AutoSchedule writes this contract during synchronization insertion. Manual "
+"schedules must run :func:`InferBufferAliases` first."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:225
+msgid "Buffer reuse is always performed unless ``disable_reuse`` is set."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:227
+msgid "**fpass** -- The result pass"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:233
+msgid ""
+"Rewrite scalar global buffer accesses to use dcache bypass intrinsics for "
+"buffers that have writes (scalar BufferStore or MTE copy). Pure-read buffers "
+"keep normal BufferLoad (dcache path)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:240
+msgid ""
+"Retype genuine fp4 (float4_e2m1fn, lanes=1) storage into the 1-byte packed-"
+"pair form (float4_e2m1fnx2, lanes=2), halving fp4 element counts / offsets / "
+"indices so pointer arithmetic addresses bytes correctly. fp4 views over non-"
+"fp4 storage are left untouched."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:248
+msgid ""
+"Normalize each hard_event's synchronization into its 8-slot flag namespace. "
+"Sparse flag_ids that extend outside [0,8) and occupy at most 8 slots are "
+"compacted into [0,8) without spilling. When more than 8 slots are required, "
+"a 0/1 knapsack (capacity 8) keeps the subset of sync-point blocks that fills "
+"the flag slots best (renumbered into [0,8)); the rest spill to the shared 32-"
+"slot get_buf/rls_buf mutex pool. Hard_events whose flag_ids are already "
+"within [0,8) are untouched."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/transform/index.rst:256
+msgid ""
+"Must run after InferBufferAliases for manual schedules because alias "
+"inference uses set_flag/wait_flag as its liveness-graph anchors. The "
+"standard pipeline places this after MergeUBAllocations."
+msgstr ""

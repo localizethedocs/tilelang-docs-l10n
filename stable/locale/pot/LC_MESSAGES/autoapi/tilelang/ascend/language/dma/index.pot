@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 15:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:2
+msgid "tilelang.ascend.language.dma"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:8
+msgid "Ascend MTE DMA copy primitives and their pad-value / ND->NZ helpers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`ascend_set_copy_pad_value <tilelang.ascend.language.dma."
+"ascend_set_copy_pad_value>`\\ \\(value\\[\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:26
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:20:<autosummary>:1
+msgid "Set the padding fill value for subsequent Ascend padded MTE copies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:20:<autosummary>:1
+msgid ""
+":py:obj:`ascend_nd2nz_post_copy <tilelang.ascend.language.dma."
+"ascend_nd2nz_post_copy>`\\ \\(dst\\, src\\, rows\\, cols\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:49
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:20:<autosummary>:1
+msgid ""
+"Ascend ND->NZ post-copy from UB scratch to L1 with NZ pointer correction."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:28
+msgid "Generates: asc_set_copy_pad_val(value_bits);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:30
+msgid ""
+"This call moves no data; it configures the stateful hardware pad value "
+"consumed by a following padded GM -> UB/L1 copy. Set it immediately before "
+"each padded copy rather than relying on a single set persisting across "
+"unrelated copies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:35
+msgid "Padding fill value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:37
+msgid ""
+"Copy element dtype (one of int8/uint8/int16/uint16/float16/bfloat16/ int32/"
+"uint32/float32). Required when ``value`` is a Python literal; for a typed "
+"PrimExpr it defaults to ``value.dtype``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/dma/index.rst:43
+msgid "Example"
+msgstr ""
