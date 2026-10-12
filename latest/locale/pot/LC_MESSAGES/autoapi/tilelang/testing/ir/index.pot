@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:2
+msgid "tilelang.testing.ir"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:8
+msgid "Small, exact queries for compiler tests, without running any passes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:10
+msgid ""
+"Counts describe unique static IR nodes within each visited function, "
+"following TVM's post-order visitor. They do not describe dynamic execution "
+"counts or order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:16
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`collect_nodes <tilelang.testing.ir.collect_nodes>`\\ \\(root\\, "
+"node\\_type\\, \\*\\[\\, function\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:31
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid "Collect nodes of a TVM object type from bodies or an expression."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`collect_calls <tilelang.testing.ir.collect_calls>`\\ \\(root\\, "
+"\\*\\, op\\[\\, function\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:40
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid "Collect calls to one exact registered Op; never match name fragments."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`assert_call_count <tilelang.testing.ir.assert_call_count>`\\ "
+"\\(root\\, \\*\\, op\\, count\\[\\, function\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:48
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid "Assert a static call count, showing function ownership on failure."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid ""
+":py:obj:`collect_extern_calls <tilelang.testing.ir.collect_extern_calls>`\\ "
+"\\(root\\, \\*\\, symbol\\[\\, function\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:53
+#: ../../../autoapi/tilelang/testing/ir/index.rst:25:<autosummary>:1
+msgid "Collect tirx.call_extern calls with an exact StringImm symbol argument."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:27
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:33
+msgid ""
+"A module query visits all PrimFunc bodies unless ``function`` selects one by "
+"global name. Other module functions are skipped. Function signatures and "
+"module metadata are not traversed. Shared nodes are visited once per body."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:42
+msgid ""
+"GlobalVar and other non-Op callees do not match. An unregistered name raises "
+"the Op registry's error instead of silently producing an empty result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/testing/ir/index.rst:55
+msgid ""
+"Other call operators, missing arguments and non-string symbols do not match. "
+"This function does not interpret prefixes, templates or regular expressions."
+msgstr ""

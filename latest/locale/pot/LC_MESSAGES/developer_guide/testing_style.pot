@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 17:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer_guide/testing_style.md:1
+msgid "Testing Style Guide"
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:3
+msgid ""
+"Bug fixes need regression coverage, not automatically another test. Add or "
+"expand tests only for behavior the existing suite does not already protect."
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:6
+msgid ""
+"**Identify the gap.** Name the failure and the assertion that catches it. "
+"Check nearby tests and their target/pass settings; a passing suite alone is "
+"not proof of coverage. Verify failure before the fix when practical."
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:9
+msgid ""
+"**Extend before duplicating.** Prefer a small case or assertion in the "
+"relevant test family. Reuse kernels, verifiers, and setup instead of copying "
+"a test file for a minor variant. A separate test is fine for different "
+"behavior or setup."
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:12
+msgid ""
+"**Assert behavior, not the patch.** Do not scan repository source for the "
+"fix, assert constants or mock results unrelated to the bug, or compute the "
+"expected result with the implementation under test. Keep runtime coverage "
+"when only execution exposes the failure."
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:16
+msgid ""
+"**Keep cases focused.** Use the smallest input that still triggers the bug. "
+"Add shapes, dtypes, and configurations only for distinct affected paths, "
+"boundaries, or necessary interactions. Avoid unrelated parameter products "
+"and repeated kernel compilation that add cost without coverage."
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:20
+msgid ""
+"**Keep the change local.** Reuse existing helpers; do not introduce a "
+"fixture framework or refactor unrelated tests for a small regression."
+msgstr ""
+
+#: ../../../developer_guide/testing_style.md:23
+msgid ""
+"If existing tests already catch the failure, run them rather than add an "
+"equivalent permanent test. Preserve distinct regression coverage: fewer test "
+"functions or files is not the goal."
+msgstr ""
