@@ -1,0 +1,631 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../programming_guides/autotuning.md:1
+msgid "Autotuning"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:3
+msgid ""
+"TileLang includes a built‑in autotuner that searches configuration spaces "
+"for the best performing kernel, compiles candidates in parallel, validates "
+"correctness, benchmarks them, and caches the best result for reuse."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:7
+msgid "This guide covers two workflows:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:8
+msgid ""
+"Decorator‑based: `@tilelang.autotune(configs=...)` stacked on `@tilelang.jit`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:9
+msgid "Programmatic: `AutoTuner.from_kernel(...).set_*().run()`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:11
+msgid ""
+"It also explains input tensor supply, validation, caching, and environment "
+"variables that affect parallelism and cache behavior."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:14
+msgid "1) Decorator‑based Autotune"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:16
+msgid ""
+"Use `@tilelang.autotune` above `@tilelang.jit` and expose tunable parameters "
+"as function arguments with defaults. The autotuner overrides these "
+"parameters with values from your config space."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:20
+msgid ""
+"import tilelang\n"
+"import tilelang.language as T\n"
+"\n"
+"def matmul_configs(M, N, K):\n"
+"    # Example space — tailor to your target\n"
+"    tiles = [64, 128]\n"
+"    stages = [2, 3]\n"
+"    threads = [128, 256]\n"
+"    return [\n"
+"        dict(block_M=BM, block_N=BN, block_K=BK, num_stages=S, threads=TH)\n"
+"        for BM in tiles\n"
+"        for BN in tiles\n"
+"        for BK in [32, 64]\n"
+"        for S in stages\n"
+"        for TH in threads\n"
+"    ]\n"
+"\n"
+"@tilelang.autotune(configs=matmul_configs, warmup=25, rep=100, timeout=60)\n"
+"@tilelang.jit(out_idx=[-1])\n"
+"def matmul(M: int, N: int, K: int,\n"
+"           block_M: int = 128, block_N: int = 128, block_K: int = 32,\n"
+"           threads: int = 128, num_stages: int = 3,\n"
+"           dtype: str = 'float16', accum_dtype: str = 'float32'):\n"
+"\n"
+"    @T.prim_func\n"
+"    def kernel(A: T.Tensor((M, K), dtype),\n"
+"               B: T.Tensor((K, N), dtype),\n"
+"               C: T.Tensor((M, N), dtype)):\n"
+"        with T.Kernel(T.ceildiv(N, block_N), T.ceildiv(M, block_M), "
+"threads=threads) as (bx, by):\n"
+"            A_s = T.alloc_shared((block_M, block_K), dtype)\n"
+"            B_s = T.alloc_shared((block_K, block_N), dtype)\n"
+"            C_f = T.alloc_fragment((block_M, block_N), accum_dtype)\n"
+"            T.clear(C_f)\n"
+"\n"
+"            for ko in T.Pipelined(T.ceildiv(K, block_K), "
+"num_stages=num_stages):\n"
+"                T.copy(A[by * block_M, ko * block_K], A_s)\n"
+"                T.copy(B[ko * block_K, bx * block_N], B_s)\n"
+"                T.gemm(A_s, B_s, C_f)\n"
+"\n"
+"            T.copy(C_f, C[by * block_M, bx * block_N])\n"
+"\n"
+"    return kernel\n"
+"\n"
+"# Usage\n"
+"# Provide inputs via context (recommended for reproducibility across "
+"configs)\n"
+"import torch\n"
+"M = N = K = 1024\n"
+"A = torch.randn(M, K, device='cuda', dtype=torch.float16)\n"
+"B = torch.randn(K, N, device='cuda', dtype=torch.float16)\n"
+"C = torch.empty(M, N, device='cuda', dtype=torch.float16)\n"
+"\n"
+"from tilelang.autotuner import set_autotune_inputs\n"
+"with set_autotune_inputs(A, B, C):\n"
+"    tuned_kernel = matmul(M, N, K)   # compiles, tunes, returns best kernel\n"
+"    tuned_kernel(A, B, C)            # run best kernel\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:78
+#: ../../../programming_guides/autotuning.md:194
+#: ../../../programming_guides/autotuning.md:270
+msgid "Notes"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:79
+msgid ""
+"`configs` can be a list of dicts or a callable `(args...) -> list[dict]`. "
+"Each dict’s keys must match the tunable function arguments (e.g., `block_M`)."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:81
+msgid ""
+"The decorator returns a callable that runs autotune once per argument tuple "
+"and caches the resulting best kernel in‑process."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:83
+msgid ""
+"For explicit input control during tuning, wrap the call with "
+"`set_autotune_inputs(...)`. Otherwise, `supply_type` (below) is used."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:86
+msgid "2) Programmatic Autotune"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:88
+msgid ""
+"Use the `AutoTuner` class to manage configs and arguments more explicitly."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:90
+msgid ""
+"from tilelang.autotuner import AutoTuner\n"
+"\n"
+"kernel_factory = matmul  # the function above (already @tilelang.jit)\n"
+"tuner = AutoTuner.from_kernel(kernel_factory(M, N, K), "
+"configs=matmul_configs(M, N, K))\n"
+"\n"
+"tuner.set_profile_args(\n"
+"    warmup=25, rep=100, timeout=60,\n"
+"    supply_type=tilelang.TensorSupplyType.Auto,  # or provide supply_prog/"
+"ref_prog\n"
+"    ref_prog=lambda A, B, C: torch.allclose(C, (A @ B).to(C.dtype), "
+"rtol=1e-2, atol=1e-2),\n"
+")\n"
+"\n"
+"tuner.set_compile_args(\n"
+"    target='auto',                  # or 'cuda'/'hip'/'metal'\n"
+"    execution_backend='auto',       # resolves per-target\n"
+"    out_idx=[-1],                   # which outputs to return if multiple\n"
+"    pass_configs={                  # optional TVM passes/flags\n"
+"        # tilelang.PassConfigKey.EXAMPLE_KEY: value,\n"
+"    },\n"
+")\n"
+"\n"
+"artifact = tuner.run()             # compiles + runs + validates all "
+"configs\n"
+"best_kernel = artifact.kernel      # JITKernel\n"
+"best_latency = artifact.latency\n"
+"best_config = artifact.config\n"
+"\n"
+"# Reuse best kernel\n"
+"best_kernel(A, B, C)\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:120
+msgid "Example Gallery (in repo)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:121
+msgid ""
+"examples/gdn/example_chunk_delta_h.py:101 — uses `@autotune` to sweep configs"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:122
+msgid ""
+"examples/deepseek_nsa/benchmark/benchmark_nsa_fwd.py:451 — uses `@tilelang."
+"autotune`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:123
+msgid "examples/quickstart.py:84 — profiles a tuned kernel with `get_profiler`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:124
+msgid ""
+"examples/hadamard_transform/example_hadamard.py:152 — profiler with custom "
+"warmup"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:125
+msgid ""
+"examples/dynamic_shape/example_dynamic.py:94 — profiler for dynamic shapes"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:126
+msgid ""
+"examples/gemm/example_gemm_persistent.py:135 — compare persistent vs "
+"non‑persistent"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:128
+msgid "Click any path to open the code and compare patterns."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:130
+msgid "Input Tensor Supply"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:132
+msgid ""
+"The tuner needs inputs to compile and benchmark kernels. Provide them in one "
+"of three ways (priority order):"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:135
+msgid "Context manager (fixed inputs across configs)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:136
+msgid ""
+"with set_autotune_inputs(A, B, C):\n"
+"    tuned = matmul(M, N, K)\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:141
+msgid "Custom supplier program"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:142
+msgid ""
+"def supply_prog(signature):\n"
+"    # signature holds KernelParam objects describing shapes/dtypes\n"
+"    # Return a list of torch tensors matching the kernel’s arguments\n"
+"    return [A, B, C]\n"
+"\n"
+"tuner.set_profile_args(supply_prog=supply_prog)\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:151
+msgid "Built‑in generators via `supply_type`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:152
+msgid ""
+"`TensorSupplyType.Auto` (default): heuristic per dtype (uniform ints / fp "
+"ranges)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:153
+msgid "`Integer`, `Uniform`, `Normal`, `Randn`, `Zero`, `One`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:155
+msgid "Important"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:156
+msgid ""
+"Built‑in generators require static shapes; if your PrimFunc uses symbolic "
+"dimensions (T.dyn), supply concrete inputs via (1) or (2)."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:158
+msgid "Float8 dtypes require PyTorch 2.1+ for `torch.float8_*` support."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:160
+msgid "Correctness Checking and Tolerances"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:162
+msgid "Use one of the following validation methods:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:163
+msgid ""
+"`ref_prog`: Provide a reference program that receives the same inputs and "
+"checks results. You can return a boolean or raise on mismatch."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:165
+msgid ""
+"`manual_check_prog`: A callable that inspects outputs and raises on mismatch."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:166
+msgid "`skip_check=True`: Skip correctness checks (faster, use with caution)."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:168
+msgid "Control numeric drift via:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:169
+msgid "`rtol` and `atol` (defaults 1e‑2)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:170
+msgid "`max_mismatched_ratio` (default 1%)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:172
+msgid "Configuration Spaces and Best Practices"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:174
+msgid "What to tune"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:175
+msgid "Tile sizes: `block_M`, `block_N`, `block_K`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:176
+msgid "Software pipelining: `num_stages`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:177
+msgid "Threads per block: `threads` (or (x, y) tuple)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:178
+msgid "Optional: dtype variants, epilogues, small scheduling knobs"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:180
+msgid "Tips"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:181
+msgid "Start from a working baseline. Tune a small, meaningful space first."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:182
+msgid ""
+"Respect hardware limits (shared memory bytes, registers per thread/block, "
+"max threads per block). Eliminate impossible configs up‑front."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:184
+msgid ""
+"Keep block sizes multiples of vector widths and warp sizes when relevant."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:185
+msgid ""
+"Use `set_autotune_inputs` to ensure each config is measured on identical "
+"data."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:186
+msgid "Record your best configs and bake them as defaults when stable."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:188
+msgid "Parallel Compilation/Benchmarking and Timeouts"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:190
+msgid ""
+"The tuner compiles configurations in parallel using a thread pool and "
+"benchmarks them with a per‑config timeout. On CUDA, each worker sets the "
+"current device to avoid context issues."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:195
+msgid ""
+"`timeout` uses POSIX signals; on non‑Unix systems, it may not take effect."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:196
+msgid "Logs are written to `autotuner.log` in the working directory."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:198
+msgid "Caching"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:200
+msgid ""
+"The autotuner caches best artifacts both in‑memory (per process) and on disk "
+"under `$TILELANG_CACHE_DIR/autotuner`. The cache key includes:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:202
+msgid "TileLang version, function source, closure free‑vars"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:203
+msgid "Config list, compile args, profile args"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:205
+msgid "Disk cache contents (per key)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:206
+msgid "Best config and latency: `best_config.json`, `latency.json`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:207
+msgid ""
+"Kernel sources and library: `device_kernel.cu`, `host_kernel.cu`, "
+"`kernel_lib.so` (or `kernel.cubin`/`executable.so` depending on backend)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:208
+msgid "Function and params: `function.pkl`, `params.pkl`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:210
+msgid "Control via env vars (tilelang.env)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:211
+msgid "`TILELANG_CACHE_DIR` (default `~/.tilelang/cache`)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:212
+msgid "`TILELANG_TMP_DIR` (default `$TILELANG_CACHE_DIR/tmp`)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:213
+msgid "Disable all kernel caches: `TILELANG_DISABLE_CACHE=1`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:214
+msgid ""
+"Disable autotune disk cache only: `TILELANG_AUTO_TUNING_DISABLE_CACHE=1`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:216
+msgid "CPU worker control"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:217
+msgid "`TILELANG_AUTO_TUNING_CPU_UTILITIES` (fraction, default 0.9)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:218
+msgid "`TILELANG_AUTO_TUNING_CPU_COUNTS` (int, `-1` auto)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:219
+msgid "`TILELANG_AUTO_TUNING_MAX_CPU_COUNT` (int, `-1` unlimited)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:221
+msgid "Backend notes"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:222
+msgid "NVRTC backend persists `.cubin` and a Python launcher."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:223
+msgid ""
+"Torch/DLPack backend may not save artifacts to disk; in this case, only "
+"in‑memory caching applies and a warning is logged."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:226
+msgid "Alternative: Manual Sweeps with par_compile"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:228
+msgid ""
+"If you prefer manual control, use `JITImpl.par_compile` to compile a batch "
+"of configs and drive your own benchmarking:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:231
+msgid ""
+"@tilelang.jit\n"
+"def factory(M, N, K, block_M=128, block_N=128, block_K=32):\n"
+"    @T.prim_func\n"
+"    def k(A: T.Tensor((M, K), 'float16'),\n"
+"           B: T.Tensor((K, N), 'float16'),\n"
+"           C: T.Tensor((M, N), 'float16')):\n"
+"        ...\n"
+"    return k\n"
+"\n"
+"impl = factory  # JITImpl\n"
+"cfgs = [\n"
+"    dict(block_M=64, block_N=128, block_K=32),\n"
+"    dict(block_M=128, block_N=128, block_K=64),\n"
+"]\n"
+"kernels = impl.par_compile(cfgs, num_workers=4)\n"
+"# Now benchmark kernels[i](A, B, C) yourself\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:250
+msgid "Recording and Reusing Best Configs"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:252
+msgid ""
+"The programmatic path returns an `AutotuneResult` that can be saved and "
+"later reloaded. This is useful for CI, multi‑host workflows, or shipping "
+"tuned configs."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:255
+msgid ""
+"artifact = tuner.run()  # AutotuneResult\n"
+"\n"
+"# Save to disk\n"
+"from pathlib import Path\n"
+"save_dir = Path('out/best/matmul_1024')\n"
+"artifact.save_to_disk(save_dir, verbose=True)\n"
+"\n"
+"# Reload later\n"
+"from tilelang.autotuner.param import AutotuneResult, CompileArgs\n"
+"restored = AutotuneResult.load_from_disk(save_dir, CompileArgs())\n"
+"best = restored.kernel\n"
+"best(A, B, C)\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:271
+msgid ""
+"DLPack/Torch execution backend may not persist compiled binaries; in that "
+"case, re‑compilation is needed on load or use a different backend."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:273
+msgid ""
+"The directory contains human‑readable JSONs (best config/latency) and "
+"sources."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:275
+msgid "Advanced: Config Space Callables"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:277
+msgid ""
+"Derive config spaces from problem sizes to keep searches targeted and legal:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:279
+msgid ""
+"def matmul_configs(M, N, K):\n"
+"    large = min(M, N, K) >= 1024\n"
+"    tiles = [128] if large else [64, 128]\n"
+"    for BM in tiles:\n"
+"        for BN in tiles:\n"
+"            for BK in [32, 64]:\n"
+"                for S in [2, 3]:\n"
+"                    for TH in [128, 256]:\n"
+"                        yield dict(block_M=BM, block_N=BN, block_K=BK,\n"
+"                                    num_stages=S, threads=TH)\n"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:292
+msgid "Device and Backend Selection"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:294
+msgid "Tune compile‑time options explicitly:"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:295
+msgid "`target='auto'|'cuda'|'hip'|'metal'` (normalized to a TVM Target)"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:296
+msgid "`execution_backend='auto'|'tvm_ffi'|'cython'|'nvrtc'|'torch'`"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:297
+msgid "`pass_configs={...}` to toggle TileLang/TVM passes for experiments"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:299
+msgid ""
+"On CUDA with multiple GPUs, the tuner sets the current device per worker "
+"thread to avoid context mixups."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:302
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:303
+msgid ""
+"“No configurations to tune”: Ensure `configs` is a non‑empty list or "
+"callable."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:304
+msgid ""
+"Timeouts: Increase `timeout`; ensure inputs fit device memory; verify that "
+"your reference check isn’t the bottleneck."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:306
+msgid ""
+"Dynamic shapes: Provide concrete inputs via `set_autotune_inputs` or a "
+"custom `supply_prog`."
+msgstr ""
+
+#: ../../../programming_guides/autotuning.md:308
+msgid ""
+"Disk cache disabled: Check `TILELANG_AUTO_TUNING_DISABLE_CACHE` and backend."
+msgstr ""
