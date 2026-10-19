@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-29 08:24+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:2
+msgid "tilelang.tileop.base"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:8
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:14:<autosummary>:1
+msgid ":py:obj:`GemmWarpPolicy <tilelang.tileop.base.GemmWarpPolicy>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:23
+#: ../../../autoapi/tilelang/tileop/base/index.rst:14:<autosummary>:1
+msgid "Enumeration for GEMM Warp Partitioning Policies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:16
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:20
+msgid "Bases: :py:obj:`enum.IntEnum`"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:43
+msgid "Check if the policy is a square partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:45
+msgid "True if the policy is square, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:52
+msgid "Check if the policy is a full row partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:54
+msgid "True if the policy is full row, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:61
+msgid "Check if the policy is a full column partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:63
+msgid "True if the policy is full column, False otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:72
+msgid "Compute the prime factorization of a given number."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:74
+msgid "The number to factorize."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:77
+msgid "A list of prime factors of the number."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:84
+msgid "Compute the warp partition (m_warp, n_warp) based on the given policy."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:86
+msgid "The number of rows in the GEMM workload."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:88
+msgid "The number of columns in the GEMM workload."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:90
+msgid "The total number of warps available."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:93
+msgid "A tuple (m_warp, n_warp) representing the partitioning of warps."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:96
+msgid "If the policy is invalid or the partitioning fails."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:97
+msgid ""
+"If M or N is not divisible by the required factor for FullRow or FullCol "
+"policies."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:105
+msgid "Determine the warp policy based on the given warp partitioning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:107
+msgid "Number of warps in the row dimension"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:109
+msgid "Number of warps in the column dimension"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:112
+msgid "The corresponding warp policy"
+msgstr ""
+
+#: ../../../autoapi/tilelang/tileop/base/index.rst:116
+msgid "Examples"
+msgstr ""
