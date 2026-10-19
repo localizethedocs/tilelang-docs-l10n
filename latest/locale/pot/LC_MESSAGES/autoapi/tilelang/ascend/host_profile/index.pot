@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 15:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:2
+msgid "tilelang.ascend.host_profile"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:8
+msgid "Optional Torch host ranges for Ascend kernel calls."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`maybe_wrap_host_profile <tilelang.ascend.host_profile."
+"maybe_wrap_host_profile>`\\ \\(func\\, prim\\_func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:25
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:19:<autosummary>:1
+msgid "Optionally wrap an Ascend callable in a Torch host profiling range."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:27
+msgid ""
+"Resolve the switch and range name once when the callable is created or "
+"restored from disk. Disabled profiling and missing ``global_symbol`` "
+"attributes leave the original callable unchanged."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/host_profile/index.rst:0
+msgid "Return type"
+msgstr ""

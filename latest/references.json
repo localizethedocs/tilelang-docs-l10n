@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-10-19 17:45:34 +0800",
+      "hash" : "424792eba01d887805fda8f71c847aa7749e6643",
+      "title" : "Add Windows ARM64 support to CI (#2962)"
     }
   },
   "type" : "branch",
