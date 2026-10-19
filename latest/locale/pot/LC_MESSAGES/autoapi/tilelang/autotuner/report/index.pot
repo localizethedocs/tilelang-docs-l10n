@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 15:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:2
+msgid "tilelang.autotuner.report"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:8
+msgid ""
+"Experimental, opt-in autotuning observations; not a persistent tuning cache."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:19:<autosummary>:1
+msgid ":py:obj:`TrialReporter <tilelang.autotuner.report.TrialReporter>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:25
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:19:<autosummary>:1
+msgid ""
+"Invoke a caller-owned sink synchronously on the run's aggregation thread."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:21
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:27
+msgid ""
+"Records contain detached JSON representations of configs, not arbitrary "
+"objects. The sink must not mutate/re-enter the tuner and should not perform "
+"slow work. An ordinary reporting error disables the sink for this run, not "
+"tuning."
+msgstr ""
+
+#: ../../../autoapi/tilelang/autotuner/report/index.rst:0
+msgid "Parameters"
+msgstr ""

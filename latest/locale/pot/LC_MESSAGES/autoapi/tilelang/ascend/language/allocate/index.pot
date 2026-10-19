@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-19 15:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:2
+msgid "tilelang.ascend.language.allocate"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:8
+msgid ""
+"Ascend on-chip buffer allocation: L1 (CBuf) and the L0A/L0B/L0C Cube scopes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_shared <tilelang.ascend.language.allocate.alloc_shared>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:32
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Allocate a UB buffer."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_l1 <tilelang.ascend.language.allocate.alloc_l1>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:42
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Allocate an L1 buffer (__cbuf__) on Ascend NPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_ss <tilelang.ascend.language.allocate.alloc_ss>`\\ "
+"\\(shape\\[\\, dtype\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:51
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Allocate scalar storage shared by one AIC and its two AIVs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_l0a <tilelang.ascend.language.allocate.alloc_l0a>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:71
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Allocate an L0A buffer (__ca__) on Ascend NPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_l0b <tilelang.ascend.language.allocate.alloc_l0b>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:79
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Allocate an L0B buffer (__cb__) on Ascend NPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_l0c <tilelang.ascend.language.allocate.alloc_l0c>`\\ "
+"\\(shape\\, dtype\\[\\, scope\\, layout\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:87
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Allocate an L0C buffer (__cc__) on Ascend NPU."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_l0a_sf <tilelang.ascend.language.allocate.alloc_l0a_sf>`\\ "
+"\\(buf\\[\\, sf\\_dtype\\, sf\\_shape\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:97
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Return the MX scale-factor handle of an L0A data tile."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`alloc_l0b_sf <tilelang.ascend.language.allocate.alloc_l0b_sf>`\\ "
+"\\(buf\\[\\, sf\\_dtype\\, sf\\_shape\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:116
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:26:<autosummary>:1
+msgid "Return the MX scale-factor handle of an L0B data tile."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:28
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:34
+msgid ""
+"Same surface as the common ``T.alloc_shared`` minus its CUDA-only bool "
+"workaround (bool buffers there downgrade to the static \"shared\" scope "
+"because the smem-merge pass cannot handle bool): Ascend UB handles bool "
+"buffers in the requested scope directly."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:44
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:89
+msgid "Buffer shape"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:45
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:90
+msgid "Data type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:46
+msgid "Memory scope. Defaults to \"shared.l1\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:53
+msgid ""
+"SS buffers have static shapes, uint32/uint64 elements, and 32-byte aligned "
+"allocation bases within the MIX 1:2 group's 3 KiB SS pool. Allocation does "
+"not initialize the contents. ``T.view`` may reinterpret the same storage. SS "
+"follows ordinary buffer optimization semantics; unused accesses may be "
+"removed. Synchronization establishes publication and slot-reuse order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:59
+msgid ""
+"The two AIVs must write disjoint byte ranges. AIV/AIC dependencies use "
+"ordinary automatic cross-core synchronization. Direct AIV peer dependencies "
+"require explicit synchronization, as with other shared storage. Manual "
+"kernels must supply their own publication and slot-reuse protocol. Automatic "
+"multibuffering uses the same ownership and version annotations as L1. All "
+"views share one version clock; every version counts toward the group's 3072-"
+"byte capacity. SS is scalar-only: VF access, DMA and atomics are not "
+"supported."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:73
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:81
+msgid ""
+"Layout is deferred to the consuming gemm operation, which infers K-major or "
+"MN-major from its transpose flags."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:91
+msgid "Memory scope. Defaults to \"shared.l0c\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:92
+msgid "Whether to annotate the fixed Ascend L0C accumulator layout."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:99
+msgid ""
+"The handle (scope ``shared.l0a.sf``) materializes no storage: the hardware "
+"keys a tile's scale slots to the tile's own address. Load scales with ``T."
+"copy(sf_l1, handle)`` and pass the handle to ``T.gemm_blockscaled`` as "
+"``SFA``. Allocation permanently binds this handle to ``buf``; GEMM verifies "
+"the binding and leading indices. Scale slots are sticky, so one scale load "
+"may serve several data loads (see testing/ascend/language/"
+"test_tilelang_ascend_mx_sf_slots.py)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:107
+msgid ""
+"The default shape preserves all leading dimensions and assumes trailing "
+"untransposed ``(rows, K)`` matrix dimensions with one scale per 32 K "
+"elements packed into ``sf_dtype`` (``uint16`` = one pair per 64 K elements); "
+"pass ``sf_shape`` explicitly for transposed tiles. Allocate one SF handle "
+"per data buffer and reuse that handle."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/allocate/index.rst:118
+msgid "See :func:`alloc_l0a_sf`; identical semantics for the L0B slot shadow."
+msgstr ""
