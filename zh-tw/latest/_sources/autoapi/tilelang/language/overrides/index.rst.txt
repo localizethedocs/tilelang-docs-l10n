@@ -1,0 +1,23 @@
+tilelang.language.overrides
+===========================
+
+.. py:module:: tilelang.language.overrides
+
+.. autoapi-nested-parse::
+
+   TileLang-specific runtime overrides.
+
+   Importing this package registers custom handlers that extend or override
+   behavior from upstream TVMScript for TileLang semantics.
+
+
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 1
+
+   /autoapi/tilelang/language/overrides/buffer/index
+
+
