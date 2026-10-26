@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 14:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:2
+msgid "tilelang.contrib.ptodsl.allreduce"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:8
+msgid "SIMT cross-workitem all-reduce."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:10
+msgid ""
+"Vendored from the PTOAS project (``ptodsl/ptodsl/_allreduce.py``); upstream "
+"commit f5eff3ee249697f6157088f649c6434fcc9d7c5b (\"refactor(ptodsl): remove "
+"the SIMT allreduce helpers\") removed the module expecting TileLang to own "
+"the implementation. contrib.ptodsl's integer-signedness compatibility, "
+"previously applied as monkey patches from ``simt.py``, is merged directly "
+"into the reducer tables and the dtype dispatch."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:17
+msgid ""
+"All-reduce ops are emitted **inline** at the current insertion point. Three "
+"reducer variants: ``simt_allreduce_sum``, ``simt_allreduce_max``, "
+"``simt_allreduce_min``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:20
+msgid ""
+"Dispatch tree (compile-time, since *threads* / *scale* are Python ints)::"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:22
+msgid ""
+"threads <= scale                                       →  identity\n"
+"threads ≤ 32,  pow2(threads), pow2(scale)              →  warp_reduce\n"
+"threads ≤ 32                                           →  ub_reduce\n"
+"threads > 32,  pow2(threads), scale≤32, pow2(scale)   →  cross_warp_reduce\n"
+"otherwise                                              →  ub_reduce "
+"(fallback)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`redux_add <tilelang.contrib.ptodsl.allreduce.redux_add>`\\ \\"
+"(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:48
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid "Sum reduce across warp lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`redux_max <tilelang.contrib.ptodsl.allreduce.redux_max>`\\ \\"
+"(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:53
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid "Max reduce across warp lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`redux_min <tilelang.contrib.ptodsl.allreduce.redux_min>`\\ \\"
+"(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:58
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid "Min reduce across warp lanes."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`simt_allreduce_sum "
+"<tilelang.contrib.ptodsl.allreduce.simt_allreduce_sum>`\\ \\(value\\, \\*\\, "
+"threads\\[\\, scale\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:63
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid "Sum reduce across SIMT work-items."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`simt_allreduce_max "
+"<tilelang.contrib.ptodsl.allreduce.simt_allreduce_max>`\\ \\(value\\, \\*\\, "
+"threads\\[\\, scale\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:68
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid "Max reduce across SIMT work-items."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid ""
+":py:obj:`simt_allreduce_min "
+"<tilelang.contrib.ptodsl.allreduce.simt_allreduce_min>`\\ \\(value\\, \\*\\, "
+"threads\\[\\, scale\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:73
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:42:<autosummary>:1
+msgid "Min reduce across SIMT work-items."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl/allreduce/index.rst:44
+msgid "Module Contents"
+msgstr ""

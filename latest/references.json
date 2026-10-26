@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-10-26 22:36:37 +0800",
+      "hash" : "89b5b5b9ad82a95570595a9e13c31d4d69002f71",
+      "title" : "[BugFix] Allocate out_idx outputs on the caller-supplied launch stream (#3649)"
     }
   },
   "type" : "branch",
