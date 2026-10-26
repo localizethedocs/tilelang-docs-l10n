@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-10-26 14:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:8
 msgid ""
-"Warp-level primitives for CuTeDSL backend. Re-exports from cutlass.cute.arch "
-"with TileLang naming conventions."
+"Warp-level primitives for CuTeDSL backend. TileLang-compatible wrappers over "
+"CUTLASS primitives."
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:14
@@ -66,8 +66,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`warp_reduce_bitand <tilelang.contrib.cutedsl.warp."
-"warp_reduce_bitand>`\\ \\(value\\)"
+":py:obj:`warp_reduce_bitand "
+"<tilelang.contrib.cutedsl.warp.warp_reduce_bitand>`\\ \\(value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:45
@@ -77,8 +77,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`warp_reduce_bitor <tilelang.contrib.cutedsl.warp."
-"warp_reduce_bitor>`\\ \\(value\\)"
+":py:obj:`warp_reduce_bitor "
+"<tilelang.contrib.cutedsl.warp.warp_reduce_bitor>`\\ \\(value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:50

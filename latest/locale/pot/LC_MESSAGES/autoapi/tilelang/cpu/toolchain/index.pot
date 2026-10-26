@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 14:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:2
+msgid "tilelang.cpu.toolchain"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:8
+msgid "OpenMP compile-flag helpers for CPU kernels (``tl.cpu_parallel``)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:10
+msgid ""
+"The kernel shared library must link the *same* libomp copy the host process "
+"already loaded, otherwise macOS dyld raises ``OMP: Error #15`` (multiple "
+"OpenMP runtimes). Detection order (mirrors torch inductor's cpp_builder):"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:14
+msgid ""
+"``OMP_PREFIX`` environment variable (a prefix with ``include/`` and ``lib/"
+"``);"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:16
+msgid "an already-imported (or importable) torch's bundled ``libomp.dylib``;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:17
+msgid "the conda prefix of the current interpreter;"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:18
+msgid "Homebrew's ``libomp``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:20
+msgid ""
+"On Linux the compiler runtime ``-fopenmp`` is used directly. When no runtime "
+"can be found the OpenMP flags are dropped with a warning: unknown pragmas "
+"are ignored by the compiler, so the kernel stays correct, just serial."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`get_compile_flags <tilelang.cpu.toolchain.get_compile_flags>`\\ \\"
+"(target\\, pass\\_configs\\, \\*\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:40
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:34:<autosummary>:1
+msgid "CPU flags for the selected target, pass configuration, and adapter."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`get_openmp_compile_flags "
+"<tilelang.cpu.toolchain.get_openmp_compile_flags>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:48
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:34:<autosummary>:1
+msgid "Compile flags for OpenMP CPU kernels: ``-O2`` plus OpenMP flags."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:42
+msgid ""
+"LLVM uses TVM's thread pool, so OpenMP flags only apply to the C target. "
+"Disabled parallelization leaves the serial compile command unchanged."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cpu/toolchain/index.rst:0
+msgid "Return type"
+msgstr ""
