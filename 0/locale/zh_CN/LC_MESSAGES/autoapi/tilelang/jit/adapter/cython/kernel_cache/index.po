@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`CythonKernelCache <tilelang.jit.adapter.cython.kernel_cache."
-"CythonKernelCache>`\\"
+":py:obj:`CythonKernelCache "
+"<tilelang.jit.adapter.cython.kernel_cache.CythonKernelCache>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/kernel_cache/index.rst:16

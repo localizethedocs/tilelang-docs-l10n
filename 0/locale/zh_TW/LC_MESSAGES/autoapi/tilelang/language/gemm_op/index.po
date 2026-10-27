@@ -78,9 +78,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:34
 msgid ""
-"For manual asynchronous scheduling, use `T.wgmma_gemm(...)` with `T."
-"wait_wgmma(...)` on Hopper, or `T.tcgen05_gemm(...)` with `T."
-"mbarrier_wait_parity(...)` on Blackwell."
+"For manual asynchronous scheduling, use `T.wgmma_gemm(...)` with "
+"`T.wait_wgmma(...)` on Hopper, or `T.tcgen05_gemm(...)` with "
+"`T.mbarrier_wait_parity(...)` on Blackwell."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:0

@@ -39,8 +39,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`CythonKernelAdapter <tilelang.jit.adapter.cython.adapter."
-"CythonKernelAdapter>`\\"
+":py:obj:`CythonKernelAdapter "
+"<tilelang.jit.adapter.cython.adapter.CythonKernelAdapter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:52
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`is_symbolic_expr <tilelang.jit.adapter.cython.adapter."
-"is_symbolic_expr>`\\ \\(expr\\)"
+":py:obj:`is_symbolic_expr "
+"<tilelang.jit.adapter.cython.adapter.is_symbolic_expr>`\\ \\(expr\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cython/adapter/index.rst:35:<autosummary>:1

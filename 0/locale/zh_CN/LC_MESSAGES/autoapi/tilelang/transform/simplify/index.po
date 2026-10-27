@@ -36,8 +36,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`Simplify <tilelang.transform.simplify.Simplify>`\\ "
-"\\(\\[simplify\\_arguments\\]\\)"
+":py:obj:`Simplify <tilelang.transform.simplify.Simplify>`\\ \\(\\"
+"[simplify\\_arguments\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:31
@@ -47,14 +47,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`simplify_prim_func <tilelang.transform.simplify."
-"simplify_prim_func>`\\ \\(func\\)"
+":py:obj:`simplify_prim_func "
+"<tilelang.transform.simplify.simplify_prim_func>`\\ \\(func\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`apply_simplify <tilelang.transform.simplify.apply_simplify>`\\ "
-"\\(stmt\\[\\, inline\\_let\\]\\)"
+":py:obj:`apply_simplify <tilelang.transform.simplify.apply_simplify>`\\ \\"
+"(stmt\\[\\, inline\\_let\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/simplify/index.rst:41

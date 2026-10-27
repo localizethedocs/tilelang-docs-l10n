@@ -27,50 +27,54 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`get_ldmatrix_offset <tilelang.intrinsics.utils."
-"get_ldmatrix_offset>`\\ \\(matrix\\, row\\_idx\\, col\\_idx\\, stride\\)"
+":py:obj:`get_ldmatrix_offset "
+"<tilelang.intrinsics.utils.get_ldmatrix_offset>`\\ \\(matrix\\, row\\_idx\\, "
+"col\\_idx\\, stride\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`shared_16x16_to_mma_32x8_layout <tilelang.intrinsics.utils."
-"shared_16x16_to_mma_32x8_layout>`\\ \\(i\\, j\\)"
+":py:obj:`shared_16x16_to_mma_32x8_layout "
+"<tilelang.intrinsics.utils.shared_16x16_to_mma_32x8_layout>`\\ \\(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`shared_16x32_to_mma_32x16_layout <tilelang.intrinsics.utils."
-"shared_16x32_to_mma_32x16_layout>`\\ \\(i\\, j\\)"
+":py:obj:`shared_16x32_to_mma_32x16_layout "
+"<tilelang.intrinsics.utils.shared_16x32_to_mma_32x16_layout>`\\ \\(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`shared_32x16_to_mma_32x16_layout <tilelang.intrinsics.utils."
-"shared_32x16_to_mma_32x16_layout>`\\ \\(i\\, j\\)"
+":py:obj:`shared_32x16_to_mma_32x16_layout "
+"<tilelang.intrinsics.utils.shared_32x16_to_mma_32x16_layout>`\\ \\(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`mma_store_index_map <tilelang.intrinsics.utils."
-"mma_store_index_map>`\\ \\(thread\\_id\\, local\\_id\\)"
+":py:obj:`mma_store_index_map "
+"<tilelang.intrinsics.utils.mma_store_index_map>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`mma_store_index_map_fp64 <tilelang.intrinsics.utils."
-"mma_store_index_map_fp64>`\\ \\(thread\\_id\\, local\\_id\\)"
+":py:obj:`mma_store_index_map_fp64 "
+"<tilelang.intrinsics.utils.mma_store_index_map_fp64>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`mfma_store_index_map <tilelang.intrinsics.utils."
-"mfma_store_index_map>`\\ \\(thread\\_id\\, local\\_id\\)"
+":py:obj:`mfma_store_index_map "
+"<tilelang.intrinsics.utils.mfma_store_index_map>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`get_mma_micro_size <tilelang.intrinsics.utils."
-"get_mma_micro_size>`\\ \\(dtype\\)"
+":py:obj:`get_mma_micro_size "
+"<tilelang.intrinsics.utils.get_mma_micro_size>`\\ \\(dtype\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/utils/index.rst:41

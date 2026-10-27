@@ -78,8 +78,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_shared <tilelang.language.allocate.alloc_shared>`\\ "
-"\\(shape\\, dtype\\[\\, scope\\]\\)"
+":py:obj:`alloc_shared <tilelang.language.allocate.alloc_shared>`\\ \\"
+"(shape\\, dtype\\[\\, scope\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:61
@@ -100,8 +100,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_fragment <tilelang.language.allocate.alloc_fragment>`\\ "
-"\\(shape\\, dtype\\[\\, scope\\]\\)"
+":py:obj:`alloc_fragment <tilelang.language.allocate.alloc_fragment>`\\ \\"
+"(shape\\, dtype\\[\\, scope\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:91
@@ -120,8 +120,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_barrier <tilelang.language.allocate.alloc_barrier>`\\ "
-"\\(arrive\\_count\\)"
+":py:obj:`alloc_barrier <tilelang.language.allocate.alloc_barrier>`\\ \\"
+"(arrive\\_count\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:138
@@ -131,8 +131,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_cluster_barrier <tilelang.language.allocate."
-"alloc_cluster_barrier>`\\ \\(arrive\\_count\\)"
+":py:obj:`alloc_cluster_barrier "
+"<tilelang.language.allocate.alloc_cluster_barrier>`\\ \\(arrive\\_count\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:154
@@ -155,8 +155,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_reducer <tilelang.language.allocate.alloc_reducer>`\\ "
-"\\(shape\\, dtype\\[\\, op\\, replication\\]\\)"
+":py:obj:`alloc_reducer <tilelang.language.allocate.alloc_reducer>`\\ \\"
+"(shape\\, dtype\\[\\, op\\, replication\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:196
@@ -166,8 +166,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_descriptor <tilelang.language.allocate.alloc_descriptor>`\\ "
-"\\(\\[kind\\, dtype\\]\\)"
+":py:obj:`alloc_descriptor <tilelang.language.allocate.alloc_descriptor>`\\ \\"
+"(\\[kind\\, dtype\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:225
@@ -177,32 +177,33 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_wgmma_desc <tilelang.language.allocate.alloc_wgmma_desc>`\\ "
-"\\(\\[dtype\\]\\)"
+":py:obj:`alloc_wgmma_desc <tilelang.language.allocate.alloc_wgmma_desc>`\\ \\"
+"(\\[dtype\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_tcgen05_smem_desc <tilelang.language.allocate."
-"alloc_tcgen05_smem_desc>`\\ \\(\\[dtype\\]\\)"
+":py:obj:`alloc_tcgen05_smem_desc "
+"<tilelang.language.allocate.alloc_tcgen05_smem_desc>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_tcgen05_instruction_desc <tilelang.language.allocate."
-"alloc_tcgen05_instruction_desc>`\\ \\(\\[dtype\\]\\)"
+":py:obj:`alloc_tcgen05_instruction_desc "
+"<tilelang.language.allocate.alloc_tcgen05_instruction_desc>`\\ \\(\\[dtype\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_tcgen05_instr_desc <tilelang.language.allocate."
-"alloc_tcgen05_instr_desc>`\\ \\(\\[dtype\\]\\)"
+":py:obj:`alloc_tcgen05_instr_desc "
+"<tilelang.language.allocate.alloc_tcgen05_instr_desc>`\\ \\(\\[dtype\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`empty <tilelang.language.allocate.empty>`\\ \\(shape\\[\\, "
-"dtype\\]\\)"
+":py:obj:`empty <tilelang.language.allocate.empty>`\\ \\(shape\\[\\, dtype\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:243
@@ -212,8 +213,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`alloc_global <tilelang.language.allocate.alloc_global>`\\ "
-"\\(shape\\, dtype\\[\\, scope\\]\\)"
+":py:obj:`alloc_global <tilelang.language.allocate.alloc_global>`\\ \\"
+"(shape\\, dtype\\[\\, scope\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:258
@@ -306,10 +307,10 @@ msgstr "範例"
 #: ../../../autoapi/tilelang/language/allocate/index.rst:126
 msgid ""
 "a = T.alloc_var('int32', 1) # var with init 1 a = T.alloc_var('int32', "
-"'local.var') # var with local.var scope a = T.alloc_var('int32', 1, 'local."
-"var') # var with init 1 and local.var scope a = T.alloc_var('int32', 'local."
-"var', init=1) # var with init 1 and local.var scope a = T.alloc_var('int32', "
-"init=1) # var with init 1 and local.var scope"
+"'local.var') # var with local.var scope a = T.alloc_var('int32', 1, "
+"'local.var') # var with init 1 and local.var scope a = T.alloc_var('int32', "
+"'local.var', init=1) # var with init 1 and local.var scope a = "
+"T.alloc_var('int32', init=1) # var with init 1 and local.var scope"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:132
@@ -402,8 +403,8 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/allocate/index.rst:198
 msgid ""
 "Modifications needs to conform with `op`, such as `op=\"sum\"` requires "
-"`reducer[...] += ...` and `op=\"max\"` requires `reducer[...] = T."
-"max(reducer[...], ...)`."
+"`reducer[...] += ...` and `op=\"max\"` requires `reducer[...] = "
+"T.max(reducer[...], ...)`."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/allocate/index.rst:202

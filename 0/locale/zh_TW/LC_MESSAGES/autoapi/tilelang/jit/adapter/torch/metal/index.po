@@ -27,8 +27,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/metal/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`MetalKernelAdapter <tilelang.jit.adapter.torch.metal."
-"MetalKernelAdapter>`\\"
+":py:obj:`MetalKernelAdapter "
+"<tilelang.jit.adapter.torch.metal.MetalKernelAdapter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/metal/index.rst:14:<autosummary>:1

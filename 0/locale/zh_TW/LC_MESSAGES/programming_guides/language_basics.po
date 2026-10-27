@@ -115,8 +115,8 @@ msgstr ""
 
 #: ../../../programming_guides/language_basics.md:54
 msgid ""
-"Inside the kernel body, prefer reading from the buffer’s shape, e.g. `M = A."
-"shape[0]`."
+"Inside the kernel body, prefer reading from the buffer’s shape, e.g. `M = "
+"A.shape[0]`."
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:56
@@ -156,8 +156,8 @@ msgstr ""
 
 #: ../../../programming_guides/language_basics.md:78
 msgid ""
-"`T.symbolic(name, dtype)` is a deprecated alias of `T.dynamic`; prefer `T."
-"dynamic`."
+"`T.symbolic(name, dtype)` is a deprecated alias of `T.dynamic`; prefer "
+"`T.dynamic`."
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:79
@@ -190,8 +190,8 @@ msgstr ""
 
 #: ../../../programming_guides/language_basics.md:92
 msgid ""
-"You rarely need raw thread indices; most kernels use structured loops (`T."
-"serial`, `T.unroll`, `T.Parallel`, `T.Pipelined`) inside a `T.Kernel`."
+"You rarely need raw thread indices; most kernels use structured loops "
+"(`T.serial`, `T.unroll`, `T.Parallel`, `T.Pipelined`) inside a `T.Kernel`."
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:95
@@ -301,8 +301,8 @@ msgid ""
 "insert any wait: you must explicitly insert `T.ptx_wait_group(...)` before "
 "consuming `dst`. A shared-memory barrier is still required for cross-thread "
 "consumption, but in most TileLang programs you do not need to write it "
-"manually because `ThreadSync(\"shared\")` will insert the necessary `T."
-"tvm_storage_sync(\"shared\")` before the first read from `dst`."
+"manually because `ThreadSync(\"shared\")` will insert the necessary "
+"`T.tvm_storage_sync(\"shared\")` before the first read from `dst`."
 msgstr ""
 
 #: ../../../programming_guides/language_basics.md:159

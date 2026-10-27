@@ -54,8 +54,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`WMMAIntrinEmitter <tilelang.intrinsics.wmma_macro_generator."
-"WMMAIntrinEmitter>`\\"
+":py:obj:`WMMAIntrinEmitter "
+"<tilelang.intrinsics.wmma_macro_generator.WMMAIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:42
@@ -101,8 +101,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:198
 msgid ""
-"B (non-transposed) is stored row-major [K, N]. Thread t loads B[t%16]"
-"[(t//16)*8+local] (same shape/pattern as A)."
+"B (non-transposed) is stored row-major [K, N]. Thread t loads B[t%16][(t//"
+"16)*8+local] (same shape/pattern as A)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:200

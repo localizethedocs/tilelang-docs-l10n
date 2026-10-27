@@ -35,8 +35,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`NVRTCKernelAdapter <tilelang.jit.adapter.nvrtc.adapter."
-"NVRTCKernelAdapter>`\\"
+":py:obj:`NVRTCKernelAdapter "
+"<tilelang.jit.adapter.nvrtc.adapter.NVRTCKernelAdapter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/adapter/index.rst:22:<autosummary>:1

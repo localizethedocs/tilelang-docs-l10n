@@ -72,9 +72,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`ptx_ldmatrix_x1_trans <tilelang.contrib.cutedsl.ldsm."
-"ptx_ldmatrix_x1_trans>`\\ \\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, "
-"ip\\]\\)"
+":py:obj:`ptx_ldmatrix_x1_trans "
+"<tilelang.contrib.cutedsl.ldsm.ptx_ldmatrix_x1_trans>`\\ \\(smem\\_ptr\\, "
+"local\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:55
@@ -84,9 +84,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`ptx_ldmatrix_x2_trans <tilelang.contrib.cutedsl.ldsm."
-"ptx_ldmatrix_x2_trans>`\\ \\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, "
-"ip\\]\\)"
+":py:obj:`ptx_ldmatrix_x2_trans "
+"<tilelang.contrib.cutedsl.ldsm.ptx_ldmatrix_x2_trans>`\\ \\(smem\\_ptr\\, "
+"local\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:60
@@ -96,9 +96,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`ptx_ldmatrix_x4_trans <tilelang.contrib.cutedsl.ldsm."
-"ptx_ldmatrix_x4_trans>`\\ \\(smem\\_ptr\\, local\\_ptr\\, \\*\\[\\, loc\\, "
-"ip\\]\\)"
+":py:obj:`ptx_ldmatrix_x4_trans "
+"<tilelang.contrib.cutedsl.ldsm.ptx_ldmatrix_x4_trans>`\\ \\(smem\\_ptr\\, "
+"local\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:65
@@ -141,9 +141,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`ptx_stmatrix_x1_trans <tilelang.contrib.cutedsl.ldsm."
-"ptx_stmatrix_x1_trans>`\\ \\(smem\\_ptr\\, value0\\, \\*\\[\\, loc\\, "
-"ip\\]\\)"
+":py:obj:`ptx_stmatrix_x1_trans "
+"<tilelang.contrib.cutedsl.ldsm.ptx_stmatrix_x1_trans>`\\ \\(smem\\_ptr\\, "
+"value0\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:85
@@ -153,9 +153,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`ptx_stmatrix_x2_trans <tilelang.contrib.cutedsl.ldsm."
-"ptx_stmatrix_x2_trans>`\\ \\(smem\\_ptr\\, value0\\, value1\\, \\*\\[\\, ..."
-"\\]\\)"
+":py:obj:`ptx_stmatrix_x2_trans "
+"<tilelang.contrib.cutedsl.ldsm.ptx_stmatrix_x2_trans>`\\ \\(smem\\_ptr\\, "
+"value0\\, value1\\, \\*\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:90
@@ -165,9 +165,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`ptx_stmatrix_x4_trans <tilelang.contrib.cutedsl.ldsm."
-"ptx_stmatrix_x4_trans>`\\ \\(smem\\_ptr\\, value0\\, value1\\, ...\\[\\, ..."
-"\\]\\)"
+":py:obj:`ptx_stmatrix_x4_trans "
+"<tilelang.contrib.cutedsl.ldsm.ptx_stmatrix_x4_trans>`\\ \\(smem\\_ptr\\, "
+"value0\\, value1\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ldsm/index.rst:95

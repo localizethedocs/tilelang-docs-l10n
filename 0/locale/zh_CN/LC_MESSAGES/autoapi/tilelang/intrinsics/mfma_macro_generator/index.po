@@ -35,8 +35,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`MatrixCoreIntrinEmitter <tilelang.intrinsics.mfma_macro_generator."
-"MatrixCoreIntrinEmitter>`\\"
+":py:obj:`MatrixCoreIntrinEmitter "
+"<tilelang.intrinsics.mfma_macro_generator.MatrixCoreIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:31
@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`MatrixCorePreshuffleIntrinEmitter <tilelang.intrinsics."
-"mfma_macro_generator.MatrixCorePreshuffleIntrinEmitter>`\\"
+":py:obj:`MatrixCorePreshuffleIntrinEmitter "
+"<tilelang.intrinsics.mfma_macro_generator.MatrixCorePreshuffleIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mfma_macro_generator/index.rst:25

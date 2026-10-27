@@ -41,8 +41,9 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`normalize_pass_configs <tilelang.transform.pass_config."
-"normalize_pass_configs>`\\ \\(pass\\_configs\\)"
+":py:obj:`normalize_pass_configs "
+"<tilelang.transform.pass_config.normalize_pass_configs>`\\ \\"
+"(pass\\_configs\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:536
@@ -365,8 +366,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/pass_config/index.rst:374
 msgid ""
-"``` read = T.allocate([1], T.int32, \"local.var\") write = T.allocate([1], T."
-"int32, \"local.var\") read_buf = T.Buffer((1,), T.int32, data=read, "
+"``` read = T.allocate([1], T.int32, \"local.var\") write = T.allocate([1], "
+"T.int32, \"local.var\") read_buf = T.Buffer((1,), T.int32, data=read, "
 "scope=\"local.var\") write_buf = T.Buffer((1,), T.int32, data=write, "
 "scope=\"local.var\") write_buf[0] = read_buf[0] * 2 f(write_buf[0]) ```"
 msgstr ""

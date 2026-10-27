@@ -42,8 +42,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`get_output_blocks <tilelang.carver.common_schedules."
-"get_output_blocks>`\\ \\(sch\\, blocks\\)"
+":py:obj:`get_output_blocks "
+"<tilelang.carver.common_schedules.get_output_blocks>`\\ \\(sch\\, blocks\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:41
@@ -53,8 +53,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`try_inline <tilelang.carver.common_schedules.try_inline>`\\ "
-"\\(sch\\, blocks\\)"
+":py:obj:`try_inline <tilelang.carver.common_schedules.try_inline>`\\ \\"
+"(sch\\, blocks\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:54
@@ -65,8 +65,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`try_inline_contiguous_spatial <tilelang.carver.common_schedules."
-"try_inline_contiguous_spatial>`\\ \\(sch\\, block\\_infos\\)"
+":py:obj:`try_inline_contiguous_spatial "
+"<tilelang.carver.common_schedules.try_inline_contiguous_spatial>`\\ \\"
+"(sch\\, block\\_infos\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/common_schedules/index.rst:67

@@ -37,8 +37,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/libgen/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`CuTeDSLLibraryGenerator <tilelang.jit.adapter.cutedsl.libgen."
-"CuTeDSLLibraryGenerator>`\\"
+":py:obj:`CuTeDSLLibraryGenerator "
+"<tilelang.jit.adapter.cutedsl.libgen.CuTeDSLLibraryGenerator>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/libgen/index.rst:23

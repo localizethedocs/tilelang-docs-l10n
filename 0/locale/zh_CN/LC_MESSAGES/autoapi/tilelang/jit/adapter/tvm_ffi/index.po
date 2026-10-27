@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:32:<autosummary>:1
 msgid ""
-":py:obj:`TVMFFIKernelAdapter <tilelang.jit.adapter.tvm_ffi."
-"TVMFFIKernelAdapter>`\\"
+":py:obj:`TVMFFIKernelAdapter "
+"<tilelang.jit.adapter.tvm_ffi.TVMFFIKernelAdapter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/tvm_ffi/index.rst:43

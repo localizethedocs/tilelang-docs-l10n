@@ -117,8 +117,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`MemoryAccessCollector <tilelang.transform.decouple_type_cast."
-"MemoryAccessCollector>`\\"
+":py:obj:`MemoryAccessCollector "
+"<tilelang.transform.decouple_type_cast.MemoryAccessCollector>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:96
@@ -128,8 +128,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`DecoupleTypeCastMutator <tilelang.transform.decouple_type_cast."
-"DecoupleTypeCastMutator>`\\"
+":py:obj:`DecoupleTypeCastMutator "
+"<tilelang.transform.decouple_type_cast.DecoupleTypeCastMutator>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:156
@@ -139,8 +139,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:65:<autosummary>:1
 msgid ""
-":py:obj:`AccessReplacer <tilelang.transform.decouple_type_cast."
-"AccessReplacer>`\\"
+":py:obj:`AccessReplacer "
+"<tilelang.transform.decouple_type_cast.AccessReplacer>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:174
@@ -155,8 +155,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
 msgid ""
-":py:obj:`is_local_buffer <tilelang.transform.decouple_type_cast."
-"is_local_buffer>`\\ \\(buffer\\)"
+":py:obj:`is_local_buffer "
+"<tilelang.transform.decouple_type_cast.is_local_buffer>`\\ \\(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:83
@@ -166,8 +166,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
 msgid ""
-":py:obj:`is_global_or_shared_buffer <tilelang.transform.decouple_type_cast."
-"is_global_or_shared_buffer>`\\ \\(buffer\\)"
+":py:obj:`is_global_or_shared_buffer "
+"<tilelang.transform.decouple_type_cast.is_global_or_shared_buffer>`\\ \\"
+"(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:88
@@ -177,8 +178,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
 msgid ""
-":py:obj:`inline_let_stmts <tilelang.transform.decouple_type_cast."
-"inline_let_stmts>`\\ \\(stmt\\)"
+":py:obj:`inline_let_stmts "
+"<tilelang.transform.decouple_type_cast.inline_let_stmts>`\\ \\(stmt\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
@@ -187,8 +188,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
 msgid ""
-":py:obj:`extract_if_condition <tilelang.transform.decouple_type_cast."
-"extract_if_condition>`\\ \\(stmt\\)"
+":py:obj:`extract_if_condition "
+"<tilelang.transform.decouple_type_cast.extract_if_condition>`\\ \\(stmt\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:144
@@ -198,8 +199,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:77:<autosummary>:1
 msgid ""
-":py:obj:`DecoupleTypeCast <tilelang.transform.decouple_type_cast."
-"DecoupleTypeCast>`\\ \\(\\)"
+":py:obj:`DecoupleTypeCast "
+"<tilelang.transform.decouple_type_cast.DecoupleTypeCast>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/decouple_type_cast/index.rst:197

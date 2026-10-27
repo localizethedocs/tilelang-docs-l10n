@@ -36,10 +36,10 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:13
 msgid ""
-"thread t, elem e -> A[M=t%16][K=(t//16)*8+e] Forward: (M, K) -> "
-"(thread=(K//8)*16+M, local=K%8) Reverse: (thread, local) -> (M=thread%16, "
-"K=(thread//16)*8+local) Memory load: A[M=t%16][K=(t//16)*8..+7] -> "
-"CONTIGUOUS in K (vectorized)"
+"thread t, elem e -> A[M=t%16][K=(t//16)*8+e] Forward: (M, K) -> (thread=(K//"
+"8)*16+M, local=K%8) Reverse: (thread, local) -> (M=thread%16, K=(thread//"
+"16)*8+local) Memory load: A[M=t%16][K=(t//16)*8..+7] -> CONTIGUOUS in K "
+"(vectorized)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:18
@@ -48,9 +48,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:19
 msgid ""
-"thread t, elem e -> B[K=(t//16)*8+e][N=t%16] Forward: (K, N) -> "
-"(thread=(K//8)*16+N, local=K%8) Reverse: (thread, local) -> "
-"(K=(thread//16)*8+local, N=thread%16)"
+"thread t, elem e -> B[K=(t//16)*8+e][N=t%16] Forward: (K, N) -> (thread=(K//"
+"8)*16+N, local=K%8) Reverse: (thread, local) -> (K=(thread//16)*8+local, "
+"N=thread%16)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:23
@@ -67,10 +67,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:27
 msgid ""
-"thread t, elem l -> D[M=(t//16)*8+l][N=t%16] Forward: (M, N) -> "
-"(thread=(M//8)*16+N, local=M%8) Reverse: (thread, local) -> "
-"(M=(thread//16)*8+local, N=thread%16) Store: D[M=(t//16)*8+l][N=t%16] = "
-"d_vec[l]"
+"thread t, elem l -> D[M=(t//16)*8+l][N=t%16] Forward: (M, N) -> (thread=(M//"
+"8)*16+N, local=M%8) Reverse: (thread, local) -> (M=(thread//16)*8+local, "
+"N=thread%16) Store: D[M=(t//16)*8+l][N=t%16] = d_vec[l]"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:32
@@ -90,8 +89,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`shared_16x16_to_local_32x8_layout_A <tilelang.intrinsics."
-"wmma_layout.shared_16x16_to_local_32x8_layout_A>`\\ \\(i\\, j\\)"
+":py:obj:`shared_16x16_to_local_32x8_layout_A "
+"<tilelang.intrinsics.wmma_layout.shared_16x16_to_local_32x8_layout_A>`\\ \\"
+"(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:60
@@ -101,8 +101,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_A <tilelang.intrinsics."
-"wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_A>`\\ \\(...\\)"
+":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_A "
+"<tilelang.intrinsics.wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_A>`\\ "
+"\\(...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:65
@@ -112,8 +113,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`shared_16x16_to_local_32x8_layout_B <tilelang.intrinsics."
-"wmma_layout.shared_16x16_to_local_32x8_layout_B>`\\ \\(i\\, j\\)"
+":py:obj:`shared_16x16_to_local_32x8_layout_B "
+"<tilelang.intrinsics.wmma_layout.shared_16x16_to_local_32x8_layout_B>`\\ \\"
+"(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:70
@@ -123,8 +125,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_B <tilelang.intrinsics."
-"wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_B>`\\ \\(...\\)"
+":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_B "
+"<tilelang.intrinsics.wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_B>`\\ "
+"\\(...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:75
@@ -134,8 +137,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`shared_16x16_to_local_32x8_layout_B_colmajor <tilelang.intrinsics."
-"wmma_layout.shared_16x16_to_local_32x8_layout_B_colmajor>`\\ \\(i\\, j\\)"
+":py:obj:`shared_16x16_to_local_32x8_layout_B_colmajor "
+"<tilelang.intrinsics.wmma_layout.shared_16x16_to_local_32x8_layout_B_colmajor>`\\ "
+"\\(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:80
@@ -145,9 +149,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_B_colmajor <tilelang."
-"intrinsics.wmma_layout."
-"thread_id_shared_access_32x8_to_16x16_layout_B_colmajor>`\\ \\(...\\)"
+":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_B_colmajor "
+"<tilelang.intrinsics.wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_B_colmajor>`\\ "
+"\\(...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:85
@@ -157,8 +161,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`shared_16x16_to_local_32x8_layout_C <tilelang.intrinsics."
-"wmma_layout.shared_16x16_to_local_32x8_layout_C>`\\ \\(i\\, j\\)"
+":py:obj:`shared_16x16_to_local_32x8_layout_C "
+"<tilelang.intrinsics.wmma_layout.shared_16x16_to_local_32x8_layout_C>`\\ \\"
+"(i\\, j\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:90
@@ -168,8 +173,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_C <tilelang.intrinsics."
-"wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_C>`\\ \\(...\\)"
+":py:obj:`thread_id_shared_access_32x8_to_16x16_layout_C "
+"<tilelang.intrinsics.wmma_layout.thread_id_shared_access_32x8_to_16x16_layout_C>`\\ "
+"\\(...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:95
@@ -179,8 +185,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:54:<autosummary>:1
 msgid ""
-":py:obj:`wmma_store_index_map <tilelang.intrinsics.wmma_layout."
-"wmma_store_index_map>`\\ \\(thread\\_id\\, local\\_id\\)"
+":py:obj:`wmma_store_index_map "
+"<tilelang.intrinsics.wmma_layout.wmma_store_index_map>`\\ \\(thread\\_id\\, "
+"local\\_id\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_layout/index.rst:100

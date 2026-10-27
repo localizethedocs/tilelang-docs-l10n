@@ -27,8 +27,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`cluster_arrive_relaxed <tilelang.language.cluster."
-"cluster_arrive_relaxed>`\\ \\(\\)"
+":py:obj:`cluster_arrive_relaxed "
+"<tilelang.language.cluster.cluster_arrive_relaxed>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:30
@@ -68,8 +68,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`block_rank_in_cluster <tilelang.language.cluster."
-"block_rank_in_cluster>`\\ \\(\\)"
+":py:obj:`block_rank_in_cluster "
+"<tilelang.language.cluster.block_rank_in_cluster>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:50
@@ -81,8 +81,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`clc_try_cancel <tilelang.language.cluster.clc_try_cancel>`\\ "
-"\\(result\\, mbarrier\\)"
+":py:obj:`clc_try_cancel <tilelang.language.cluster.clc_try_cancel>`\\ \\"
+"(result\\, mbarrier\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:55
@@ -92,8 +92,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`clc_try_cancel_multicast <tilelang.language.cluster."
-"clc_try_cancel_multicast>`\\ \\(result\\, mbarrier\\)"
+":py:obj:`clc_try_cancel_multicast "
+"<tilelang.language.cluster.clc_try_cancel_multicast>`\\ \\(result\\, "
+"mbarrier\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:60
@@ -103,8 +104,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`clc_is_canceled <tilelang.language.cluster.clc_is_canceled>`\\ "
-"\\(result\\)"
+":py:obj:`clc_is_canceled <tilelang.language.cluster.clc_is_canceled>`\\ \\"
+"(result\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:65
@@ -114,8 +115,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`clc_get_first_ctaid_x <tilelang.language.cluster."
-"clc_get_first_ctaid_x>`\\ \\(result\\)"
+":py:obj:`clc_get_first_ctaid_x "
+"<tilelang.language.cluster.clc_get_first_ctaid_x>`\\ \\(result\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:70
@@ -125,8 +126,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`clc_get_first_ctaid_y <tilelang.language.cluster."
-"clc_get_first_ctaid_y>`\\ \\(result\\)"
+":py:obj:`clc_get_first_ctaid_y "
+"<tilelang.language.cluster.clc_get_first_ctaid_y>`\\ \\(result\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:75
@@ -136,8 +137,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`clc_get_first_ctaid_z <tilelang.language.cluster."
-"clc_get_first_ctaid_z>`\\ \\(result\\)"
+":py:obj:`clc_get_first_ctaid_z "
+"<tilelang.language.cluster.clc_get_first_ctaid_z>`\\ \\(result\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/cluster/index.rst:80

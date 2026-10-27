@@ -65,8 +65,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`__dtype_call__ <tilelang.language.dtypes.__dtype_call__>`\\ "
-"\\(self\\, \\*args\\[\\, is\\_size\\_var\\]\\)"
+":py:obj:`__dtype_call__ <tilelang.language.dtypes.__dtype_call__>`\\ \\"
+"(self\\, \\*args\\[\\, is\\_size\\_var\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
@@ -88,8 +88,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`__dtype_bytes__ <tilelang.language.dtypes.__dtype_bytes__>`\\ "
-"\\(self\\)"
+":py:obj:`__dtype_bytes__ <tilelang.language.dtypes.__dtype_bytes__>`\\ \\"
+"(self\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:99
@@ -99,8 +99,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`get_tvm_dtype <tilelang.language.dtypes.get_tvm_dtype>`\\ "
-"\\(value\\)"
+":py:obj:`get_tvm_dtype <tilelang.language.dtypes.get_tvm_dtype>`\\ \\"
+"(value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/dtypes/index.rst:40

@@ -56,8 +56,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`Tcgen05SmemDescriptor <tilelang.contrib.cutedsl.gemm_tcgen05."
-"Tcgen05SmemDescriptor>`\\"
+":py:obj:`Tcgen05SmemDescriptor "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.Tcgen05SmemDescriptor>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:50
@@ -71,9 +71,9 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`initialize_tcgen05_descriptor <tilelang.contrib.cutedsl."
-"gemm_tcgen05.initialize_tcgen05_descriptor>`\\ \\(desc\\, "
-"start\\_address\\, ...\\)"
+":py:obj:`initialize_tcgen05_descriptor "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.initialize_tcgen05_descriptor>`\\ \\"
+"(desc\\, start\\_address\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:70
@@ -83,9 +83,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05mma_ss <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05mma_ss>`\\ \\(kind\\_dtype\\, desc\\_a\\, desc\\_b\\, tmem\\_c\\, ..."
-"\\)"
+":py:obj:`tcgen05mma_ss "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05mma_ss>`\\ \\(kind\\_dtype\\, "
+"desc\\_a\\, desc\\_b\\, tmem\\_c\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:86
@@ -97,9 +97,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05mma_ws_ss <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05mma_ws_ss>`\\ \\(kind\\_dtype\\, desc\\_a\\, desc\\_b\\, "
-"tmem\\_c\\, ...\\)"
+":py:obj:`tcgen05mma_ws_ss "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05mma_ws_ss>`\\ \\"
+"(kind\\_dtype\\, desc\\_a\\, desc\\_b\\, tmem\\_c\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:95
@@ -111,9 +111,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05mma_ts <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05mma_ts>`\\ \\(kind\\_dtype\\, tmem\\_a\\, desc\\_b\\, tmem\\_c\\, ..."
-"\\)"
+":py:obj:`tcgen05mma_ts "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05mma_ts>`\\ \\(kind\\_dtype\\, "
+"tmem\\_a\\, desc\\_b\\, tmem\\_c\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:100
@@ -125,8 +125,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_mma_arrive <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05_mma_arrive>`\\ \\(mbar\\_ptr\\)"
+":py:obj:`tcgen05_mma_arrive "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05_mma_arrive>`\\ \\"
+"(mbar\\_ptr\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:105
@@ -137,8 +138,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tmem_allocate <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tmem_allocate>`\\ \\(tmem\\_buffer\\_ptr\\, num\\_cols\\)"
+":py:obj:`tmem_allocate "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tmem_allocate>`\\ \\"
+"(tmem\\_buffer\\_ptr\\, num\\_cols\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:112
@@ -149,8 +151,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tmem_deallocate <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tmem_deallocate>`\\ \\(tmem\\_ptr\\, num\\_cols\\)"
+":py:obj:`tmem_deallocate "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tmem_deallocate>`\\ \\(tmem\\_ptr\\, "
+"num\\_cols\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:120
@@ -160,8 +163,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_ld_32dp32bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05_ld_32dp32bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+":py:obj:`tcgen05_ld_32dp32bNx "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05_ld_32dp32bNx>`\\ \\(N\\, "
+"pack16\\, tmem\\_start\\_col\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:128
@@ -171,8 +175,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_ld_32dp64bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05_ld_32dp64bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+":py:obj:`tcgen05_ld_32dp64bNx "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05_ld_32dp64bNx>`\\ \\(N\\, "
+"pack16\\, tmem\\_start\\_col\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:140
@@ -183,8 +188,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_ld_32dp128bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05_ld_32dp128bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+":py:obj:`tcgen05_ld_32dp128bNx "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05_ld_32dp128bNx>`\\ \\(N\\, "
+"pack16\\, tmem\\_start\\_col\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:148
@@ -195,8 +201,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_ld_32dp256bNx <tilelang.contrib.cutedsl.gemm_tcgen05."
-"tcgen05_ld_32dp256bNx>`\\ \\(N\\, pack16\\, tmem\\_start\\_col\\, ...\\)"
+":py:obj:`tcgen05_ld_32dp256bNx "
+"<tilelang.contrib.cutedsl.gemm_tcgen05.tcgen05_ld_32dp256bNx>`\\ \\(N\\, "
+"pack16\\, tmem\\_start\\_col\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_tcgen05/index.rst:157

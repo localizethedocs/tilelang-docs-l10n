@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`ElementwiseTemplate <tilelang.carver.template.elementwise."
-"ElementwiseTemplate>`\\"
+":py:obj:`ElementwiseTemplate "
+"<tilelang.carver.template.elementwise.ElementwiseTemplate>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/elementwise/index.rst:23

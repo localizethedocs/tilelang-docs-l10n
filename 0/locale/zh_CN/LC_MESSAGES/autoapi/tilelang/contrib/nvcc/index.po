@@ -42,8 +42,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`default_compile_options <tilelang.contrib.nvcc."
-"default_compile_options>`\\ \\(\\[compile\\_flags\\]\\)"
+":py:obj:`default_compile_options "
+"<tilelang.contrib.nvcc.default_compile_options>`\\ \\(\\[compile\\_flags\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:62
@@ -65,8 +66,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_sass_from_source <tilelang.contrib.nvcc."
-"get_sass_from_source>`\\ \\(code\\[\\, compile\\_flags\\, verbose\\]\\)"
+":py:obj:`get_sass_from_source "
+"<tilelang.contrib.nvcc.get_sass_from_source>`\\ \\(code\\[\\, "
+"compile\\_flags\\, verbose\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:91
@@ -86,8 +88,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_cuda_version <tilelang.contrib.nvcc.get_cuda_version>`\\ "
-"\\(\\[cuda\\_path\\]\\)"
+":py:obj:`get_cuda_version <tilelang.contrib.nvcc.get_cuda_version>`\\ \\(\\"
+"[cuda\\_path\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:116
@@ -97,8 +99,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_target_compute_version <tilelang.contrib.nvcc."
-"get_target_compute_version>`\\ \\(\\[target\\]\\)"
+":py:obj:`get_target_compute_version "
+"<tilelang.contrib.nvcc.get_target_compute_version>`\\ \\(\\[target\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:128
@@ -108,8 +110,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`parse_compute_version <tilelang.contrib.nvcc."
-"parse_compute_version>`\\ \\(compute\\_version\\)"
+":py:obj:`parse_compute_version "
+"<tilelang.contrib.nvcc.parse_compute_version>`\\ \\(compute\\_version\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:142
@@ -119,14 +121,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_target_arch <tilelang.contrib.nvcc.get_target_arch>`\\ "
-"\\(compute\\_version\\)"
+":py:obj:`get_target_arch <tilelang.contrib.nvcc.get_target_arch>`\\ \\"
+"(compute\\_version\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`have_fp16 <tilelang.contrib.nvcc.have_fp16>`\\ "
-"\\(compute\\_version\\)"
+":py:obj:`have_fp16 <tilelang.contrib.nvcc.have_fp16>`\\ \\"
+"(compute\\_version\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:155
@@ -136,8 +138,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`have_int8 <tilelang.contrib.nvcc.have_int8>`\\ "
-"\\(compute\\_version\\)"
+":py:obj:`have_int8 <tilelang.contrib.nvcc.have_int8>`\\ \\"
+"(compute\\_version\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:163
@@ -147,8 +149,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`have_tensorcore <tilelang.contrib.nvcc.have_tensorcore>`\\ "
-"\\(\\[compute\\_version\\, target\\]\\)"
+":py:obj:`have_tensorcore <tilelang.contrib.nvcc.have_tensorcore>`\\ \\(\\"
+"[compute\\_version\\, target\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:171
@@ -168,8 +170,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`have_bf16 <tilelang.contrib.nvcc.have_bf16>`\\ "
-"\\(compute\\_version\\)"
+":py:obj:`have_bf16 <tilelang.contrib.nvcc.have_bf16>`\\ \\"
+"(compute\\_version\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:187
@@ -208,8 +210,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_nvcc_compiler <tilelang.contrib.nvcc.get_nvcc_compiler>`\\ "
-"\\(\\)"
+":py:obj:`get_nvcc_compiler <tilelang.contrib.nvcc.get_nvcc_compiler>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvcc/index.rst:215

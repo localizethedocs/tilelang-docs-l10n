@@ -35,8 +35,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wgmma_macro_generator/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`SwizzleMode <tilelang.intrinsics.wgmma_macro_generator."
-"SwizzleMode>`\\"
+":py:obj:`SwizzleMode "
+"<tilelang.intrinsics.wgmma_macro_generator.SwizzleMode>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wgmma_macro_generator/index.rst:34
@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wgmma_macro_generator/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`TensorCoreIntrinEmitter <tilelang.intrinsics.wgmma_macro_generator."
-"TensorCoreIntrinEmitter>`\\"
+":py:obj:`TensorCoreIntrinEmitter "
+"<tilelang.intrinsics.wgmma_macro_generator.TensorCoreIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wgmma_macro_generator/index.rst:80
@@ -68,9 +68,7 @@ msgid "Return type"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wgmma_macro_generator/index.rst:77
-msgid ""
-"Bases: :py:obj:`tilelang.intrinsics.mma_macro_generator."
-"TensorCoreIntrinEmitter`"
+msgid "Bases: :py:obj:`tilelang.intrinsics.mma_macro_generator.TensorCoreIntrinEmitter`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wgmma_macro_generator/index.rst:0

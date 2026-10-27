@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`FlashAttentionTemplate <tilelang.carver.template.flashattention."
-"FlashAttentionTemplate>`\\"
+":py:obj:`FlashAttentionTemplate "
+"<tilelang.carver.template.flashattention.FlashAttentionTemplate>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/flashattention/index.rst:14:<autosummary>:1

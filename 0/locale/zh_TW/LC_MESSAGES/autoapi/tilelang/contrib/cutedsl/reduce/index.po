@@ -133,20 +133,20 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
 msgid ""
-":py:obj:`bar_sync <tilelang.contrib.cutedsl.reduce.bar_sync>`\\ "
-"\\(barrier\\_id\\, number\\_of\\_threads\\)"
+":py:obj:`bar_sync <tilelang.contrib.cutedsl.reduce.bar_sync>`\\ \\"
+"(barrier\\_id\\, number\\_of\\_threads\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
 msgid ""
-":py:obj:`bar_sync_ptx <tilelang.contrib.cutedsl.reduce.bar_sync_ptx>`\\ "
-"\\(barrier\\_id\\, number\\_of\\_threads\\)"
+":py:obj:`bar_sync_ptx <tilelang.contrib.cutedsl.reduce.bar_sync_ptx>`\\ \\"
+"(barrier\\_id\\, number\\_of\\_threads\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
 msgid ""
-":py:obj:`AllReduce <tilelang.contrib.cutedsl.reduce.AllReduce>`\\ "
-"\\(reducer\\, threads\\, scale\\, thread\\_offset\\[\\, ...\\]\\)"
+":py:obj:`AllReduce <tilelang.contrib.cutedsl.reduce.AllReduce>`\\ \\"
+"(reducer\\, threads\\, scale\\, thread\\_offset\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:40:<autosummary>:1
@@ -234,8 +234,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:201
 msgid ""
-"AllReduce operation implementing warp/block-level reduction. Based on tl::"
-"AllReduce from reduce.h"
+"AllReduce operation implementing warp/block-level reduction. Based on "
+"tl::AllReduce from reduce.h"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/reduce/index.rst:204

@@ -183,8 +183,8 @@ msgstr ""
 
 #: ../../../programming_guides/control_flow.md:91
 msgid ""
-"`T.Pipelined(iters, num_stages=...)` overlaps producer/consumer stages (e."
-"g., Global→Shared copies with compute). This is the backbone of GEMM/"
+"`T.Pipelined(iters, num_stages=...)` overlaps producer/consumer stages "
+"(e.g., Global→Shared copies with compute). This is the backbone of GEMM/"
 "attention pipelines."
 msgstr ""
 

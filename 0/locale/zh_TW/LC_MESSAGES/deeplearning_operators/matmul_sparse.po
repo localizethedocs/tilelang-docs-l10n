@@ -97,10 +97,10 @@ msgstr ""
 
 #: ../../../deeplearning_operators/matmul_sparse.md:41
 msgid ""
-"A set of **CUTLASS-compatible** compressors is provided in `tilelang.utils."
-"sparse`, where a dense tensor—along with other required arguments (e.g., "
-"block_K for sm90, transpose options)—can be passed in to perform the "
-"compression."
+"A set of **CUTLASS-compatible** compressors is provided in "
+"`tilelang.utils.sparse`, where a dense tensor—along with other required "
+"arguments (e.g., block_K for sm90, transpose options)—can be passed in to "
+"perform the compression."
 msgstr ""
 
 #: ../../../deeplearning_operators/matmul_sparse.md:43
@@ -264,10 +264,10 @@ msgstr ""
 
 #: ../../../deeplearning_operators/matmul_sparse.md:145
 msgid ""
-"t_sp = tensor([[7, 3], [1, 5], [2, 4], [9, 9]], dtype=torch.float16)."
-"flatten()\n"
-"indices = tensor([[1, 3], [0, 1], [2, 3], [0, 2]], dtype=torch.float16)."
-"flatten()\n"
+"t_sp = tensor([[7, 3], [1, 5], [2, 4], [9, 9]], "
+"dtype=torch.float16).flatten()\n"
+"indices = tensor([[1, 3], [0, 1], [2, 3], [0, 2]], "
+"dtype=torch.float16).flatten()\n"
 msgstr ""
 
 #: ../../../deeplearning_operators/matmul_sparse.md:150
@@ -311,11 +311,11 @@ msgstr ""
 
 #: ../../../deeplearning_operators/matmul_sparse.md:175
 msgid ""
-"For example, `PyTorch` provides an Ampere compressor [here](https://github."
-"com/pytorch/pytorch/blob/267d0197bfca0232488d51dd1ff735d619adc2cf/torch/"
-"sparse/_semi_structured_conversions.py#L47-L179). Note that in this "
-"implementation, a [permutation](https://github.com/pytorch/pytorch/"
-"blob/267d0197bfca0232488d51dd1ff735d619adc2cf/torch/sparse/"
+"For example, `PyTorch` provides an Ampere compressor [here](https://"
+"github.com/pytorch/pytorch/blob/267d0197bfca0232488d51dd1ff735d619adc2cf/"
+"torch/sparse/_semi_structured_conversions.py#L47-L179). Note that in this "
+"implementation, a [permutation](https://github.com/pytorch/pytorch/blob/"
+"267d0197bfca0232488d51dd1ff735d619adc2cf/torch/sparse/"
 "_semi_structured_conversions.py#L173-L175) is applied to match CUTLASS’s "
 "metadata layout. If you do not annotate a metadata layout when using "
 "`gemm_sp_v2`, your compressor should replicate the same behavior as the "

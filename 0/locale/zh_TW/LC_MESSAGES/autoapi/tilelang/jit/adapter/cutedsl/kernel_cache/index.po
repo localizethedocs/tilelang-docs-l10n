@@ -27,8 +27,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`CuTeDSLKernelCache <tilelang.jit.adapter.cutedsl.kernel_cache."
-"CuTeDSLKernelCache>`\\"
+":py:obj:`CuTeDSLKernelCache "
+"<tilelang.jit.adapter.cutedsl.kernel_cache.CuTeDSLKernelCache>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/kernel_cache/index.rst:16
