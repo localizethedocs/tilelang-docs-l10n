@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 10:24+0000\n"
+"POT-Creation-Date: 2026-10-27 13:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,9 +125,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`make_tensor_from_addr <tilelang.language.proxy."
-"make_tensor_from_addr>`\\ \\(addr\\, shape\\[\\, dtype\\, strides\\, ..."
-"\\]\\)"
+":py:obj:`make_tensor_from_addr "
+"<tilelang.language.proxy.make_tensor_from_addr>`\\ \\(addr\\, shape\\[\\, "
+"dtype\\, strides\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:44:<autosummary>:1
@@ -237,6 +237,6 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:219
 msgid ""
-"**res** -- The new tir.Var with type handle or casted expression with type "
+"**res** -- The new tirx.Var with type handle or casted expression with type "
 "handle."
 msgstr ""
