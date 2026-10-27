@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-10-27 13:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,14 +31,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`decompose_col_major <tilelang.layout.gemm_sp."
-"decompose_col_major>`\\ \\(index\\_1d\\, basis\\)"
+":py:obj:`decompose_col_major "
+"<tilelang.layout.gemm_sp.decompose_col_major>`\\ \\(index\\_1d\\, basis\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`make_cutlass_metadata_layout_sm90 <tilelang.layout.gemm_sp."
-"make_cutlass_metadata_layout_sm90>`\\ \\(buffer\\, mma\\_dtype\\, ...\\)"
+":py:obj:`make_cutlass_metadata_layout_sm90 "
+"<tilelang.layout.gemm_sp.make_cutlass_metadata_layout_sm90>`\\ \\(buffer\\, "
+"mma\\_dtype\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:30
@@ -49,8 +51,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`make_cutlass_metadata_layout_sm8x <tilelang.layout.gemm_sp."
-"make_cutlass_metadata_layout_sm8x>`\\ \\(buffer\\, mma\\_dtype\\)"
+":py:obj:`make_cutlass_metadata_layout_sm8x "
+"<tilelang.layout.gemm_sp.make_cutlass_metadata_layout_sm8x>`\\ \\(buffer\\, "
+"mma\\_dtype\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:39
@@ -62,8 +65,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`make_cutlass_metadata_layout <tilelang.layout.gemm_sp."
-"make_cutlass_metadata_layout>`\\ \\(buffer\\[\\, mma\\_dtype\\, arch\\]\\)"
+":py:obj:`make_cutlass_metadata_layout "
+"<tilelang.layout.gemm_sp.make_cutlass_metadata_layout>`\\ \\(buffer\\[\\, "
+"mma\\_dtype\\, arch\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:24

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-10-27 13:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,20 +31,20 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Rasterization <tilelang.carver.roller.rasterization."
-"Rasterization>`\\"
+":py:obj:`Rasterization "
+"<tilelang.carver.roller.rasterization.Rasterization>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`NoRasterization <tilelang.carver.roller.rasterization."
-"NoRasterization>`\\"
+":py:obj:`NoRasterization "
+"<tilelang.carver.roller.rasterization.NoRasterization>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Rasterization2DRow <tilelang.carver.roller.rasterization."
-"Rasterization2DRow>`\\"
+":py:obj:`Rasterization2DRow "
+"<tilelang.carver.roller.rasterization.Rasterization2DRow>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:57
@@ -53,8 +54,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Rasterization2DColumn <tilelang.carver.roller.rasterization."
-"Rasterization2DColumn>`\\"
+":py:obj:`Rasterization2DColumn "
+"<tilelang.carver.roller.rasterization.Rasterization2DColumn>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:82
