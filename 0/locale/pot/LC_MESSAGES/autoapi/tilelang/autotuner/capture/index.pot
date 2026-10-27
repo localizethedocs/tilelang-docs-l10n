@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-10-27 13:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,8 +36,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`AutotuneInputsCapture <tilelang.autotuner.capture."
-"AutotuneInputsCapture>`\\"
+":py:obj:`AutotuneInputsCapture "
+"<tilelang.autotuner.capture.AutotuneInputsCapture>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:17
@@ -45,8 +46,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`set_autotune_inputs <tilelang.autotuner.capture."
-"set_autotune_inputs>`\\ \\(\\*args\\)"
+":py:obj:`set_autotune_inputs "
+"<tilelang.autotuner.capture.set_autotune_inputs>`\\ \\(\\*args\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:112
@@ -56,8 +57,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`get_autotune_inputs <tilelang.autotuner.capture."
-"get_autotune_inputs>`\\ \\(\\)"
+":py:obj:`get_autotune_inputs "
+"<tilelang.autotuner.capture.get_autotune_inputs>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:127

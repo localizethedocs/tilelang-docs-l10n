@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> 0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-12 10:31+0000\n"
+"POT-Creation-Date: 2026-10-27 13:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -26,8 +27,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_cuda_postproc <tilelang.engine.callback."
-"register_cuda_postproc>`\\ \\(func\\[\\, override\\]\\)"
+":py:obj:`register_cuda_postproc "
+"<tilelang.engine.callback.register_cuda_postproc>`\\ \\(func\\[\\, "
+"override\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:27
@@ -37,8 +39,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_hip_postproc <tilelang.engine.callback."
-"register_hip_postproc>`\\ \\(func\\[\\, override\\]\\)"
+":py:obj:`register_hip_postproc "
+"<tilelang.engine.callback.register_hip_postproc>`\\ \\(func\\[\\, override\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:36
@@ -48,8 +51,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_c_postproc <tilelang.engine.callback."
-"register_c_postproc>`\\ \\(func\\[\\, override\\]\\)"
+":py:obj:`register_c_postproc "
+"<tilelang.engine.callback.register_c_postproc>`\\ \\(func\\[\\, override\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:45
@@ -59,8 +63,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_metal_postproc <tilelang.engine.callback."
-"register_metal_postproc>`\\ \\(func\\[\\, override\\]\\)"
+":py:obj:`register_metal_postproc "
+"<tilelang.engine.callback.register_metal_postproc>`\\ \\(func\\[\\, "
+"override\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:58
@@ -70,8 +75,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_cuda_postproc_callback <tilelang.engine.callback."
-"register_cuda_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+":py:obj:`register_cuda_postproc_callback "
+"<tilelang.engine.callback.register_cuda_postproc_callback>`\\ \\(\\[func\\, "
+"override\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:67
@@ -81,8 +87,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_hip_postproc_callback <tilelang.engine.callback."
-"register_hip_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+":py:obj:`register_hip_postproc_callback "
+"<tilelang.engine.callback.register_hip_postproc_callback>`\\ \\(\\[func\\, "
+"override\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:85
@@ -92,8 +99,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_c_postproc_callback <tilelang.engine.callback."
-"register_c_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+":py:obj:`register_c_postproc_callback "
+"<tilelang.engine.callback.register_c_postproc_callback>`\\ \\(\\[func\\, "
+"override\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:103
@@ -103,8 +111,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:21:<autosummary>:1
 msgid ""
-":py:obj:`register_metal_postproc_callback <tilelang.engine.callback."
-"register_metal_postproc_callback>`\\ \\(\\[func\\, override\\]\\)"
+":py:obj:`register_metal_postproc_callback "
+"<tilelang.engine.callback.register_metal_postproc_callback>`\\ \\(\\[func\\, "
+"override\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/engine/callback/index.rst:121
