@@ -39,8 +39,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`TensorCorePolicy <tilelang.carver.roller.policy.tensorcore."
-"TensorCorePolicy>`\\"
+":py:obj:`TensorCorePolicy "
+"<tilelang.carver.roller.policy.tensorcore.TensorCorePolicy>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/tensorcore/index.rst:29

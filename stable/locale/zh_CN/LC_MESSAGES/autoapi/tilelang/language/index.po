@@ -35,8 +35,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`import_source <tilelang.language.import_source>`\\ "
-"\\(\\[source\\]\\)"
+":py:obj:`import_source <tilelang.language.import_source>`\\ \\(\\[source\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/index.rst:57

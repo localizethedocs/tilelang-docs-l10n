@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:19:<autosummary>:1
 msgid ""
-":py:obj:`thread_local_storage <tilelang.language.v2.builder."
-"thread_local_storage>`\\"
+":py:obj:`thread_local_storage "
+"<tilelang.language.v2.builder.thread_local_storage>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:19:<autosummary>:1
@@ -46,14 +46,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:19:<autosummary>:1
 msgid ""
-":py:obj:`TIR_CONTROL_FRAME <tilelang.language.v2.builder."
-"TIR_CONTROL_FRAME>`\\"
+":py:obj:`TIR_CONTROL_FRAME "
+"<tilelang.language.v2.builder.TIR_CONTROL_FRAME>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:19:<autosummary>:1
 msgid ""
-":py:obj:`TIR_VAR_SCOPE_FRAME <tilelang.language.v2.builder."
-"TIR_VAR_SCOPE_FRAME>`\\"
+":py:obj:`TIR_VAR_SCOPE_FRAME "
+"<tilelang.language.v2.builder.TIR_VAR_SCOPE_FRAME>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:21
@@ -100,11 +100,11 @@ msgstr ":py:obj:`BreakFrame <tilelang.language.v2.builder.BreakFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ""
-":py:obj:`SerialForWithStep <tilelang.language.v2.builder."
-"SerialForWithStep>`\\"
+":py:obj:`SerialForWithStep "
+"<tilelang.language.v2.builder.SerialForWithStep>`\\"
 msgstr ""
-":py:obj:`SerialForWithStep <tilelang.language.v2.builder."
-"SerialForWithStep>`\\"
+":py:obj:`SerialForWithStep "
+"<tilelang.language.v2.builder.SerialForWithStep>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ":py:obj:`OutTensor <tilelang.language.v2.builder.OutTensor>`\\"
@@ -116,8 +116,8 @@ msgstr ":py:obj:`Ref <tilelang.language.v2.builder.Ref>`\\"
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
 msgid ""
-":py:obj:`UnrollForWithStep <tilelang.language.v2.builder."
-"UnrollForWithStep>`\\"
+":py:obj:`UnrollForWithStep "
+"<tilelang.language.v2.builder.UnrollForWithStep>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:42:<autosummary>:1
@@ -175,8 +175,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
 msgid ""
-":py:obj:`get_type_hints <tilelang.language.v2.builder.get_type_hints>`\\ "
-"\\(func\\)"
+":py:obj:`get_type_hints <tilelang.language.v2.builder.get_type_hints>`\\ \\"
+"(func\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:55:<autosummary>:1
@@ -251,8 +251,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:385
 msgid ""
-"Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ], :py:obj:"
-"`tvm.tir.PrimFunc`"
+"Bases: :py:obj:`Generic`\\ "
+"[\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ], :py:obj:`tvm.tir.PrimFunc`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:465
@@ -281,8 +281,8 @@ msgid ""
 "metaprogramming capabilities. * *Example* * *--------* -- >>> @macro   ... "
 "def my_macro(x: T.int32) -> T.int32:   ...    return x ** 2   >>> "
 "@prim_func   ... def my_func(A: T.Tensor((10,), T.int32), B: T.Tensor((10,), "
-"T.int32)):   ...    with T.Kernel(1) as _:   ...        for i in T."
-"serial(10):   ...            B[i] = my_macro(A[i])"
+"T.int32)):   ...    with T.Kernel(1) as _:   ...        for i in "
+"T.serial(10):   ...            B[i] = my_macro(A[i])"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:472
@@ -372,11 +372,11 @@ msgstr "範例"
 #: ../../../autoapi/tilelang/language/v2/builder/index.rst:518
 msgid ""
 "Static annotation mode (immediate construction): >>> @prim_func ... def "
-"add_kernel(A: T.Buffer((128,), T.float32), ...                B: T."
-"Buffer((128,), T.float32)): ...     for i in T.grid(128): ...         B[i] = "
-"A[i] + 1.0 Generator mode (dynamic construction): >>> "
-"@prim_func(generator=True) ... def dynamic_kernel(A=T.Tensor((128,), T."
-"float32)): ...     # function body ...     pass >>> kernel_instance = "
+"add_kernel(A: T.Buffer((128,), T.float32), ...                B: "
+"T.Buffer((128,), T.float32)): ...     for i in T.grid(128): ...         B[i] "
+"= A[i] + 1.0 Generator mode (dynamic construction): >>> "
+"@prim_func(generator=True) ... def dynamic_kernel(A=T.Tensor((128,), "
+"T.float32)): ...     # function body ...     pass >>> kernel_instance = "
 "dynamic_kernel() With custom parameters: >>> @prim_func(generator=True) ... "
 "def parameterized_kernel(size: int = 128): ...     # function body using "
 "size parameter ...     pass >>> kernel = parameterized_kernel(size=256)"

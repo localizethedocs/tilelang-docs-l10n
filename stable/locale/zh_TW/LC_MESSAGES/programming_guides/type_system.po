@@ -114,8 +114,9 @@ msgstr ""
 
 #: ../../../programming_guides/type_system.md:32
 msgid ""
-"Float8/6/4 families also provide `x2/x4/x8/x16/x32/x64` where applicable, e."
-"g., `float8_e4m3x2`, `float8_e4m3x4`, `float6_e2m3fnx8`, `float4_e2m1fnx16`."
+"Float8/6/4 families also provide `x2/x4/x8/x16/x32/x64` where applicable, "
+"e.g., `float8_e4m3x2`, `float8_e4m3x4`, `float6_e2m3fnx8`, "
+"`float4_e2m1fnx16`."
 msgstr ""
 
 #: ../../../programming_guides/type_system.md:35

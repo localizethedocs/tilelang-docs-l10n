@@ -150,8 +150,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/loop/index.rst:40
 msgid ""
-"A layout annotation for the parallel loop nest, expressed as a ``T."
-"Fragment``. When provided, it is attached as the "
+"A layout annotation for the parallel loop nest, expressed as a "
+"``T.Fragment``. When provided, it is attached as the "
 "``\"parallel_loop_layout\"`` annotation on the outermost parallel loop. For "
 "a k-dimensional ``T.Parallel(...)`` nest, the fragment's ``InputDim`` must "
 "equal ``k``."

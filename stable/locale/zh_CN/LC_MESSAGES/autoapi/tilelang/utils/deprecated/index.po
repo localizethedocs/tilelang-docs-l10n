@@ -27,9 +27,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/deprecated/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`deprecated_warning <tilelang.utils.deprecated."
-"deprecated_warning>`\\ \\(method\\_name\\, new\\_method\\_name\\[\\, ..."
-"\\]\\)"
+":py:obj:`deprecated_warning "
+"<tilelang.utils.deprecated.deprecated_warning>`\\ \\(method\\_name\\, "
+"new\\_method\\_name\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/deprecated/index.rst:21
@@ -39,8 +39,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/deprecated/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`deprecated <tilelang.utils.deprecated.deprecated>`\\ "
-"\\(method\\_name\\, new\\_method\\_name\\[\\, ...\\]\\)"
+":py:obj:`deprecated <tilelang.utils.deprecated.deprecated>`\\ \\"
+"(method\\_name\\, new\\_method\\_name\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/deprecated/index.rst:26

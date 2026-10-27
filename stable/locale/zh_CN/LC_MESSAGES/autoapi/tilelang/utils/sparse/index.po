@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`compress <tilelang.utils.sparse.compress>`\\ \\(A\\, "
-"transposed\\[\\, arch\\]\\)"
+":py:obj:`compress <tilelang.utils.sparse.compress>`\\ \\(A\\, transposed\\"
+"[\\, arch\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:39
@@ -60,8 +60,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`randn_semi_sparse <tilelang.utils.sparse.randn_semi_sparse>`\\ "
-"\\(M\\, K\\[\\, dtype\\, device\\, transposed\\]\\)"
+":py:obj:`randn_semi_sparse <tilelang.utils.sparse.randn_semi_sparse>`\\ \\"
+"(M\\, K\\[\\, dtype\\, device\\, transposed\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
@@ -84,8 +84,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`arange_semi_sparse <tilelang.utils.sparse.arange_semi_sparse>`\\ "
-"\\(M\\, K\\[\\, dtype\\, device\\, transposed\\]\\)"
+":py:obj:`arange_semi_sparse <tilelang.utils.sparse.arange_semi_sparse>`\\ \\"
+"(M\\, K\\[\\, dtype\\, device\\, transposed\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:27:<autosummary>:1
@@ -110,16 +110,16 @@ msgstr ""
 msgid ""
 "Generate a random semi-sparse tensor. The generated tensor will have 2:4 "
 "sparsity along the K dimension. :param M: Number of rows :type M: int :param "
-"K: Number of columns :type K: int :param dtype: Data type of the tensor :"
-"param device: Device to create the tensor on :param transposed: If True, "
-"returns a transposed tensor of shape (K, M) :type transposed: bool"
+"K: Number of columns :type K: int :param dtype: Data type of the "
+"tensor :param device: Device to create the tensor on :param transposed: If "
+"True, returns a transposed tensor of shape (K, M) :type transposed: bool"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/sparse/index.rst:57
 msgid ""
 "Generate a random semi-sparse integer tensor. The generated tensor will have "
-"2:4 sparsity along the K dimension. :param M: Number of rows :type M: int :"
-"param K: Number of columns :type K: int :param low: Lower bound of the "
+"2:4 sparsity along the K dimension. :param M: Number of rows :type M: "
+"int :param K: Number of columns :type K: int :param low: Lower bound of the "
 "random integers :type low: int :param high: Upper bound of the random "
 "integers :type high: int :param dtype: Data type of the tensor :param "
 "device: Device to create the tensor on :param transposed: If True, returns a "

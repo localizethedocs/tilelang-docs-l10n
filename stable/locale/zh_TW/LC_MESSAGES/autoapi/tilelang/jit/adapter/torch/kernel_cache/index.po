@@ -27,8 +27,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`TorchKernelCache <tilelang.jit.adapter.torch.kernel_cache."
-"TorchKernelCache>`\\"
+":py:obj:`TorchKernelCache "
+"<tilelang.jit.adapter.torch.kernel_cache.TorchKernelCache>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:16

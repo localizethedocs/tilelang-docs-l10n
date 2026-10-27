@@ -35,8 +35,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`describe_supported_targets <tilelang.utils.target."
-"describe_supported_targets>`\\ \\(\\)"
+":py:obj:`describe_supported_targets "
+"<tilelang.utils.target.describe_supported_targets>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:53
@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`check_cuda_availability <tilelang.utils.target."
-"check_cuda_availability>`\\ \\(\\)"
+":py:obj:`check_cuda_availability "
+"<tilelang.utils.target.check_cuda_availability>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
@@ -56,8 +56,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`check_hip_availability <tilelang.utils.target."
-"check_hip_availability>`\\ \\(\\)"
+":py:obj:`check_hip_availability "
+"<tilelang.utils.target.check_hip_availability>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
@@ -67,14 +67,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`check_metal_availability <tilelang.utils.target."
-"check_metal_availability>`\\ \\(\\)"
+":py:obj:`check_metal_availability "
+"<tilelang.utils.target.check_metal_availability>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`determine_fp8_type <tilelang.utils.target.determine_fp8_type>`\\ "
-"\\(\\[fp8\\_format\\]\\)"
+":py:obj:`determine_fp8_type <tilelang.utils.target.determine_fp8_type>`\\ \\"
+"(\\[fp8\\_format\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
@@ -83,20 +83,20 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`determine_torch_fp8_type <tilelang.utils.target."
-"determine_torch_fp8_type>`\\ \\(\\[fp8\\_format\\]\\)"
+":py:obj:`determine_torch_fp8_type "
+"<tilelang.utils.target.determine_torch_fp8_type>`\\ \\(\\[fp8\\_format\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`normalize_cutedsl_target <tilelang.utils.target."
-"normalize_cutedsl_target>`\\ \\(target\\)"
+":py:obj:`normalize_cutedsl_target "
+"<tilelang.utils.target.normalize_cutedsl_target>`\\ \\(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`determine_target <tilelang.utils.target.determine_target>`\\ "
-"\\(\\[target\\, return\\_object\\]\\)"
+":py:obj:`determine_target <tilelang.utils.target.determine_target>`\\ \\(\\"
+"[target\\, return\\_object\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:85
@@ -108,8 +108,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_cuda <tilelang.utils.target.target_is_cuda>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_cuda <tilelang.utils.target.target_is_cuda>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
@@ -119,56 +119,56 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_metal <tilelang.utils.target.target_is_metal>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_metal <tilelang.utils.target.target_is_metal>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_volta <tilelang.utils.target.target_is_volta>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_volta <tilelang.utils.target.target_is_volta>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_turing <tilelang.utils.target.target_is_turing>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_turing <tilelang.utils.target.target_is_turing>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_ampere <tilelang.utils.target.target_is_ampere>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_ampere <tilelang.utils.target.target_is_ampere>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_hopper <tilelang.utils.target.target_is_hopper>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_hopper <tilelang.utils.target.target_is_hopper>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_sm120 <tilelang.utils.target.target_is_sm120>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_sm120 <tilelang.utils.target.target_is_sm120>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_cdna <tilelang.utils.target.target_is_cdna>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_cdna <tilelang.utils.target.target_is_cdna>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_is_gfx950 <tilelang.utils.target.target_is_gfx950>`\\ "
-"\\(target\\)"
+":py:obj:`target_is_gfx950 <tilelang.utils.target.target_is_gfx950>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_has_async_copy <tilelang.utils.target."
-"target_has_async_copy>`\\ \\(target\\)"
+":py:obj:`target_has_async_copy "
+"<tilelang.utils.target.target_has_async_copy>`\\ \\(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
@@ -185,14 +185,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_has_bulk_copy <tilelang.utils.target."
-"target_has_bulk_copy>`\\ \\(target\\)"
+":py:obj:`target_has_bulk_copy "
+"<tilelang.utils.target.target_has_bulk_copy>`\\ \\(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`target_get_warp_size <tilelang.utils.target."
-"target_get_warp_size>`\\ \\(target\\)"
+":py:obj:`target_get_warp_size "
+"<tilelang.utils.target.target_get_warp_size>`\\ \\(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:46
@@ -205,14 +205,14 @@ msgstr "回傳值型別"
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:58
 msgid ""
-"Check if CUDA is available on the system by locating the CUDA path. :"
-"returns: True if CUDA is available, False otherwise. :rtype: bool"
+"Check if CUDA is available on the system by locating the CUDA "
+"path. :returns: True if CUDA is available, False otherwise. :rtype: bool"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:65
 msgid ""
-"Check if HIP (ROCm) is available on the system by locating the ROCm path. :"
-"returns: True if HIP is available, False otherwise. :rtype: bool"
+"Check if HIP (ROCm) is available on the system by locating the ROCm "
+"path. :returns: True if HIP is available, False otherwise. :rtype: bool"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/target/index.rst:74

@@ -36,8 +36,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`AutotuneInputsCapture <tilelang.autotuner.capture."
-"AutotuneInputsCapture>`\\"
+":py:obj:`AutotuneInputsCapture "
+"<tilelang.autotuner.capture.AutotuneInputsCapture>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:17
@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`set_autotune_inputs <tilelang.autotuner.capture."
-"set_autotune_inputs>`\\ \\(\\*args\\)"
+":py:obj:`set_autotune_inputs "
+"<tilelang.autotuner.capture.set_autotune_inputs>`\\ \\(\\*args\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:112
@@ -57,8 +57,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`get_autotune_inputs <tilelang.autotuner.capture."
-"get_autotune_inputs>`\\ \\(\\)"
+":py:obj:`get_autotune_inputs "
+"<tilelang.autotuner.capture.get_autotune_inputs>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/capture/index.rst:127

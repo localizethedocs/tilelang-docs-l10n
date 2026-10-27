@@ -60,8 +60,8 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/index.rst:66
 msgid ""
-"Can be the string name of the level (e.g., 'INFO') or the actual level (e."
-"g., logging.INFO)."
+"Can be the string name of the level (e.g., 'INFO') or the actual level "
+"(e.g., logging.INFO)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/index.rst:68

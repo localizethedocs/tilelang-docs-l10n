@@ -55,20 +55,20 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`__dtype_call__ <tilelang.language.v2.dtypes.__dtype_call__>`\\ "
-"\\(self\\[\\, expr\\, is\\_size\\_var\\]\\)"
+":py:obj:`__dtype_call__ <tilelang.language.v2.dtypes.__dtype_call__>`\\ \\"
+"(self\\[\\, expr\\, is\\_size\\_var\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`__dtype_new__ <tilelang.language.v2.dtypes.__dtype_new__>`\\ "
-"\\(cls\\, value\\)"
+":py:obj:`__dtype_new__ <tilelang.language.v2.dtypes.__dtype_new__>`\\ \\"
+"(cls\\, value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`get_tvm_dtype <tilelang.language.v2.dtypes.get_tvm_dtype>`\\ "
-"\\(value\\)"
+":py:obj:`get_tvm_dtype <tilelang.language.v2.dtypes.get_tvm_dtype>`\\ \\"
+"(value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/dtypes/index.rst:37

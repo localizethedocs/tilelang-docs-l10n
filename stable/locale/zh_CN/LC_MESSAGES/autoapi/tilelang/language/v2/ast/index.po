@@ -97,14 +97,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`get_operator_name <tilelang.language.v2.ast.get_operator_name>`\\ "
-"\\(operator\\)"
+":py:obj:`get_operator_name <tilelang.language.v2.ast.get_operator_name>`\\ \\"
+"(operator\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`get_boolop_name <tilelang.language.v2.ast.get_boolop_name>`\\ "
-"\\(boolop\\)"
+":py:obj:`get_boolop_name <tilelang.language.v2.ast.get_boolop_name>`\\ \\"
+"(boolop\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:44:<autosummary>:1
@@ -115,8 +115,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`eval_aug_assign <tilelang.language.v2.ast.eval_aug_assign>`\\ "
-"\\(op\\, left\\, sl\\, right\\)"
+":py:obj:`eval_aug_assign <tilelang.language.v2.ast.eval_aug_assign>`\\ \\"
+"(op\\, left\\, sl\\, right\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/ast/index.rst:44:<autosummary>:1

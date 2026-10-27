@@ -39,8 +39,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`get_current_device <tilelang.utils.device.get_current_device>`\\ "
-"\\(\\)"
+":py:obj:`get_current_device <tilelang.utils.device.get_current_device>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/device/index.rst:26

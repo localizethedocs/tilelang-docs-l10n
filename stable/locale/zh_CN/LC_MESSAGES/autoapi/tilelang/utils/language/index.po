@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_shared_dynamic <tilelang.utils.language.is_shared_dynamic>`\\ "
-"\\(buffer\\)"
+":py:obj:`is_shared_dynamic <tilelang.utils.language.is_shared_dynamic>`\\ \\"
+"(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:62
@@ -58,8 +58,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_tensor_memory <tilelang.utils.language.is_tensor_memory>`\\ "
-"\\(buffer\\)"
+":py:obj:`is_tensor_memory <tilelang.utils.language.is_tensor_memory>`\\ \\"
+"(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:72
@@ -100,8 +100,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`get_buffer_elems <tilelang.utils.language.get_buffer_elems>`\\ "
-"\\(buffer\\)"
+":py:obj:`get_buffer_elems <tilelang.utils.language.get_buffer_elems>`\\ \\"
+"(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:112
@@ -121,8 +121,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`retrieve_func_from_module <tilelang.utils.language."
-"retrieve_func_from_module>`\\ \\(ir\\_module\\)"
+":py:obj:`retrieve_func_from_module "
+"<tilelang.utils.language.retrieve_func_from_module>`\\ \\(ir\\_module\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:128
@@ -132,8 +132,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`to_buffer_region <tilelang.utils.language.to_buffer_region>`\\ "
-"\\(obj\\[\\, access\\_type\\, extents\\]\\)"
+":py:obj:`to_buffer_region <tilelang.utils.language.to_buffer_region>`\\ \\"
+"(obj\\[\\, access\\_type\\, extents\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:143
@@ -153,21 +153,22 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`retrieve_stride <tilelang.utils.language.retrieve_stride>`\\ "
-"\\(obj\\)"
+":py:obj:`retrieve_stride <tilelang.utils.language.retrieve_stride>`\\ \\"
+"(obj\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:160
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-"Retrieve row-major strides for a buffer-like object based on its buffer."
-"shape."
+"Retrieve row-major strides for a buffer-like object based on its "
+"buffer.shape."
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`retrive_ptr_from_buffer_region <tilelang.utils.language."
-"retrive_ptr_from_buffer_region>`\\ \\(buffer\\_or\\_load\\_or\\_region\\)"
+":py:obj:`retrive_ptr_from_buffer_region "
+"<tilelang.utils.language.retrive_ptr_from_buffer_region>`\\ \\"
+"(buffer\\_or\\_load\\_or\\_region\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
@@ -183,8 +184,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`retrieve_offset <tilelang.utils.language.retrieve_offset>`\\ "
-"\\(obj\\)"
+":py:obj:`retrieve_offset <tilelang.utils.language.retrieve_offset>`\\ \\"
+"(obj\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:182
@@ -215,8 +216,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`prim_expr_equal <tilelang.utils.language.prim_expr_equal>`\\ "
-"\\(lhs\\, rhs\\)"
+":py:obj:`prim_expr_equal <tilelang.utils.language.prim_expr_equal>`\\ \\"
+"(lhs\\, rhs\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:209
@@ -226,8 +227,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`legalize_pairwise_extents <tilelang.utils.language."
-"legalize_pairwise_extents>`\\ \\(src\\_extents\\, dst\\_extents\\)"
+":py:obj:`legalize_pairwise_extents "
+"<tilelang.utils.language.legalize_pairwise_extents>`\\ \\(src\\_extents\\, "
+"dst\\_extents\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:217
@@ -237,8 +239,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_full_region <tilelang.utils.language.is_full_region>`\\ "
-"\\(buffer\\_region\\)"
+":py:obj:`is_full_region <tilelang.utils.language.is_full_region>`\\ \\"
+"(buffer\\_region\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/utils/language/index.rst:238

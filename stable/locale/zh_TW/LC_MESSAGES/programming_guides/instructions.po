@@ -39,8 +39,8 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:8
 msgid ""
-"Compute primitives: `T.gemm`/`T.gemm_sp`, elementwise math (`T.exp`, `T."
-"max`), reductions (`T.reduce_sum`, `T.cumsum`, warp reducers)"
+"Compute primitives: `T.gemm`/`T.gemm_sp`, elementwise math (`T.exp`, "
+"`T.max`), reductions (`T.reduce_sum`, `T.cumsum`, warp reducers)"
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:10
@@ -165,11 +165,11 @@ msgstr ""
 msgid ""
 "A barrier is still required when `dst` is produced cooperatively and "
 "consumed across threads. In most TileLang programs you do not need to write "
-"it manually: `ThreadSync(\"shared\")` will insert the required `T."
-"tvm_storage_sync(\"shared\")` before the first read from `dst`. If you want "
-"explicit control (or if you're writing very low-level code), you can insert "
-"`T.tvm_storage_sync(\"shared\")` yourself (or `T.tvm_storage_sync(\"warp\")` "
-"for warp-local consumption)."
+"it manually: `ThreadSync(\"shared\")` will insert the required "
+"`T.tvm_storage_sync(\"shared\")` before the first read from `dst`. If you "
+"want explicit control (or if you're writing very low-level code), you can "
+"insert `T.tvm_storage_sync(\"shared\")` yourself (or "
+"`T.tvm_storage_sync(\"warp\")` for warp-local consumption)."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:64
@@ -335,8 +335,8 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:147
 msgid ""
-"`T.async_copy(src, dst, ...)`: Explicit async global→shared copy via `cp."
-"async`."
+"`T.async_copy(src, dst, ...)`: Explicit async global→shared copy via "
+"`cp.async`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:148
@@ -435,8 +435,8 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:171
 msgid ""
-"Elementwise math: TIR ops (`T.exp`, `T.log`, `T.max`, `T.min`, `T."
-"rsqrt`, ...)."
+"Elementwise math: TIR ops (`T.exp`, `T.log`, `T.max`, `T.min`, "
+"`T.rsqrt`, ...)."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:172
@@ -695,8 +695,8 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:235
 msgid ""
-"Parity ops: `T.mbarrier_wait_parity(barrier, parity)`, `T."
-"mbarrier_arrive(barrier)`."
+"Parity ops: `T.mbarrier_wait_parity(barrier, parity)`, "
+"`T.mbarrier_arrive(barrier)`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:236
@@ -707,8 +707,8 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:237
 msgid ""
-"TMA: `T.create_tma_descriptor(...)`, `T.tma_load(...)`, `T."
-"tma_store_arrive(...)`, `T.tma_store_wait(...)`."
+"TMA: `T.create_tma_descriptor(...)`, `T.tma_load(...)`, "
+"`T.tma_store_arrive(...)`, `T.tma_store_wait(...)`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:239
@@ -718,8 +718,8 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:240
 msgid ""
-"Warp‑group: `T.warpgroup_arrive()`, `T.warpgroup_commit_batch()`, `T."
-"warpgroup_wait(num_mma)`, `T.wait_wgmma(id)`."
+"Warp‑group: `T.warpgroup_arrive()`, `T.warpgroup_commit_batch()`, "
+"`T.warpgroup_wait(num_mma)`, `T.wait_wgmma(id)`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:243
@@ -748,14 +748,14 @@ msgstr ""
 
 #: ../../../programming_guides/instructions.md:250
 msgid ""
-"`T.set_max_nreg(reg_count, is_inc)`, `T.inc_max_nreg(n)`, `T."
-"dec_max_nreg(n)`."
+"`T.set_max_nreg(reg_count, is_inc)`, `T.inc_max_nreg(n)`, "
+"`T.dec_max_nreg(n)`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:251
 msgid ""
-"`T.annotate_producer_reg_dealloc(n=24)`, `T."
-"annotate_consumer_reg_alloc(n=240)`."
+"`T.annotate_producer_reg_dealloc(n=24)`, "
+"`T.annotate_consumer_reg_alloc(n=240)`."
 msgstr ""
 
 #: ../../../programming_guides/instructions.md:252

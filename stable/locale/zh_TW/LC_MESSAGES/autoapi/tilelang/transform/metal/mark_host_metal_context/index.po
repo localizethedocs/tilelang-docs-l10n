@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`tvm_call_packed_lowered <tilelang.transform.metal."
-"mark_host_metal_context.tvm_call_packed_lowered>`\\"
+":py:obj:`tvm_call_packed_lowered "
+"<tilelang.transform.metal.mark_host_metal_context.tvm_call_packed_lowered>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:16
@@ -37,8 +37,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`MarkHostMetalContextMutator <tilelang.transform.metal."
-"mark_host_metal_context.MarkHostMetalContextMutator>`\\"
+":py:obj:`MarkHostMetalContextMutator "
+"<tilelang.transform.metal.mark_host_metal_context.MarkHostMetalContextMutator>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:24
@@ -47,8 +47,9 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:30:<autosummary>:1
 msgid ""
-":py:obj:`MarkHostMetalContext <tilelang.transform.metal."
-"mark_host_metal_context.MarkHostMetalContext>`\\ \\(\\)"
+":py:obj:`MarkHostMetalContext "
+"<tilelang.transform.metal.mark_host_metal_context.MarkHostMetalContext>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/metal/mark_host_metal_context/index.rst:32

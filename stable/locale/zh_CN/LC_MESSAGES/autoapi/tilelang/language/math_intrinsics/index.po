@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
 msgid ""
-":py:obj:`ieee_add <tilelang.language.math_intrinsics.ieee_add>`\\ \\(x\\, "
-"y\\[\\, rounding\\_mode\\]\\)"
+":py:obj:`ieee_add <tilelang.language.math_intrinsics.ieee_add>`\\ \\(x\\, y\\"
+"[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:39
@@ -42,8 +42,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
 msgid ""
-":py:obj:`ieee_sub <tilelang.language.math_intrinsics.ieee_sub>`\\ \\(x\\, "
-"y\\[\\, rounding\\_mode\\]\\)"
+":py:obj:`ieee_sub <tilelang.language.math_intrinsics.ieee_sub>`\\ \\(x\\, y\\"
+"[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:56
@@ -53,8 +53,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
 msgid ""
-":py:obj:`ieee_mul <tilelang.language.math_intrinsics.ieee_mul>`\\ \\(x\\, "
-"y\\[\\, rounding\\_mode\\]\\)"
+":py:obj:`ieee_mul <tilelang.language.math_intrinsics.ieee_mul>`\\ \\(x\\, y\\"
+"[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:71
@@ -75,8 +75,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
 msgid ""
-":py:obj:`ieee_frcp <tilelang.language.math_intrinsics.ieee_frcp>`\\ "
-"\\(x\\[\\, rounding\\_mode\\]\\)"
+":py:obj:`ieee_frcp <tilelang.language.math_intrinsics.ieee_frcp>`\\ \\(x\\"
+"[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:103
@@ -86,8 +86,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
 msgid ""
-":py:obj:`ieee_fsqrt <tilelang.language.math_intrinsics.ieee_fsqrt>`\\ "
-"\\(x\\[\\, rounding\\_mode\\]\\)"
+":py:obj:`ieee_fsqrt <tilelang.language.math_intrinsics.ieee_fsqrt>`\\ \\(x\\"
+"[\\, rounding\\_mode\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:116
@@ -97,8 +97,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:33:<autosummary>:1
 msgid ""
-":py:obj:`ieee_frsqrt <tilelang.language.math_intrinsics.ieee_frsqrt>`\\ "
-"\\(x\\)"
+":py:obj:`ieee_frsqrt <tilelang.language.math_intrinsics.ieee_frsqrt>`\\ \\"
+"(x\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:129
@@ -205,9 +205,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:45
 msgid ""
-"Rounding mode: 'rn' (round to nearest), 'rz' (round toward zero), "
-"'ru' (round toward positive infinity), 'rd' (round toward negative "
-"infinity). Default is 'rn'."
+"Rounding mode: 'rn' (round to nearest), 'rz' (round toward zero), 'ru' "
+"(round toward positive infinity), 'rd' (round toward negative infinity). "
+"Default is 'rn'."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/math_intrinsics/index.rst:0

@@ -27,14 +27,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/common/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`Statement <tilelang.carver.roller.shape_inference.common."
-"Statement>`\\"
+":py:obj:`Statement "
+"<tilelang.carver.roller.shape_inference.common.Statement>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/common/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`InputShapeInference <tilelang.carver.roller.shape_inference.common."
-"InputShapeInference>`\\"
+":py:obj:`InputShapeInference "
+"<tilelang.carver.roller.shape_inference.common.InputShapeInference>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/shape_inference/common/index.rst:17

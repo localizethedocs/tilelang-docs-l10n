@@ -199,8 +199,8 @@ msgstr ""
 
 #: ../../../programming_guides/autotuning.md:122
 msgid ""
-"examples/deepseek_nsa/benchmark/benchmark_nsa_fwd.py:451 — uses `@tilelang."
-"autotune`"
+"examples/deepseek_nsa/benchmark/benchmark_nsa_fwd.py:451 — uses "
+"`@tilelang.autotune`"
 msgstr ""
 
 #: ../../../programming_guides/autotuning.md:123

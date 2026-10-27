@@ -41,8 +41,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`get_cplus_compiler <tilelang.contrib.cc.get_cplus_compiler>`\\ "
-"\\(\\)"
+":py:obj:`get_cplus_compiler <tilelang.contrib.cc.get_cplus_compiler>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
@@ -62,8 +62,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`create_staticlib <tilelang.contrib.cc.create_staticlib>`\\ "
-"\\(output\\, inputs\\[\\, ar\\]\\)"
+":py:obj:`create_staticlib <tilelang.contrib.cc.create_staticlib>`\\ \\"
+"(output\\, inputs\\[\\, ar\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:69
@@ -73,8 +73,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`create_executable <tilelang.contrib.cc.create_executable>`\\ "
-"\\(output\\, objects\\[\\, options\\, cc\\, cwd\\, ...\\]\\)"
+":py:obj:`create_executable <tilelang.contrib.cc.create_executable>`\\ \\"
+"(output\\, objects\\[\\, options\\, cc\\, cwd\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:82
@@ -84,8 +84,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`get_global_symbol_section_map <tilelang.contrib.cc."
-"get_global_symbol_section_map>`\\ \\(path\\, \\*\\[\\, nm\\]\\)"
+":py:obj:`get_global_symbol_section_map "
+"<tilelang.contrib.cc.get_global_symbol_section_map>`\\ \\(path\\, \\*\\[\\, "
+"nm\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:100
@@ -95,8 +96,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`get_target_by_dump_machine <tilelang.contrib.cc."
-"get_target_by_dump_machine>`\\ \\(compiler\\)"
+":py:obj:`get_target_by_dump_machine "
+"<tilelang.contrib.cc.get_target_by_dump_machine>`\\ \\(compiler\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:113
@@ -107,8 +108,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`cross_compiler <tilelang.contrib.cc.cross_compiler>`\\ "
-"\\(compile\\_func\\[\\, options\\, output\\_format\\, ...\\]\\)"
+":py:obj:`cross_compiler <tilelang.contrib.cc.cross_compiler>`\\ \\"
+"(compile\\_func\\[\\, options\\, output\\_format\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cc/index.rst:124

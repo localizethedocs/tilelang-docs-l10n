@@ -31,52 +31,60 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_swizzled_layout <tilelang.layout.swizzle."
-"make_swizzled_layout>`\\ \\(buffer\\[\\, k\\_major\\, allow\\_pad\\]\\)"
+":py:obj:`make_swizzled_layout "
+"<tilelang.layout.swizzle.make_swizzled_layout>`\\ \\(buffer\\[\\, "
+"k\\_major\\, allow\\_pad\\]\\)"
 msgstr ""
-":py:obj:`make_swizzled_layout <tilelang.layout.swizzle."
-"make_swizzled_layout>`\\ \\(buffer\\[\\, k\\_major\\, allow\\_pad\\]\\)"
+":py:obj:`make_swizzled_layout "
+"<tilelang.layout.swizzle.make_swizzled_layout>`\\ \\(buffer\\[\\, "
+"k\\_major\\, allow\\_pad\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_volta_swizzled_layout <tilelang.layout.swizzle."
-"make_volta_swizzled_layout>`\\ \\(buffer\\[\\, is\\_a\\, k\\_inner\\]\\)"
+":py:obj:`make_volta_swizzled_layout "
+"<tilelang.layout.swizzle.make_volta_swizzled_layout>`\\ \\(buffer\\[\\, "
+"is\\_a\\, k\\_inner\\]\\)"
 msgstr ""
-":py:obj:`make_volta_swizzled_layout <tilelang.layout.swizzle."
-"make_volta_swizzled_layout>`\\ \\(buffer\\[\\, is\\_a\\, k\\_inner\\]\\)"
+":py:obj:`make_volta_swizzled_layout "
+"<tilelang.layout.swizzle.make_volta_swizzled_layout>`\\ \\(buffer\\[\\, "
+"is\\_a\\, k\\_inner\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_wgmma_swizzled_layout <tilelang.layout.swizzle."
-"make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, k\\_major\\]\\)"
+":py:obj:`make_wgmma_swizzled_layout "
+"<tilelang.layout.swizzle.make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, "
+"continuity\\, k\\_major\\]\\)"
 msgstr ""
-":py:obj:`make_wgmma_swizzled_layout <tilelang.layout.swizzle."
-"make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, k\\_major\\]\\)"
+":py:obj:`make_wgmma_swizzled_layout "
+"<tilelang.layout.swizzle.make_wgmma_swizzled_layout>`\\ \\(buffer\\[\\, "
+"continuity\\, k\\_major\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_tcgen05mma_swizzled_layout <tilelang.layout.swizzle."
-"make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, ...\\]\\)"
+":py:obj:`make_tcgen05mma_swizzled_layout "
+"<tilelang.layout.swizzle.make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, "
+"continuity\\, ...\\]\\)"
 msgstr ""
-":py:obj:`make_tcgen05mma_swizzled_layout <tilelang.layout.swizzle."
-"make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, continuity\\, ...\\]\\)"
+":py:obj:`make_tcgen05mma_swizzled_layout "
+"<tilelang.layout.swizzle.make_tcgen05mma_swizzled_layout>`\\ \\(buffer\\[\\, "
+"continuity\\, ...\\]\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_full_bank_swizzled_layout <tilelang.layout.swizzle."
-"make_full_bank_swizzled_layout>`\\ \\(buffer\\)"
-msgstr ""
-
-#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
-msgid ""
-":py:obj:`make_half_bank_swizzled_layout <tilelang.layout.swizzle."
-"make_half_bank_swizzled_layout>`\\ \\(buffer\\)"
+":py:obj:`make_full_bank_swizzled_layout "
+"<tilelang.layout.swizzle.make_full_bank_swizzled_layout>`\\ \\(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_quarter_bank_swizzled_layout <tilelang.layout.swizzle."
-"make_quarter_bank_swizzled_layout>`\\ \\(buffer\\)"
+":py:obj:`make_half_bank_swizzled_layout "
+"<tilelang.layout.swizzle.make_half_bank_swizzled_layout>`\\ \\(buffer\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
+msgid ""
+":py:obj:`make_quarter_bank_swizzled_layout "
+"<tilelang.layout.swizzle.make_quarter_bank_swizzled_layout>`\\ \\(buffer\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
@@ -92,11 +100,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_gemm_fragment_8x8 <tilelang.layout.swizzle."
-"make_gemm_fragment_8x8>`\\ \\(\\)"
+":py:obj:`make_gemm_fragment_8x8 "
+"<tilelang.layout.swizzle.make_gemm_fragment_8x8>`\\ \\(\\)"
 msgstr ""
-":py:obj:`make_gemm_fragment_8x8 <tilelang.layout.swizzle."
-"make_gemm_fragment_8x8>`\\ \\(\\)"
+":py:obj:`make_gemm_fragment_8x8 "
+"<tilelang.layout.swizzle.make_gemm_fragment_8x8>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:80
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
@@ -105,11 +113,11 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_gemm_fragment_8x8_transposed <tilelang.layout.swizzle."
-"make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
+":py:obj:`make_gemm_fragment_8x8_transposed "
+"<tilelang.layout.swizzle.make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
 msgstr ""
-":py:obj:`make_gemm_fragment_8x8_transposed <tilelang.layout.swizzle."
-"make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
+":py:obj:`make_gemm_fragment_8x8_transposed "
+"<tilelang.layout.swizzle.make_gemm_fragment_8x8_transposed>`\\ \\(\\)"
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:90
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
@@ -118,8 +126,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`make_fully_replicated_layout_fragment <tilelang.layout.swizzle."
-"make_fully_replicated_layout_fragment>`\\ \\(buffer\\, threads\\)"
+":py:obj:`make_fully_replicated_layout_fragment "
+"<tilelang.layout.swizzle.make_fully_replicated_layout_fragment>`\\ \\"
+"(buffer\\, threads\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/swizzle/index.rst:101

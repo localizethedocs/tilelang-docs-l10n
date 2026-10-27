@@ -35,14 +35,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`disk_compile <tilelang.language.v2.utils.disk_compile>`\\ "
-"\\(source\\, name\\)"
+":py:obj:`disk_compile <tilelang.language.v2.utils.disk_compile>`\\ \\"
+"(source\\, name\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`get_func_nonlocals <tilelang.language.v2.utils."
-"get_func_nonlocals>`\\ \\(func\\)"
+":py:obj:`get_func_nonlocals "
+"<tilelang.language.v2.utils.get_func_nonlocals>`\\ \\(func\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/utils/index.rst:34
@@ -56,8 +56,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`get_compiled_object <tilelang.language.v2.utils."
-"get_compiled_object>`\\ \\(source\\, name\\[\\, filename\\, globals\\]\\)"
+":py:obj:`get_compiled_object "
+"<tilelang.language.v2.utils.get_compiled_object>`\\ \\(source\\, name\\[\\, "
+"filename\\, globals\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/utils/index.rst:26:<autosummary>:1

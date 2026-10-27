@@ -31,20 +31,20 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Rasterization <tilelang.carver.roller.rasterization."
-"Rasterization>`\\"
+":py:obj:`Rasterization "
+"<tilelang.carver.roller.rasterization.Rasterization>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`NoRasterization <tilelang.carver.roller.rasterization."
-"NoRasterization>`\\"
+":py:obj:`NoRasterization "
+"<tilelang.carver.roller.rasterization.NoRasterization>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Rasterization2DRow <tilelang.carver.roller.rasterization."
-"Rasterization2DRow>`\\"
+":py:obj:`Rasterization2DRow "
+"<tilelang.carver.roller.rasterization.Rasterization2DRow>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:57
@@ -54,8 +54,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`Rasterization2DColumn <tilelang.carver.roller.rasterization."
-"Rasterization2DColumn>`\\"
+":py:obj:`Rasterization2DColumn "
+"<tilelang.carver.roller.rasterization.Rasterization2DColumn>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/rasterization/index.rst:82

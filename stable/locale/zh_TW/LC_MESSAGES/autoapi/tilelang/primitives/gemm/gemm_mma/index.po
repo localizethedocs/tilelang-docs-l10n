@@ -27,8 +27,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`GemmPrimitiveMMA <tilelang.primitives.gemm.gemm_mma."
-"GemmPrimitiveMMA>`\\"
+":py:obj:`GemmPrimitiveMMA "
+"<tilelang.primitives.gemm.gemm_mma.GemmPrimitiveMMA>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:14:<autosummary>:1
@@ -118,8 +118,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:80
 msgid ""
-"returns: The input data type for A and B. Assumes both have the same dtype. :"
-"rtype: str"
+"returns: The input data type for A and B. Assumes both have the same "
+"dtype. :rtype: str"
 msgstr ""
 
 #: ../../../autoapi/tilelang/primitives/gemm/gemm_mma/index.rst:0

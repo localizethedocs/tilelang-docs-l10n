@@ -42,8 +42,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/hipcc/index.rst:20:<autosummary>:1
 msgid ""
-":py:obj:`tilelang_callback_hip_compile <tilelang.contrib.hipcc."
-"tilelang_callback_hip_compile>`\\ \\(code\\, target\\)"
+":py:obj:`tilelang_callback_hip_compile "
+"<tilelang.contrib.hipcc.tilelang_callback_hip_compile>`\\ \\(code\\, "
+"target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/hipcc/index.rst:45

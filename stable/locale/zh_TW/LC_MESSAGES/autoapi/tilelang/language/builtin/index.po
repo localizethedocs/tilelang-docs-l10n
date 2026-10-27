@@ -42,8 +42,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`deallocate_tmem <tilelang.language.builtin.deallocate_tmem>`\\ "
-"\\(tmem\\)"
+":py:obj:`deallocate_tmem <tilelang.language.builtin.deallocate_tmem>`\\ \\"
+"(tmem\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:135
@@ -53,8 +53,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`create_tma_descriptor <tilelang.language.builtin."
-"create_tma_descriptor>`\\ \\(\\*args\\)"
+":py:obj:`create_tma_descriptor "
+"<tilelang.language.builtin.create_tma_descriptor>`\\ \\(\\*args\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:153
@@ -73,8 +73,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`tma_load_2sm <tilelang.language.builtin.tma_load_2sm>`\\ "
-"\\(\\*args\\)"
+":py:obj:`tma_load_2sm <tilelang.language.builtin.tma_load_2sm>`\\ \\"
+"(\\*args\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:182
@@ -96,8 +96,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`tma_store_arrive <tilelang.language.builtin.tma_store_arrive>`\\ "
-"\\(\\)"
+":py:obj:`tma_store_arrive <tilelang.language.builtin.tma_store_arrive>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:204
@@ -107,8 +107,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`tma_store_wait <tilelang.language.builtin.tma_store_wait>`\\ "
-"\\(\\[count\\]\\)"
+":py:obj:`tma_store_wait <tilelang.language.builtin.tma_store_wait>`\\ \\(\\"
+"[count\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:215
@@ -118,8 +118,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`set_max_nreg <tilelang.language.builtin.set_max_nreg>`\\ "
-"\\(reg\\_count\\, is\\_inc\\)"
+":py:obj:`set_max_nreg <tilelang.language.builtin.set_max_nreg>`\\ \\"
+"(reg\\_count\\, is\\_inc\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
@@ -128,8 +128,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`inc_max_nreg <tilelang.language.builtin.inc_max_nreg>`\\ "
-"\\(reg\\_count\\)"
+":py:obj:`inc_max_nreg <tilelang.language.builtin.inc_max_nreg>`\\ \\"
+"(reg\\_count\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:246
@@ -139,8 +139,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`dec_max_nreg <tilelang.language.builtin.dec_max_nreg>`\\ "
-"\\(reg\\_count\\)"
+":py:obj:`dec_max_nreg <tilelang.language.builtin.dec_max_nreg>`\\ \\"
+"(reg\\_count\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:251
@@ -150,8 +150,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`annotate_producer_reg_dealloc <tilelang.language.builtin."
-"annotate_producer_reg_dealloc>`\\ \\(\\[reg\\_count\\]\\)"
+":py:obj:`annotate_producer_reg_dealloc "
+"<tilelang.language.builtin.annotate_producer_reg_dealloc>`\\ \\(\\"
+"[reg\\_count\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:256
@@ -161,8 +162,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`annotate_consumer_reg_alloc <tilelang.language.builtin."
-"annotate_consumer_reg_alloc>`\\ \\(\\[reg\\_count\\]\\)"
+":py:obj:`annotate_consumer_reg_alloc "
+"<tilelang.language.builtin.annotate_consumer_reg_alloc>`\\ \\(\\"
+"[reg\\_count\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:261
@@ -172,8 +174,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`no_set_max_nreg <tilelang.language.builtin.no_set_max_nreg>`\\ "
-"\\(\\)"
+":py:obj:`no_set_max_nreg <tilelang.language.builtin.no_set_max_nreg>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:266
@@ -183,8 +185,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`disable_warp_group_reg_alloc <tilelang.language.builtin."
-"disable_warp_group_reg_alloc>`\\ \\(\\)"
+":py:obj:`disable_warp_group_reg_alloc "
+"<tilelang.language.builtin.disable_warp_group_reg_alloc>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:271
@@ -194,8 +196,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`ptx_arrive_cluster_barrier <tilelang.language.builtin."
-"ptx_arrive_cluster_barrier>`\\ \\(mbarrier\\, cta\\_id\\)"
+":py:obj:`ptx_arrive_cluster_barrier "
+"<tilelang.language.builtin.ptx_arrive_cluster_barrier>`\\ \\(mbarrier\\, "
+"cta\\_id\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:276
@@ -205,8 +208,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`mbarrier_wait_parity <tilelang.language.builtin."
-"mbarrier_wait_parity>`\\ \\(mbarrier\\, parity\\)"
+":py:obj:`mbarrier_wait_parity "
+"<tilelang.language.builtin.mbarrier_wait_parity>`\\ \\(mbarrier\\, parity\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:286
@@ -216,8 +219,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`mbarrier_arrive <tilelang.language.builtin.mbarrier_arrive>`\\ "
-"\\(mbarrier\\[\\, cta\\_id\\]\\)"
+":py:obj:`mbarrier_arrive <tilelang.language.builtin.mbarrier_arrive>`\\ \\"
+"(mbarrier\\[\\, cta\\_id\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:327
@@ -227,8 +230,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`mbarrier_expect_tx <tilelang.language.builtin."
-"mbarrier_expect_tx>`\\ \\(mbarrier\\, tx\\)"
+":py:obj:`mbarrier_expect_tx "
+"<tilelang.language.builtin.mbarrier_expect_tx>`\\ \\(mbarrier\\, tx\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:338
@@ -238,8 +241,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`mbarrier_arrive_expect_tx <tilelang.language.builtin."
-"mbarrier_arrive_expect_tx>`\\ \\(mbarrier\\, tx\\)"
+":py:obj:`mbarrier_arrive_expect_tx "
+"<tilelang.language.builtin.mbarrier_arrive_expect_tx>`\\ \\(mbarrier\\, tx\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:351
@@ -249,8 +252,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`warpgroup_arrive <tilelang.language.builtin.warpgroup_arrive>`\\ "
-"\\(\\)"
+":py:obj:`warpgroup_arrive <tilelang.language.builtin.warpgroup_arrive>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:356
@@ -260,8 +263,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`warpgroup_commit_batch <tilelang.language.builtin."
-"warpgroup_commit_batch>`\\ \\(\\)"
+":py:obj:`warpgroup_commit_batch "
+"<tilelang.language.builtin.warpgroup_commit_batch>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:364
@@ -271,8 +274,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`warpgroup_wait <tilelang.language.builtin.warpgroup_wait>`\\ "
-"\\(num\\_mma\\)"
+":py:obj:`warpgroup_wait <tilelang.language.builtin.warpgroup_wait>`\\ \\"
+"(num\\_mma\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:372
@@ -282,8 +285,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`get_lane_idx <tilelang.language.builtin.get_lane_idx>`\\ "
-"\\(\\[warp\\_size\\]\\)"
+":py:obj:`get_lane_idx <tilelang.language.builtin.get_lane_idx>`\\ \\(\\"
+"[warp\\_size\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:383
@@ -305,8 +308,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`get_warp_idx <tilelang.language.builtin.get_warp_idx>`\\ "
-"\\(\\[warp\\_size\\]\\)"
+":py:obj:`get_warp_idx <tilelang.language.builtin.get_warp_idx>`\\ \\(\\"
+"[warp\\_size\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:420
@@ -316,8 +319,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`get_warp_group_idx <tilelang.language.builtin."
-"get_warp_group_idx>`\\ \\(\\[warp\\_size\\, warps\\_per\\_group\\]\\)"
+":py:obj:`get_warp_group_idx "
+"<tilelang.language.builtin.get_warp_group_idx>`\\ \\(\\[warp\\_size\\, "
+"warps\\_per\\_group\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:438
@@ -327,8 +331,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`shuffle_elect <tilelang.language.builtin.shuffle_elect>`\\ "
-"\\(thread\\_extent\\)"
+":py:obj:`shuffle_elect <tilelang.language.builtin.shuffle_elect>`\\ \\"
+"(thread\\_extent\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:459
@@ -338,8 +342,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`warpgroup_fence_operand <tilelang.language.builtin."
-"warpgroup_fence_operand>`\\ \\(buffer\\_or\\_ptr\\[\\, offset\\, ...\\]\\)"
+":py:obj:`warpgroup_fence_operand "
+"<tilelang.language.builtin.warpgroup_fence_operand>`\\ \\(buffer\\_or\\_ptr\\"
+"[\\, offset\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:480
@@ -360,8 +365,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`barrier_wait <tilelang.language.builtin.barrier_wait>`\\ "
-"\\(mbarrier\\, parity\\)"
+":py:obj:`barrier_wait <tilelang.language.builtin.barrier_wait>`\\ \\"
+"(mbarrier\\, parity\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:516
@@ -371,8 +376,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`barrier_arrive <tilelang.language.builtin.barrier_arrive>`\\ "
-"\\(mbarrier\\)"
+":py:obj:`barrier_arrive <tilelang.language.builtin.barrier_arrive>`\\ \\"
+"(mbarrier\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:531
@@ -382,8 +387,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`shfl_xor <tilelang.language.builtin.shfl_xor>`\\ \\(value\\, "
-"delta\\[\\, width\\, mask\\]\\)"
+":py:obj:`shfl_xor <tilelang.language.builtin.shfl_xor>`\\ \\(value\\, delta\\"
+"[\\, width\\, mask\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
@@ -402,8 +407,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`shfl_up <tilelang.language.builtin.shfl_up>`\\ \\(value\\, "
-"delta\\[\\, width\\, mask\\]\\)"
+":py:obj:`shfl_up <tilelang.language.builtin.shfl_up>`\\ \\(value\\, delta\\"
+"[\\, width\\, mask\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
@@ -412,8 +417,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`sync_threads <tilelang.language.builtin.sync_threads>`\\ "
-"\\(\\[barrier\\_id\\, arrive\\_count\\]\\)"
+":py:obj:`sync_threads <tilelang.language.builtin.sync_threads>`\\ \\(\\"
+"[barrier\\_id\\, arrive\\_count\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:557
@@ -466,8 +471,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`ballot_sync <tilelang.language.builtin.ballot_sync>`\\ "
-"\\(predicate\\[\\, mask\\]\\)"
+":py:obj:`ballot_sync <tilelang.language.builtin.ballot_sync>`\\ \\"
+"(predicate\\[\\, mask\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:603
@@ -505,8 +510,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`syncthreads_and <tilelang.language.builtin.syncthreads_and>`\\ "
-"\\(predicate\\)"
+":py:obj:`syncthreads_and <tilelang.language.builtin.syncthreads_and>`\\ \\"
+"(predicate\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
@@ -515,8 +520,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`syncthreads_or <tilelang.language.builtin.syncthreads_or>`\\ "
-"\\(predicate\\)"
+":py:obj:`syncthreads_or <tilelang.language.builtin.syncthreads_or>`\\ \\"
+"(predicate\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
@@ -525,8 +530,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`match_any_sync <tilelang.language.builtin.match_any_sync>`\\ "
-"\\(value\\[\\, mask\\]\\)"
+":py:obj:`match_any_sync <tilelang.language.builtin.match_any_sync>`\\ \\"
+"(value\\[\\, mask\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
@@ -535,8 +540,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`match_all_sync <tilelang.language.builtin.match_all_sync>`\\ "
-"\\(value\\[\\, mask\\]\\)"
+":py:obj:`match_all_sync <tilelang.language.builtin.match_all_sync>`\\ \\"
+"(value\\[\\, mask\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:658
@@ -564,8 +569,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`initialize_wgmma_descriptor <tilelang.language.builtin."
-"initialize_wgmma_descriptor>`\\ \\(descriptor\\, start\\_address\\)"
+":py:obj:`initialize_wgmma_descriptor "
+"<tilelang.language.builtin.initialize_wgmma_descriptor>`\\ \\(descriptor\\, "
+"start\\_address\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:678
@@ -575,8 +581,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`initialize_tcgen05_descriptor <tilelang.language.builtin."
-"initialize_tcgen05_descriptor>`\\ \\(descriptor\\, ...\\[\\, ...\\]\\)"
+":py:obj:`initialize_tcgen05_descriptor "
+"<tilelang.language.builtin.initialize_tcgen05_descriptor>`\\ \\"
+"(descriptor\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:683
@@ -586,8 +593,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`increase_descriptor_offset <tilelang.language.builtin."
-"increase_descriptor_offset>`\\ \\(descriptor\\, offset\\)"
+":py:obj:`increase_descriptor_offset "
+"<tilelang.language.builtin.increase_descriptor_offset>`\\ \\(descriptor\\, "
+"offset\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:688
@@ -606,8 +614,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`cp_async_barrier_noinc <tilelang.language.builtin."
-"cp_async_barrier_noinc>`\\ \\(barrier\\)"
+":py:obj:`cp_async_barrier_noinc "
+"<tilelang.language.builtin.cp_async_barrier_noinc>`\\ \\(barrier\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:706
@@ -617,8 +625,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_mma_arrive <tilelang.language.builtin."
-"tcgen05_mma_arrive>`\\ \\(mbar\\[\\, arrive\\_2cta\\]\\)"
+":py:obj:`tcgen05_mma_arrive "
+"<tilelang.language.builtin.tcgen05_mma_arrive>`\\ \\(mbar\\[\\, "
+"arrive\\_2cta\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:711
@@ -629,20 +638,20 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_before_thread_sync <tilelang.language.builtin."
-"tcgen05_before_thread_sync>`\\ \\(\\)"
+":py:obj:`tcgen05_before_thread_sync "
+"<tilelang.language.builtin.tcgen05_before_thread_sync>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_after_thread_sync <tilelang.language.builtin."
-"tcgen05_after_thread_sync>`\\ \\(\\)"
+":py:obj:`tcgen05_after_thread_sync "
+"<tilelang.language.builtin.tcgen05_after_thread_sync>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:85:<autosummary>:1
 msgid ""
-":py:obj:`ptx_mma_sm70 <tilelang.language.builtin.ptx_mma_sm70>`\\ "
-"\\(shape\\, A\\_layout\\, B\\_layout\\, A\\_dtype\\, ...\\)"
+":py:obj:`ptx_mma_sm70 <tilelang.language.builtin.ptx_mma_sm70>`\\ \\"
+"(shape\\, A\\_layout\\, B\\_layout\\, A\\_dtype\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:726
@@ -749,15 +758,15 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/builtin/index.rst:93
 msgid ""
 "This is a frontend convenience wrapper that keeps a `BufferLoad` argument in "
-"the resulting call so downstream passes can recover the referenced `tir."
-"Buffer` (including strides/storage scope) *and* the `rw_mask` (read/write "
-"intent) required by synchronization and safety checks."
+"the resulting call so downstream passes can recover the referenced "
+"`tir.Buffer` (including strides/storage scope) *and* the `rw_mask` (read/"
+"write intent) required by synchronization and safety checks."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:98
 msgid ""
-"The returned `tl.access_ptr` is expected to be lowered to `tir.builtin."
-"tvm_access_ptr` later in the TileLang compilation pipeline."
+"The returned `tl.access_ptr` is expected to be lowered to "
+"`tir.builtin.tvm_access_ptr` later in the TileLang compilation pipeline."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:0
@@ -766,10 +775,10 @@ msgstr "參數"
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:101
 msgid ""
-"The base location to take the address of. Supported: - `tir.BufferLoad` (e."
-"g. `A[i, j]`): pointer to that element - `tir.BufferRegion`: pointer to the "
-"region minima - `tir.Buffer`: pointer to the beginning of the buffer - `tir."
-"Var` with let-binding to one of the above (inside TileLang frame)"
+"The base location to take the address of. Supported: - `tir.BufferLoad` "
+"(e.g. `A[i, j]`): pointer to that element - `tir.BufferRegion`: pointer to "
+"the region minima - `tir.Buffer`: pointer to the beginning of the buffer - "
+"`tir.Var` with let-binding to one of the above (inside TileLang frame)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:107
@@ -916,8 +925,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:206
 msgid ""
-"Commits the current group of outstanding TMA store operations. Maps to ``cp."
-"async.bulk.commit_group``."
+"Commits the current group of outstanding TMA store operations. Maps to "
+"``cp.async.bulk.commit_group``."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:209
@@ -1136,9 +1145,9 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/builtin/index.rst:472
 msgid ""
 "Lowered to the CUDA helper `tl::tl_shuffle_elect<thread_extent>()` defined "
-"in `src/tl_templates/cuda/intrin.h`, which relies on `cutlass::"
-"canonical_warp_idx_sync()` and `cute::elect_one_sync()` (or `__shfl_sync`) "
-"to pick one lane per group."
+"in `src/tl_templates/cuda/intrin.h`, which relies on "
+"`cutlass::canonical_warp_idx_sync()` and `cute::elect_one_sync()` (or "
+"`__shfl_sync`) to pick one lane per group."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/builtin/index.rst:482

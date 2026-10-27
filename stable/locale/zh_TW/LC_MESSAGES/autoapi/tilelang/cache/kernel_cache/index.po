@@ -52,8 +52,8 @@ msgstr ""
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:27
 msgid ""
 "kernel.cu: The compiled kernel source code wrapped_kernel.cu: The compiled "
-"wrapped kernel source code kernel_lib.so: The compiled kernel library params."
-"pkl: The compiled kernel parameters"
+"wrapped kernel source code kernel_lib.so: The compiled kernel library "
+"params.pkl: The compiled kernel parameters"
 msgstr ""
 
 #: ../../../autoapi/tilelang/cache/kernel_cache/index.rst:71
