@@ -138,8 +138,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:162
 msgid ""
-"The type of input tensors to supply for profiling (default: TensorSupplyType."
-"Auto)."
+"The type of input tensors to supply for profiling (default: "
+"TensorSupplyType.Auto)."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/kernel/index.rst:165

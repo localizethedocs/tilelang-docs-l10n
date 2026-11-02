@@ -82,20 +82,20 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:50:<autosummary>:1
 msgid ""
-":py:obj:`timeout_handler <tilelang.autotuner.tuner.timeout_handler>`\\ "
-"\\(signum\\, frame\\)"
+":py:obj:`timeout_handler <tilelang.autotuner.tuner.timeout_handler>`\\ \\"
+"(signum\\, frame\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:50:<autosummary>:1
 msgid ""
-":py:obj:`run_with_timeout <tilelang.autotuner.tuner.run_with_timeout>`\\ "
-"\\(func\\, timeout\\, \\*args\\, \\*\\*kwargs\\)"
+":py:obj:`run_with_timeout <tilelang.autotuner.tuner.run_with_timeout>`\\ \\"
+"(func\\, timeout\\, \\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:50:<autosummary>:1
 msgid ""
-":py:obj:`get_available_cpu_count <tilelang.autotuner.tuner."
-"get_available_cpu_count>`\\ \\(\\)"
+":py:obj:`get_available_cpu_count "
+"<tilelang.autotuner.tuner.get_available_cpu_count>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autotuner/tuner/index.rst:70

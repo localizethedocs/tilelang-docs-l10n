@@ -39,8 +39,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/warpgroup/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`WarpSpecializeFrame <tilelang.language.warpgroup."
-"WarpSpecializeFrame>`\\"
+":py:obj:`WarpSpecializeFrame "
+"<tilelang.language.warpgroup.WarpSpecializeFrame>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/warpgroup/index.rst:27:<autosummary>:1
@@ -54,8 +54,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/warpgroup/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`WarpSpecialize <tilelang.language.warpgroup.WarpSpecialize>`\\ "
-"\\(\\*warp\\_group\\_idx\\)"
+":py:obj:`WarpSpecialize <tilelang.language.warpgroup.WarpSpecialize>`\\ \\"
+"(\\*warp\\_group\\_idx\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/warpgroup/index.rst:50
@@ -94,8 +94,8 @@ msgstr ""
 #: ../../../autoapi/tilelang/language/warpgroup/index.rst:57
 msgid ""
 "* **res** (*Tuple[frame.LaunchThreadFrame]*) -- The result "
-"LaunchThreadFrame. * *Examples* -- >>> T.ws(0) -> if tx < 128   >>> T.ws(1) -"
-"> if tx >= 128 and tx < 256   >>> T.ws(0, 1) -> if tx < 128 or (tx >= 128 "
+"LaunchThreadFrame. * *Examples* -- >>> T.ws(0) -> if tx < 128   >>> T.ws(1) "
+"-> if tx >= 128 and tx < 256   >>> T.ws(0, 1) -> if tx < 128 or (tx >= 128 "
 "and tx < 256)"
 msgstr ""
 

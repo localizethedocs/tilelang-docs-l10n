@@ -39,8 +39,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:40:<autosummary>:1
 msgid ""
-":py:obj:`gemm_infer_layout <tilelang.tileop.gemm.gemm_infer_layout>`\\ "
-"\\(gemm\\, target\\, thread\\_bounds\\)"
+":py:obj:`gemm_infer_layout <tilelang.tileop.gemm.gemm_infer_layout>`\\ \\"
+"(gemm\\, target\\, thread\\_bounds\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/tileop/gemm/index.rst:40:<autosummary>:1

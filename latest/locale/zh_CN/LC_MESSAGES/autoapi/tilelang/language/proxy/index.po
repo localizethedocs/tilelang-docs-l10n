@@ -125,9 +125,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`make_tensor_from_addr <tilelang.language.proxy."
-"make_tensor_from_addr>`\\ \\(addr\\, shape\\[\\, dtype\\, strides\\, ..."
-"\\]\\)"
+":py:obj:`make_tensor_from_addr "
+"<tilelang.language.proxy.make_tensor_from_addr>`\\ \\(addr\\, shape\\[\\, "
+"dtype\\, strides\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/proxy/index.rst:44:<autosummary>:1

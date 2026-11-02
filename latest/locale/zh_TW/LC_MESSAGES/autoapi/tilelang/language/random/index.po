@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/random/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`rng_rand_float <tilelang.language.random.rng_rand_float>`\\ "
-"\\(\\[bit\\, dist\\]\\)"
+":py:obj:`rng_rand_float <tilelang.language.random.rng_rand_float>`\\ \\(\\"
+"[bit\\, dist\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/random/index.rst:48
@@ -78,8 +78,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/random/index.rst:30
 msgid ""
-"Set random generator. See https://docs.nvidia.com/cuda/curand/group__DEVICE."
-"html"
+"Set random generator. See https://docs.nvidia.com/cuda/curand/"
+"group__DEVICE.html"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/random/index.rst:0

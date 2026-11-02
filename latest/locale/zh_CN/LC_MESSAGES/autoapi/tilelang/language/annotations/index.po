@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`use_swizzle <tilelang.language.annotations.use_swizzle>`\\ "
-"\\(panel\\_size\\[\\, order\\, enable\\]\\)"
+":py:obj:`use_swizzle <tilelang.language.annotations.use_swizzle>`\\ \\"
+"(panel\\_size\\[\\, order\\, enable\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:30
@@ -53,8 +53,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`annotate_safe_value <tilelang.language.annotations."
-"annotate_safe_value>`\\ \\(safe\\_value\\_map\\)"
+":py:obj:`annotate_safe_value "
+"<tilelang.language.annotations.annotate_safe_value>`\\ \\"
+"(safe\\_value\\_map\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:40
@@ -64,8 +65,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`annotate_l2_hit_ratio <tilelang.language.annotations."
-"annotate_l2_hit_ratio>`\\ \\(l2\\_hit\\_ratio\\_map\\)"
+":py:obj:`annotate_l2_hit_ratio "
+"<tilelang.language.annotations.annotate_l2_hit_ratio>`\\ \\"
+"(l2\\_hit\\_ratio\\_map\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:45
@@ -75,8 +77,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`annotate_min_blocks_per_sm <tilelang.language.annotations."
-"annotate_min_blocks_per_sm>`\\ \\(n\\)"
+":py:obj:`annotate_min_blocks_per_sm "
+"<tilelang.language.annotations.annotate_min_blocks_per_sm>`\\ \\(n\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:50
@@ -86,8 +88,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`annotate_restrict_buffers <tilelang.language.annotations."
-"annotate_restrict_buffers>`\\ \\(\\*buffers\\)"
+":py:obj:`annotate_restrict_buffers "
+"<tilelang.language.annotations.annotate_restrict_buffers>`\\ \\(\\*buffers\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/annotations/index.rst:70

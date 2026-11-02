@@ -66,8 +66,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`tcgen05_gemm_blockscaled <tilelang.language.gemm_op."
-"tcgen05_gemm_blockscaled>`\\ \\(A\\, B\\, C\\, SFA\\_tmem\\, SFB\\_tmem\\)"
+":py:obj:`tcgen05_gemm_blockscaled "
+"<tilelang.language.gemm_op.tcgen05_gemm_blockscaled>`\\ \\(A\\, B\\, C\\, "
+"SFA\\_tmem\\, SFB\\_tmem\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:95
@@ -77,8 +78,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`make_blockscaled_gemm_layout <tilelang.language.gemm_op."
-"make_blockscaled_gemm_layout>`\\ \\(C\\, A\\[\\, transpose\\_A\\]\\)"
+":py:obj:`make_blockscaled_gemm_layout "
+"<tilelang.language.gemm_op.make_blockscaled_gemm_layout>`\\ \\(C\\, A\\[\\, "
+"transpose\\_A\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:128
@@ -101,9 +103,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:36
 msgid ""
-"For manual asynchronous scheduling, use `T.wgmma_gemm(...)` with `T."
-"wait_wgmma(...)` on Hopper, or `T.tcgen05_gemm(...)` with `T."
-"mbarrier_wait_parity(...)` on Blackwell."
+"For manual asynchronous scheduling, use `T.wgmma_gemm(...)` with "
+"`T.wait_wgmma(...)` on Hopper, or `T.tcgen05_gemm(...)` with "
+"`T.mbarrier_wait_parity(...)` on Blackwell."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/gemm_op/index.rst:0

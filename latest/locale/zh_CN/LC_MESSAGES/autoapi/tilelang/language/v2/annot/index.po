@@ -66,14 +66,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`StridedTensorAnnot <tilelang.language.v2.annot."
-"StridedTensorAnnot>`\\"
+":py:obj:`StridedTensorAnnot "
+"<tilelang.language.v2.annot.StridedTensorAnnot>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`FragmentBufferAnnot <tilelang.language.v2.annot."
-"FragmentBufferAnnot>`\\"
+":py:obj:`FragmentBufferAnnot "
+"<tilelang.language.v2.annot.FragmentBufferAnnot>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/v2/annot/index.rst:35:<autosummary>:1

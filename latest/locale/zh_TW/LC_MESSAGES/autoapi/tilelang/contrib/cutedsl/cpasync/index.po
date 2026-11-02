@@ -27,20 +27,22 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`cp_async_gs <tilelang.contrib.cutedsl.cpasync.cp_async_gs>`\\ "
-"\\(size\\, dst\\, src\\)"
+":py:obj:`cp_async_gs <tilelang.contrib.cutedsl.cpasync.cp_async_gs>`\\ \\"
+"(size\\, dst\\, src\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`cp_async_gs_conditional <tilelang.contrib.cutedsl.cpasync."
-"cp_async_gs_conditional>`\\ \\(size\\, dst\\, src\\, cond\\)"
+":py:obj:`cp_async_gs_conditional "
+"<tilelang.contrib.cutedsl.cpasync.cp_async_gs_conditional>`\\ \\(size\\, "
+"dst\\, src\\, cond\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`extract_tensormap_ptr <tilelang.contrib.cutedsl.cpasync."
-"extract_tensormap_ptr>`\\ \\(tma\\_atom\\, \\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`extract_tensormap_ptr "
+"<tilelang.contrib.cutedsl.cpasync.extract_tensormap_ptr>`\\ \\(tma\\_atom\\, "
+"\\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
@@ -49,8 +51,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`tma_load <tilelang.contrib.cutedsl.cpasync.tma_load>`\\ "
-"\\(tma\\_desc\\, mbar\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`tma_load <tilelang.contrib.cutedsl.cpasync.tma_load>`\\ \\"
+"(tma\\_desc\\, mbar\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:44
@@ -62,8 +64,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`tma_store <tilelang.contrib.cutedsl.cpasync.tma_store>`\\ "
-"\\(tma\\_desc\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`tma_store <tilelang.contrib.cutedsl.cpasync.tma_store>`\\ \\"
+"(tma\\_desc\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:58
@@ -75,8 +77,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`tma_reduce <tilelang.contrib.cutedsl.cpasync.tma_reduce>`\\ "
-"\\(tma\\_desc\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`tma_reduce <tilelang.contrib.cutedsl.cpasync.tma_reduce>`\\ \\"
+"(tma\\_desc\\, smem\\_ptr\\, crd\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:70
@@ -88,8 +90,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`tma_store_arrive <tilelang.contrib.cutedsl.cpasync."
-"tma_store_arrive>`\\ \\(\\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`tma_store_arrive "
+"<tilelang.contrib.cutedsl.cpasync.tma_store_arrive>`\\ \\(\\*\\[\\, loc\\, "
+"ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
@@ -108,8 +111,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`cp_async_shared_global <tilelang.contrib.cutedsl.cpasync."
-"cp_async_shared_global>`\\ \\(dst\\, src\\, cp\\_size\\, modifier\\, \\*\\)"
+":py:obj:`cp_async_shared_global "
+"<tilelang.contrib.cutedsl.cpasync.cp_async_shared_global>`\\ \\(dst\\, "
+"src\\, cp\\_size\\, modifier\\, \\*\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:100
@@ -119,8 +123,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`prefetch_tma_descriptor <tilelang.contrib.cutedsl.cpasync."
-"prefetch_tma_descriptor>`\\ \\(tma\\_desc\\, \\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`prefetch_tma_descriptor "
+"<tilelang.contrib.cutedsl.cpasync.prefetch_tma_descriptor>`\\ \\"
+"(tma\\_desc\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
@@ -129,8 +134,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`mbarrier_wait <tilelang.contrib.cutedsl.cpasync.mbarrier_wait>`\\ "
-"\\(mbar\\_ptr\\, phase\\[\\, timeout\\_ns\\, loc\\, ip\\]\\)"
+":py:obj:`mbarrier_wait <tilelang.contrib.cutedsl.cpasync.mbarrier_wait>`\\ \\"
+"(mbar\\_ptr\\, phase\\[\\, timeout\\_ns\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:122
@@ -140,20 +145,21 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`mbarrier_cp_async_arrive <tilelang.contrib.cutedsl.cpasync."
-"mbarrier_cp_async_arrive>`\\ \\(mbar\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
+":py:obj:`mbarrier_cp_async_arrive "
+"<tilelang.contrib.cutedsl.cpasync.mbarrier_cp_async_arrive>`\\ \\"
+"(mbar\\_ptr\\, \\*\\[\\, loc\\, ip\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`fence_proxy_async <tilelang.contrib.cutedsl.cpasync."
-"fence_proxy_async>`\\ \\(\\)"
+":py:obj:`fence_proxy_async "
+"<tilelang.contrib.cutedsl.cpasync.fence_proxy_async>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`fence_barrier_init <tilelang.contrib.cutedsl.cpasync."
-"fence_barrier_init>`\\ \\(\\)"
+":py:obj:`fence_barrier_init "
+"<tilelang.contrib.cutedsl.cpasync.fence_barrier_init>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:29
@@ -240,8 +246,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:116
 msgid ""
-"Prefetch a TMA descriptor. Corresponds to PTX instruction: prefetch."
-"tensormap;"
+"Prefetch a TMA descriptor. Corresponds to PTX instruction: "
+"prefetch.tensormap;"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/cpasync/index.rst:124

@@ -33,14 +33,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/utils/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`general_compress <tilelang.quantize.utils.general_compress>`\\ "
-"\\(lowprecision\\_weight\\[\\, source\\_bits\\, ...\\]\\)"
+":py:obj:`general_compress <tilelang.quantize.utils.general_compress>`\\ \\"
+"(lowprecision\\_weight\\[\\, source\\_bits\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/utils/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`interleave_weight <tilelang.quantize.utils.interleave_weight>`\\ "
-"\\(qweight\\[\\, nbits\\, target\\_dtype\\]\\)"
+":py:obj:`interleave_weight <tilelang.quantize.utils.interleave_weight>`\\ \\"
+"(qweight\\[\\, nbits\\, target\\_dtype\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/quantize/utils/index.rst:26

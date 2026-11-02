@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`get_nvrtc_version <tilelang.contrib.nvrtc.get_nvrtc_version>`\\ "
-"\\(\\)"
+":py:obj:`get_nvrtc_version <tilelang.contrib.nvrtc.get_nvrtc_version>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:15:<autosummary>:1

@@ -35,8 +35,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`CuTeDSLKernelAdapter <tilelang.jit.adapter.cutedsl.adapter."
-"CuTeDSLKernelAdapter>`\\"
+":py:obj:`CuTeDSLKernelAdapter "
+"<tilelang.jit.adapter.cutedsl.adapter.CuTeDSLKernelAdapter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/adapter/index.rst:22:<autosummary>:1

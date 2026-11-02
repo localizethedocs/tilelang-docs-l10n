@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:34:<autosummary>:1
 msgid ""
-":py:obj:`is_nvrtc_available <tilelang.jit.adapter.nvrtc."
-"is_nvrtc_available>`\\"
+":py:obj:`is_nvrtc_available "
+"<tilelang.jit.adapter.nvrtc.is_nvrtc_available>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:36
@@ -50,8 +50,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:42:<autosummary>:1
 msgid ""
-":py:obj:`NVRTCKernelAdapter <tilelang.jit.adapter.nvrtc."
-"NVRTCKernelAdapter>`\\"
+":py:obj:`NVRTCKernelAdapter "
+"<tilelang.jit.adapter.nvrtc.NVRTCKernelAdapter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:71
@@ -65,8 +65,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:50:<autosummary>:1
 msgid ""
-":py:obj:`check_nvrtc_available <tilelang.jit.adapter.nvrtc."
-"check_nvrtc_available>`\\ \\(\\)"
+":py:obj:`check_nvrtc_available "
+"<tilelang.jit.adapter.nvrtc.check_nvrtc_available>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/index.rst:64

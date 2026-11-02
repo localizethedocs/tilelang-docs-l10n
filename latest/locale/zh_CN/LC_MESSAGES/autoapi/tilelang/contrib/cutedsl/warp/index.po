@@ -66,8 +66,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`warp_reduce_bitand <tilelang.contrib.cutedsl.warp."
-"warp_reduce_bitand>`\\ \\(value\\)"
+":py:obj:`warp_reduce_bitand "
+"<tilelang.contrib.cutedsl.warp.warp_reduce_bitand>`\\ \\(value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:45
@@ -77,8 +77,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
 msgid ""
-":py:obj:`warp_reduce_bitor <tilelang.contrib.cutedsl.warp."
-"warp_reduce_bitor>`\\ \\(value\\)"
+":py:obj:`warp_reduce_bitor "
+"<tilelang.contrib.cutedsl.warp.warp_reduce_bitor>`\\ \\(value\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:50

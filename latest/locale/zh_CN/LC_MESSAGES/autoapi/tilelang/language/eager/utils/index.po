@@ -35,14 +35,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`disk_compile <tilelang.language.eager.utils.disk_compile>`\\ "
-"\\(source\\, name\\)"
+":py:obj:`disk_compile <tilelang.language.eager.utils.disk_compile>`\\ \\"
+"(source\\, name\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`get_func_nonlocals <tilelang.language.eager.utils."
-"get_func_nonlocals>`\\ \\(func\\)"
+":py:obj:`get_func_nonlocals "
+"<tilelang.language.eager.utils.get_func_nonlocals>`\\ \\(func\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:34
@@ -56,14 +56,16 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`get_compiled_object <tilelang.language.eager.utils."
-"get_compiled_object>`\\ \\(source\\, name\\[\\, filename\\, globals\\]\\)"
+":py:obj:`get_compiled_object "
+"<tilelang.language.eager.utils.get_compiled_object>`\\ \\(source\\, name\\"
+"[\\, filename\\, globals\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:26:<autosummary>:1
 msgid ""
-":py:obj:`construct_strides <tilelang.language.eager.utils."
-"construct_strides>`\\ \\(shape\\[\\, allow\\_prim\\_expr\\]\\)"
+":py:obj:`construct_strides "
+"<tilelang.language.eager.utils.construct_strides>`\\ \\(shape\\[\\, "
+"allow\\_prim\\_expr\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/utils/index.rst:45

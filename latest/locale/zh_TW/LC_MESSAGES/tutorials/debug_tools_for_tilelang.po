@@ -129,10 +129,10 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:52
 msgid ""
-"TileLang essentially performs *progressive lowering*. For example, a `T."
-"copy` may first be expanded into `T.Parallel` (see the pass `LowerTileOP`), "
-"which is then expanded again, eventually resulting in lower-level statements "
-"that can be translated to CUDA C code."
+"TileLang essentially performs *progressive lowering*. For example, a "
+"`T.copy` may first be expanded into `T.Parallel` (see the pass "
+"`LowerTileOP`), which is then expanded again, eventually resulting in lower-"
+"level statements that can be translated to CUDA C code."
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:54
@@ -198,8 +198,8 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:89
 msgid ""
-"**Use post-processing callbacks to inspect or modify the generated CUDA code."
-"**"
+"**Use post-processing callbacks to inspect or modify the generated CUDA "
+"code.**"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:90
@@ -580,8 +580,8 @@ msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:257
 msgid ""
-"python -m tilelang.autodd buggy_matmul.py --err-msg \"Dimension mismatch\" -"
-"o minimized.py -j 4\n"
+"python -m tilelang.autodd buggy_matmul.py --err-msg \"Dimension mismatch\" "
+"-o minimized.py -j 4\n"
 msgstr ""
 
 #: ../../../tutorials/debug_tools_for_tilelang.md:261

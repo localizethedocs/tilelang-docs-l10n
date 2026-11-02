@@ -27,8 +27,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/transform/add_bufstore_wrapper/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`AddWrapperForSingleBufStore <tilelang.transform."
-"add_bufstore_wrapper.AddWrapperForSingleBufStore>`\\ \\(\\)"
+":py:obj:`AddWrapperForSingleBufStore "
+"<tilelang.transform.add_bufstore_wrapper.AddWrapperForSingleBufStore>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/transform/add_bufstore_wrapper/index.rst:20

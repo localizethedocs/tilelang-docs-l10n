@@ -64,9 +64,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`CUDASourceCodeKernel <tilelang.language.kernel."
-"CUDASourceCodeKernel>`\\ \\(\\*blocks\\[\\, threads\\, entry\\_name\\, ..."
-"\\]\\)"
+":py:obj:`CUDASourceCodeKernel "
+"<tilelang.language.kernel.CUDASourceCodeKernel>`\\ \\(\\*blocks\\[\\, "
+"threads\\, entry\\_name\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:249
@@ -87,8 +87,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_thread_bindings <tilelang.language.kernel."
-"get_thread_bindings>`\\ \\(\\)"
+":py:obj:`get_thread_bindings "
+"<tilelang.language.kernel.get_thread_bindings>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:286
@@ -98,8 +98,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_block_binding <tilelang.language.kernel.get_block_binding>`\\ "
-"\\(\\[dim\\]\\)"
+":py:obj:`get_block_binding <tilelang.language.kernel.get_block_binding>`\\ \\"
+"(\\[dim\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:291
@@ -121,8 +121,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_thread_extent <tilelang.language.kernel.get_thread_extent>`\\ "
-"\\(\\[dim\\]\\)"
+":py:obj:`get_thread_extent <tilelang.language.kernel.get_thread_extent>`\\ \\"
+"(\\[dim\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:301
@@ -143,8 +143,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_block_extent <tilelang.language.kernel.get_block_extent>`\\ "
-"\\(\\[dim\\]\\)"
+":py:obj:`get_block_extent <tilelang.language.kernel.get_block_extent>`\\ \\"
+"(\\[dim\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:311
@@ -154,8 +154,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`get_block_extents <tilelang.language.kernel.get_block_extents>`\\ "
-"\\(\\)"
+":py:obj:`get_block_extents <tilelang.language.kernel.get_block_extents>`\\ \\"
+"(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:316

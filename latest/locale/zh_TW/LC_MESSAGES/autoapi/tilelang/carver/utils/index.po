@@ -35,26 +35,28 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/carver/utils/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`get_rasterization_code <tilelang.carver.utils."
-"get_rasterization_code>`\\ \\(\\[pannel\\_width\\]\\)"
+":py:obj:`get_rasterization_code "
+"<tilelang.carver.utils.get_rasterization_code>`\\ \\(\\[pannel\\_width\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/utils/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`get_roller_hints_from_func <tilelang.carver.utils."
-"get_roller_hints_from_func>`\\ \\(func\\_or\\_module\\, arch\\[\\, ...\\]\\)"
+":py:obj:`get_roller_hints_from_func "
+"<tilelang.carver.utils.get_roller_hints_from_func>`\\ \\"
+"(func\\_or\\_module\\, arch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/utils/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`get_roller_hints_from_output_nodes <tilelang.carver.utils."
-"get_roller_hints_from_output_nodes>`\\ \\(output\\_nodes\\, arch\\)"
+":py:obj:`get_roller_hints_from_output_nodes "
+"<tilelang.carver.utils.get_roller_hints_from_output_nodes>`\\ \\"
+"(output\\_nodes\\, arch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/utils/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`retrieve_func_from_module <tilelang.carver.utils."
-"retrieve_func_from_module>`\\ \\(ir\\_module\\)"
+":py:obj:`retrieve_func_from_module "
+"<tilelang.carver.utils.retrieve_func_from_module>`\\ \\(ir\\_module\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/utils/index.rst:27

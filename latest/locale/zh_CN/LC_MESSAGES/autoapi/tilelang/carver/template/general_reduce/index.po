@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/general_reduce/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`GeneralReductionTemplate <tilelang.carver.template.general_reduce."
-"GeneralReductionTemplate>`\\"
+":py:obj:`GeneralReductionTemplate "
+"<tilelang.carver.template.general_reduce.GeneralReductionTemplate>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/template/general_reduce/index.rst:16

@@ -222,8 +222,8 @@ msgid ""
 "For **loads** (global -> shared): issues expect_tx + tma_load (no wait). "
 "Unlike T.copy() which emits a full synchronous TMA sequence (arrive + load + "
 "wait), T.tma_copy() emits only the producer part (expect_tx + tma_load). The "
-"user manages synchronization explicitly via T.barrier_arrive() and T."
-"mbarrier_wait_parity(). ``barrier`` is required for loads."
+"user manages synchronization explicitly via T.barrier_arrive() and "
+"T.mbarrier_wait_parity(). ``barrier`` is required for loads."
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/copy_op/index.rst:108

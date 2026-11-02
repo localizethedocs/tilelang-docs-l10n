@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/dlpack/index.rst:19:<autosummary>:1
 msgid ""
-":py:obj:`convert_func <tilelang.contrib.dlpack.convert_func>`\\ "
-"\\(tvm\\_func\\, tensor\\_type\\, to\\_dlpack\\_func\\)"
+":py:obj:`convert_func <tilelang.contrib.dlpack.convert_func>`\\ \\"
+"(tvm\\_func\\, tensor\\_type\\, to\\_dlpack\\_func\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/dlpack/index.rst:25

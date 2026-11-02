@@ -34,8 +34,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`print_var <tilelang.language.print.print_var>`\\ \\(var\\[\\, "
-"msg\\]\\)"
+":py:obj:`print_var <tilelang.language.print.print_var>`\\ \\(var\\[\\, msg\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:33
@@ -47,8 +47,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`print_var_with_condition <tilelang.language.print."
-"print_var_with_condition>`\\ \\(condition\\, var\\[\\, msg\\]\\)"
+":py:obj:`print_var_with_condition "
+"<tilelang.language.print.print_var_with_condition>`\\ \\(condition\\, var\\"
+"[\\, msg\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:44
@@ -60,8 +61,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`print_global_buffer_with_condition <tilelang.language.print."
-"print_global_buffer_with_condition>`\\ \\(condition\\, buffer\\, ...\\)"
+":py:obj:`print_global_buffer_with_condition "
+"<tilelang.language.print.print_global_buffer_with_condition>`\\ \\"
+"(condition\\, buffer\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:57
@@ -76,26 +78,29 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`print_shared_buffer_with_condition <tilelang.language.print."
-"print_shared_buffer_with_condition>`\\ \\(condition\\, buffer\\, ...\\)"
+":py:obj:`print_shared_buffer_with_condition "
+"<tilelang.language.print.print_shared_buffer_with_condition>`\\ \\"
+"(condition\\, buffer\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`print_fragment_buffer_with_condition <tilelang.language.print."
-"print_fragment_buffer_with_condition>`\\ \\(condition\\, ...\\[\\, msg\\]\\)"
+":py:obj:`print_fragment_buffer_with_condition "
+"<tilelang.language.print.print_fragment_buffer_with_condition>`\\ \\"
+"(condition\\, ...\\[\\, msg\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`print_local_buffer_with_condition <tilelang.language.print."
-"print_local_buffer_with_condition>`\\ \\(condition\\, buffer\\, elems\\)"
+":py:obj:`print_local_buffer_with_condition "
+"<tilelang.language.print.print_local_buffer_with_condition>`\\ \\"
+"(condition\\, buffer\\, elems\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`device_assert <tilelang.language.print.device_assert>`\\ "
-"\\(condition\\[\\, msg\\]\\)"
+":py:obj:`device_assert <tilelang.language.print.device_assert>`\\ \\"
+"(condition\\[\\, msg\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/print/index.rst:27:<autosummary>:1

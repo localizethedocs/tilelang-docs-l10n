@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:20:<autosummary>:1
 msgid ""
-":py:obj:`thread_local_storage <tilelang.language.eager.builder."
-"thread_local_storage>`\\"
+":py:obj:`thread_local_storage "
+"<tilelang.language.eager.builder.thread_local_storage>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:20:<autosummary>:1
@@ -46,14 +46,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:20:<autosummary>:1
 msgid ""
-":py:obj:`TIR_CONTROL_FRAME <tilelang.language.eager.builder."
-"TIR_CONTROL_FRAME>`\\"
+":py:obj:`TIR_CONTROL_FRAME "
+"<tilelang.language.eager.builder.TIR_CONTROL_FRAME>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:20:<autosummary>:1
 msgid ""
-":py:obj:`TIR_VAR_SCOPE_FRAME <tilelang.language.eager.builder."
-"TIR_VAR_SCOPE_FRAME>`\\"
+":py:obj:`TIR_VAR_SCOPE_FRAME "
+"<tilelang.language.eager.builder.TIR_VAR_SCOPE_FRAME>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:20:<autosummary>:1
@@ -79,8 +79,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid ""
-":py:obj:`ExitedMacroFrame <tilelang.language.eager.builder."
-"ExitedMacroFrame>`\\"
+":py:obj:`ExitedMacroFrame "
+"<tilelang.language.eager.builder.ExitedMacroFrame>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
@@ -98,8 +98,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid ""
-":py:obj:`SerialForWithStep <tilelang.language.eager.builder."
-"SerialForWithStep>`\\"
+":py:obj:`SerialForWithStep "
+"<tilelang.language.eager.builder.SerialForWithStep>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
@@ -112,8 +112,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
 msgid ""
-":py:obj:`UnrollForWithStep <tilelang.language.eager.builder."
-"UnrollForWithStep>`\\"
+":py:obj:`UnrollForWithStep "
+"<tilelang.language.eager.builder.UnrollForWithStep>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:42:<autosummary>:1
@@ -158,8 +158,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
-":py:obj:`unwrap_expr <tilelang.language.eager.builder.unwrap_expr>`\\ "
-"\\(expr\\)"
+":py:obj:`unwrap_expr <tilelang.language.eager.builder.unwrap_expr>`\\ \\"
+"(expr\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:67
@@ -169,8 +169,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
-":py:obj:`unwrap_cond <tilelang.language.eager.builder.unwrap_cond>`\\ "
-"\\(expr\\)"
+":py:obj:`unwrap_cond <tilelang.language.eager.builder.unwrap_cond>`\\ \\"
+"(expr\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:72
@@ -211,8 +211,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
-":py:obj:`annotate_compile_flags <tilelang.language.eager.builder."
-"annotate_compile_flags>`\\ \\(flags\\)"
+":py:obj:`annotate_compile_flags "
+"<tilelang.language.eager.builder.annotate_compile_flags>`\\ \\(flags\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:556
@@ -222,8 +222,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
-":py:obj:`annotate_pass_configs <tilelang.language.eager.builder."
-"annotate_pass_configs>`\\ \\(configs\\)"
+":py:obj:`annotate_pass_configs "
+"<tilelang.language.eager.builder.annotate_pass_configs>`\\ \\(configs\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:571
@@ -233,14 +233,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
-":py:obj:`substitute_primfunc <tilelang.language.eager.builder."
-"substitute_primfunc>`\\ \\(prim\\_func\\, vmap\\)"
+":py:obj:`substitute_primfunc "
+"<tilelang.language.eager.builder.substitute_primfunc>`\\ \\(prim\\_func\\, "
+"vmap\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:59:<autosummary>:1
 msgid ""
-":py:obj:`prim_func <tilelang.language.eager.builder.prim_func>`\\ "
-"\\(\\[func\\, eager\\_jit\\]\\)"
+":py:obj:`prim_func <tilelang.language.eager.builder.prim_func>`\\ \\(\\"
+"[func\\, eager\\_jit\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:61
@@ -294,8 +295,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:395
 msgid ""
-"Bases: :py:obj:`Generic`\\ [\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ], :py:obj:"
-"`tvm.tir.PrimFunc`"
+"Bases: :py:obj:`Generic`\\ "
+"[\\ :py:obj:`_P`\\ , :py:obj:`_T`\\ ], :py:obj:`tvm.tir.PrimFunc`"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:400
@@ -362,8 +363,8 @@ msgid ""
 "metaprogramming capabilities. * *Example* * *--------* -- >>> @macro   ... "
 "def my_macro(x: T.int32) -> T.int32:   ...    return x ** 2   >>> "
 "@prim_func   ... def my_func(A: T.Tensor((10,), T.int32), B: T.Tensor((10,), "
-"T.int32)):   ...    with T.Kernel(1) as _:   ...        for i in T."
-"serial(10):   ...            B[i] = my_macro(A[i])"
+"T.int32)):   ...    with T.Kernel(1) as _:   ...        for i in "
+"T.serial(10):   ...            B[i] = my_macro(A[i])"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/eager/builder/index.rst:514

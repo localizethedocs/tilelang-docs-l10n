@@ -27,26 +27,28 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`get_all_factors <tilelang.carver.roller.policy.common."
-"get_all_factors>`\\ \\(n\\)"
+":py:obj:`get_all_factors "
+"<tilelang.carver.roller.policy.common.get_all_factors>`\\ \\(n\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`factorize <tilelang.carver.roller.policy.common.factorize>`\\ "
-"\\(n\\)"
+":py:obj:`factorize <tilelang.carver.roller.policy.common.factorize>`\\ \\"
+"(n\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`coalesced_factor <tilelang.carver.roller.policy.common."
-"coalesced_factor>`\\ \\(subtensor\\, tensor\\)"
+":py:obj:`coalesced_factor "
+"<tilelang.carver.roller.policy.common.coalesced_factor>`\\ \\(subtensor\\, "
+"tensor\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`coalesced_tensor_shape <tilelang.carver.roller.policy.common."
-"coalesced_tensor_shape>`\\ \\(subtensor\\, tensor\\, transaction\\_size\\)"
+":py:obj:`coalesced_tensor_shape "
+"<tilelang.carver.roller.policy.common.coalesced_tensor_shape>`\\ \\"
+"(subtensor\\, tensor\\, transaction\\_size\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/common/index.rst:19

@@ -42,8 +42,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/carver/arch/metal/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`is_metal_arch <tilelang.carver.arch.metal.is_metal_arch>`\\ "
-"\\(arch\\)"
+":py:obj:`is_metal_arch <tilelang.carver.arch.metal.is_metal_arch>`\\ \\"
+"(arch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/metal/index.rst:24

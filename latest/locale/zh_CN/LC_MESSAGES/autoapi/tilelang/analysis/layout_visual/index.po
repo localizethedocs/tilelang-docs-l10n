@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/layout_visual/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`print_fragment_format <tilelang.analysis.layout_visual."
-"print_fragment_format>`\\ \\(layout\\)"
+":py:obj:`print_fragment_format "
+"<tilelang.analysis.layout_visual.print_fragment_format>`\\ \\(layout\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/layout_visual/index.rst:21
@@ -38,8 +38,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/layout_visual/index.rst:15:<autosummary>:1
 msgid ""
-":py:obj:`LayoutVisual <tilelang.analysis.layout_visual.LayoutVisual>`\\ "
-"\\(\\[formats\\]\\)"
+":py:obj:`LayoutVisual <tilelang.analysis.layout_visual.LayoutVisual>`\\ \\(\\"
+"[formats\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/layout_visual/index.rst:17

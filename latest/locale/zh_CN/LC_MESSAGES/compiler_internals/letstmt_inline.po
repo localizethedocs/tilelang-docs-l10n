@@ -276,13 +276,14 @@ msgstr ""
 
 #: ../../../compiler_internals/letstmt_inline.md:130
 msgid ""
-"TileLang exposes an explicit pass configuration key, `tilelang.PassConfigKey."
-"TL_FORCE_LET_INLINE` (`\"tl.force_let_inline\"`), that allows users to force "
-"the eager `LetInline` pass to run before the legalization pipeline begins. "
-"When enabled, the pipeline invokes `tilelang.transform.LetInline()` at the "
-"start of `LowerAndLegalize` (see `tilelang/engine/phase.py`). This knob is "
-"useful when debugging LetStmt-related issues or when deterministic inlining "
-"behavior is desired across different environments."
+"TileLang exposes an explicit pass configuration key, "
+"`tilelang.PassConfigKey.TL_FORCE_LET_INLINE` (`\"tl.force_let_inline\"`), "
+"that allows users to force the eager `LetInline` pass to run before the "
+"legalization pipeline begins. When enabled, the pipeline invokes "
+"`tilelang.transform.LetInline()` at the start of `LowerAndLegalize` (see "
+"`tilelang/engine/phase.py`). This knob is useful when debugging LetStmt-"
+"related issues or when deterministic inlining behavior is desired across "
+"different environments."
 msgstr ""
 
 #: ../../../compiler_internals/letstmt_inline.md:132

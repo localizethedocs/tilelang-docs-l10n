@@ -88,8 +88,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
 msgid ""
-":py:obj:`ieee_frcp <tilelang.contrib.cutedsl.ieee_math.ieee_frcp>`\\ "
-"\\(a\\[\\, rounding\\]\\)"
+":py:obj:`ieee_frcp <tilelang.contrib.cutedsl.ieee_math.ieee_frcp>`\\ \\(a\\"
+"[\\, rounding\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:56
@@ -99,8 +99,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:30:<autosummary>:1
 msgid ""
-":py:obj:`ieee_fsqrt <tilelang.contrib.cutedsl.ieee_math.ieee_fsqrt>`\\ "
-"\\(a\\[\\, rounding\\]\\)"
+":py:obj:`ieee_fsqrt <tilelang.contrib.cutedsl.ieee_math.ieee_fsqrt>`\\ \\(a\\"
+"[\\, rounding\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/ieee_math/index.rst:61

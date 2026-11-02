@@ -47,8 +47,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:29:<autosummary>:1
 msgid ""
-":py:obj:`suppress_stdout_stderr <tilelang.profiler.bench."
-"suppress_stdout_stderr>`\\"
+":py:obj:`suppress_stdout_stderr "
+"<tilelang.profiler.bench.suppress_stdout_stderr>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:43
@@ -124,8 +124,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:79
 msgid ""
-"Profiler backend - \"event\" (CUDA events), \"cupti\", or "
-"\"cudagraph\" (default: \"event\")"
+"Profiler backend - \"event\" (CUDA events), \"cupti\", or \"cudagraph\" "
+"(default: \"event\")"
 msgstr ""
 
 #: ../../../autoapi/tilelang/profiler/bench/index.rst:80

@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`is_pipelined_for <tilelang.analysis.nested_loop_checker."
-"is_pipelined_for>`\\ \\(op\\)"
+":py:obj:`is_pipelined_for "
+"<tilelang.analysis.nested_loop_checker.is_pipelined_for>`\\ \\(op\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:22
@@ -38,8 +38,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`is_tile_op <tilelang.analysis.nested_loop_checker.is_tile_op>`\\ "
-"\\(op\\)"
+":py:obj:`is_tile_op <tilelang.analysis.nested_loop_checker.is_tile_op>`\\ \\"
+"(op\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:27
@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`NestedLoopChecker <tilelang.analysis.nested_loop_checker."
-"NestedLoopChecker>`\\ \\(\\)"
+":py:obj:`NestedLoopChecker "
+"<tilelang.analysis.nested_loop_checker.NestedLoopChecker>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:32
@@ -161,9 +161,9 @@ msgstr ""
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:76
 msgid ""
 "In summary, the problem mainly lies in the \"T.Parallel\". We highly "
-"recommend to use T.Parallel to implement a tiled operator inside a kernel (e."
-"g. T.gemm level) instead of other usages. This guideline can help you avoid "
-"most of the issues."
+"recommend to use T.Parallel to implement a tiled operator inside a kernel "
+"(e.g. T.gemm level) instead of other usages. This guideline can help you "
+"avoid most of the issues."
 msgstr ""
 
 #: ../../../autoapi/tilelang/analysis/nested_loop_checker/index.rst:0

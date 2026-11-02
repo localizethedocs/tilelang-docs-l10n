@@ -35,8 +35,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/intrinsics/mma_sm70_macro_generator/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`TensorCoreIntrinEmitter <tilelang.intrinsics."
-"mma_sm70_macro_generator.TensorCoreIntrinEmitter>`\\"
+":py:obj:`TensorCoreIntrinEmitter "
+"<tilelang.intrinsics.mma_sm70_macro_generator.TensorCoreIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mma_sm70_macro_generator/index.rst:30

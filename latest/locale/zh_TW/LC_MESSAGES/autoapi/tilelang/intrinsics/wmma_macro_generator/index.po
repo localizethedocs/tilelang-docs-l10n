@@ -70,8 +70,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`WMMAIntrinEmitter <tilelang.intrinsics.wmma_macro_generator."
-"WMMAIntrinEmitter>`\\"
+":py:obj:`WMMAIntrinEmitter "
+"<tilelang.intrinsics.wmma_macro_generator.WMMAIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/wmma_macro_generator/index.rst:46

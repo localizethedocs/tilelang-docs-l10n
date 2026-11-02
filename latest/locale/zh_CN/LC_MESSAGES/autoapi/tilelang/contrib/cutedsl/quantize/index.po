@@ -38,8 +38,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`FP16_TOP_MAGIC_NUM <tilelang.contrib.cutedsl.quantize."
-"FP16_TOP_MAGIC_NUM>`\\"
+":py:obj:`FP16_TOP_MAGIC_NUM "
+"<tilelang.contrib.cutedsl.quantize.FP16_TOP_MAGIC_NUM>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
@@ -48,14 +48,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`MEDIAN_NUM_UNSIGNED <tilelang.contrib.cutedsl.quantize."
-"MEDIAN_NUM_UNSIGNED>`\\"
+":py:obj:`MEDIAN_NUM_UNSIGNED "
+"<tilelang.contrib.cutedsl.quantize.MEDIAN_NUM_UNSIGNED>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`MEDIAN_NUM_SIGNED <tilelang.contrib.cutedsl.quantize."
-"MEDIAN_NUM_SIGNED>`\\"
+":py:obj:`MEDIAN_NUM_SIGNED "
+"<tilelang.contrib.cutedsl.quantize.MEDIAN_NUM_SIGNED>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:27
@@ -64,8 +64,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`decode_i4u_to_f16 <tilelang.contrib.cutedsl.quantize."
-"decode_i4u_to_f16>`\\ \\(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
+":py:obj:`decode_i4u_to_f16 "
+"<tilelang.contrib.cutedsl.quantize.decode_i4u_to_f16>`\\ \\(src\\_ptr\\, "
+"dst\\_ptr\\[\\, N\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:61
@@ -75,8 +76,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`decode_i4s_to_f16 <tilelang.contrib.cutedsl.quantize."
-"decode_i4s_to_f16>`\\ \\(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
+":py:obj:`decode_i4s_to_f16 "
+"<tilelang.contrib.cutedsl.quantize.decode_i4s_to_f16>`\\ \\(src\\_ptr\\, "
+"dst\\_ptr\\[\\, N\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:73
@@ -86,8 +88,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:35:<autosummary>:1
 msgid ""
-":py:obj:`decode_fp4_to_bf16_twiddling <tilelang.contrib.cutedsl.quantize."
-"decode_fp4_to_bf16_twiddling>`\\ \\(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
+":py:obj:`decode_fp4_to_bf16_twiddling "
+"<tilelang.contrib.cutedsl.quantize.decode_fp4_to_bf16_twiddling>`\\ \\"
+"(src\\_ptr\\, dst\\_ptr\\[\\, N\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/quantize/index.rst:78

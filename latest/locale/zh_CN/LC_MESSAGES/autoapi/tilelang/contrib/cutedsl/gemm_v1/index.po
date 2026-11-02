@@ -39,8 +39,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v1/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`make_aligned_tensor <tilelang.contrib.cutedsl.gemm_v1."
-"make_aligned_tensor>`\\ \\(ptr\\, layout\\, align\\_bytes\\[\\, swizzle\\]\\)"
+":py:obj:`make_aligned_tensor "
+"<tilelang.contrib.cutedsl.gemm_v1.make_aligned_tensor>`\\ \\(ptr\\, "
+"layout\\, align\\_bytes\\[\\, swizzle\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v1/index.rst:27:<autosummary>:1

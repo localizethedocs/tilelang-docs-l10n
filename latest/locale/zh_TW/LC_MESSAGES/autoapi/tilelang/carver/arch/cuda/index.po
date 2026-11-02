@@ -40,14 +40,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`is_volta_arch <tilelang.carver.arch.cuda.is_volta_arch>`\\ "
-"\\(arch\\)"
+":py:obj:`is_volta_arch <tilelang.carver.arch.cuda.is_volta_arch>`\\ \\"
+"(arch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`is_ampere_arch <tilelang.carver.arch.cuda.is_ampere_arch>`\\ "
-"\\(arch\\)"
+":py:obj:`is_ampere_arch <tilelang.carver.arch.cuda.is_ampere_arch>`\\ \\"
+"(arch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
@@ -57,20 +57,21 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`is_hopper_arch <tilelang.carver.arch.cuda.is_hopper_arch>`\\ "
-"\\(arch\\)"
+":py:obj:`is_hopper_arch <tilelang.carver.arch.cuda.is_hopper_arch>`\\ \\"
+"(arch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`has_mma_support <tilelang.carver.arch.cuda.has_mma_support>`\\ "
-"\\(arch\\)"
+":py:obj:`has_mma_support <tilelang.carver.arch.cuda.has_mma_support>`\\ \\"
+"(arch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`is_tensorcore_supported_precision <tilelang.carver.arch.cuda."
-"is_tensorcore_supported_precision>`\\ \\(in\\_dtype\\, ...\\)"
+":py:obj:`is_tensorcore_supported_precision "
+"<tilelang.carver.arch.cuda.is_tensorcore_supported_precision>`\\ \\"
+"(in\\_dtype\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/arch/cuda/index.rst:30

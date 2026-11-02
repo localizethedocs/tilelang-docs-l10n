@@ -58,8 +58,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:40:<autosummary>:1
 msgid ""
-":py:obj:`NVRTCLibraryGenerator <tilelang.jit.adapter.nvrtc.libgen."
-"NVRTCLibraryGenerator>`\\"
+":py:obj:`NVRTCLibraryGenerator "
+"<tilelang.jit.adapter.nvrtc.libgen.NVRTCLibraryGenerator>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/libgen/index.rst:51

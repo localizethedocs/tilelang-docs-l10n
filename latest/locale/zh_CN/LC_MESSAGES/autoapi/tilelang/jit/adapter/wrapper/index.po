@@ -27,14 +27,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY <tilelang.jit.adapter.wrapper."
-"PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY>`\\"
+":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY "
+"<tilelang.jit.adapter.wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP <tilelang.jit.adapter."
-"wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP>`\\"
+":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP "
+"<tilelang.jit.adapter.wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
@@ -49,44 +49,44 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE <tilelang.jit.adapter.wrapper."
-"L2_PERSISTENT_MAP_CREATE_HANDLE>`\\"
+":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE "
+"<tilelang.jit.adapter.wrapper.L2_PERSISTENT_MAP_CREATE_HANDLE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC <tilelang.jit.adapter.wrapper."
-"L2_PERSISTENT_MAP_INIT_FUNC>`\\"
+":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC "
+"<tilelang.jit.adapter.wrapper.L2_PERSISTENT_MAP_INIT_FUNC>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE <tilelang.jit.adapter.wrapper."
-"L2_PERSISTENT_MAP_RESET_HANDLE>`\\"
+":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE "
+"<tilelang.jit.adapter.wrapper.L2_PERSISTENT_MAP_RESET_HANDLE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`TMA_DESC_INIT_FUNC <tilelang.jit.adapter.wrapper."
-"TMA_DESC_INIT_FUNC>`\\"
+":py:obj:`TMA_DESC_INIT_FUNC "
+"<tilelang.jit.adapter.wrapper.TMA_DESC_INIT_FUNC>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`TMA_IM2COL_DESC_INIT_FUNC <tilelang.jit.adapter.wrapper."
-"TMA_IM2COL_DESC_INIT_FUNC>`\\"
+":py:obj:`TMA_IM2COL_DESC_INIT_FUNC "
+"<tilelang.jit.adapter.wrapper.TMA_IM2COL_DESC_INIT_FUNC>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`KERNEL_LAUNCH_FUNC_CODE <tilelang.jit.adapter.wrapper."
-"KERNEL_LAUNCH_FUNC_CODE>`\\"
+":py:obj:`KERNEL_LAUNCH_FUNC_CODE "
+"<tilelang.jit.adapter.wrapper.KERNEL_LAUNCH_FUNC_CODE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
 msgid ""
-":py:obj:`KERNEL_CLUSTER_LAUNCH_FUNC_CODE <tilelang.jit.adapter.wrapper."
-"KERNEL_CLUSTER_LAUNCH_FUNC_CODE>`\\"
+":py:obj:`KERNEL_CLUSTER_LAUNCH_FUNC_CODE "
+"<tilelang.jit.adapter.wrapper.KERNEL_CLUSTER_LAUNCH_FUNC_CODE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
@@ -107,14 +107,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`TLCUDASourceWrapper <tilelang.jit.adapter.wrapper."
-"TLCUDASourceWrapper>`\\"
+":py:obj:`TLCUDASourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLCUDASourceWrapper>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`TLHIPSourceWrapper <tilelang.jit.adapter.wrapper."
-"TLHIPSourceWrapper>`\\"
+":py:obj:`TLHIPSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLHIPSourceWrapper>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:531
@@ -124,14 +124,14 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`TLCPUSourceWrapper <tilelang.jit.adapter.wrapper."
-"TLCPUSourceWrapper>`\\"
+":py:obj:`TLCPUSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLCPUSourceWrapper>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`TLMetalSourceWrapper <tilelang.jit.adapter.wrapper."
-"TLMetalSourceWrapper>`\\"
+":py:obj:`TLMetalSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLMetalSourceWrapper>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1

@@ -138,8 +138,8 @@ msgstr ""
 
 #: ../../../get_started/targets.md:35
 msgid ""
-"The same convention works for HIP or LLVM (e.g. `hip -mcpu=gfx940`, `llvm -"
-"mtriple=x86_64-linux-gnu`)."
+"The same convention works for HIP or LLVM (e.g. `hip -mcpu=gfx940`, `llvm "
+"-mtriple=x86_64-linux-gnu`)."
 msgstr ""
 
 #: ../../../get_started/targets.md:37
@@ -374,10 +374,11 @@ msgstr ""
 msgid ""
 "TileLang accepts either `str` or `Target` inputs; internally they are "
 "normalised and cached using the canonical string representation.  **In user "
-"code we strongly recommend passing target strings rather than `tvm.target."
-"Target` instances—strings keep cache keys compact and deterministic across "
-"runs, whereas constructing fresh `Target` objects may lead to slightly "
-"higher hashing overhead or inconsistent identity semantics.**"
+"code we strongly recommend passing target strings rather than "
+"`tvm.target.Target` instances—strings keep cache keys compact and "
+"deterministic across runs, whereas constructing fresh `Target` objects may "
+"lead to slightly higher hashing overhead or inconsistent identity "
+"semantics.**"
 msgstr ""
 
 #: ../../../get_started/targets.md:101

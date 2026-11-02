@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`NVRTCKernelCache <tilelang.jit.adapter.nvrtc.kernel_cache."
-"NVRTCKernelCache>`\\"
+":py:obj:`NVRTCKernelCache "
+"<tilelang.jit.adapter.nvrtc.kernel_cache.NVRTCKernelCache>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/nvrtc/kernel_cache/index.rst:16

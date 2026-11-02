@@ -35,8 +35,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`process_func <tilelang.testing.perf_regression.process_func>`\\ "
-"\\(func\\[\\, name\\]\\)"
+":py:obj:`process_func <tilelang.testing.perf_regression.process_func>`\\ \\"
+"(func\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/perf_regression/index.rst:39
@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/testing/perf_regression/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`regression <tilelang.testing.perf_regression.regression>`\\ "
-"\\(\\[prefixes\\, verbose\\]\\)"
+":py:obj:`regression <tilelang.testing.perf_regression.regression>`\\ \\(\\"
+"[prefixes\\, verbose\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/perf_regression/index.rst:47

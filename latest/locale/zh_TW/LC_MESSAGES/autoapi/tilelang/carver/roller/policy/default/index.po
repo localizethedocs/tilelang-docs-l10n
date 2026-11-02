@@ -31,8 +31,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:19:<autosummary>:1
 msgid ""
-":py:obj:`DefaultPolicy <tilelang.carver.roller.policy.default."
-"DefaultPolicy>`\\"
+":py:obj:`DefaultPolicy "
+"<tilelang.carver.roller.policy.default.DefaultPolicy>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/policy/default/index.rst:19:<autosummary>:1

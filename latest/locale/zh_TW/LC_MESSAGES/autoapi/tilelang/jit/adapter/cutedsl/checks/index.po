@@ -27,8 +27,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/checks/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`check_cutedsl_available <tilelang.jit.adapter.cutedsl.checks."
-"check_cutedsl_available>`\\ \\(\\)"
+":py:obj:`check_cutedsl_available "
+"<tilelang.jit.adapter.cutedsl.checks.check_cutedsl_available>`\\ \\(\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/cutedsl/checks/index.rst:20

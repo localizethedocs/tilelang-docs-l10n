@@ -27,8 +27,8 @@ msgstr "類別"
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`TMADescriptorParams <tilelang.jit.adapter.utils."
-"TMADescriptorParams>`\\"
+":py:obj:`TMADescriptorParams "
+"<tilelang.jit.adapter.utils.TMADescriptorParams>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:122
@@ -42,26 +42,30 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`match_global_kernel <tilelang.jit.adapter.utils."
-"match_global_kernel>`\\ \\(source\\[\\, annotation\\]\\)"
+":py:obj:`match_global_kernel "
+"<tilelang.jit.adapter.utils.match_global_kernel>`\\ \\(source\\[\\, "
+"annotation\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`match_declare_kernel <tilelang.jit.adapter.utils."
-"match_declare_kernel>`\\ \\(source\\[\\, annotation\\]\\)"
+":py:obj:`match_declare_kernel "
+"<tilelang.jit.adapter.utils.match_declare_kernel>`\\ \\(source\\[\\, "
+"annotation\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`match_declare_kernel_cutedsl <tilelang.jit.adapter.utils."
-"match_declare_kernel_cutedsl>`\\ \\(source\\[\\, annotation\\]\\)"
+":py:obj:`match_declare_kernel_cutedsl "
+"<tilelang.jit.adapter.utils.match_declare_kernel_cutedsl>`\\ \\(source\\[\\, "
+"annotation\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`extract_python_func_declaration <tilelang.jit.adapter.utils."
-"extract_python_func_declaration>`\\ \\(source\\, func\\_name\\)"
+":py:obj:`extract_python_func_declaration "
+"<tilelang.jit.adapter.utils.extract_python_func_declaration>`\\ \\(source\\, "
+"func\\_name\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:48
@@ -71,32 +75,33 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`match_declare_kernel_cpu <tilelang.jit.adapter.utils."
-"match_declare_kernel_cpu>`\\ \\(source\\[\\, annotation\\]\\)"
+":py:obj:`match_declare_kernel_cpu "
+"<tilelang.jit.adapter.utils.match_declare_kernel_cpu>`\\ \\(source\\[\\, "
+"annotation\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_cuda_target <tilelang.jit.adapter.utils.is_cuda_target>`\\ "
-"\\(target\\)"
+":py:obj:`is_cuda_target <tilelang.jit.adapter.utils.is_cuda_target>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_hip_target <tilelang.jit.adapter.utils.is_hip_target>`\\ "
-"\\(target\\)"
+":py:obj:`is_hip_target <tilelang.jit.adapter.utils.is_hip_target>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_cpu_target <tilelang.jit.adapter.utils.is_cpu_target>`\\ "
-"\\(target\\)"
+":py:obj:`is_cpu_target <tilelang.jit.adapter.utils.is_cpu_target>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`is_metal_target <tilelang.jit.adapter.utils.is_metal_target>`\\ "
-"\\(target\\)"
+":py:obj:`is_metal_target <tilelang.jit.adapter.utils.is_metal_target>`\\ \\"
+"(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
@@ -113,8 +118,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`pythonic_expr <tilelang.jit.adapter.utils.pythonic_expr>`\\ "
-"\\(expr\\[\\, dtype\\_map\\, ignore\\_cast\\, floor\\_div\\_op\\]\\)"
+":py:obj:`pythonic_expr <tilelang.jit.adapter.utils.pythonic_expr>`\\ \\"
+"(expr\\[\\, dtype\\_map\\, ignore\\_cast\\, floor\\_div\\_op\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:81
@@ -126,8 +131,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`maybe_desc_name <tilelang.jit.adapter.utils.maybe_desc_name>`\\ "
-"\\(name\\, matches\\, i\\[\\, desc\\_name\\_map\\]\\)"
+":py:obj:`maybe_desc_name <tilelang.jit.adapter.utils.maybe_desc_name>`\\ \\"
+"(name\\, matches\\, i\\[\\, desc\\_name\\_map\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:96
@@ -137,8 +142,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`parse_function_call_args <tilelang.jit.adapter.utils."
-"parse_function_call_args>`\\ \\(declaration\\, function\\_args\\, ...\\)"
+":py:obj:`parse_function_call_args "
+"<tilelang.jit.adapter.utils.parse_function_call_args>`\\ \\(declaration\\, "
+"function\\_args\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:108
@@ -148,8 +154,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:36:<autosummary>:1
 msgid ""
-":py:obj:`parse_tma_descriptor_args <tilelang.jit.adapter.utils."
-"parse_tma_descriptor_args>`\\ \\(tma\\_descriptor\\_args\\, ...\\)"
+":py:obj:`parse_tma_descriptor_args "
+"<tilelang.jit.adapter.utils.parse_tma_descriptor_args>`\\ \\"
+"(tma\\_descriptor\\_args\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/utils/index.rst:216

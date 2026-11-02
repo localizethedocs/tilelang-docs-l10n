@@ -174,8 +174,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/autodd/index.rst:63:<autosummary>:1
 msgid ""
-":py:obj:`ruff_fix_code <tilelang.autodd.ruff_fix_code>`\\ "
-"\\(code\\_string\\[\\, fix\\_lint\\, format\\_code\\]\\)"
+":py:obj:`ruff_fix_code <tilelang.autodd.ruff_fix_code>`\\ \\(code\\_string\\"
+"[\\, fix\\_lint\\, format\\_code\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/autodd/index.rst:63:<autosummary>:1

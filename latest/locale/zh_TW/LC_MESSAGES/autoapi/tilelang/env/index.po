@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`CUTLASS_NOT_FOUND_MESSAGE <tilelang.env."
-"CUTLASS_NOT_FOUND_MESSAGE>`\\"
+":py:obj:`CUTLASS_NOT_FOUND_MESSAGE "
+"<tilelang.env.CUTLASS_NOT_FOUND_MESSAGE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:65
@@ -44,20 +44,20 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`COMPOSABLE_KERNEL_NOT_FOUND_MESSAGE <tilelang.env."
-"COMPOSABLE_KERNEL_NOT_FOUND_MESSAGE>`\\"
+":py:obj:`COMPOSABLE_KERNEL_NOT_FOUND_MESSAGE "
+"<tilelang.env.COMPOSABLE_KERNEL_NOT_FOUND_MESSAGE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`TL_TEMPLATE_NOT_FOUND_MESSAGE <tilelang.env."
-"TL_TEMPLATE_NOT_FOUND_MESSAGE>`\\"
+":py:obj:`TL_TEMPLATE_NOT_FOUND_MESSAGE "
+"<tilelang.env.TL_TEMPLATE_NOT_FOUND_MESSAGE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`TVM_LIBRARY_NOT_FOUND_MESSAGE <tilelang.env."
-"TVM_LIBRARY_NOT_FOUND_MESSAGE>`\\"
+":py:obj:`TVM_LIBRARY_NOT_FOUND_MESSAGE "
+"<tilelang.env.TVM_LIBRARY_NOT_FOUND_MESSAGE>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
@@ -122,8 +122,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1
 msgid ""
-":py:obj:`COMPOSABLE_KERNEL_INCLUDE_DIR <tilelang.env."
-"COMPOSABLE_KERNEL_INCLUDE_DIR>`\\"
+":py:obj:`COMPOSABLE_KERNEL_INCLUDE_DIR "
+"<tilelang.env.COMPOSABLE_KERNEL_INCLUDE_DIR>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/env/index.rst:37:<autosummary>:1

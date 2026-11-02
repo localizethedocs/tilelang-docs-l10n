@@ -31,14 +31,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`decompose_col_major <tilelang.layout.gemm_sp."
-"decompose_col_major>`\\ \\(index\\_1d\\, basis\\)"
+":py:obj:`decompose_col_major "
+"<tilelang.layout.gemm_sp.decompose_col_major>`\\ \\(index\\_1d\\, basis\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`make_cutlass_metadata_layout_sm90 <tilelang.layout.gemm_sp."
-"make_cutlass_metadata_layout_sm90>`\\ \\(buffer\\, mma\\_dtype\\, ...\\)"
+":py:obj:`make_cutlass_metadata_layout_sm90 "
+"<tilelang.layout.gemm_sp.make_cutlass_metadata_layout_sm90>`\\ \\(buffer\\, "
+"mma\\_dtype\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:30
@@ -50,8 +51,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`make_cutlass_metadata_layout_sm8x <tilelang.layout.gemm_sp."
-"make_cutlass_metadata_layout_sm8x>`\\ \\(buffer\\, mma\\_dtype\\)"
+":py:obj:`make_cutlass_metadata_layout_sm8x "
+"<tilelang.layout.gemm_sp.make_cutlass_metadata_layout_sm8x>`\\ \\(buffer\\, "
+"mma\\_dtype\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:39
@@ -63,8 +65,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`make_cutlass_metadata_layout <tilelang.layout.gemm_sp."
-"make_cutlass_metadata_layout>`\\ \\(buffer\\[\\, mma\\_dtype\\, arch\\]\\)"
+":py:obj:`make_cutlass_metadata_layout "
+"<tilelang.layout.gemm_sp.make_cutlass_metadata_layout>`\\ \\(buffer\\[\\, "
+"mma\\_dtype\\, arch\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/layout/gemm_sp/index.rst:24

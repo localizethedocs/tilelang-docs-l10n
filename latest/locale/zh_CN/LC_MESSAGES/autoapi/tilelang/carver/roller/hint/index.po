@@ -31,8 +31,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/hint/index.rst:23:<autosummary>:1
 msgid ""
-":py:obj:`TensorCoreExtraConfig <tilelang.carver.roller.hint."
-"TensorCoreExtraConfig>`\\"
+":py:obj:`TensorCoreExtraConfig "
+"<tilelang.carver.roller.hint.TensorCoreExtraConfig>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/roller/hint/index.rst:29

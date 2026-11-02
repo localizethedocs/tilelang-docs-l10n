@@ -50,8 +50,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
 msgid ""
-":py:obj:`tanh <tilelang.contrib.cutedsl.math.tanh>`\\ \\(x\\[\\, "
-"fastmath\\]\\)"
+":py:obj:`tanh <tilelang.contrib.cutedsl.math.tanh>`\\ \\(x\\[\\, fastmath\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:19

@@ -53,8 +53,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`normalize_prim_func <tilelang.carver.analysis."
-"normalize_prim_func>`\\ \\(sch\\)"
+":py:obj:`normalize_prim_func "
+"<tilelang.carver.analysis.normalize_prim_func>`\\ \\(sch\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:144
@@ -70,32 +70,33 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`check_func_with_dynamic <tilelang.carver.analysis."
-"check_func_with_dynamic>`\\ \\(func\\)"
+":py:obj:`check_func_with_dynamic "
+"<tilelang.carver.analysis.check_func_with_dynamic>`\\ \\(func\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`get_max_threads_per_block <tilelang.carver.analysis."
-"get_max_threads_per_block>`\\ \\(target\\)"
+":py:obj:`get_max_threads_per_block "
+"<tilelang.carver.analysis.get_max_threads_per_block>`\\ \\(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`get_max_shared_memory_per_block <tilelang.carver.analysis."
-"get_max_shared_memory_per_block>`\\ \\(target\\)"
+":py:obj:`get_max_shared_memory_per_block "
+"<tilelang.carver.analysis.get_max_shared_memory_per_block>`\\ \\(target\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`get_root_block <tilelang.carver.analysis.get_root_block>`\\ "
-"\\(sch\\[\\, func\\_name\\]\\)"
+":py:obj:`get_root_block <tilelang.carver.analysis.get_root_block>`\\ \\(sch\\"
+"[\\, func\\_name\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`collect_block_iter_vars_used_in_access_region <tilelang.carver."
-"analysis.collect_block_iter_vars_used_in_access_region>`\\ \\(block\\, ...\\)"
+":py:obj:`collect_block_iter_vars_used_in_access_region "
+"<tilelang.carver.analysis.collect_block_iter_vars_used_in_access_region>`\\ "
+"\\(block\\, ...\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:159
@@ -107,8 +108,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`collect_vars_used_in_prim_expr <tilelang.carver.analysis."
-"collect_vars_used_in_prim_expr>`\\ \\(expr\\)"
+":py:obj:`collect_vars_used_in_prim_expr "
+"<tilelang.carver.analysis.collect_vars_used_in_prim_expr>`\\ \\(expr\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:164
@@ -118,8 +119,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`detect_dominant_read <tilelang.carver.analysis."
-"detect_dominant_read>`\\ \\(block\\)"
+":py:obj:`detect_dominant_read "
+"<tilelang.carver.analysis.detect_dominant_read>`\\ \\(block\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:169
@@ -129,8 +130,9 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`is_broadcast_epilogue <tilelang.carver.analysis."
-"is_broadcast_epilogue>`\\ \\(sch\\, block\\, epilogue\\)"
+":py:obj:`is_broadcast_epilogue "
+"<tilelang.carver.analysis.is_broadcast_epilogue>`\\ \\(sch\\, block\\, "
+"epilogue\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:174
@@ -140,14 +142,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`get_reduction_blocks <tilelang.carver.analysis."
-"get_reduction_blocks>`\\ \\(sch\\, blocks\\)"
+":py:obj:`get_reduction_blocks "
+"<tilelang.carver.analysis.get_reduction_blocks>`\\ \\(sch\\, blocks\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:39:<autosummary>:1
 msgid ""
-":py:obj:`get_coalesced_veclen <tilelang.carver.analysis."
-"get_coalesced_veclen>`\\ \\(block\\_stmt\\[\\, target\\_bits\\]\\)"
+":py:obj:`get_coalesced_veclen "
+"<tilelang.carver.analysis.get_coalesced_veclen>`\\ \\(block\\_stmt\\[\\, "
+"target\\_bits\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/carver/analysis/index.rst:41

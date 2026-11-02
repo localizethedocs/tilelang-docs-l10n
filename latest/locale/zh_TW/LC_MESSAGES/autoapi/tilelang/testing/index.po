@@ -43,14 +43,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`set_random_seed <tilelang.testing.set_random_seed>`\\ "
-"\\(\\[seed\\]\\)"
+":py:obj:`set_random_seed <tilelang.testing.set_random_seed>`\\ \\(\\[seed\\]"
+"\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`requires_cuda_compute_version <tilelang.testing."
-"requires_cuda_compute_version>`\\ \\(major\\_version\\[\\, ...\\]\\)"
+":py:obj:`requires_cuda_compute_version "
+"<tilelang.testing.requires_cuda_compute_version>`\\ \\(major\\_version\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:50
@@ -60,32 +61,37 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`requires_cuda_compute_version_ge <tilelang.testing."
-"requires_cuda_compute_version_ge>`\\ \\(major\\_version\\[\\, ...\\]\\)"
+":py:obj:`requires_cuda_compute_version_ge "
+"<tilelang.testing.requires_cuda_compute_version_ge>`\\ \\(major\\_version\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`requires_cuda_compute_version_gt <tilelang.testing."
-"requires_cuda_compute_version_gt>`\\ \\(major\\_version\\[\\, ...\\]\\)"
+":py:obj:`requires_cuda_compute_version_gt "
+"<tilelang.testing.requires_cuda_compute_version_gt>`\\ \\(major\\_version\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`requires_cuda_compute_version_eq <tilelang.testing."
-"requires_cuda_compute_version_eq>`\\ \\(major\\_version\\[\\, ...\\]\\)"
+":py:obj:`requires_cuda_compute_version_eq "
+"<tilelang.testing.requires_cuda_compute_version_eq>`\\ \\(major\\_version\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`requires_cuda_compute_version_lt <tilelang.testing."
-"requires_cuda_compute_version_lt>`\\ \\(major\\_version\\[\\, ...\\]\\)"
+":py:obj:`requires_cuda_compute_version_lt "
+"<tilelang.testing.requires_cuda_compute_version_lt>`\\ \\(major\\_version\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:38:<autosummary>:1
 msgid ""
-":py:obj:`requires_cuda_compute_version_le <tilelang.testing."
-"requires_cuda_compute_version_le>`\\ \\(major\\_version\\[\\, ...\\]\\)"
+":py:obj:`requires_cuda_compute_version_le "
+"<tilelang.testing.requires_cuda_compute_version_le>`\\ \\(major\\_version\\"
+"[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/testing/index.rst:40

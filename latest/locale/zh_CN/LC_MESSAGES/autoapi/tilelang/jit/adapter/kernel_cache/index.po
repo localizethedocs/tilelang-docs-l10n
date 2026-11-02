@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`TVMFFIKernelCache <tilelang.jit.adapter.kernel_cache."
-"TVMFFIKernelCache>`\\"
+":py:obj:`TVMFFIKernelCache "
+"<tilelang.jit.adapter.kernel_cache.TVMFFIKernelCache>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/kernel_cache/index.rst:16

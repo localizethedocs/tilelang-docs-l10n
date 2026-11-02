@@ -31,9 +31,8 @@ msgstr "函式"
 
 #: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:20:<autosummary>:1
 msgid ""
-":py:obj:`gemm_sp <tilelang.language.experimental.gemm_sp.gemm_sp>`\\ "
-"\\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, transpose\\_B\\, ..."
-"\\]\\)"
+":py:obj:`gemm_sp <tilelang.language.experimental.gemm_sp.gemm_sp>`\\ \\"
+"(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, transpose\\_B\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:26
@@ -43,8 +42,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:20:<autosummary>:1
 msgid ""
-":py:obj:`gemm_sp_v2 <tilelang.language.experimental.gemm_sp.gemm_sp_v2>`\\ "
-"\\(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, ...\\]\\)"
+":py:obj:`gemm_sp_v2 <tilelang.language.experimental.gemm_sp.gemm_sp_v2>`\\ \\"
+"(A\\_sparse\\, E\\, B\\, C\\[\\, transpose\\_A\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../autoapi/tilelang/language/experimental/gemm_sp/index.rst:60

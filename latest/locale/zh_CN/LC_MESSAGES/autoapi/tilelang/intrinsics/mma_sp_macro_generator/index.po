@@ -35,8 +35,8 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mma_sp_macro_generator/index.rst:22:<autosummary>:1
 msgid ""
-":py:obj:`SparseTensorCoreIntrinEmitter <tilelang.intrinsics."
-"mma_sp_macro_generator.SparseTensorCoreIntrinEmitter>`\\"
+":py:obj:`SparseTensorCoreIntrinEmitter "
+"<tilelang.intrinsics.mma_sp_macro_generator.SparseTensorCoreIntrinEmitter>`\\"
 msgstr ""
 
 #: ../../../autoapi/tilelang/intrinsics/mma_sp_macro_generator/index.rst:30
