@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:24+0000\n"
+"POT-Creation-Date: 2026-11-02 17:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,24 +25,41 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:15:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:16:<autosummary>:1
 msgid ""
-":py:obj:`get_nvrtc_version <tilelang.contrib.nvrtc.get_nvrtc_version>`\\ "
-"\\(\\)"
+":py:obj:`get_nvrtc_version <tilelang.contrib.nvrtc.get_nvrtc_version>`\\ \\"
+"(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:15:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:22
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:16:<autosummary>:1
+msgid "Return the loaded NVRTC's version, cached for this process."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`default_compile_options "
+"<tilelang.contrib.nvrtc.default_compile_options>`\\ \\(\\[compile\\_flags\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:27
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:16:<autosummary>:1
+msgid "Extend the common CUDA compile options with NVRTC header compatibility."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:16:<autosummary>:1
 msgid ""
 ":py:obj:`compile_cuda <tilelang.contrib.nvrtc.compile_cuda>`\\ \\(code\\[\\, "
 "target\\_format\\, arch\\, options\\, verbose\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:23
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:15:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:32
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:16:<autosummary>:1
 msgid "Compile cuda code with NVRTC."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:17
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:18
 msgid "Module Contents"
 msgstr ""
 
@@ -54,23 +71,27 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:25
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:34
 msgid "The cuda code."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:27
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:36
 msgid "The target format of nvrtc compiler."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:29
-msgid "The cuda architecture code."
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:38
+msgid ""
+"The CUDA architecture code. String tokens preserve the exact suffix, such as "
+"\"90\", \"90a\", or \"100f\". Integer values use the legacy architecture-"
+"specific suffix for SM90 and newer. If None, use the current target "
+"architecture or detect it from the GPU, as in NVCC."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:31
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:43
 msgid "The additional options."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:33
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:45
 msgid "Whether to print the verbose output."
 msgstr ""
 
@@ -78,6 +99,6 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:36
+#: ../../../autoapi/tilelang/contrib/nvrtc/index.rst:48
 msgid "**result_bytes** -- The bytearray of the cubin or ptx code."
 msgstr ""
