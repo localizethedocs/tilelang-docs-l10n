@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-11-02 17:58:20 +0800",
+      "hash" : "b5cb0263361c0ab21e39b2fc3bc8568e1c1971e3",
+      "title" : "Fix/cuda float32x8 bit cast (#3748)"
     }
   },
   "type" : "branch",
