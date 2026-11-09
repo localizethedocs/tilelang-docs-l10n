@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:2
+msgid "tilelang.engine.host_mapped"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:8
+msgid "Parameter contracts for device-accessible mapped host memory."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:19:<autosummary>:1
+msgid ""
+":py:obj:`HOST_MAPPED_PARAMS_ATTR "
+"<tilelang.engine.host_mapped.HOST_MAPPED_PARAMS_ATTR>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:21
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`get_host_mapped_params "
+"<tilelang.engine.host_mapped.get_host_mapped_params>`\\ \\(func\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:38
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:28:<autosummary>:1
+msgid "Read and validate parameter indices, including on cache restoration."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`validate_host_mapped_params "
+"<tilelang.engine.host_mapped.validate_host_mapped_params>`\\ \\(func\\, "
+"target\\, ...\\[\\, out\\_idx\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:43
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:28:<autosummary>:1
+msgid "Reject unsupported execution and allocation paths before compilation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:30
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/host_mapped/index.rst:0
+msgid "Return type"
+msgstr ""

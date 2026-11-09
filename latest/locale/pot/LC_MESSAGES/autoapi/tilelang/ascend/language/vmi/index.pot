@@ -1,0 +1,474 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:2
+msgid "tilelang.ascend.language.vmi"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:8
+msgid "TileLang VMI namespace for Ascend PTO kernels."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:13
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vadd <tilelang.ascend.language.vmi.vadd>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vmul <tilelang.ascend.language.vmi.vmul>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vmax <tilelang.ascend.language.vmi.vmax>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vmin <tilelang.ascend.language.vmi.vmin>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vand <tilelang.ascend.language.vmi.vand>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vor <tilelang.ascend.language.vmi.vor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vxor <tilelang.ascend.language.vmi.vxor>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vshl <tilelang.ascend.language.vmi.vshl>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vshr <tilelang.ascend.language.vmi.vshr>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vabs <tilelang.ascend.language.vmi.vabs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vneg <tilelang.ascend.language.vmi.vneg>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vrelu <tilelang.ascend.language.vmi.vrelu>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vexp <tilelang.ascend.language.vmi.vexp>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vln <tilelang.ascend.language.vmi.vln>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vsqrt <tilelang.ascend.language.vmi.vsqrt>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vnot <tilelang.ascend.language.vmi.vnot>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vadds <tilelang.ascend.language.vmi.vadds>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vmuls <tilelang.ascend.language.vmi.vmuls>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vmaxs <tilelang.ascend.language.vmi.vmaxs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vmins <tilelang.ascend.language.vmi.vmins>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vshls <tilelang.ascend.language.vmi.vshls>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:40:<autosummary>:1
+msgid ":py:obj:`vshrs <tilelang.ascend.language.vmi.vshrs>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:42
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:48:<autosummary>:1
+msgid ":py:obj:`VmiPair <tilelang.ascend.language.vmi.VmiPair>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:126
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:48:<autosummary>:1
+msgid "Lazy pair wrapper for multi-result VMI calls."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:50
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`alloc_local <tilelang.ascend.language.vmi.alloc_local>`\\ \\"
+"(shape\\, vreg\\_type\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:96
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Allocate a statically indexed array of VMI vector registers."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`alloc_var <tilelang.ascend.language.vmi.alloc_var>`\\ \\(dtype\\, "
+"\\*\\, size\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:112
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Allocate a mutable VMI data register slot."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ":py:obj:`inside_vmi <tilelang.ascend.language.vmi.inside_vmi>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:143
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Return True when executing inside ``with T.SimdVF():``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`require_vmi_scope "
+"<tilelang.ascend.language.vmi.require_vmi_scope>`\\ \\(\\[context\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:148
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Raise if a VMI op is used outside ``with T.SimdVF():``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vreg <tilelang.ascend.language.vmi.vreg>`\\ \\(lanes\\, "
+"dtype\\_like\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:153
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Return a logical VMI vector dtype descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ":py:obj:`mask <tilelang.ascend.language.vmi.mask>`\\ \\(lanes\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:158
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Return a logical VMI predicate dtype descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vload <tilelang.ascend.language.vmi.vload>`\\ \\(source\\[\\, "
+"offset\\, stride\\, block\\_stride\\, group\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:163
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+"Load a VMI vector from either `a_ub[0]`-style buffer loads or ptr+offset "
+"form."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vstore <tilelang.ascend.language.vmi.vstore>`\\ \\(values\\, "
+"destination\\[\\, offset\\, mask\\, stride\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:176
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+"Store one VMI vector to either `a_ub[0]`-style buffer loads or ptr+offset "
+"form."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vci <tilelang.ascend.language.vmi.vci>`\\ \\(base\\, \\*\\, size\\"
+"[\\, order\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vdiv <tilelang.ascend.language.vmi.vdiv>`\\ \\(lhs\\, rhs\\[\\, "
+"mask\\, precision\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:227
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+"Vector divide. ``precision='exact'`` expands CANN ``vdiv_0ulp_ftz_true``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vcmp <tilelang.ascend.language.vmi.vcmp>`\\ \\(lhs\\, rhs\\, "
+"seed\\, cmp\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vcmps <tilelang.ascend.language.vmi.vcmps>`\\ \\(source\\, "
+"scalar\\, seed\\, cmp\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vsel <tilelang.ascend.language.vmi.vsel>`\\ \\(mask\\, "
+"true\\_value\\, false\\_value\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vselr <tilelang.ascend.language.vmi.vselr>`\\ \\(source\\, index\\, "
+"\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vbrc <tilelang.ascend.language.vmi.vbrc>`\\ \\(value\\, \\*\\, "
+"size\\[\\, group\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vcadd <tilelang.ascend.language.vmi.vcadd>`\\ \\(source\\, mask\\, "
+"\\*\\[\\, group\\, pmode\\, reassoc\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vcmax <tilelang.ascend.language.vmi.vcmax>`\\ \\(source\\, mask\\, "
+"\\*\\[\\, group\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vcmin <tilelang.ascend.language.vmi.vcmin>`\\ \\(source\\, mask\\, "
+"\\*\\[\\, group\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vcvt <tilelang.ascend.language.vmi.vcvt>`\\ \\(source\\[\\, "
+"to\\_dtype\\, mask\\, rounding\\, saturate\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vinterpret_cast <tilelang.ascend.language.vmi.vinterpret_cast>`\\ \\"
+"(source\\[\\, to\\_dtype\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vexpdif <tilelang.ascend.language.vmi.vexpdif>`\\ \\(x\\, "
+"max\\_value\\, mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vaxpy <tilelang.ascend.language.vmi.vaxpy>`\\ \\(x\\, acc\\, "
+"alpha\\, mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vlrelu <tilelang.ascend.language.vmi.vlrelu>`\\ \\(x\\, slope\\, "
+"mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vprelu <tilelang.ascend.language.vmi.vprelu>`\\ \\(x\\, alpha\\, "
+"mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vmull <tilelang.ascend.language.vmi.vmull>`\\ \\(a\\, b\\, mask\\, "
+"\\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vmula <tilelang.ascend.language.vmi.vmula>`\\ \\(acc\\, lhs\\, "
+"rhs\\, mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vdhist <tilelang.ascend.language.vmi.vdhist>`\\ \\(acc\\, source\\, "
+"mask\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vchist <tilelang.ascend.language.vmi.vchist>`\\ \\(acc\\, source\\, "
+"mask\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vgather <tilelang.ascend.language.vmi.vgather>`\\ \\(source\\, "
+"offsets\\, mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vscatter <tilelang.ascend.language.vmi.vscatter>`\\ \\(value\\, "
+"destination\\, offsets\\, mask\\, \\*\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`create_mask <tilelang.ascend.language.vmi.create_mask>`\\ \\"
+"(active\\_lanes\\, \\*\\, size\\[\\, group\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vintlv <tilelang.ascend.language.vmi.vintlv>`\\ \\(lhs\\, rhs\\, "
+"mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vdintlv <tilelang.ascend.language.vmi.vdintlv>`\\ \\(lhs\\, rhs\\, "
+"mask\\, \\*\\[\\, pmode\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vunzip <tilelang.ascend.language.vmi.vunzip>`\\ \\(source\\[\\, "
+"to\\_dtype\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:278
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Unzip every element into its low and high half-width halves."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid ""
+":py:obj:`vzip <tilelang.ascend.language.vmi.vzip>`\\ \\(low\\, high\\[\\, "
+"to\\_dtype\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:291
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:90:<autosummary>:1
+msgid "Zip low/high half-width halves back (inverse of vunzip)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:92
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:98
+msgid ""
+"``vreg_type`` is a numeric vector dtype produced by :func:`vreg`; bool/mask "
+"and handle element types are rejected.  The resulting buffer may only be "
+"indexed by compile-time values, such as induction variables from "
+"``T.unroll(..., explicit=True)`` on the PTO backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:103
+msgid ""
+"This API is valid only inside a ``T.SimdVF()`` scope: VMI allocations are "
+"SIMD vector registers, and ordinary ``T.alloc_local`` remains available "
+"outside that scope.  A block-level allocation marker records that the array "
+"is an explicit VMI data allocation, so lowering and code generation do not "
+"infer that intent from the vector dtype of an ordinary SIMD allocation."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:114
+msgid ""
+"The TIR buffer keeps the numeric element dtype (a single lane is the scalar "
+"dtype, more lanes are a vector dtype)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:117
+msgid ""
+"This API is valid only inside a ``T.SimdVF()`` scope: VMI allocations are "
+"SIMD vector registers, and the ordinary ``T.alloc_var`` remains available "
+"outside that scope.  A block-level allocation marker records that the slot "
+"is an explicit VMI data register, so lowering and code generation do not "
+"have to infer that intent from the vector dtype or from a later store."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:165
+msgid ""
+"A VMI load always reads the full ``size`` lanes starting at the load "
+"address: the ISA intentionally keeps load instructions unmasked for "
+"performance, so masks apply to computation and stores, never to the load "
+"itself. Reading a full vector past a logical tail is still safe on device — "
+"the top 8K of UB is reserved as stack space, so the extra read-only lanes "
+"cannot fault; they carry undefined values that the compute and store masks "
+"must keep out of valid outputs."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:280
+msgid ""
+"Returns (low, high) with the source lane count preserved and the element "
+"width halved; lane i of each result is the low/high half of source lane i. "
+"to_dtype selects the half element type and defaults to the unsigned half-"
+"width integer of the source element (uint16 for a 32-bit source).  It is "
+"forwarded to the emitted PTO call, where PTODSL derives the half-width "
+"result element type from it and re-checks it against the source width, so it "
+"must agree with the result dtype this wrapper declares."
+msgstr ""
+
+#: ../../../autoapi/tilelang/ascend/language/vmi/index.rst:293
+msgid ""
+"to_dtype selects the wide element type and defaults to the unsigned double-"
+"width integer of the half element (uint32 for uint16 halves).  As in vunzip "
+"it is forwarded to the emitted PTO call and must agree with the result dtype "
+"this wrapper declares."
+msgstr ""

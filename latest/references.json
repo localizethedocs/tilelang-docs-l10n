@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-11-09 16:39:39 +0800",
+      "hash" : "72d986e1c45ba8e81f7611eb6835c9bece097d60",
+      "title" : "[Ascend] Restore precise logical access regions for dense views (#3890)"
     }
   },
   "type" : "branch",

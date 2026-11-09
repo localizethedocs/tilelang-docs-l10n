@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:2
+msgid "tilelang.contrib.cutedsl.ldst"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:8
+msgid ""
+"Explicit-width and read-only-cache loads and stores for the CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:10
+msgid ""
+"Mirrors ``tl::load_global_*`` / ``tl::store_global_*`` / "
+"``tl::load_shared_*`` / ``tl::store_shared_*`` in ``src/tl_templates/cuda/"
+"copy.h`` and ``copy_sm100.h``, and CUDA's ``__ldg``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:17
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`ldg32 <tilelang.contrib.cutedsl.ldst.ldg32>`\\ \\(ptr\\[\\, pred\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:42
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+"``tl::load_global_32[_conditional]``: ``@p ld.global.u32``; 0 when ``pred`` "
+"is false."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`ldg64 <tilelang.contrib.cutedsl.ldst.ldg64>`\\ \\(ptr\\[\\, pred\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:47
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+"``tl::load_global_64[_conditional]``: ``@p ld.global.v2.u32``; zeros when "
+"``pred`` is false."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`ldg128 <tilelang.contrib.cutedsl.ldst.ldg128>`\\ \\(ptr\\[\\, "
+"pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:52
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+"``tl::load_global_128[_conditional]``: ``@p ld.global.v4.u32``; zeros when "
+"``pred`` is false."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`ldg256 <tilelang.contrib.cutedsl.ldst.ldg256>`\\ \\(ptr\\[\\, "
+"pred\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+"``tl::load_global_256[_conditional]``: ``@p ld.global.v4.u64`` on sm_100+, "
+"else two"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`stg32 <tilelang.contrib.cutedsl.ldst.stg32>`\\ \\(ptr\\, value\\"
+"[\\, pred\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:63
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::store_global_32[_conditional]``: ``@p st.global.u32``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`stg64 <tilelang.contrib.cutedsl.ldst.stg64>`\\ \\(ptr\\, value\\"
+"[\\, pred\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:68
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::store_global_64[_conditional]``: ``@p st.global.v2.u32``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`stg128 <tilelang.contrib.cutedsl.ldst.stg128>`\\ \\(ptr\\, value\\"
+"[\\, pred\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:73
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::store_global_128[_conditional]``: ``@p st.global.v4.u32``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`stg256 <tilelang.contrib.cutedsl.ldst.stg256>`\\ \\(ptr\\, value\\"
+"[\\, pred\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+"``tl::store_global_256[_conditional]``: ``@p st.global.v4.u64`` on sm_100+, "
+"else two"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ":py:obj:`lds32 <tilelang.contrib.cutedsl.ldst.lds32>`\\ \\(ptr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:84
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::load_shared_32``: a plain 32-bit load."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ":py:obj:`lds64 <tilelang.contrib.cutedsl.ldst.lds64>`\\ \\(ptr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:89
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::load_shared_64``: a plain 64-bit (``uint2``) load."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ":py:obj:`lds128 <tilelang.contrib.cutedsl.ldst.lds128>`\\ \\(ptr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:94
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::load_shared_128``: a plain 128-bit (``uint4``) load."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`sts32 <tilelang.contrib.cutedsl.ldst.sts32>`\\ \\(ptr\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:99
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::store_shared_32``: a plain 32-bit store."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`sts64 <tilelang.contrib.cutedsl.ldst.sts64>`\\ \\(ptr\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:104
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::store_shared_64``: a plain 64-bit (``uint2``) store."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid ""
+":py:obj:`sts128 <tilelang.contrib.cutedsl.ldst.sts128>`\\ \\(ptr\\, value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:109
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:36:<autosummary>:1
+msgid "``tl::store_shared_128``: a plain 128-bit (``uint4``) store."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:38
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:57
+msgid ""
+"``tl::load_global_256[_conditional]``: ``@p ld.global.v4.u64`` on sm_100+, "
+"else two ``@p ld.global.v4.u32``; zeros when ``pred`` is false."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/ldst/index.rst:78
+msgid ""
+"``tl::store_global_256[_conditional]``: ``@p st.global.v4.u64`` on sm_100+, "
+"else two ``@p st.global.v4.u32``."
+msgstr ""

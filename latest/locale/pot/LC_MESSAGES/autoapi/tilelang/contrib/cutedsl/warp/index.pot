@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,69 +23,113 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:8
 msgid ""
-"Warp-level primitives for CuTeDSL backend. Re-exports from cutlass.cute.arch "
-"with TileLang naming conventions."
+"Warp-level primitives for CuTeDSL backend. TileLang-compatible wrappers over "
+"CUTLASS primitives."
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:14
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`activemask <tilelang.contrib.cutedsl.warp.activemask>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:33
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid "``T.activemask()``: the active-lane mask zero-extended to 64 bits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`ballot_sync <tilelang.contrib.cutedsl.warp.ballot_sync>`\\ \\"
+"(mask\\, pred\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:40
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid "``T.ballot_sync``: the ballot mask zero-extended to 64 bits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid ":py:obj:`ballot <tilelang.contrib.cutedsl.warp.ballot>`\\ \\(pred\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:47
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid "``T.ballot``: full-warp ballot zero-extended to 64 bits."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid ""
 ":py:obj:`warp_reduce_sum <tilelang.contrib.cutedsl.warp.warp_reduce_sum>`\\ "
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:30
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:54
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid "Warp-level parallel reduction: sum across all 32 lanes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid ""
 ":py:obj:`warp_reduce_max <tilelang.contrib.cutedsl.warp.warp_reduce_max>`\\ "
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:35
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
-msgid "Warp-level parallel reduction: max across all 32 lanes."
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:59
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid ""
+"Warp-level parallel reduction: max across all 32 lanes (tl::MaxOp semantics)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid ""
 ":py:obj:`warp_reduce_min <tilelang.contrib.cutedsl.warp.warp_reduce_min>`\\ "
 "\\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:40
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
-msgid "Warp-level parallel reduction: min across all 32 lanes."
-msgstr ""
-
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:64
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`warp_reduce_bitand <tilelang.contrib.cutedsl.warp."
-"warp_reduce_bitand>`\\ \\(value\\)"
+"Warp-level parallel reduction: min across all 32 lanes (tl::MinOp semantics)."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:45
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`warp_reduce_bitand "
+"<tilelang.contrib.cutedsl.warp.warp_reduce_bitand>`\\ \\(value\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:69
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid "Warp-level parallel reduction: bitwise AND across all 32 lanes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid ""
-":py:obj:`warp_reduce_bitor <tilelang.contrib.cutedsl.warp."
-"warp_reduce_bitor>`\\ \\(value\\)"
+":py:obj:`warp_reduce_bitor "
+"<tilelang.contrib.cutedsl.warp.warp_reduce_bitor>`\\ \\(value\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:50
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:24:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:74
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:27:<autosummary>:1
 msgid "Warp-level parallel reduction: bitwise OR across all 32 lanes."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:26
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:29
 msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:35
+msgid "Matches CUDA: (unsigned long long)__activemask()"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:42
+msgid "Matches CUDA: (unsigned long long)__ballot_sync(mask, pred)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/warp/index.rst:49
+msgid "Matches CUDA: (unsigned long long)__ballot_sync(0xFFFFFFFF, pred)"
 msgstr ""
