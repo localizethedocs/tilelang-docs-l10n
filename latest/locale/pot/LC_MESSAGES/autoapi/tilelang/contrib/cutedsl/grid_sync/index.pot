@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,40 +27,56 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:10
 msgid ""
-"Implements a software grid barrier using atomic operations on a device-"
-"global counter declared via llvm.mlir.global. Requires cooperative kernel "
-"launch (cuLaunchCooperativeKernel) to guarantee all thread blocks are "
-"resident."
+"Implements the grid barrier of CUDA cooperative groups "
+"(``this_grid().sync()``) on the per-launch grid workspace that the driver "
+"provides to cooperative launches (cuLaunchCooperativeKernel). Its address is "
+"read from the ``%envreg1`` (high half) and ``%envreg2`` (low half) special "
+"registers, as in ``cooperative_groups::details::get_grid_workspace``, so "
+"concurrent launches of the same kernel never share barrier state."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:14
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:17
 msgid ""
-"The barrier: 1. __syncthreads() within each block 2. Thread 0 atomically "
-"increments global counter, spin-waits until all blocks arrive 3. Thread 0 "
-"resets counter 4. __syncthreads() within each block"
+"The barrier: 1. __syncthreads() within each block 2. Thread 0 of each block "
+"adds its arrival to the workspace barrier word with"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:20
+msgid ""
+"release semantics; block 0 adds the value that flips bit 31 once all blocks "
+"have arrived"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:22
+msgid "Thread 0 spins with acquire loads until bit 31 differs from its arrival"
 msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:23
+msgid "__syncthreads() releases the rest of the block"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:28
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:34:<autosummary>:1
 msgid ""
 ":py:obj:`sync_grid <tilelang.contrib.cutedsl.grid_sync.sync_grid>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:35
-#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:29:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:40
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:34:<autosummary>:1
 msgid "Synchronize all thread blocks in a grid."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:31
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:36
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:37
+#: ../../../autoapi/tilelang/contrib/cutedsl/grid_sync/index.rst:42
 msgid ""
-"NOTE: This requires the kernel to be launched with cuLaunchCooperativeKernel "
-"to guarantee all blocks are resident simultaneously. The CuTeDSL wrapper "
-"handles this automatically when the kernel uses sync_grid()."
+"NOTE: This requires the kernel to be launched with "
+"cuLaunchCooperativeKernel, which guarantees all thread blocks are resident "
+"simultaneously and provides the grid workspace. The CuTeDSL wrapper handles "
+"this automatically when the kernel uses sync_grid()."
 msgstr ""

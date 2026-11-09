@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:36+0000\n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,36 +25,252 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`exp <tilelang.contrib.cutedsl.math.exp>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`exp2 <tilelang.contrib.cutedsl.math.exp2>`\\ \\(x\\[\\, fastmath\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`log <tilelang.contrib.cutedsl.math.log>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`log1p <tilelang.contrib.cutedsl.math.log1p>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`log2 <tilelang.contrib.cutedsl.math.log2>`\\ \\(x\\[\\, fastmath\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`log10 <tilelang.contrib.cutedsl.math.log10>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tan <tilelang.contrib.cutedsl.math.tan>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`cos <tilelang.contrib.cutedsl.math.cos>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`sin <tilelang.contrib.cutedsl.math.sin>`\\ \\(x\\[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`sqrt <tilelang.contrib.cutedsl.math.sqrt>`\\ \\(x\\[\\, fastmath\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`rsqrt <tilelang.contrib.cutedsl.math.rsqrt>`\\ \\(x\\[\\, "
+"fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
 msgid ""
 ":py:obj:`exp10 <tilelang.contrib.cutedsl.math.exp10>`\\ \\(x\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:23
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:72
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
 msgid "Compute 10^x using exp2(x * log2(10))."
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
 msgid ""
 ":py:obj:`fabsf <tilelang.contrib.cutedsl.math.fabsf>`\\ \\(x\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ":py:obj:`abs2 <tilelang.contrib.cutedsl.math.abs2>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`cuda_max <tilelang.contrib.cutedsl.math.cuda_max>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:81
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``T.max`` with CUDA semantics: hardware max for floats, ``cutlass.max`` "
+"otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`cuda_min <tilelang.contrib.cutedsl.math.cuda_min>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:86
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``T.min`` with CUDA semantics: hardware min for floats, ``cutlass.min`` "
+"otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`fast_max <tilelang.contrib.cutedsl.math.fast_max>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:91
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl::fast_max``: ``__hmax`` for 16-bit floats, ``fmaxf`` for float32, ``a < "
+"b ? b : a`` otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`fast_min <tilelang.contrib.cutedsl.math.fast_min>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:96
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl::fast_min``: ``__hmin`` for 16-bit floats, ``fminf`` for float32, ``b < "
+"a ? b : a`` otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`max_nan <tilelang.contrib.cutedsl.math.max_nan>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:101
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl.max_nan``: ``__hmax_nan`` (``max.NaN``) for 16-bit floats, "
+"``tl::fast_max`` otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`min_nan <tilelang.contrib.cutedsl.math.min_nan>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:109
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl.min_nan``: ``__hmin_nan`` (``min.NaN``) for 16-bit floats, "
+"``tl::fast_min`` otherwise."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ":py:obj:`max2 <tilelang.contrib.cutedsl.math.max2>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:114
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl::max2``: ``__hmax2`` for half2/bfloat162, lane-wise ``fmaxf`` for "
+"float2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ":py:obj:`min2 <tilelang.contrib.cutedsl.math.min2>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:119
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl::min2``: ``__hmin2`` for half2/bfloat162, lane-wise ``fminf`` for "
+"float2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`max2_nan <tilelang.contrib.cutedsl.math.max2_nan>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:124
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl::max2_nan``: ``__hmax2_nan`` (``max.NaN.{f16x2,bf16x2}``); CUDA defines "
+"it for half2/bfloat162 only."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`min2_nan <tilelang.contrib.cutedsl.math.min2_nan>`\\ \\(x\\, y\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:129
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+"``tl::min2_nan``: ``__hmin2_nan`` (``min.NaN.{f16x2,bf16x2}``); CUDA defines "
+"it for half2/bfloat162 only."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`copysignf <tilelang.contrib.cutedsl.math.copysignf>`\\ \\(x\\, y\\"
+"[\\, fastmath\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ":py:obj:`isfinite <tilelang.contrib.cutedsl.math.isfinite>`\\ \\(x\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
 msgid ""
 ":py:obj:`divf <tilelang.contrib.cutedsl.math.divf>`\\ \\(x\\, y\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:17:<autosummary>:1
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
 msgid ""
-":py:obj:`tanh <tilelang.contrib.cutedsl.math.tanh>`\\ \\(x\\[\\, "
+":py:obj:`truncdiv <tilelang.contrib.cutedsl.math.truncdiv>`\\ \\(x\\, y\\, "
+"\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:140
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid "Divide integers toward zero without a floating-point conversion."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`tanh <tilelang.contrib.cutedsl.math.tanh>`\\ \\(x\\[\\, fastmath\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`ceil <tilelang.contrib.cutedsl.math.ceil>`\\ \\(x\\[\\, fastmath\\]"
+"\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:44:<autosummary>:1
+msgid ""
+":py:obj:`floor <tilelang.contrib.cutedsl.math.floor>`\\ \\(x\\[\\, "
 "fastmath\\]\\)"
 msgstr ""
 
-#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:19
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:46
 msgid "Module Contents"
 msgstr ""
 
@@ -64,4 +280,10 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:0
 msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/math/index.rst:103
+msgid ""
+"A NaN operand yields the canonical NaN; +0 is ordered above -0. Vectors are "
+"handled lane by lane."
 msgstr ""

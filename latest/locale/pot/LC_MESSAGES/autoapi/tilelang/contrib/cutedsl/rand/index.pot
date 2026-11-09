@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:2
+msgid "tilelang.contrib.cutedsl.rand"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:8
+msgid "Philox4x32-10 random numbers for the CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:10
+msgid ""
+"This is a port of the ``curandStatePhilox4_32_10_t`` part of "
+"``curand_kernel.h``. The generator state lives in a 16-word register array "
+"because it has to survive across conditional code, which is how curand keeps "
+"it in a local struct."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:15
+msgid ""
+"Integers and uniform floats reproduce curand bit for bit. The normals run "
+"the same Box-Muller transform with the same cached sibling and the same fast "
+"sin/cos, but that approximation is not bit-identical to curand's "
+"``__sincosf`` for every input, and the double pair uses ``sincospi``, which "
+"CuTeDSL does not expose; both agree to a few ulps and the generator position "
+"always matches."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_state <tilelang.contrib.cutedsl.rand.rng_state>`\\ \\(\\*\\[\\, "
+"loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:43
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid "Allocate the generator state as a register array."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_init <tilelang.contrib.cutedsl.rand.rng_init>`\\ \\(state\\, "
+"seed\\, seq\\, off\\[\\, generator\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:48
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid "Initialize the generator, like ``curand_init(seed, seq, off, &state)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_rand <tilelang.contrib.cutedsl.rand.rng_rand>`\\ \\(state\\, "
+"\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:53
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid "Return the next 32-bit unsigned value, like ``curand(&state)``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_uniform2_double "
+"<tilelang.contrib.cutedsl.rand.rng_uniform2_double>`\\ \\(state\\, out\\, "
+"\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:58
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+"Fill two doubles with ``curand_uniform2_double``, which draws one block."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_normal2 <tilelang.contrib.cutedsl.rand.rng_normal2>`\\ \\"
+"(state\\, out\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:67
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid "Two float32 normals, like ``curand_normal2``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_normal4 <tilelang.contrib.cutedsl.rand.rng_normal4>`\\ \\"
+"(state\\, out\\, \\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:76
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid "Four float32 normals from one block, like ``curand_normal4``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_normal2_double "
+"<tilelang.contrib.cutedsl.rand.rng_normal2_double>`\\ \\(state\\, out\\, "
+"\\*\\[\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:81
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid "Two float64 normals from one block, like ``curand_normal2_double``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+":py:obj:`rng_rand_float <tilelang.contrib.cutedsl.rand.rng_rand_float>`\\ \\"
+"(state\\[\\, bit\\, dist\\, loc\\, ip\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:86
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:37:<autosummary>:1
+msgid ""
+"Return the next random float, like ``curand_uniform`` / ``curand_normal``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:39
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:60
+msgid ""
+"The 64-bit uniform store is the one place where curand's vector helper is "
+"not the elementwise composition of its scalar form: it takes 53-bit samples "
+"from a whole Philox block instead of one 32-bit word per result."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/rand/index.rst:69
+msgid ""
+"curand's vector helpers generate a fresh pair and keep the scalar Box-Muller "
+"cache as it is, so a later scalar draw still returns its sibling."
+msgstr ""

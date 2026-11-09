@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:2
+msgid "tilelang.contrib.cutedsl.fp8"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:8
+msgid "FP8 (e4m3 / e5m2) elementwise arithmetic for the CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:10
+msgid ""
+"No PTX instruction computes on e4m3/e5m2 registers on sm_89/sm_90/sm_120, "
+"and CuTeDSL cannot lower ``arith`` ops on FP8 MLIR types. Each operation is "
+"therefore one inline PTX block on packed registers: widen with "
+"``cvt.rn.f16x2.{e4m3x2,e5m2x2}``, compute in ``f16x2``, and narrow with "
+"``cvt.rn.satfinite``. Every FP8 value is exact in f16, and f16 carries more "
+"than ``2p + 2`` significand bits for both formats, so rounding the f16 "
+"result once more to FP8 gives the correctly rounded FP8 result. Division has "
+"no f16 instruction and multiplies by ``rcp.approx.ftz.f32`` (relative error "
+"about 2^-22; FP8 magnitudes never reach f32 subnormals): a quotient of two "
+"FP8 values that is not exactly an FP8 rounding midpoint lies at least about "
+"2^-9 (relative) away from one, so the approximation still rounds to the "
+"correctly rounded FP8 quotient."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:22
+msgid ""
+"``max``/``min`` use the ``.NaN`` forms (NaN propagates, ``+0 > -0``), "
+"matching the ``arith.maximumf``/``minimumf`` semantics CuTeDSL uses for "
+"other float types."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:34:<autosummary>:1
+msgid ""
+":py:obj:`fp8_binary <tilelang.contrib.cutedsl.fp8.fp8_binary>`\\ \\(op\\, "
+"a\\, b\\[\\, lanes\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:34:<autosummary>:1
+msgid ""
+"``a <op> b`` for FP8 operands: ``add``/``sub``/``mul``/``div``/``max``/"
+"``min``"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:36
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:40
+msgid ""
+"``a <op> b`` for FP8 operands: ``add``/``sub``/``mul``/``div``/``max``/"
+"``min`` return FP8; comparison operators (``<``, ``==``, ...) return Boolean."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/fp8/index.rst:43
+msgid ""
+"``lanes`` is the logical vector width; it is needed when an operand is an "
+"rmem tensor padded past that width."
+msgstr ""

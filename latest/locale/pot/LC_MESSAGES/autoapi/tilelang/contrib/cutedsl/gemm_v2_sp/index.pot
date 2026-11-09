@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-09 18:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:2
+msgid "tilelang.contrib.cutedsl.gemm_v2_sp"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:8
+msgid "Sparse (2:4 structured) WGMMA helpers for the CuTeDSL backend."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:10
+msgid ""
+"CuTeDSL has no sparse WGMMA primitive, so the ``wgmma.mma_async.sp`` family "
+"is emitted as inline PTX here. The operand layout mirrors the "
+"``cute::SM90::GMMA::SPARSE::GMMA_*_SS``/``_RS`` functors in ``cute/arch/"
+"mma_sm90_gmma_sparse.hpp``: the accumulator registers are the tied D/C "
+"operands, ``e`` is the per-instruction 32-bit metadata register taken from "
+"the E fragment, and the sparse selector is an immediate."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:20
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`wgmma_sp_ss <tilelang.contrib.cutedsl.gemm_v2_sp.wgmma_sp_ss>`\\ \\"
+"(A\\_dtype\\, B\\_dtype\\, C\\_dtype\\, M\\, N\\, K\\, tnspA\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:33
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:27:<autosummary>:1
+msgid ""
+"Sparse WGMMA shared-shared: A and B come from shared memory descriptors."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:27:<autosummary>:1
+msgid ""
+":py:obj:`wgmma_sp_rs <tilelang.contrib.cutedsl.gemm_v2_sp.wgmma_sp_rs>`\\ \\"
+"(A\\_dtype\\, B\\_dtype\\, C\\_dtype\\, M\\, N\\, K\\, tnspB\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:38
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:27:<autosummary>:1
+msgid "Sparse WGMMA register-shared: A from registers, B from a descriptor."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:29
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/cutedsl/gemm_v2_sp/index.rst:40
+msgid "Sparse register A is always K-major, so it takes no trans-a operand."
+msgstr ""
