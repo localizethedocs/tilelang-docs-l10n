@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../programming_guides/overview.md:1
 msgid "Programming Guides Overview"
-msgstr ""
+msgstr "程式設計指南概覽"
 
 #: ../../../programming_guides/overview.md:3
 msgid ""
