@@ -41,6 +41,7 @@ msgstr ""
 msgid ""
 ":py:obj:`KernelLaunchFrame <tilelang.language.kernel.KernelLaunchFrame>`\\"
 msgstr ""
+":py:obj:`KernelLaunchFrame <tilelang.language.kernel.KernelLaunchFrame>`\\"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:20:<autosummary>:1
 msgid ""
@@ -56,6 +57,8 @@ msgid ""
 ":py:obj:`Kernel <tilelang.language.kernel.Kernel>`\\ \\(\\*blocks\\[\\, "
 "threads\\, cluster\\_dims\\, is\\_cpu\\, prelude\\]\\)"
 msgstr ""
+":py:obj:`Kernel <tilelang.language.kernel.Kernel>`\\ \\(\\*blocks\\[\\, "
+"threads\\, cluster\\_dims\\, is\\_cpu\\, prelude\\]\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:201
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -68,6 +71,9 @@ msgid ""
 "<tilelang.language.kernel.CUDASourceCodeKernel>`\\ \\(\\*blocks\\[\\, "
 "threads\\, entry\\_name\\, ...\\]\\)"
 msgstr ""
+":py:obj:`CUDASourceCodeKernel "
+"<tilelang.language.kernel.CUDASourceCodeKernel>`\\ \\(\\*blocks\\[\\, "
+"threads\\, entry\\_name\\, ...\\]\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:249
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -79,6 +85,8 @@ msgid ""
 ":py:obj:`get_thread_binding <tilelang.language.kernel.get_thread_binding>`\\ "
 "\\(\\[dim\\]\\)"
 msgstr ""
+":py:obj:`get_thread_binding <tilelang.language.kernel.get_thread_binding>`\\ "
+"\\(\\[dim\\]\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:281
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -103,6 +111,8 @@ msgid ""
 ":py:obj:`get_block_binding <tilelang.language.kernel.get_block_binding>`\\ \\"
 "(\\[dim\\]\\)"
 msgstr ""
+":py:obj:`get_block_binding <tilelang.language.kernel.get_block_binding>`\\ \\"
+"(\\[dim\\]\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:291
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -114,6 +124,8 @@ msgid ""
 ":py:obj:`get_block_bindings <tilelang.language.kernel.get_block_bindings>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`get_block_bindings <tilelang.language.kernel.get_block_bindings>`\\ "
+"\\(\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:174
 #: ../../../autoapi/tilelang/language/kernel/index.rst:296
@@ -126,6 +138,8 @@ msgid ""
 ":py:obj:`get_thread_extent <tilelang.language.kernel.get_thread_extent>`\\ \\"
 "(\\[dim\\]\\)"
 msgstr ""
+":py:obj:`get_thread_extent <tilelang.language.kernel.get_thread_extent>`\\ \\"
+"(\\[dim\\]\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:301
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -137,6 +151,8 @@ msgid ""
 ":py:obj:`get_thread_extents <tilelang.language.kernel.get_thread_extents>`\\ "
 "\\(\\)"
 msgstr ""
+":py:obj:`get_thread_extents <tilelang.language.kernel.get_thread_extents>`\\ "
+"\\(\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:306
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -148,6 +164,8 @@ msgid ""
 ":py:obj:`get_block_extent <tilelang.language.kernel.get_block_extent>`\\ \\"
 "(\\[dim\\]\\)"
 msgstr ""
+":py:obj:`get_block_extent <tilelang.language.kernel.get_block_extent>`\\ \\"
+"(\\[dim\\]\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:311
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
@@ -159,6 +177,8 @@ msgid ""
 ":py:obj:`get_block_extents <tilelang.language.kernel.get_block_extents>`\\ \\"
 "(\\)"
 msgstr ""
+":py:obj:`get_block_extents <tilelang.language.kernel.get_block_extents>`\\ \\"
+"(\\)"
 
 #: ../../../autoapi/tilelang/language/kernel/index.rst:316
 #: ../../../autoapi/tilelang/language/kernel/index.rst:37:<autosummary>:1
