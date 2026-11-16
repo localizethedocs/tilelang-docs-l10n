@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-16 17:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:2
+msgid "tilelang.contrib.pto_toolchain"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:8
+msgid ""
+"Utilities to invoke the PTO toolchain (ptodsl -> ptoas -> bisheng) for "
+"Ascend NPU targets."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:10
+msgid ""
+"``compile_ptodsl_to_aibin`` lowers one TileLang-generated PTODSL module into "
+"an executable CCE ELF (aibin): the PTODSL frontend script "
+"(ptodsl_compile.py, run as a subprocess) lowers the source to MLIR, ptoas "
+"assembles a fat object, bisheng links it, and the .aicore_binary section of "
+"the linked image is extracted as the device binary consumed by the Ascend "
+"runtime module."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:19
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:26:<autosummary>:1
+msgid ":py:obj:`logger <tilelang.contrib.pto_toolchain.logger>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:26:<autosummary>:1
+msgid ""
+":py:obj:`BISHENG_FATOBJ_LINK_FLAGS "
+"<tilelang.contrib.pto_toolchain.BISHENG_FATOBJ_LINK_FLAGS>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:28
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`resolve_pto_options "
+"<tilelang.contrib.pto_toolchain.resolve_pto_options>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:53
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Resolve the ptoas arch and extra flags from the environment."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`parse_pto_kernel_names "
+"<tilelang.contrib.pto_toolchain.parse_pto_kernel_names>`\\ \\"
+"(ptodsl\\_source\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:58
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Return the top-level ``@pto.jit`` kernel names in definition order."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`compile_ptodsl_to_pto "
+"<tilelang.contrib.pto_toolchain.compile_ptodsl_to_pto>`\\ \\"
+"(ptodsl\\_source\\, kernel\\_names\\, ...\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:63
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Lower one PTODSL module to MLIR text."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`run_ptoas <tilelang.contrib.pto_toolchain.run_ptoas>`\\ \\"
+"(pto\\_path\\, fatobj\\_path\\, pto\\_arch\\, pto\\_flags\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:71
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Assemble the MLIR text into a device fat object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`bisheng_fatobj_link "
+"<tilelang.contrib.pto_toolchain.bisheng_fatobj_link>`\\ \\(fatobj\\_path\\, "
+"out\\_so\\[\\, verbose\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:76
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Link the fat object alone into a shared image carrying the device ELF."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`extract_aicore_binary "
+"<tilelang.contrib.pto_toolchain.extract_aicore_binary>`\\ \\(so\\_path\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:81
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Extract the ``.aicore_binary`` section bytes from a linked image."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`toolchain_stamp <tilelang.contrib.pto_toolchain.toolchain_stamp>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:91
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Identity of the tools that produce a PTO aibin, for cache keys."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid ""
+":py:obj:`compile_ptodsl_to_aibin "
+"<tilelang.contrib.pto_toolchain.compile_ptodsl_to_aibin>`\\ \\"
+"(ptodsl\\_source\\, pto\\_arch\\, pto\\_flags\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:101
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:41:<autosummary>:1
+msgid "Compile one PTODSL module into an executable CCE ELF (aibin)."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:43
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:65
+msgid ""
+"ptodsl_compile.py runs in a subprocess so the DSL's tracing globals "
+"(pto.init_core and friends) never enter this interpreter."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:83
+msgid ""
+"Parses the ELF64 section table directly instead of shelling out to "
+"``readelf``: tokenizing its text output can silently truncate the extract, "
+"and a bad extract is only rejected later by ``aclrtBinaryLoadFromData``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/pto_toolchain/index.rst:93
+msgid ""
+"ptoas compiles the device object with the toolchain it resolves from "
+"ASCEND_HOME_PATH, so the CANN identity (which includes the bisheng and the "
+"CCE linker inside that install, and the version ptoas gates its ABI on) is "
+"recorded."
+msgstr ""
