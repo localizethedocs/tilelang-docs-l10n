@@ -12,8 +12,9 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
 
@@ -2512,8 +2513,8 @@ msgstr ""
 
 #: ext/apidoc.py:437
 msgid ""
-"follow symbolic links. Powerful when combined with collective.recipe."
-"omelette."
+"follow symbolic links. Powerful when combined with "
+"collective.recipe.omelette."
 msgstr ""
 
 #: ext/apidoc.py:446
