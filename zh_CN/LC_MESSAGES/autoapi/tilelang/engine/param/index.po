@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the Tile Language <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-17 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:2
+msgid "tilelang.engine.param"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:8
+msgid "The profiler and convert to torch utils"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:20:<autosummary>:1
+msgid ":py:obj:`KernelParam <tilelang.engine.param.KernelParam>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:20:<autosummary>:1
+msgid ""
+"Represents parameters for a kernel operation, storing dtype and shape "
+"information."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:20:<autosummary>:1
+msgid ":py:obj:`CompiledArtifact <tilelang.engine.param.CompiledArtifact>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:20:<autosummary>:1
+msgid ""
+"Represents a compiled kernel artifact containing both host and device code."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:22
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:26
+msgid ""
+"Represents parameters for a kernel operation, storing dtype and shape "
+"information. Used to describe tensor or scalar parameters in TVM/PyTorch "
+"interop."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:42
+msgid "Creates a KernelParam instance from a TVM Buffer object."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:44
+msgid "TVM Buffer object containing dtype and shape information"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:46
+msgid "KernelParam instance with dtype directly from buffer and shape"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:0
+msgid "Raises"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:48
+msgid "If dimension type is not supported (not IntImm or Var)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:56
+msgid ""
+"Creates a KernelParam instance from a TVM Variable object. Used for scalar "
+"parameters."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:59
+msgid "TVM Variable object containing dtype information"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:61
+msgid "KernelParam instance representing a scalar (empty shape)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:67
+msgid "Checks if the parameter represents a scalar value."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:69
+msgid "True if parameter has no dimensions (empty shape), False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:76
+msgid "Checks if the parameter represents an unsigned integer type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:78
+msgid "True if parameter is an unsigned integer type, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:85
+msgid "Checks if the parameter represents a float8 type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:87
+msgid "True if parameter is a float8 type, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:94
+msgid "Checks if the parameter represents a float4 type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:96
+msgid "True if parameter is a float4 type, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:103
+msgid "Checks if the parameter represents a boolean type."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:105
+msgid "True if parameter is a boolean type, False otherwise"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:112
+msgid "Converts the TVM DataType to PyTorch dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:114
+msgid ""
+"This method is used when creating PyTorch tensors from KernelParam, as "
+"PyTorch's tensor creation functions require torch.dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:117
+msgid "Corresponding PyTorch dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:121
+msgid "Example"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:129
+msgid "Converts the TVM DataType to TileLang dtype."
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:131
+msgid "Corresponding TileLang dtype"
+msgstr ""
+
+#: ../../../autoapi/tilelang/engine/param/index.rst:138
+msgid ""
+"Represents a compiled kernel artifact containing both host and device code. "
+"Stores all necessary components for kernel execution in the TVM runtime."
+msgstr ""
