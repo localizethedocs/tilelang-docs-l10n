@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:25+0000\n"
+"POT-Creation-Date: 2026-11-23 19:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,15 @@ msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:14:<autosummary>:1
 msgid ""
-":py:obj:`TorchKernelCache <tilelang.jit.adapter.torch.kernel_cache."
-"TorchKernelCache>`\\"
+":py:obj:`TorchKernelCache "
+"<tilelang.jit.adapter.torch.kernel_cache.TorchKernelCache>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:23
+#: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:14:<autosummary>:1
+msgid ""
+"In-memory-only kernel cache for in-process shader compilation without disk "
+"artifacts."
 msgstr ""
 
 #: ../../../autoapi/tilelang/jit/adapter/torch/kernel_cache/index.rst:16

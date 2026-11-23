@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-27 15:10:48 +0800",
-      "hash" : "225ead647b1ca403a8042d6cfb9344571821b698",
-      "title" : "[Language][UX] User-friendly error report when incorrectly indexing buffer (#2104)"
+      "date" : "2026-11-23 21:30:31 +0800",
+      "hash" : "d17f1afbc765cf3024de137fcef6f33164d45c18",
+      "title" : "[CI] Build TileLang Nightly CI Pipeline (#4411)"
     }
   },
   "type" : "branch",
