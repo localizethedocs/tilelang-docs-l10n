@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-23 19:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:2
+msgid "tilelang.contrib.ptodsl_compile"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:8
+msgid "Lower PTODSL kernels to MLIR text."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:10
+msgid ""
+"Usage: python <tilelang>/contrib/ptodsl_compile.py <src.ptodsl.py> <kernel-"
+"names.json> <out.pto>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:12
+msgid "Also runnable as ``python -m tilelang.contrib.ptodsl_compile``."
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:17
+msgid "Attributes"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:28:<autosummary>:1
+msgid ":py:obj:`src_path <tilelang.contrib.ptodsl_compile.src_path>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:28:<autosummary>:1
+msgid ":py:obj:`kernel_names <tilelang.contrib.ptodsl_compile.kernel_names>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:28:<autosummary>:1
+msgid ":py:obj:`out_path <tilelang.contrib.ptodsl_compile.out_path>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:28:<autosummary>:1
+msgid ":py:obj:`module_name <tilelang.contrib.ptodsl_compile.module_name>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:28:<autosummary>:1
+msgid ":py:obj:`spec <tilelang.contrib.ptodsl_compile.spec>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:28:<autosummary>:1
+msgid ":py:obj:`kernels <tilelang.contrib.ptodsl_compile.kernels>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/contrib/ptodsl_compile/index.rst:30
+msgid "Module Contents"
+msgstr ""

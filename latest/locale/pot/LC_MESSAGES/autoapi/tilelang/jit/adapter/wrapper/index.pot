@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TileLang <br> latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 09:31+0000\n"
+"POT-Creation-Date: 2026-11-23 19:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,178 +25,237 @@ msgstr ""
 msgid "Attributes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY <tilelang.jit.adapter.wrapper."
-"PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY>`\\"
+":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY "
+"<tilelang.jit.adapter.wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP <tilelang.jit.adapter."
-"wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP>`\\"
+":py:obj:`PREDEF_CALL_SET_DYNAMIC_MEMORY "
+"<tilelang.jit.adapter.wrapper.PREDEF_CALL_SET_DYNAMIC_MEMORY>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP "
+"<tilelang.jit.adapter.wrapper.PREDEF_ATTRIBUTE_SET_DYNAMIC_MEMORY_HIP>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_ERROR_BUF <tilelang.jit.adapter.wrapper.PREDEF_ERROR_BUF>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
+msgid ""
+":py:obj:`PREDEF_INIT_BODY <tilelang.jit.adapter.wrapper.PREDEF_INIT_BODY>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`PREDEF_INIT_FUNC <tilelang.jit.adapter.wrapper.PREDEF_INIT_FUNC>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
 ":py:obj:`PREDEF_HOST_FUNC <tilelang.jit.adapter.wrapper.PREDEF_HOST_FUNC>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE <tilelang.jit.adapter.wrapper."
-"L2_PERSISTENT_MAP_CREATE_HANDLE>`\\"
+":py:obj:`L2_PERSISTENT_MAP_CREATE_HANDLE "
+"<tilelang.jit.adapter.wrapper.L2_PERSISTENT_MAP_CREATE_HANDLE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC <tilelang.jit.adapter.wrapper."
-"L2_PERSISTENT_MAP_INIT_FUNC>`\\"
+":py:obj:`L2_PERSISTENT_MAP_INIT_FUNC "
+"<tilelang.jit.adapter.wrapper.L2_PERSISTENT_MAP_INIT_FUNC>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE <tilelang.jit.adapter.wrapper."
-"L2_PERSISTENT_MAP_RESET_HANDLE>`\\"
+":py:obj:`L2_PERSISTENT_MAP_RESET_HANDLE "
+"<tilelang.jit.adapter.wrapper.L2_PERSISTENT_MAP_RESET_HANDLE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`TMA_DESC_INIT_FUNC <tilelang.jit.adapter.wrapper."
-"TMA_DESC_INIT_FUNC>`\\"
+":py:obj:`TMA_DESC_INIT_FUNC "
+"<tilelang.jit.adapter.wrapper.TMA_DESC_INIT_FUNC>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`TMA_IM2COL_DESC_INIT_FUNC <tilelang.jit.adapter.wrapper."
-"TMA_IM2COL_DESC_INIT_FUNC>`\\"
+":py:obj:`TMA_IM2COL_DESC_INIT_FUNC "
+"<tilelang.jit.adapter.wrapper.TMA_IM2COL_DESC_INIT_FUNC>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`KERNEL_LAUNCH_FUNC_CODE <tilelang.jit.adapter.wrapper."
-"KERNEL_LAUNCH_FUNC_CODE>`\\"
+":py:obj:`KERNEL_LAUNCH_FUNC_CODE "
+"<tilelang.jit.adapter.wrapper.KERNEL_LAUNCH_FUNC_CODE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ""
-":py:obj:`KERNEL_CLUSTER_LAUNCH_FUNC_CODE <tilelang.jit.adapter.wrapper."
-"KERNEL_CLUSTER_LAUNCH_FUNC_CODE>`\\"
+":py:obj:`KERNEL_CLUSTER_LAUNCH_FUNC_CODE "
+"<tilelang.jit.adapter.wrapper.KERNEL_CLUSTER_LAUNCH_FUNC_CODE>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:25:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:28:<autosummary>:1
 msgid ":py:obj:`logger <tilelang.jit.adapter.wrapper.logger>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:27
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:30
 msgid "Classes"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ":py:obj:`BaseWrapper <tilelang.jit.adapter.wrapper.BaseWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid "Helper class that provides a standard way to create an ABC using"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ""
-":py:obj:`TLCUDASourceWrapper <tilelang.jit.adapter.wrapper."
-"TLCUDASourceWrapper>`\\"
+":py:obj:`TLCUDASourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLCUDASourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ""
-":py:obj:`TLHIPSourceWrapper <tilelang.jit.adapter.wrapper."
-"TLHIPSourceWrapper>`\\"
+":py:obj:`TLHIPSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLHIPSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:531
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:636
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid "A wrapper class for the TileLang HIP backend."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ""
-":py:obj:`TLCPUSourceWrapper <tilelang.jit.adapter.wrapper."
-"TLCPUSourceWrapper>`\\"
+":py:obj:`TLCPUSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLCPUSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ""
-":py:obj:`TLMetalSourceWrapper <tilelang.jit.adapter.wrapper."
-"TLMetalSourceWrapper>`\\"
+":py:obj:`TLAscendSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLAscendSourceWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:782
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
+msgid "Wrapper for Ascend backend kernel source."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
+msgid ""
+":py:obj:`TLMetalSourceWrapper "
+"<tilelang.jit.adapter.wrapper.TLMetalSourceWrapper>`\\"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ":py:obj:`TLWrapper <tilelang.jit.adapter.wrapper.TLWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:697
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:755
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:848
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:906
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid "A wrapper class for the TileLang backend."
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:39:<autosummary>:1
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:43:<autosummary>:1
 msgid ":py:obj:`TLPyWrapper <tilelang.jit.adapter.wrapper.TLPyWrapper>`\\"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:41
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:45
 msgid "Module Contents"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:46
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:69
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:50
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:89
 #: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:110
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:140
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:162
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:183
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:208
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:230
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:270
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:314
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:345
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:551
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:151
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:181
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:204
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:240
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:262
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:283
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:308
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:330
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:368
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:410
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:441
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:662
 msgid "<details><summary>Show Value</summary>"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:50
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:54
 msgid ""
 "\"\"\"\n"
-"    cudaError_t result_{0} = cudaFuncSetAttribute({0}, "
+"static std::atomic<unsigned long long> {0}_smem_devices{{0}};\n"
+"\n"
+"static int {0}_set_dynamic_smem() {{\n"
+"    int device = 0;\n"
+"    cudaError_t query = cudaGetDevice(&device);\n"
+"    if (query != cudaSuccess) {{\n"
+"        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to get the current "
+"device: %s\", cudaGetErrorString(query));\n"
+"        return -1;\n"
+"    }}\n"
+"    unsigned long long bit = device < 64 ? 1ull << device : 0;\n"
+"    if (bit && ({0}_smem_devices.load(std::memory_order_relaxed) & bit)) {{\n"
+"        return 0;\n"
+"    }}\n"
+"    cudaError_t result = cudaFuncSetAttribute({0}, "
 "cudaFuncAttributeMaxDynamicSharedMemorySize, {1});\n"
-"    if (result_{0} != cudaSuccess) {{\n"
+"    if (result != cudaSuccess) {{\n"
 "        snprintf(error_buf, ERROR_BUF_SIZE, \"Failed to set the allowed "
 "dynamic shared memory size to %d with error: %s\", {1}, "
-"cudaGetErrorString(result_{0}));\n"
+"cudaGetErrorString(result));\n"
+"        return -1;\n"
+"    }}\n"
+"    {0}_smem_devices.fetch_or(bit, std::memory_order_relaxed);\n"
+"    return 0;\n"
+"}}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:80
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:101
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:142
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:172
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:195
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:231
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:253
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:274
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:299
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:321
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:359
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:401
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:432
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:470
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:689
+msgid "</details>"
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:93
+msgid ""
+"\"\"\"\n"
+"    if ({0}_set_dynamic_smem() != 0) {{\n"
 "        return -1;\n"
 "    }}\n"
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:60
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:101
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:131
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:153
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:174
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:199
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:221
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:261
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:305
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:336
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:374
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:572
-msgid "</details>"
-msgstr ""
-
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:73
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:114
 msgid ""
 "\"\"\"\n"
 "    int device_{0} = 0;\n"
@@ -229,17 +288,28 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:114
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:155
 msgid ""
 "\"\"\"\n"
+"#ifdef _WIN32\n"
+"#define TL_EXPORT __declspec(dllexport)\n"
+"#else\n"
+"#define TL_EXPORT\n"
+"#endif\n"
+"\n"
 "#define ERROR_BUF_SIZE 1024\n"
 "static char error_buf[ERROR_BUF_SIZE];\n"
 "\n"
-"extern \"C\" const char* get_last_error() {{\n"
+"extern \"C\" TL_EXPORT const char* get_last_error() {{\n"
 "    return error_buf;\n"
 "}}\n"
-"\n"
-"extern \"C\" int init() {{\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:185
+msgid ""
+"\"\"\"\n"
+"extern \"C\" TL_EXPORT int init() {{\n"
 "    error_buf[0] = '\\0';\n"
 "    {0}\n"
 "    return 0;\n"
@@ -247,17 +317,41 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:144
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:208
 msgid ""
 "\"\"\"\n"
-"extern \"C\" int call({}) {{\n"
+"#ifdef _WIN32\n"
+"#define TL_EXPORT __declspec(dllexport)\n"
+"#else\n"
+"#define TL_EXPORT\n"
+"#endif\n"
+"\n"
+"#define ERROR_BUF_SIZE 1024\n"
+"static char error_buf[ERROR_BUF_SIZE];\n"
+"\n"
+"extern \"C\" TL_EXPORT const char* get_last_error() {{\n"
+"    return error_buf;\n"
+"}}\n"
+"\n"
+"extern \"C\" TL_EXPORT int init() {{\n"
+"    error_buf[0] = '\\0';\n"
+"    {0}\n"
+"    return 0;\n"
+"}}\n"
+"\"\"\""
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:244
+msgid ""
+"\"\"\"\n"
+"extern \"C\" TL_EXPORT int call({}) {{\n"
 "{}\n"
 "  return 0;\n"
 "}}\n"
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:166
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:266
 msgid ""
 "\"\"\"\n"
 "  cudaStreamAttrValue stream_attribute;\n"
@@ -267,7 +361,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:187
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:287
 msgid ""
 "\"\"\"\n"
 "  stream_attribute.accessPolicyWindow.hitRatio = {1};\n"
@@ -283,7 +377,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:212
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:312
 msgid ""
 "\"\"\"\n"
 "  stream_attribute.accessPolicyWindow.num_bytes = 0;\n"
@@ -295,7 +389,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:234
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:334
 msgid ""
 "\"\"\"\n"
 "  CUtensorMap {0};\n"
@@ -318,15 +412,14 @@ msgid ""
 "_swizzle, {0}_l2Promotion, {0}_oobFill);\n"
 "\n"
 "  if ({0}_result != CUDA_SUCCESS) {{\n"
-"          std::stringstream ss;\n"
-"          ss << \"Error: Failed to initialize the TMA descriptor {0}\";\n"
-"          snprintf(error_buf, ERROR_BUF_SIZE, \"%s\", ss.str().c_str());\n"
+"          snprintf(error_buf, ERROR_BUF_SIZE, \"Error: Failed to initialize "
+"the TMA descriptor {0}\");\n"
 "          return -1;\n"
 "  }}\n"
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:274
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:372
 msgid ""
 "\"\"\"\n"
 "  CUtensorMap {0};\n"
@@ -354,15 +447,14 @@ msgid ""
 "_l2Promotion, {0}_oobFill);\n"
 "\n"
 "  if ({0}_result != CUDA_SUCCESS) {{\n"
-"          std::stringstream ss;\n"
-"          ss << \"Error: Failed to initialize the TMA descriptor {0}\";\n"
-"          snprintf(error_buf, ERROR_BUF_SIZE, \"%s\", ss.str().c_str());\n"
+"          snprintf(error_buf, ERROR_BUF_SIZE, \"Error: Failed to initialize "
+"the TMA descriptor {0}\");\n"
 "          return -1;\n"
 "  }}\n"
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:318
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:414
 msgid ""
 "\"\"\"\n"
 "  {{\n"
@@ -382,7 +474,7 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:349
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:445
 msgid ""
 "\"\"\"\n"
 "  {{\n"
@@ -411,11 +503,11 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:382
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:478
 msgid "Bases: :py:obj:`abc.ABC`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:385
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:481
 msgid ""
 "Helper class that provides a standard way to create an ABC using inheritance."
 msgstr ""
@@ -428,21 +520,35 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:528
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:612
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:650
+msgid ""
+"Code raising `function_name`'s dynamic shared memory limit on the current "
+"device."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:633
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:779
 msgid "Bases: :py:obj:`TLCUDASourceWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:555
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:666
 msgid ""
 "\"\"\"\n"
+"#ifdef _WIN32\n"
+"#define TL_EXPORT __declspec(dllexport)\n"
+"#else\n"
+"#define TL_EXPORT\n"
+"#endif\n"
+"\n"
 "#define ERROR_BUF_SIZE 1024\n"
 "static char error_buf[ERROR_BUF_SIZE];\n"
 "\n"
-"extern \"C\" const char* get_last_error() {\n"
+"extern \"C\" TL_EXPORT const char* get_last_error() {\n"
 "    return error_buf;\n"
 "}\n"
 "\n"
-"extern \"C\" int init() {\n"
+"extern \"C\" TL_EXPORT int init() {\n"
 "    error_buf[0] = '\\0';\n"
 "\n"
 "    return 0;\n"
@@ -450,10 +556,28 @@ msgid ""
 "\"\"\""
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:694
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:784
+msgid ""
+"Ascend kernels use ``__global__ __vector__`` qualifiers and the triple- "
+"chevron launch syntax ``<<<grid, smem, stream>>>`` (no block dim). This "
+"wrapper reuses the CUDA wrapper infrastructure but overrides the launch code "
+"generation and init/stream helpers for ACL runtime."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:795
+msgid "Generate the host ``call()`` function with Ascend launch semantics."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:797
+msgid ""
+"Ascend uses ``<<<grid, smem, stream>>>`` (three arguments, no block dim) and "
+"ACL error checking instead of CUDA equivalents."
+msgstr ""
+
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:845
 msgid "Bases: :py:obj:`BaseWrapper`"
 msgstr ""
 
-#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:752
+#: ../../../autoapi/tilelang/jit/adapter/wrapper/index.rst:903
 msgid "Bases: :py:obj:`TLWrapper`"
 msgstr ""

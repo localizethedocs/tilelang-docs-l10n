@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025-2025, Tile Lang Contributors
+# This file is distributed under the same license as the TileLang <br> package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: TileLang <br> latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-23 19:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:2
+msgid "tilelang.cuda.language.prefetch"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:8
+msgid "Functions"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`prefetch_l1 <tilelang.cuda.language.prefetch.prefetch_l1>`\\ \\"
+"(addr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:22
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:16:<autosummary>:1
+msgid ""
+"Prefetch the global or local memory cache line containing ``addr`` into L1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`prefetchu_l1 <tilelang.cuda.language.prefetch.prefetchu_l1>`\\ \\"
+"(addr\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:27
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:16:<autosummary>:1
+msgid "Prefetch the memory cache line containing ``addr`` into uniform L1."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:16:<autosummary>:1
+msgid ""
+":py:obj:`prefetch_l2 <tilelang.cuda.language.prefetch.prefetch_l2>`\\ \\"
+"(addr\\[\\, eviction\\_policy\\]\\)"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:32
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:16:<autosummary>:1
+msgid ""
+"Prefetch the global or local memory cache line containing ``addr`` into L2."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:18
+msgid "Module Contents"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:34
+msgid ""
+"A global or local buffer element, such as ``x[i]``. Only its address is used."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:35
+msgid ""
+"Compile-time cache eviction priority. None leaves the priority unspecified. "
+"\"evict_normal\" and \"evict_last\" require global memory and sm_80 or later."
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../autoapi/tilelang/cuda/language/prefetch/index.rst:38
+msgid ""
+"A call to the L2 prefetch intrinsic. Prefetch is a performance hint and does "
+"not guarantee cache residency or synchronize memory accesses."
+msgstr ""
